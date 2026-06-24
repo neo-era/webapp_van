@@ -1894,6 +1894,21 @@ const EXAMS = {
         { stem: 'The assembly instructions are very easy to ____.', options: ['fellow', 'follow', 'hollow', 'swallow'], answer: 1, explanation: 'easy to follow = dễ làm theo.' },
       ],
     },
+    {
+      examId: 'toeic-25', title: 'TOEIC – Grammar & Vocabulary #25', durationMin: 20,
+      questions: [
+        { stem: 'The company is currently ____ a new headquarters downtown.', options: ['construct', 'constructing', 'construction', 'constructive'], answer: 1, explanation: 'is + V-ing (hiện tại tiếp diễn): constructing.' },
+        { stem: 'We offer ____ rates for bulk purchases.', options: ['discount', 'discounting', 'discounts', 'discounted'], answer: 3, explanation: 'discounted rates = giá ưu đãi (tính từ).' },
+        { stem: 'Please ____ your registration on our website.', options: ['completion', 'completely', 'complete', 'completed'], answer: 2, explanation: 'Câu mệnh lệnh: động từ nguyên thể (complete).' },
+        { stem: 'The project team meets ____ every Monday morning.', options: ['regular', 'regularity', 'regulate', 'regularly'], answer: 3, explanation: 'Cần trạng từ bổ nghĩa "meets" ⇒ regularly.' },
+        { stem: 'Our packaging is made entirely from ____ materials.', options: ['recycled', 'recycle', 'recycling', 'recycles'], answer: 0, explanation: 'recycled materials = vật liệu tái chế (tính từ).' },
+        { stem: 'The store will ____ early on public holidays.', options: ['closes', 'close', 'closing', 'closure'], answer: 1, explanation: 'will + động từ nguyên thể (close).' },
+        { stem: 'He is responsible for ____ the annual budget.', options: ['manage', 'manages', 'managing', 'management'], answer: 2, explanation: 'responsible for + V-ing.' },
+        { stem: 'The proposal still needs ____ approval from the board.', options: ['final', 'finally', 'finalize', 'finalist'], answer: 0, explanation: 'final approval = sự phê duyệt cuối cùng (tính từ).' },
+        { stem: 'We are ____ to providing the best possible service.', options: ['dedicate', 'dedication', 'dedicated', 'dedicating'], answer: 2, explanation: 'be dedicated to + V-ing.' },
+        { stem: 'All employees must ____ the company dress code.', options: ['following', 'follow', 'follows', 'followed'], answer: 1, explanation: 'must + động từ nguyên thể (follow).' },
+      ],
+    },
   ],
 
   IELTS: [
