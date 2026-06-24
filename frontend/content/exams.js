@@ -1385,6 +1385,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'happy'.", options: ['glad', 'joyful', 'cheerful', 'sad'], answer: 3, explanation: 'happy ↔ sad (buồn).' },
       ],
     },
+    {
+      examId: 'anh-kt45-22', title: 'Kiểm tra 45′ #22 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'They ____ married for 20 years.', options: ['have been', 'are', 'were', 'has been'], answer: 0, explanation: 'Hiện tại hoàn thành chỉ thời gian kéo dài đến nay: have been.' },
+        { stem: "I'd like ____ a cup of coffee, please.", options: ['to have', 'have', 'having', 'had'], answer: 0, explanation: 'would like + to + V.' },
+        { stem: "She can't help ____ when she's nervous.", options: ['meeting', 'to laugh', 'laugh', 'laughing'], answer: 3, explanation: "can't help + V-ing (không nhịn được)." },
+        { stem: 'The more expensive the hotel, ____ the service.', options: ['good', 'the better', 'better', 'best'], answer: 1, explanation: 'So sánh kép: the + comparative.' },
+        { stem: "He ____ his keys, so he can't get into the house.", options: ['lost', 'had lost', 'loses', 'has lost'], answer: 3, explanation: 'Kết quả ở hiện tại ⇒ hiện tại hoàn thành (has lost).' },
+        { stem: "I'm looking ____ my glasses. Have you seen them?", options: ['at', 'for', 'after', 'into'], answer: 1, explanation: 'look for = tìm kiếm.' },
+        { stem: "Choose the synonym of 'difficult'.", options: ['easy', 'simple', 'light', 'hard'], answer: 3, explanation: 'difficult ≈ hard (khó).' },
+        { stem: 'Hardly ____ when the bell rang.', options: ['I had sat down', 'had I sat down', 'I sat down', 'did I sat'], answer: 1, explanation: 'Đảo ngữ với Hardly: Hardly + had + S + V3.' },
+        { stem: 'She avoided ____ him at the party.', options: ['meeting', 'to meet', 'meet', 'met'], answer: 0, explanation: 'avoid + V-ing.' },
+        { stem: "Choose the antonym of 'strong'.", options: ['powerful', 'mighty', 'weak', 'tough'], answer: 2, explanation: 'strong ↔ weak (yếu).' },
+      ],
+    },
   ],
 
   TOEIC: [
