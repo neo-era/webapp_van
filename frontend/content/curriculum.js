@@ -345,6 +345,18 @@ const CURRICULUM = {
                   <p>Cho $\\vec{u}=(2;-1;0)$, $\\vec{v}=(1;3;1)$. Tính $\\vec{u}+2\\vec{v}$.</p>
                   <details><summary>Xem đáp án</summary><p>$\\vec{u}+2\\vec{v}=(2+2;\\,-1+6;\\,0+2)=(4;5;2)$.</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (quy tắc hình hộp)</div>
+                  <p>Trong hình hộp $ABCD.A'B'C'D'$, chứng minh $\\vec{AB}+\\vec{AD}+\\vec{AA'}=\\vec{AC'}$.</p>
+                  <p><strong>Giải:</strong> $\\vec{AB}+\\vec{AD}=\\vec{AC}$ (quy tắc hình bình hành đáy); cộng tiếp $\\vec{AA'}$ ⇒ $\\vec{AC}+\\vec{AA'}=\\vec{AC'}$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tính độ dài $\\vec{a}=(1;2;-1)$.</p>
+                  <details><summary>Đáp án</summary><p>$|\\vec{a}|=\\sqrt{1+4+1}=\\sqrt{6}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Ba vectơ $\\vec{a}=(1;1;0)$, $\\vec{b}=(0;1;1)$, $\\vec{c}=(2;3;1)$ có đồng phẳng không?</p>
+                  <details><summary>Đáp án</summary><p>$2\\vec{a}+\\vec{b}=(2;3;1)=\\vec{c}$ ⇒ <strong>đồng phẳng</strong>.</p></details>
+                </div>
               `,
             },
             {
@@ -369,6 +381,18 @@ const CURRICULUM = {
                   <p>Cho $A(0;1;2)$, $B(2;3;4)$, $C(4;5;0)$. Tìm trọng tâm $G$ của $\\triangle ABC$.</p>
                   <details><summary>Xem đáp án</summary><p>$G=\\left(\\dfrac{0+2+4}{3};\\dfrac{1+3+5}{3};\\dfrac{2+4+0}{3}\\right)=(2;3;2)$.</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (tìm điểm)</div>
+                  <p>Cho $A(2;-1;3)$, $B(0;1;1)$. Tìm $M$ sao cho $B$ là trung điểm $AM$.</p>
+                  <p><strong>Giải:</strong> $M=2B-A=(2\\cdot0-2;\\ 2\\cdot1-(-1);\\ 2\\cdot1-3)=(-2;3;-1)$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm điểm đối xứng của $A(1;2;3)$ qua gốc tọa độ $O$.</p>
+                  <details><summary>Đáp án</summary><p>$A'=(-1;-2;-3)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm trọng tâm tam giác $A(1;0;0)$, $B(0;2;0)$, $C(0;0;3)$.</p>
+                  <details><summary>Đáp án</summary><p>$G=\\left(\\dfrac{1}{3};\\dfrac{2}{3};1\\right)$.</p></details>
+                </div>
               `,
             },
             {
@@ -389,6 +413,18 @@ const CURRICULUM = {
                   <div class="bt-title">✏️ Bài tập</div>
                   <p>Tìm $m$ để $\\vec{a}=(1;m;-1)$ vuông góc $\\vec{b}=(2;1;3)$.</p>
                   <details><summary>Xem đáp án</summary><p>$\\vec{a}\\cdot\\vec{b}=2+m-3=m-1=0 \\Leftrightarrow m=1$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (góc giữa hai vectơ)</div>
+                  <p>Tính góc giữa $\\vec{u}=(1;1;0)$ và $\\vec{v}=(1;0;1)$.</p>
+                  <p><strong>Giải:</strong> $\\cos(\\vec{u},\\vec{v})=\\dfrac{1+0+0}{\\sqrt{2}\\cdot\\sqrt{2}}=\\dfrac{1}{2}$ ⇒ góc $=60^\\circ$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tính $\\vec{u}\\cdot\\vec{v}$ với $\\vec{u}=(2;3;-1)$, $\\vec{v}=(1;-1;2)$.</p>
+                  <details><summary>Đáp án</summary><p>$2-3-2=-3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm góc giữa $\\vec{a}=(1;0;0)$ và $\\vec{b}=(1;1;0)$.</p>
+                  <details><summary>Đáp án</summary><p>$\\cos=\\dfrac{1}{\\sqrt{2}}$ ⇒ góc $=45^\\circ$.</p></details>
                 </div>
               `,
             },
