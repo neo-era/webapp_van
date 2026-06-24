@@ -3,11 +3,13 @@
 
 | | |
 |---|---|
-| **Phiên bản** | 1.0 |
+| **Phiên bản** | 2.0 |
 | **Ngày** | 24/06/2026 |
-| **Trạng thái** | Đã triển khai (các tính năng cốt lõi) |
+| **Trạng thái** | Phần I đã triển khai · Phần II là kế hoạch mở rộng |
 | **Repo** | github.com/neo-era/webapp_van |
 | **URL chạy thật** | https://neo-era.github.io/webapp_van/ |
+
+> **Cấu trúc tài liệu:** **Phần I (§1–§9)** mô tả hệ thống lập kế hoạch học tập **đã triển khai**. **Phần II (§10–§17)** đặc tả **mở rộng thành nền tảng học tập** (bài giảng, giáo viên AI, ngân hàng đề, luyện thi IELTS/TOEIC) — **kế hoạch, chưa triển khai**.
 
 ---
 
@@ -24,7 +26,14 @@ Sản phẩm là một ứng dụng web cho 2 nhóm người dùng (Học sinh, 
 - Ghi chú kèm tài liệu đính kèm.
 - Giáo viên quản lý lớp, giao việc, xem tiến độ học sinh.
 
-Ngoài phạm vi (phiên bản 1.0): nhắn tin nội bộ, thông báo email/đẩy, thống kê nâng cao, ứng dụng di động native, thanh toán.
+**Mở rộng (phiên bản 2.0 — kế hoạch, xem Phần II):**
+- Danh mục môn học theo khối (Chương trình GDPT 2018).
+- Hệ thống bài giảng chất lượng cao (cốt lõi + nâng cao + chuyên).
+- Giáo viên AI (chatbot, dùng Claude API).
+- Ngân hàng đề & bài kiểm tra nhiều cấp độ, tự chấm.
+- Luyện thi tiếng Anh IELTS (4.5→6.5) và TOEIC (450→650).
+
+Ngoài phạm vi: nhắn tin nội bộ, thông báo email/đẩy, thống kê nâng cao, ứng dụng di động native, thanh toán.
 
 ### 1.3 Định nghĩa & thuật ngữ
 | Thuật ngữ | Ý nghĩa |
@@ -254,8 +263,181 @@ Mỗi tab là một "bảng". Khóa chính in **đậm**.
 
 ---
 
-## 9. Lịch sử phiên bản
+# PHẦN II — MỞ RỘNG: NỀN TẢNG HỌC TẬP (v2.0 — KẾ HOẠCH)
+
+## 10. Tổng quan mở rộng
+
+Nâng cấp từ công cụ lập kế hoạch thành **nền tảng học tập THPT** theo **Chương trình GDPT 2018**, gồm 5 module:
+
+| Module | Tên | Phụ thuộc |
+|--------|-----|-----------|
+| **A** | Danh mục môn học theo khối | (nền tảng) |
+| **B** | Hệ thống bài giảng | A |
+| **C** | Giáo viên AI (chatbot Claude) | B |
+| **D** | Ngân hàng đề & bài kiểm tra | A, B |
+| **E** | Luyện thi IELTS / TOEIC | B, C, D |
+
+### 10.1 Phạm vi MVP
+- **Khối 12**, 4 môn: **Toán, Vật lí, Hóa học, Tiếng Anh**.
+- Nội dung tạo theo quy trình **AI sinh nháp → giáo viên duyệt → xuất bản**.
+- Giáo viên AI dùng **Claude API**, tích hợp ngay từ giai đoạn đầu.
+
+### 10.2 Phân cấp nội dung
+- **Khối:** 10 · 11 · 12.
+- **Mức độ:** Cơ bản · Nâng cao · **Chuyên** (Phổ thông Năng khiếu, Lê Hồng Phong…).
+- **Độ khó câu hỏi (chuẩn Bộ GD):** Nhận biết (NB) · Thông hiểu (TH) · Vận dụng (VD) · Vận dụng cao (VDC).
+
+> "Trường chuyên biệt" được mô hình hóa bằng **mức độ Chuyên** (lớp nội dung/đề nâng cao hơn), không phải khung chương trình khác.
+
+### 10.3 Vai trò mở rộng
+Thêm vai trò **Quản trị nội dung (CONTENT_ADMIN)** — có thể là giáo viên được cấp quyền — phụ trách sinh nháp AI, duyệt và xuất bản bài giảng/câu hỏi. (Giai đoạn đầu: gộp vào vai trò Giáo viên.)
+
+---
+
+## 11. Module A — Danh mục môn học theo khối
+
+| Mã | Yêu cầu | Ưu tiên |
+|----|---------|---------|
+| FR-100 | Lưu danh mục môn học theo Chương trình GDPT 2018, gắn với khối (10/11/12). | Bắt buộc |
+| FR-101 | Mỗi môn có cây chủ đề: **Chương → Bài** (chuyên đề). | Bắt buộc |
+| FR-102 | Phân loại môn: bắt buộc / tự chọn; gắn mức độ nội dung (Cơ bản/Nâng cao/Chuyên). | Nên có |
+| FR-103 | Quản trị thêm/sửa/ẩn môn, chương, bài. | Bắt buộc |
+
+**Danh mục môn lớp 12 (GDPT 2018) — tham khảo:**
+- *Bắt buộc:* Ngữ văn, Toán, Ngoại ngữ 1 (Tiếng Anh), Lịch sử, GDQP-AN, GD thể chất, HĐ trải nghiệm–hướng nghiệp, ND giáo dục địa phương.
+- *Tự chọn (theo định hướng):* Vật lí, Hóa học, Sinh học, Địa lí, GD kinh tế & pháp luật, Tin học, Công nghệ, Âm nhạc, Mĩ thuật.
+- **MVP triển khai:** Toán · Vật lí · Hóa học · Tiếng Anh.
+
+---
+
+## 12. Module B — Hệ thống bài giảng
+
+| Mã | Yêu cầu | Ưu tiên |
+|----|---------|---------|
+| FR-110 | Bài giảng gắn với (môn, khối, chủ đề, mức độ), nội dung dạng **Markdown** (hỗ trợ công thức, hình ảnh, bảng). | Bắt buộc |
+| FR-111 | Học sinh xem bài giảng theo cây chủ đề; đánh dấu **đã học**. | Bắt buộc |
+| FR-112 | Mỗi bài có phần **Cốt lõi** và **Nâng cao** tách bạch, trình bày dễ đọc. | Bắt buộc |
+| FR-113 | Trạng thái bài giảng: **DRAFT → REVIEW → PUBLISHED**; chỉ PUBLISHED hiển thị cho HS. | Bắt buộc |
+| FR-114 | Liên kết bài giảng ↔ câu hỏi luyện tập (Module D) và ↔ giáo viên AI (Module C). | Nên có |
+| FR-115 | Theo dõi tiến độ học theo chủ đề (đã học / tổng số bài). | Nên có |
+
+> Công thức Toán/Lý/Hóa: dùng cú pháp **KaTeX/MathJax** trong Markdown. Hình ảnh lưu trên Drive (như tài liệu đính kèm hiện có).
+
+---
+
+## 13. Module C — Giáo viên AI (chatbot)
+
+| Mã | Yêu cầu | Ưu tiên |
+|----|---------|---------|
+| FR-120 | Học sinh hỏi đáp với AI trong ngữ cảnh **bài giảng đang xem** (giải thích, ví dụ, gợi ý). | Bắt buộc |
+| FR-121 | AI **bám nội dung bài giảng đã xuất bản** (đưa nội dung bài làm ngữ cảnh — RAG đơn giản). | Bắt buộc |
+| FR-122 | AI **không làm hộ** bài kiểm tra/thi đang diễn ra; chỉ gợi ý hướng. | Bắt buộc |
+| FR-123 | Giới hạn số lượt hỏi/HS/ngày để kiểm soát chi phí. | Bắt buộc |
+| FR-124 | Lưu lịch sử hội thoại (tùy chọn) để HS xem lại. | Nên có |
+| FR-125 | (Module E) AI chấm & góp ý bài Writing/Speaking theo tiêu chí. | Nên có |
+
+### 13.1 Kiến trúc AI
+- Backend Apps Script gọi **Claude API** qua `UrlFetchApp` (action `aiChat`).
+- **Khóa API** lưu trong **Script Properties** (`CLAUDE_API_KEY`) — không lộ ra client.
+- **Model:** mặc định **Claude Haiku 4.5** (rẻ, nhanh) cho hỏi đáp thường; nâng lên **Sonnet 4.6 / Opus 4.8** cho câu hỏi khó hoặc chấm bài.
+- **Ngữ cảnh:** đính kèm nội dung bài giảng liên quan + câu hỏi của HS vào prompt.
+- **Guardrail:** chỉ phạm vi học tập; từ chối nội dung ngoài lề; không tiết lộ đáp án bài thi đang làm.
+- **Kiểm soát chi phí:** giới hạn lượt/ngày; ghi log token (sheet `AIChats`).
+- **Độ trễ:** Apps Script không stream → trả nguyên câu (~3–10s); luôn hiển thị loading.
+- **Riêng tư:** không gửi thông tin cá nhân nhạy cảm sang API.
+
+---
+
+## 14. Module D — Ngân hàng đề & bài kiểm tra
+
+| Mã | Yêu cầu | Ưu tiên |
+|----|---------|---------|
+| FR-130 | Ngân hàng câu hỏi gắn (môn, khối, chủ đề, **độ khó NB/TH/VD/VDC**, mức độ). | Bắt buộc |
+| FR-131 | Loại câu hỏi: trắc nghiệm 1 đáp án, nhiều đáp án, đúng/sai, trả lời ngắn, tự luận. | Bắt buộc |
+| FR-132 | Tạo đề: chọn thủ công hoặc **tự sinh theo ma trận** (số câu mỗi độ khó/chủ đề). | Nên có |
+| FR-133 | HS làm bài có **đếm giờ**; nộp bài; **tự chấm** phần trắc nghiệm. | Bắt buộc |
+| FR-134 | Hiển thị kết quả + **lời giải/giải thích** từng câu sau khi nộp. | Bắt buộc |
+| FR-135 | Tự luận/Writing: chấm bằng **AI theo rubric** (tùy chọn), giáo viên duyệt lại. | Nên có |
+| FR-136 | Lưu lịch sử làm bài; thống kê điểm theo chủ đề để gợi ý ôn tập. | Nên có |
+| FR-137 | Giáo viên giao đề cho lớp/học sinh (mở rộng từ FR-53). | Nên có |
+
+---
+
+## 15. Module E — Luyện thi IELTS / TOEIC
+
+> Hỗ trợ **cả hai**: **IELTS** mục tiêu **4.5 → 6.5** và **TOEIC** mục tiêu **450 → 650**.
+
+| Mã | Yêu cầu | Ưu tiên |
+|----|---------|---------|
+| FR-140 | Bài kiểm tra đầu vào (placement) → xác định trình độ & lộ trình mục tiêu. | Nên có |
+| FR-141 | Nội dung theo **kỹ năng**: IELTS (Listening, Reading, Writing, Speaking); TOEIC (Listening, Reading). | Bắt buộc |
+| FR-142 | Bài giảng từ vựng/ngữ pháp/chiến lược làm bài theo từng band/mốc điểm. | Bắt buộc |
+| FR-143 | **Đề luyện & thi thử** theo định dạng IELTS/TOEIC; tự chấm Listening/Reading. | Bắt buộc |
+| FR-144 | **AI chấm Writing/Speaking** theo tiêu chí (band descriptors), kèm góp ý cải thiện. | Nên có |
+| FR-145 | Theo dõi tiến độ band/điểm theo thời gian; lộ trình tới mục tiêu. | Nên có |
+
+> Tái sử dụng Module B (bài giảng) và D (đề/câu hỏi) với môn = `IELTS` / `TOEIC` và trường **kỹ năng**. Audio (Listening) lưu trên Drive.
+
+---
+
+## 16. Mô hình dữ liệu mở rộng & quy trình nội dung
+
+### 16.1 Bảng dữ liệu mới (Google Sheets)
+| Bảng | Cột chính |
+|------|-----------|
+| **Subjects** | subjectCode, name, grades(csv), category(BAT_BUOC/TU_CHON), active |
+| **Topics** | topicId, subjectCode, grade, parentId(chương), title, order |
+| **Lessons** | lessonId, subjectCode, grade, topicId, title, level(CO_BAN/NANG_CAO/CHUYEN), skill(cho IELTS/TOEIC), contentMd, order, status(DRAFT/REVIEW/PUBLISHED), source(AI/MANUAL/IMPORT), createdBy, updatedAt |
+| **Questions** | questionId, subjectCode, grade, topicId, type, difficulty(NB/TH/VD/VDC), level, stem, options(JSON), answer, explanation, status, source |
+| **Exams** | examId, title, subjectCode, grade, kind(PRACTICE/TEST/MOCK), questionIds(JSON), durationMin, level, published |
+| **Attempts** | attemptId, studentId, examId, answers(JSON), score, maxScore, startedAt, submittedAt |
+| **LessonProgress** | studentId, lessonId, status(LEARNED), updatedAt |
+| **AIChats** | msgId, studentId, context(lessonId), role(USER/ASSISTANT), content, model, tokens, createdAt |
+
+### 16.2 Quy trình nội dung (AI sinh nháp + duyệt)
+| Mã | Yêu cầu | Ưu tiên |
+|----|---------|---------|
+| FR-150 | Công cụ quản trị **sinh nháp** bài giảng/câu hỏi bằng AI theo (môn, khối, chủ đề, mức độ). | Bắt buộc |
+| FR-151 | Nội dung AI tạo ở trạng thái **DRAFT**, không hiển thị cho HS. | Bắt buộc |
+| FR-152 | Giáo viên **chỉnh sửa & duyệt** → chuyển **PUBLISHED** mới hiển thị. | Bắt buộc |
+| FR-153 | Ghi nhận **nguồn** nội dung (AI/MANUAL/IMPORT) và người duyệt. | Nên có |
+
+Trạng thái: `DRAFT → REVIEW → PUBLISHED` (có thể quay lại DRAFT khi cần sửa).
+
+---
+
+## 17. Yêu cầu phi chức năng bổ sung, lộ trình & rủi ro
+
+### 17.1 Phi chức năng bổ sung
+| Mã | Yêu cầu |
+|----|---------|
+| NFR-10 | **Chi phí AI** kiểm soát được: chọn model theo nhu cầu, giới hạn lượt/ngày, log token. |
+| NFR-11 | **Chất lượng nội dung**: mọi bài giảng/câu hỏi phải qua **duyệt người** trước khi xuất bản. |
+| NFR-12 | **Bảo mật khóa AI**: lưu server-side (Script Properties), không lộ client. |
+| NFR-13 | **Khả năng mở rộng dữ liệu**: nếu ngân hàng đề/nội dung lớn vượt giới hạn Google Sheets, sẵn sàng **chuyển DB** (vd Supabase/Postgres) — thiết kế lớp truy cập tách biệt để dễ thay. |
+| NFR-14 | **Liêm chính học thuật**: AI không tiết lộ đáp án khi đang làm bài thi. |
+
+### 17.2 Lộ trình triển khai
+- **GĐ 1 — Nền tảng nội dung:** Module A + B; thí điểm **Toán 12**; quy trình AI-draft + duyệt; tích hợp **Giáo viên AI (C)** trên bài giảng.
+- **GĐ 2 — Đánh giá:** Module D (ngân hàng đề, làm bài, tự chấm, lời giải).
+- **GĐ 3 — Mở rộng môn:** hoàn thiện **Vật lí, Hóa học, Tiếng Anh** lớp 12 (bài giảng + đề).
+- **GĐ 4 — Luyện thi:** Module E (IELTS 4.5→6.5 & TOEIC 450→650), AI chấm Writing/Speaking.
+- **GĐ 5 (tùy chọn):** mở rộng khối 10–11, mức độ Chuyên, di chuyển DB nếu cần.
+
+### 17.3 Rủi ro & giảm thiểu
+| Rủi ro | Mức | Giảm thiểu |
+|--------|-----|-----------|
+| Khối lượng nội dung lớn | Cao | AI sinh nháp + duyệt; làm cuốn chiếu từng môn/chủ đề |
+| Chi phí API AI tăng | Trung bình | Model rẻ mặc định, giới hạn lượt, cache câu hỏi thường gặp |
+| Giới hạn Google Sheets/GAS | Trung bình | Tách lớp dữ liệu, sẵn sàng chuyển Postgres; phân trang dữ liệu |
+| Chất lượng/độ chính xác nội dung AI | Cao | Bắt buộc duyệt người; đối chiếu SGK/khung GDPT 2018 |
+| Bản quyền tài liệu nhập | Trung bình | Chỉ dùng nguồn được phép; ưu tiên nội dung tự soạn/AI |
+
+---
+
+## 18. Lịch sử phiên bản
 
 | Phiên bản | Ngày | Thay đổi |
 |-----------|------|----------|
 | 1.0 | 24/06/2026 | Bản đầu tiên — đặc tả theo hệ thống đã triển khai (Auth, Học sinh, Giáo viên, đăng ký, đổi MK, khôi phục phiên, upload Drive). |
+| 2.0 | 24/06/2026 | Thêm Phần II — mở rộng nền tảng học tập: danh mục môn theo khối, bài giảng, giáo viên AI (Claude), ngân hàng đề & kiểm tra, luyện thi IELTS/TOEIC; mô hình dữ liệu mở rộng, kiến trúc AI, quy trình nội dung, lộ trình, rủi ro. |
