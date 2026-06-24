@@ -1174,6 +1174,21 @@ const EXAMS = {
         { stem: 'All employees should ____ to the company dress code.', options: ['adjust', 'adhere', 'admire', 'admit'], answer: 1, explanation: 'adhere to = tuân thủ.' },
       ],
     },
+    {
+      examId: 'toeic-13', title: 'TOEIC – Grammar & Vocabulary #13', durationMin: 20,
+      questions: [
+        { stem: 'The company plans to ____ its operations overseas.', options: ['expense', 'expandable', 'expand', 'expend'], answer: 2, explanation: 'expand operations = mở rộng hoạt động.' },
+        { stem: 'Employees who work overtime will be ____.', options: ['complicated', 'complimented', 'completed', 'compensated'], answer: 3, explanation: 'compensate = đền bù, trả công.' },
+        { stem: 'Please ____ that all documents are signed before submission.', options: ['insure', 'ensure', 'assure', 'secure'], answer: 1, explanation: 'ensure that = đảm bảo rằng.' },
+        { stem: 'The meeting will be held ____ the main conference hall.', options: ['on', 'at', 'in', 'by'], answer: 2, explanation: 'in + không gian bên trong (hall).' },
+        { stem: 'Our company has a strong ____ in the industry.', options: ['reservation', 'recommendation', 'registration', 'reputation'], answer: 3, explanation: 'reputation = danh tiếng.' },
+        { stem: 'The project manager ____ the project from start to finish.', options: ['overseas', 'oversaw', 'overlooked', 'overcame'], answer: 1, explanation: 'oversee (oversaw) = giám sát.' },
+        { stem: 'We are proud to offer ____ customer service.', options: ['exceptional', 'exceptionally', 'exception', 'except'], answer: 0, explanation: 'Cần tính từ bổ nghĩa danh từ ⇒ exceptional.' },
+        { stem: 'The invoice is ____ upon receipt of the goods.', options: ['paying', 'paid', 'payable', 'payment'], answer: 2, explanation: 'payable = phải trả, đến hạn thanh toán.' },
+        { stem: 'All staff must ____ to the new safety guidelines.', options: ['confirm', 'confront', 'conflict', 'conform'], answer: 3, explanation: 'conform to = tuân theo.' },
+        { stem: 'Sales have ____ significantly compared to last year.', options: ['grown', 'grew', 'growing', 'grows'], answer: 0, explanation: 'Hiện tại hoàn thành: have + grown (V3).' },
+      ],
+    },
   ],
 
   IELTS: [
