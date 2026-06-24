@@ -219,6 +219,16 @@ const CURRICULUM = {
                 <p>Quy tắc hình hộp: $\\vec{AC'} = \\vec{AB}+\\vec{AD}+\\vec{AA'}$.</p>
                 <h2>Nâng cao</h2>
                 <p>Ba vectơ <strong>đồng phẳng</strong> khi tồn tại $m,n$ sao cho $\\vec{c}=m\\vec{a}+n\\vec{b}$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Cho $\\vec{a}=(1;0;1)$, $\\vec{b}=(0;1;1)$, $\\vec{c}=(1;1;2)$. Chứng minh ba vectơ đồng phẳng.</p>
+                  <p><strong>Giải:</strong> Ta thấy $\\vec{a}+\\vec{b}=(1;1;2)=\\vec{c}$, tức $\\vec{c}=1\\cdot\\vec{a}+1\\cdot\\vec{b}$. Vậy ba vectơ đồng phẳng.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Cho $\\vec{u}=(2;-1;0)$, $\\vec{v}=(1;3;1)$. Tính $\\vec{u}+2\\vec{v}$.</p>
+                  <details><summary>Xem đáp án</summary><p>$\\vec{u}+2\\vec{v}=(2+2;\\,-1+6;\\,0+2)=(4;5;2)$.</p></details>
+                </div>
               `,
             },
             {
@@ -233,6 +243,16 @@ const CURRICULUM = {
                 </ul>
                 <h2>Nâng cao</h2>
                 <p>Trọng tâm tam giác $ABC$: $G=\\left(\\dfrac{x_A+x_B+x_C}{3};\\dots\\right)$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Cho $A(1;2;-1)$, $B(3;0;5)$. Tính $\\vec{AB}$, $AB$ và trung điểm $I$.</p>
+                  <p><strong>Giải:</strong> $\\vec{AB}=(2;-2;6)$; $AB=\\sqrt{4+4+36}=\\sqrt{44}=2\\sqrt{11}$; $I=(2;1;2)$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Cho $A(0;1;2)$, $B(2;3;4)$, $C(4;5;0)$. Tìm trọng tâm $G$ của $\\triangle ABC$.</p>
+                  <details><summary>Xem đáp án</summary><p>$G=\\left(\\dfrac{0+2+4}{3};\\dfrac{1+3+5}{3};\\dfrac{2+4+0}{3}\\right)=(2;3;2)$.</p></details>
+                </div>
               `,
             },
             {
@@ -244,6 +264,16 @@ const CURRICULUM = {
                 <p>Hai vectơ vuông góc $\\Leftrightarrow \\vec{u}\\cdot\\vec{v}=0$.</p>
                 <h2>Nâng cao</h2>
                 <p>Tích có hướng $\\vec{u}\\wedge\\vec{v}$ cho vectơ vuông góc với cả hai — dùng tính diện tích, thể tích.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Cho $\\vec{u}=(1;2;2)$, $\\vec{v}=(2;-2;1)$. Tính $\\vec{u}\\cdot\\vec{v}$ và góc giữa hai vectơ.</p>
+                  <p><strong>Giải:</strong> $\\vec{u}\\cdot\\vec{v}=2-4+2=0$ ⇒ $\\vec{u}\\perp\\vec{v}$, góc bằng $90^\\circ$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tìm $m$ để $\\vec{a}=(1;m;-1)$ vuông góc $\\vec{b}=(2;1;3)$.</p>
+                  <details><summary>Xem đáp án</summary><p>$\\vec{a}\\cdot\\vec{b}=2+m-3=m-1=0 \\Leftrightarrow m=1$.</p></details>
+                </div>
               `,
             },
           ],
@@ -261,6 +291,16 @@ const CURRICULUM = {
                 </ul>
                 <h2>Nâng cao</h2>
                 <p>Giá trị $x$ là <em>ngoại lệ</em> nếu $x < Q_1 - 1{,}5\\,\\Delta_Q$ hoặc $x > Q_3 + 1{,}5\\,\\Delta_Q$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Mẫu: $4,6,7,9,10,12,15$. Tính $R$ và $\\Delta_Q$.</p>
+                  <p><strong>Giải:</strong> $R=15-4=11$. Trung vị $=9$; nửa dưới $\\{4,6,7\\}\\Rightarrow Q_1=6$; nửa trên $\\{10,12,15\\}\\Rightarrow Q_3=12$. Vậy $\\Delta_Q=12-6=6$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Mẫu: $5,8,8,11,14,20$. Tính $R$ và $\\Delta_Q$.</p>
+                  <details><summary>Xem đáp án</summary><p>$R=20-5=15$; $Q_1=8$, $Q_3=14 \\Rightarrow \\Delta_Q=6$. (Kiểm ngoại lệ: $20<14+1{,}5\\cdot 6=23$ nên không có ngoại lệ.)</p></details>
+                </div>
               `,
             },
             {
@@ -271,6 +311,17 @@ const CURRICULUM = {
                 <p>Phương sai $s^2=\\dfrac{1}{n}\\sum n_i(x_i-\\bar{x})^2$; độ lệch chuẩn $s=\\sqrt{s^2}$.</p>
                 <h2>Nâng cao</h2>
                 <p>$s$ càng lớn → dữ liệu càng phân tán quanh trung bình. Dùng so sánh độ ổn định giữa hai mẫu.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Mẫu ghép nhóm: $[0;10)$, $[10;20)$, $[20;30)$ với tần số $2,5,3$ (giá trị đại diện $5,15,25$).</p>
+                  <p><strong>Giải:</strong> $\\bar{x}=\\dfrac{2\\cdot5+5\\cdot15+3\\cdot25}{10}=\\dfrac{160}{10}=16$.</p>
+                  <p>$s^2=\\dfrac{1}{10}\\big[2(5-16)^2+5(15-16)^2+3(25-16)^2\\big]=\\dfrac{242+5+243}{10}=49 \\Rightarrow s=7$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tính phương sai của mẫu có giá trị đại diện $2,4,6$ với tần số $1,2,1$.</p>
+                  <details><summary>Xem đáp án</summary><p>$\\bar{x}=\\dfrac{2+8+6}{4}=4$; $s^2=\\dfrac{1}{4}[1\\cdot4+2\\cdot0+1\\cdot4]=2$, $s=\\sqrt{2}$.</p></details>
+                </div>
               `,
             },
           ],
@@ -286,6 +337,16 @@ const CURRICULUM = {
                 <p>Công thức cơ bản: $\\int x^n dx = \\dfrac{x^{n+1}}{n+1}+C\\,(n\\ne -1)$, $\\int \\dfrac{1}{x}dx=\\ln|x|+C$, $\\int e^x dx=e^x+C$.</p>
                 <h2>Nâng cao</h2>
                 <p>$\\int \\sin x\\,dx=-\\cos x+C$, $\\int \\cos x\\,dx=\\sin x+C$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tìm $\\displaystyle\\int (3x^2+2x)\\,dx$.</p>
+                  <p><strong>Giải:</strong> $\\displaystyle\\int (3x^2+2x)\\,dx = x^3 + x^2 + C$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tìm $\\displaystyle\\int \\left(e^x+\\dfrac{1}{x}\\right)dx$.</p>
+                  <details><summary>Xem đáp án</summary><p>$e^x+\\ln|x|+C$.</p></details>
+                </div>
               `,
             },
             {
@@ -296,6 +357,16 @@ const CURRICULUM = {
                 <p>Tính chất: $\\int_a^b = -\\int_b^a$; $\\int_a^c+\\int_c^b=\\int_a^b$; tuyến tính với tổng và hằng số.</p>
                 <h2>Nâng cao</h2>
                 <p>Phương pháp đổi biến số và tích phân từng phần: $\\int u\\,dv = uv-\\int v\\,du$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tính $\\displaystyle\\int_1^2 2x\\,dx$.</p>
+                  <p><strong>Giải:</strong> $\\displaystyle\\int_1^2 2x\\,dx=\\big[x^2\\big]_1^2=4-1=3$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tính $\\displaystyle\\int_0^{\\pi/2}\\cos x\\,dx$.</p>
+                  <details><summary>Xem đáp án</summary><p>$\\big[\\sin x\\big]_0^{\\pi/2}=1-0=1$.</p></details>
+                </div>
               `,
             },
             {
@@ -309,6 +380,25 @@ const CURRICULUM = {
                 </ul>
                 <h2>Nâng cao</h2>
                 <p>Bài toán chuyển động: quãng đường $s=\\int v(t)\\,dt$; vận tốc $v=\\int a(t)\\,dt$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tính diện tích hình phẳng giới hạn bởi $y=x^2$, trục $Ox$, $x=0$, $x=2$.</p>
+                  <p><strong>Giải:</strong> $S=\\displaystyle\\int_0^2 x^2\\,dx=\\Big[\\dfrac{x^3}{3}\\Big]_0^2=\\dfrac{8}{3}$ (đvdt).</p>
+                  <svg class="graph" viewBox="0 0 200 160" width="200" height="160" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="20" y1="140" x2="190" y2="140" stroke="#94a3b8"/>
+                    <line x1="30" y1="15" x2="30" y2="150" stroke="#94a3b8"/>
+                    <path d="M30,140 L65,132 L100,110 L135,72 L170,20 L170,140 Z" fill="rgba(79,70,229,0.18)" stroke="none"/>
+                    <polyline points="30,140 65,132 100,110 135,72 170,20" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <text x="172" y="152">x=2</text>
+                    <text x="34" y="13">y</text>
+                    <text x="100" y="100">S</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tính thể tích khối tròn xoay khi quay $y=\\sqrt{x}$ quanh $Ox$, từ $x=0$ đến $x=4$.</p>
+                  <details><summary>Xem đáp án</summary><p>$V=\\pi\\displaystyle\\int_0^4 x\\,dx=\\pi\\Big[\\dfrac{x^2}{2}\\Big]_0^4=8\\pi$.</p></details>
+                </div>
               `,
             },
           ],
@@ -324,6 +414,16 @@ const CURRICULUM = {
                 <p>$A(x-x_0)+B(y-y_0)+C(z-z_0)=0 \\;\\Leftrightarrow\\; Ax+By+Cz+D=0$.</p>
                 <h2>Nâng cao</h2>
                 <p>Khoảng cách từ $M(x_0;y_0;z_0)$ đến $(P): Ax+By+Cz+D=0$ là $d=\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Viết phương trình mặt phẳng qua $A(1;2;3)$ có pháp tuyến $\\vec{n}=(2;-1;2)$.</p>
+                  <p><strong>Giải:</strong> $2(x-1)-1(y-2)+2(z-3)=0 \\Leftrightarrow 2x-y+2z-6=0$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tính khoảng cách từ $M(1;1;1)$ đến $(P): x+2y+2z-9=0$.</p>
+                  <details><summary>Xem đáp án</summary><p>$d=\\dfrac{|1+2+2-9|}{\\sqrt{1+4+4}}=\\dfrac{4}{3}$.</p></details>
+                </div>
               `,
             },
             {
@@ -337,6 +437,16 @@ const CURRICULUM = {
                 </ul>
                 <h2>Nâng cao</h2>
                 <p>Vị trí tương đối hai đường thẳng dựa vào $\\vec{u_1},\\vec{u_2}$ và một điểm — song song, cắt, chéo nhau.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Viết phương trình đường thẳng qua $A(1;0;-1)$ có vectơ chỉ phương $\\vec{u}=(2;1;3)$.</p>
+                  <p><strong>Giải:</strong> Tham số: $x=1+2t,\\ y=t,\\ z=-1+3t$. Chính tắc: $\\dfrac{x-1}{2}=\\dfrac{y}{1}=\\dfrac{z+1}{3}$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Viết phương trình tham số đường thẳng qua $A(2;1;0)$ và $B(3;-1;2)$.</p>
+                  <details><summary>Xem đáp án</summary><p>$\\vec{AB}=(1;-2;2)$; $x=2+t,\\ y=1-2t,\\ z=2t$.</p></details>
+                </div>
               `,
             },
             {
@@ -347,6 +457,16 @@ const CURRICULUM = {
                 <p>Dạng khai triển $x^2+y^2+z^2-2ax-2by-2cz+d=0$ với $R=\\sqrt{a^2+b^2+c^2-d}$ (cần $a^2+b^2+c^2-d>0$).</p>
                 <h2>Nâng cao</h2>
                 <p>Vị trí mặt phẳng & mặt cầu: so sánh $d(I,(P))$ với $R$ (không cắt / tiếp xúc / cắt theo đường tròn).</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tìm tâm và bán kính mặt cầu $x^2+y^2+z^2-2x+4y-4=0$.</p>
+                  <p><strong>Giải:</strong> $a=1,\\ b=-2,\\ c=0,\\ d=-4$; tâm $I(1;-2;0)$, $R=\\sqrt{1+4+0-(-4)}=3$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tìm tâm, bán kính mặt cầu $x^2+y^2+z^2-4x+6y-2z+5=0$.</p>
+                  <details><summary>Xem đáp án</summary><p>Tâm $I(2;-3;1)$; $R=\\sqrt{4+9+1-5}=3$.</p></details>
+                </div>
               `,
             },
           ],
@@ -362,6 +482,16 @@ const CURRICULUM = {
                 <p>Quy tắc nhân: $P(A\\cap B)=P(B)\\cdot P(A\\mid B)$.</p>
                 <h2>Nâng cao</h2>
                 <p>Hai biến cố <strong>độc lập</strong> khi $P(A\\mid B)=P(A)$, tức $P(A\\cap B)=P(A)P(B)$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Gieo một con xúc xắc cân đối. $A$: "số chấm chẵn", $B$: "số chấm $\\ge 3$". Tính $P(A\\mid B)$.</p>
+                  <p><strong>Giải:</strong> $B=\\{3,4,5,6\\}$, $A\\cap B=\\{4,6\\}$. Vậy $P(A\\mid B)=\\dfrac{2}{4}=\\dfrac{1}{2}$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Rút ngẫu nhiên 1 lá bài. $A$: "lá Cơ", $B$: "lá màu đỏ". Tính $P(A\\mid B)$.</p>
+                  <details><summary>Xem đáp án</summary><p>$B$ có 26 lá đỏ, $A\\cap B$ là 13 lá Cơ ⇒ $P(A\\mid B)=\\dfrac{13}{26}=\\dfrac{1}{2}$.</p></details>
+                </div>
               `,
             },
             {
@@ -373,6 +503,17 @@ const CURRICULUM = {
                 <p>Công thức Bayes: $P(B_1\\mid A)=\\dfrac{P(B_1)P(A\\mid B_1)}{P(A)}$.</p>
                 <h2>Nâng cao</h2>
                 <p>Dùng sơ đồ cây để hình dung; Bayes giúp "đảo chiều" xác suất — rất hay gặp trong bài toán xét nghiệm, chẩn đoán.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu (xét nghiệm)</div>
+                  <p>Tỉ lệ mắc bệnh $P(B)=1\\%$. Xét nghiệm: dương khi có bệnh $P(D\\mid B)=99\\%$, dương khi không bệnh $P(D\\mid \\bar B)=5\\%$. Một người có kết quả dương, tính $P(B\\mid D)$.</p>
+                  <p><strong>Giải:</strong> $P(D)=0{,}01\\cdot0{,}99+0{,}99\\cdot0{,}05=0{,}0594$.</p>
+                  <p>$P(B\\mid D)=\\dfrac{0{,}01\\cdot0{,}99}{0{,}0594}\\approx 0{,}167=16{,}7\\%$ (thấp bất ngờ — vì bệnh hiếm).</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Hộp 1: 3 đỏ, 7 xanh; Hộp 2: 6 đỏ, 4 xanh. Chọn ngẫu nhiên 1 hộp rồi rút 1 viên, được viên đỏ. Tính xác suất viên đó lấy từ Hộp 1.</p>
+                  <details><summary>Xem đáp án</summary><p>$P(\\text{đỏ})=0{,}5\\cdot0{,}3+0{,}5\\cdot0{,}6=0{,}45$; $P(H_1\\mid \\text{đỏ})=\\dfrac{0{,}15}{0{,}45}=\\dfrac{1}{3}$.</p></details>
+                </div>
               `,
             },
           ],
