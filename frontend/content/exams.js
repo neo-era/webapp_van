@@ -782,6 +782,21 @@ const EXAMS = {
         { stem: 'Khối lượng mol của $CaCO_3$ (Ca=40, C=12, O=16)?', options: ['$84$', '$100$', '$116$', '$56$'], answer: 1, explanation: '$40+12+3\\cdot16=100$ g/mol.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-13', title: 'Kiểm tra 45′ #13 — Hóa 12', durationMin: 45,
+      questions: [
+        { stem: 'Chất nào sau đây là amino acid?', options: ['glucose', 'glyxin', 'etanol', 'acetic acid'], answer: 1, explanation: 'Glyxin $H_2N\\!-\\!CH_2\\!-\\!COOH$ là amino acid.' },
+        { stem: 'Kim loại kiềm thường được bảo quản bằng cách ngâm trong?', options: ['nước', 'cồn', 'axit', 'dầu hỏa'], answer: 3, explanation: 'Ngâm trong dầu hỏa để tránh phản ứng với hơi nước và oxi.' },
+        { stem: 'Tơ nilon-6,6 thuộc loại tơ nào?', options: ['tơ thiên nhiên', 'tơ bán tổng hợp', 'tơ tổng hợp', 'tơ visco'], answer: 2, explanation: 'Nilon-6,6 là tơ tổng hợp (poliamit).' },
+        { stem: 'Hợp chất nào sau đây có liên kết đôi C=C?', options: ['etilen', 'metan', 'etan', 'propan'], answer: 0, explanation: 'Etilen $CH_2=CH_2$ có liên kết đôi C=C.' },
+        { stem: 'Phản ứng xà phòng hóa là phản ứng giữa chất béo và?', options: ['axit', 'nước', 'ancol', 'dung dịch kiềm'], answer: 3, explanation: 'Chất béo + NaOH (đun nóng) → muối (xà phòng) + glycerol.' },
+        { stem: 'Nguyên tố phổ biến nhất trong vỏ Trái Đất là?', options: ['oxi', 'silic', 'nhôm', 'sắt'], answer: 0, explanation: 'Oxi chiếm khoảng $46\\%$ khối lượng vỏ Trái Đất.' },
+        { stem: 'Khí nào sau đây là tác nhân chính gây mưa axit?', options: ['$CO_2$', '$SO_2$', '$O_2$', '$N_2$'], answer: 1, explanation: '$SO_2$ (và $NO_x$) tạo axit gây mưa axit.' },
+        { stem: 'Quỳ tím trong môi trường bazơ có màu?', options: ['đỏ', 'xanh', 'vàng', 'không màu'], answer: 1, explanation: 'Môi trường bazơ làm quỳ tím hóa xanh.' },
+        { stem: 'Saccharose khi thủy phân tạo ra?', options: ['2 glucose', '2 fructose', 'glucose + galactose', 'glucose + fructose'], answer: 3, explanation: 'Saccharose → glucose + fructose.' },
+        { stem: 'Kim loại nào sau đây nhẹ nhất (khối lượng riêng nhỏ nhất)?', options: ['Li', 'Na', 'K', 'Al'], answer: 0, explanation: 'Liti có $D\\approx0{,}53$ g/cm³, nhẹ nhất trong các kim loại.' },
+      ],
+    },
   ],
 
   ANH: [
