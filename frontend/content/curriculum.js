@@ -1017,14 +1017,75 @@ const CURRICULUM = {
       code: 'HOA', name: 'Hóa học', grade: 12,
       topics: [
         {
-          id: 't-hoa-este', title: 'Este – Lipit',
+          id: 't-hoa-c1', title: 'Chương 1 · Ester – Lipid',
           lessons: [
             {
-              id: 'l-hoa-este', title: 'Khái niệm & tính chất Este', level: 'CO_BAN',
+              id: 'l-hoa-este', title: 'Ester: khái niệm, danh pháp, tính chất', level: 'CO_BAN',
               html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Ester</em> là sản phẩm thay nhóm $-OH$ trong nhóm $-COOH$ của acid carboxylic bằng nhóm $-OR'$. Ester no, đơn chức, mạch hở có công thức $C_nH_{2n}O_2\\ (n\\ge2)$.</div>
                 <h2>Cốt lõi</h2>
-                <p>Este tạo thành khi thay nhóm $-OH$ của axit cacboxylic bằng nhóm $-OR$. Công thức đơn chức no: $C_nH_{2n}O_2$.</p>
-                <p>Phản ứng thủy phân trong môi trường kiềm (xà phòng hóa) tạo muối + ancol.</p>
+                <ul>
+                  <li><strong>Danh pháp:</strong> tên gốc $R'$ + tên gốc acid (đuôi "-at"). VD: $CH_3COOC_2H_5$ là <em>ethyl acetate</em>.</li>
+                  <li><strong>Điều chế (ester hóa):</strong> $RCOOH + R'OH \\xrightarrow{H_2SO_4,\\,t^\\circ} RCOOR' + H_2O$ (thuận nghịch).</li>
+                  <li><strong>Thủy phân trong kiềm (xà phòng hóa):</strong> $RCOOR' + NaOH \\xrightarrow{t^\\circ} RCOONa + R'OH$ (một chiều).</li>
+                </ul>
+                <h2>Nâng cao</h2>
+                <p>Ester thường có mùi thơm (hoa quả), nhẹ hơn nước, ít tan trong nước.</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Thủy phân $CH_3COOC_2H_5$ trong dung dịch $NaOH$.</p>
+                  <p><strong>Giải:</strong> $CH_3COOC_2H_5 + NaOH \\to CH_3COONa + C_2H_5OH$.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Viết công thức phân tử của ester no, đơn chức, mạch hở có 3 nguyên tử C.</p>
+                  <details><summary>Đáp án</summary><p>$C_3H_6O_2$ (ví dụ $HCOOC_2H_5$ hoặc $CH_3COOCH_3$).</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-hoa-lipid', title: 'Lipid – Chất béo', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Chất béo</em> là trieste của glycerol với các acid béo (triglyceride).</div>
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li>Acid béo no: acid stearic $C_{17}H_{35}COOH$, palmitic $C_{15}H_{31}COOH$; không no: oleic $C_{17}H_{33}COOH$.</li>
+                  <li><strong>Thủy phân trong kiềm</strong> tạo glycerol + muối của acid béo (xà phòng).</li>
+                  <li>Chất béo no → rắn; chất béo không no → lỏng (dầu).</li>
+                </ul>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Xà phòng hóa hoàn toàn chất béo tạo ra sản phẩm gì?</p>
+                  <p><strong>Giải:</strong> Glycerol $C_3H_5(OH)_3$ và muối natri của acid béo (xà phòng).</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Phản ứng hydrogen hóa chất béo lỏng (không no) cho sản phẩm gì?</p>
+                  <details><summary>Đáp án</summary><p>Chất béo rắn (no) — cơ sở sản xuất bơ nhân tạo, margarine.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-hoa-c2', title: 'Chương 2 · Carbohydrate',
+          lessons: [
+            {
+              id: 'l-hoa-glucose', title: 'Carbohydrate & Glucose', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Carbohydrate</em> (gluxit) là hợp chất hữu cơ tạp chức, công thức chung $C_n(H_2O)_m$. Phân loại: monosaccharide (glucose, fructose), disaccharide (saccharose), polysaccharide (tinh bột, cellulose).</div>
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li>Glucose & fructose: $C_6H_{12}O_6$. Saccharose: $C_{12}H_{22}O_{11}$. Tinh bột & cellulose: $(C_6H_{10}O_5)_n$.</li>
+                  <li>Glucose có 1 nhóm $-CHO$ ⇒ phản ứng <strong>tráng bạc</strong> với $AgNO_3/NH_3$, tạo $Ag$.</li>
+                  <li>Thủy phân tinh bột/cellulose/saccharose đều cho monosaccharide (glucose…).</li>
+                </ul>
+                <h2>Nâng cao</h2>
+                <p>Glucose có 5 nhóm $-OH$ và 1 nhóm $-CHO$ (dạng mạch hở), thể hiện tính chất của poliol và aldehyde.</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Vì sao glucose tham gia phản ứng tráng bạc?</p>
+                  <p><strong>Giải:</strong> Do có nhóm chức aldehyde $-CHO$ bị oxi hóa, khử $Ag^+$ thành $Ag$.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Viết công thức phân tử của glucose và saccharose.</p>
+                  <details><summary>Đáp án</summary><p>Glucose $C_6H_{12}O_6$; saccharose $C_{12}H_{22}O_{11}$.</p></details>
+                </div>
               `,
             },
           ],
