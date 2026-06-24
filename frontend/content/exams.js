@@ -755,6 +755,21 @@ const EXAMS = {
         { stem: 'If I ____ you, I would apologize to her.', options: ['am', 'was', 'were', 'be'], answer: 2, explanation: 'Câu điều kiện loại 2: If I were you…' },
       ],
     },
+    {
+      examId: 'anh-kt45-8', title: 'Kiểm tra 45′ #8 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She has lived in this town ____ 2010.', options: ['for', 'since', 'during', 'by'], answer: 1, explanation: 'since + mốc thời gian (hiện tại hoàn thành).' },
+        { stem: 'The book ____ I borrowed from the library was fascinating.', options: ['who', 'where', 'whose', 'which'], answer: 3, explanation: 'which thay cho vật, làm tân ngữ.' },
+        { stem: 'If it ____ tomorrow, we will cancel the trip.', options: ['rains', 'rained', 'will rain', 'would rain'], answer: 0, explanation: 'Câu điều kiện loại 1: If + hiện tại đơn, will + V.' },
+        { stem: 'He speaks English ____ than his brother.', options: ['fluent', 'fluently', 'most fluently', 'more fluently'], answer: 3, explanation: 'So sánh hơn của trạng từ dài: more fluently.' },
+        { stem: 'They ____ the project by next Friday.', options: ['finish', 'will finish', 'will have finished', 'finished'], answer: 2, explanation: 'Tương lai hoàn thành: will have + V3 (by + mốc).' },
+        { stem: "I'm looking forward to ____ you again soon.", options: ['seeing', 'see', 'seen', 'saw'], answer: 0, explanation: 'look forward to + V-ing.' },
+        { stem: 'Neither John nor his friends ____ coming to the party.', options: ['is', 'am', 'are', 'was'], answer: 2, explanation: 'Neither…nor… chia theo chủ ngữ gần nhất (friends ⇒ are).' },
+        { stem: "This is the ____ film I've ever seen.", options: ['most boring', 'boring', 'more boring', 'boringest'], answer: 0, explanation: 'So sánh nhất của tính từ dài: the most boring.' },
+        { stem: "You ____ smoke here; it's strictly prohibited.", options: ['must', "mustn't", 'should', "needn't"], answer: 1, explanation: "mustn't = cấm (không được phép)." },
+        { stem: 'Hardly ____ when the phone rang.', options: ['I had arrived', 'had I arrived', 'I arrived', 'did I arrived'], answer: 1, explanation: 'Đảo ngữ với Hardly: Hardly + had + S + V3.' },
+      ],
+    },
   ],
 
   TOEIC: [
