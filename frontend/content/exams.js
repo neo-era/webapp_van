@@ -539,6 +539,21 @@ const EXAMS = {
         { stem: 'Năng lượng tỏa ra của phản ứng hạt nhân (khi khối lượng giảm) được tính bằng?', options: ['$\\Delta E=(m_{sau}-m_{trước})c^2$', '$\\Delta E=(m_{trước}-m_{sau})c^2$', '$\\Delta E=\\Delta m\\cdot c$', '$\\Delta E=\\Delta m/c^2$'], answer: 1, explanation: 'Năng lượng tỏa $=(m_{trước}-m_{sau})c^2>0$.' },
       ],
     },
+    {
+      examId: 'ly-kt45-10', title: 'Kiểm tra 45′ #10 — Vật lí 12', durationMin: 45,
+      questions: [
+        { stem: 'Nhiệt hóa hơi riêng của nước $L=2{,}3\\cdot10^6$ J/kg. Nhiệt tỏa ra khi $1$ kg hơi nước ở $100$ °C ngưng tụ thành nước ở $100$ °C?', options: ['$2{,}3\\cdot10^5$ J', '$4{,}6\\cdot10^6$ J', '$2{,}3\\cdot10^6$ J', '$1{,}15\\cdot10^6$ J'], answer: 2, explanation: '$Q=Lm=2{,}3\\cdot10^6\\cdot1=2{,}3\\cdot10^6$ J.' },
+        { stem: 'Trong hệ SI, đơn vị của áp suất là?', options: ['Newton', 'Joule', 'Watt', 'Pascal'], answer: 3, explanation: 'Áp suất đo bằng Pascal (Pa $=N/m^2$).' },
+        { stem: 'Khi nhiệt độ của khối khí tăng, các phân tử khí chuyển động?', options: ['chậm hơn', 'nhanh hơn', 'đứng yên', 'không đổi tốc độ'], answer: 1, explanation: 'Nhiệt độ tỉ lệ với động năng trung bình ⇒ phân tử chuyển động nhanh hơn.' },
+        { stem: 'Hai dây dẫn song song mang dòng điện cùng chiều thì?', options: ['hút nhau', 'đẩy nhau', 'không tương tác', 'vuông góc nhau'], answer: 0, explanation: 'Dòng cùng chiều ⇒ hai dây hút nhau.' },
+        { stem: 'Đơn vị của cảm ứng từ $B$ là?', options: ['Tesla', 'Weber', 'Henry', 'Faraday'], answer: 0, explanation: 'Cảm ứng từ đo bằng Tesla (T).' },
+        { stem: 'Chu kì bán rã là $4$ ngày. Sau $12$ ngày, số hạt nhân còn lại bằng?', options: ['$1/2$', '$1/4$', '$1/8$', '$1/16$'], answer: 2, explanation: '$12/4=3$ chu kì ⇒ $(1/2)^3=1/8$.' },
+        { stem: 'Đại lượng nào được bảo toàn trong phản ứng hạt nhân?', options: ['động năng', 'số neutron riêng', 'khối lượng nghỉ', 'số nuclôn (số khối A)'], answer: 3, explanation: 'Số nuclôn và điện tích được bảo toàn; khối lượng nghỉ thì không.' },
+        { stem: 'Các đồng vị của cùng một nguyên tố có cùng?', options: ['số neutron', 'số khối', 'số proton', 'số electron lớp ngoài cùng'], answer: 2, explanation: 'Đồng vị cùng số proton (Z), khác số neutron.' },
+        { stem: 'Nén đẳng nhiệt một lượng khí lí tưởng sao cho thể tích tăng gấp đôi thì áp suất?', options: ['giảm còn một nửa', 'tăng gấp đôi', 'không đổi', 'tăng 4 lần'], answer: 0, explanation: '$pV=$ const, $V$ tăng 2 lần ⇒ $p$ giảm còn $1/2$.' },
+        { stem: 'Nhiệt truyền từ vật nóng sang vật lạnh cho đến khi?', options: ['vật lạnh nóng hơn vật nóng', 'hai vật đạt cân bằng nhiệt', 'truyền mãi mãi', 'nhiệt truyền ngược lại'], answer: 1, explanation: 'Quá trình dừng khi hai vật cùng nhiệt độ (cân bằng nhiệt).' },
+      ],
+    },
   ],
 
   HOA: [
