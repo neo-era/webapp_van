@@ -512,6 +512,21 @@ const EXAMS = {
         { stem: 'Phản ứng trùng ngưng thường loại ra phân tử?', options: ['$CO_2$', '$O_2$', '$H_2O$', '$H_2$'], answer: 2, explanation: 'Trùng ngưng loại $H_2O$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-4', title: 'Kiểm tra 45′ #4 — Hóa hữu cơ & Kim loại', durationMin: 45,
+      questions: [
+        { stem: 'Ester thường có mùi đặc trưng gì?', options: ['khai', 'thơm (hoa quả)', 'hắc', 'không mùi'], answer: 1, explanation: 'Nhiều ester có mùi thơm.' },
+        { stem: 'Công thức chung của carbohydrate là?', options: ['$C_nH_{2n}$', '$C_nH_{2n+2}$', '$C_n(H_2O)_m$', '$C_nH_{2n}O$'], answer: 2, explanation: 'Carbohydrate: $C_n(H_2O)_m$.' },
+        { stem: 'Công thức phân tử của cellulose là?', options: ['$C_6H_{12}O_6$', '$C_{12}H_{22}O_{11}$', '$C_6H_6$', '$(C_6H_{10}O_5)_n$'], answer: 3, explanation: 'Cellulose: $(C_6H_{10}O_5)_n$.' },
+        { stem: 'Amine có N gắn trực tiếp với 2 gốc hydrocarbon là amine bậc?', options: ['bậc 1', 'bậc 2', 'bậc 3', 'bậc 4'], answer: 1, explanation: 'Bậc = số gốc gắn vào N.' },
+        { stem: 'Tơ nylon được điều chế bằng phản ứng?', options: ['trùng ngưng', 'trùng hợp', 'thủy phân', 'oxi hóa'], answer: 0, explanation: 'Nylon tạo bằng trùng ngưng.' },
+        { stem: 'Kim loại dẫn điện tốt nhất là?', options: ['Cu', 'Fe', 'Ag', 'Al'], answer: 2, explanation: 'Bạc (Ag) dẫn điện tốt nhất.' },
+        { stem: 'Phản ứng nào dùng để nhận biết glucose?', options: ['quỳ tím', 'tráng bạc', 'đốt cháy', 'màu biure'], answer: 1, explanation: 'Glucose có $-CHO$ ⇒ tráng bạc.' },
+        { stem: 'Amino acid chứa các nhóm chức nào?', options: ['chỉ $-OH$', 'chỉ $-COOH$', 'chỉ $-NH_2$', '$-NH_2$ và $-COOH$'], answer: 3, explanation: 'Amino acid lưỡng tính.' },
+        { stem: 'Đốt cháy ester no, đơn chức, mạch hở: quan hệ $n_{CO_2}$ và $n_{H_2O}$?', options: ['bằng nhau', '$n_{CO_2}>n_{H_2O}$', '$n_{CO_2}<n_{H_2O}$', 'không xác định'], answer: 0, explanation: '$C_nH_{2n}O_2 \\to n\\,CO_2 + n\\,H_2O$.' },
+        { stem: 'Kim loại kiềm thổ thuộc nhóm nào?', options: ['IA', 'IIIA', 'IIA', 'VIIIA'], answer: 2, explanation: 'Kim loại kiềm thổ: nhóm IIA.' },
+      ],
+    },
   ],
 
   ANH: [
