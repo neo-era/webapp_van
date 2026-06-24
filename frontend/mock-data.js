@@ -74,6 +74,8 @@ const MOCK = {
     { subjectCode: 'LY', name: 'Vật lí', grades: ['12'], category: 'TU_CHON', active: true },
     { subjectCode: 'HOA', name: 'Hóa học', grades: ['12'], category: 'TU_CHON', active: true },
     { subjectCode: 'ANH', name: 'Tiếng Anh', grades: ['12'], category: 'BAT_BUOC', active: true },
+    { subjectCode: 'IELTS', name: 'Luyện thi IELTS', grades: ['12'], category: 'TU_CHON', active: true },
+    { subjectCode: 'TOEIC', name: 'Luyện thi TOEIC', grades: ['12'], category: 'TU_CHON', active: true },
   ],
   topics: {
     TOAN: [

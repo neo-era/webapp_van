@@ -530,9 +530,14 @@ async function renderLearn() {
   }
 
   if (v.view === 'topics') {
+    const eng = engTarget(v.subjectCode);
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
         <h2>${v.subjectName}</h2><p>Chọn chủ đề</p></div>
+      ${eng ? `<div class="countdown section-block" style="padding:14px">
+          <div style="font-size:1.05rem;font-weight:700">🎯 Mục tiêu: ${eng}</div>
+          <div class="cheer" style="margin-top:4px">Luyện đều mỗi ngày để tiến bộ vững chắc!</div></div>
+        <button class="btn btn-ghost btn-block" style="margin-bottom:8px" onclick="learnOpenWriting()">✍️ Luyện Writing (AI chấm)</button>` : ''}
       <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="learnOpenExams()">📝 Bài kiểm tra môn ${v.subjectName}</button>
       <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
     try {
@@ -630,6 +635,22 @@ async function renderLearn() {
         </div>`).join('')}
       <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="learnStartExam('${v.examId}','${(v.examTitle || '').replace(/'/g, '')}')">Làm lại</button>`;
     $$('#screen-learn [data-md]').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
+    return;
+  }
+
+  if (v.view === 'writing') {
+    const prompt = v.subjectCode === 'TOEIC'
+      ? 'Viết email cho đồng nghiệp đề xuất một cuộc họp về dự án mới (50–80 từ).'
+      : 'Some people believe technology makes life more complex. To what extent do you agree or disagree? (viết khoảng 150–250 từ)';
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
+        <h2>Luyện Writing (AI chấm)</h2><p>🎯 ${engTarget(v.subjectCode)}</p></div>
+      <div class="card section-block"><div class="section-title">Đề bài</div>
+        <p id="writing-prompt">${prompt}</p></div>
+      <label class="field"><span>Bài làm của bạn</span>
+        <textarea id="writing-essay" rows="9" placeholder="Viết bài tại đây…"></textarea></label>
+      <button class="btn btn-primary btn-block" style="margin-top:10px" onclick="learnSubmitWriting()">Gửi AI chấm</button>
+      <div id="writing-feedback" class="card lesson-content hidden" style="margin-top:14px"></div>`;
     return;
   }
 
@@ -753,6 +774,29 @@ function learnBack(view) {
   if (view === 'subjects') App.state.learn = { view: 'subjects' };
   renderLearn();
 }
+/* ---- Luyện thi IELTS/TOEIC ---- */
+function engTarget(code) {
+  if (code === 'IELTS') return 'IELTS 4.5 → 6.5';
+  if (code === 'TOEIC') return 'TOEIC 450 → 650';
+  return '';
+}
+function learnOpenWriting() {
+  Object.assign(App.state.learn, { view: 'writing' });
+  renderLearn();
+}
+async function learnSubmitWriting() {
+  const v = App.state.learn;
+  const essay = $('#writing-essay').value.trim();
+  if (!essay) { showToast('Hãy viết bài trước', 'error'); return; }
+  const fb = $('#writing-feedback');
+  fb.classList.remove('hidden');
+  fb.innerHTML = '<div class="muted">Giáo viên AI đang chấm bài…</div>';
+  try {
+    const r = await Api.call('gradeWriting', { exam: v.subjectCode, prompt: $('#writing-prompt').textContent, essay: essay });
+    renderMarkdown(r.feedback, fb);
+  } catch (e) { fb.innerHTML = `<div class="empty">${e.message}</div>`; }
+}
+
 /* ---- Bài kiểm tra ---- */
 function learnOpenExams() {
   Object.assign(App.state.learn, { view: 'exams' });

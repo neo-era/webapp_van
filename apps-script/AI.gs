@@ -142,6 +142,28 @@ function generateQuestions(req) {
   return jsonOk({ created: n });
 }
 
+/** AI chấm bài Writing theo tiêu chí IELTS/TOEIC + góp ý. */
+function gradeWriting(req) {
+  const user = requireAuth(req.token);
+  const essay = String(req.essay || '').trim();
+  if (!essay) return jsonError('Chưa có bài viết để chấm');
+  if (essay.length < 30) return jsonError('Bài viết quá ngắn để chấm');
+  if (aiCountToday_(user.userId) >= AI_DAILY_LIMIT) return jsonError('Đã đạt giới hạn lượt AI hôm nay');
+
+  const exam = req.exam === 'TOEIC' ? 'TOEIC' : 'IELTS';
+  const criteria = exam === 'IELTS'
+    ? 'Chấm theo 4 tiêu chí IELTS Writing (Task Response, Coherence & Cohesion, Lexical Resource, Grammatical Range & Accuracy), mỗi tiêu chí cho band 0-9 (bước 0.5) và band tổng.'
+    : 'Đánh giá theo thang TOEIC Writing, ước lượng mức điểm và nhận xét.';
+  const system = 'Bạn là giám khảo chấm thi ' + exam + ' Writing giàu kinh nghiệm. Trả lời bằng tiếng Việt, ngắn gọn, theo bố cục Markdown. ' +
+    criteria + ' Sau đó liệt kê: **3 điểm mạnh**, **3 điểm cần cải thiện**, và **1 câu viết lại mẫu** tốt hơn.';
+  const prompt = 'Đề bài: ' + (req.prompt || '(không nêu)') + '\n\nBài làm của học sinh:\n"""\n' + essay + '\n"""';
+
+  const result = callClaude_({ model: AI_MODELS.smart, system: system, messages: [{ role: 'user', content: prompt }], maxTokens: 1400 });
+  appendRow('AIChats', { msgId: genId('m'), studentId: user.userId, context: 'writing', role: 'USER', content: essay.slice(0, 800), model: result.model, tokens: 0, createdAt: now() });
+  appendRow('AIChats', { msgId: genId('m'), studentId: user.userId, context: 'writing', role: 'ASSISTANT', content: result.text, model: result.model, tokens: result.tokens, createdAt: now() });
+  return jsonOk({ feedback: result.text });
+}
+
 /** Kiểm tra cấu hình khóa AI (cho phép test nhanh). */
 function aiStatus(req) {
   requireAuth(req.token);

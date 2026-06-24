@@ -47,6 +47,7 @@ function route(action, req) {
   seedIfEmpty();           // tự seed dữ liệu demo nếu DB trống
   seedCatalogIfEmpty();    // tự seed danh mục môn/chủ đề/bài giảng mẫu
   seedQuestionsIfEmpty();  // tự seed câu hỏi + đề mẫu
+  seedEnglishIfEmpty();    // tự seed nội dung IELTS/TOEIC
 
   switch (action) {
     // --- Hệ thống ---
@@ -100,6 +101,7 @@ function route(action, req) {
     case 'aiChat':            return aiChat(req);
     case 'generateLesson':    return generateLesson(req);
     case 'generateQuestions': return generateQuestions(req);
+    case 'gradeWriting':      return gradeWriting(req);
     case 'aiStatus':          return aiStatus(req);
 
     // --- v2.0 Ngân hàng đề (Questions.gs / Exams.gs) ---

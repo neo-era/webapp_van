@@ -111,6 +111,8 @@ const MockApi = {
         return { lessonId: 'l' + Date.now(), title: payload.title, status: 'DRAFT', source: 'AI', contentMd: '## Cốt lõi\n*(nháp demo)*' };
       case 'generateQuestions':
         return { created: 0 };
+      case 'gradeWriting':
+        return { feedback: '*(Bản demo — cần cấu hình Claude API để chấm thật)*\n\n**Band tổng (ước lượng): 6.0**\n\n**Điểm mạnh:** bố cục rõ, có ví dụ.\n\n**Cần cải thiện:** đa dạng từ vựng, nối câu, ngữ pháp phức.\n\n**Câu mẫu nâng cấp:** *Technology has undeniably reshaped the way we live.*' };
 
       case 'getExams':
         return MOCK.exams.filter((e) => !payload.subjectCode || e.subjectCode === payload.subjectCode);

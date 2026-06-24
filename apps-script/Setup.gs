@@ -177,12 +177,53 @@ function seedQuestionsIfEmpty() {
   });
 }
 
+/** Seed nội dung luyện thi IELTS & TOEIC (nếu chưa có môn IELTS). */
+function seedEnglishIfEmpty() {
+  if (getRows('Subjects').some(function (s) { return String(s.subjectCode) === 'IELTS'; })) return;
+  const t = now();
+
+  appendRow('Subjects', { subjectCode: 'IELTS', name: 'Luyện thi IELTS', grades: '10,11,12', category: 'TU_CHON', active: 'TRUE' });
+  appendRow('Subjects', { subjectCode: 'TOEIC', name: 'Luyện thi TOEIC', grades: '10,11,12', category: 'TU_CHON', active: 'TRUE' });
+
+  function topic(code, title, order) {
+    const id = genId('t');
+    appendRow('Topics', { topicId: id, subjectCode: code, grade: 12, parentId: '', title: title, order: order });
+    return id;
+  }
+  topic('IELTS', 'Listening', 1);
+  const iR = topic('IELTS', 'Reading', 2);
+  topic('IELTS', 'Writing', 3);
+  topic('IELTS', 'Speaking', 4);
+  topic('TOEIC', 'Listening (Part 1-4)', 1);
+  const tR = topic('TOEIC', 'Reading (Part 5-7)', 2);
+
+  appendRow('Lessons', {
+    lessonId: genId('l'), subjectCode: 'IELTS', grade: 12, topicId: iR, title: 'Kỹ thuật Skimming & Scanning',
+    level: 'CO_BAN', skill: 'Reading',
+    contentMd: '## Cốt lõi\n- **Skimming**: đọc lướt để nắm ý chính của đoạn.\n- **Scanning**: dò nhanh tìm thông tin cụ thể (số liệu, tên riêng).\n\n## Nâng cao\nPhân bổ ~20 phút/passage; đọc câu hỏi trước, gạch từ khóa.',
+    order: 1, status: 'PUBLISHED', source: 'MANUAL', createdBy: 'seed', updatedAt: t,
+  });
+  appendRow('Lessons', {
+    lessonId: genId('l'), subjectCode: 'TOEIC', grade: 12, topicId: tR, title: 'Part 5: Ngữ pháp & từ vựng',
+    level: 'CO_BAN', skill: 'Reading',
+    contentMd: '## Cốt lõi\nXác định **loại từ** cần điền (danh/động/tính/trạng từ) dựa vào vị trí trong câu.\n\n## Nâng cao\nBẫy hay gặp: cùng họ từ (*success / successful / successfully*).',
+    order: 1, status: 'PUBLISHED', source: 'MANUAL', createdBy: 'seed', updatedAt: t,
+  });
+
+  const q1 = genId('q');
+  appendRow('Questions', { questionId: q1, subjectCode: 'TOEIC', grade: 12, topicId: tR, type: 'MCQ', difficulty: 'TH', level: 'CO_BAN', stem: 'The report must be submitted ____ Friday.', options: JSON.stringify(['in', 'on', 'at', 'by']), answer: '3', explanation: '"by Friday" = hạn chót đến thứ Sáu.', status: 'PUBLISHED', source: 'MANUAL' });
+  const q2 = genId('q');
+  appendRow('Questions', { questionId: q2, subjectCode: 'TOEIC', grade: 12, topicId: tR, type: 'MCQ', difficulty: 'NB', level: 'CO_BAN', stem: 'She is responsible ____ marketing.', options: JSON.stringify(['for', 'to', 'with', 'of']), answer: '0', explanation: 'be responsible **for** something.', status: 'PUBLISHED', source: 'MANUAL' });
+  appendRow('Exams', { examId: genId('e'), title: 'TOEIC Reading – Mini test', subjectCode: 'TOEIC', grade: 12, kind: 'PRACTICE', questionIds: JSON.stringify([q1, q2]), durationMin: 10, level: 'CO_BAN', published: 'TRUE' });
+}
+
 /** Có thể chạy tay từ trình Apps Script nếu muốn khởi tạo ngay. */
 function initDatabase() {
   ensureSheets();
   seedIfEmpty();
   seedCatalogIfEmpty();
   seedQuestionsIfEmpty();
+  seedEnglishIfEmpty();
   Logger.log('Khởi tạo xong. Users: ' + getRows('Users').length + ', Subjects: ' + getRows('Subjects').length + ', Questions: ' + getRows('Questions').length);
 }
 
