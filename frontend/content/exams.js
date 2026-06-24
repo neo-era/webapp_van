@@ -800,6 +800,21 @@ const EXAMS = {
         { stem: 'Hardly ____ when the phone rang.', options: ['I had arrived', 'had I arrived', 'I arrived', 'did I arrived'], answer: 1, explanation: 'Đảo ngữ với Hardly: Hardly + had + S + V3.' },
       ],
     },
+    {
+      examId: 'anh-kt45-9', title: 'Kiểm tra 45′ #9 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'The house ____ in 1990 is still standing.', options: ['building', 'build', 'builds', 'built'], answer: 3, explanation: 'Mệnh đề quan hệ rút gọn bị động: built = which was built.' },
+        { stem: 'I wish I ____ more time to finish the project.', options: ['have', 'had', 'will have', 'having'], answer: 1, explanation: 'wish + quá khứ đơn (ước hiện tại).' },
+        { stem: 'She is the woman ____ son won the first prize.', options: ['whose', 'who', 'whom', 'which'], answer: 0, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'He denied ____ the money from the drawer.', options: ['to steal', 'steal', 'stolen', 'stealing'], answer: 3, explanation: 'deny + V-ing.' },
+        { stem: 'By 2030, scientists ____ a cure for the disease.', options: ['will have found', 'find', 'will find', 'found'], answer: 0, explanation: 'Tương lai hoàn thành: By + mốc, will have + V3.' },
+        { stem: "Choose the synonym of 'enormous'.", options: ['tiny', 'huge', 'small', 'narrow'], answer: 1, explanation: 'enormous ≈ huge (khổng lồ).' },
+        { stem: 'The teacher made the students ____ harder.', options: ['to work', 'working', 'worked', 'work'], answer: 3, explanation: 'make + O + V nguyên thể (không to).' },
+        { stem: 'Not until midnight ____ home.', options: ['he went', 'did he go', 'he goes', 'goes he'], answer: 1, explanation: 'Đảo ngữ với "Not until…": + trợ động từ + S + V.' },
+        { stem: "Choose the antonym of 'increase' (verb).", options: ['decrease', 'rise', 'grow', 'expand'], answer: 0, explanation: 'increase ↔ decrease (giảm).' },
+        { stem: 'If she ____ harder, she would have passed the exam.', options: ['studied', 'has studied', 'had studied', 'studies'], answer: 2, explanation: 'Câu điều kiện loại 3: If + had + V3, would have + V3.' },
+      ],
+    },
   ],
 
   TOEIC: [
