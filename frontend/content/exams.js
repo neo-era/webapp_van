@@ -1205,6 +1205,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'narrow'.", options: ['thin', 'wide', 'slim', 'tight'], answer: 1, explanation: 'narrow ↔ wide (rộng).' },
       ],
     },
+    {
+      examId: 'anh-kt45-18', title: 'Kiểm tra 45′ #18 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'Look! The bus ____.', options: ['is coming', 'comes', 'came', 'come'], answer: 0, explanation: 'Hành động đang diễn ra (Look!) ⇒ hiện tại tiếp diễn.' },
+        { stem: "I haven't seen him ____ last week.", options: ['for', 'ago', 'during', 'since'], answer: 3, explanation: 'since + mốc thời gian.' },
+        { stem: 'She told me she ____ tired.', options: ['was', 'is', 'be', 'been'], answer: 0, explanation: 'Câu tường thuật lùi thì: was.' },
+        { stem: "There isn't ____ milk in the fridge.", options: ['many', 'few', 'much', 'a few'], answer: 2, explanation: 'milk không đếm được ⇒ much.' },
+        { stem: 'He runs ____ than his best friend.', options: ['fast', 'fastest', 'more fast', 'faster'], answer: 3, explanation: 'So sánh hơn trạng từ ngắn: faster.' },
+        { stem: 'Would you mind ____ the door, please?', options: ['to close', 'closing', 'close', 'closed'], answer: 1, explanation: 'Would you mind + V-ing.' },
+        { stem: "Choose the synonym of 'big'.", options: ['tiny', 'small', 'little', 'large'], answer: 3, explanation: 'big ≈ large (to, lớn).' },
+        { stem: 'He insisted on ____ for the meal.', options: ['to pay', 'paying', 'pay', 'paid'], answer: 1, explanation: 'insist on + V-ing.' },
+        { stem: 'Neither Tom ____ Jerry came to the party.', options: ['or', 'and', 'nor', 'but'], answer: 2, explanation: 'Cấu trúc Neither … nor …' },
+        { stem: "Choose the antonym of 'fast'.", options: ['slow', 'quick', 'rapid', 'swift'], answer: 0, explanation: 'fast ↔ slow (chậm).' },
+      ],
+    },
   ],
 
   TOEIC: [
