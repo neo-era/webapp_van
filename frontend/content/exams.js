@@ -1250,6 +1250,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'fast'.", options: ['slow', 'quick', 'rapid', 'swift'], answer: 0, explanation: 'fast ↔ slow (chậm).' },
       ],
     },
+    {
+      examId: 'anh-kt45-19', title: 'Kiểm tra 45′ #19 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She has been working here ____ ten years.', options: ['since', 'in', 'ago', 'for'], answer: 3, explanation: 'for + khoảng thời gian.' },
+        { stem: 'If he ____ earlier, he would have caught the train.', options: ['leaves', 'left', 'had left', 'has left'], answer: 2, explanation: 'Câu điều kiện loại 3: had + V3.' },
+        { stem: 'The teacher asked us ____ quiet during the exam.', options: ['to be', 'be', 'being', 'been'], answer: 0, explanation: 'ask sb to + V.' },
+        { stem: 'He can swim very well, ____?', options: ['can he', "can't he", 'does he', "doesn't he"], answer: 1, explanation: 'Câu hỏi đuôi: khẳng định ⇒ phủ định (can’t he).' },
+        { stem: "There's little water left, ____?", options: ["isn't there", 'are there', "aren't there", 'is there'], answer: 3, explanation: '"little" mang nghĩa phủ định ⇒ đuôi khẳng định (is there).' },
+        { stem: 'She suggested that we ____ a taxi to the airport.', options: ['take', 'takes', 'took', 'taking'], answer: 0, explanation: 'suggest that + S + V nguyên thể (giả định).' },
+        { stem: "Choose the synonym of 'angry'.", options: ['calm', 'furious', 'happy', 'pleased'], answer: 1, explanation: 'angry ≈ furious (giận dữ).' },
+        { stem: "He's the man ____ car was stolen last night.", options: ['whose', 'who', 'that', 'which'], answer: 0, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: "It's no good ____ about it now.", options: ['to worry', 'worry', 'worried', 'worrying'], answer: 3, explanation: "It's no good + V-ing." },
+        { stem: "Choose the antonym of 'win'.", options: ['gain', 'lose', 'succeed', 'achieve'], answer: 1, explanation: 'win ↔ lose (thua).' },
+      ],
+    },
   ],
 
   TOEIC: [
