@@ -845,6 +845,21 @@ const EXAMS = {
         { stem: 'If she ____ harder, she would have passed the exam.', options: ['studied', 'has studied', 'had studied', 'studies'], answer: 2, explanation: 'Câu điều kiện loại 3: If + had + V3, would have + V3.' },
       ],
     },
+    {
+      examId: 'anh-kt45-10', title: 'Kiểm tra 45′ #10 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She asked me ____ I had finished the report.', options: ['that', 'what', 'which', 'if'], answer: 3, explanation: 'Câu hỏi gián tiếp Yes/No dùng if/whether.' },
+        { stem: 'The more he earns, the more he ____.', options: ['spend', 'spends', 'spending', 'spent'], answer: 1, explanation: 'Chủ ngữ "he" + hiện tại đơn ⇒ spends.' },
+        { stem: 'I have never seen ____ a beautiful place before.', options: ['such', 'so', 'very', 'too'], answer: 0, explanation: 'such + (a) + adj + noun.' },
+        { stem: 'You had better ____ a doctor about that cough.', options: ['to see', 'seeing', 'see', 'saw'], answer: 2, explanation: 'had better + động từ nguyên thể (không to).' },
+        { stem: 'It was John ____ broke the window yesterday.', options: ['who', 'which', 'whom', 'whose'], answer: 0, explanation: 'Câu chẻ (cleft) nhấn mạnh người ⇒ who.' },
+        { stem: 'By the time you read this letter, I ____.', options: ['leave', 'left', 'am leaving', 'will have left'], answer: 3, explanation: 'Tương lai hoàn thành: will have + V3.' },
+        { stem: 'He suggested that we ____ early to avoid traffic.', options: ['leave', 'leaves', 'left', 'leaving'], answer: 0, explanation: 'suggest that + S + V nguyên thể (giả định).' },
+        { stem: "Choose the synonym of 'reluctant'.", options: ['eager', 'unwilling', 'willing', 'keen'], answer: 1, explanation: 'reluctant ≈ unwilling (miễn cưỡng).' },
+        { stem: 'Despite ____ hard, he failed the final test.', options: ['he worked', 'work', 'to work', 'working'], answer: 3, explanation: 'Despite + V-ing/N.' },
+        { stem: "Choose the antonym of 'permanent'.", options: ['eternal', 'temporary', 'constant', 'durable'], answer: 1, explanation: 'permanent ↔ temporary (tạm thời).' },
+      ],
+    },
   ],
 
   TOEIC: [
