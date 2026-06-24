@@ -2047,6 +2047,21 @@ const EXAMS = {
         { stem: 'Such was her skill ____ she won the match easily.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Such … that … (kết quả).' },
       ],
     },
+    {
+      examId: 'ielts-kt-22', title: 'IELTS – Vocabulary & Grammar #22', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "endeavor".', options: ['attempt', 'give up', 'quit', 'abandon'], answer: 0, explanation: 'endeavor ≈ attempt (cố gắng).' },
+        { stem: 'Choose the synonym of "prevalent".', options: ['widespread', 'rare', 'scarce', 'uncommon'], answer: 0, explanation: 'prevalent ≈ widespread (phổ biến).' },
+        { stem: 'Choose the antonym of "consistent".', options: ['steady', 'reliable', 'stable', 'inconsistent'], answer: 3, explanation: 'consistent ↔ inconsistent (không nhất quán).' },
+        { stem: 'Not until the deadline approached ____ working hard.', options: ['they started', 'did they start', 'they start', 'start they'], answer: 1, explanation: 'Đảo ngữ với "Not until…": + did + S + V.' },
+        { stem: 'Choose the synonym of "augment".', options: ['increase', 'reduce', 'decrease', 'shrink'], answer: 0, explanation: 'augment ≈ increase (tăng thêm).' },
+        { stem: 'The committee, ____ I serve, meets every week.', options: ['which', 'on which', 'that', 'who'], answer: 1, explanation: 'on which = giới từ + đại từ quan hệ (serve on a committee).' },
+        { stem: 'Choose the antonym of "fertile".', options: ['rich', 'productive', 'fruitful', 'barren'], answer: 3, explanation: 'fertile ↔ barren (cằn cỗi).' },
+        { stem: 'Were the weather better, we ____ go out for a walk.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 2: Were … would + V.' },
+        { stem: 'Choose the synonym of "conspicuous".', options: ['hidden', 'invisible', 'obscure', 'noticeable'], answer: 3, explanation: 'conspicuous ≈ noticeable (dễ thấy).' },
+        { stem: 'So rare is this species ____ it is strictly protected.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
