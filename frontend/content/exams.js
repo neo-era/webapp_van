@@ -599,6 +599,21 @@ const EXAMS = {
         { stem: 'Lực Lorentz tác dụng lên hạt mang điện đạt cực đại khi vận tốc và $\\vec B$?', options: ['song song', 'vuông góc', 'cùng chiều', 'ngược chiều'], answer: 1, explanation: '$f=qvB\\sin\\theta$ cực đại khi $\\theta=90^\\circ$ (vuông góc).' },
       ],
     },
+    {
+      examId: 'ly-kt45-14', title: 'Kiểm tra 45′ #14 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng áp có $V=300\\ cm^3$ ở $300$ K. Đun đến $400$ K, thể tích sau?', options: ['$350\\ cm^3$', '$450\\ cm^3$', '$600\\ cm^3$', '$400\\ cm^3$'], answer: 3, explanation: '$V_2=V_1T_2/T_1=300\\cdot400/300=400\\ cm^3$.' },
+        { stem: 'Đun $500$ g nước ($c=4200$) từ $20$ °C lên $80$ °C cần nhiệt lượng?', options: ['$126$ kJ', '$63$ kJ', '$252$ kJ', '$12{,}6$ kJ'], answer: 0, explanation: '$Q=0{,}5\\cdot4200\\cdot60=126000$ J $=126$ kJ.' },
+        { stem: 'Cảm ứng từ tại tâm vòng dây tròn tỉ lệ thuận với?', options: ['bình phương dòng điện', 'nghịch đảo dòng điện', 'cường độ dòng điện', 'không phụ thuộc dòng điện'], answer: 2, explanation: '$B=2\\pi\\cdot10^{-7}\\dfrac{NI}{R}$ ⇒ tỉ lệ thuận với $I$.' },
+        { stem: 'Electron ($q=1{,}6\\cdot10^{-19}$ C) tăng tốc qua hiệu điện thế $100$ V thu được động năng?', options: ['$1{,}6\\cdot10^{-19}$ J', '$1{,}6\\cdot10^{-21}$ J', '$100$ J', '$1{,}6\\cdot10^{-17}$ J'], answer: 3, explanation: '$W=qU=1{,}6\\cdot10^{-19}\\cdot100=1{,}6\\cdot10^{-17}$ J.' },
+        { stem: 'Hạt nhân $^{238}_{92}U$ sau $1$ phóng xạ $\\alpha$ và $2$ phóng xạ $\\beta^-$ có số proton?', options: ['$88$', '$92$', '$90$', '$94$'], answer: 1, explanation: '$\\alpha$: $Z-2$; mỗi $\\beta^-$: $Z+1$ ⇒ $92-2+2=92$.' },
+        { stem: 'Hạt nhân He có năng lượng liên kết $28$ MeV và $4$ nuclôn. Năng lượng liên kết riêng?', options: ['$7$ MeV', '$4$ MeV', '$28$ MeV', '$14$ MeV'], answer: 0, explanation: '$W_{lk}/A=28/4=7$ MeV/nuclôn.' },
+        { stem: 'Bóng đèn $60$ W dùng trong $2$ giờ tiêu thụ điện năng?', options: ['$60$ Wh', '$120$ Wh', '$30$ Wh', '$240$ Wh'], answer: 1, explanation: '$A=Pt=60\\cdot2=120$ Wh.' },
+        { stem: 'Nén đẳng nhiệt sao cho thể tích còn $1/3$ thì áp suất khí?', options: ['tăng 3 lần', 'giảm 3 lần', 'không đổi', 'tăng 9 lần'], answer: 0, explanation: '$pV=$ const, $V$ còn $1/3$ ⇒ $p$ tăng 3 lần.' },
+        { stem: 'Số neutron trong hạt nhân $^{238}_{92}U$?', options: ['$92$', '$238$', '$330$', '$146$'], answer: 3, explanation: '$N=A-Z=238-92=146$.' },
+        { stem: 'Độ không tuyệt đối ($0$ K) tương ứng với nhiệt độ Celsius?', options: ['$0$ °C', '$-273$ °C', '$273$ °C', '$100$ °C'], answer: 1, explanation: '$0$ K $=-273$ °C.' },
+      ],
+    },
   ],
 
   HOA: [
