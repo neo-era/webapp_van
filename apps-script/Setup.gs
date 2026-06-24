@@ -149,12 +149,41 @@ function seedCatalogIfEmpty() {
   });
 }
 
+/** Seed vài câu hỏi + 1 đề mẫu cho Toán 12 (nếu Questions rỗng). */
+function seedQuestionsIfEmpty() {
+  if (getRows('Questions').length > 0) return;
+  const toanTopic = getRows('Topics').find(function (t) { return String(t.subjectCode) === 'TOAN'; });
+  if (!toanTopic) return;
+  const tid = toanTopic.topicId;
+
+  const qs = [
+    { stem: 'Hàm số $y=x^3-3x$ đồng biến trên khoảng nào?', options: ['$(-1;1)$', '$(-\\infty;-1)$ và $(1;+\\infty)$', '$(0;+\\infty)$', '$\\mathbb{R}$'], answer: 1, difficulty: 'TH', explanation: '$y\'=3x^2-3>0 \\Leftrightarrow x<-1$ hoặc $x>1$.' },
+    { stem: 'Đạo hàm của $y=\\ln x$ là?', options: ['$\\dfrac{1}{x}$', '$x$', '$\\dfrac{1}{x^2}$', '$\\ln x$'], answer: 0, difficulty: 'NB', explanation: '$(\\ln x)\'=\\dfrac{1}{x}$.' },
+    { stem: 'Số nghiệm của phương trình $x^2-5x+6=0$ là?', options: ['0', '1', '2', '3'], answer: 2, difficulty: 'NB', explanation: '$x=2$ hoặc $x=3$.' },
+  ];
+  const ids = qs.map(function (q) {
+    const id = genId('q');
+    appendRow('Questions', {
+      questionId: id, subjectCode: 'TOAN', grade: 12, topicId: tid, type: 'MCQ',
+      difficulty: q.difficulty, level: 'CO_BAN', stem: q.stem, options: JSON.stringify(q.options),
+      answer: String(q.answer), explanation: q.explanation, status: 'PUBLISHED', source: 'MANUAL',
+    });
+    return id;
+  });
+
+  appendRow('Exams', {
+    examId: genId('e'), title: 'Kiểm tra nhanh: Đạo hàm & Hàm số', subjectCode: 'TOAN', grade: 12,
+    kind: 'PRACTICE', questionIds: JSON.stringify(ids), durationMin: 15, level: 'CO_BAN', published: 'TRUE',
+  });
+}
+
 /** Có thể chạy tay từ trình Apps Script nếu muốn khởi tạo ngay. */
 function initDatabase() {
   ensureSheets();
   seedIfEmpty();
   seedCatalogIfEmpty();
-  Logger.log('Khởi tạo xong. Users: ' + getRows('Users').length + ', Subjects: ' + getRows('Subjects').length);
+  seedQuestionsIfEmpty();
+  Logger.log('Khởi tạo xong. Users: ' + getRows('Users').length + ', Subjects: ' + getRows('Subjects').length + ', Questions: ' + getRows('Questions').length);
 }
 
 /**

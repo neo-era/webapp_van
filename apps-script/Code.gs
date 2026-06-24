@@ -43,9 +43,10 @@ function handleApi(req) {
 
 /** Bảng phân nhánh action → hàm xử lý. */
 function route(action, req) {
-  ensureSheets();        // tự tạo tab + header nếu thiếu
-  seedIfEmpty();         // tự seed dữ liệu demo nếu DB trống
-  seedCatalogIfEmpty();  // tự seed danh mục môn/chủ đề/bài giảng mẫu
+  ensureSheets();          // tự tạo tab + header nếu thiếu
+  seedIfEmpty();           // tự seed dữ liệu demo nếu DB trống
+  seedCatalogIfEmpty();    // tự seed danh mục môn/chủ đề/bài giảng mẫu
+  seedQuestionsIfEmpty();  // tự seed câu hỏi + đề mẫu
 
   switch (action) {
     // --- Hệ thống ---
@@ -96,9 +97,21 @@ function route(action, req) {
     case 'saveTopic':      return saveTopic(req);
 
     // --- v2.0 Giáo viên AI (AI.gs) ---
-    case 'aiChat':         return aiChat(req);
-    case 'generateLesson': return generateLesson(req);
-    case 'aiStatus':       return aiStatus(req);
+    case 'aiChat':            return aiChat(req);
+    case 'generateLesson':    return generateLesson(req);
+    case 'generateQuestions': return generateQuestions(req);
+    case 'aiStatus':          return aiStatus(req);
+
+    // --- v2.0 Ngân hàng đề (Questions.gs / Exams.gs) ---
+    case 'getQuestions':     return getQuestions(req);
+    case 'saveQuestion':     return saveQuestion(req);
+    case 'deleteQuestion':   return deleteQuestion(req);
+    case 'setQuestionStatus': return setQuestionStatus(req);
+    case 'createExam':       return createExam(req);
+    case 'getExams':         return getExams(req);
+    case 'getExam':          return getExam(req);
+    case 'submitAttempt':    return submitAttempt(req);
+    case 'getAttempts':      return getAttempts(req);
 
     // --- v2.0 Bài giảng (Lessons.gs) ---
     case 'getLessons':       return getLessons(req);

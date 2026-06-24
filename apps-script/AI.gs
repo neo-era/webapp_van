@@ -101,6 +101,47 @@ function generateLesson(req) {
   return jsonOk(cleanLesson(lesson, true));
 }
 
+/** Trích mảng JSON từ text (bỏ ```json fences nếu có). */
+function extractJsonArray_(text) {
+  const a = text.indexOf('['), b = text.lastIndexOf(']');
+  if (a < 0 || b <= a) return null;
+  return parseJsonSafe_(text.slice(a, b + 1), null);
+}
+
+/** Giáo viên: sinh nháp câu hỏi trắc nghiệm bằng AI → lưu DRAFT. */
+function generateQuestions(req) {
+  const user = requireTeacher(req.token);
+  if (!req.topicId) return jsonError('Thiếu chủ đề');
+  const count = Math.max(1, Math.min(Number(req.count) || 5, 10));
+  const diff = ['NB', 'TH', 'VD', 'VDC'].indexOf(req.difficulty) >= 0 ? req.difficulty : 'TH';
+  const subjectName = (getRows('Subjects').find(function (s) { return String(s.subjectCode) === String(req.subjectCode); }) || {}).name || req.subjectCode;
+  const topic = (getRows('Topics').find(function (t) { return String(t.topicId) === String(req.topicId); }) || {}).title || '';
+
+  const system = 'Bạn tạo câu hỏi trắc nghiệm THPT theo Chương trình GDPT 2018 (Việt Nam). ' +
+    'Trả về DUY NHẤT một mảng JSON hợp lệ, KHÔNG kèm chữ nào khác, mỗi phần tử dạng: ' +
+    '{"stem": "đề bài (LaTeX $...$ nếu có công thức)", "options": ["A","B","C","D"], "answer": 0, "explanation": "lời giải ngắn"}. ' +
+    '"answer" là chỉ số (0-3) của đáp án đúng.';
+  const prompt = 'Tạo ' + count + ' câu hỏi trắc nghiệm môn ' + subjectName + ' lớp ' + (req.grade || 12) +
+    ' về chủ đề "' + topic + '", độ khó ' + diff + '.';
+
+  const result = callClaude_({ model: AI_MODELS.smart, system: system, messages: [{ role: 'user', content: prompt }], maxTokens: 2048 });
+  const arr = extractJsonArray_(result.text);
+  if (!Array.isArray(arr) || !arr.length) return jsonError('AI trả về không đúng định dạng, vui lòng thử lại');
+
+  let n = 0;
+  arr.forEach(function (it) {
+    if (!it || !it.stem || !Array.isArray(it.options)) return;
+    appendRow('Questions', {
+      questionId: genId('q'), subjectCode: req.subjectCode || '', grade: req.grade || 12, topicId: req.topicId,
+      type: 'MCQ', difficulty: diff, level: req.level || 'CO_BAN', stem: String(it.stem),
+      options: JSON.stringify(it.options), answer: String(it.answer == null ? 0 : it.answer),
+      explanation: it.explanation || '', status: 'DRAFT', source: 'AI',
+    });
+    n++;
+  });
+  return jsonOk({ created: n });
+}
+
 /** Kiểm tra cấu hình khóa AI (cho phép test nhanh). */
 function aiStatus(req) {
   requireAuth(req.token);
