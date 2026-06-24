@@ -980,6 +980,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'artificial'.", options: ['fake', 'natural', 'synthetic', 'man-made'], answer: 1, explanation: 'artificial ↔ natural (tự nhiên).' },
       ],
     },
+    {
+      examId: 'anh-kt45-13', title: 'Kiểm tra 45′ #13 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'He ____ just arrived at the airport.', options: ['have', 'had', 'is', 'has'], answer: 3, explanation: 'Hiện tại hoàn thành với "just": has + V3.' },
+        { stem: 'If you had told me earlier, I ____ you.', options: ['would have helped', 'will have helped', 'had helped', 'have helped'], answer: 0, explanation: 'Câu điều kiện loại 3: would have + V3.' },
+        { stem: 'The car ____ I bought last week is red.', options: ['who', 'where', 'that', 'whose'], answer: 2, explanation: 'that/which thay cho vật, làm tân ngữ.' },
+        { stem: 'Neither of them ____ the correct answer.', options: ['know', 'are knowing', 'have known', 'knows'], answer: 3, explanation: 'Neither of + danh từ ⇒ động từ số ít (knows).' },
+        { stem: "It's the first time I ____ sushi.", options: ['eat', 'have eaten', 'ate', 'eating'], answer: 1, explanation: "It's the first time + hiện tại hoàn thành." },
+        { stem: 'She speaks as if she ____ everything about the topic.', options: ['knew', 'knows', 'know', 'has known'], answer: 0, explanation: 'as if + quá khứ đơn (giả định trái hiện tại).' },
+        { stem: 'By next year, they ____ married for a decade.', options: ['are', 'will have been', 'will be', 'have been'], answer: 1, explanation: 'Tương lai hoàn thành (tiếp diễn): will have been.' },
+        { stem: "Choose the synonym of 'tired'.", options: ['energetic', 'fresh', 'lively', 'exhausted'], answer: 3, explanation: 'tired ≈ exhausted (mệt mỏi).' },
+        { stem: 'The harder you work, ____ you will succeed.', options: ['the more', 'more', 'most', 'the most'], answer: 0, explanation: 'Cấu trúc so sánh kép: the + comparative.' },
+        { stem: "He'd prefer ____ at home this weekend.", options: ['stay', 'to stay', 'staying', 'stayed'], answer: 1, explanation: 'would prefer + to + V.' },
+      ],
+    },
   ],
 
   TOEIC: [
