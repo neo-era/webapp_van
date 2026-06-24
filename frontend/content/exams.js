@@ -500,6 +500,21 @@ const EXAMS = {
         { stem: 'I have ____ finished my homework.', options: ['yet', 'since', 'already', 'ago'], answer: 2, explanation: '"already" trong câu khẳng định hoàn thành.' },
       ],
     },
+    {
+      examId: 'anh-kt45-2', title: 'Kiểm tra 45′ #2 — Grammar (Tiếng Anh 12)', durationMin: 45,
+      questions: [
+        { stem: 'He suggested ____ a short break.', options: ['take', 'to take', 'took', 'taking'], answer: 3, explanation: 'suggest + V-ing.' },
+        { stem: 'By the time we arrived, the film ____.', options: ['had started', 'has started', 'started', 'starts'], answer: 0, explanation: 'Quá khứ hoàn thành cho hành động xảy ra trước.' },
+        { stem: 'This bridge ____ in 1990.', options: ['built', 'is built', 'was built', 'builds'], answer: 2, explanation: 'Bị động quá khứ: was + V3.' },
+        { stem: 'Neither John nor his friends ____ here.', options: ['is', 'are', 'was', 'has'], answer: 1, explanation: 'Động từ chia theo chủ ngữ gần nhất "friends".' },
+        { stem: 'I wish I ____ taller.', options: ['am', 'was', 'be', 'were'], answer: 3, explanation: 'wish + were (giả định).' },
+        { stem: 'She asked me where I ____.', options: ['lived', 'live', 'living', 'to live'], answer: 0, explanation: 'Câu tường thuật ⇒ lùi thì.' },
+        { stem: "It's the best film I ____ ever seen.", options: ['has', 'had', 'have', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "I".' },
+        { stem: 'If he had studied, he ____ passed.', options: ['will have', 'would have', 'would', 'had'], answer: 1, explanation: 'Điều kiện loại 3: would have + V3.' },
+        { stem: 'Choose the synonym of "famous".', options: ['unknown', 'ordinary', 'hidden', 'well-known'], answer: 3, explanation: 'famous ≈ well-known.' },
+        { stem: "You ____ smoke here; it's forbidden.", options: ["mustn't", 'must', 'should', 'can'], answer: 0, explanation: "mustn't = cấm." },
+      ],
+    },
   ],
 
   TOEIC: [
