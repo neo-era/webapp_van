@@ -1147,6 +1147,21 @@ const EXAMS = {
         { stem: 'Choose the synonym of "emphasize".', options: ['ignore', 'conceal', 'reduce', 'highlight'], answer: 3, explanation: 'emphasize ≈ highlight (nhấn mạnh).' },
       ],
     },
+    {
+      examId: 'ielts-kt-10', title: 'IELTS – Vocabulary & Grammar #10', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "comprehensive".', options: ['partial', 'thorough', 'brief', 'narrow'], answer: 1, explanation: 'comprehensive ≈ thorough (toàn diện).' },
+        { stem: 'Choose the synonym of "fundamental".', options: ['trivial', 'optional', 'advanced', 'basic'], answer: 3, explanation: 'fundamental ≈ basic (cơ bản).' },
+        { stem: 'Choose the antonym of "accelerate".', options: ['slow down', 'speed up', 'hasten', 'rush'], answer: 0, explanation: 'accelerate ↔ slow down (giảm tốc).' },
+        { stem: 'Hardly had the game started ____ it began to rain.', options: ['than', 'when', 'then', 'that'], answer: 1, explanation: 'Hardly … when … (vừa mới … thì …).' },
+        { stem: 'Choose the synonym of "implement".', options: ['abandon', 'delay', 'prevent', 'carry out'], answer: 3, explanation: 'implement ≈ carry out (triển khai).' },
+        { stem: 'The committee, ____ members are experts, meets every month.', options: ['whose', 'which', 'who', 'that'], answer: 0, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "optimistic".', options: ['hopeful', 'positive', 'pessimistic', 'confident'], answer: 2, explanation: 'optimistic ↔ pessimistic (bi quan).' },
+        { stem: 'So rapid ____ the change that few people noticed it.', options: ['was', 'were', 'is', 'had'], answer: 0, explanation: 'Đảo ngữ "So + adj + be + S + that…": So rapid was the change…' },
+        { stem: 'Choose the synonym of "substantial".', options: ['tiny', 'minimal', 'sizable', 'negligible'], answer: 2, explanation: 'substantial ≈ sizable (đáng kể, lớn).' },
+        { stem: 'It was not until 1990 ____ the law was finally changed.', options: ['when', 'which', 'then', 'that'], answer: 3, explanation: 'Câu chẻ: It was not until … that …' },
+      ],
+    },
   ],
 };
 
