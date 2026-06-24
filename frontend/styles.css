@@ -343,6 +343,25 @@ table.data th { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; 
 .lesson-content code { background: var(--bg-muted); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 .lesson-content strong { color: var(--text-primary); }
 .lesson-content .katex { font-size: 1.05em; }
+/* Hộp ví dụ / bài tập / lưu ý */
+.lesson-content .vd, .lesson-content .bt, .lesson-content .luuy {
+  border-left: 4px solid; border-radius: 8px; padding: 10px 12px; margin: 12px 0;
+}
+.lesson-content .vd { border-color: var(--accent); background: var(--accent-soft); }
+.lesson-content .bt { border-color: var(--warning); background: #fffbeb; }
+.lesson-content .luuy { border-color: var(--success); background: #f0fdf4; }
+.lesson-content .vd-title, .lesson-content .bt-title { font-weight: 700; margin-bottom: 4px; }
+.lesson-content details { margin-top: 8px; }
+.lesson-content summary { cursor: pointer; color: var(--accent); font-weight: 600; list-style: none; }
+.lesson-content summary::before { content: '▸ '; }
+.lesson-content details[open] summary::before { content: '▾ '; }
+/* Bảng biến thiên / bảng xét dấu */
+.lesson-content table.bbt { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.9rem; text-align: center; }
+.lesson-content table.bbt td, .lesson-content table.bbt th { border: 1px solid var(--border); padding: 6px 8px; white-space: nowrap; }
+.lesson-content table.bbt .lbl { font-weight: 700; background: var(--bg-muted); }
+/* Đồ thị SVG */
+.lesson-content .graph { display: block; margin: 12px auto; max-width: 100%; background: #fff; border: 1px solid var(--border); border-radius: 8px; }
+.lesson-content .graph text { font-size: 9px; fill: var(--text-muted); }
 
 /* ---------- Profile ---------- */
 .profile-big-avatar {

@@ -30,6 +30,10 @@ const CURRICULUM = {
                   <li>Nếu $f'(x) > 0$ với mọi $x \\in K$ thì hàm số <strong>đồng biến</strong> trên $K$.</li>
                   <li>Nếu $f'(x) < 0$ với mọi $x \\in K$ thì hàm số <strong>nghịch biến</strong> trên $K$.</li>
                 </ul>
+                <div class="luuy">
+                  <strong>Lưu ý (chính xác hóa):</strong> Điều kiện đủ tổng quát là $f'(x)\\ge 0\\ \\forall x\\in K$ và $f'(x)=0$ chỉ tại <em>hữu hạn điểm</em> thì hàm vẫn đồng biến trên $K$.
+                  <em>Ví dụ:</em> $y=x^3$ có $y'=3x^2\\ge 0$ (chỉ bằng 0 tại $x=0$) nên đồng biến trên $\\mathbb{R}$.
+                </div>
                 <h3>Các bước xét tính đơn điệu</h3>
                 <ol>
                   <li>Tìm tập xác định.</li>
@@ -39,7 +43,27 @@ const CURRICULUM = {
                 <h2>Nâng cao</h2>
                 <p>Bài toán tham số: tìm $m$ để hàm số đồng biến trên $\\mathbb{R}$ thường quy về điều kiện
                 $f'(x) \\ge 0\\ \\forall x$ — xét dấu tam thức bậc hai ($a>0$ và $\\Delta \\le 0$).</p>
-                <p><em>Ví dụ:</em> $y=x^3-3mx+1$ có $y'=3x^2-3m \\ge 0\\ \\forall x \\Leftrightarrow m \\le 0$.</p>
+                <p>Bài toán tham số: $y=x^3-3mx+1$ có $y'=3x^2-3m \\ge 0\\ \\forall x \\Leftrightarrow m \\le 0$.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Xét tính đơn điệu của $y=x^3-3x$.</p>
+                  <p><strong>Giải:</strong> TXĐ: $\\mathbb{R}$. $y'=3x^2-3=3(x-1)(x+1)$; $y'=0 \\Leftrightarrow x=\\pm 1$.</p>
+                  <table class="bbt">
+                    <tr><td class="lbl">$x$</td><td>$-\\infty$</td><td>$-1$</td><td>$1$</td><td>$+\\infty$</td></tr>
+                    <tr><td class="lbl">$y'$</td><td>$+$</td><td>$0\\ -\\ 0$</td><td></td><td>$+$</td></tr>
+                    <tr><td class="lbl">$y$</td><td>↗</td><td>$2$ (CĐ) ↘ $-2$ (CT)</td><td></td><td>↗</td></tr>
+                  </table>
+                  <p>Vậy hàm số đồng biến trên $(-\\infty;-1)$ và $(1;+\\infty)$; nghịch biến trên $(-1;1)$.</p>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tìm các khoảng đơn điệu của $y=-x^3+3x^2-1$.</p>
+                  <details><summary>Xem đáp án</summary>
+                    <p>$y'=-3x^2+6x=-3x(x-2)$; $y'=0 \\Leftrightarrow x=0$ hoặc $x=2$. Hàm số <strong>đồng biến</strong> trên $(0;2)$, <strong>nghịch biến</strong> trên $(-\\infty;0)$ và $(2;+\\infty)$.</p>
+                  </details>
+                </div>
               `,
             },
             {
@@ -51,8 +75,30 @@ const CURRICULUM = {
                   <li>$f'$ đổi từ $+$ sang $-$: $x_0$ là điểm <strong>cực đại</strong>.</li>
                   <li>$f'$ đổi từ $-$ sang $+$: $x_0$ là điểm <strong>cực tiểu</strong>.</li>
                 </ul>
+                <div class="luuy">
+                  <strong>Lưu ý (bẫy thường gặp):</strong> $f'(x_0)=0$ là điều kiện <em>cần</em> nhưng <em>chưa đủ</em>. Phải kiểm tra $f'$ <strong>đổi dấu</strong> qua $x_0$.
+                  <em>Phản ví dụ:</em> $y=x^3$ có $y'(0)=0$ nhưng $x=0$ <strong>không</strong> là điểm cực trị (vì $y'\\ge 0$ không đổi dấu).
+                </div>
                 <h2>Nâng cao</h2>
-                <p>Dùng đạo hàm cấp hai: nếu $f'(x_0)=0$ và $f''(x_0)<0$ thì $x_0$ là cực đại; $f''(x_0)>0$ thì cực tiểu.</p>
+                <p>Dùng đạo hàm cấp hai: nếu $f'(x_0)=0$ và $f''(x_0)<0$ thì $x_0$ là cực đại; $f''(x_0)>0$ thì cực tiểu. (Khi $f''(x_0)=0$ phải xét dấu $f'$.)</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tìm cực trị của $y=x^3-3x^2+2$.</p>
+                  <p><strong>Giải:</strong> $y'=3x^2-6x=3x(x-2)$; $y'=0 \\Leftrightarrow x=0$ hoặc $x=2$.</p>
+                  <ul>
+                    <li>$x=0$: $y'$ đổi $+ \\to -$ ⇒ <strong>cực đại</strong>, $y_{CĐ}=2$.</li>
+                    <li>$x=2$: $y'$ đổi $- \\to +$ ⇒ <strong>cực tiểu</strong>, $y_{CT}=-2$.</li>
+                  </ul>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tìm $m$ để $y=x^3-3mx+1$ có hai điểm cực trị.</p>
+                  <details><summary>Xem đáp án</summary>
+                    <p>$y'=3x^2-3m$. Hàm có 2 cực trị $\\Leftrightarrow y'=0$ có 2 nghiệm phân biệt $\\Leftrightarrow m>0$.</p>
+                  </details>
+                </div>
               `,
             },
             {
@@ -67,6 +113,21 @@ const CURRICULUM = {
                 </ol>
                 <h2>Nâng cao</h2>
                 <p>Trên khoảng (không phải đoạn): lập bảng biến thiên để kết luận. Bài toán thực tế (tối ưu chi phí, diện tích) thường đưa về tìm GTNN/GTLN của một hàm số.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tìm GTLN, GTNN của $y=x^3-3x+2$ trên $[0;2]$.</p>
+                  <p><strong>Giải:</strong> $y'=3x^2-3=0 \\Leftrightarrow x=1$ (nhận $x=1\\in[0;2]$).</p>
+                  <p>$y(0)=2,\\quad y(1)=0,\\quad y(2)=4$. Vậy $\\max y = 4$ tại $x=2$; $\\min y = 0$ tại $x=1$.</p>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tìm GTNN của $y=x+\\dfrac{4}{x}$ trên $(0;+\\infty)$.</p>
+                  <details><summary>Xem đáp án</summary>
+                    <p>$y'=1-\\dfrac{4}{x^2}=0 \\Leftrightarrow x=2$. Lập BBT ⇒ $\\min y = y(2)=4$ (theo Cô-si: $x+\\dfrac{4}{x}\\ge 2\\sqrt{4}=4$).</p>
+                  </details>
+                </div>
               `,
             },
             {
@@ -80,6 +141,21 @@ const CURRICULUM = {
                 </ul>
                 <h2>Nâng cao</h2>
                 <p>Với hàm $y=\\dfrac{ax+b}{cx+d}\\ (c\\ne 0)$: tiệm cận đứng $x=-\\dfrac{d}{c}$, tiệm cận ngang $y=\\dfrac{a}{c}$.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tìm các tiệm cận của $y=\\dfrac{2x+1}{x-1}$.</p>
+                  <p><strong>Giải:</strong> $\\lim\\limits_{x\\to 1^{\\pm}} y = \\pm\\infty$ ⇒ tiệm cận đứng $x=1$.</p>
+                  <p>$\\lim\\limits_{x\\to\\pm\\infty} y = 2$ ⇒ tiệm cận ngang $y=2$.</p>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Tìm tiệm cận đứng và ngang của $y=\\dfrac{x+3}{2x-4}$.</p>
+                  <details><summary>Xem đáp án</summary>
+                    <p>Tiệm cận đứng $x=2$ (mẫu $=0$); tiệm cận ngang $y=\\dfrac{1}{2}$.</p>
+                  </details>
+                </div>
               `,
             },
             {
@@ -95,6 +171,39 @@ const CURRICULUM = {
                 </ol>
                 <h2>Nâng cao</h2>
                 <p>Các dạng đồ thị thường gặp: bậc ba $y=ax^3+bx^2+cx+d$, trùng phương $y=ax^4+bx^2+c$, phân thức $y=\\dfrac{ax+b}{cx+d}$.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu — Khảo sát $y=x^3-3x$</div>
+                  <p>TXĐ $\\mathbb{R}$; $y'=3x^2-3$, $y'=0 \\Leftrightarrow x=\\pm1$. $\\lim\\limits_{x\\to\\pm\\infty}y=\\pm\\infty$.</p>
+                  <table class="bbt">
+                    <tr><td class="lbl">$x$</td><td>$-\\infty$</td><td>$-1$</td><td>$1$</td><td>$+\\infty$</td></tr>
+                    <tr><td class="lbl">$y'$</td><td>$+$</td><td>$0\\ -\\ 0$</td><td></td><td>$+$</td></tr>
+                    <tr><td class="lbl">$y$</td><td>↗</td><td>$2$ ↘ $-2$</td><td></td><td>↗</td></tr>
+                  </table>
+                  <p>Đồ thị (điểm uốn $O(0;0)$, cực đại $(-1;2)$, cực tiểu $(1;-2)$):</p>
+                  <svg class="graph" viewBox="0 0 240 200" width="240" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="100" x2="232" y2="100" stroke="#94a3b8" stroke-width="1"/>
+                    <line x1="120" y1="15" x2="120" y2="190" stroke="#94a3b8" stroke-width="1"/>
+                    <polygon points="232,100 226,97 226,103" fill="#94a3b8"/>
+                    <polygon points="120,15 117,21 123,21" fill="#94a3b8"/>
+                    <polyline points="20,160 45,66 70,40 95,59 120,100 145,141 170,160 195,134 220,40" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <circle cx="70" cy="40" r="3" fill="#16a34a"/>
+                    <circle cx="170" cy="160" r="3" fill="#dc2626"/>
+                    <text x="124" y="13">y</text>
+                    <text x="228" y="113">x</text>
+                    <text x="124" y="113">O</text>
+                    <text x="48" y="36">CĐ(-1;2)</text>
+                    <text x="150" y="175">CT(1;-2)</text>
+                  </svg>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập</div>
+                  <p>Lập bảng biến thiên của $y=-x^3+3x^2$ và nêu cực trị.</p>
+                  <details><summary>Xem đáp án</summary>
+                    <p>$y'=-3x^2+6x=-3x(x-2)$; $x=0$ (CT, $y=0$), $x=2$ (CĐ, $y=4$). Đồng biến $(0;2)$, nghịch biến ngoài đoạn đó.</p>
+                  </details>
+                </div>
               `,
             },
           ],
