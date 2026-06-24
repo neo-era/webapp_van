@@ -1700,6 +1700,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'hot'.", options: ['warm', 'cold', 'mild', 'boiling'], answer: 1, explanation: 'hot ↔ cold (lạnh).' },
       ],
     },
+    {
+      examId: 'anh-kt45-29', title: 'Kiểm tra 45′ #29 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'How long ____ you known him?', options: ['have', 'do', 'did', 'has'], answer: 0, explanation: 'Hiện tại hoàn thành: have + S + V3.' },
+        { stem: 'She ____ to London twice this year.', options: ['went', 'was', 'going', 'has been'], answer: 3, explanation: 'has been to = đã từng đến (kinh nghiệm).' },
+        { stem: 'Unless it rains, we ____ go for a picnic.', options: ['will', 'would', 'can', 'must'], answer: 0, explanation: 'Unless + hiện tại đơn, mệnh đề chính will + V.' },
+        { stem: 'The teacher ____ us an interesting story.', options: ['said', 'spoke', 'told', 'talked'], answer: 2, explanation: 'tell sb sth ⇒ told us a story.' },
+        { stem: "He's very interested ____ science and technology.", options: ['on', 'in', 'at', 'for'], answer: 1, explanation: 'be interested in.' },
+        { stem: 'If I ____ rich, I would help the poor.', options: ['am', 'was', 'be', 'were'], answer: 3, explanation: 'Câu điều kiện loại 2: If I were …' },
+        { stem: "Choose the synonym of 'small'.", options: ['tiny', 'big', 'large', 'huge'], answer: 0, explanation: 'small ≈ tiny (nhỏ).' },
+        { stem: 'She made me ____ the truth about it.', options: ['to tell', 'tell', 'telling', 'told'], answer: 1, explanation: 'make + O + V nguyên thể không to.' },
+        { stem: 'The car ____ I bought last week is very fast.', options: ['who', 'where', 'whose', 'that'], answer: 3, explanation: 'that thay cho vật, làm tân ngữ.' },
+        { stem: "Choose the antonym of 'dark'.", options: ['black', 'dim', 'light', 'gloomy'], answer: 2, explanation: 'dark ↔ light (sáng).' },
+      ],
+    },
   ],
 
   TOEIC: [
