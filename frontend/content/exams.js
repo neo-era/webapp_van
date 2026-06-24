@@ -1897,6 +1897,21 @@ const EXAMS = {
         { stem: 'No sooner had the show ended ____ the crowd left.', options: ['when', 'then', 'than', 'that'], answer: 2, explanation: 'No sooner … than …' },
       ],
     },
+    {
+      examId: 'ielts-kt-20', title: 'IELTS – Vocabulary & Grammar #20', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "thorough".', options: ['careless', 'brief', 'partial', 'detailed'], answer: 3, explanation: 'thorough ≈ detailed (kỹ lưỡng).' },
+        { stem: 'Choose the synonym of "pivotal".', options: ['central', 'trivial', 'minor', 'peripheral'], answer: 0, explanation: 'pivotal ≈ central (then chốt).' },
+        { stem: 'Choose the antonym of "broad".', options: ['wide', 'narrow', 'vast', 'extensive'], answer: 1, explanation: 'broad ↔ narrow (hẹp).' },
+        { stem: 'Under no circumstances ____ leave the building during a drill.', options: ['you should', 'you can', 'can you', 'should you'], answer: 3, explanation: 'Đảo ngữ với "Under no circumstances": + trợ động từ + S.' },
+        { stem: 'Choose the synonym of "exemplify".', options: ['illustrate', 'hide', 'conceal', 'obscure'], answer: 0, explanation: 'exemplify ≈ illustrate (minh họa).' },
+        { stem: 'The phenomenon, ____ remains unexplained, puzzles scientists.', options: ['who', 'whose', 'that', 'which'], answer: 3, explanation: 'which cho vật, mệnh đề quan hệ không xác định.' },
+        { stem: 'Choose the antonym of "unite".', options: ['join', 'divide', 'combine', 'merge'], answer: 1, explanation: 'unite ↔ divide (chia rẽ).' },
+        { stem: 'Not only was the test difficult, ____ it was also very long.', options: ['but', 'and', 'so', 'or'], answer: 0, explanation: 'Cấu trúc "Not only … but (also) …".' },
+        { stem: 'Choose the synonym of "magnitude".', options: ['color', 'weight', 'size', 'speed'], answer: 2, explanation: 'magnitude ≈ size (độ lớn).' },
+        { stem: 'So great was the storm ____ all flights were cancelled.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
