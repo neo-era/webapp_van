@@ -1295,6 +1295,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'win'.", options: ['gain', 'lose', 'succeed', 'achieve'], answer: 1, explanation: 'win ↔ lose (thua).' },
       ],
     },
+    {
+      examId: 'anh-kt45-20', title: 'Kiểm tra 45′ #20 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'By the time the police arrived, the thief ____.', options: ['escapes', 'escaped', 'has escaped', 'had escaped'], answer: 3, explanation: 'Hành động trước trong quá khứ ⇒ quá khứ hoàn thành.' },
+        { stem: "I'm interested in ____ more about history.", options: ['learning', 'learn', 'to learn', 'learned'], answer: 0, explanation: 'be interested in + V-ing.' },
+        { stem: 'She ____ TV when the phone rang.', options: ['watched', 'was watching', 'watches', 'is watching'], answer: 1, explanation: 'Quá khứ tiếp diễn (đang xảy ra thì có hành động khác cắt ngang).' },
+        { stem: "This is the best book ____ I've ever read.", options: ['who', 'what', 'where', 'that'], answer: 3, explanation: 'Sau so sánh nhất dùng that.' },
+        { stem: 'He works ____ a teacher at a high school.', options: ['like', 'for', 'as', 'with'], answer: 2, explanation: 'work as + nghề nghiệp.' },
+        { stem: 'If I ____ rich, I would travel the world.', options: ['am', 'were', 'was', 'be'], answer: 1, explanation: 'Câu điều kiện loại 2: If I were …' },
+        { stem: "Choose the synonym of 'finish'.", options: ['complete', 'start', 'continue', 'pause'], answer: 0, explanation: 'finish ≈ complete (hoàn thành).' },
+        { stem: 'He is afraid ____ spiders.', options: ['for', 'with', 'about', 'of'], answer: 3, explanation: 'be afraid of + N.' },
+        { stem: 'Neither of my parents ____ at home right now.', options: ['are', 'were', 'is', 'am'], answer: 2, explanation: 'Neither of + danh từ ⇒ động từ số ít (is).' },
+        { stem: "Choose the antonym of 'open'.", options: ['ajar', 'closed', 'wide', 'unlock'], answer: 1, explanation: 'open ↔ closed (đóng).' },
+      ],
+    },
   ],
 
   TOEIC: [
