@@ -1072,6 +1072,21 @@ const EXAMS = {
         { stem: 'It is essential that he ____ present at the meeting.', options: ['is', 'was', 'be', 'being'], answer: 2, explanation: 'Cấu trúc giả định (subjunctive): It is essential that S + V (nguyên thể) ⇒ be.' },
       ],
     },
+    {
+      examId: 'ielts-kt-9', title: 'IELTS – Vocabulary & Grammar #9', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "obtain".', options: ['acquire', 'lose', 'reject', 'waste'], answer: 0, explanation: 'obtain ≈ acquire (đạt được, có được).' },
+        { stem: 'Choose the synonym of "decline" (verb).', options: ['increase', 'expand', 'grow', 'diminish'], answer: 3, explanation: 'decline ≈ diminish (giảm sút).' },
+        { stem: 'Choose the antonym of "beneficial".', options: ['helpful', 'useful', 'harmful', 'positive'], answer: 2, explanation: 'beneficial ↔ harmful (có hại).' },
+        { stem: 'The experiment, ____ was conducted last year, yielded surprising results.', options: ['who', 'whose', 'what', 'which'], answer: 3, explanation: 'which mở đầu mệnh đề quan hệ không xác định cho vật.' },
+        { stem: 'Choose the synonym of "approximately".', options: ['roughly', 'exactly', 'precisely', 'definitely'], answer: 0, explanation: 'approximately ≈ roughly (khoảng chừng).' },
+        { stem: 'Only after the meeting ____ the final decision.', options: ['they made', 'did they make', 'they make', 'made they'], answer: 1, explanation: 'Đảo ngữ với "Only after…": + trợ động từ + S + V.' },
+        { stem: 'Scientists have ____ a new species of frog in the rainforest.', options: ['discovered', 'discover', 'discovers', 'discovering'], answer: 0, explanation: 'Hiện tại hoàn thành: have + V3 (discovered).' },
+        { stem: 'Choose the antonym of "scarce".', options: ['rare', 'plentiful', 'limited', 'insufficient'], answer: 1, explanation: 'scarce ↔ plentiful (dồi dào).' },
+        { stem: 'The more efficient the process, ____ the cost.', options: ['lower', 'the lower', 'lowest', 'the lowest'], answer: 1, explanation: 'Cấu trúc so sánh kép: the + comparative, the + comparative.' },
+        { stem: 'Choose the synonym of "emphasize".', options: ['ignore', 'conceal', 'reduce', 'highlight'], answer: 3, explanation: 'emphasize ≈ highlight (nhấn mạnh).' },
+      ],
+    },
   ],
 };
 
