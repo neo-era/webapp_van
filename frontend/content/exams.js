@@ -201,6 +201,26 @@ const EXAMS = {
         { stem: 'Bán kính mặt cầu $(x-2)^2+y^2+z^2=9$ là?', options: ['$9$', '$\\sqrt3$', '$3$', '$6$'], answer: 2, explanation: '$R=\\sqrt9=3$.' },
       ],
     },
+    {
+      examId: 'hk-1', title: 'Đề thi Học kỳ #1 — Tổng hợp Toán 12', durationMin: 90,
+      questions: [
+        { stem: 'Hàm $y=x^3-3x^2$ đồng biến trên?', options: ['$(0;2)$', '$(-\\infty;0)$ và $(2;+\\infty)$', '$\\mathbb{R}$', '$(2;+\\infty)$'], answer: 1, explanation: '$y\'=3x(x-2)>0\\Leftrightarrow x<0$ hoặc $x>2$.' },
+        { stem: 'Giá trị cực đại của $y=-x^2+4x-1$ là?', options: ['$1$', '$2$', '$3$', '$4$'], answer: 2, explanation: '$x=2\\Rightarrow y=3$.' },
+        { stem: 'GTLN của $y=x^3-3x$ trên $[0;2]$ là?', options: ['$2$', '$0$', '$-2$', '$6$'], answer: 0, explanation: '$y(2)=2$ là lớn nhất.' },
+        { stem: 'Tính $\\displaystyle\\int_0^1 x^2\\,dx$.', options: ['$1$', '$3$', '$\\tfrac12$', '$\\tfrac13$'], answer: 3, explanation: '$[x^3/3]_0^1=\\tfrac13$.' },
+        { stem: '$\\displaystyle\\int (2x+1)\\,dx$ bằng?', options: ['$2$', '$x^2+x+C$', '$2x^2+x$', '$x^2+1$'], answer: 1, explanation: '$x^2+x+C$.' },
+        { stem: 'Tiệm cận ngang của $y=\\dfrac{3x-1}{x+2}$ là?', options: ['$y=3$', '$x=-2$', '$y=-1$', '$x=3$'], answer: 0, explanation: '$\\lim y=3$.' },
+        { stem: 'Số điểm cực trị của $y=x^4-2x^2+1$ là?', options: ['$1$', '$2$', '$3$', '$0$'], answer: 2, explanation: '$y\'=4x(x^2-1)$ có 3 nghiệm.' },
+        { stem: 'Thể tích khi quay $y=\\sqrt{x}$ quanh $Ox$ từ $0$ đến $1$ là?', options: ['$\\pi$', '$\\dfrac{\\pi}{2}$', '$\\dfrac{\\pi}{3}$', '$2\\pi$'], answer: 1, explanation: '$V=\\pi\\int_0^1 x\\,dx=\\dfrac{\\pi}{2}$.' },
+        { stem: 'Cho $P(A\\cap B)=0{,}2$, $P(B)=0{,}5$. Tính $P(A\\mid B)$.', options: ['$0{,}1$', '$0{,}25$', '$0{,}7$', '$0{,}4$'], answer: 3, explanation: '$0{,}2/0{,}5=0{,}4$.' },
+        { stem: 'Độ dài $\\vec{AB}$ với $A(1;0;0)$, $B(1;3;4)$ là?', options: ['$5$', '$7$', '$25$', '$\\sqrt7$'], answer: 0, explanation: '$\\sqrt{0+9+16}=5$.' },
+        { stem: 'Vectơ pháp tuyến của $2x+y-2z+1=0$ là?', options: ['$(2;1;2)$', '$(2;-1;-2)$', '$(2;1;-2)$', '$(-2;1;2)$'], answer: 2, explanation: 'Hệ số $x,y,z$.' },
+        { stem: 'Tâm mặt cầu $x^2+y^2+z^2-4x=0$ là?', options: ['$(-2;0;0)$', '$(2;0;0)$', '$(4;0;0)$', '$(0;0;2)$'], answer: 1, explanation: '$-2a=-4\\Rightarrow a=2$.' },
+        { stem: 'Khoảng biến thiên của mẫu $5,9,14$ là?', options: ['$14$', '$5$', '$19$', '$9$'], answer: 3, explanation: '$14-5=9$.' },
+        { stem: 'Tính $\\displaystyle\\int_0^{\\pi/2}\\cos x\\,dx$.', options: ['$1$', '$0$', '$2$', '$-1$'], answer: 0, explanation: '$[\\sin x]_0^{\\pi/2}=1$.' },
+        { stem: 'Đạo hàm của $y=\\ln x$ là?', options: ['$x$', '$e^x$', '$\\dfrac{1}{x}$', '$\\ln x$'], answer: 2, explanation: '$(\\ln x)\'=\\dfrac{1}{x}$.' },
+      ],
+    },
   ],
 
   TOEIC: [
