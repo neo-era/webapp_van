@@ -584,6 +584,21 @@ const EXAMS = {
         { stem: 'Đơn vị của độ tự cảm là?', options: ['Tesla', 'Henry', 'Weber', 'Farad'], answer: 1, explanation: 'Độ tự cảm đo bằng Henry (H).' },
       ],
     },
+    {
+      examId: 'ly-kt45-13', title: 'Kiểm tra 45′ #13 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Động cơ nhiệt nhận $Q_1=1000$ J, sinh công $A=300$ J. Hiệu suất?', options: ['$70\\%$', '$3\\%$', '$30\\%$', '$100\\%$'], answer: 2, explanation: '$H=A/Q_1=300/1000=30\\%$.' },
+        { stem: 'Khí đẳng tích $p_1=1$ atm ở $250$ K, đun đến $500$ K. Áp suất sau?', options: ['$1{,}5$ atm', '$4$ atm', '$0{,}5$ atm', '$2$ atm'], answer: 3, explanation: '$p_2=p_1T_2/T_1=1\\cdot500/250=2$ atm.' },
+        { stem: 'Làm nguội $100$ g nước ($c=4200$) đi $20$ °C, nhiệt tỏa ra?', options: ['$8400$ J', '$4200$ J', '$16800$ J', '$2100$ J'], answer: 0, explanation: '$Q=0{,}1\\cdot4200\\cdot20=8400$ J.' },
+        { stem: 'Từ thông qua vòng dây biến thiên $\\Delta\\Phi=0{,}04$ Wb trong $0{,}2$ s. Suất điện động cảm ứng?', options: ['$0{,}02$ V', '$2$ V', '$0{,}008$ V', '$0{,}2$ V'], answer: 3, explanation: '$|e|=\\Delta\\Phi/\\Delta t=0{,}04/0{,}2=0{,}2$ V.' },
+        { stem: 'Hạt nhân $^{60}_{27}Co$ có bao nhiêu nuclôn?', options: ['$27$', '$33$', '$60$', '$87$'], answer: 2, explanation: 'Số nuclôn = số khối $A=60$.' },
+        { stem: 'Phản ứng nhiệt hạch là quá trình?', options: ['kết hợp hai hạt nhân nhẹ thành hạt nhân nặng hơn', 'phân chia hạt nhân nặng', 'phát tia gamma', 'hấp thụ neutron'], answer: 0, explanation: 'Nhiệt hạch: hai hạt nhân nhẹ (H) kết hợp thành hạt nhân nặng hơn (He).' },
+        { stem: 'Năng lượng $2$ eV bằng bao nhiêu Jun? ($1$ eV $=1{,}6\\cdot10^{-19}$ J)', options: ['$0{,}8\\cdot10^{-19}$ J', '$1{,}6\\cdot10^{-19}$ J', '$3{,}2\\cdot10^{-19}$ J', '$6{,}4\\cdot10^{-19}$ J'], answer: 2, explanation: '$2\\cdot1{,}6\\cdot10^{-19}=3{,}2\\cdot10^{-19}$ J.' },
+        { stem: 'Ở thể tích không đổi, nếu áp suất khí tăng gấp 3 thì nhiệt độ tuyệt đối?', options: ['giảm 3 lần', 'tăng gấp 3', 'không đổi', 'tăng gấp 9'], answer: 1, explanation: 'Đẳng tích: $p\\propto T$ ⇒ $p$ tăng 3 lần thì $T$ tăng 3 lần.' },
+        { stem: 'Số proton trong hạt nhân $^{235}_{92}U$?', options: ['$143$', '$235$', '$51$', '$92$'], answer: 3, explanation: 'Số proton $Z=92$.' },
+        { stem: 'Lực Lorentz tác dụng lên hạt mang điện đạt cực đại khi vận tốc và $\\vec B$?', options: ['song song', 'vuông góc', 'cùng chiều', 'ngược chiều'], answer: 1, explanation: '$f=qvB\\sin\\theta$ cực đại khi $\\theta=90^\\circ$ (vuông góc).' },
+      ],
+    },
   ],
 
   HOA: [
