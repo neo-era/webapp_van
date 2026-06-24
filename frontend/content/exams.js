@@ -449,6 +449,21 @@ const EXAMS = {
         { stem: 'Đẳng áp: $V_1=2$ ở $T_1=300$ K, sang $T_2=450$ K. Tính $V_2$.', options: ['$2$', '$3$', '$4{,}5$', '$1{,}5$'], answer: 1, explanation: '$\\dfrac{V}{T}$ const ⇒ $V_2=2\\cdot\\dfrac{450}{300}=3$.' },
       ],
     },
+    {
+      examId: 'ly-kt45-4', title: 'Kiểm tra 45′ #4 — Tổng hợp Vật lí 12', durationMin: 45,
+      questions: [
+        { stem: 'Hệ nhận nhiệt $80$ J và nhận công $20$ J. Tính $\\Delta U$.', options: ['$120$ J', '$100$ J', '$60$ J', '$80$ J'], answer: 1, explanation: '$\\Delta U=A+Q=20+80=100$ J.' },
+        { stem: 'Đơn vị của nhiệt lượng là?', options: ['Jun (J)', 'Tesla (T)', 'Oát (W)', 'Vêbe (Wb)'], answer: 0, explanation: 'Nhiệt lượng đo bằng jun.' },
+        { stem: 'Khí đẳng nhiệt $p_1=4$, $V_1=1$, khi $p_2=2$ thì $V_2$=?', options: ['$1$', '$4$', '$2$', '$8$'], answer: 2, explanation: '$V_2=\\dfrac{p_1V_1}{p_2}=2$.' },
+        { stem: '$100$ °C bằng bao nhiêu Kelvin?', options: ['$273$', '$100$', '$173$', '$373$'], answer: 3, explanation: '$100+273=373$ K.' },
+        { stem: 'Lực từ lên dây dẫn đạt cực đại khi góc giữa dây và $\\vec{B}$ bằng?', options: ['$0^\\circ$', '$90^\\circ$', '$45^\\circ$', '$180^\\circ$'], answer: 1, explanation: '$\\sin\\theta$ lớn nhất khi $\\theta=90^\\circ$.' },
+        { stem: 'Đơn vị của từ thông là?', options: ['Vêbe (Wb)', 'Tesla (T)', 'Jun (J)', 'Ampe (A)'], answer: 0, explanation: 'Từ thông đo bằng vêbe.' },
+        { stem: 'Hạt nhân $^{16}_{8}O$ có bao nhiêu neutron?', options: ['$16$', '$24$', '$8$', '$0$'], answer: 2, explanation: '$N=A-Z=16-8=8$.' },
+        { stem: 'Sau 3 chu kì bán rã, còn lại bao nhiêu phần trăm?', options: ['$50\\%$', '$25\\%$', '$75\\%$', '$12{,}5\\%$'], answer: 3, explanation: '$2^{-3}=\\tfrac18=12{,}5\\%$.' },
+        { stem: 'Suất điện động cảm ứng tỉ lệ với?', options: ['độ lớn từ thông', 'tốc độ biến thiên từ thông', 'cường độ dòng điện', 'điện trở'], answer: 1, explanation: '$|e|=\\left|\\dfrac{\\Delta\\Phi}{\\Delta t}\\right|$.' },
+        { stem: 'Lực từ $F=BIl$; nếu $I$ tăng gấp đôi (các đại lượng khác không đổi) thì $F$?', options: ['không đổi', 'giảm một nửa', 'gấp đôi', 'gấp bốn'], answer: 2, explanation: '$F$ tỉ lệ thuận với $I$.' },
+      ],
+    },
   ],
 
   HOA: [
