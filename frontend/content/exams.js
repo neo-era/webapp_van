@@ -1202,6 +1202,21 @@ const EXAMS = {
         { stem: 'Số mol HCl cần để tác dụng hết với $0{,}1$ mol $CaCO_3$?', options: ['$0{,}1$', '$0{,}05$', '$0{,}2$', '$1$'], answer: 2, explanation: '$CaCO_3+2HCl\\to CaCl_2+H_2O+CO_2$; cần $0{,}2$ mol HCl.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-27', title: 'Kiểm tra 45′ #27 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $13$ g Zn ($M=65$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=13/65=0{,}2$ mol.' },
+        { stem: 'Khối lượng của $0{,}3$ mol $CaCl_2$ ($M=111$)?', options: ['$33{,}3$ g', '$22{,}2$ g', '$44{,}4$ g', '$11{,}1$ g'], answer: 0, explanation: '$m=0{,}3\\cdot111=33{,}3$ g.' },
+        { stem: 'Thể tích $O_2$ (đktc) để đốt hết $0{,}4$ mol $H_2$? ($2H_2+O_2\\to2H_2O$)', options: ['$2{,}24$ L', '$8{,}96$ L', '$4{,}48$ L', '$1{,}12$ L'], answer: 2, explanation: '$n_{O_2}=0{,}4/2=0{,}2$ mol $\\Rightarrow V=4{,}48$ L.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}5$ mol $HNO_3$?', options: ['$0{,}5$', '$1$', '$1{,}5$', '$2$'], answer: 2, explanation: 'Mỗi phân tử có 3 O ⇒ $0{,}5\\cdot3=1{,}5$ mol.' },
+        { stem: 'Hòa tan $20$ g chất tan trong $80$ g nước. Nồng độ phần trăm?', options: ['$20\\%$', '$10\\%$', '$25\\%$', '$40\\%$'], answer: 0, explanation: '$C\\%=20/100\\cdot100\\%=20\\%$.' },
+        { stem: 'Khối lượng mol của $ZnSO_4$ (Zn=65, S=32, O=16)?', options: ['$145$', '$161$', '$177$', '$129$'], answer: 1, explanation: '$65+32+4\\cdot16=161$ g/mol.' },
+        { stem: 'Kim loại nào KHÔNG tác dụng với dung dịch HCl và $H_2SO_4$ loãng?', options: ['Mg', 'Zn', 'Fe', 'Cu'], answer: 3, explanation: 'Cu đứng sau H trong dãy hoạt động ⇒ không phản ứng.' },
+        { stem: 'Phần trăm khối lượng O trong CaO ($M=56$)?', options: ['$71{,}4\\%$', '$50\\%$', '$28{,}6\\%$', '$16\\%$'], answer: 2, explanation: '$16/56\\cdot100\\%\\approx28{,}6\\%$.' },
+        { stem: 'Chất nào sau đây là một acid hữu cơ?', options: ['HCl', '$CH_3COOH$', '$H_2SO_4$', '$HNO_3$'], answer: 1, explanation: '$CH_3COOH$ (acetic acid) là acid hữu cơ.' },
+        { stem: 'Số mol $H_2$ sinh ra khi $0{,}3$ mol Zn tác dụng hết với HCl?', options: ['$0{,}15$', '$0{,}6$', '$0{,}1$', '$0{,}3$'], answer: 3, explanation: '$Zn+2HCl\\to ZnCl_2+H_2$; $0{,}3$ mol Zn ⇒ $0{,}3$ mol $H_2$.' },
+      ],
+    },
   ],
 
   ANH: [
