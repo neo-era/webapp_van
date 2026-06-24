@@ -722,6 +722,21 @@ const EXAMS = {
         { stem: 'Kim loại nào sau đây KHÔNG phản ứng với dung dịch HCl?', options: ['Fe', 'Zn', 'Cu', 'Al'], answer: 2, explanation: 'Cu đứng sau H trong dãy hoạt động ⇒ không phản ứng với HCl.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-11', title: 'Kiểm tra 45′ #11 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol của $11{,}2$ L khí $O_2$ ở điều kiện tiêu chuẩn?', options: ['$1$ mol', '$2$ mol', '$0{,}5$ mol', '$0{,}25$ mol'], answer: 2, explanation: '$n=V/22{,}4=11{,}2/22{,}4=0{,}5$ mol.' },
+        { stem: 'Khối lượng của $0{,}5$ mol NaOH ($M=40$)?', options: ['$40$ g', '$80$ g', '$10$ g', '$20$ g'], answer: 3, explanation: '$m=n\\cdot M=0{,}5\\cdot40=20$ g.' },
+        { stem: 'Số mol có trong $9$ g $H_2O$ ($M=18$)?', options: ['$0{,}5$ mol', '$1$ mol', '$9$ mol', '$0{,}25$ mol'], answer: 0, explanation: '$n=9/18=0{,}5$ mol.' },
+        { stem: 'Hòa tan $0{,}2$ mol NaCl vào nước được $0{,}5$ L dung dịch. Nồng độ mol?', options: ['$0{,}1$ M', '$0{,}5$ M', '$0{,}4$ M', '$1$ M'], answer: 2, explanation: '$C_M=n/V=0{,}2/0{,}5=0{,}4$ M.' },
+        { stem: 'Đốt cháy hoàn toàn $1$ mol $CH_4$ cần bao nhiêu mol $O_2$? ($CH_4+2O_2\\to CO_2+2H_2O$)', options: ['$1$', '$3$', '$4$', '$2$'], answer: 3, explanation: 'Theo phương trình: cần $2$ mol $O_2$.' },
+        { stem: 'Khối lượng mol của $CO_2$ (C=12, O=16) là?', options: ['$44$', '$28$', '$32$', '$46$'], answer: 0, explanation: '$12+2\\cdot16=44$ g/mol.' },
+        { stem: 'Cho $5{,}6$ g Fe ($M=56$) phản ứng hết với HCl. Số mol Fe đã phản ứng?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=5{,}6/56=0{,}1$ mol.' },
+        { stem: 'Dung dịch có $20$ g chất tan trong $100$ g dung dịch. Nồng độ phần trăm?', options: ['$10\\%$', '$5\\%$', '$25\\%$', '$20\\%$'], answer: 3, explanation: '$C\\%=20/100\\cdot100\\%=20\\%$.' },
+        { stem: 'Phân tử khối của $H_2SO_4$ (H=1, S=32, O=16) là?', options: ['$96$', '$98$', '$100$', '$94$'], answer: 1, explanation: '$2+32+4\\cdot16=98$.' },
+        { stem: 'Số phân tử có trong $1$ mol chất (số Avogadro) xấp xỉ?', options: ['$3{,}011\\cdot10^{23}$', '$6{,}022\\cdot10^{23}$', '$1{,}2\\cdot10^{24}$', '$6{,}022\\cdot10^{22}$'], answer: 1, explanation: 'Số Avogadro $N_A\\approx6{,}022\\cdot10^{23}$.' },
+      ],
+    },
   ],
 
   ANH: [
