@@ -629,6 +629,21 @@ const EXAMS = {
         { stem: 'Công suất tỏa nhiệt trên điện trở $R=10\\ \\Omega$ có dòng $I=2$ A?', options: ['$20$ W', '$40$ W', '$80$ W', '$10$ W'], answer: 1, explanation: '$P=I^2R=2^2\\cdot10=40$ W.' },
       ],
     },
+    {
+      examId: 'ly-kt45-16', title: 'Kiểm tra 45′ #16 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Ở điều kiện tiêu chuẩn, $2$ mol khí lí tưởng chiếm thể tích?', options: ['$22{,}4$ L', '$11{,}2$ L', '$89{,}6$ L', '$44{,}8$ L'], answer: 3, explanation: '$V=2\\cdot22{,}4=44{,}8$ L.' },
+        { stem: 'Cung cấp $Q=8400$ J cho $200$ g nước ($c=4200$), nhiệt độ tăng thêm?', options: ['$10$ °C', '$5$ °C', '$20$ °C', '$42$ °C'], answer: 0, explanation: '$\\Delta t=Q/(mc)=8400/(0{,}2\\cdot4200)=10$ °C.' },
+        { stem: 'Đoạn dây $l=0{,}4$ m mang $I=10$ A trong $B=0{,}5$ T (vuông góc). Lực từ?', options: ['$1$ N', '$2$ N', '$4$ N', '$5$ N'], answer: 1, explanation: '$F=BIl=0{,}5\\cdot10\\cdot0{,}4=2$ N.' },
+        { stem: 'Hạt nhân $^{235}U$ hấp thụ neutron rồi vỡ ra. Đây là phản ứng?', options: ['nhiệt hạch', 'phóng xạ tự nhiên', 'phân hạch', 'ion hóa'], answer: 2, explanation: 'Hạt nhân nặng vỡ ⇒ phản ứng phân hạch.' },
+        { stem: 'Năng lượng liên kết riêng của hạt nhân càng lớn thì hạt nhân càng?', options: ['kém bền', 'phóng xạ mạnh', 'nhẹ', 'bền vững'], answer: 3, explanation: 'Năng lượng liên kết riêng lớn ⇒ hạt nhân bền vững.' },
+        { stem: 'Đèn LED $5$ W dùng trong $10$ giờ tiêu thụ điện năng?', options: ['$5$ Wh', '$50$ Wh', '$500$ Wh', '$0{,}5$ Wh'], answer: 1, explanation: '$A=Pt=5\\cdot10=50$ Wh.' },
+        { stem: 'Trong quá trình đẳng áp, nếu nhiệt độ tuyệt đối tăng gấp 3 thì thể tích?', options: ['tăng gấp 3', 'giảm 3 lần', 'không đổi', 'tăng gấp 9'], answer: 0, explanation: 'Đẳng áp: $V\\propto T$ ⇒ $V$ tăng gấp 3.' },
+        { stem: 'Đổi $127$ °C sang thang Kelvin?', options: ['$300$ K', '$350$ K', '$273$ K', '$400$ K'], answer: 3, explanation: '$127+273=400$ K.' },
+        { stem: 'Khi chu kì bán rã $T$ tăng thì hằng số phóng xạ $\\lambda$ ($=\\ln2/T$)?', options: ['tăng', 'giảm', 'không đổi', 'bằng 0'], answer: 1, explanation: '$\\lambda=\\ln2/T$ ⇒ $T$ tăng thì $\\lambda$ giảm.' },
+        { stem: 'Công của lực điện dịch chuyển điện tích $q=2$ C qua hiệu điện thế $U=5$ V?', options: ['$10$ J', '$5$ J', '$2{,}5$ J', '$25$ J'], answer: 0, explanation: '$A=qU=2\\cdot5=10$ J.' },
+      ],
+    },
   ],
 
   HOA: [
