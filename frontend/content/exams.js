@@ -572,6 +572,21 @@ const EXAMS = {
         { stem: 'Phản ứng tạo polymer từ monomer có liên kết bội là?', options: ['trùng ngưng', 'thủy phân', 'trùng hợp', 'ester hóa'], answer: 2, explanation: 'Trùng hợp.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-6', title: 'Kiểm tra 45′ #6 — Hóa 12', durationMin: 45,
+      questions: [
+        { stem: 'Số đồng phân ester ứng với công thức $C_3H_6O_2$ là?', options: ['$1$', '$2$', '$3$', '$4$'], answer: 1, explanation: '$HCOOC_2H_5$ và $CH_3COOCH_3$.' },
+        { stem: 'Loại đường nào ngọt nhất?', options: ['glucose', 'saccharose', 'fructose', 'tinh bột'], answer: 2, explanation: 'Fructose ngọt nhất.' },
+        { stem: 'Thủy phân ester trong môi trường acid là phản ứng?', options: ['thuận nghịch', 'một chiều', 'không xảy ra', 'tỏa nhiệt mạnh'], answer: 0, explanation: 'Trong acid: thuận nghịch.' },
+        { stem: 'Liên kết peptide hình thành giữa?', options: ['hai nhóm $-OH$', 'hai nhóm $-COOH$', 'hai nhóm $-NH_2$', 'nhóm $-COOH$ và $-NH_2$'], answer: 3, explanation: 'Tách $H_2O$ giữa $-COOH$ và $-NH_2$.' },
+        { stem: 'Kim loại nào dẻo nhất (dát mỏng nhất)?', options: ['Ag', 'Au', 'Cu', 'Fe'], answer: 1, explanation: 'Vàng (Au) dẻo nhất.' },
+        { stem: 'Gang là hợp kim của sắt với?', options: ['Cu', 'Zn', 'C (carbon)', 'Al'], answer: 2, explanation: 'Gang: Fe–C (hàm lượng C 2–5%).' },
+        { stem: 'Aniline tác dụng nước brom tạo kết tủa màu?', options: ['trắng', 'vàng', 'đỏ', 'xanh'], answer: 0, explanation: 'Kết tủa trắng 2,4,6-tribromoaniline.' },
+        { stem: 'Tinh bột được cấu tạo từ?', options: ['glucose & fructose', '2 glucose', 'cellulose', 'amylose và amylopectin'], answer: 3, explanation: 'Tinh bột gồm amylose và amylopectin.' },
+        { stem: 'Để bảo vệ vỏ tàu biển bằng thép, người ta gắn kim loại nào?', options: ['Cu', 'Zn', 'Ag', 'Pb'], answer: 1, explanation: 'Zn làm "anode hi sinh" (kẽm bị ăn mòn thay).' },
+        { stem: 'Saccharose còn được gọi là đường?', options: ['glucose', 'nho', 'mía', 'mạch nha'], answer: 2, explanation: 'Saccharose là đường mía (đường ăn).' },
+      ],
+    },
   ],
 
   ANH: [
