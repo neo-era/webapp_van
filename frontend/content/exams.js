@@ -644,6 +644,21 @@ const EXAMS = {
         { stem: 'Công của lực điện dịch chuyển điện tích $q=2$ C qua hiệu điện thế $U=5$ V?', options: ['$10$ J', '$5$ J', '$2{,}5$ J', '$25$ J'], answer: 0, explanation: '$A=qU=2\\cdot5=10$ J.' },
       ],
     },
+    {
+      examId: 'ly-kt45-17', title: 'Kiểm tra 45′ #17 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt: $p_1=4$ atm, $V_1=3$ L. Khi $p_2=6$ atm thì $V_2=?$', options: ['$1$ L', '$3$ L', '$4$ L', '$2$ L'], answer: 3, explanation: '$V_2=p_1V_1/p_2=4\\cdot3/6=2$ L.' },
+        { stem: 'Nhiệt tỏa ra khi $1$ kg nước đông đặc thành đá ở $0$ °C ($\\lambda=3{,}4\\cdot10^5$ J/kg)?', options: ['$340$ kJ', '$170$ kJ', '$680$ kJ', '$34$ kJ'], answer: 0, explanation: '$Q=\\lambda m=3{,}4\\cdot10^5=340$ kJ.' },
+        { stem: 'Khung $N=200$ vòng, $\\Delta\\Phi=0{,}01$ Wb trong $0{,}5$ s. Suất điện động?', options: ['$2$ V', '$8$ V', '$4$ V', '$10$ V'], answer: 2, explanation: '$|e|=N\\Delta\\Phi/\\Delta t=200\\cdot0{,}01/0{,}5=4$ V.' },
+        { stem: 'Dây dẫn $I=3$ A, $l=0{,}5$ m trong $B=0{,}4$ T (vuông góc). Lực từ?', options: ['$0{,}3$ N', '$1{,}2$ N', '$2$ N', '$0{,}6$ N'], answer: 3, explanation: '$F=BIl=0{,}4\\cdot3\\cdot0{,}5=0{,}6$ N.' },
+        { stem: 'Trong phóng xạ $\\beta^-$, số khối $A$ của hạt nhân?', options: ['tăng 1', 'giảm 1', 'không đổi', 'tăng 4'], answer: 2, explanation: '$\\beta^-$ chỉ biến neutron thành proton ⇒ $A$ không đổi.' },
+        { stem: 'Năng lượng nghỉ của vật $m=1$ g $=10^{-3}$ kg ($c=3\\cdot10^8$)?', options: ['$9\\cdot10^{16}$ J', '$3\\cdot10^5$ J', '$9\\cdot10^{13}$ J', '$10^{-3}$ J'], answer: 2, explanation: '$E=mc^2=10^{-3}\\cdot9\\cdot10^{16}=9\\cdot10^{13}$ J.' },
+        { stem: 'Khí đẳng tích từ $200$ K lên $400$ K, áp suất ban đầu $1$ atm. Áp suất sau?', options: ['$2$ atm', '$1{,}5$ atm', '$4$ atm', '$0{,}5$ atm'], answer: 0, explanation: '$p_2=p_1T_2/T_1=1\\cdot400/200=2$ atm.' },
+        { stem: 'Số neutron trong hạt nhân $^{14}_6C$?', options: ['$6$', '$14$', '$20$', '$8$'], answer: 3, explanation: '$N=A-Z=14-6=8$.' },
+        { stem: 'Đổi $50$ °C sang thang Kelvin?', options: ['$273$ K', '$323$ K', '$350$ K', '$223$ K'], answer: 1, explanation: '$50+273=323$ K.' },
+        { stem: 'Công suất tiêu thụ của thiết bị có $U=12$ V, $I=2$ A?', options: ['$12$ W', '$24$ W', '$6$ W', '$48$ W'], answer: 1, explanation: '$P=UI=12\\cdot2=24$ W.' },
+      ],
+    },
   ],
 
   HOA: [
