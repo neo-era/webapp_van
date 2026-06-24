@@ -1655,6 +1655,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'rich'.", options: ['wealthy', 'affluent', 'prosperous', 'poor'], answer: 3, explanation: 'rich ↔ poor (nghèo).' },
       ],
     },
+    {
+      examId: 'anh-kt45-28', title: 'Kiểm tra 45′ #28 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'Would you like ____ tea?', options: ['some', 'any', 'much', 'many'], answer: 0, explanation: 'Lời mời/đề nghị dùng "some".' },
+        { stem: 'She really enjoys ____ books in her free time.', options: ['reading', 'read', 'to read', 'reads'], answer: 0, explanation: 'enjoy + V-ing.' },
+        { stem: 'They have lived here ____ a long time.', options: ['since', 'ago', 'by', 'for'], answer: 3, explanation: 'for + khoảng thời gian.' },
+        { stem: 'The film ____ we watched last night was great.', options: ['who', 'that', 'where', 'whose'], answer: 1, explanation: 'that thay cho vật, làm tân ngữ.' },
+        { stem: 'If he ____ harder, he would succeed.', options: ['tries', 'try', 'trying', 'tried'], answer: 3, explanation: 'Câu điều kiện loại 2: If + quá khứ đơn.' },
+        { stem: "She's ____ tired to continue working.", options: ['so', 'too', 'very', 'enough'], answer: 1, explanation: 'too + adj + to V.' },
+        { stem: "Choose the synonym of 'quick'.", options: ['fast', 'slow', 'lazy', 'late'], answer: 0, explanation: 'quick ≈ fast (nhanh).' },
+        { stem: "I'd rather ____ at home tonight.", options: ['to stay', 'staying', 'stayed', 'stay'], answer: 3, explanation: 'would rather + V nguyên thể không to.' },
+        { stem: "He's the man ____ wife is a famous doctor.", options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: "Choose the antonym of 'hot'.", options: ['warm', 'cold', 'mild', 'boiling'], answer: 1, explanation: 'hot ↔ cold (lạnh).' },
+      ],
+    },
   ],
 
   TOEIC: [
