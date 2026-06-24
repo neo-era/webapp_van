@@ -1972,6 +1972,21 @@ const EXAMS = {
         { stem: 'So great was the storm ____ all flights were cancelled.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-21', title: 'IELTS – Vocabulary & Grammar #21', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "abolish".', options: ['remove', 'establish', 'create', 'build'], answer: 0, explanation: 'abolish ≈ remove (bãi bỏ).' },
+        { stem: 'Choose the synonym of "compel".', options: ['force', 'allow', 'permit', 'free'], answer: 0, explanation: 'compel ≈ force (bắt buộc).' },
+        { stem: 'Choose the antonym of "visible".', options: ['seen', 'apparent', 'evident', 'invisible'], answer: 3, explanation: 'visible ↔ invisible (vô hình).' },
+        { stem: 'Scarcely had we arrived ____ it started to snow.', options: ['than', 'when', 'then', 'that'], answer: 1, explanation: 'Scarcely … when … (vừa … thì …).' },
+        { stem: 'Choose the synonym of "ponder".', options: ['consider', 'ignore', 'forget', 'dismiss'], answer: 0, explanation: 'ponder ≈ consider (cân nhắc).' },
+        { stem: 'The data, ____ analysis took months, were finally published.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "tighten".', options: ['fasten', 'secure', 'fix', 'loosen'], answer: 3, explanation: 'tighten ↔ loosen (nới lỏng).' },
+        { stem: 'Only then ____ the truth about the situation.', options: ['he realized', 'did he realize', 'he realizes', 'realize he'], answer: 1, explanation: 'Đảo ngữ với "Only then": + did + S + V.' },
+        { stem: 'Choose the synonym of "wane".', options: ['grow', 'rise', 'increase', 'decline'], answer: 3, explanation: 'wane ≈ decline (suy giảm).' },
+        { stem: 'Such was her skill ____ she won the match easily.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Such … that … (kết quả).' },
+      ],
+    },
   ],
 };
 
