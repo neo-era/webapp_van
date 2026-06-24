@@ -514,6 +514,21 @@ const EXAMS = {
           options: ['hear', 'hearing', 'heard', 'hears'], answer: 1, explanation: 'look forward to + V-ing.' },
       ],
     },
+    {
+      examId: 'toeic-2', title: 'TOEIC – Grammar & Vocabulary #2', durationMin: 20,
+      questions: [
+        { stem: 'The meeting has been ____ until next week.', options: ['postpone', 'postponed', 'postponing', 'postpones'], answer: 1, explanation: 'has been + V3 (bị động hoàn thành).' },
+        { stem: 'We ____ forward to your prompt reply.', options: ['look', 'looks', 'looking', 'looked'], answer: 0, explanation: 'Chủ ngữ "We" + động từ nguyên thể.' },
+        { stem: 'All employees must ____ the safety rules.', options: ['follow', 'follows', 'following', 'to follow'], answer: 0, explanation: 'must + V nguyên thể.' },
+        { stem: 'The report is due ____ Monday.', options: ['in', 'on', 'at', 'of'], answer: 1, explanation: 'on + thứ trong tuần.' },
+        { stem: 'She is responsible ____ the marketing team.', options: ['of', 'to', 'for', 'with'], answer: 2, explanation: 'be responsible for.' },
+        { stem: 'Sales have increased ____ 10% this year.', options: ['by', 'in', 'on', 'at'], answer: 0, explanation: 'increase by + mức tăng.' },
+        { stem: '____ you have any questions, please contact us.', options: ['If', 'Unless', 'Despite', 'Because'], answer: 0, explanation: 'If + mệnh đề điều kiện.' },
+        { stem: 'The new policy will ____ effect next month.', options: ['take', 'make', 'do', 'have'], answer: 0, explanation: 'collocation "take effect".' },
+        { stem: 'Choose the synonym of "purchase".', options: ['sell', 'buy', 'return', 'order'], answer: 1, explanation: 'purchase ≈ buy.' },
+        { stem: 'The manager ____ the proposal yesterday.', options: ['approve', 'approves', 'approved', 'approving'], answer: 2, explanation: 'yesterday ⇒ quá khứ đơn.' },
+      ],
+    },
   ],
 
   IELTS: [
