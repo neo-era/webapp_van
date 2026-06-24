@@ -622,6 +622,21 @@ const EXAMS = {
         { stem: 'Choose the synonym of "essential".', options: ['optional', 'minor', 'extra', 'vital'], answer: 3, explanation: 'essential ≈ vital.' },
       ],
     },
+    {
+      examId: 'ielts-kt-3', title: 'IELTS – Vocabulary & Grammar #3', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "demonstrate".', options: ['hide', 'deny', 'show', 'forget'], answer: 2, explanation: 'demonstrate ≈ show.' },
+        { stem: 'The results were truly ____ (very surprising).', options: ['boring', 'normal', 'dull', 'astonishing'], answer: 3, explanation: 'surprising ≈ astonishing.' },
+        { stem: 'He is very good ____ mathematics.', options: ['at', 'in', 'on', 'of'], answer: 0, explanation: 'good at + lĩnh vực.' },
+        { stem: 'A number of students ____ absent today.', options: ['is', 'are', 'was', 'has'], answer: 1, explanation: '"a number of" + danh từ số nhiều + are.' },
+        { stem: 'Choose the antonym of "expensive".', options: ['costly', 'pricey', 'cheap', 'dear'], answer: 2, explanation: 'expensive ↔ cheap.' },
+        { stem: 'She ____ in London for ten years.', options: ['lives', 'lived', 'living', 'has lived'], answer: 3, explanation: 'for + khoảng tg ⇒ present perfect.' },
+        { stem: 'Despite ____ tired, she kept working.', options: ['being', 'be', 'was', 'been'], answer: 0, explanation: 'despite + V-ing (being).' },
+        { stem: 'Choose the synonym of "obtain".', options: ['lose', 'get', 'give', 'drop'], answer: 1, explanation: 'obtain ≈ get.' },
+        { stem: 'The more you practise, ____ you become.', options: ['better', 'best', 'the better', 'the best'], answer: 2, explanation: 'Cấu trúc "the more…, the + so sánh hơn".' },
+        { stem: 'It is essential ____ we act now.', options: ['what', 'which', 'who', 'that'], answer: 3, explanation: 'It is essential that + mệnh đề.' },
+      ],
+    },
   ],
 };
 
