@@ -63,20 +63,61 @@ function fileToBase64(file) {
 async function doLogin(email, password) {
   if (!email || !password) { showToast('Nhập email và mật khẩu', 'error'); return; }
   showLoading();
+  let data;
   try {
-    const data = await Api.call('login', { email: email, password: password });
-    App.state.token = data.token;
-    App.state.user = data.user;
-    App.state.role = data.user.role;
-    try { localStorage.setItem('thpt_token', data.token); } catch (e) {}
-    if (data.user.role === 'STUDENT') await loadStudentData();
-    else if (data.user.role === 'TEACHER') await loadTeacherData();
-    enterApp();
+    data = await Api.call('login', { email: email, password: password });
   } catch (e) {
-    showToast(e.message || 'Đăng nhập thất bại', 'error');
-  } finally {
-    hideLoading();
+    hideLoading(); showToast(e.message || 'Đăng nhập thất bại', 'error'); return;
   }
+  hideLoading();
+  App.state.token = data.token;
+  App.state.user = data.user;
+  App.state.role = data.user.role;
+  saveSession();
+  enterApp();        // hiện app NGAY
+  loadRoleData();    // tải dữ liệu chạy nền
+}
+
+function saveSession() {
+  try {
+    localStorage.setItem('thpt_token', App.state.token);
+    localStorage.setItem('thpt_user', JSON.stringify(App.state.user));
+  } catch (e) {}
+}
+
+// Tải dữ liệu theo vai trò (chạy nền, không chặn UI).
+async function loadRoleData() {
+  App.state.loadingData = true; rerender();
+  try {
+    if (App.state.role === 'STUDENT') await loadStudentData();
+    else if (App.state.role === 'TEACHER') await loadTeacherData();
+  } catch (e) {
+    showToast('Không tải được dữ liệu: ' + e.message, 'error');
+  } finally {
+    App.state.loadingData = false; rerender();
+  }
+}
+
+// Khôi phục phiên TỨC THÌ từ cache (không gọi backend), rồi làm mới nền.
+function restoreFromCache(token, userJson) {
+  try {
+    const u = JSON.parse(userJson);
+    if (!u || !u.role) return false;
+    App.state.token = token; App.state.user = u; App.state.role = u.role;
+    // Prefill dữ liệu từ cache → hiện nội dung NGAY, không chờ backend
+    try {
+      const cached = JSON.parse(localStorage.getItem('thpt_data') || 'null');
+      if (cached) {
+        App.data.plans = cached.plans || [];
+        App.data.goals = cached.goals || [];
+        App.data.exam = cached.exam || null;
+        App.data.notes = cached.notes || [];
+      }
+    } catch (e) {}
+    enterApp();
+    loadRoleData();    // làm mới ngầm
+    return true;
+  } catch (e) { return false; }
 }
 
 function loginDemo(role) {
@@ -151,6 +192,7 @@ async function loadStudentData() {
   App.data.goals = d.goals || [];
   App.data.exam = d.exam || null;
   App.data.notes = d.notes || [];
+  try { localStorage.setItem('thpt_data', JSON.stringify({ plans: App.data.plans, goals: App.data.goals, exam: App.data.exam, notes: App.data.notes })); } catch (e) {}
 }
 
 async function loadTeacherData() {
@@ -186,7 +228,12 @@ function logout() {
   App._activeClass = null;
   App.state.learn = { view: 'subjects' };
   App.data.subjects = null;
-  try { localStorage.removeItem('thpt_token'); } catch (e) {}
+  App._tcache = null; App._lcache = null;
+  try {
+    localStorage.removeItem('thpt_token');
+    localStorage.removeItem('thpt_user');
+    localStorage.removeItem('thpt_data');
+  } catch (e) {}
   $('#app-shell').classList.add('hidden');
   $('#screen-login').classList.remove('hidden');
 }
@@ -215,6 +262,11 @@ function rerender() {
    HÔM NAY
    ============================================================ */
 function renderToday() {
+  if (App.state.loadingData && !App.data.plans.length && !App.data.goals.length && !App.data.exam) {
+    $('#screen-today').innerHTML = `<div class="page-head"><h2>Xin chào 👋</h2><p>Đang tải dữ liệu…</p></div>
+      <div class="card"><div class="empty">Đang tải…</div></div>`;
+    return;
+  }
   const todayStr = dayjs().format('YYYY-MM-DD');
   const todayTasks = App.data.plans.filter((p) => p.dueDate === todayStr);
   const doneCount = todayTasks.filter((p) => p.status === 'DONE').length;
@@ -541,7 +593,9 @@ async function renderLearn() {
       <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="learnOpenExams()">📝 Bài kiểm tra môn ${v.subjectName}</button>
       <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
     try {
-      const topics = await Api.call('getTopics', { subjectCode: v.subjectCode, grade: App.state.user.grade || 12 });
+      App._tcache = App._tcache || {};
+      let topics = App._tcache[v.subjectCode];
+      if (!topics) { topics = await Api.call('getTopics', { subjectCode: v.subjectCode, grade: App.state.user.grade || 12 }); App._tcache[v.subjectCode] = topics; }
       $('#learn-body').innerHTML = topics.length
         ? topics.map((t) => `
           <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenTopic('${t.topicId}','${t.title.replace(/'/g, '')}')">
@@ -560,11 +614,15 @@ async function renderLearn() {
       <div id="learn-body"><div class="empty">Đang tải…</div></div>
       ${App.state.role === 'TEACHER' ? '<button class="btn btn-ghost btn-block" style="margin-top:12px" onclick="openGenerateLesson()">✨ Sinh nháp bài giảng bằng AI</button>' : ''}`;
     try {
-      const [lessons, learned] = await Promise.all([
-        Api.call('getLessons', { topicId: v.topicId }),
-        Api.call('getLearnedLessons', {}),
-      ]);
-      App.data.learned = learned || [];
+      App._lcache = App._lcache || {};
+      let lessons = App._lcache[v.topicId];
+      if (!lessons) {
+        const [ls, learned] = await Promise.all([
+          Api.call('getLessons', { topicId: v.topicId }),
+          App.data.learned ? Promise.resolve(App.data.learned) : Api.call('getLearnedLessons', {}),
+        ]);
+        lessons = ls; App._lcache[v.topicId] = ls; App.data.learned = learned || [];
+      }
       $('#learn-body').innerHTML = lessons.length
         ? lessons.map((l) => {
           const done = App.data.learned.indexOf(l.lessonId) >= 0;
@@ -732,6 +790,7 @@ async function runGenerateLesson() {
       subjectCode: v.subjectCode, grade: App.state.user.grade || 12,
       topicId: v.topicId, title: title, level: $('#m-level').value,
     });
+    if (App._lcache) delete App._lcache[v.topicId];
     closeModal(); renderLearn();
     showToast('Đã tạo bản nháp. Mở bài để xem & xuất bản.', 'success');
   } catch (e) { showToast(e.message, 'error'); }
@@ -744,6 +803,7 @@ async function learnTogglePublish(lessonId, status) {
   try {
     await Api.call('setLessonStatus', { lessonId: lessonId, status: next });
     if (App.state.learn.lesson) App.state.learn.lesson.status = next;
+    if (App._lcache) App._lcache = {}; // làm mới danh sách bài giảng
     renderLearn();
     showToast(next === 'PUBLISHED' ? 'Đã xuất bản' : 'Đã chuyển nháp', 'success');
   } catch (e) { showToast(e.message, 'error'); }
@@ -868,6 +928,11 @@ async function learnToggleLearned() {
    ============================================================ */
 function renderTeacher() {
   const classes = App.data.classes || [];
+  if (App.state.loadingData && !classes.length) {
+    $('#screen-teacher').innerHTML = `<div class="page-head"><h2>Lớp học</h2><p>Đang tải…</p></div>
+      <div class="card"><div class="empty">Đang tải dữ liệu lớp…</div></div>`;
+    return;
+  }
   if (!classes.length) {
     $('#screen-teacher').innerHTML = `
       <div class="page-head"><h2>Lớp học</h2><p>Theo dõi tiến độ học sinh</p></div>
@@ -1143,10 +1208,10 @@ document.addEventListener('DOMContentLoaded', () => {
     loginDemo(role).then(() => { const t = q.get('tab'); if (t) switchTab(t); });
     return;
   }
-  // Khôi phục phiên nếu đã đăng nhập trước đó
-  let saved = null;
-  try { saved = localStorage.getItem('thpt_token'); } catch (e) {}
-  if (saved) { App.state.token = saved; restoreSession(); return; }
+  // Khôi phục phiên TỨC THÌ từ cache (vào app ngay, làm mới nền)
+  let savedToken = null, savedUser = null;
+  try { savedToken = localStorage.getItem('thpt_token'); savedUser = localStorage.getItem('thpt_user'); } catch (e) {}
+  if (savedToken && savedUser && restoreFromCache(savedToken, savedUser)) return;
 
   // TẠM THỜI: tự đăng nhập demo (bỏ qua trang đăng nhập)
   if (DEV_AUTO_LOGIN === 'student' || DEV_AUTO_LOGIN === 'teacher') {

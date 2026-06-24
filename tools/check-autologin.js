@@ -6,13 +6,22 @@ const url = 'file:///' + path.join(ROOT, 'frontend', 'index.html').replace(/\\/g
 (async () => {
   const b = await puppeteer.launch({ executablePath: EDGE, headless: 'new', args: ['--no-sandbox'] });
   const p = await b.newPage();
-  await p.goto(url, { waitUntil: 'networkidle0' });
-  try { await p.waitForFunction(() => !document.getElementById('app-shell').classList.contains('hidden'), { timeout: 12000 }); } catch (e) {}
+  await p.goto(url, { waitUntil: 'domcontentloaded' });
+  const t0 = Date.now();
+  try { await p.waitForFunction(() => !document.getElementById('app-shell').classList.contains('hidden'), { timeout: 20000 }); } catch (e) {}
+  const ms = Date.now() - t0;
   const r = await p.evaluate(() => ({
     appVisible: !document.getElementById('app-shell').classList.contains('hidden'),
-    loginHidden: document.getElementById('screen-login').classList.contains('hidden'),
     name: document.getElementById('header-name').textContent,
   }));
-  console.log(JSON.stringify(r));
+  console.log('Lần đầu (auto-login): ' + ms + 'ms', JSON.stringify(r));
+
+  // Reload → khôi phục từ cache (đã lưu token+user+data)
+  await p.reload({ waitUntil: 'domcontentloaded' });
+  const t1 = Date.now();
+  try { await p.waitForFunction(() => !document.getElementById('app-shell').classList.contains('hidden'), { timeout: 20000 }); } catch (e) {}
+  const ms2 = Date.now() - t1;
+  const r2 = await p.evaluate(() => ({ appVisible: !document.getElementById('app-shell').classList.contains('hidden'), tasks: (App.data.plans || []).length }));
+  console.log('Lần mở lại (cache): ' + ms2 + 'ms', JSON.stringify(r2));
   await b.close();
 })();
