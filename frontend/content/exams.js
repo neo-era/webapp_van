@@ -1297,6 +1297,21 @@ const EXAMS = {
         { stem: 'Had I known about the problem, I ____ differently.', options: ['will act', 'had acted', 'would have acted', 'act'], answer: 2, explanation: 'Đảo ngữ điều kiện loại 3: Had + S + V3, … would have + V3.' },
       ],
     },
+    {
+      examId: 'ielts-kt-12', title: 'IELTS – Vocabulary & Grammar #12', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "anticipate".', options: ['forget', 'ignore', 'recall', 'expect'], answer: 3, explanation: 'anticipate ≈ expect (dự đoán, mong đợi).' },
+        { stem: 'Choose the synonym of "adequate".', options: ['sufficient', 'insufficient', 'scarce', 'lacking'], answer: 0, explanation: 'adequate ≈ sufficient (đầy đủ).' },
+        { stem: 'Choose the antonym of "voluntary".', options: ['optional', 'free', 'compulsory', 'willing'], answer: 2, explanation: 'voluntary ↔ compulsory (bắt buộc).' },
+        { stem: 'The lecture was so complicated that ____ students understood it.', options: ['many', 'few', 'most', 'all'], answer: 1, explanation: 'few = rất ít (mang nghĩa phủ định).' },
+        { stem: 'Choose the synonym of "prominent".', options: ['obscure', 'hidden', 'minor', 'notable'], answer: 3, explanation: 'prominent ≈ notable (nổi bật).' },
+        { stem: '____ finished the report, she went home early.', options: ['Have', 'Having', 'Had', 'To have'], answer: 1, explanation: 'Phân từ hoàn thành: Having + V3.' },
+        { stem: 'Choose the antonym of "abstract".', options: ['concrete', 'vague', 'theoretical', 'conceptual'], answer: 0, explanation: 'abstract ↔ concrete (cụ thể).' },
+        { stem: 'The data must ____ analysed carefully before publishing.', options: ['is', 'been', 'be', 'being'], answer: 2, explanation: 'must + be + V3 (bị động).' },
+        { stem: 'Choose the synonym of "apparent".', options: ['hidden', 'secret', 'vague', 'obvious'], answer: 3, explanation: 'apparent ≈ obvious (rõ ràng).' },
+        { stem: 'Such ____ his enthusiasm that everyone soon joined in.', options: ['was', 'were', 'is', 'had'], answer: 0, explanation: 'Đảo ngữ "Such + be + S + that…": Such was his enthusiasm…' },
+      ],
+    },
   ],
 };
 
