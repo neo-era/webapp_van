@@ -569,6 +569,21 @@ const EXAMS = {
         { stem: 'Đơn vị của từ thông là?', options: ['Tesla', 'Weber', 'Henry', 'Vôn'], answer: 1, explanation: 'Từ thông đo bằng Weber (Wb).' },
       ],
     },
+    {
+      examId: 'ly-kt45-12', title: 'Kiểm tra 45′ #12 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Bình kín chứa khí ở $2$ atm, $300$ K. Đun đẳng tích đến $450$ K, áp suất?', options: ['$2{,}5$ atm', '$4$ atm', '$6$ atm', '$3$ atm'], answer: 3, explanation: 'Đẳng tích: $p_2=p_1T_2/T_1=2\\cdot450/300=3$ atm.' },
+        { stem: 'Nhiệt làm nóng chảy $0{,}2$ kg nước đá ($\\lambda=3{,}4\\cdot10^5$ J/kg)?', options: ['$68$ kJ', '$34$ kJ', '$17$ kJ', '$6{,}8$ kJ'], answer: 0, explanation: '$Q=\\lambda m=3{,}4\\cdot10^5\\cdot0{,}2=68000$ J $=68$ kJ.' },
+        { stem: 'Dây dẫn $l=1$ m mang $I=2$ A trong $B=0{,}3$ T (vuông góc). Lực từ?', options: ['$0{,}3$ N', '$0{,}6$ N', '$1{,}2$ N', '$2$ N'], answer: 1, explanation: '$F=BIl=0{,}3\\cdot2\\cdot1=0{,}6$ N.' },
+        { stem: 'Hạt nhân $^{234}_{90}Th$ phóng xạ $\\beta^-$. Số proton của hạt nhân con?', options: ['$89$', '$90$', '$92$', '$91$'], answer: 3, explanation: 'Phóng xạ $\\beta^-$: $Z$ tăng 1 ⇒ $90+1=91$.' },
+        { stem: 'Khối lượng của $0{,}5$ mol khí $O_2$ ($M=32$)?', options: ['$16$ g', '$8$ g', '$32$ g', '$64$ g'], answer: 0, explanation: '$m=nM=0{,}5\\cdot32=16$ g.' },
+        { stem: 'Nén đẳng nhiệt: $p_1=3$ atm, $V_1=2$ L; khi $p_2=1$ atm thì $V_2=?$', options: ['$3$ L', '$4$ L', '$6$ L', '$2$ L'], answer: 2, explanation: '$p_1V_1=p_2V_2 \\Rightarrow V_2=3\\cdot2/1=6$ L.' },
+        { stem: 'Năng lượng nghỉ của vật $m=2$ kg ($c=3\\cdot10^8$ m/s)?', options: ['$9\\cdot10^{16}$ J', '$6\\cdot10^8$ J', '$1{,}8\\cdot10^{17}$ J', '$2\\cdot10^8$ J'], answer: 2, explanation: '$E=mc^2=2\\cdot(3\\cdot10^8)^2=1{,}8\\cdot10^{17}$ J.' },
+        { stem: 'Số neutron trong hạt nhân $^{40}_{18}Ar$?', options: ['$22$', '$18$', '$20$', '$40$'], answer: 0, explanation: '$N=A-Z=40-18=22$.' },
+        { stem: 'Chất phóng xạ có $T=4$ ngày. Sau $16$ ngày còn lại bao nhiêu phần?', options: ['$1/4$', '$1/8$', '$1/16$', '$1/32$'], answer: 2, explanation: '$16/4=4$ chu kì ⇒ $(1/2)^4=1/16$.' },
+        { stem: 'Đơn vị của độ tự cảm là?', options: ['Tesla', 'Henry', 'Weber', 'Farad'], answer: 1, explanation: 'Độ tự cảm đo bằng Henry (H).' },
+      ],
+    },
   ],
 
   HOA: [
