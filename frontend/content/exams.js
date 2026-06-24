@@ -694,6 +694,21 @@ const EXAMS = {
         { stem: 'Choose the synonym of "client".', options: ['employee', 'manager', 'customer', 'supplier'], answer: 2, explanation: 'client ≈ customer.' },
       ],
     },
+    {
+      examId: 'toeic-5', title: 'TOEIC – Grammar & Vocabulary #5', durationMin: 20,
+      questions: [
+        { stem: 'The conference will be held ____ the main hall.', options: ['on', 'at', 'by', 'in'], answer: 3, explanation: 'in + không gian bên trong.' },
+        { stem: 'He has worked here ____ three years.', options: ['for', 'since', 'in', 'ago'], answer: 0, explanation: 'for + khoảng thời gian.' },
+        { stem: 'Please ____ to the instructions before starting.', options: ['prefer', 'offer', 'refer', 'infer'], answer: 2, explanation: 'refer to = tham khảo.' },
+        { stem: 'The package was delivered ____ time.', options: ['in', 'on', 'at', 'by'], answer: 1, explanation: 'collocation "on time".' },
+        { stem: 'Our team is ____ for the increase in sales.', options: ['responsible', 'response', 'responsibly', 'responsive'], answer: 0, explanation: 'be responsible for (tính từ).' },
+        { stem: 'Choose the synonym of "assist".', options: ['ignore', 'refuse', 'help', 'avoid'], answer: 2, explanation: 'assist ≈ help.' },
+        { stem: 'All applications must be ____ by Friday.', options: ['submit', 'submitting', 'submits', 'submitted'], answer: 3, explanation: 'must be + V3 (bị động).' },
+        { stem: 'If you ____ any questions, please ask.', options: ['have', 'has', 'having', 'had'], answer: 0, explanation: 'If + hiện tại đơn.' },
+        { stem: 'The new branch will ____ next month.', options: ['opens', 'opening', 'open', 'opened'], answer: 2, explanation: 'will + V nguyên thể.' },
+        { stem: 'Choose the synonym of "approximately".', options: ['exactly', 'about', 'rarely', 'never'], answer: 1, explanation: 'approximately ≈ about.' },
+      ],
+    },
   ],
 
   IELTS: [
