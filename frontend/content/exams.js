@@ -1082,6 +1082,21 @@ const EXAMS = {
         { stem: 'Số mol HCl cần để trung hòa hết $0{,}1$ mol NaOH?', options: ['$0{,}1$', '$0{,}05$', '$0{,}2$', '$1$'], answer: 0, explanation: '$NaOH+HCl\\to NaCl+H_2O$; tỉ lệ 1:1 ⇒ $0{,}1$ mol HCl.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-23', title: 'Kiểm tra 45′ #23 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $5{,}4$ g Al ($M=27$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=5{,}4/27=0{,}2$ mol.' },
+        { stem: 'Khối lượng của $0{,}15$ mol $H_2SO_4$ ($M=98$)?', options: ['$14{,}7$ g', '$9{,}8$ g', '$19{,}6$ g', '$4{,}9$ g'], answer: 0, explanation: '$m=0{,}15\\cdot98=14{,}7$ g.' },
+        { stem: 'Thể tích $CO_2$ (đktc) khi nhiệt phân $0{,}2$ mol $CaCO_3$? ($CaCO_3\\to CaO+CO_2$)', options: ['$2{,}24$ L', '$4{,}48$ L', '$6{,}72$ L', '$1{,}12$ L'], answer: 1, explanation: '$0{,}2$ mol $CO_2 \\Rightarrow V=4{,}48$ L.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}1$ mol $Ca_3(PO_4)_2$?', options: ['$0{,}2$', '$0{,}4$', '$0{,}6$', '$0{,}8$'], answer: 3, explanation: 'Mỗi phân tử có 8 O ⇒ $0{,}1\\cdot8=0{,}8$ mol.' },
+        { stem: 'Hòa tan $12$ g chất tan vào $188$ g nước. Nồng độ phần trăm?', options: ['$6\\%$', '$3\\%$', '$12\\%$', '$24\\%$'], answer: 0, explanation: '$C\\%=12/200\\cdot100\\%=6\\%$.' },
+        { stem: 'Khối lượng mol của $Al(OH)_3$ (Al=27, O=16, H=1)?', options: ['$60$', '$78$', '$102$', '$96$'], answer: 1, explanation: '$27+3\\cdot(16+1)=78$ g/mol.' },
+        { stem: 'Kim loại nào có nhiệt độ nóng chảy cao nhất?', options: ['sắt', 'đồng', 'vonfram', 'vàng'], answer: 2, explanation: 'Vonfram (W) có nhiệt độ nóng chảy cao nhất (~3422 °C).' },
+        { stem: 'Phần trăm khối lượng O trong $SO_2$ ($M=64$)?', options: ['$50\\%$', '$25\\%$', '$75\\%$', '$32\\%$'], answer: 0, explanation: '$2\\cdot16/64\\cdot100\\%=50\\%$.' },
+        { stem: 'Trong phản ứng $C+O_2\\to CO_2$, cacbon (C) đóng vai trò?', options: ['chất oxi hóa', 'chất khử', 'axit', 'base'], answer: 1, explanation: 'C bị oxi hóa (tăng số oxi hóa) ⇒ chất khử.' },
+        { stem: 'Số mol NaOH cần để trung hòa hết $0{,}2$ mol $H_2SO_4$?', options: ['$0{,}2$', '$0{,}1$', '$1$', '$0{,}4$'], answer: 3, explanation: '$H_2SO_4+2NaOH\\to Na_2SO_4+2H_2O$; cần $0{,}4$ mol NaOH.' },
+      ],
+    },
   ],
 
   ANH: [
