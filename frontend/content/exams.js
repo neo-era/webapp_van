@@ -922,6 +922,21 @@ const EXAMS = {
         { stem: 'Such was his fame ____ everyone knew him.', options: ['as', 'which', 'that', 'what'], answer: 2, explanation: 'Such … that … (kết quả).' },
       ],
     },
+    {
+      examId: 'ielts-kt-7', title: 'IELTS – Vocabulary & Grammar #7', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "significant".', options: ['minor', 'trivial', 'slight', 'considerable'], answer: 3, explanation: 'significant ≈ considerable (đáng kể).' },
+        { stem: 'Choose the synonym of "crucial".', options: ['optional', 'minor', 'essential', 'useless'], answer: 2, explanation: 'crucial ≈ essential (thiết yếu).' },
+        { stem: 'Choose the antonym of "abundant".', options: ['plentiful', 'scarce', 'ample', 'sufficient'], answer: 1, explanation: 'abundant ↔ scarce (khan hiếm).' },
+        { stem: 'Researchers found a strong ____ between diet and health.', options: ['correlation', 'correction', 'collision', 'collection'], answer: 0, explanation: 'correlation = mối tương quan.' },
+        { stem: 'The government implemented measures to ____ pollution.', options: ['increase', 'ignore', 'produce', 'reduce'], answer: 3, explanation: 'reduce pollution = giảm ô nhiễm.' },
+        { stem: 'Choose the synonym of "subsequently".', options: ['previously', 'afterwards', 'immediately', 'rarely'], answer: 1, explanation: 'subsequently ≈ afterwards (sau đó).' },
+        { stem: '____ the high cost, many people still buy electric cars.', options: ['Although', 'Because of', 'Despite', 'However'], answer: 2, explanation: 'Despite + danh từ (mặc dù).' },
+        { stem: 'Choose the synonym of "phenomenon".', options: ['occurrence', 'theory', 'mistake', 'opinion'], answer: 0, explanation: 'phenomenon ≈ occurrence (hiện tượng).' },
+        { stem: 'The number of students ____ increased steadily.', options: ['have', 'has', 'were', 'are'], answer: 1, explanation: '"The number of …" + động từ số ít (has).' },
+        { stem: 'Choose the antonym of "temporary".', options: ['brief', 'momentary', 'permanent', 'short'], answer: 2, explanation: 'temporary ↔ permanent (lâu dài).' },
+      ],
+    },
   ],
 };
 
