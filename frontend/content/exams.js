@@ -2572,6 +2572,21 @@ const EXAMS = {
         { stem: 'So intense was the heat ____ many crops failed.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-29', title: 'IELTS – Vocabulary & Grammar #29', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "innovative".', options: ['creative', 'traditional', 'old', 'conventional'], answer: 0, explanation: 'innovative ≈ creative (sáng tạo, đổi mới).' },
+        { stem: 'Choose the synonym of "profound".', options: ['deep', 'shallow', 'superficial', 'slight'], answer: 0, explanation: 'profound ≈ deep (sâu sắc).' },
+        { stem: 'Choose the antonym of "diligent".', options: ['hardworking', 'industrious', 'careful', 'lazy'], answer: 3, explanation: 'diligent ↔ lazy (lười biếng).' },
+        { stem: 'Only after the storm passed ____ outside.', options: ['we went', 'did we go', 'we go', 'went we'], answer: 1, explanation: 'Đảo ngữ với "Only after…": + did + S + V.' },
+        { stem: 'Choose the synonym of "obstruct".', options: ['block', 'clear', 'open', 'free'], answer: 0, explanation: 'obstruct ≈ block (cản trở).' },
+        { stem: 'The scientist, ____ discovery changed medicine, was honored.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "external".', options: ['outer', 'outside', 'exterior', 'internal'], answer: 3, explanation: 'external ↔ internal (bên trong).' },
+        { stem: 'Were the offer better, we ____ accept it.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 2: Were … would + V.' },
+        { stem: 'Choose the synonym of "paramount".', options: ['trivial', 'minor', 'slight', 'supreme'], answer: 3, explanation: 'paramount ≈ supreme (tối quan trọng).' },
+        { stem: 'So skilled was the surgeon ____ the operation succeeded.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
