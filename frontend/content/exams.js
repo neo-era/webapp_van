@@ -1430,6 +1430,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'strong'.", options: ['powerful', 'mighty', 'weak', 'tough'], answer: 2, explanation: 'strong ↔ weak (yếu).' },
       ],
     },
+    {
+      examId: 'anh-kt45-23', title: 'Kiểm tra 45′ #23 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She wishes she ____ a car to drive to work.', options: ['had', 'has', 'have', 'having'], answer: 0, explanation: 'wish + quá khứ đơn (ước hiện tại).' },
+        { stem: "I'll wait here until you ____.", options: ['will arrive', 'arrived', 'arriving', 'arrive'], answer: 3, explanation: 'Mệnh đề thời gian dùng hiện tại đơn (arrive).' },
+        { stem: "He's interested in ____ Spanish.", options: ['learning', 'learn', 'to learn', 'learned'], answer: 0, explanation: 'be interested in + V-ing.' },
+        { stem: 'The cake tastes ____.', options: ['deliciously', 'deliciousness', 'delight', 'delicious'], answer: 3, explanation: 'Động từ tri giác "taste" + tính từ (delicious).' },
+        { stem: 'Tom is taller ____ his younger brother.', options: ['as', 'than', 'then', 'that'], answer: 1, explanation: 'So sánh hơn + than.' },
+        { stem: 'They have ____ finished the project.', options: ['yet', 'already', 'still', 'ever'], answer: 1, explanation: 'already trong câu khẳng định hiện tại hoàn thành.' },
+        { stem: "Choose the synonym of 'beautiful'.", options: ['ugly', 'plain', 'dull', 'gorgeous'], answer: 3, explanation: 'beautiful ≈ gorgeous (đẹp lộng lẫy).' },
+        { stem: 'If I had studied harder, I ____ the exam.', options: ['will pass', 'would pass', 'would have passed', 'passed'], answer: 2, explanation: 'Câu điều kiện loại 3: would have + V3.' },
+        { stem: 'She is used to ____ alone in a big city.', options: ['live', 'living', 'to live', 'lived'], answer: 1, explanation: 'be used to + V-ing.' },
+        { stem: "Choose the antonym of 'cheap'.", options: ['expensive', 'affordable', 'inexpensive', 'low-cost'], answer: 0, explanation: 'cheap ↔ expensive (đắt).' },
+      ],
+    },
   ],
 
   TOEIC: [
