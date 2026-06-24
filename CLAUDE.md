@@ -74,9 +74,19 @@ Webapp giúp **học sinh THPT lập kế hoạch học tập** và **giáo viê
 | Lưu file/tài liệu | **Google Drive** | Apps Script tạo folder, lưu link vào Sheet |
 | Icon | **lucide** (CDN) hoặc emoji | Nhẹ, không cần build |
 | Ngày tháng | **Day.js** (CDN) | Đếm ngược, format ngày |
-| Hosting frontend | **Apps Script Web App** (HtmlService) | Hoặc GitHub Pages + fetch |
+| Hosting frontend | **GitHub Pages** (đã chốt) | URL: neo-era.github.io/webapp_van |
 
-> **Khuyến nghị triển khai:** Dùng **HtmlService** (Apps Script serve luôn file HTML, gọi backend bằng `google.script.run`) để tránh lỗi CORS và xử lý đăng nhập gọn gàng — giống cách app chấm công hoạt động.
+> **Triển khai (đã chốt):** Frontend tĩnh trên **GitHub Pages**, gọi backend Apps Script bằng `fetch`.
+>
+> **Xử lý CORS (BẮT BUỘC làm đúng):** Apps Script không hỗ trợ preflight, nên frontend phải gửi request "đơn giản":
+> - `method: 'POST'`, `body: JSON.stringify({action, token, ...})`
+> - `headers: { 'Content-Type': 'text/plain;charset=utf-8' }` ← KHÔNG dùng `application/json` (sẽ bị preflight → lỗi CORS)
+> - KHÔNG set header tùy chỉnh khác; để `redirect: 'follow'` (mặc định)
+> - Apps Script `doPost` đọc body qua `e.postData.contents` (vẫn parse JSON bình thường)
+>
+> Web App phải deploy **"Anyone"** thì fetch ẩn danh mới gọi được. Bảo mật dựa vào token + phân quyền trong code, không dựa vào quyền Google.
+>
+> GitHub Pages cũng dùng làm **bản demo dữ liệu mẫu**: nếu chưa cấu hình Web App URL, frontend tự chạy ở chế độ mock (xem `frontend/api.js`).
 
 ---
 

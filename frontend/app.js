@@ -4,7 +4,7 @@
    ============================================================ */
 
 const App = {
-  state: { user: null, role: null, calDayOffset: 0 },
+  state: { user: null, role: null, token: null, calDayOffset: 0 },
 };
 
 /* ---------- Helpers ---------- */
@@ -44,16 +44,27 @@ function fmtDay(d) {
 /* ============================================================
    ĐĂNG NHẬP
    ============================================================ */
-function login(role) {
+async function doLogin(email, password) {
+  if (!email || !password) { showToast('Nhập email và mật khẩu', 'error'); return; }
   showLoading();
-  // Giả lập gọi backend
-  setTimeout(() => {
-    const user = role === 'teacher' ? MOCK.teacher : MOCK.student;
-    App.state.user = user;
-    App.state.role = user.role;
-    hideLoading();
+  try {
+    const data = await Api.call('login', { email: email, password: password });
+    App.state.token = data.token;
+    App.state.user = data.user;
+    App.state.role = data.user.role;
+    try { localStorage.setItem('thpt_token', data.token); } catch (e) {}
     enterApp();
-  }, 500);
+  } catch (e) {
+    showToast(e.message || 'Đăng nhập thất bại', 'error');
+  } finally {
+    hideLoading();
+  }
+}
+
+// Nút demo: đăng nhập nhanh bằng tài khoản mẫu (hoạt động ở chế độ mock).
+function loginDemo(role) {
+  const u = role === 'teacher' ? MOCK.teacher : MOCK.student;
+  doLogin(u.email, 'demo');
 }
 
 function enterApp() {
@@ -78,6 +89,8 @@ function enterApp() {
 
 function logout() {
   App.state.user = null;
+  App.state.token = null;
+  try { localStorage.removeItem('thpt_token'); } catch (e) {}
   $('#app-shell').classList.add('hidden');
   $('#screen-login').classList.remove('hidden');
 }
@@ -424,8 +437,11 @@ function saveMock(msg) { closeModal(); showToast(msg, 'success'); }
    KHỞI TẠO SỰ KIỆN
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
-  $('#login-form').addEventListener('submit', (e) => { e.preventDefault(); login('student'); });
-  $$('[data-demo]').forEach((b) => b.addEventListener('click', () => login(b.dataset.demo)));
+  $('#login-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    doLogin($('#login-email').value.trim(), $('#login-password').value);
+  });
+  $$('[data-demo]').forEach((b) => b.addEventListener('click', () => loginDemo(b.dataset.demo)));
   $('#btn-logout').addEventListener('click', logout);
   $$('.nav-item').forEach((n) => n.addEventListener('click', () => switchTab(n.dataset.tab)));
   $$('[data-close-modal]').forEach((el) => el.addEventListener('click', closeModal));
