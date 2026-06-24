@@ -662,6 +662,21 @@ const EXAMS = {
         { stem: 'Phản ứng ester hóa giữa acid carboxylic và ancol tạo ra?', options: ['muối + nước', 'ancol + acid', 'ester + nước', 'andehit'], answer: 2, explanation: '$RCOOH+R\'OH\\rightleftharpoons RCOOR\'+H_2O$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-9', title: 'Kiểm tra 45′ #9 — Hóa 12', durationMin: 45,
+      questions: [
+        { stem: '$C_2H_6O$ có bao nhiêu đồng phân cấu tạo?', options: ['$1$', '$2$', '$3$', '$4$'], answer: 1, explanation: 'Ethanol $C_2H_5OH$ và dimethyl ether $CH_3OCH_3$ ⇒ 2 đồng phân.' },
+        { stem: 'Tính chất hóa học đặc trưng của kim loại là?', options: ['tính oxi hóa', 'tính axit', 'tính bazơ', 'tính khử'], answer: 3, explanation: 'Kim loại dễ nhường electron ⇒ tính khử.' },
+        { stem: 'Chất nào sau đây là chất điện li mạnh?', options: ['$C_2H_5OH$', 'saccharose', 'NaCl', '$CH_3COOH$'], answer: 2, explanation: 'NaCl điện li hoàn toàn ⇒ chất điện li mạnh.' },
+        { stem: 'Phản ứng trung hòa giữa acid và base tạo ra?', options: ['muối + nước', 'ester', 'khí $H_2$', 'kết tủa'], answer: 0, explanation: 'Acid + base → muối + nước.' },
+        { stem: 'Kim loại nào được dùng phổ biến làm dây dẫn điện trong gia đình?', options: ['Sắt', 'Chì', 'Đồng', 'Kẽm'], answer: 2, explanation: 'Đồng (Cu) dẫn điện tốt, giá hợp lí ⇒ dùng làm dây dẫn.' },
+        { stem: 'Glucose thuộc loại carbohydrate nào?', options: ['disaccharide', 'polysaccharide', 'lipid', 'monosaccharide'], answer: 3, explanation: 'Glucose là monosaccharide (đường đơn).' },
+        { stem: 'Tinh bột và xenlulozơ đều thuộc loại?', options: ['monosaccharide', 'disaccharide', 'polysaccharide', 'protein'], answer: 2, explanation: 'Đều là polysaccharide $(C_6H_{10}O_5)_n$.' },
+        { stem: 'Một tripeptide có bao nhiêu liên kết peptide?', options: ['$1$', '$2$', '$3$', '$4$'], answer: 1, explanation: 'Tripeptide (3 amino acid) có 2 liên kết peptide.' },
+        { stem: 'Chất nào sau đây có phản ứng tráng bạc?', options: ['glucose', 'saccharose', 'tinh bột', 'xenlulozơ'], answer: 0, explanation: 'Glucose có nhóm $-CHO$ nên tham gia phản ứng tráng bạc.' },
+        { stem: 'Polime PVC được điều chế từ monome nào?', options: ['etilen', 'vinyl clorua', 'propilen', 'stiren'], answer: 1, explanation: 'PVC trùng hợp từ vinyl clorua $CH_2=CHCl$.' },
+      ],
+    },
   ],
 
   ANH: [
