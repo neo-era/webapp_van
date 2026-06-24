@@ -464,6 +464,21 @@ const EXAMS = {
         { stem: 'Lực từ $F=BIl$; nếu $I$ tăng gấp đôi (các đại lượng khác không đổi) thì $F$?', options: ['không đổi', 'giảm một nửa', 'gấp đôi', 'gấp bốn'], answer: 2, explanation: '$F$ tỉ lệ thuận với $I$.' },
       ],
     },
+    {
+      examId: 'ly-kt45-5', title: 'Kiểm tra 45′ #5 — Vật lí 12 (mở rộng)', durationMin: 45,
+      questions: [
+        { stem: 'Nội năng của khí lí tưởng phụ thuộc chủ yếu vào?', options: ['áp suất', 'nhiệt độ', 'thể tích', 'khối lượng riêng'], answer: 1, explanation: 'Nội năng khí lí tưởng chỉ phụ thuộc nhiệt độ.' },
+        { stem: 'Nhiệt lượng đun $2$ kg nhôm ($c=880$) tăng $10$ °C là?', options: ['$8800$ J', '$1760$ J', '$17600$ J', '$880$ J'], answer: 2, explanation: '$Q=2\\cdot880\\cdot10=17600$ J.' },
+        { stem: 'Đẳng tích: $p_1=1{,}5$ atm ở $T_1=300$ K, đun tới $T_2=400$ K. Tính $p_2$.', options: ['$2$', '$1{,}5$', '$1{,}125$', '$3$'], answer: 0, explanation: '$p_2=1{,}5\\cdot\\dfrac{400}{300}=2$ atm.' },
+        { stem: 'Trong quá trình đẳng nhiệt, đại lượng nào không đổi?', options: ['$p/T$', '$pV$', '$V/T$', '$pVT$'], answer: 1, explanation: 'Đẳng nhiệt: $pV=$ const.' },
+        { stem: 'Độ lớn lực Lorentz phụ thuộc vận tốc $v$ thế nào?', options: ['không phụ thuộc $v$', 'tỉ lệ $1/v$', 'tỉ lệ thuận $v$', 'tỉ lệ $v^2$'], answer: 2, explanation: '$f=|q|vB\\sin\\alpha$.' },
+        { stem: 'Cảm ứng từ thường được ký hiệu là?', options: ['$E$', '$F$', '$\\Phi$', '$B$'], answer: 3, explanation: 'Cảm ứng từ: $B$ (đơn vị T).' },
+        { stem: 'Hạt nhân $^{235}_{92}U$ có bao nhiêu proton?', options: ['$92$', '$235$', '$143$', '$0$'], answer: 0, explanation: '$Z=92$.' },
+        { stem: 'Phóng xạ $\\alpha$ phát ra hạt nào?', options: ['proton', '$^{4}_{2}He$', 'electron', 'neutron'], answer: 1, explanation: 'Tia $\\alpha$ là hạt nhân heli $^{4}_{2}He$.' },
+        { stem: 'Độ hụt khối $\\Delta m=0{,}1$ u ⇒ năng lượng liên kết xấp xỉ?', options: ['$9{,}315$ MeV', '$931{,}5$ MeV', '$93{,}15$ MeV', '$0{,}1$ MeV'], answer: 2, explanation: '$0{,}1\\cdot931{,}5\\approx93{,}15$ MeV.' },
+        { stem: 'Theo định luật Len-xơ, dòng điện cảm ứng có chiều?', options: ['cùng chiều biến thiên', 'không xác định', 'theo chiều dòng ngoài', 'chống lại sự biến thiên từ thông'], answer: 3, explanation: 'Dòng cảm ứng chống lại nguyên nhân sinh ra nó.' },
+      ],
+    },
   ],
 
   HOA: [
