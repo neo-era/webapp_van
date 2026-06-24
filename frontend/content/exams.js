@@ -692,6 +692,21 @@ const EXAMS = {
         { stem: 'Polime PVC được điều chế từ monome nào?', options: ['etilen', 'vinyl clorua', 'propilen', 'stiren'], answer: 1, explanation: 'PVC trùng hợp từ vinyl clorua $CH_2=CHCl$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-10', title: 'Kiểm tra 45′ #10 — Hóa 12', durationMin: 45,
+      questions: [
+        { stem: 'Số electron tối đa ở lớp M ($n=3$) là?', options: ['$8$', '$18$', '$32$', '$2$'], answer: 1, explanation: 'Số e tối đa lớp thứ $n$ là $2n^2=2\\cdot3^2=18$.' },
+        { stem: 'Liên kết hóa học trong phân tử NaCl là?', options: ['cộng hóa trị', 'kim loại', 'hidro', 'ion'], answer: 3, explanation: 'Na nhường e cho Cl ⇒ liên kết ion.' },
+        { stem: 'Nguyên tố có $Z=11$ (Na) thuộc chu kì nào?', options: ['chu kì 1', 'chu kì 2', 'chu kì 3', 'chu kì 4'], answer: 2, explanation: 'Cấu hình $1s^22s^22p^63s^1$ ⇒ 3 lớp ⇒ chu kì 3.' },
+        { stem: 'Dung dịch nào sau đây có pH > 7?', options: ['NaOH', 'HCl', 'NaCl', '$CO_2$ hòa tan'], answer: 0, explanation: 'NaOH là bazơ ⇒ pH > 7.' },
+        { stem: 'Cho Zn vào dung dịch HCl, khí thoát ra là?', options: ['$O_2$', '$H_2$', '$CO_2$', '$Cl_2$'], answer: 1, explanation: '$Zn+2HCl\\rightarrow ZnCl_2+H_2\\uparrow$.' },
+        { stem: 'Chất nào sau đây là acid mạnh?', options: ['$CH_3COOH$', '$H_2CO_3$', '$H_2S$', 'HCl'], answer: 3, explanation: 'HCl điện li hoàn toàn ⇒ acid mạnh.' },
+        { stem: 'Phản ứng có $\\Delta H>0$ là phản ứng?', options: ['tỏa nhiệt', 'thu nhiệt', 'trung hòa', 'trao đổi'], answer: 1, explanation: '$\\Delta H>0$ ⇒ hệ nhận nhiệt ⇒ phản ứng thu nhiệt.' },
+        { stem: 'Công thức của methane (khí thiên nhiên) là?', options: ['$CH_4$', '$C_2H_6$', '$C_2H_4$', '$C_2H_2$'], answer: 0, explanation: 'Methane: $CH_4$.' },
+        { stem: 'Số oxi hóa của nitơ (N) trong $NH_3$ là?', options: ['$+3$', '$+5$', '$-3$', '$0$'], answer: 2, explanation: 'H là $+1$, tổng bằng 0 ⇒ N là $-3$.' },
+        { stem: 'Kim loại nào sau đây KHÔNG phản ứng với dung dịch HCl?', options: ['Fe', 'Zn', 'Cu', 'Al'], answer: 2, explanation: 'Cu đứng sau H trong dãy hoạt động ⇒ không phản ứng với HCl.' },
+      ],
+    },
   ],
 
   ANH: [
