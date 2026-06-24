@@ -934,6 +934,21 @@ const EXAMS = {
         { stem: 'The warranty ____ all manufacturing defects.', options: ['covering', 'covered', 'covers', 'to cover'], answer: 2, explanation: 'Chủ ngữ số ít, hiện tại đơn: covers.' },
       ],
     },
+    {
+      examId: 'toeic-9', title: 'TOEIC – Grammar & Vocabulary #9', durationMin: 20,
+      questions: [
+        { stem: 'The shipment was delayed ____ bad weather conditions.', options: ['despite', 'although', 'due to', 'however'], answer: 2, explanation: 'due to + N (chỉ nguyên nhân).' },
+        { stem: 'Our team is responsible ____ the marketing campaign.', options: ['to', 'with', 'of', 'for'], answer: 3, explanation: 'be responsible for = chịu trách nhiệm về.' },
+        { stem: 'The CEO will ____ a speech at the annual conference.', options: ['delivery', 'delivered', 'deliver', 'delivering'], answer: 2, explanation: 'will + động từ nguyên thể; deliver a speech = đọc diễn văn.' },
+        { stem: 'Customers can ____ a refund within 14 days of purchase.', options: ['requested', 'request', 'requesting', 'requests'], answer: 1, explanation: 'can + động từ nguyên thể (request).' },
+        { stem: 'The factory currently operates ____ full capacity.', options: ['at', 'in', 'on', 'by'], answer: 0, explanation: 'at full capacity = hết công suất.' },
+        { stem: 'We sincerely apologize ____ the inconvenience caused.', options: ['to', 'with', 'about', 'for'], answer: 3, explanation: 'apologize for + sự việc.' },
+        { stem: 'The lease contract is ____ for renewal next month.', options: ['dues', 'duly', 'due', 'dued'], answer: 2, explanation: 'be due for = đến hạn.' },
+        { stem: 'Total sales increased ____ 20% in the third quarter.', options: ['by', 'in', 'of', 'at'], answer: 0, explanation: 'increase by + mức tăng.' },
+        { stem: 'Please ____ to the attached file for further details.', options: ['prefer', 'defer', 'offer', 'refer'], answer: 3, explanation: 'refer to = tham khảo, xem.' },
+        { stem: 'The new proposal was ____ by the board of directors.', options: ['approve', 'approved', 'approving', 'approval'], answer: 1, explanation: 'Bị động: was + V3 (approved).' },
+      ],
+    },
   ],
 
   IELTS: [
