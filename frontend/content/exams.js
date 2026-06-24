@@ -749,6 +749,21 @@ const EXAMS = {
         { stem: 'Đổi $227$ °C sang thang Kelvin?', options: ['$400$ K', '$500$ K', '$300$ K', '$600$ K'], answer: 1, explanation: '$227+273=500$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-24', title: 'Kiểm tra 45′ #24 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=1{,}5$ atm, $V_1=8$ L. Khi $V_2=6$ L thì $p_2=?$', options: ['$2$ atm', '$1$ atm', '$3$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=1{,}5\\cdot8/6=2$ atm.' },
+        { stem: 'Đun $3$ kg nước ($c=4200$) tăng thêm $5$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$84$ kJ', '$126$ kJ', '$63$ kJ'], answer: 3, explanation: '$Q=3\\cdot4200\\cdot5=63000$ J $=63$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}5$ m chuyển động $v=4$ m/s vuông góc $B=0{,}3$ T. Suất điện động?', options: ['$0{,}3$ V', '$1{,}2$ V', '$0{,}6$ V', '$0{,}15$ V'], answer: 2, explanation: '$e=BLv=0{,}3\\cdot0{,}5\\cdot4=0{,}6$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{19}_9F$?', options: ['$10$', '$9$', '$19$', '$28$'], answer: 0, explanation: '$N=19-9=10$.' },
+        { stem: 'Hạt nhân nào có $10$ proton?', options: ['$^{16}O$', '$^{23}Na$', '$^{19}F$', '$^{20}Ne$'], answer: 3, explanation: 'Neon có $Z=10$.' },
+        { stem: 'Thiết bị công suất $P=250$ W hoạt động $4$ s tiêu thụ công?', options: ['$500$ J', '$2000$ J', '$1000$ J', '$250$ J'], answer: 2, explanation: '$A=Pt=250\\cdot4=1000$ J.' },
+        { stem: 'Khí đẳng tích $p_1=4$ atm ở $400$ K, làm lạnh đến $200$ K. Áp suất sau?', options: ['$2$ atm', '$1$ atm', '$8$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1T_2/T_1=4\\cdot200/400=2$ atm.' },
+        { stem: 'Năng lượng liên kết của hạt nhân tỉ lệ thuận với?', options: ['số electron', 'độ hụt khối', 'thể tích', 'nhiệt độ'], answer: 1, explanation: '$W_{lk}=\\Delta m\\cdot c^2$ ⇒ tỉ lệ với độ hụt khối.' },
+        { stem: 'Sau $6$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/16$', '$1/32$', '$1/128$', '$1/64$'], answer: 3, explanation: '$(1/2)^6=1/64$.' },
+        { stem: 'Đổi $87$ °C sang thang Kelvin?', options: ['$300$ K', '$360$ K', '$273$ K', '$323$ K'], answer: 1, explanation: '$87+273=360$ K.' },
+      ],
+    },
   ],
 
   HOA: [
