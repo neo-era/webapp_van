@@ -752,6 +752,21 @@ const EXAMS = {
         { stem: 'Số phân tử có trong $1$ mol chất (số Avogadro) xấp xỉ?', options: ['$3{,}011\\cdot10^{23}$', '$6{,}022\\cdot10^{23}$', '$1{,}2\\cdot10^{24}$', '$6{,}022\\cdot10^{22}$'], answer: 1, explanation: 'Số Avogadro $N_A\\approx6{,}022\\cdot10^{23}$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-12', title: 'Kiểm tra 45′ #12 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4{,}4$ g $CO_2$ ($M=44$)?', options: ['$0{,}2$', '$0{,}5$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=4{,}4/44=0{,}1$ mol.' },
+        { stem: 'Thể tích (đktc) của $0{,}25$ mol khí?', options: ['$2{,}24$ L', '$11{,}2$ L', '$22{,}4$ L', '$5{,}6$ L'], answer: 3, explanation: '$V=0{,}25\\cdot22{,}4=5{,}6$ L.' },
+        { stem: 'Khối lượng của $2$ mol $H_2O$ ($M=18$)?', options: ['$36$ g', '$18$ g', '$54$ g', '$9$ g'], answer: 0, explanation: '$m=2\\cdot18=36$ g.' },
+        { stem: 'Để tạo $2$ mol $H_2O$ cần bao nhiêu mol $O_2$? ($2H_2+O_2\\to 2H_2O$)', options: ['$0{,}5$', '$1$', '$2$', '$4$'], answer: 1, explanation: 'Theo phương trình: $2$ mol $H_2O$ cần $1$ mol $O_2$.' },
+        { stem: 'Hòa tan $10$ g NaCl vào $90$ g nước. Nồng độ phần trăm của dung dịch?', options: ['$5\\%$', '$15\\%$', '$20\\%$', '$10\\%$'], answer: 3, explanation: '$C\\%=10/(10+90)\\cdot100\\%=10\\%$.' },
+        { stem: 'Số mol NaOH trong $200$ mL dung dịch $0{,}5$ M?', options: ['$0{,}1$', '$0{,}05$', '$0{,}5$', '$1$'], answer: 0, explanation: '$n=C_M\\cdot V=0{,}5\\cdot0{,}2=0{,}1$ mol.' },
+        { stem: 'Phân tử khối của glucose $C_6H_{12}O_6$?', options: ['$162$', '$342$', '$180$', '$90$'], answer: 2, explanation: '$6\\cdot12+12\\cdot1+6\\cdot16=180$.' },
+        { stem: 'Cho $2{,}4$ g Mg ($M=24$) tác dụng hết với HCl. Số mol $H_2$ sinh ra?', options: ['$0{,}05$', '$0{,}2$', '$1$', '$0{,}1$'], answer: 3, explanation: '$Mg+2HCl\\to MgCl_2+H_2$; $n_{Mg}=0{,}1\\Rightarrow n_{H_2}=0{,}1$ mol.' },
+        { stem: 'Đốt cháy hoàn toàn $0{,}1$ mol C trong $O_2$ thu được bao nhiêu mol $CO_2$?', options: ['$0{,}05$', '$0{,}1$', '$0{,}2$', '$1$'], answer: 1, explanation: '$C+O_2\\to CO_2$; $0{,}1$ mol C ⇒ $0{,}1$ mol $CO_2$.' },
+        { stem: 'Khối lượng mol của $CaCO_3$ (Ca=40, C=12, O=16)?', options: ['$84$', '$100$', '$116$', '$56$'], answer: 1, explanation: '$40+12+3\\cdot16=100$ g/mol.' },
+      ],
+    },
   ],
 
   ANH: [
