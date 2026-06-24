@@ -2122,6 +2122,21 @@ const EXAMS = {
         { stem: 'So rare is this species ____ it is strictly protected.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-23', title: 'IELTS – Vocabulary & Grammar #23', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "validate".', options: ['confirm', 'deny', 'reject', 'dispute'], answer: 0, explanation: 'validate ≈ confirm (xác nhận).' },
+        { stem: 'Choose the synonym of "sophisticated".', options: ['complex', 'simple', 'plain', 'basic'], answer: 0, explanation: 'sophisticated ≈ complex (tinh vi, phức tạp).' },
+        { stem: 'Choose the antonym of "flexible".', options: ['adaptable', 'pliable', 'elastic', 'rigid'], answer: 3, explanation: 'flexible ↔ rigid (cứng nhắc).' },
+        { stem: 'Little did she know ____ awaited her.', options: ['that', 'what', 'which', 'who'], answer: 1, explanation: 'what làm tân ngữ của "know".' },
+        { stem: 'Choose the synonym of "scrutinize".', options: ['examine', 'ignore', 'overlook', 'skip'], answer: 0, explanation: 'scrutinize ≈ examine (xem xét kỹ).' },
+        { stem: 'The author, ____ novels are famous worldwide, lives quietly.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "approve".', options: ['accept', 'endorse', 'support', 'reject'], answer: 3, explanation: 'approve ↔ reject (bác bỏ).' },
+        { stem: 'Only after much thought ____ a final decision.', options: ['he made', 'did he make', 'he makes', 'made he'], answer: 1, explanation: 'Đảo ngữ với "Only after…": + did + S + V.' },
+        { stem: 'Choose the synonym of "vigorous".', options: ['weak', 'tired', 'lazy', 'energetic'], answer: 3, explanation: 'vigorous ≈ energetic (mạnh mẽ, đầy sinh lực).' },
+        { stem: 'So convincing was the argument ____ everyone agreed.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
