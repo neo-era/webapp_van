@@ -890,6 +890,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'permanent'.", options: ['eternal', 'temporary', 'constant', 'durable'], answer: 1, explanation: 'permanent ↔ temporary (tạm thời).' },
       ],
     },
+    {
+      examId: 'anh-kt45-11', title: 'Kiểm tra 45′ #11 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'The report needs ____ before the deadline tomorrow.', options: ['to finish', 'finished', 'finish', 'finishing'], answer: 3, explanation: 'need + V-ing mang nghĩa bị động (= needs to be finished).' },
+        { stem: 'No sooner had I arrived ____ the meeting started.', options: ['than', 'when', 'then', 'that'], answer: 0, explanation: 'No sooner … than … (vừa mới … thì …).' },
+        { stem: "I'd rather not ____ about that issue right now.", options: ['talk', 'to talk', 'talking', 'talked'], answer: 0, explanation: 'would rather (not) + động từ nguyên thể không to.' },
+        { stem: 'The more she practised, the ____ she became.', options: ['good', 'better', 'best', 'well'], answer: 1, explanation: 'Cấu trúc so sánh kép: the + comparative.' },
+        { stem: 'He is responsible ____ managing the sales team.', options: ['to', 'with', 'of', 'for'], answer: 3, explanation: 'be responsible for + V-ing/N.' },
+        { stem: "Choose the synonym of 'abundant'.", options: ['scarce', 'plentiful', 'rare', 'limited'], answer: 1, explanation: 'abundant ≈ plentiful (dồi dào).' },
+        { stem: 'Were it not for your help, I ____ failed the project.', options: ['will have', 'had', 'would have', 'have'], answer: 2, explanation: 'Đảo ngữ điều kiện loại 3: Were it not for… ⇒ would have + V3.' },
+        { stem: 'The book ____ cover is torn belongs to me.', options: ['whose', 'which', 'that', 'who'], answer: 0, explanation: 'whose chỉ quan hệ sở hữu (the cover of the book).' },
+        { stem: "Choose the antonym of 'generous'.", options: ['kind', 'generous', 'giving', 'stingy'], answer: 3, explanation: 'generous ↔ stingy (keo kiệt).' },
+        { stem: "It's no use ____ over spilt milk.", options: ['to cry', 'cry', 'crying', 'cried'], answer: 2, explanation: "It's no use + V-ing." },
+      ],
+    },
   ],
 
   TOEIC: [
