@@ -992,6 +992,21 @@ const EXAMS = {
         { stem: 'Khí nào sau đây có màu vàng lục?', options: ['$O_2$', '$Cl_2$', '$H_2$', '$N_2$'], answer: 1, explanation: 'Khí $Cl_2$ có màu vàng lục.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-20', title: 'Kiểm tra 45′ #20 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $16$ g CuO ($M=80$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=16/80=0{,}2$ mol.' },
+        { stem: 'Khối lượng của $0{,}1$ mol $Al_2O_3$ ($M=102$)?', options: ['$10{,}2$ g', '$5{,}1$ g', '$20{,}4$ g', '$51$ g'], answer: 0, explanation: '$m=0{,}1\\cdot102=10{,}2$ g.' },
+        { stem: 'Thể tích $CO_2$ (đktc) khi đốt cháy hết $0{,}3$ mol C?', options: ['$4{,}48$ L', '$6{,}72$ L', '$2{,}24$ L', '$8{,}96$ L'], answer: 1, explanation: '$0{,}3$ mol $CO_2 \\Rightarrow V=0{,}3\\cdot22{,}4=6{,}72$ L.' },
+        { stem: 'Số mol $Cl_2$ cần để phản ứng hết với $0{,}2$ mol Na? ($2Na+Cl_2\\to2NaCl$)', options: ['$0{,}2$', '$0{,}4$', '$0{,}05$', '$0{,}1$'], answer: 3, explanation: '$2$ mol Na cần $1$ mol $Cl_2$; $0{,}2 \\to 0{,}1$ mol.' },
+        { stem: 'Khối lượng mol của $Ca(OH)_2$ (Ca=40, O=16, H=1)?', options: ['$74$', '$56$', '$90$', '$100$'], answer: 0, explanation: '$40+2\\cdot(16+1)=74$ g/mol.' },
+        { stem: 'Hòa tan $8$ g NaOH vào $92$ g nước. Nồng độ phần trăm của dung dịch?', options: ['$4\\%$', '$8\\%$', '$12\\%$', '$16\\%$'], answer: 1, explanation: '$C\\%=8/100\\cdot100\\%=8\\%$.' },
+        { stem: 'Kim loại nào nhẹ, bền, thường dùng làm vỏ máy bay?', options: ['sắt', 'đồng', 'chì', 'nhôm'], answer: 3, explanation: 'Nhôm (và hợp kim nhôm) nhẹ, bền ⇒ làm vỏ máy bay.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}5$ mol $CO_2$?', options: ['$0{,}5$', '$2$', '$1$', '$0{,}25$'], answer: 2, explanation: 'Mỗi phân tử có 2 O ⇒ $0{,}5\\cdot2=1$ mol.' },
+        { stem: 'Phản ứng $2KMnO_4\\xrightarrow{t^\\circ}K_2MnO_4+MnO_2+O_2$ thuộc loại?', options: ['phân hủy', 'hóa hợp', 'thế', 'trao đổi'], answer: 0, explanation: 'Một chất tạo nhiều chất ⇒ phản ứng phân hủy.' },
+        { stem: 'Chất nào sau đây KHÔNG dẫn điện ở trạng thái rắn?', options: ['kim loại đồng', 'muối NaCl rắn', 'than chì', 'dung dịch axit'], answer: 1, explanation: 'NaCl rắn không dẫn điện (chỉ dẫn khi nóng chảy hoặc trong dung dịch).' },
+      ],
+    },
   ],
 
   ANH: [
