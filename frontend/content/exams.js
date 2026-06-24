@@ -1834,6 +1834,21 @@ const EXAMS = {
         { stem: 'We constantly strive for customer ____.', options: ['satisfaction', 'satisfy', 'satisfied', 'satisfying'], answer: 0, explanation: 'customer satisfaction = sự hài lòng của khách hàng.' },
       ],
     },
+    {
+      examId: 'toeic-24', title: 'TOEIC – Grammar & Vocabulary #24', durationMin: 20,
+      questions: [
+        { stem: 'The seminar provides ____ training for all new staff.', options: ['comprehend', 'comprehension', 'comprehensively', 'comprehensive'], answer: 3, explanation: 'Cần tính từ bổ nghĩa "training" ⇒ comprehensive.' },
+        { stem: 'We ____ apologize for any inconvenience caused.', options: ['sincere', 'sincerely', 'sincerity', 'sincereness'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa động từ ⇒ sincerely.' },
+        { stem: 'The product must be returned in its ____ packaging.', options: ['original', 'origin', 'originate', 'originally'], answer: 0, explanation: 'original packaging = bao bì gốc (tính từ).' },
+        { stem: 'He has the ability to ____ complex problems.', options: ['solution', 'solve', 'solvable', 'solver'], answer: 1, explanation: 'ability to + V ⇒ solve.' },
+        { stem: 'Our project team ____ of five members.', options: ['consists', 'consist', 'consisting', 'consisted'], answer: 0, explanation: 'consist of = bao gồm; chủ ngữ số ít ⇒ consists.' },
+        { stem: 'The new policy will ____ improve productivity.', options: ['significant', 'significance', 'signify', 'significantly'], answer: 3, explanation: 'Cần trạng từ bổ nghĩa "improve" ⇒ significantly.' },
+        { stem: 'Please submit the application ____ the deadline.', options: ['before', 'since', 'while', 'during'], answer: 0, explanation: 'before the deadline = trước hạn chót.' },
+        { stem: "The manager is ____ for the project's success.", options: ['account', 'accountant', 'accountable', 'accounting'], answer: 2, explanation: 'be accountable for = chịu trách nhiệm về.' },
+        { stem: 'We need to ____ a solution to this issue quickly.', options: ['found', 'finding', 'finds', 'find'], answer: 3, explanation: 'need to + động từ nguyên thể (find).' },
+        { stem: 'The assembly instructions are very easy to ____.', options: ['fellow', 'follow', 'hollow', 'swallow'], answer: 1, explanation: 'easy to follow = dễ làm theo.' },
+      ],
+    },
   ],
 
   IELTS: [
