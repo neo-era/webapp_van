@@ -997,6 +997,21 @@ const EXAMS = {
         { stem: 'Choose the antonym of "temporary".', options: ['brief', 'momentary', 'permanent', 'short'], answer: 2, explanation: 'temporary ↔ permanent (lâu dài).' },
       ],
     },
+    {
+      examId: 'ielts-kt-8', title: 'IELTS – Vocabulary & Grammar #8', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "enhance".', options: ['improve', 'worsen', 'ignore', 'reduce'], answer: 0, explanation: 'enhance ≈ improve (cải thiện).' },
+        { stem: 'Choose the synonym of "vital".', options: ['optional', 'minor', 'useless', 'indispensable'], answer: 3, explanation: 'vital ≈ indispensable (thiết yếu).' },
+        { stem: 'Choose the antonym of "expand".', options: ['grow', 'enlarge', 'contract', 'extend'], answer: 2, explanation: 'expand ↔ contract (co lại).' },
+        { stem: 'The research ____ out over a period of five years.', options: ['carried', 'was carried', 'has carry', 'carry'], answer: 1, explanation: 'Bị động: was carried out.' },
+        { stem: 'Choose the synonym of "consequently".', options: ['therefore', 'however', 'meanwhile', 'although'], answer: 0, explanation: 'consequently ≈ therefore (do đó).' },
+        { stem: 'A number of factors ____ to climate change.', options: ['contributes', 'contributing', 'contribution', 'contribute'], answer: 3, explanation: '"A number of" + danh từ số nhiều ⇒ động từ số nhiều.' },
+        { stem: 'Choose the antonym of "complex".', options: ['complicated', 'intricate', 'simple', 'difficult'], answer: 2, explanation: 'complex ↔ simple (đơn giản).' },
+        { stem: 'Rarely ____ such a beautiful sunset.', options: ['I have seen', 'have I seen', 'I saw', 'did I saw'], answer: 1, explanation: 'Đảo ngữ với "Rarely": Rarely + have + S + V3.' },
+        { stem: 'Choose the synonym of "demonstrate".', options: ['show', 'hide', 'deny', 'doubt'], answer: 0, explanation: 'demonstrate ≈ show (chứng minh, cho thấy).' },
+        { stem: 'It is essential that he ____ present at the meeting.', options: ['is', 'was', 'be', 'being'], answer: 2, explanation: 'Cấu trúc giả định (subjunctive): It is essential that S + V (nguyên thể) ⇒ be.' },
+      ],
+    },
   ],
 };
 
