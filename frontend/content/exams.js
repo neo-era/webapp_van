@@ -874,6 +874,21 @@ const EXAMS = {
         { stem: 'If you have any questions, please do not ____ to contact us.', options: ['hesitate', 'decide', 'refuse', 'manage'], answer: 0, explanation: "do not hesitate to = đừng ngần ngại." },
       ],
     },
+    {
+      examId: 'toeic-8', title: 'TOEIC – Grammar & Vocabulary #8', durationMin: 20,
+      questions: [
+        { stem: 'The invoice should be paid ____ 30 days of receipt.', options: ['since', 'among', 'between', 'within'], answer: 3, explanation: 'within + khoảng thời gian = trong vòng.' },
+        { stem: 'We regret to ____ you that your application was unsuccessful.', options: ['informing', 'informed', 'inform', 'information'], answer: 2, explanation: 'regret to + động từ nguyên thể (inform).' },
+        { stem: 'All staff are required to ____ the safety training session.', options: ['attain', 'retain', 'contain', 'attend'], answer: 3, explanation: 'attend = tham dự.' },
+        { stem: 'The new software is designed to ____ productivity.', options: ['enhance', 'reduce', 'delay', 'cancel'], answer: 0, explanation: 'enhance = nâng cao.' },
+        { stem: 'Please find the quarterly report ____ to this email.', options: ['attaching', 'attached', 'attach', 'attachment'], answer: 1, explanation: 'find sth attached = đính kèm (quá khứ phân từ).' },
+        { stem: 'The meeting was ____ due to a scheduling conflict.', options: ['rescheduled', 'reschedule', 'reschedules', 'rescheduling'], answer: 0, explanation: 'be + V3 (bị động): was rescheduled.' },
+        { stem: 'Our prices remain competitive ____ the market.', options: ['on', 'in', 'at', 'of'], answer: 1, explanation: 'competitive in the market.' },
+        { stem: 'The company is committed ____ customer satisfaction.', options: ['for', 'with', 'on', 'to'], answer: 3, explanation: 'be committed to + N/V-ing.' },
+        { stem: 'He was promoted ____ his outstanding performance.', options: ['despite', 'because of', 'instead of', 'in spite of'], answer: 1, explanation: 'because of + N (chỉ nguyên nhân).' },
+        { stem: 'The warranty ____ all manufacturing defects.', options: ['covering', 'covered', 'covers', 'to cover'], answer: 2, explanation: 'Chủ ngữ số ít, hiện tại đơn: covers.' },
+      ],
+    },
   ],
 
   IELTS: [
