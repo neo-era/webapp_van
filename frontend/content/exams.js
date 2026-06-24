@@ -1747,6 +1747,21 @@ const EXAMS = {
         { stem: 'Never before ____ such a remarkable achievement.', options: ['we have seen', 'have we seen', 'we saw', 'did we saw'], answer: 1, explanation: 'Đảo ngữ với "Never before": + have + S + V3.' },
       ],
     },
+    {
+      examId: 'ielts-kt-18', title: 'IELTS – Vocabulary & Grammar #18', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "alleviate".', options: ['worsen', 'intensify', 'aggravate', 'relieve'], answer: 3, explanation: 'alleviate ≈ relieve (làm giảm bớt).' },
+        { stem: 'Choose the synonym of "novel" (adj).', options: ['new', 'old', 'ancient', 'usual'], answer: 0, explanation: 'novel ≈ new (mới mẻ).' },
+        { stem: 'Choose the antonym of "vague".', options: ['unclear', 'blurry', 'clear', 'obscure'], answer: 2, explanation: 'vague ↔ clear (rõ ràng).' },
+        { stem: 'Provided that you ____ hard, you will pass the exam.', options: ['work', 'works', 'worked', 'working'], answer: 0, explanation: 'Provided that + hiện tại đơn (điều kiện).' },
+        { stem: 'Choose the synonym of "obstacle".', options: ['aid', 'help', 'support', 'barrier'], answer: 3, explanation: 'obstacle ≈ barrier (trở ngại).' },
+        { stem: 'The report, ____ took weeks to prepare, was rejected.', options: ['who', 'which', 'whose', 'what'], answer: 1, explanation: 'which cho vật, mệnh đề quan hệ không xác định.' },
+        { stem: 'Choose the antonym of "genuine".', options: ['real', 'authentic', 'true', 'fake'], answer: 3, explanation: 'genuine ↔ fake (giả).' },
+        { stem: 'Only when the alarm rang ____ the danger.', options: ['they realized', 'did they realize', 'they realize', 'realize they'], answer: 1, explanation: 'Đảo ngữ với "Only when…": + did + S + V.' },
+        { stem: 'Choose the synonym of "vast".', options: ['enormous', 'tiny', 'small', 'narrow'], answer: 0, explanation: 'vast ≈ enormous (rộng lớn).' },
+        { stem: 'Hardly anyone ____ the correct answer.', options: ['know', 'are knowing', 'knows', 'have known'], answer: 2, explanation: '"Hardly anyone" + động từ số ít (knows).' },
+      ],
+    },
   ],
 };
 
