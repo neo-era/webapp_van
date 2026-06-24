@@ -2497,6 +2497,21 @@ const EXAMS = {
         { stem: 'So heavy was the rain ____ the match was cancelled.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-28', title: 'IELTS – Vocabulary & Grammar #28', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "abrupt".', options: ['sudden', 'gradual', 'slow', 'gentle'], answer: 0, explanation: 'abrupt ≈ sudden (đột ngột).' },
+        { stem: 'Choose the synonym of "candid".', options: ['frank', 'secretive', 'dishonest', 'reserved'], answer: 0, explanation: 'candid ≈ frank (thẳng thắn).' },
+        { stem: 'Choose the antonym of "biased".', options: ['prejudiced', 'partial', 'unfair', 'impartial'], answer: 3, explanation: 'biased ↔ impartial (công bằng).' },
+        { stem: 'Seldom ____ such kindness from a stranger.', options: ['I have seen', 'have I seen', 'I saw', 'did I saw'], answer: 1, explanation: 'Đảo ngữ với "Seldom": + have + S + V3.' },
+        { stem: 'Choose the synonym of "hinder".', options: ['help', 'aid', 'assist', 'impede'], answer: 3, explanation: 'hinder ≈ impede (cản trở).' },
+        { stem: 'The professor, ____ I greatly admire, gave a talk.', options: ['who', 'whom', 'which', 'whose'], answer: 1, explanation: 'whom làm tân ngữ chỉ người.' },
+        { stem: 'Choose the antonym of "verbose".', options: ['wordy', 'lengthy', 'talkative', 'concise'], answer: 3, explanation: 'verbose ↔ concise (súc tích).' },
+        { stem: 'Not until dusk ____ home.', options: ['they returned', 'did they return', 'they return', 'return they'], answer: 1, explanation: 'Đảo ngữ với "Not until…": + did + S + V.' },
+        { stem: 'Choose the synonym of "conceal".', options: ['hide', 'reveal', 'expose', 'show'], answer: 0, explanation: 'conceal ≈ hide (che giấu).' },
+        { stem: 'So intense was the heat ____ many crops failed.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
