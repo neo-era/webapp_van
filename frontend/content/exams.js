@@ -824,6 +824,21 @@ const EXAMS = {
         { stem: 'Đổi $47$ °C sang thang Kelvin?', options: ['$300$ K', '$320$ K', '$273$ K', '$290$ K'], answer: 1, explanation: '$47+273=320$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-29', title: 'Kiểm tra 45′ #29 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=3$ atm, $V_1=10$ L. Khi $p_2=6$ atm thì $V_2=?$', options: ['$5$ L', '$4$ L', '$6$ L', '$3$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=3\\cdot10/6=5$ L.' },
+        { stem: 'Đun $1{,}5$ kg nước ($c=4200$) tăng thêm $20$ °C cần nhiệt lượng?', options: ['$63$ kJ', '$252$ kJ', '$42$ kJ', '$126$ kJ'], answer: 3, explanation: '$Q=1{,}5\\cdot4200\\cdot20=126000$ J $=126$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}4$ m chuyển động $v=5$ m/s vuông góc $B=0{,}5$ T. Suất điện động?', options: ['$0{,}5$ V', '$2$ V', '$1$ V', '$0{,}25$ V'], answer: 2, explanation: '$e=BLv=0{,}5\\cdot0{,}4\\cdot5=1$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{63}_{29}Cu$?', options: ['$34$', '$29$', '$63$', '$92$'], answer: 0, explanation: '$N=63-29=34$.' },
+        { stem: 'Hạt nhân nào có $17$ proton?', options: ['$^{32}S$', '$^{40}Ar$', '$^{39}K$', '$^{35}Cl$'], answer: 3, explanation: 'Clo có $Z=17$.' },
+        { stem: 'Thiết bị công suất $P=200$ W hoạt động $10$ s tiêu thụ công?', options: ['$1000$ J', '$4000$ J', '$2000$ J', '$20$ J'], answer: 2, explanation: '$A=Pt=200\\cdot10=2000$ J.' },
+        { stem: 'Khí đẳng áp $V_1=8$ L ở $400$ K, làm lạnh đến $100$ K. Thể tích sau?', options: ['$2$ L', '$1$ L', '$4$ L', '$16$ L'], answer: 0, explanation: '$V_2=V_1T_2/T_1=8\\cdot100/400=2$ L.' },
+        { stem: 'Đơn vị của cường độ dòng điện là?', options: ['Vôn', 'Ampe', 'Ôm', 'Oát'], answer: 1, explanation: 'Cường độ dòng điện đo bằng Ampe (A).' },
+        { stem: 'Sau $10$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/256$', '$1/512$', '$1/2048$', '$1/1024$'], answer: 3, explanation: '$(1/2)^{10}=1/1024$.' },
+        { stem: 'Đổi $0$ °C sang thang Kelvin?', options: ['$0$ K', '$273$ K', '$300$ K', '$100$ K'], answer: 1, explanation: '$0+273=273$ K.' },
+      ],
+    },
   ],
 
   HOA: [
