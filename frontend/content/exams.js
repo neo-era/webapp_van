@@ -734,6 +734,21 @@ const EXAMS = {
         { stem: 'Đổi $25$ °C sang thang Kelvin?', options: ['$273$ K', '$298$ K', '$250$ K', '$300$ K'], answer: 1, explanation: '$25+273=298$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-23', title: 'Kiểm tra 45′ #23 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=8$ atm, $V_1=1$ L. Khi $p_2=2$ atm thì $V_2=?$', options: ['$2$ L', '$3$ L', '$4$ L', '$8$ L'], answer: 2, explanation: '$V_2=p_1V_1/p_2=8\\cdot1/2=4$ L.' },
+        { stem: 'Đun $1{,}5$ kg nước ($c=4200$) tăng thêm $10$ °C cần nhiệt lượng?', options: ['$63$ kJ', '$42$ kJ', '$84$ kJ', '$21$ kJ'], answer: 0, explanation: '$Q=1{,}5\\cdot4200\\cdot10=63000$ J $=63$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}6$ m chuyển động $v=2$ m/s vuông góc $B=0{,}5$ T. Suất điện động?', options: ['$0{,}3$ V', '$1{,}2$ V', '$0{,}6$ V', '$0{,}15$ V'], answer: 2, explanation: '$e=BLv=0{,}5\\cdot0{,}6\\cdot2=0{,}6$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{56}_{26}Fe$?', options: ['$26$', '$56$', '$82$', '$30$'], answer: 3, explanation: '$N=56-26=30$.' },
+        { stem: 'Hạt nhân nào có $6$ proton?', options: ['$^{12}C$', '$^{10}B$', '$^{14}N$', '$^{16}O$'], answer: 0, explanation: 'Cacbon có $Z=6$.' },
+        { stem: 'Một máy thực hiện công $A=2400$ J trong $8$ s. Công suất?', options: ['$150$ W', '$600$ W', '$19200$ W', '$300$ W'], answer: 3, explanation: '$P=A/t=2400/8=300$ W.' },
+        { stem: 'Khí đẳng áp $V_1=4$ L ở $250$ K, đun đến $500$ K. Thể tích sau?', options: ['$8$ L', '$6$ L', '$2$ L', '$16$ L'], answer: 0, explanation: '$V_2=V_1T_2/T_1=4\\cdot500/250=8$ L.' },
+        { stem: 'Độ lớn suất điện động cảm ứng phụ thuộc vào?', options: ['điện trở mạch', 'tốc độ biến thiên từ thông', 'nhiệt độ', 'dòng điện không đổi'], answer: 1, explanation: 'Định luật Faraday: $|e|=|\\Delta\\Phi/\\Delta t|$.' },
+        { stem: 'Sau $5$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/8$', '$1/16$', '$1/64$', '$1/32$'], answer: 3, explanation: '$(1/2)^5=1/32$.' },
+        { stem: 'Đổi $227$ °C sang thang Kelvin?', options: ['$400$ K', '$500$ K', '$300$ K', '$600$ K'], answer: 1, explanation: '$227+273=500$ K.' },
+      ],
+    },
   ],
 
   HOA: [
