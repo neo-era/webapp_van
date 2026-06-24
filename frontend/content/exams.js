@@ -719,6 +719,21 @@ const EXAMS = {
         { stem: 'Đổi $77$ °C sang thang Kelvin?', options: ['$300$ K', '$350$ K', '$273$ K', '$323$ K'], answer: 1, explanation: '$77+273=350$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-22', title: 'Kiểm tra 45′ #22 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=2$ atm, $V_1=6$ L. Khi $V_2=4$ L thì $p_2=?$', options: ['$3$ atm', '$2$ atm', '$4$ atm', '$1{,}5$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=2\\cdot6/4=3$ atm.' },
+        { stem: 'Nung $0{,}5$ kg đồng ($c=380$) tăng thêm $100$ °C cần nhiệt lượng?', options: ['$9500$ J', '$38000$ J', '$3800$ J', '$19000$ J'], answer: 3, explanation: '$Q=0{,}5\\cdot380\\cdot100=19000$ J.' },
+        { stem: 'Đoạn dây $L=0{,}2$ m chuyển động $v=5$ m/s vuông góc $B=0{,}6$ T. Suất điện động?', options: ['$0{,}3$ V', '$0{,}6$ V', '$1{,}2$ V', '$0{,}12$ V'], answer: 1, explanation: '$e=BLv=0{,}6\\cdot0{,}2\\cdot5=0{,}6$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{40}_{19}K$?', options: ['$21$', '$19$', '$40$', '$59$'], answer: 0, explanation: '$N=40-19=21$.' },
+        { stem: 'Hạt nhân nào có $8$ proton?', options: ['$^{14}N$', '$^{12}C$', '$^{20}Ne$', '$^{16}O$'], answer: 3, explanation: 'Oxi có $Z=8$.' },
+        { stem: 'Thiết bị công suất $P=100$ W hoạt động $10$ s tiêu thụ công?', options: ['$500$ J', '$1000$ J', '$2000$ J', '$100$ J'], answer: 1, explanation: '$A=Pt=100\\cdot10=1000$ J.' },
+        { stem: 'Khí đẳng tích $p_1=2$ atm ở $300$ K, đun đến $900$ K. Áp suất sau?', options: ['$6$ atm', '$4$ atm', '$3$ atm', '$9$ atm'], answer: 0, explanation: '$p_2=p_1T_2/T_1=2\\cdot900/300=6$ atm.' },
+        { stem: 'Ánh sáng có bước sóng càng ngắn thì năng lượng photon càng?', options: ['nhỏ', 'bằng 0', 'không đổi', 'lớn'], answer: 3, explanation: '$E=hc/\\lambda$ ⇒ $\\lambda$ nhỏ thì $E$ lớn.' },
+        { stem: 'Sau $4$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/4$', '$1/8$', '$1/16$', '$1/32$'], answer: 2, explanation: '$(1/2)^4=1/16$.' },
+        { stem: 'Đổi $25$ °C sang thang Kelvin?', options: ['$273$ K', '$298$ K', '$250$ K', '$300$ K'], answer: 1, explanation: '$25+273=298$ K.' },
+      ],
+    },
   ],
 
   HOA: [
