@@ -2422,6 +2422,21 @@ const EXAMS = {
         { stem: 'So profound was the impact ____ it changed history.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-27', title: 'IELTS – Vocabulary & Grammar #27', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "initiate".', options: ['start', 'end', 'finish', 'stop'], answer: 0, explanation: 'initiate ≈ start (khởi đầu).' },
+        { stem: 'Choose the synonym of "tedious".', options: ['boring', 'exciting', 'fun', 'thrilling'], answer: 0, explanation: 'tedious ≈ boring (tẻ nhạt).' },
+        { stem: 'Choose the antonym of "amplify".', options: ['increase', 'boost', 'magnify', 'reduce'], answer: 3, explanation: 'amplify ↔ reduce (làm giảm).' },
+        { stem: 'Not since childhood ____ so happy.', options: ['I had felt', 'had I felt', 'I felt', 'did I felt'], answer: 1, explanation: 'Đảo ngữ với "Not since…": + had + S + V3.' },
+        { stem: 'Choose the synonym of "lethal".', options: ['deadly', 'harmless', 'safe', 'mild'], answer: 0, explanation: 'lethal ≈ deadly (chết người).' },
+        { stem: 'The painting, ____ value is enormous, was stolen.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "active".', options: ['busy', 'lively', 'energetic', 'passive'], answer: 3, explanation: 'active ↔ passive (thụ động).' },
+        { stem: 'Were they to refuse, we ____ find another supplier.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 2: Were + S + to V … would + V.' },
+        { stem: 'Choose the synonym of "subside".', options: ['grow', 'rise', 'expand', 'decrease'], answer: 3, explanation: 'subside ≈ decrease (lắng xuống, giảm dần).' },
+        { stem: 'So heavy was the rain ____ the match was cancelled.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
