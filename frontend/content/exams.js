@@ -814,6 +814,21 @@ const EXAMS = {
         { stem: 'Prices are expected to ____ next year.', options: ['raise', 'arise', 'arouse', 'rise'], answer: 3, explanation: 'rise (nội động từ) = tăng.' },
       ],
     },
+    {
+      examId: 'toeic-7', title: 'TOEIC – Grammar & Vocabulary #7', durationMin: 20,
+      questions: [
+        { stem: 'The manager will ____ the meeting at 3 p.m.', options: ['conducts', 'conducting', 'conducted', 'conduct'], answer: 3, explanation: 'will + động từ nguyên thể.' },
+        { stem: 'All employees must ____ with the safety regulations.', options: ['apply', 'comply', 'reply', 'supply'], answer: 1, explanation: 'comply with = tuân thủ.' },
+        { stem: 'The shipment is expected to arrive ____ Friday.', options: ['in', 'at', 'on', 'by'], answer: 2, explanation: 'on + thứ trong tuần.' },
+        { stem: 'The report must be submitted ____ the end of the month.', options: ['until', 'since', 'during', 'by'], answer: 3, explanation: 'by = trước/đến mốc thời gian (hạn chót).' },
+        { stem: 'Our company offers a wide ____ of products.', options: ['range', 'ranged', 'ranging', 'ranges'], answer: 0, explanation: 'a wide range of = đa dạng.' },
+        { stem: 'The new policy will take ____ next Monday.', options: ['affect', 'effort', 'effect', 'effective'], answer: 2, explanation: 'take effect = có hiệu lực.' },
+        { stem: 'Employees are entitled ____ two weeks of paid leave.', options: ['for', 'to', 'with', 'of'], answer: 1, explanation: 'be entitled to = được hưởng quyền.' },
+        { stem: 'Please ____ your seatbelt during takeoff.', options: ['loosen', 'fashion', 'frighten', 'fasten'], answer: 3, explanation: 'fasten your seatbelt = thắt dây an toàn.' },
+        { stem: 'The conference has been ____ until next month due to the weather.', options: ['cancelled', 'attended', 'postponed', 'arrived'], answer: 2, explanation: 'postpone = hoãn lại.' },
+        { stem: 'If you have any questions, please do not ____ to contact us.', options: ['hesitate', 'decide', 'refuse', 'manage'], answer: 0, explanation: "do not hesitate to = đừng ngần ngại." },
+      ],
+    },
   ],
 
   IELTS: [
