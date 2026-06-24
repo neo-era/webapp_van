@@ -1714,6 +1714,21 @@ const EXAMS = {
         { stem: 'She was ____ for the Employee of the Year award.', options: ['dominated', 'terminated', 'eliminated', 'nominated'], answer: 3, explanation: 'be nominated for = được đề cử.' },
       ],
     },
+    {
+      examId: 'toeic-22', title: 'TOEIC – Grammar & Vocabulary #22', durationMin: 20,
+      questions: [
+        { stem: 'The report ____ a detailed market analysis.', options: ['contained', 'containing', 'contain', 'contains'], answer: 3, explanation: 'Chủ ngữ số ít, hiện tại đơn ⇒ contains.' },
+        { stem: 'Please ____ the meeting room for tomorrow afternoon.', options: ['preserve', 'reserve', 'observe', 'conserve'], answer: 1, explanation: 'reserve a room = đặt phòng.' },
+        { stem: 'All staff members received a salary ____ this year.', options: ['increase', 'increasing', 'increased', 'increasingly'], answer: 0, explanation: 'a salary increase = đợt tăng lương (danh từ).' },
+        { stem: 'The company ____ in 1995 by two engineers.', options: ['founded', 'was founded', 'founds', 'founding'], answer: 1, explanation: 'Bị động quá khứ: was founded.' },
+        { stem: 'We need to ____ our marketing strategy for next year.', options: ['devise', 'advise', 'supervise', 'revise'], answer: 3, explanation: 'revise = sửa đổi, điều chỉnh.' },
+        { stem: 'The goods will be shipped ____ two business days.', options: ['in', 'on', 'at', 'by'], answer: 0, explanation: 'in + khoảng thời gian (trong vòng).' },
+        { stem: 'His innovative proposal was ____ accepted by the board.', options: ['wide', 'widely', 'widen', 'wider'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa "accepted" ⇒ widely.' },
+        { stem: 'We sincerely apologize for the ____ in delivery.', options: ['delaying', 'delayed', 'delays', 'delay'], answer: 3, explanation: 'the delay = sự chậm trễ (danh từ).' },
+        { stem: 'The senior manager will ____ the new employees next week.', options: ['training', 'trained', 'train', 'trainer'], answer: 2, explanation: 'will + động từ nguyên thể (train).' },
+        { stem: 'Our delivery service is highly ____.', options: ['reliable', 'rely', 'reliance', 'reliably'], answer: 0, explanation: 'Cần tính từ sau "highly" ⇒ reliable.' },
+      ],
+    },
   ],
 
   IELTS: [
