@@ -710,6 +710,21 @@ const EXAMS = {
         { stem: 'If only I ____ harder for the exam!', options: ['studied', 'had studied', 'study', 'studying'], answer: 1, explanation: 'If only + quá khứ hoàn thành (tiếc nuối quá khứ).' },
       ],
     },
+    {
+      examId: 'anh-kt45-7', title: 'Kiểm tra 45′ #7 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'By the time we arrived, the film ____.', options: ['started', 'has started', 'starts', 'had already started'], answer: 3, explanation: 'Hành động xảy ra trước trong quá khứ ⇒ past perfect.' },
+        { stem: 'She suggested ____ a break.', options: ['taking', 'to take', 'take', 'taken'], answer: 0, explanation: 'suggest + V-ing.' },
+        { stem: "I'd rather you ____ here tonight.", options: ['stay', 'stayed', 'to stay', 'staying'], answer: 1, explanation: "would rather + S + V quá khứ (giả định)." },
+        { stem: 'Neither of the answers ____ correct.', options: ['are', 'were', 'is', 'be'], answer: 2, explanation: 'Neither of + danh từ ⇒ động từ số ít.' },
+        { stem: 'He is used to ____ early every morning.', options: ['getting up', 'get up', 'got up', 'gets up'], answer: 0, explanation: 'be used to + V-ing (đã quen với việc gì).' },
+        { stem: 'The more you practise, ____ you become.', options: ['better', 'the better', 'best', 'the best'], answer: 1, explanation: 'Cấu trúc so sánh kép: the + comparative, the + comparative.' },
+        { stem: "It's high time we ____ home.", options: ['go', 'gone', 'going', 'went'], answer: 3, explanation: "It's high time + S + V quá khứ." },
+        { stem: 'Please ____ your shoes before entering the temple.', options: ['take off', 'take after', 'take up', 'take in'], answer: 0, explanation: 'take off = cởi ra.' },
+        { stem: 'Not only ____ late but he also forgot the keys.', options: ['he was', 'was he', 'he is', 'is he'], answer: 1, explanation: 'Đảo ngữ với "Not only…": Not only + trợ động từ + S.' },
+        { stem: 'If I ____ you, I would apologize to her.', options: ['am', 'was', 'were', 'be'], answer: 2, explanation: 'Câu điều kiện loại 2: If I were you…' },
+      ],
+    },
   ],
 
   TOEIC: [
