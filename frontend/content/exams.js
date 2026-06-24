@@ -1160,6 +1160,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'increase' (noun).", options: ['decrease', 'rise', 'growth', 'gain'], answer: 0, explanation: 'increase ↔ decrease (sự giảm).' },
       ],
     },
+    {
+      examId: 'anh-kt45-17', title: 'Kiểm tra 45′ #17 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: "She is the most talented singer ____ I've ever heard.", options: ['who', 'which', 'whom', 'that'], answer: 3, explanation: 'Sau so sánh nhất thường dùng that.' },
+        { stem: 'We ____ to the beach if the weather is nice tomorrow.', options: ['will go', 'go', 'would go', 'went'], answer: 0, explanation: 'Câu điều kiện loại 1: will + V.' },
+        { stem: 'He suggested ____ a doctor about the pain.', options: ['to see', 'see', 'seeing', 'saw'], answer: 2, explanation: 'suggest + V-ing.' },
+        { stem: 'I have ____ finished my homework.', options: ['yet', 'since', 'ago', 'already'], answer: 3, explanation: 'already trong câu khẳng định hiện tại hoàn thành.' },
+        { stem: '____ hard he tried, he could not open the jar.', options: ['However', 'Whatever', 'Whoever', 'Wherever'], answer: 0, explanation: 'However + tính/trạng từ = dù … đến đâu.' },
+        { stem: 'She is very good ____ mathematics.', options: ['in', 'at', 'on', 'for'], answer: 1, explanation: 'be good at + N.' },
+        { stem: "Choose the synonym of 'brave'.", options: ['cowardly', 'timid', 'fearful', 'courageous'], answer: 3, explanation: 'brave ≈ courageous (dũng cảm).' },
+        { stem: 'If only I ____ taller!', options: ['were', 'am', 'was', 'be'], answer: 0, explanation: 'If only + were (giả định trái hiện tại).' },
+        { stem: 'The meeting ____ at 9 a.m. tomorrow.', options: ['holds', 'is holding', 'will be held', 'held'], answer: 2, explanation: 'Bị động tương lai: will be held.' },
+        { stem: "Choose the antonym of 'narrow'.", options: ['thin', 'wide', 'slim', 'tight'], answer: 1, explanation: 'narrow ↔ wide (rộng).' },
+      ],
+    },
   ],
 
   TOEIC: [
