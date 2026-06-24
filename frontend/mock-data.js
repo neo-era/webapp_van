@@ -21,7 +21,7 @@ const _plus = (n) => dayjs().add(n, 'day').format('YYYY-MM-DD');
 
 const MOCK = {
   student: {
-    userId: 'u001', name: 'Nguyễn Văn An', email: 'hocsinh@demo.com',
+    userId: 'u001', name: 'Mai Tuệ Văn', email: 'hocsinh@demo.com',
     role: 'STUDENT', grade: 12, className: '12A1',
   },
   teacher: {
@@ -102,7 +102,7 @@ const MOCK = {
 
   classStudents: {
     c001: [
-      { name: 'Nguyễn Văn An', progress: 72, late: 0 },
+      { name: 'Mai Tuệ Văn', progress: 72, late: 0 },
       { name: 'Trần Thị Bình', progress: 54, late: 2 },
       { name: 'Lê Hoàng Cường', progress: 38, late: 3 },
     ],

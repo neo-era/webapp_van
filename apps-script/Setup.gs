@@ -30,7 +30,7 @@ function seedIfEmpty() {
 
   // Học sinh
   const students = [
-    { name: 'Nguyễn Văn An', email: 'hocsinh@demo.com' },
+    { name: 'Mai Tuệ Văn', email: 'hocsinh@demo.com' },
     { name: 'Trần Thị Bình', email: 'binh@demo.com' },
     { name: 'Lê Hoàng Cường', email: 'cuong@demo.com' },
   ];

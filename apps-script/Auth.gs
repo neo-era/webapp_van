@@ -60,6 +60,15 @@ function whoami(req) {
   return jsonOk(publicUser(user));
 }
 
+/** Đổi tên hiển thị của người dùng hiện tại. */
+function updateProfile(req) {
+  const user = requireAuth(req.token);
+  const name = String(req.name || '').trim();
+  if (!name) return jsonError('Tên không hợp lệ');
+  updateRowById('Users', 'userId', user.userId, { name: name });
+  return jsonOk(publicUser(Object.assign(user, { name: name })));
+}
+
 /** Đổi mật khẩu (cần mật khẩu hiện tại). */
 function changePassword(req) {
   const user = requireAuth(req.token);

@@ -57,6 +57,7 @@ function route(action, req) {
     case 'register':        return register(req);
     case 'login':           return login(req);
     case 'whoami':          return whoami(req);
+    case 'updateProfile':   return updateProfile(req);
     case 'changePassword':  return changePassword(req);
     case 'getPublicClasses': return getPublicClasses(req);
 

@@ -192,7 +192,15 @@ async function loadStudentData() {
   App.data.goals = d.goals || [];
   App.data.exam = d.exam || null;
   App.data.notes = d.notes || [];
+  if (d.user) { App.state.user = d.user; saveSession(); refreshHeader(); }
   try { localStorage.setItem('thpt_data', JSON.stringify({ plans: App.data.plans, goals: App.data.goals, exam: App.data.exam, notes: App.data.notes })); } catch (e) {}
+}
+
+function refreshHeader() {
+  const u = App.state.user;
+  if (!u) return;
+  $('#header-avatar').textContent = initials(u.name);
+  $('#header-name').textContent = u.name;
 }
 
 async function loadTeacherData() {
