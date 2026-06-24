@@ -1137,6 +1137,58 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-hoa-c4', title: 'Chương 4 · Polymer & vật liệu',
+          lessons: [
+            {
+              id: 'l-hoa-polymer', title: 'Polymer: trùng hợp & trùng ngưng', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Polymer</em> là hợp chất có phân tử khối rất lớn, do nhiều đơn vị nhỏ (<em>mắt xích</em>, từ <em>monomer</em>) lặp lại liên kết với nhau.</div>
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Trùng hợp:</strong> monomer có liên kết bội. VD: $nCH_2{=}CH_2 \\xrightarrow{t^\\circ,p,xt} ({-}CH_2{-}CH_2{-})_n$ (polyethylene, PE).</li>
+                  <li><strong>Trùng ngưng:</strong> monomer có $\\ge2$ nhóm chức, kèm loại ra phân tử nhỏ ($H_2O$). VD: tạo nylon-6,6, tơ lapsan.</li>
+                  <li>Ứng dụng: chất dẻo (PE, PVC), tơ (nylon, capron), cao su.</li>
+                </ul>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Viết sơ đồ trùng hợp tạo PVC.</p>
+                  <p><strong>Giải:</strong> $nCH_2{=}CHCl \\to ({-}CH_2{-}CHCl{-})_n$ (poly(vinyl chloride)).</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Monomer dùng để điều chế polyethylene (PE) là gì?</p>
+                  <details><summary>Đáp án</summary><p>Ethylene $CH_2{=}CH_2$.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-hoa-c5', title: 'Chương 5 · Đại cương kim loại',
+          lessons: [
+            {
+              id: 'l-hoa-kimloai', title: 'Tính chất & dãy điện hóa kim loại', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> Kim loại có tính chất hóa học đặc trưng là <em>tính khử</em>: nguyên tử kim loại nhường electron $M \\to M^{n+}+ne$.</div>
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li>Tác dụng với phi kim, dung dịch acid, dung dịch muối.</li>
+                  <li><strong>Dãy hoạt động hóa học:</strong> K, Na, Ba, Ca, Mg, Al, Zn, Fe, Ni, Sn, Pb, (H), Cu, Ag, Au — tính khử giảm dần.</li>
+                  <li>Kim loại đứng trước (mạnh hơn, trừ kim loại kiềm/kiềm thổ tan) đẩy kim loại sau ra khỏi dung dịch muối.</li>
+                </ul>
+                <h2>Nâng cao</h2>
+                <p>Ăn mòn kim loại: ăn mòn hóa học và ăn mòn điện hóa (phổ biến, có dòng điện).</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Nhúng đinh sắt vào dung dịch $CuSO_4$, hiện tượng?</p>
+                  <p><strong>Giải:</strong> $Fe + CuSO_4 \\to FeSO_4 + Cu$ — Cu (đỏ) bám lên đinh, dung dịch nhạt màu xanh.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Trong các kim loại $Cu, Fe, Ag, Mg$, kim loại nào có tính khử mạnh nhất?</p>
+                  <details><summary>Đáp án</summary><p>$Mg$ (đứng trước nhất trong dãy điện hóa).</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
