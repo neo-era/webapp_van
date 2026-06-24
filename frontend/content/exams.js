@@ -2197,6 +2197,21 @@ const EXAMS = {
         { stem: 'So convincing was the argument ____ everyone agreed.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-24', title: 'IELTS – Vocabulary & Grammar #24', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "remedy" (verb).', options: ['fix', 'worsen', 'break', 'damage'], answer: 0, explanation: 'remedy ≈ fix (khắc phục).' },
+        { stem: 'Choose the synonym of "lucid".', options: ['clear', 'confusing', 'vague', 'obscure'], answer: 0, explanation: 'lucid ≈ clear (rõ ràng, sáng sủa).' },
+        { stem: 'Choose the antonym of "trivial".', options: ['minor', 'petty', 'slight', 'important'], answer: 3, explanation: 'trivial ↔ important (quan trọng).' },
+        { stem: 'On no account ____ the machine unattended.', options: ['you should leave', 'should you leave', 'you leave', 'leave you'], answer: 1, explanation: 'Đảo ngữ với "On no account": + trợ động từ + S.' },
+        { stem: 'Choose the synonym of "redundant".', options: ['unnecessary', 'needed', 'essential', 'vital'], answer: 0, explanation: 'redundant ≈ unnecessary (thừa, không cần thiết).' },
+        { stem: 'The professor, ____ lectures inspire many, has retired.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "praise".', options: ['commend', 'applaud', 'admire', 'criticize'], answer: 3, explanation: 'praise ↔ criticize (chỉ trích).' },
+        { stem: 'Were he to apologize, I ____ forgive him.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 2: Were + S + to V … would + V.' },
+        { stem: 'Choose the synonym of "endorse".', options: ['oppose', 'reject', 'deny', 'support'], answer: 3, explanation: 'endorse ≈ support (ủng hộ, tán thành).' },
+        { stem: "Such was the noise ____ I couldn't sleep all night.", options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Such … that … (kết quả).' },
+      ],
+    },
   ],
 };
 
