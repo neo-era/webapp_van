@@ -697,6 +697,21 @@ const EXAMS = {
         { stem: 'It is essential ____ we act now.', options: ['what', 'which', 'who', 'that'], answer: 3, explanation: 'It is essential that + mệnh đề.' },
       ],
     },
+    {
+      examId: 'ielts-kt-4', title: 'IELTS – Vocabulary & Grammar #4', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "reduce".', options: ['increase', 'expand', 'decrease', 'raise'], answer: 2, explanation: 'reduce ≈ decrease.' },
+        { stem: 'Each of the students ____ a textbook.', options: ['have', 'having', 'had', 'has'], answer: 3, explanation: 'each + danh từ số ít + has.' },
+        { stem: 'Choose the antonym of "difficult".', options: ['hard', 'easy', 'tough', 'complex'], answer: 1, explanation: 'difficult ↔ easy.' },
+        { stem: 'He succeeded ____ passing the final exam.', options: ['in', 'on', 'at', 'of'], answer: 0, explanation: 'succeed in + V-ing.' },
+        { stem: 'Not only ____ he clever, but also kind.', options: ['was', 'does', 'is', 'has'], answer: 2, explanation: 'Đảo ngữ: Not only is he…' },
+        { stem: 'Choose the synonym of "important".', options: ['trivial', 'minor', 'small', 'significant'], answer: 3, explanation: 'important ≈ significant.' },
+        { stem: 'The book, ____ was published in 2020, is popular.', options: ['who', 'which', 'whose', 'where'], answer: 1, explanation: 'which cho vật (mệnh đề không xác định).' },
+        { stem: 'She has been working ____ 8 a.m.', options: ['since', 'for', 'from', 'ago'], answer: 0, explanation: 'since + mốc thời gian.' },
+        { stem: 'Air pollution can ____ serious health problems.', options: ['prevent', 'stop', 'cause', 'avoid'], answer: 2, explanation: 'cause = gây ra (≈ result in).' },
+        { stem: 'If it had not rained, we ____ have gone out.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Điều kiện loại 3: would have + V3.' },
+      ],
+    },
   ],
 };
 
