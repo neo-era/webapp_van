@@ -117,6 +117,24 @@ Trong trình Apps Script:
 
 ---
 
+## Bước 7 — Kiểm thử backend (sau khi đã dán code Prompt 1.x)
+
+Chạy thử ngay trong trình Apps Script, **không cần deploy**:
+
+1. Mở file `Code.gs`, ở thanh chọn hàm phía trên chọn **`_testPing`** → bấm **Chạy (Run)**.
+2. Lần đầu Google hỏi cấp quyền → Cho phép.
+3. Mở **Chế độ xem → Nhật ký** (View → Logs) hoặc tab **Executions**, sẽ thấy:
+   `{"ok":true,"data":{"pong":true,"time":"..."}}`
+4. Mở file `Auth.gs`, chọn hàm **`_testAuth`** → Chạy. Xem Logs:
+   - `register` trả `{ ok: true, ... }`
+   - `login` trả `{ ok: true, data: { token, user } }`
+   - `login sai mật khẩu` trả `{ ok: false, error: "Email hoặc mật khẩu không đúng" }`
+   - Mở tab `Users` và `Sessions` trong Sheet sẽ thấy dòng dữ liệu test vừa tạo.
+
+> Sau khi test xong có thể xóa các dòng test trong Sheet. Hàm `_testAuth` tạo email ngẫu nhiên mỗi lần chạy nên không trùng.
+
+---
+
 ## Checklist hoàn thành Giai đoạn 0
 
 - [ ] Có bảng tính `THPT_Database` với 7 tab đúng tên
