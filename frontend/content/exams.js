@@ -839,6 +839,21 @@ const EXAMS = {
         { stem: 'Đổi $0$ °C sang thang Kelvin?', options: ['$0$ K', '$273$ K', '$300$ K', '$100$ K'], answer: 1, explanation: '$0+273=273$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-30', title: 'Kiểm tra 45′ #30 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=12$ atm, $V_1=2$ L. Khi $p_2=4$ atm thì $V_2=?$', options: ['$3$ L', '$4$ L', '$6$ L', '$8$ L'], answer: 2, explanation: '$V_2=p_1V_1/p_2=12\\cdot2/4=6$ L.' },
+        { stem: 'Đun $2{,}5$ kg nước ($c=4200$) tăng thêm $4$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$21$ kJ', '$84$ kJ', '$10{,}5$ kJ'], answer: 0, explanation: '$Q=2{,}5\\cdot4200\\cdot4=42000$ J $=42$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}5$ m chuyển động $v=5$ m/s vuông góc $B=0{,}8$ T. Suất điện động?', options: ['$1$ V', '$4$ V', '$0{,}5$ V', '$2$ V'], answer: 3, explanation: '$e=BLv=0{,}8\\cdot0{,}5\\cdot5=2$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{59}_{27}Co$?', options: ['$32$', '$27$', '$59$', '$86$'], answer: 0, explanation: '$N=59-27=32$.' },
+        { stem: 'Hạt nhân nào có $13$ proton?', options: ['$^{24}Mg$', '$^{23}Na$', '$^{28}Si$', '$^{27}Al$'], answer: 3, explanation: 'Nhôm có $Z=13$.' },
+        { stem: 'Thiết bị công suất $P=1000$ W hoạt động $2$ s tiêu thụ công?', options: ['$1000$ J', '$4000$ J', '$2000$ J', '$500$ J'], answer: 2, explanation: '$A=Pt=1000\\cdot2=2000$ J.' },
+        { stem: 'Khí đẳng tích $p_1=6$ atm ở $600$ K, làm lạnh đến $200$ K. Áp suất sau?', options: ['$2$ atm', '$1$ atm', '$3$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1T_2/T_1=6\\cdot200/600=2$ atm.' },
+        { stem: 'Hai dây dẫn song song mang dòng điện ngược chiều thì?', options: ['hút nhau', 'đẩy nhau', 'không tương tác', 'vuông góc nhau'], answer: 1, explanation: 'Dòng ngược chiều ⇒ hai dây đẩy nhau.' },
+        { stem: 'Sau $3$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/2$', '$1/4$', '$1/16$', '$1/8$'], answer: 3, explanation: '$(1/2)^3=1/8$.' },
+        { stem: 'Đổi $137$ °C sang thang Kelvin?', options: ['$400$ K', '$410$ K', '$300$ K', '$273$ K'], answer: 1, explanation: '$137+273=410$ K.' },
+      ],
+    },
   ],
 
   HOA: [
