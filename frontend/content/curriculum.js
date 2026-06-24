@@ -837,17 +837,175 @@ const CURRICULUM = {
       code: 'LY', name: 'Vật lí', grade: 12,
       topics: [
         {
-          id: 't-ly-daodong', title: 'Dao động cơ',
+          id: 't-ly-c1', title: 'Chương 1 · Vật lí nhiệt',
           lessons: [
             {
-              id: 'l-ly-dieuhoa', title: 'Dao động điều hòa', level: 'CO_BAN',
+              id: 'l-ly-noinang', title: 'Nội năng & Định luật I Nhiệt động lực học', level: 'CO_BAN',
               html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Nội năng</em> $U$ của một vật là tổng động năng (chuyển động nhiệt) và thế năng tương tác của các phân tử cấu tạo nên vật. Đơn vị: jun (J).</div>
                 <h2>Cốt lõi</h2>
-                <p>Phương trình: $x = A\\cos(\\omega t + \\varphi)$, với $A$ là biên độ, $\\omega$ tần số góc, $\\varphi$ pha ban đầu.</p>
+                <p>Nội năng thay đổi qua hai cách: <strong>thực hiện công</strong> và <strong>truyền nhiệt</strong>.</p>
+                <p><strong>Định luật I Nhiệt động lực học:</strong> $\\Delta U = A + Q$</p>
                 <ul>
-                  <li>Chu kì $T = \\dfrac{2\\pi}{\\omega}$, tần số $f = \\dfrac{1}{T}$.</li>
-                  <li>Vận tốc $v = -A\\omega\\sin(\\omega t+\\varphi)$; gia tốc $a = -\\omega^2 x$.</li>
+                  <li>$Q>0$: hệ <em>nhận</em> nhiệt; $Q<0$: hệ <em>tỏa</em> nhiệt.</li>
+                  <li>$A>0$: hệ <em>nhận</em> công; $A<0$: hệ <em>sinh</em> công.</li>
                 </ul>
+                <h2>Nâng cao</h2>
+                <p>Quá trình đẳng nhiệt của khí lí tưởng: $\\Delta U=0 \\Rightarrow Q=-A$ (nhiệt nhận vào bằng công hệ sinh ra).</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ</div>
+                  <p>Truyền cho khí nhiệt lượng $Q=100$ J, khí sinh công $40$ J. Tính $\\Delta U$.</p>
+                  <p><strong>Giải:</strong> Khí sinh công ⇒ $A=-40$ J. $\\Delta U=A+Q=-40+100=60$ J.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Hệ nhận công $50$ J và tỏa nhiệt $30$ J. Tính $\\Delta U$.</p>
+                  <details><summary>Đáp án</summary><p>$A=+50,\\ Q=-30 \\Rightarrow \\Delta U=50-30=20$ J.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-ly-nhietluong', title: 'Nhiệt lượng & nhiệt dung riêng', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Nhiệt dung riêng</em> $c$ là nhiệt lượng cần truyền cho 1 kg chất để tăng 1 °C (hay 1 K). Đơn vị: J/(kg·K).</div>
+                <h2>Cốt lõi</h2>
+                <p>Nhiệt lượng thu vào hay tỏa ra: $Q = mc\\,\\Delta t$, với $m$ (kg), $\\Delta t$ độ thay đổi nhiệt độ.</p>
+                <p>Nước có $c \\approx 4200$ J/(kg·K).</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Đun $2$ kg nước từ $20$ °C lên $100$ °C. Tính nhiệt lượng cần ($c=4200$).</p>
+                  <p><strong>Giải:</strong> $Q=mc\\Delta t=2\\cdot4200\\cdot80=672000$ J $=672$ kJ.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Cần bao nhiêu nhiệt lượng để $0{,}5$ kg nước tăng thêm $10$ °C?</p>
+                  <details><summary>Đáp án</summary><p>$Q=0{,}5\\cdot4200\\cdot10=21000$ J $=21$ kJ.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-ly-c2', title: 'Chương 2 · Khí lí tưởng',
+          lessons: [
+            {
+              id: 'l-ly-dinhluatkhi', title: 'Các định luật chất khí & phương trình trạng thái', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Khí lí tưởng</em> là khí mà các phân tử được coi là chất điểm, chỉ tương tác khi va chạm. Nhiệt độ phải tính theo thang Kelvin: $T(K)=t(°C)+273$.</div>
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Đẳng nhiệt</strong> (Boyle, $T$ const): $pV=\\text{const}\\Rightarrow p_1V_1=p_2V_2$.</li>
+                  <li><strong>Đẳng tích</strong> ($V$ const): $\\dfrac{p}{T}=\\text{const}$.</li>
+                  <li><strong>Đẳng áp</strong> ($p$ const): $\\dfrac{V}{T}=\\text{const}$.</li>
+                  <li><strong>Phương trình trạng thái:</strong> $\\dfrac{p_1V_1}{T_1}=\\dfrac{p_2V_2}{T_2}$.</li>
+                </ul>
+                <p>Đường đẳng nhiệt trong hệ $(V,p)$ là một nhánh hypebol:</p>
+                <svg class="graph" viewBox="0 0 200 150" width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="25" y1="130" x2="195" y2="130" stroke="#94a3b8"/>
+                  <line x1="30" y1="15" x2="30" y2="135" stroke="#94a3b8"/>
+                  <polyline points="65,30 82,63 100,80 135,97 170,107" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                  <text x="184" y="126">V</text>
+                  <text x="34" y="22">p</text>
+                  <text x="120" y="55">T = const</text>
+                </svg>
+                <div class="vd"><div class="vd-title">📝 Ví dụ (đẳng nhiệt)</div>
+                  <p>Khí có $p_1=1$ atm, $V_1=2$ L. Nén đẳng nhiệt còn $V_2=1$ L. Tính $p_2$.</p>
+                  <p><strong>Giải:</strong> $p_2=\\dfrac{p_1V_1}{V_2}=\\dfrac{1\\cdot2}{1}=2$ atm.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập (đẳng tích)</div>
+                  <p>Khí ở $p_1=2$ atm, $T_1=300$ K. Đun đẳng tích tới $T_2=600$ K. Tính $p_2$.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{p}{T}$ const ⇒ $p_2=p_1\\dfrac{T_2}{T_1}=2\\cdot2=4$ atm.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-ly-c3', title: 'Chương 3 · Từ trường',
+          lessons: [
+            {
+              id: 'l-ly-luctu', title: 'Cảm ứng từ & Lực từ', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Cảm ứng từ</em> $\\vec{B}$ đặc trưng cho độ mạnh và hướng của từ trường tại một điểm. Đơn vị: tesla (T).</div>
+                <h2>Cốt lõi</h2>
+                <p>Lực từ tác dụng lên đoạn dây dài $l$ mang dòng $I$ đặt trong từ trường $B$:</p>
+                <p>$F = B\\,I\\,l\\,\\sin\\theta$, với $\\theta$ là góc giữa dây dẫn và $\\vec{B}$.</p>
+                <p>Khi dây vuông góc với $\\vec{B}$ ($\\theta=90^\\circ$): $F=BIl$ (lớn nhất).</p>
+                <h2>Nâng cao</h2>
+                <p>Lực Lorentz lên hạt điện tích $q$ chuyển động với vận tốc $v$: $f=|q|\\,v\\,B\\,\\sin\\alpha$.</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Dây dài $l=0{,}5$ m, $I=2$ A, đặt vuông góc trong $B=0{,}1$ T. Tính lực từ.</p>
+                  <p><strong>Giải:</strong> $F=BIl=0{,}1\\cdot2\\cdot0{,}5=0{,}1$ N.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Dây $l=1$ m, $I=5$ A, $B=0{,}2$ T, hợp góc $30^\\circ$. Tính lực từ.</p>
+                  <details><summary>Đáp án</summary><p>$F=BIl\\sin30^\\circ=0{,}2\\cdot5\\cdot1\\cdot0{,}5=0{,}5$ N.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-ly-camung', title: 'Cảm ứng điện từ', level: 'NANG_CAO',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Từ thông</em> $\\Phi$ qua diện tích $S$: $\\Phi=NBS\\cos\\alpha$ (đơn vị vêbe, Wb), $\\alpha$ là góc giữa $\\vec{B}$ và pháp tuyến mặt.</div>
+                <h2>Cốt lõi</h2>
+                <p><strong>Định luật Faraday:</strong> suất điện động cảm ứng $e=-\\dfrac{\\Delta\\Phi}{\\Delta t}$ (V). Độ lớn $|e|=\\left|\\dfrac{\\Delta\\Phi}{\\Delta t}\\right|$.</p>
+                <p><strong>Định luật Len-xơ:</strong> dòng cảm ứng có chiều chống lại sự biến thiên từ thông sinh ra nó (dấu trừ).</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Từ thông qua khung biến thiên từ $0{,}02$ Wb về $0$ trong $0{,}1$ s. Tính suất điện động.</p>
+                  <p><strong>Giải:</strong> $|e|=\\dfrac{0{,}02}{0{,}1}=0{,}2$ V.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Khung $N=10$ vòng, $B=0{,}2$ T, $S=0{,}01$ m², $\\alpha=0$. Tính từ thông.</p>
+                  <details><summary>Đáp án</summary><p>$\\Phi=NBS=10\\cdot0{,}2\\cdot0{,}01=0{,}02$ Wb.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-ly-c4', title: 'Chương 4 · Vật lí hạt nhân',
+          lessons: [
+            {
+              id: 'l-ly-cautao', title: 'Cấu tạo hạt nhân & Năng lượng liên kết', level: 'NANG_CAO',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> Hạt nhân $^{A}_{Z}X$ gồm $Z$ proton và $N=A-Z$ neutron ($A$ là số khối). <em>Độ hụt khối</em> $\\Delta m$ là phần khối lượng "mất đi" khi các nuclôn liên kết.</div>
+                <h2>Cốt lõi</h2>
+                <p>$\\Delta m = Z\\,m_p+(A-Z)\\,m_n-m_{hn}$.</p>
+                <p><strong>Năng lượng liên kết:</strong> $W_{lk}=\\Delta m\\,c^2$. Năng lượng liên kết riêng $\\dfrac{W_{lk}}{A}$ càng lớn thì hạt nhân càng bền vững.</p>
+                <h2>Nâng cao</h2>
+                <p>Hệ thức Einstein $E=mc^2$; $1$ u $\\approx 931{,}5$ MeV/$c^2$.</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Một hạt nhân có độ hụt khối $\\Delta m=0{,}03$ u. Tính năng lượng liên kết (theo MeV).</p>
+                  <p><strong>Giải:</strong> $W_{lk}=0{,}03\\cdot931{,}5\\approx 27{,}9$ MeV.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Hạt nhân $^{4}_{2}He$ có bao nhiêu proton, neutron?</p>
+                  <details><summary>Đáp án</summary><p>$Z=2$ proton; $N=A-Z=4-2=2$ neutron.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-ly-phongxa', title: 'Phóng xạ & Định luật phóng xạ', level: 'NANG_CAO',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Phóng xạ</em> là quá trình hạt nhân không bền tự phân rã, phát ra tia ($\\alpha,\\beta,\\gamma$). <em>Chu kì bán rã</em> $T$ là thời gian để một nửa số hạt nhân phân rã.</div>
+                <h2>Cốt lõi</h2>
+                <p>Định luật phóng xạ: $N=N_0\\,2^{-t/T}=N_0\\,e^{-\\lambda t}$, với hằng số phóng xạ $\\lambda=\\dfrac{\\ln 2}{T}$.</p>
+                <p>Khối lượng còn lại: $m=m_0\\,2^{-t/T}$.</p>
+                <svg class="graph" viewBox="0 0 200 150" width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="25" y1="120" x2="195" y2="120" stroke="#94a3b8"/>
+                  <line x1="30" y1="12" x2="30" y2="125" stroke="#94a3b8"/>
+                  <polyline points="30,20 70,70 110,95 150,107 190,113" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                  <text x="184" y="118">t</text>
+                  <text x="34" y="20">N</text>
+                  <text x="60" y="135">T</text>
+                  <text x="100" y="135">2T</text>
+                  <text x="140" y="135">3T</text>
+                </svg>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Sau 2 chu kì bán rã, số hạt nhân còn lại bằng bao nhiêu phần ban đầu?</p>
+                  <p><strong>Giải:</strong> $N=N_0\\,2^{-2}=\\dfrac{N_0}{4}$ ⇒ còn $25\\%$.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Sau $3T$, còn lại bao nhiêu phần trăm khối lượng ban đầu?</p>
+                  <details><summary>Đáp án</summary><p>$m=m_0\\,2^{-3}=\\dfrac{m_0}{8}=12{,}5\\%$.</p></details>
+                </div>
               `,
             },
           ],
