@@ -494,6 +494,21 @@ const EXAMS = {
         { stem: 'Đơn vị năng lượng thường dùng trong vật lí hạt nhân là?', options: ['Jun', 'Oát', 'MeV (mega electron-vôn)', 'Vôn'], answer: 2, explanation: 'Năng lượng hạt nhân đo bằng MeV.' },
       ],
     },
+    {
+      examId: 'ly-kt45-7', title: 'Kiểm tra 45′ #7 — Vật lí 12', durationMin: 45,
+      questions: [
+        { stem: 'Nhiệt nóng chảy riêng của nước đá $\\lambda=3{,}4\\cdot10^5$ J/kg. Nhiệt cần để làm nóng chảy hoàn toàn $2$ kg nước đá ở $0$ °C?', options: ['$340$ kJ', '$680$ kJ', '$170$ kJ', '$1360$ kJ'], answer: 1, explanation: '$Q=\\lambda m=3{,}4\\cdot10^5\\cdot2=6{,}8\\cdot10^5$ J $=680$ kJ.' },
+        { stem: 'Đun nóng đẳng tích một lượng khí từ $300$ K lên $600$ K, áp suất ban đầu $1$ atm. Áp suất sau?', options: ['$1$ atm', '$1{,}5$ atm', '$2$ atm', '$4$ atm'], answer: 2, explanation: 'Đẳng tích: $p_1/T_1=p_2/T_2 \\Rightarrow p_2=1\\cdot600/300=2$ atm.' },
+        { stem: 'Nội năng của một lượng khí lí tưởng xác định chỉ phụ thuộc vào?', options: ['thể tích', 'áp suất', 'khối lượng riêng', 'nhiệt độ'], answer: 3, explanation: 'Khí lí tưởng: nội năng chỉ phụ thuộc nhiệt độ tuyệt đối.' },
+        { stem: 'Hạt $q=1{,}6\\cdot10^{-19}$ C bay với $v=2\\cdot10^6$ m/s vuông góc $B=0{,}5$ T. Lực Lorentz?', options: ['$1{,}6\\cdot10^{-13}$ N', '$3{,}2\\cdot10^{-13}$ N', '$0{,}8\\cdot10^{-13}$ N', '$1{,}6\\cdot10^{-19}$ N'], answer: 0, explanation: '$f=qvB=1{,}6\\cdot10^{-19}\\cdot2\\cdot10^6\\cdot0{,}5=1{,}6\\cdot10^{-13}$ N.' },
+        { stem: 'Cảm ứng từ trong lòng ống dây dài lí tưởng KHÔNG phụ thuộc vào?', options: ['đường kính ống dây', 'số vòng trên một mét', 'cường độ dòng điện', 'môi trường trong lõi'], answer: 0, explanation: '$B=\\mu_0 nI$ — không chứa đường kính ống.' },
+        { stem: 'Hạt nhân $^{235}_{92}U$ có bao nhiêu neutron?', options: ['$92$', '$235$', '$327$', '$143$'], answer: 3, explanation: '$N=A-Z=235-92=143$.' },
+        { stem: 'Hạt nhân bền vững nhất (năng lượng liên kết riêng lớn nhất) nằm quanh nguyên tố nào?', options: ['Hidro', 'Urani', 'Sắt ($A\\approx56$)', 'Heli'], answer: 2, explanation: 'Năng lượng liên kết riêng cực đại ở vùng $A\\approx56$ (Fe).' },
+        { stem: 'Sau $2$ chu kì bán rã, lượng chất phóng xạ còn lại bằng bao nhiêu phần trăm ban đầu?', options: ['$50\\%$', '$25\\%$', '$12{,}5\\%$', '$75\\%$'], answer: 1, explanation: '$N=N_0(1/2)^2=N_0/4=25\\%$.' },
+        { stem: 'Đơn vị khối lượng nguyên tử $u$ tương đương?', options: ['$1u\\approx1{,}66\\cdot10^{-27}$ kg', '$1u\\approx931{,}5$ MeV/$c^2$', 'cả hai đều sai', 'cả hai đều đúng'], answer: 3, explanation: '$1u\\approx1{,}66\\cdot10^{-27}$ kg $\\approx931{,}5$ MeV/$c^2$.' },
+        { stem: 'Khí nhận nhiệt $Q=100$ J và sinh công $40$ J lên môi trường. Độ biến thiên nội năng $\\Delta U$?', options: ['$60$ J', '$140$ J', '$-60$ J', '$100$ J'], answer: 0, explanation: '$\\Delta U=Q+A=100+(-40)=60$ J (khí sinh công nên $A<0$).' },
+      ],
+    },
   ],
 
   HOA: [
