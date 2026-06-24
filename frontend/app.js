@@ -566,23 +566,19 @@ async function renderLearn() {
   const el = $('#screen-learn');
 
   if (v.view === 'subjects') {
+    const subs = Content.subjects();
     el.innerHTML = `<div class="page-head"><h2>Học</h2><p>Chọn môn để xem bài giảng</p></div>
-      <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
-    try {
-      if (!App.data.subjects) App.data.subjects = await Api.call('getSubjects', { grade: App.state.user.grade || 12 });
-      $('#learn-body').innerHTML = App.data.subjects.length
-        ? App.data.subjects.map((s) => `
-          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.subjectCode}','${s.name.replace(/'/g, '')}')">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <strong>${s.name}</strong><span class="muted">›</span></div>
-          </div>`).join('')
-        : `<div class="empty">Chưa có môn học nào</div>`;
-    } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+      ${subs.map((s) => `
+        <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.code}','${s.name.replace(/'/g, '')}')">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <strong>${s.name}</strong><span class="muted">›</span></div>
+        </div>`).join('')}`;
     return;
   }
 
   if (v.view === 'topics') {
-    const eng = engTarget(v.subjectCode);
+    const eng = Content.target(v.subjectCode);
+    const topics = Content.topics(v.subjectCode);
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
         <h2>${v.subjectName}</h2><p>Chọn chủ đề</p></div>
@@ -591,49 +587,30 @@ async function renderLearn() {
           <div class="cheer" style="margin-top:4px">Luyện đều mỗi ngày để tiến bộ vững chắc!</div></div>
         <button class="btn btn-ghost btn-block" style="margin-bottom:8px" onclick="learnOpenWriting()">✍️ Luyện Writing (AI chấm)</button>` : ''}
       <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="learnOpenExams()">📝 Bài kiểm tra môn ${v.subjectName}</button>
-      <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
-    try {
-      App._tcache = App._tcache || {};
-      let topics = App._tcache[v.subjectCode];
-      if (!topics) { topics = await Api.call('getTopics', { subjectCode: v.subjectCode, grade: App.state.user.grade || 12 }); App._tcache[v.subjectCode] = topics; }
-      $('#learn-body').innerHTML = topics.length
+      ${topics.length
         ? topics.map((t) => `
-          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenTopic('${t.topicId}','${t.title.replace(/'/g, '')}')">
+          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenTopic('${t.id}','${t.title.replace(/'/g, '')}')">
             <div style="display:flex;justify-content:space-between;align-items:center">
               <span>${t.title}</span><span class="muted">›</span></div>
           </div>`).join('')
-        : `<div class="empty">Chủ đề đang được cập nhật</div>`;
-    } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+        : `<div class="empty">Chủ đề đang được cập nhật</div>`}`;
     return;
   }
 
   if (v.view === 'lessons') {
+    const lessons = Content.lessons(v.subjectCode, v.topicId);
+    const learned = getLearnedSet();
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
         <h2>${v.topicTitle}</h2><p>Danh sách bài giảng</p></div>
-      <div id="learn-body"><div class="empty">Đang tải…</div></div>
-      ${App.state.role === 'TEACHER' ? '<button class="btn btn-ghost btn-block" style="margin-top:12px" onclick="openGenerateLesson()">✨ Sinh nháp bài giảng bằng AI</button>' : ''}`;
-    try {
-      App._lcache = App._lcache || {};
-      let lessons = App._lcache[v.topicId];
-      if (!lessons) {
-        const [ls, learned] = await Promise.all([
-          Api.call('getLessons', { topicId: v.topicId }),
-          App.data.learned ? Promise.resolve(App.data.learned) : Api.call('getLearnedLessons', {}),
-        ]);
-        lessons = ls; App._lcache[v.topicId] = ls; App.data.learned = learned || [];
-      }
-      $('#learn-body').innerHTML = lessons.length
-        ? lessons.map((l) => {
-          const done = App.data.learned.indexOf(l.lessonId) >= 0;
-          return `<div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenLesson('${l.lessonId}','${l.title.replace(/'/g, '')}')">
+      ${lessons.length
+        ? lessons.map((l) => `
+          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenLesson('${l.id}','${l.title.replace(/'/g, '')}')">
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <span>${done ? '✅ ' : ''}${l.title}</span>
+              <span>${learned.has(l.id) ? '✅ ' : ''}${l.title}</span>
               <span class="badge-assigned">${l.level === 'NANG_CAO' ? 'Nâng cao' : (l.level === 'CHUYEN' ? 'Chuyên' : 'Cơ bản')}</span></div>
-          </div>`;
-        }).join('')
-        : `<div class="empty">Bài giảng đang được biên soạn</div>`;
-    } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+          </div>`).join('')
+        : `<div class="empty">Bài giảng đang được biên soạn</div>`}`;
     return;
   }
 
@@ -713,13 +690,13 @@ async function renderLearn() {
   }
 
   if (v.view === 'lesson') {
-    const isTeacher = App.state.role === 'TEACHER';
+    const lesson = Content.lesson(v.subjectCode, v.topicId, v.lessonId);
+    if (!lesson) { el.innerHTML = `<div class="empty">Không tìm thấy bài học</div>`; return; }
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('lessons')">‹ ${v.topicTitle}</p>
-        <h2>${v.lessonTitle}</h2></div>
-      <div class="card"><div id="lesson-content" class="lesson-content"><div class="empty">Đang tải…</div></div></div>
+        <h2>${lesson.title}</h2></div>
+      <div class="card"><div id="lesson-content" class="lesson-content"></div></div>
       <button id="lesson-learn-btn" class="btn btn-block" style="margin-top:14px" onclick="learnToggleLearned()">…</button>
-      <div id="teacher-lesson-ctrl"></div>
 
       <div class="section-block" style="margin-top:22px">
         <div class="section-title">💬 Hỏi giáo viên AI</div>
@@ -733,25 +710,22 @@ async function renderLearn() {
           <p class="muted" style="font-size:0.78rem;margin-top:6px">AI chỉ gợi ý học tập, không làm hộ bài kiểm tra.</p>
         </div>
       </div>`;
-    try {
-      const lesson = await Api.call('getLesson', { lessonId: v.lessonId });
-      v.lesson = lesson;
-      renderMarkdown(lesson.contentMd, $('#lesson-content'));
-      const done = (App.data.learned || []).indexOf(v.lessonId) >= 0;
-      updateLearnBtn(done);
-      if (isTeacher) {
-        $('#teacher-lesson-ctrl').innerHTML = `
-          <div class="card" style="margin-top:10px">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span class="muted">Trạng thái: <b>${lesson.status}</b> · nguồn ${lesson.source}</span>
-              <button class="btn btn-sm ${lesson.status === 'PUBLISHED' ? 'btn-ghost' : 'btn-primary'}"
-                onclick="learnTogglePublish('${lesson.lessonId}','${lesson.status}')">
-                ${lesson.status === 'PUBLISHED' ? 'Ẩn (DRAFT)' : 'Xuất bản'}</button>
-            </div>
-          </div>`;
-      }
-    } catch (e) { $('#lesson-content').innerHTML = `<div class="empty">${e.message}</div>`; }
+    renderHtmlContent(lesson.html, $('#lesson-content'));
+    updateLearnBtn(getLearnedSet().has(lesson.id));
     return;
+  }
+}
+
+// Hiển thị nội dung HTML tĩnh + render công thức KaTeX
+function renderHtmlContent(html, el) {
+  el.innerHTML = html || '';
+  if (window.renderMathInElement) {
+    try {
+      renderMathInElement(el, {
+        delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }],
+        throwOnError: false,
+      });
+    } catch (e) {}
   }
 }
 
@@ -763,7 +737,7 @@ async function aiAsk() {
   ans.innerHTML = '<div class="muted">Giáo viên AI đang trả lời…</div>';
   input.value = '';
   try {
-    const r = await Api.call('aiChat', { message: q, lessonId: App.state.learn.lessonId });
+    const r = await Api.call('aiChat', { message: q + ' (Bài học: ' + (App.state.learn.lessonTitle || '') + ')' });
     renderMarkdown('**Hỏi:** ' + q + '\n\n' + r.reply, ans);
   } catch (e) { ans.innerHTML = `<div class="empty">${e.message}</div>`; }
 }
@@ -910,17 +884,22 @@ async function learnSubmitExam() {
   finally { hideLoading(); }
 }
 
-async function learnToggleLearned() {
+// "Đã học" lưu localStorage (không cần backend → tức thì)
+function getLearnedSet() {
+  try { return new Set(JSON.parse(localStorage.getItem('thpt_learned') || '[]')); }
+  catch (e) { return new Set(); }
+}
+function setLearned(id, on) {
+  const s = getLearnedSet();
+  if (on) s.add(id); else s.delete(id);
+  try { localStorage.setItem('thpt_learned', JSON.stringify([...s])); } catch (e) {}
+}
+function learnToggleLearned() {
   const id = App.state.learn.lessonId;
-  const learned = App.data.learned || (App.data.learned = []);
-  const isDone = learned.indexOf(id) >= 0;
-  try {
-    await Api.call('markLearned', { lessonId: id, learned: !isDone });
-    if (isDone) App.data.learned = learned.filter((x) => x !== id);
-    else App.data.learned.push(id);
-    updateLearnBtn(!isDone);
-    showToast(!isDone ? 'Đã đánh dấu học xong' : 'Đã bỏ đánh dấu', 'success');
-  } catch (e) { showToast(e.message, 'error'); }
+  const isDone = getLearnedSet().has(id);
+  setLearned(id, !isDone);
+  updateLearnBtn(!isDone);
+  showToast(!isDone ? 'Đã đánh dấu học xong' : 'Đã bỏ đánh dấu', 'success');
 }
 
 /* ============================================================
