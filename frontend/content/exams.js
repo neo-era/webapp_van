@@ -1294,6 +1294,21 @@ const EXAMS = {
         { stem: 'We sincerely appreciate your ____ to our company.', options: ['royalty', 'loyalty', 'loyal', 'royal'], answer: 1, explanation: 'loyalty = lòng trung thành.' },
       ],
     },
+    {
+      examId: 'toeic-15', title: 'TOEIC – Grammar & Vocabulary #15', durationMin: 20,
+      questions: [
+        { stem: 'The seminar has been ____ until further notice.', options: ['suspending', 'suspends', 'suspended', 'suspension'], answer: 2, explanation: 'has been + V3 (bị động): suspended.' },
+        { stem: 'Our services are ____ to meet each client’s specific needs.', options: ['failed', 'mailed', 'sailed', 'tailored'], answer: 3, explanation: 'tailored = được điều chỉnh phù hợp.' },
+        { stem: 'Employees are required to ____ their badges at all times.', options: ['where', 'wear', 'ware', 'wears'], answer: 1, explanation: 'wear a badge = đeo thẻ.' },
+        { stem: 'The report provides a detailed ____ of the market.', options: ['analyze', 'analysis', 'analytical', 'analyst'], answer: 1, explanation: 'Sau mạo từ "a/detailed" cần danh từ ⇒ analysis.' },
+        { stem: 'We always strive to ____ customer expectations.', options: ['exceed', 'succeed', 'proceed', 'precede'], answer: 0, explanation: 'exceed expectations = vượt mong đợi.' },
+        { stem: 'All payments must be made ____ advance.', options: ['on', 'at', 'by', 'in'], answer: 3, explanation: 'in advance = trả trước.' },
+        { stem: 'The new device is ____ with most operating systems.', options: ['compatible', 'comparable', 'comfortable', 'competitive'], answer: 0, explanation: 'compatible with = tương thích với.' },
+        { stem: 'Thank you for your ____ in resolving this matter.', options: ['cooperation', 'corporation', 'operation', 'occupation'], answer: 0, explanation: 'cooperation = sự hợp tác.' },
+        { stem: 'The store offers a wide ____ of imported goods.', options: ['section', 'sector', 'segment', 'selection'], answer: 3, explanation: 'a wide selection of = nhiều lựa chọn.' },
+        { stem: 'Refunds will be ____ within 7 business days.', options: ['issue', 'issued', 'issuing', 'issues'], answer: 1, explanation: 'will be + V3 (bị động): issued.' },
+      ],
+    },
   ],
 
   IELTS: [
