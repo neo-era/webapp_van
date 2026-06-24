@@ -764,6 +764,21 @@ const EXAMS = {
         { stem: 'Đổi $87$ °C sang thang Kelvin?', options: ['$300$ K', '$360$ K', '$273$ K', '$323$ K'], answer: 1, explanation: '$87+273=360$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-25', title: 'Kiểm tra 45′ #25 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=10$ atm, $V_1=2$ L. Khi $p_2=5$ atm thì $V_2=?$', options: ['$2$ L', '$3$ L', '$4$ L', '$5$ L'], answer: 2, explanation: '$V_2=p_1V_1/p_2=10\\cdot2/5=4$ L.' },
+        { stem: 'Đun $0{,}2$ kg nước ($c=4200$) tăng thêm $50$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$21$ kJ', '$84$ kJ', '$10{,}5$ kJ'], answer: 0, explanation: '$Q=0{,}2\\cdot4200\\cdot50=42000$ J $=42$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}25$ m chuyển động $v=10$ m/s vuông góc $B=0{,}8$ T. Suất điện động?', options: ['$1$ V', '$4$ V', '$0{,}5$ V', '$2$ V'], answer: 3, explanation: '$e=BLv=0{,}8\\cdot0{,}25\\cdot10=2$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{31}_{15}P$?', options: ['$16$', '$15$', '$31$', '$46$'], answer: 0, explanation: '$N=31-15=16$.' },
+        { stem: 'Hạt nhân nào có $7$ proton?', options: ['$^{12}C$', '$^{16}O$', '$^{19}F$', '$^{14}N$'], answer: 3, explanation: 'Nitơ có $Z=7$.' },
+        { stem: 'Thiết bị công suất $P=500$ W hoạt động $2$ s tiêu thụ công?', options: ['$250$ J', '$500$ J', '$1000$ J', '$2000$ J'], answer: 2, explanation: '$A=Pt=500\\cdot2=1000$ J.' },
+        { stem: 'Khí đẳng áp $V_1=5$ L ở $300$ K, đun đến $V_2=10$ L. Nhiệt độ sau?', options: ['$600$ K', '$450$ K', '$150$ K', '$900$ K'], answer: 0, explanation: '$T_2=T_1V_2/V_1=300\\cdot10/5=600$ K.' },
+        { stem: 'Hiện tượng quang điện chứng tỏ ánh sáng có tính chất?', options: ['sóng', 'hạt (photon)', 'lỏng', 'khí'], answer: 1, explanation: 'Quang điện chứng tỏ ánh sáng có tính chất hạt (lượng tử ánh sáng).' },
+        { stem: 'Sau $7$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/32$', '$1/64$', '$1/256$', '$1/128$'], answer: 3, explanation: '$(1/2)^7=1/128$.' },
+        { stem: 'Đổi $177$ °C sang thang Kelvin?', options: ['$400$ K', '$450$ K', '$350$ K', '$500$ K'], answer: 1, explanation: '$177+273=450$ K.' },
+      ],
+    },
   ],
 
   HOA: [
