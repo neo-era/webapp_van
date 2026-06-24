@@ -674,6 +674,21 @@ const EXAMS = {
         { stem: 'Đổi $300$ K sang nhiệt độ Celsius?', options: ['$0$ °C', '$300$ °C', '$27$ °C', '$573$ °C'], answer: 2, explanation: '$t=300-273=27$ °C.' },
       ],
     },
+    {
+      examId: 'ly-kt45-19', title: 'Kiểm tra 45′ #19 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=5$ atm, $V_1=2$ L. Khi $p_2=2$ atm thì $V_2=?$', options: ['$5$ L', '$4$ L', '$2{,}5$ L', '$10$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=5\\cdot2/2=5$ L.' },
+        { stem: 'Nung $1$ kg nhôm ($c=880$) tăng thêm $20$ °C cần nhiệt lượng?', options: ['$8800$ J', '$880$ J', '$35200$ J', '$17600$ J'], answer: 3, explanation: '$Q=mc\\Delta t=1\\cdot880\\cdot20=17600$ J.' },
+        { stem: 'Đoạn dây $L=0{,}4$ m chuyển động $v=10$ m/s vuông góc $B=0{,}5$ T. Suất điện động?', options: ['$1$ V', '$2$ V', '$4$ V', '$0{,}5$ V'], answer: 1, explanation: '$e=BLv=0{,}5\\cdot0{,}4\\cdot10=2$ V.' },
+        { stem: 'Hạt nhân $^{24}_{11}Na$ phóng xạ $\\beta^-$. Số khối của hạt nhân con (Mg)?', options: ['$22$', '$24$', '$23$', '$25$'], answer: 1, explanation: '$\\beta^-$ không đổi số khối ⇒ $A=24$.' },
+        { stem: 'Số electron trong nguyên tử trung hòa $^{23}_{11}Na$?', options: ['$12$', '$23$', '$1$', '$11$'], answer: 3, explanation: 'Nguyên tử trung hòa: số e = số proton $=11$.' },
+        { stem: 'Thiết bị $220$ V có công suất $1100$ W. Cường độ dòng điện?', options: ['$5$ A', '$2$ A', '$10$ A', '$0{,}2$ A'], answer: 0, explanation: '$I=P/U=1100/220=5$ A.' },
+        { stem: 'Khí đẳng áp $V_1=2$ L ở $300$ K, đun đến $600$ K. Thể tích sau?', options: ['$3$ L', '$1$ L', '$4$ L', '$8$ L'], answer: 2, explanation: '$V_2=V_1T_2/T_1=2\\cdot600/300=4$ L.' },
+        { stem: 'Năng lượng của photon $E=hf$. Nếu tần số tăng gấp đôi thì năng lượng?', options: ['giảm một nửa', 'không đổi', 'tăng 4 lần', 'tăng gấp đôi'], answer: 3, explanation: '$E\\propto f$ ⇒ $f$ tăng 2 lần thì $E$ tăng 2 lần.' },
+        { stem: 'Chu kì bán rã $5$ ngày. Sau $10$ ngày còn lại bao nhiêu phần?', options: ['$1/4$', '$1/2$', '$1/8$', '$1/16$'], answer: 0, explanation: '$10/5=2$ chu kì ⇒ $(1/2)^2=1/4$.' },
+        { stem: 'Đổi $373$ K sang nhiệt độ Celsius?', options: ['$0$ °C', '$100$ °C', '$373$ °C', '$273$ °C'], answer: 1, explanation: '$373-273=100$ °C.' },
+      ],
+    },
   ],
 
   HOA: [
