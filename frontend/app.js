@@ -5,7 +5,7 @@
 
 const App = {
   state: { user: null, role: null, token: null, calDayOffset: 0, tab: 'today' },
-  data: { plans: [], goals: [], exam: null, notes: [] },
+  data: { plans: [], goals: [], exam: null, notes: [], classes: [] },
 };
 
 /* ---------- Helpers ---------- */
@@ -57,6 +57,7 @@ async function doLogin(email, password) {
     App.state.role = data.user.role;
     try { localStorage.setItem('thpt_token', data.token); } catch (e) {}
     if (data.user.role === 'STUDENT') await loadStudentData();
+    else if (data.user.role === 'TEACHER') await loadTeacherData();
     enterApp();
   } catch (e) {
     showToast(e.message || 'Đăng nhập thất bại', 'error');
@@ -77,6 +78,11 @@ async function loadStudentData() {
   App.data.goals = d.goals || [];
   App.data.exam = d.exam || null;
   App.data.notes = d.notes || [];
+}
+
+async function loadTeacherData() {
+  const d = await Api.call('getTeacherData', {});
+  App.data.classes = d.classes || [];
 }
 
 function enterApp() {
@@ -103,7 +109,8 @@ function enterApp() {
 function logout() {
   App.state.user = null;
   App.state.token = null;
-  App.data = { plans: [], goals: [], exam: null, notes: [] };
+  App.data = { plans: [], goals: [], exam: null, notes: [], classes: [] };
+  App._activeClass = null;
   try { localStorage.removeItem('thpt_token'); } catch (e) {}
   $('#app-shell').classList.add('hidden');
   $('#screen-login').classList.remove('hidden');
@@ -388,25 +395,37 @@ function renderProfile() {
 }
 
 /* ============================================================
-   GIÁO VIÊN (tạm dùng dữ liệu mẫu — sẽ nối thật ở Prompt 4.x)
+   GIÁO VIÊN (dữ liệu thật)
    ============================================================ */
 function renderTeacher() {
-  if (!App._activeClass) App._activeClass = MOCK.classes[0].classId;
-  const tabs = MOCK.classes.map((c) => `
+  const classes = App.data.classes || [];
+  if (!classes.length) {
+    $('#screen-teacher').innerHTML = `
+      <div class="page-head"><h2>Lớp học</h2><p>Theo dõi tiến độ học sinh</p></div>
+      <div class="card"><div class="empty">Bạn chưa phụ trách lớp nào.</div></div>`;
+    return;
+  }
+  if (!App._activeClass || !classes.find((c) => c.classId === App._activeClass)) {
+    App._activeClass = classes[0].classId;
+  }
+  const active = classes.find((c) => c.classId === App._activeClass);
+
+  const tabs = classes.map((c) => `
     <button class="class-tab ${c.classId === App._activeClass ? 'active' : ''}" onclick="selectClass('${c.classId}')">
       ${c.name} · ${c.studentCount} HS
     </button>`).join('');
-  const students = MOCK.classStudents[App._activeClass] || [];
-  const rows = students.map((s) => {
+
+  const students = active.students || [];
+  const rows = students.length ? students.map((s) => {
     const pill = s.late === 0 ? 'pill-ok' : (s.late <= 2 ? 'pill-warn' : 'pill-late');
     return `<tr><td>${s.name}</td>
       <td><div class="bar" style="width:90px"><i style="width:${s.progress}%"></i></div></td>
       <td>${s.progress}%</td><td><span class="pill ${pill}">${s.late} trễ</span></td></tr>`;
-  }).join('');
+  }).join('') : `<tr><td colspan="4" class="muted" style="text-align:center">Lớp chưa có học sinh</td></tr>`;
   const avg = students.length ? Math.round(students.reduce((a, s) => a + s.progress, 0) / students.length) : 0;
 
   $('#screen-teacher').innerHTML = `
-    <div class="page-head"><h2>Lớp học</h2><p>Theo dõi tiến độ học sinh <span class="badge-assigned">demo</span></p></div>
+    <div class="page-head"><h2>Lớp học</h2><p>Theo dõi tiến độ học sinh</p></div>
     <div class="class-tabs">${tabs}</div>
     <div class="card section-block">
       <div class="section-title">Tiến độ trung bình lớp</div>
@@ -420,9 +439,40 @@ function renderTeacher() {
       <div class="table-wrap"><table class="data">
         <thead><tr><th>Học sinh</th><th>Tiến độ</th><th>%</th><th>Nhiệm vụ</th></tr></thead>
         <tbody>${rows}</tbody></table></div>
-    </div>`;
+    </div>
+    <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="openAssignModal()">+ Giao việc cho lớp ${active.name}</button>`;
 }
 function selectClass(cid) { App._activeClass = cid; renderTeacher(); }
+
+function openAssignModal() {
+  const active = (App.data.classes || []).find((c) => c.classId === App._activeClass);
+  if (!active) return;
+  const studentOpts = ['<option value="">📋 Cả lớp (' + active.studentCount + ' HS)</option>']
+    .concat((active.students || []).map((s) => `<option value="${s.userId}">${s.name}</option>`)).join('');
+  openModal('Giao việc · ' + active.name, `
+    <label class="field"><span>Giao cho</span><select id="m-target">${studentOpts}</select></label>
+    <label class="field"><span>Nhiệm vụ</span><input id="m-title" placeholder="VD: Làm đề ôn số 3" /></label>
+    <label class="field"><span>Môn học</span><select id="m-subject">${subjectOptions('TOAN')}</select></label>
+    <label class="field"><span>Hạn nộp</span><input type="date" id="m-date" value="${dayjs().add(2, 'day').format('YYYY-MM-DD')}" /></label>
+    <button class="btn btn-primary btn-block" onclick="saveAssign()">Giao việc</button>`);
+}
+async function saveAssign() {
+  const title = $('#m-title').value.trim();
+  if (!title) { showToast('Nhập tên nhiệm vụ', 'error'); return; }
+  const payload = {
+    classId: App._activeClass,
+    studentId: $('#m-target').value || undefined,
+    title: title, subject: $('#m-subject').value, dueDate: $('#m-date').value,
+  };
+  showLoading();
+  try {
+    const r = await Api.call('assignTask', payload);
+    await loadTeacherData(); // làm mới tiến độ/nhiệm vụ trễ
+    closeModal(); rerender();
+    showToast('Đã giao việc cho ' + r.assigned + ' học sinh', 'success');
+  } catch (e) { showToast(e.message, 'error'); }
+  finally { hideLoading(); }
+}
 
 /* ============================================================
    MODAL

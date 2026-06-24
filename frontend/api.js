@@ -108,6 +108,23 @@ const MockApi = {
       }
       case 'deleteNote': return { deleted: payload.noteId };
 
+      case 'getTeacherData':
+        return {
+          teacher: MOCK.teacher,
+          classes: MOCK.classes.map((c) => ({
+            classId: c.classId, name: c.name,
+            studentCount: (MOCK.classStudents[c.classId] || []).length,
+            students: (MOCK.classStudents[c.classId] || []).map((s, i) => ({
+              userId: c.classId + '_' + i, name: s.name, progress: s.progress, late: s.late,
+            })),
+          })),
+        };
+      case 'assignTask': {
+        const cls = MOCK.classes.find((c) => c.classId === payload.classId);
+        const n = payload.studentId ? 1 : ((MOCK.classStudents[payload.classId] || []).length);
+        return { assigned: n };
+      }
+
       default:
         throw new Error('Chế độ demo chưa hỗ trợ "' + action + '".');
     }

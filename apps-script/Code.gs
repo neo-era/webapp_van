@@ -77,7 +77,9 @@ function route(action, req) {
     case 'saveNote':       return saveNote(req);
     case 'deleteNote':     return deleteNote(req);
 
-    // --- Giáo viên (Classes.gs) sẽ bổ sung ở Prompt 4.x ---
+    // --- Giáo viên (Classes.gs) ---
+    case 'getTeacherData': return getTeacherData(req);
+    case 'assignTask':     return assignTask(req);
 
     default:               return jsonError('Action không hợp lệ: ' + action);
   }
