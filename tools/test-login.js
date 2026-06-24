@@ -15,7 +15,7 @@ const url = 'file:///' + path.join(ROOT, 'frontend', 'index.html').replace(/\\/g
 
   // Submit form đăng nhập (email/mật khẩu đã điền sẵn trong HTML)
   await p.click('#login-form button[type=submit]');
-  await new Promise((r) => setTimeout(r, 900));
+  await new Promise((r) => setTimeout(r, 4000)); // backend thật ~1.5–2s
 
   const shellVisible = await p.evaluate(() => !document.getElementById('app-shell').classList.contains('hidden'));
   const name = await p.evaluate(() => document.getElementById('header-name').textContent);
