@@ -1,0 +1,12 @@
+# Dependencies (chỉ dùng cho công cụ chụp screenshot)
+node_modules/
+package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Apps Script local (nếu dùng clasp)
+.clasp.json
+.clasprc.json

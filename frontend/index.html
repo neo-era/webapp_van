@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Học Kế Hoạch — THPT</title>
+  <meta name="description" content="Lập kế hoạch học tập THPT cho học sinh và giáo viên" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loading toàn cục -->
+  <div id="loading" class="loading hidden">
+    <div class="spinner"></div>
+    <span>Đang tải…</span>
+  </div>
+
+  <!-- Toast báo lỗi/thông báo -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- ============ MÀN HÌNH ĐĂNG NHẬP ============ -->
+  <section id="screen-login" class="screen screen-auth">
+    <div class="auth-card">
+      <div class="auth-logo">📚</div>
+      <h1 class="auth-title">Học Kế Hoạch</h1>
+      <p class="auth-sub">Lập kế hoạch học tập THPT</p>
+
+      <form id="login-form" class="auth-form">
+        <label class="field">
+          <span>Email</span>
+          <input type="email" id="login-email" placeholder="email@example.com" value="hocsinh@demo.com" required />
+        </label>
+        <label class="field">
+          <span>Mật khẩu</span>
+          <input type="password" id="login-password" placeholder="••••••••" value="123456" required />
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+      </form>
+
+      <div class="auth-demo">
+        <p>Thử nhanh với tài khoản demo:</p>
+        <div class="auth-demo-btns">
+          <button class="btn btn-ghost" data-demo="student">👨‍🎓 Học sinh</button>
+          <button class="btn btn-ghost" data-demo="teacher">👩‍🏫 Giáo viên</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KHUNG APP (sau đăng nhập) ============ -->
+  <div id="app-shell" class="app-shell hidden">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="app-header-left">
+        <span id="header-avatar" class="avatar">A</span>
+        <div>
+          <div id="header-name" class="app-header-name">Học sinh</div>
+          <div id="header-role" class="app-header-role">Lớp 12A1</div>
+        </div>
+      </div>
+      <button id="btn-logout" class="icon-btn" title="Đăng xuất">⏻</button>
+    </header>
+
+    <!-- Nội dung các màn hình -->
+    <main class="app-main">
+      <!-- HÔM NAY -->
+      <section id="screen-today" class="screen-tab"></section>
+      <!-- LỊCH -->
+      <section id="screen-calendar" class="screen-tab hidden"></section>
+      <!-- MỤC TIÊU -->
+      <section id="screen-goals" class="screen-tab hidden"></section>
+      <!-- ÔN THI -->
+      <section id="screen-exam" class="screen-tab hidden"></section>
+      <!-- GHI CHÚ -->
+      <section id="screen-notes" class="screen-tab hidden"></section>
+      <!-- CÁ NHÂN -->
+      <section id="screen-profile" class="screen-tab hidden"></section>
+      <!-- GIÁO VIÊN -->
+      <section id="screen-teacher" class="screen-tab hidden"></section>
+    </main>
+
+    <!-- Bottom nav (học sinh) -->
+    <nav id="bottom-nav" class="bottom-nav">
+      <button class="nav-item active" data-tab="today">
+        <span class="nav-ico">🏠</span><span class="nav-label">Hôm nay</span>
+      </button>
+      <button class="nav-item" data-tab="calendar">
+        <span class="nav-ico">📅</span><span class="nav-label">Lịch</span>
+      </button>
+      <button class="nav-item" data-tab="goals">
+        <span class="nav-ico">🎯</span><span class="nav-label">Mục tiêu</span>
+      </button>
+      <button class="nav-item" data-tab="exam">
+        <span class="nav-ico">📝</span><span class="nav-label">Ôn thi</span>
+      </button>
+      <button class="nav-item" data-tab="notes">
+        <span class="nav-ico">📒</span><span class="nav-label">Ghi chú</span>
+      </button>
+      <button class="nav-item" data-tab="profile">
+        <span class="nav-ico">👤</span><span class="nav-label">Cá nhân</span>
+      </button>
+    </nav>
+
+    <!-- Bottom nav (giáo viên) -->
+    <nav id="bottom-nav-teacher" class="bottom-nav hidden">
+      <button class="nav-item active" data-tab="teacher">
+        <span class="nav-ico">🏫</span><span class="nav-label">Lớp học</span>
+      </button>
+      <button class="nav-item" data-tab="profile">
+        <span class="nav-ico">👤</span><span class="nav-label">Cá nhân</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Modal chung -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title">Tiêu đề</h3>
+        <button class="icon-btn" data-close-modal>✕</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+  <script src="mock-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
