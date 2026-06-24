@@ -602,6 +602,21 @@ const EXAMS = {
         { stem: 'Saccharose còn được gọi là đường?', options: ['glucose', 'nho', 'mía', 'mạch nha'], answer: 2, explanation: 'Saccharose là đường mía (đường ăn).' },
       ],
     },
+    {
+      examId: 'hoa-kt45-7', title: 'Kiểm tra 45′ #7 — Hóa 12', durationMin: 45,
+      questions: [
+        { stem: 'Công thức phân tử của glucose là?', options: ['$C_{12}H_{22}O_{11}$', '$C_6H_{12}O_6$', '$C_6H_{10}O_5$', '$C_5H_{10}O_5$'], answer: 1, explanation: 'Glucose: $C_6H_{12}O_6$.' },
+        { stem: 'Phân tử saccharose ($C_{12}H_{22}O_{11}$) có bao nhiêu nguyên tử cacbon?', options: ['$6$', '$11$', '$12$', '$22$'], answer: 2, explanation: 'Có $12$ nguyên tử C.' },
+        { stem: 'Methylamine $CH_3NH_2$ là amine bậc mấy?', options: ['bậc hai', 'bậc ba', 'bậc bốn', 'bậc một'], answer: 3, explanation: 'N gắn với $1$ gốc hidrocacbon ⇒ amine bậc một.' },
+        { stem: 'Glyxin ($H_2N\\!-\\!CH_2\\!-\\!COOH$) thể hiện tính chất hóa học?', options: ['chỉ axit', 'chỉ bazơ', 'lưỡng tính', 'trung tính'], answer: 2, explanation: 'Có cả $-COOH$ và $-NH_2$ ⇒ lưỡng tính.' },
+        { stem: 'Polime nào sau đây được điều chế bằng phản ứng trùng ngưng?', options: ['PE', 'PVC', 'PS', 'nilon-6,6'], answer: 3, explanation: 'Nilon-6,6 trùng ngưng; PE, PVC, PS trùng hợp.' },
+        { stem: 'Kim loại nào dẫn điện tốt nhất?', options: ['Cu', 'Au', 'Ag', 'Al'], answer: 2, explanation: 'Bạc (Ag) dẫn điện tốt nhất.' },
+        { stem: 'Kim loại kiềm thuộc nhóm nào trong bảng tuần hoàn?', options: ['IA', 'IIA', 'IIIA', 'VIIA'], answer: 0, explanation: 'Kim loại kiềm ở nhóm IA.' },
+        { stem: 'Kim loại nào sau đây là kim loại kiềm thổ?', options: ['Na', 'Ca', 'K', 'Al'], answer: 1, explanation: 'Ca thuộc nhóm IIA (kiềm thổ); Na, K là kiềm.' },
+        { stem: 'Kim loại kiềm có tính khử rất mạnh chủ yếu vì?', options: ['dễ nhận electron', 'bán kính nguyên tử nhỏ', 'độ âm điện lớn', 'dễ nhường 1 electron lớp ngoài cùng'], answer: 3, explanation: 'Cấu hình $ns^1$, dễ nhường $1$ electron.' },
+        { stem: 'Nhôm bị thụ động hóa (không phản ứng) trong dung dịch nào sau đây?', options: ['$HNO_3$ đặc, nguội', 'HCl loãng', 'NaOH', '$H_2SO_4$ loãng'], answer: 0, explanation: 'Al thụ động trong $HNO_3$ đặc nguội và $H_2SO_4$ đặc nguội.' },
+      ],
+    },
   ],
 
   ANH: [
