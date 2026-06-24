@@ -51,14 +51,53 @@ function route(action, req) {
     case 'ping':      return jsonOk({ pong: true, time: now() });
 
     // --- Xác thực (Auth.gs) ---
-    case 'register':  return register(req);
-    case 'login':     return login(req);
+    case 'register':       return register(req);
+    case 'login':          return login(req);
 
-    // --- Sẽ bổ sung ở các Prompt sau ---
-    // Plans (3.1), Goals (3.2), Exam (3.3), Notes (3.4), Classes (4.x)
+    // --- Gộp dữ liệu học sinh (1 lần gọi) ---
+    case 'getStudentData': return getStudentData(req);
 
-    default:          return jsonError('Action không hợp lệ: ' + action);
+    // --- Kế hoạch (Plans.gs) ---
+    case 'getPlans':       return getPlans(req);
+    case 'savePlan':       return savePlan(req);
+    case 'deletePlan':     return deletePlan(req);
+
+    // --- Mục tiêu (Goals.gs) ---
+    case 'getGoals':       return getGoals(req);
+    case 'saveGoal':       return saveGoal(req);
+    case 'deleteGoal':     return deleteGoal(req);
+    case 'updateProgress': return updateProgress(req);
+
+    // --- Ôn thi (Exam.gs) ---
+    case 'getExamPlan':    return getExamPlan(req);
+    case 'saveExamPlan':   return saveExamPlan(req);
+
+    // --- Ghi chú (Notes.gs) ---
+    case 'getNotes':       return getNotes(req);
+    case 'saveNote':       return saveNote(req);
+    case 'deleteNote':     return deleteNote(req);
+
+    // --- Giáo viên (Classes.gs) sẽ bổ sung ở Prompt 4.x ---
+
+    default:               return jsonError('Action không hợp lệ: ' + action);
   }
+}
+
+/** Gộp toàn bộ dữ liệu cần cho app học sinh trong 1 lần gọi (giảm độ trễ). */
+function getStudentData(req) {
+  const user = requireAuth(req.token);
+  const sid = user.userId;
+  const plans = getRows('Plans').filter(function (p) { return String(p.studentId) === String(sid); }).map(cleanPlan);
+  const goals = getRows('Goals').filter(function (g) { return String(g.studentId) === String(sid); }).map(cleanGoal);
+  const examRow = getRows('ExamPlans').find(function (e) { return String(e.studentId) === String(sid); });
+  const notes = getRows('Notes').filter(function (n) { return String(n.studentId) === String(sid); }).map(cleanNote);
+  return jsonOk({
+    user: publicUser(user),
+    plans: plans,
+    goals: goals,
+    exam: examRow ? cleanExam(examRow) : null,
+    notes: notes,
+  });
 }
 
 /* ============================================================

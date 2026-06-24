@@ -69,6 +69,45 @@ const MockApi = {
       case 'register':
         return MOCK.student;
 
+      case 'getStudentData':
+        return {
+          user: MOCK.student,
+          plans: MOCK.plans,
+          goals: MOCK.goals,
+          exam: { examDate: MOCK.exam.examDate, subjects: MOCK.exam.subjects, checklist: MOCK.exam.checklist },
+          notes: MOCK.notes,
+        };
+
+      case 'savePlan': {
+        const p = payload.plan || {};
+        if (p.planId) {
+          const ex = MOCK.plans.find((x) => x.planId === p.planId) || {};
+          Object.assign(ex, p);
+          return ex;
+        }
+        const np = Object.assign({ planId: 'p' + Date.now(), assignedBy: '' }, p);
+        return np;
+      }
+      case 'deletePlan': return { deleted: payload.planId };
+
+      case 'saveGoal': {
+        const g = payload.goal || {};
+        if (g.goalId) { const ex = MOCK.goals.find((x) => x.goalId === g.goalId) || {}; Object.assign(ex, g); return ex; }
+        return Object.assign({ goalId: 'g' + Date.now() }, g);
+      }
+      case 'deleteGoal': return { deleted: payload.goalId };
+      case 'updateProgress': return { goalId: payload.goalId, progress: payload.progress };
+
+      case 'saveExamPlan':
+        return { examDate: payload.examDate, subjects: payload.subjects || [], checklist: payload.checklist || [] };
+
+      case 'saveNote': {
+        const n = payload.note || {};
+        if (n.noteId) { const ex = MOCK.notes.find((x) => x.noteId === n.noteId) || {}; Object.assign(ex, n); return ex; }
+        return Object.assign({ noteId: 'n' + Date.now(), updatedAt: new Date().toISOString() }, n);
+      }
+      case 'deleteNote': return { deleted: payload.noteId };
+
       default:
         throw new Error('Chế độ demo chưa hỗ trợ "' + action + '".');
     }

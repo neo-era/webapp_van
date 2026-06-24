@@ -28,7 +28,18 @@ const SHOTS = [
     const page = await browser.newPage();
     await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2 });
     await page.goto(fileUrl(s.q), { waitUntil: 'networkidle0' });
-    await new Promise((r) => setTimeout(r, 350));
+    // Nếu có đăng nhập, chờ app hiện ra rồi mới chụp
+    if (s.q.includes('role=')) {
+      try {
+        await page.waitForFunction(
+          () => !document.getElementById('app-shell').classList.contains('hidden'),
+          { timeout: 10000 }
+        );
+      } catch (e) { console.log(s.n + ': timeout chờ app'); }
+      await new Promise((r) => setTimeout(r, 700));
+    } else {
+      await new Promise((r) => setTimeout(r, 300));
+    }
     const overflow = await page.evaluate(() => ({
       scrollWidth: document.documentElement.scrollWidth,
       clientWidth: document.documentElement.clientWidth,

@@ -70,9 +70,25 @@ function seedIfEmpty() {
     });
   });
 
-  // Kế hoạch ôn thi cho An
+  // Kế hoạch ôn thi cho An (kèm checklist nội dung ôn)
+  const checklist = [
+    { subject: 'TOAN', text: 'Hàm số & đồ thị', done: true },
+    { subject: 'TOAN', text: 'Tích phân', done: false },
+    { subject: 'LY', text: 'Dao động cơ', done: true },
+    { subject: 'HOA', text: 'Este – Lipit', done: false },
+    { subject: 'ANH', text: 'Ngữ pháp nâng cao', done: false },
+  ];
   appendRow('ExamPlans', {
-    studentId: anId, examDate: '2026-06-26', subjects: 'TOAN,VAN,ANH,LY,HOA', milestones: '',
+    studentId: anId, examDate: '2026-06-26', subjects: 'TOAN,VAN,ANH,LY,HOA',
+    milestones: JSON.stringify(checklist),
+  });
+
+  // Ghi chú mẫu cho An
+  appendRow('Notes', {
+    noteId: genId('n'), studentId: anId, subject: 'TOAN',
+    title: 'Công thức tích phân từng phần',
+    content: 'u·dv = uv − ∫v·du. Ưu tiên chọn u theo quy tắc LIATE.',
+    fileUrl: '', createdAt: t, updatedAt: t,
   });
 }
 

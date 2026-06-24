@@ -146,6 +146,23 @@ function now() {
   return new Date().toISOString();
 }
 
+/** Ngày hôm nay theo giờ VN, dạng yyyy-MM-dd. */
+function todayStr() {
+  return Utilities.formatDate(new Date(), 'Asia/Ho_Chi_Minh', 'yyyy-MM-dd');
+}
+
+/** Chuẩn hóa ô ngày (Sheet có thể trả Date) về chuỗi yyyy-MM-dd. */
+function asDateStr(v) {
+  if (v instanceof Date) return Utilities.formatDate(v, 'Asia/Ho_Chi_Minh', 'yyyy-MM-dd');
+  return v ? String(v) : '';
+}
+
+// Giá trị hợp lệ cho môn học & trạng thái.
+const VALID_SUBJECTS = ['TOAN', 'VAN', 'ANH', 'LY', 'HOA', 'SINH', 'SU', 'DIA', 'GDCD'];
+const VALID_STATUS = ['TODO', 'IN_PROGRESS', 'DONE'];
+function validSubject(s) { return VALID_SUBJECTS.indexOf(s) >= 0 ? s : 'TOAN'; }
+function validStatus(s) { return VALID_STATUS.indexOf(s) >= 0 ? s : 'TODO'; }
+
 /** Hash SHA-256 (hex) của text + salt — dùng cho mật khẩu. */
 function sha256(text, salt) {
   const raw = Utilities.computeDigest(
