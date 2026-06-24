@@ -842,6 +842,21 @@ const EXAMS = {
         { stem: 'Phần trăm khối lượng oxi trong $H_2O$ ($M=18$)?', options: ['$50\\%$', '$88{,}9\\%$', '$11{,}1\\%$', '$80\\%$'], answer: 1, explanation: '$16/18\\cdot100\\%\\approx88{,}9\\%$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-15', title: 'Kiểm tra 45′ #15 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}2$ mol $CaCO_3$ ($M=100$)?', options: ['$10$ g', '$50$ g', '$100$ g', '$20$ g'], answer: 3, explanation: '$m=0{,}2\\cdot100=20$ g.' },
+        { stem: 'Số mol nguyên tử Cl trong $0{,}5$ mol $AlCl_3$?', options: ['$0{,}5$', '$1$', '$1{,}5$', '$3$'], answer: 2, explanation: 'Mỗi phân tử có 3 Cl ⇒ $0{,}5\\cdot3=1{,}5$ mol.' },
+        { stem: 'Cho $0{,}2$ mol Na vào nước ($2Na+2H_2O\\to2NaOH+H_2$). Số mol $H_2$?', options: ['$0{,}2$', '$0{,}4$', '$0{,}1$', '$1$'], answer: 2, explanation: '$2$ mol Na ⇒ $1$ mol $H_2$; vậy $0{,}2$ mol Na ⇒ $0{,}1$ mol $H_2$.' },
+        { stem: 'Phần trăm khối lượng N trong $NH_3$ ($M=17$)?', options: ['$17{,}6\\%$', '$50\\%$', '$14\\%$', '$82{,}4\\%$'], answer: 3, explanation: '$14/17\\cdot100\\%\\approx82{,}4\\%$.' },
+        { stem: 'Thể tích $H_2$ (đktc) khi $0{,}1$ mol Zn tác dụng hết với HCl?', options: ['$2{,}24$ L', '$1{,}12$ L', '$4{,}48$ L', '$0{,}224$ L'], answer: 0, explanation: '$Zn+2HCl\\to ZnCl_2+H_2$; $n_{H_2}=0{,}1\\Rightarrow V=2{,}24$ L.' },
+        { stem: 'Chất nào sau đây là oxide acid?', options: ['CaO', '$CO_2$', '$Na_2O$', 'MgO'], answer: 1, explanation: '$CO_2$ là oxide acid; CaO, $Na_2O$, MgO là oxide bazơ.' },
+        { stem: 'Số mol electron trao đổi khi $0{,}1$ mol Fe bị oxi hóa thành $Fe^{3+}$?', options: ['$0{,}3$', '$0{,}1$', '$0{,}2$', '$0{,}6$'], answer: 0, explanation: '$Fe\\to Fe^{3+}+3e$; $0{,}1\\cdot3=0{,}3$ mol e.' },
+        { stem: 'Dung dịch NaOH $0{,}01$ M có pH bằng?', options: ['$2$', '$12$', '$7$', '$1$'], answer: 1, explanation: '$[OH^-]=0{,}01\\Rightarrow pOH=2\\Rightarrow pH=12$.' },
+        { stem: 'Công thức chung của alkane (ankan) là?', options: ['$C_nH_{2n}$', '$C_nH_{2n-2}$', '$C_nH_n$', '$C_nH_{2n+2}$'], answer: 3, explanation: 'Ankan: $C_nH_{2n+2}\\ (n\\ge1)$.' },
+        { stem: 'Khối lượng mol của NaCl (Na=23, Cl=35,5)?', options: ['$23$', '$35{,}5$', '$58{,}5$', '$40$'], answer: 2, explanation: '$23+35{,}5=58{,}5$ g/mol.' },
+      ],
+    },
   ],
 
   ANH: [
