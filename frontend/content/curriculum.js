@@ -1213,6 +1213,52 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-anh-passive', title: 'Passive Voice (câu bị động)',
+          lessons: [
+            {
+              id: 'l-anh-passive', title: 'Câu bị động', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> Câu bị động nhấn mạnh <em>đối tượng chịu tác động</em> thay vì người thực hiện.</div>
+                <h2>Form</h2>
+                <p><strong>S + be + V3/ed (+ by O)</strong> — chia "be" theo thì của câu chủ động.</p>
+                <ul>
+                  <li>Hiện tại đơn: am/is/are + V3. Quá khứ đơn: was/were + V3.</li>
+                  <li>Tương lai: will be + V3. Hiện tại hoàn thành: have/has been + V3.</li>
+                </ul>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Active: <em>They build a house.</em> → Passive: <em>A house <strong>is built</strong> (by them).</em></p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Chuyển sang bị động: "She writes a letter."</p>
+                  <details><summary>Đáp án</summary><p>"A letter <strong>is written</strong> (by her)."</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-anh-conditional', title: 'Conditional Sentences (câu điều kiện)',
+          lessons: [
+            {
+              id: 'l-anh-conditional', title: 'Câu điều kiện loại 1, 2, 3', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Loại 1</strong> (có thật, tương lai): If + S + V(s), S + <em>will</em> + V. <br>Ex: <em>If it rains, I will stay home.</em></li>
+                  <li><strong>Loại 2</strong> (không thật, hiện tại): If + S + V2/were, S + <em>would</em> + V. <br>Ex: <em>If I were you, I would study harder.</em></li>
+                  <li><strong>Loại 3</strong> (không thật, quá khứ): If + S + had + V3, S + <em>would have</em> + V3. <br>Ex: <em>If she had studied, she would have passed.</em></li>
+                </ul>
+                <h2>Nâng cao</h2>
+                <p>Trong câu điều kiện loại 2, với động từ "to be" dùng <strong>were</strong> cho mọi ngôi (I/he/she + were).</p>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Điền: "If I ____ (be) you, I would accept the offer."</p>
+                  <details><summary>Đáp án</summary><p><strong>were</strong> (điều kiện loại 2).</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
