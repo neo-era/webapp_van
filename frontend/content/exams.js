@@ -779,6 +779,21 @@ const EXAMS = {
         { stem: 'Đổi $177$ °C sang thang Kelvin?', options: ['$400$ K', '$450$ K', '$350$ K', '$500$ K'], answer: 1, explanation: '$177+273=450$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-26', title: 'Kiểm tra 45′ #26 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=6$ atm, $V_1=3$ L. Khi $V_2=9$ L thì $p_2=?$', options: ['$2$ atm', '$1$ atm', '$3$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=6\\cdot3/9=2$ atm.' },
+        { stem: 'Nung $1$ kg đồng ($c=380$) tăng thêm $25$ °C cần nhiệt lượng?', options: ['$4750$ J', '$19000$ J', '$2375$ J', '$9500$ J'], answer: 3, explanation: '$Q=1\\cdot380\\cdot25=9500$ J.' },
+        { stem: 'Đoạn dây $L=0{,}1$ m chuyển động $v=20$ m/s vuông góc $B=1$ T. Suất điện động?', options: ['$1$ V', '$2$ V', '$4$ V', '$0{,}5$ V'], answer: 1, explanation: '$e=BLv=1\\cdot0{,}1\\cdot20=2$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{27}_{13}Al$?', options: ['$14$', '$13$', '$27$', '$40$'], answer: 0, explanation: '$N=27-13=14$.' },
+        { stem: 'Hạt nhân nào có $11$ proton?', options: ['$^{20}Ne$', '$^{24}Mg$', '$^{19}F$', '$^{23}Na$'], answer: 3, explanation: 'Natri có $Z=11$.' },
+        { stem: 'Thiết bị công suất $P=750$ W hoạt động $4$ s tiêu thụ công?', options: ['$1500$ J', '$3000$ J', '$6000$ J', '$750$ J'], answer: 1, explanation: '$A=Pt=750\\cdot4=3000$ J.' },
+        { stem: 'Khí đẳng tích $p_1=1$ atm ở $250$ K, đun đến $750$ K. Áp suất sau?', options: ['$3$ atm', '$2$ atm', '$4$ atm', '$1{,}5$ atm'], answer: 0, explanation: '$p_2=p_1T_2/T_1=1\\cdot750/250=3$ atm.' },
+        { stem: 'Ánh sáng đỏ có bước sóng lớn hơn ánh sáng tím, nên năng lượng photon đỏ?', options: ['lớn hơn', 'bằng nhau', 'gấp đôi', 'nhỏ hơn'], answer: 3, explanation: '$E=hc/\\lambda$ ⇒ bước sóng lớn thì năng lượng nhỏ.' },
+        { stem: 'Sau $2$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/2$', '$1/8$', '$1/4$', '$1/16$'], answer: 2, explanation: '$(1/2)^2=1/4$.' },
+        { stem: 'Đổi $67$ °C sang thang Kelvin?', options: ['$300$ K', '$340$ K', '$273$ K', '$313$ K'], answer: 1, explanation: '$67+273=340$ K.' },
+      ],
+    },
   ],
 
   HOA: [
