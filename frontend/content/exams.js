@@ -704,6 +704,21 @@ const EXAMS = {
         { stem: 'Đổi $-23$ °C sang thang Kelvin?', options: ['$296$ K', '$250$ K', '$273$ K', '$223$ K'], answer: 1, explanation: '$-23+273=250$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-21', title: 'Kiểm tra 45′ #21 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=3$ atm, $V_1=4$ L. Khi $V_2=6$ L thì $p_2=?$', options: ['$2$ atm', '$1{,}5$ atm', '$3$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=3\\cdot4/6=2$ atm.' },
+        { stem: 'Đun $2$ kg nước ($c=4200$) tăng thêm $25$ °C cần nhiệt lượng?', options: ['$105$ kJ', '$420$ kJ', '$84$ kJ', '$210$ kJ'], answer: 3, explanation: '$Q=2\\cdot4200\\cdot25=210000$ J $=210$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}25$ m chuyển động $v=8$ m/s vuông góc $B=0{,}4$ T. Suất điện động?', options: ['$0{,}4$ V', '$1{,}6$ V', '$0{,}8$ V', '$0{,}2$ V'], answer: 2, explanation: '$e=BLv=0{,}4\\cdot0{,}25\\cdot8=0{,}8$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{239}_{94}Pu$?', options: ['$145$', '$94$', '$239$', '$333$'], answer: 0, explanation: '$N=239-94=145$.' },
+        { stem: 'Số proton trong hạt nhân $^{7}_3Li$?', options: ['$4$', '$7$', '$3$', '$10$'], answer: 2, explanation: 'Số proton $Z=3$.' },
+        { stem: 'Một máy thực hiện công $A=1500$ J trong $5$ s. Công suất?', options: ['$150$ W', '$600$ W', '$75$ W', '$300$ W'], answer: 3, explanation: '$P=A/t=1500/5=300$ W.' },
+        { stem: 'Khí đẳng áp $V_1=3$ L ở $200$ K, đun đến $V_2=6$ L. Nhiệt độ sau?', options: ['$300$ K', '$100$ K', '$400$ K', '$600$ K'], answer: 2, explanation: '$T_2=T_1V_2/V_1=200\\cdot6/3=400$ K.' },
+        { stem: 'Trong công thức năng lượng photon $E=hf$, $h$ là?', options: ['hằng số khí', 'hằng số Planck', 'số Avogadro', 'hằng số Boltzmann'], answer: 1, explanation: '$h$ là hằng số Planck ($\\approx6{,}625\\cdot10^{-34}$ J·s).' },
+        { stem: 'Sau $3$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/2$', '$1/4$', '$1/16$', '$1/8$'], answer: 3, explanation: '$(1/2)^3=1/8$.' },
+        { stem: 'Đổi $77$ °C sang thang Kelvin?', options: ['$300$ K', '$350$ K', '$273$ K', '$323$ K'], answer: 1, explanation: '$77+273=350$ K.' },
+      ],
+    },
   ],
 
   HOA: [
