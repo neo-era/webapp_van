@@ -1234,6 +1234,21 @@ const EXAMS = {
         { stem: 'Sales have ____ significantly compared to last year.', options: ['grown', 'grew', 'growing', 'grows'], answer: 0, explanation: 'Hiện tại hoàn thành: have + grown (V3).' },
       ],
     },
+    {
+      examId: 'toeic-14', title: 'TOEIC – Grammar & Vocabulary #14', durationMin: 20,
+      questions: [
+        { stem: 'The negotiation resulted ____ a successful agreement.', options: ['on', 'in', 'at', 'for'], answer: 1, explanation: 'result in = dẫn đến (kết quả).' },
+        { stem: 'All employees must ____ by the company regulations.', options: ['reside', 'decide', 'abide', 'divide'], answer: 2, explanation: 'abide by = tuân thủ.' },
+        { stem: 'The CEO will ____ the new policy at the meeting.', options: ['announcement', 'announced', 'announcing', 'announce'], answer: 3, explanation: 'will + động từ nguyên thể (announce).' },
+        { stem: 'Our team is committed to ____ excellent results.', options: ['deliver', 'delivered', 'delivery', 'delivering'], answer: 3, explanation: 'be committed to + V-ing.' },
+        { stem: 'The new smartphone is currently in high ____.', options: ['demand', 'supply', 'request', 'order'], answer: 0, explanation: 'in high demand = nhu cầu cao.' },
+        { stem: 'All online transactions are processed ____.', options: ['securely', 'secure', 'security', 'secured'], answer: 0, explanation: 'Cần trạng từ bổ nghĩa động từ ⇒ securely.' },
+        { stem: 'Please ____ your receipt for verification purposes.', options: ['remain', 'retain', 'refrain', 'restrain'], answer: 1, explanation: 'retain = giữ lại.' },
+        { stem: 'The maintenance contract will ____ at the end of the year.', options: ['inspire', 'require', 'acquire', 'expire'], answer: 3, explanation: 'expire = hết hạn.' },
+        { stem: 'She was ____ for the senior manager position.', options: ['considered', 'consider', 'consideration', 'considerable'], answer: 0, explanation: 'be + V3 (bị động): was considered.' },
+        { stem: 'We sincerely appreciate your ____ to our company.', options: ['royalty', 'loyalty', 'loyal', 'royal'], answer: 1, explanation: 'loyalty = lòng trung thành.' },
+      ],
+    },
   ],
 
   IELTS: [
