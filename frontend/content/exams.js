@@ -620,6 +620,21 @@ const EXAMS = {
         { stem: 'Water ____ at 100°C.', options: ['boil', 'boiled', 'boils', 'boiling'], answer: 2, explanation: 'Chân lý ⇒ hiện tại đơn, ngôi thứ ba.' },
       ],
     },
+    {
+      examId: 'anh-kt45-5', title: 'Kiểm tra 45′ #5 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'I ____ my homework already.', options: ['do', 'did', 'have done', 'doing'], answer: 2, explanation: 'already + present perfect.' },
+        { stem: 'He asked me if I ____ free.', options: ['was', 'am', 'is', 'be'], answer: 0, explanation: 'Câu tường thuật ⇒ lùi thì.' },
+        { stem: 'Neither answer ____ correct.', options: ['are', 'were', 'have', 'is'], answer: 3, explanation: 'neither + danh từ số ít + is.' },
+        { stem: 'The more he earns, the more he ____.', options: ['spend', 'spends', 'spending', 'spent'], answer: 1, explanation: 'Cấu trúc the more..., ngôi 3 số ít: spends.' },
+        { stem: "I'd rather you ____ here tonight.", options: ['stay', 'staying', 'stayed', 'to stay'], answer: 2, explanation: 'would rather + S + V quá khứ.' },
+        { stem: 'Choose the synonym of "huge".', options: ['enormous', 'tiny', 'small', 'little'], answer: 0, explanation: 'huge ≈ enormous.' },
+        { stem: 'She works ____ a teacher.', options: ['like', 'for', 'with', 'as'], answer: 3, explanation: 'work as + nghề nghiệp.' },
+        { stem: 'Hardly ____ I arrived when it started raining.', options: ['have', 'had', 'did', 'was'], answer: 1, explanation: 'Đảo ngữ Hardly had S + V3.' },
+        { stem: 'The news ____ very good today.', options: ['are', 'were', 'is', 'have'], answer: 2, explanation: '"news" là danh từ không đếm được, số ít.' },
+        { stem: 'Choose the synonym of "rich".', options: ['wealthy', 'poor', 'broke', 'needy'], answer: 0, explanation: 'rich ≈ wealthy.' },
+      ],
+    },
   ],
 
   TOEIC: [
