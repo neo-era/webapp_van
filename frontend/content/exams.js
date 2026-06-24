@@ -554,6 +554,21 @@ const EXAMS = {
         { stem: 'Nhiệt truyền từ vật nóng sang vật lạnh cho đến khi?', options: ['vật lạnh nóng hơn vật nóng', 'hai vật đạt cân bằng nhiệt', 'truyền mãi mãi', 'nhiệt truyền ngược lại'], answer: 1, explanation: 'Quá trình dừng khi hai vật cùng nhiệt độ (cân bằng nhiệt).' },
       ],
     },
+    {
+      examId: 'ly-kt45-11', title: 'Kiểm tra 45′ #11 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Đổi $27$ °C sang thang Kelvin?', options: ['$27$ K', '$246$ K', '$300$ K', '$327$ K'], answer: 2, explanation: '$T(K)=t(^\\circ C)+273=300$ K.' },
+        { stem: 'Đun $2$ kg nước ($c=4200$) tăng thêm $5$ °C cần nhiệt lượng?', options: ['$21000$ J', '$8400$ J', '$4200$ J', '$42000$ J'], answer: 3, explanation: '$Q=mc\\Delta t=2\\cdot4200\\cdot5=42000$ J.' },
+        { stem: 'Khí đẳng áp có $V_1=4$ L ở $400$ K, làm lạnh đến $200$ K. Thể tích sau?', options: ['$1$ L', '$2$ L', '$4$ L', '$8$ L'], answer: 1, explanation: '$V_2=V_1T_2/T_1=4\\cdot200/400=2$ L.' },
+        { stem: 'Dây dẫn $l=0{,}5$ m mang $I=5$ A trong $B=0{,}2$ T (vuông góc). Lực từ?', options: ['$0{,}5$ N', '$1$ N', '$2$ N', '$5$ N'], answer: 0, explanation: '$F=BIl=0{,}2\\cdot5\\cdot0{,}5=0{,}5$ N.' },
+        { stem: 'Khung dây $S=0{,}2\\ m^2$ trong $B=0{,}1$ T, pháp tuyến cùng hướng $\\vec B$. Từ thông?', options: ['$0{,}2$ Wb', '$0{,}002$ Wb', '$0{,}02$ Wb', '$2$ Wb'], answer: 2, explanation: '$\\Phi=BS\\cos0^\\circ=0{,}1\\cdot0{,}2=0{,}02$ Wb.' },
+        { stem: 'Hạt nhân $^{238}_{92}U$ phóng xạ $\\alpha$ tạo hạt nhân con có số khối?', options: ['$236$', '$238$', '$240$', '$234$'], answer: 3, explanation: 'Phóng xạ $\\alpha$ giảm số khối $4$: $238-4=234$.' },
+        { stem: 'Sau bao nhiêu chu kì bán rã thì lượng chất phóng xạ còn lại $12{,}5\\%$?', options: ['$2$', '$4$', '$3$', '$5$'], answer: 2, explanation: '$12{,}5\\%=1/8=(1/2)^3$ ⇒ 3 chu kì.' },
+        { stem: 'Năng lượng $1$ MeV bằng?', options: ['$10^3$ eV', '$10^9$ eV', '$10^{-6}$ eV', '$10^6$ eV'], answer: 3, explanation: '$1$ MeV $=10^6$ eV.' },
+        { stem: 'Trong phản ứng hạt nhân tỏa năng lượng, tổng khối lượng các hạt sau so với trước?', options: ['nhỏ hơn', 'lớn hơn', 'bằng nhau', 'gấp đôi'], answer: 0, explanation: 'Khối lượng giảm, phần hụt chuyển thành năng lượng tỏa ra.' },
+        { stem: 'Đơn vị của từ thông là?', options: ['Tesla', 'Weber', 'Henry', 'Vôn'], answer: 1, explanation: 'Từ thông đo bằng Weber (Wb).' },
+      ],
+    },
   ],
 
   HOA: [
