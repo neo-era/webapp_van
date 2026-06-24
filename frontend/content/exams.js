@@ -1052,6 +1052,21 @@ const EXAMS = {
         { stem: 'Chất nào sau đây là một base (bazơ)?', options: ['HCl', 'NaCl', '$CO_2$', 'NaOH'], answer: 3, explanation: 'NaOH là base mạnh.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-22', title: 'Kiểm tra 45′ #22 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $7{,}1$ g $Cl_2$ ($M=71$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=7{,}1/71=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}3$ mol KOH ($M=56$)?', options: ['$16{,}8$ g', '$11{,}2$ g', '$22{,}4$ g', '$28$ g'], answer: 0, explanation: '$m=0{,}3\\cdot56=16{,}8$ g.' },
+        { stem: 'Thể tích $O_2$ (đktc) để đốt cháy hết $0{,}2$ mol $H_2$? ($2H_2+O_2\\to2H_2O$)', options: ['$1{,}12$ L', '$2{,}24$ L', '$4{,}48$ L', '$0{,}224$ L'], answer: 1, explanation: '$n_{O_2}=0{,}2/2=0{,}1$ mol $\\Rightarrow V=2{,}24$ L.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}2$ mol $Al_2O_3$?', options: ['$0{,}2$', '$0{,}6$', '$0{,}4$', '$0{,}3$'], answer: 1, explanation: 'Mỗi phân tử có 3 O ⇒ $0{,}2\\cdot3=0{,}6$ mol.' },
+        { stem: 'Hòa tan $5$ g NaCl vào $95$ g nước. Nồng độ phần trăm?', options: ['$2{,}5\\%$', '$10\\%$', '$20\\%$', '$5\\%$'], answer: 3, explanation: '$C\\%=5/100\\cdot100\\%=5\\%$.' },
+        { stem: 'Khối lượng mol của $Na_2CO_3$ (Na=23, C=12, O=16)?', options: ['$84$', '$106$', '$142$', '$120$'], answer: 1, explanation: '$2\\cdot23+12+3\\cdot16=106$ g/mol.' },
+        { stem: 'Kim loại nào dẻo nhất, dễ dát mỏng và kéo sợi nhất?', options: ['vàng', 'sắt', 'kẽm', 'nhôm'], answer: 0, explanation: 'Vàng (Au) là kim loại dẻo nhất.' },
+        { stem: 'Phần trăm khối lượng N trong $N_2O$ ($M=44$)?', options: ['$36{,}4\\%$', '$50\\%$', '$63{,}6\\%$', '$28\\%$'], answer: 2, explanation: '$28/44\\cdot100\\%\\approx63{,}6\\%$.' },
+        { stem: 'Hợp chất nào sau đây chứa liên kết ion?', options: ['HCl', '$CO_2$', '$CH_4$', 'NaCl'], answer: 3, explanation: 'NaCl là hợp chất ion (kim loại + phi kim).' },
+        { stem: 'Số mol HCl cần để trung hòa hết $0{,}1$ mol NaOH?', options: ['$0{,}1$', '$0{,}05$', '$0{,}2$', '$1$'], answer: 0, explanation: '$NaOH+HCl\\to NaCl+H_2O$; tỉ lệ 1:1 ⇒ $0{,}1$ mol HCl.' },
+      ],
+    },
   ],
 
   ANH: [
