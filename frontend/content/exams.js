@@ -542,6 +542,21 @@ const EXAMS = {
         { stem: 'Kim loại kiềm thổ thuộc nhóm nào?', options: ['IA', 'IIIA', 'IIA', 'VIIIA'], answer: 2, explanation: 'Kim loại kiềm thổ: nhóm IIA.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-5', title: 'Kiểm tra 45′ #5 — Hóa 12 (mở rộng)', durationMin: 45,
+      questions: [
+        { stem: 'Phản ứng ester hóa là phản ứng giữa?', options: ['acid + ancol', 'acid + kiềm', 'ancol + kim loại', 'ester + nước'], answer: 0, explanation: 'Acid carboxylic + ancol → ester + nước.' },
+        { stem: 'Glucose thuộc loại carbohydrate nào?', options: ['polysaccharide', 'disaccharide', 'monosaccharide', 'không phải carbohydrate'], answer: 2, explanation: 'Glucose là monosaccharide.' },
+        { stem: 'Xà phòng là muối của?', options: ['acid vô cơ', 'acid béo', 'ancol', 'amine'], answer: 1, explanation: 'Xà phòng = muối Na/K của acid béo.' },
+        { stem: 'Protein bị đông tụ khi?', options: ['làm lạnh', 'pha loãng', 'để yên', 'đun nóng'], answer: 3, explanation: 'Nhiệt làm protein đông tụ (biến tính).' },
+        { stem: 'Kim loại nào nhẹ nhất?', options: ['Li', 'Fe', 'Pb', 'Cu'], answer: 0, explanation: 'Lithium có khối lượng riêng nhỏ nhất.' },
+        { stem: 'Kim loại nào tác dụng với nước ở nhiệt độ thường?', options: ['Cu', 'Ag', 'Na', 'Au'], answer: 2, explanation: 'Na (kim loại kiềm) phản ứng mạnh với nước.' },
+        { stem: 'Tơ visco, tơ acetate thuộc loại tơ?', options: ['thiên nhiên', 'bán tổng hợp', 'tổng hợp', 'không phải tơ'], answer: 1, explanation: 'Tơ nhân tạo (bán tổng hợp) từ cellulose.' },
+        { stem: 'Glucose tác dụng $H_2$ (Ni, $t^\\circ$) tạo ra?', options: ['fructose', 'acid gluconic', 'ethanol', 'sorbitol'], answer: 3, explanation: 'Khử nhóm $-CHO$ → sorbitol.' },
+        { stem: 'Dung dịch chất nào làm quỳ tím hóa đỏ?', options: ['glutamic acid', 'glycine', 'lysine', 'alanine'], answer: 0, explanation: 'Glutamic acid có 2 nhóm $-COOH$ ⇒ tính acid.' },
+        { stem: 'Phản ứng tạo polymer từ monomer có liên kết bội là?', options: ['trùng ngưng', 'thủy phân', 'trùng hợp', 'ester hóa'], answer: 2, explanation: 'Trùng hợp.' },
+      ],
+    },
   ],
 
   ANH: [
