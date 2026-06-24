@@ -111,6 +111,21 @@ const EXAMS = {
         { stem: 'Vectơ pháp tuyến của mặt phẳng $3x-4z+5=0$ là?', options: ['$(3;0;-4)$', '$(3;-4;0)$', '$(3;-4;5)$', '$(3;0;4)$'], answer: 0, explanation: 'Thiếu $y$ ⇒ hệ số $y=0$.' },
       ],
     },
+    {
+      examId: 'kt45-5', title: 'Kiểm tra 45′ #5 — Xác suất có điều kiện & Thống kê', durationMin: 45,
+      questions: [
+        { stem: 'Cho $P(A\\cap B)=0{,}2$, $P(B)=0{,}4$. Tính $P(A\\mid B)$.', options: ['$0{,}5$', '$0{,}8$', '$0{,}08$', '$0{,}2$'], answer: 0, explanation: '$\\dfrac{0{,}2}{0{,}4}=0{,}5$.' },
+        { stem: '$A,B$ độc lập, $P(A)=0{,}3$, $P(B)=0{,}5$. Tính $P(A\\cap B)$.', options: ['$0{,}15$', '$0{,}8$', '$0{,}2$', '$0{,}5$'], answer: 0, explanation: '$P(A)P(B)=0{,}15$.' },
+        { stem: 'Khoảng biến thiên của mẫu $2,5,9,12$ là?', options: ['$10$', '$7$', '$2$', '$12$'], answer: 0, explanation: '$12-2=10$.' },
+        { stem: 'Gieo một xúc xắc. Xác suất "số chẵn" biết "số $\\ge 3$" là?', options: ['$\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{4}$', '$\\dfrac{2}{3}$'], answer: 0, explanation: '$B=\\{3,4,5,6\\}, A\\cap B=\\{4,6\\}\\Rightarrow 2/4$.' },
+        { stem: 'Phương sai và độ lệch chuẩn đo đại lượng nào?', options: ['Độ phân tán của dữ liệu', 'Giá trị trung bình', 'Giá trị lớn nhất', 'Trung vị'], answer: 0, explanation: 'Đo mức độ phân tán quanh trung bình.' },
+        { stem: 'Phương sai của mẫu $4,4,4,4$ là?', options: ['$0$', '$4$', '$16$', '$1$'], answer: 0, explanation: 'Mọi giá trị bằng trung bình ⇒ phương sai $=0$.' },
+        { stem: 'Cho $P(A\\cap B)=0{,}1$, $P(A\\mid B)=0{,}5$. Tính $P(B)$.', options: ['$0{,}2$', '$0{,}05$', '$0{,}5$', '$0{,}6$'], answer: 0, explanation: '$P(B)=\\dfrac{0{,}1}{0{,}5}=0{,}2$.' },
+        { stem: 'Khoảng tứ phân vị $\\Delta_Q$ của mẫu $1,3,5,7,9$ là?', options: ['$6$', '$4$', '$8$', '$2$'], answer: 0, explanation: '$Q_1=2, Q_3=8 \\Rightarrow \\Delta_Q=6$.' },
+        { stem: 'Nếu $P(A\\mid B)=P(A)$ thì hai biến cố $A,B$?', options: ['Độc lập', 'Xung khắc', 'Đối nhau', 'Bằng nhau'], answer: 0, explanation: 'Định nghĩa biến cố độc lập.' },
+        { stem: 'Độ lệch chuẩn $s$ bằng?', options: ['Căn bậc hai của phương sai', 'Bình phương phương sai', 'Trung bình', 'Phương sai'], answer: 0, explanation: '$s=\\sqrt{s^2}$.' },
+      ],
+    },
   ],
 
   TOEIC: [
