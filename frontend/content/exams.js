@@ -1354,6 +1354,21 @@ const EXAMS = {
         { stem: 'Refunds will be ____ within 7 business days.', options: ['issue', 'issued', 'issuing', 'issues'], answer: 1, explanation: 'will be + V3 (bị động): issued.' },
       ],
     },
+    {
+      examId: 'toeic-16', title: 'TOEIC – Grammar & Vocabulary #16', durationMin: 20,
+      questions: [
+        { stem: 'The applicant has all the necessary ____ for this position.', options: ['quantities', 'qualities', 'quotations', 'qualifications'], answer: 3, explanation: 'qualifications = bằng cấp, năng lực.' },
+        { stem: 'We will ____ you of the results by email.', options: ['perform', 'conform', 'inform', 'reform'], answer: 2, explanation: 'inform sb of sth = thông báo.' },
+        { stem: 'The package was delivered ____ time.', options: ['on', 'in', 'at', 'by'], answer: 0, explanation: 'on time = đúng giờ.' },
+        { stem: 'Our staff are highly ____ and experienced.', options: ['skilling', 'skills', 'skillfully', 'skilled'], answer: 3, explanation: 'highly skilled = lành nghề.' },
+        { stem: 'We need to ____ the budget before the new year.', options: ['finalize', 'finally', 'final', 'finalist'], answer: 0, explanation: 'finalize = hoàn tất.' },
+        { stem: 'The company ____ a new branch in Hanoi last month.', options: ['opened', 'open', 'opening', 'opens'], answer: 0, explanation: 'Quá khứ đơn (last month): opened.' },
+        { stem: 'He was ____ for his outstanding contribution.', options: ['recognizing', 'recognized', 'recognition', 'recognize'], answer: 1, explanation: 'be + V3 (bị động): was recognized.' },
+        { stem: 'All new employees must attend an orientation ____.', options: ['sector', 'segment', 'series', 'session'], answer: 3, explanation: 'orientation session = buổi định hướng.' },
+        { stem: 'The reported figures are ____ accurate.', options: ['reason', 'reasonable', 'reasonably', 'reasoning'], answer: 2, explanation: 'Cần trạng từ bổ nghĩa tính từ ⇒ reasonably.' },
+        { stem: 'We guarantee ____ delivery on all orders.', options: ['promptly', 'prompt', 'promptness', 'prompted'], answer: 1, explanation: 'Cần tính từ bổ nghĩa danh từ ⇒ prompt delivery.' },
+      ],
+    },
   ],
 
   IELTS: [
