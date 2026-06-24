@@ -1610,6 +1610,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'easy'.", options: ['simple', 'light', 'difficult', 'clear'], answer: 2, explanation: 'easy ↔ difficult (khó).' },
       ],
     },
+    {
+      examId: 'anh-kt45-27', title: 'Kiểm tra 45′ #27 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'Do you mind if I ____ the window?', options: ['open', 'to open', 'opening', 'opened'], answer: 0, explanation: 'if I + hiện tại đơn (open).' },
+        { stem: "I haven't seen her ____ ages.", options: ['since', 'ago', 'by', 'for'], answer: 3, explanation: 'for + khoảng thời gian (for ages).' },
+        { stem: "He's the ____ player on the whole team.", options: ['good', 'better', 'best', 'well'], answer: 2, explanation: 'So sánh nhất: the best.' },
+        { stem: 'She ____ when I called her last night.', options: ['slept', 'was sleeping', 'sleeps', 'sleep'], answer: 1, explanation: 'Quá khứ tiếp diễn (đang ngủ thì bị cắt ngang).' },
+        { stem: 'I look forward ____ from you soon.', options: ['to hear', 'hearing', 'to hearing', 'hear'], answer: 2, explanation: 'look forward to + V-ing.' },
+        { stem: 'The man ____ I saw at the station was very tall.', options: ['who', 'whom', 'which', 'whose'], answer: 1, explanation: 'whom làm tân ngữ chỉ người.' },
+        { stem: "Choose the synonym of 'famous'.", options: ['unknown', 'obscure', 'hidden', 'well-known'], answer: 3, explanation: 'famous ≈ well-known (nổi tiếng).' },
+        { stem: 'He suggested that she ____ a short break.', options: ['take', 'takes', 'took', 'taking'], answer: 0, explanation: 'suggest that + S + V nguyên thể (giả định).' },
+        { stem: 'By the time we got there, the show ____.', options: ['starts', 'started', 'had started', 'has started'], answer: 2, explanation: 'Hành động trước trong quá khứ ⇒ quá khứ hoàn thành.' },
+        { stem: "Choose the antonym of 'rich'.", options: ['wealthy', 'affluent', 'prosperous', 'poor'], answer: 3, explanation: 'rich ↔ poor (nghèo).' },
+      ],
+    },
   ],
 
   TOEIC: [
