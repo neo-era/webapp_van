@@ -689,6 +689,21 @@ const EXAMS = {
         { stem: 'Đổi $373$ K sang nhiệt độ Celsius?', options: ['$0$ °C', '$100$ °C', '$373$ °C', '$273$ °C'], answer: 1, explanation: '$373-273=100$ °C.' },
       ],
     },
+    {
+      examId: 'ly-kt45-20', title: 'Kiểm tra 45′ #20 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí từ ($1$ atm, $2$ L, $300$ K) sang ($2$ atm, $600$ K). Thể tích sau?', options: ['$2$ L', '$1$ L', '$4$ L', '$0{,}5$ L'], answer: 0, explanation: '$V_2=\\dfrac{p_1V_1T_2}{T_1p_2}=\\dfrac{1\\cdot2\\cdot600}{300\\cdot2}=2$ L.' },
+        { stem: 'Đun $250$ g nước ($c=4200$) tăng thêm $40$ °C cần nhiệt lượng?', options: ['$21000$ J', '$84000$ J', '$4200$ J', '$42000$ J'], answer: 3, explanation: '$Q=0{,}25\\cdot4200\\cdot40=42000$ J.' },
+        { stem: 'Đoạn dây $L=0{,}5$ m chuyển động $v=4$ m/s vuông góc $B=0{,}2$ T. Suất điện động?', options: ['$0{,}2$ V', '$0{,}4$ V', '$0{,}8$ V', '$1$ V'], answer: 1, explanation: '$e=BLv=0{,}2\\cdot0{,}5\\cdot4=0{,}4$ V.' },
+        { stem: 'Số neutron trong hạt nhân chì $^{206}_{82}Pb$?', options: ['$124$', '$82$', '$206$', '$288$'], answer: 0, explanation: '$N=206-82=124$.' },
+        { stem: 'Số khối của hạt $\\alpha$ ($^4_2He$)?', options: ['$2$', '$6$', '$1$', '$4$'], answer: 3, explanation: 'Hạt $\\alpha$ là $^4_2He$ ⇒ $A=4$.' },
+        { stem: 'Lực $F=20$ N kéo vật đi $s=5$ m (cùng hướng). Công thực hiện?', options: ['$50$ J', '$100$ J', '$200$ J', '$25$ J'], answer: 1, explanation: '$A=Fs=20\\cdot5=100$ J.' },
+        { stem: 'Đẳng tích: áp suất tăng từ $1$ atm lên $4$ atm, nhiệt độ ban đầu $300$ K. Nhiệt độ sau?', options: ['$600$ K', '$900$ K', '$1200$ K', '$300$ K'], answer: 2, explanation: '$T_2=T_1p_2/p_1=300\\cdot4=1200$ K.' },
+        { stem: 'Đơn vị của năng lượng nghỉ $E=mc^2$ là?', options: ['Jun', 'Niuton', 'Oát', 'Vôn'], answer: 0, explanation: 'Năng lượng đo bằng Jun (J).' },
+        { stem: 'Số nuclôn trong hạt nhân $^{16}_8O$?', options: ['$8$', '$24$', '$32$', '$16$'], answer: 3, explanation: 'Số nuclôn = số khối $A=16$.' },
+        { stem: 'Đổi $-23$ °C sang thang Kelvin?', options: ['$296$ K', '$250$ K', '$273$ K', '$223$ K'], answer: 1, explanation: '$-23+273=250$ K.' },
+      ],
+    },
   ],
 
   HOA: [
