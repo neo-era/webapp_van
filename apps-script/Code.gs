@@ -43,8 +43,9 @@ function handleApi(req) {
 
 /** Bảng phân nhánh action → hàm xử lý. */
 function route(action, req) {
-  ensureSheets();   // tự tạo tab + header nếu thiếu
-  seedIfEmpty();    // tự seed dữ liệu demo nếu DB trống
+  ensureSheets();        // tự tạo tab + header nếu thiếu
+  seedIfEmpty();         // tự seed dữ liệu demo nếu DB trống
+  seedCatalogIfEmpty();  // tự seed danh mục môn/chủ đề/bài giảng mẫu
 
   switch (action) {
     // --- Hệ thống ---
@@ -87,6 +88,21 @@ function route(action, req) {
     case 'getTeacherData': return getTeacherData(req);
     case 'assignTask':     return assignTask(req);
     case 'createClass':    return createClass(req);
+
+    // --- v2.0 Danh mục (Catalog.gs) ---
+    case 'getSubjects':    return getSubjects(req);
+    case 'getTopics':      return getTopics(req);
+    case 'saveSubject':    return saveSubject(req);
+    case 'saveTopic':      return saveTopic(req);
+
+    // --- v2.0 Bài giảng (Lessons.gs) ---
+    case 'getLessons':       return getLessons(req);
+    case 'getLesson':        return getLesson(req);
+    case 'saveLesson':       return saveLesson(req);
+    case 'setLessonStatus':  return setLessonStatus(req);
+    case 'deleteLesson':     return deleteLesson(req);
+    case 'markLearned':      return markLearned(req);
+    case 'getLearnedLessons': return getLearnedLessons(req);
 
     default:               return jsonError('Action không hợp lệ: ' + action);
   }

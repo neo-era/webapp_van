@@ -180,6 +180,8 @@ function logout() {
   App.state.token = null;
   App.data = { plans: [], goals: [], exam: null, notes: [], classes: [] };
   App._activeClass = null;
+  App.state.learn = { view: 'subjects' };
+  App.data.subjects = null;
   try { localStorage.removeItem('thpt_token'); } catch (e) {}
   $('#app-shell').classList.add('hidden');
   $('#screen-login').classList.remove('hidden');
@@ -199,7 +201,7 @@ function switchTab(tab) {
 
 function rerender() {
   const render = {
-    today: renderToday, calendar: renderCalendar, goals: renderGoals,
+    today: renderToday, learn: renderLearn, calendar: renderCalendar, goals: renderGoals,
     exam: renderExam, notes: renderNotes, profile: renderProfile, teacher: renderTeacher,
   }[App.state.tab];
   if (render) render();
@@ -482,6 +484,142 @@ async function savePassword() {
     closeModal(); showToast('Đã đổi mật khẩu', 'success');
   } catch (e) { showToast(e.message, 'error'); }
   finally { hideLoading(); }
+}
+
+/* ============================================================
+   HỌC — Bài giảng (môn → chủ đề → bài)
+   ============================================================ */
+function renderMarkdown(md, el) {
+  try { el.innerHTML = window.marked ? marked.parse(md || '') : (md || ''); }
+  catch (e) { el.textContent = md || ''; }
+  if (window.renderMathInElement) {
+    try {
+      renderMathInElement(el, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+        ],
+        throwOnError: false,
+      });
+    } catch (e) {}
+  }
+}
+
+async function renderLearn() {
+  const v = App.state.learn || (App.state.learn = { view: 'subjects' });
+  const el = $('#screen-learn');
+
+  if (v.view === 'subjects') {
+    el.innerHTML = `<div class="page-head"><h2>Học</h2><p>Chọn môn để xem bài giảng</p></div>
+      <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
+    try {
+      if (!App.data.subjects) App.data.subjects = await Api.call('getSubjects', { grade: App.state.user.grade || 12 });
+      $('#learn-body').innerHTML = App.data.subjects.length
+        ? App.data.subjects.map((s) => `
+          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.subjectCode}','${s.name.replace(/'/g, '')}')">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <strong>${s.name}</strong><span class="muted">›</span></div>
+          </div>`).join('')
+        : `<div class="empty">Chưa có môn học nào</div>`;
+    } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+    return;
+  }
+
+  if (v.view === 'topics') {
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
+        <h2>${v.subjectName}</h2><p>Chọn chủ đề</p></div>
+      <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
+    try {
+      const topics = await Api.call('getTopics', { subjectCode: v.subjectCode, grade: App.state.user.grade || 12 });
+      $('#learn-body').innerHTML = topics.length
+        ? topics.map((t) => `
+          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenTopic('${t.topicId}','${t.title.replace(/'/g, '')}')">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span>${t.title}</span><span class="muted">›</span></div>
+          </div>`).join('')
+        : `<div class="empty">Chủ đề đang được cập nhật</div>`;
+    } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+    return;
+  }
+
+  if (v.view === 'lessons') {
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
+        <h2>${v.topicTitle}</h2><p>Danh sách bài giảng</p></div>
+      <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
+    try {
+      const [lessons, learned] = await Promise.all([
+        Api.call('getLessons', { topicId: v.topicId }),
+        Api.call('getLearnedLessons', {}),
+      ]);
+      App.data.learned = learned || [];
+      $('#learn-body').innerHTML = lessons.length
+        ? lessons.map((l) => {
+          const done = App.data.learned.indexOf(l.lessonId) >= 0;
+          return `<div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenLesson('${l.lessonId}','${l.title.replace(/'/g, '')}')">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span>${done ? '✅ ' : ''}${l.title}</span>
+              <span class="badge-assigned">${l.level === 'NANG_CAO' ? 'Nâng cao' : (l.level === 'CHUYEN' ? 'Chuyên' : 'Cơ bản')}</span></div>
+          </div>`;
+        }).join('')
+        : `<div class="empty">Bài giảng đang được biên soạn</div>`;
+    } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+    return;
+  }
+
+  if (v.view === 'lesson') {
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('lessons')">‹ ${v.topicTitle}</p>
+        <h2>${v.lessonTitle}</h2></div>
+      <div class="card"><div id="lesson-content" class="lesson-content"><div class="empty">Đang tải…</div></div></div>
+      <button id="lesson-learn-btn" class="btn btn-block" style="margin-top:14px" onclick="learnToggleLearned()">…</button>`;
+    try {
+      const lesson = await Api.call('getLesson', { lessonId: v.lessonId });
+      v.lesson = lesson;
+      renderMarkdown(lesson.contentMd, $('#lesson-content'));
+      const done = (App.data.learned || []).indexOf(v.lessonId) >= 0;
+      updateLearnBtn(done);
+    } catch (e) { $('#lesson-content').innerHTML = `<div class="empty">${e.message}</div>`; }
+    return;
+  }
+}
+
+function updateLearnBtn(done) {
+  const btn = $('#lesson-learn-btn');
+  if (!btn) return;
+  btn.textContent = done ? '✓ Đã học (bỏ đánh dấu)' : 'Đánh dấu đã học';
+  btn.className = 'btn btn-block ' + (done ? 'btn-ghost' : 'btn-primary');
+}
+
+function learnOpenSubject(code, name) {
+  App.state.learn = { view: 'topics', subjectCode: code, subjectName: name };
+  renderLearn();
+}
+function learnOpenTopic(topicId, title) {
+  Object.assign(App.state.learn, { view: 'lessons', topicId: topicId, topicTitle: title });
+  renderLearn();
+}
+function learnOpenLesson(lessonId, title) {
+  Object.assign(App.state.learn, { view: 'lesson', lessonId: lessonId, lessonTitle: title });
+  renderLearn();
+}
+function learnBack(view) {
+  App.state.learn.view = view;
+  if (view === 'subjects') App.state.learn = { view: 'subjects' };
+  renderLearn();
+}
+async function learnToggleLearned() {
+  const id = App.state.learn.lessonId;
+  const learned = App.data.learned || (App.data.learned = []);
+  const isDone = learned.indexOf(id) >= 0;
+  try {
+    await Api.call('markLearned', { lessonId: id, learned: !isDone });
+    if (isDone) App.data.learned = learned.filter((x) => x !== id);
+    else App.data.learned.push(id);
+    updateLearnBtn(!isDone);
+    showToast(!isDone ? 'Đã đánh dấu học xong' : 'Đã bỏ đánh dấu', 'success');
+  } catch (e) { showToast(e.message, 'error'); }
 }
 
 /* ============================================================

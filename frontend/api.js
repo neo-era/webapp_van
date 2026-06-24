@@ -84,6 +84,24 @@ const MockApi = {
       case 'uploadFile':
         return { fileUrl: 'https://example.com/demo-file', name: payload.filename };
 
+      case 'getSubjects':
+        return MOCK.subjects;
+      case 'getTopics':
+        return MOCK.topics[payload.subjectCode] || [];
+      case 'getLessons':
+        return MOCK.lessons[payload.topicId] || [];
+      case 'getLesson': {
+        for (const k in MOCK.lessons) {
+          const f = MOCK.lessons[k].find((l) => l.lessonId === payload.lessonId);
+          if (f) return f;
+        }
+        return null;
+      }
+      case 'markLearned':
+        return { lessonId: payload.lessonId, learned: !!payload.learned };
+      case 'getLearnedLessons':
+        return [];
+
       case 'getStudentData':
         return {
           user: MOCK.student,

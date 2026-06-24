@@ -17,6 +17,16 @@ const SCHEMA = {
   ExamPlans: ['studentId', 'examDate', 'subjects', 'milestones'],
   Notes:     ['noteId', 'studentId', 'subject', 'title', 'content', 'fileUrl', 'createdAt', 'updatedAt'],
   Sessions:  ['token', 'userId', 'expiresAt'],
+
+  // --- v2.0: nền tảng học tập ---
+  Subjects:       ['subjectCode', 'name', 'grades', 'category', 'active'],
+  Topics:         ['topicId', 'subjectCode', 'grade', 'parentId', 'title', 'order'],
+  Lessons:        ['lessonId', 'subjectCode', 'grade', 'topicId', 'title', 'level', 'skill', 'contentMd', 'order', 'status', 'source', 'createdBy', 'updatedAt'],
+  Questions:      ['questionId', 'subjectCode', 'grade', 'topicId', 'type', 'difficulty', 'level', 'stem', 'options', 'answer', 'explanation', 'status', 'source'],
+  Exams:          ['examId', 'title', 'subjectCode', 'grade', 'kind', 'questionIds', 'durationMin', 'level', 'published'],
+  Attempts:       ['attemptId', 'studentId', 'examId', 'answers', 'score', 'maxScore', 'startedAt', 'submittedAt'],
+  LessonProgress: ['studentId', 'lessonId', 'status', 'updatedAt'],
+  AIChats:        ['msgId', 'studentId', 'context', 'role', 'content', 'model', 'tokens', 'createdAt'],
 };
 
 /** Spreadsheet đang gắn với Apps Script này. */

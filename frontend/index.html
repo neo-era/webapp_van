@@ -92,6 +92,8 @@
     <main class="app-main">
       <!-- HÔM NAY -->
       <section id="screen-today" class="screen-tab"></section>
+      <!-- HỌC (bài giảng) -->
+      <section id="screen-learn" class="screen-tab hidden"></section>
       <!-- LỊCH -->
       <section id="screen-calendar" class="screen-tab hidden"></section>
       <!-- MỤC TIÊU -->
@@ -110,6 +112,9 @@
     <nav id="bottom-nav" class="bottom-nav">
       <button class="nav-item active" data-tab="today">
         <span class="nav-ico">🏠</span><span class="nav-label">Hôm nay</span>
+      </button>
+      <button class="nav-item" data-tab="learn">
+        <span class="nav-ico">📚</span><span class="nav-label">Học</span>
       </button>
       <button class="nav-item" data-tab="calendar">
         <span class="nav-ico">📅</span><span class="nav-label">Lịch</span>
@@ -151,7 +156,11 @@
     </div>
   </div>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   <script src="mock-data.js"></script>
   <script src="api.js"></script>
   <script src="app.js"></script>

@@ -333,6 +333,17 @@ table.data th { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; 
 }
 .class-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
+/* ---------- Bài giảng (Markdown) ---------- */
+.lesson-content { font-size: 0.96rem; line-height: 1.7; overflow-x: auto; }
+.lesson-content h2 { font-size: 1.15rem; margin: 14px 0 8px; color: var(--accent); }
+.lesson-content h3 { font-size: 1rem; margin: 12px 0 6px; }
+.lesson-content p { margin: 8px 0; }
+.lesson-content ul, .lesson-content ol { margin: 8px 0 8px 20px; }
+.lesson-content li { margin: 4px 0; }
+.lesson-content code { background: var(--bg-muted); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+.lesson-content strong { color: var(--text-primary); }
+.lesson-content .katex { font-size: 1.05em; }
+
 /* ---------- Profile ---------- */
 .profile-big-avatar {
   width: 76px; height: 76px; border-radius: 50%;

@@ -68,6 +68,26 @@ const MOCK = {
     { classId: 'c001', name: '12A1', studentCount: 3 },
     { classId: 'c002', name: '12A2', studentCount: 2 },
   ],
+  // --- v2: học tập (demo) ---
+  subjects: [
+    { subjectCode: 'TOAN', name: 'Toán', grades: ['12'], category: 'BAT_BUOC', active: true },
+    { subjectCode: 'LY', name: 'Vật lí', grades: ['12'], category: 'TU_CHON', active: true },
+    { subjectCode: 'HOA', name: 'Hóa học', grades: ['12'], category: 'TU_CHON', active: true },
+    { subjectCode: 'ANH', name: 'Tiếng Anh', grades: ['12'], category: 'BAT_BUOC', active: true },
+  ],
+  topics: {
+    TOAN: [
+      { topicId: 'tt1', subjectCode: 'TOAN', grade: 12, title: 'Ứng dụng đạo hàm & khảo sát hàm số', order: 1 },
+      { topicId: 'tt2', subjectCode: 'TOAN', grade: 12, title: 'Nguyên hàm – Tích phân', order: 2 },
+    ],
+  },
+  lessons: {
+    tt1: [
+      { lessonId: 'll1', topicId: 'tt1', subjectCode: 'TOAN', title: 'Tính đơn điệu của hàm số', level: 'CO_BAN',
+        contentMd: '## Cốt lõi\n\nHàm số $y=f(x)$ **đồng biến** trên $K$ nếu $f\'(x)\\ge 0$ với mọi $x\\in K$.\n\n## Nâng cao\nBài toán tham số quy về $f\'(x)\\ge 0\\ \\forall x$.' },
+    ],
+  },
+
   classStudents: {
     c001: [
       { name: 'Nguyễn Văn An', progress: 72, late: 0 },

@@ -92,11 +92,69 @@ function seedIfEmpty() {
   });
 }
 
+/** Seed danh mục môn + chủ đề + vài bài giảng mẫu (nếu Subjects rỗng). */
+function seedCatalogIfEmpty() {
+  if (getRows('Subjects').length > 0) return;
+  const t = now();
+
+  // Môn lớp 12 (MVP)
+  const subjects = [
+    { subjectCode: 'TOAN', name: 'Toán', category: 'BAT_BUOC' },
+    { subjectCode: 'LY', name: 'Vật lí', category: 'TU_CHON' },
+    { subjectCode: 'HOA', name: 'Hóa học', category: 'TU_CHON' },
+    { subjectCode: 'ANH', name: 'Tiếng Anh', category: 'BAT_BUOC' },
+  ];
+  subjects.forEach(function (s) {
+    appendRow('Subjects', { subjectCode: s.subjectCode, name: s.name, grades: '12', category: s.category, active: 'TRUE' });
+  });
+
+  // Vài chương mẫu mỗi môn
+  const chapters = {
+    TOAN: ['Ứng dụng đạo hàm & khảo sát hàm số', 'Nguyên hàm – Tích phân', 'Số phức'],
+    LY: ['Dao động cơ', 'Sóng cơ', 'Dòng điện xoay chiều'],
+    HOA: ['Este – Lipit', 'Amin – Amino axit – Protein', 'Đại cương kim loại'],
+    ANH: ['Tenses & Verb forms', 'Reading skills', 'Writing skills'],
+  };
+  const topicIdByTitle = {};
+  Object.keys(chapters).forEach(function (code) {
+    chapters[code].forEach(function (title, i) {
+      const id = genId('t');
+      appendRow('Topics', { topicId: id, subjectCode: code, grade: 12, parentId: '', title: title, order: i + 1 });
+      topicIdByTitle[code + '|' + title] = id;
+    });
+  });
+
+  // Bài giảng mẫu (đã xuất bản) cho Toán 12 — chương đầu
+  const toanTopic = topicIdByTitle['TOAN|Ứng dụng đạo hàm & khảo sát hàm số'];
+  appendRow('Lessons', {
+    lessonId: genId('l'), subjectCode: 'TOAN', grade: 12, topicId: toanTopic,
+    title: 'Tính đơn điệu của hàm số', level: 'CO_BAN', skill: '',
+    contentMd: [
+      '## Cốt lõi',
+      '',
+      'Hàm số $y=f(x)$ **đồng biến** trên khoảng $K$ nếu $f\'(x) \\ge 0$ với mọi $x \\in K$ (dấu bằng tại hữu hạn điểm).',
+      '',
+      '- $f\'(x) > 0$ trên $K$ ⇒ hàm số đồng biến trên $K$.',
+      '- $f\'(x) < 0$ trên $K$ ⇒ hàm số nghịch biến trên $K$.',
+      '',
+      '### Các bước xét tính đơn điệu',
+      '1. Tìm tập xác định.',
+      '2. Tính $f\'(x)$, tìm nghiệm và điểm $f\'(x)$ không xác định.',
+      '3. Lập bảng biến thiên, kết luận.',
+      '',
+      '## Nâng cao',
+      'Bài toán tham số $m$: tìm $m$ để hàm số đồng biến trên $\\mathbb{R}$ thường quy về điều kiện $f\'(x) \\ge 0\\ \\forall x$ (xét $\\Delta \\le 0$ và hệ số dẫn đầu).',
+    ].join('\n'),
+    order: 1, status: 'PUBLISHED', source: 'MANUAL', createdBy: 'seed', updatedAt: t,
+  });
+}
+
 /** Có thể chạy tay từ trình Apps Script nếu muốn khởi tạo ngay. */
 function initDatabase() {
   ensureSheets();
   seedIfEmpty();
-  Logger.log('Khởi tạo xong. Users: ' + getRows('Users').length);
+  seedCatalogIfEmpty();
+  Logger.log('Khởi tạo xong. Users: ' + getRows('Users').length + ', Subjects: ' + getRows('Subjects').length);
 }
 
 /**
