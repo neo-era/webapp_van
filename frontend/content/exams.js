@@ -1522,6 +1522,21 @@ const EXAMS = {
         { stem: 'The findings suggest that climate change ____ accelerating.', options: ['are', 'is', 'were', 'be'], answer: 1, explanation: '"climate change" số ít ⇒ is.' },
       ],
     },
+    {
+      examId: 'ielts-kt-15', title: 'IELTS – Vocabulary & Grammar #15', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "diligent".', options: ['hardworking', 'lazy', 'careless', 'idle'], answer: 0, explanation: 'diligent ≈ hardworking (siêng năng).' },
+        { stem: 'Choose the synonym of "ambiguous".', options: ['unclear', 'clear', 'precise', 'definite'], answer: 0, explanation: 'ambiguous ≈ unclear (mơ hồ).' },
+        { stem: 'Choose the antonym of "permit".', options: ['allow', 'let', 'enable', 'forbid'], answer: 3, explanation: 'permit ↔ forbid (cấm).' },
+        { stem: 'It is imperative that the report ____ submitted today.', options: ['is', 'be', 'was', 'being'], answer: 1, explanation: 'It is imperative that + S + V nguyên thể (giả định): be.' },
+        { stem: 'Choose the synonym of "robust".', options: ['weak', 'fragile', 'delicate', 'strong'], answer: 3, explanation: 'robust ≈ strong (mạnh mẽ, bền).' },
+        { stem: 'Only by working together ____ succeed.', options: ['we can', 'can we', 'we could', 'could we'], answer: 1, explanation: 'Đảo ngữ với "Only by…": + trợ động từ + S.' },
+        { stem: 'Choose the antonym of "diverse".', options: ['uniform', 'varied', 'mixed', 'assorted'], answer: 0, explanation: 'diverse ↔ uniform (đồng nhất).' },
+        { stem: 'The proposal, ____ was rejected last week, has been revised.', options: ['who', 'that', 'whose', 'which'], answer: 3, explanation: 'which mở đầu mệnh đề quan hệ không xác định cho vật.' },
+        { stem: 'Choose the synonym of "endure".', options: ['collapse', 'surrender', 'withstand', 'yield'], answer: 2, explanation: 'endure ≈ withstand (chịu đựng).' },
+        { stem: 'So complex was the problem ____ no one could solve it.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
