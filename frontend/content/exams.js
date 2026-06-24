@@ -434,6 +434,21 @@ const EXAMS = {
         { stem: 'Định luật phóng xạ có dạng?', options: ['$N=N_0 2^{t/T}$', '$N=N_0 e^{\\lambda t}$', '$N=N_0 2^{-t/T}$', '$N=N_0 t$'], answer: 2, explanation: '$N=N_0 2^{-t/T}=N_0 e^{-\\lambda t}$.' },
       ],
     },
+    {
+      examId: 'ly-kt45-3', title: 'Kiểm tra 45′ #3 — Tổng hợp Vật lí 12', durationMin: 45,
+      questions: [
+        { stem: 'Khí nhận nhiệt $Q=200$ J và sinh công $50$ J. Tính $\\Delta U$.', options: ['$250$ J', '$150$ J', '$50$ J', '$-150$ J'], answer: 1, explanation: '$A=-50,\\ \\Delta U=A+Q=150$ J.' },
+        { stem: 'Nhiệt lượng đun $0{,}5$ kg nước tăng $20$ °C ($c=4200$)?', options: ['$4200$ J', '$42000$ J', '$21000$ J', '$84000$ J'], answer: 1, explanation: '$Q=0{,}5\\cdot4200\\cdot20=42000$ J.' },
+        { stem: 'Đẳng nhiệt: $p_1=3$, $V_1=2$, sang $p_2=2$. Tính $V_2$.', options: ['$1$', '$2$', '$3$', '$6$'], answer: 2, explanation: '$V_2=\\dfrac{p_1V_1}{p_2}=3$.' },
+        { stem: '$0$ °C bằng bao nhiêu Kelvin?', options: ['$0$', '$273$', '$300$', '$-273$'], answer: 1, explanation: '$T=0+273=273$ K.' },
+        { stem: 'Lực từ với $B=0{,}5$ T, $I=4$ A, $l=0{,}2$ m (vuông góc)?', options: ['$0{,}4$ N', '$4$ N', '$0{,}1$ N', '$0{,}8$ N'], answer: 0, explanation: '$F=BIl=0{,}5\\cdot4\\cdot0{,}2=0{,}4$ N.' },
+        { stem: 'Từ thông $N=2$ vòng, $B=0{,}5$ T, $S=0{,}1$ m², $\\alpha=0$?', options: ['$1$', '$0{,}1$', '$0{,}01$', '$0{,}5$'], answer: 1, explanation: '$\\Phi=NBS=0{,}1$ Wb.' },
+        { stem: 'Hạt nhân $^{12}_{6}C$ có bao nhiêu proton?', options: ['$12$', '$6$', '$18$', '$0$'], answer: 1, explanation: '$Z=6$.' },
+        { stem: 'Sau 2 chu kì bán rã, còn lại bao nhiêu phần trăm?', options: ['$50\\%$', '$25\\%$', '$12{,}5\\%$', '$75\\%$'], answer: 1, explanation: '$2^{-2}=\\tfrac14=25\\%$.' },
+        { stem: 'Hằng số phóng xạ $\\lambda$ liên hệ chu kì bán rã $T$ qua?', options: ['$\\lambda=\\dfrac{T}{\\ln2}$', '$\\lambda=\\ln2\\cdot T$', '$\\lambda=\\dfrac{\\ln2}{T}$', '$\\lambda=2T$'], answer: 2, explanation: '$\\lambda=\\dfrac{\\ln2}{T}$.' },
+        { stem: 'Đẳng áp: $V_1=2$ ở $T_1=300$ K, sang $T_2=450$ K. Tính $V_2$.', options: ['$2$', '$3$', '$4{,}5$', '$1{,}5$'], answer: 1, explanation: '$\\dfrac{V}{T}$ const ⇒ $V_2=2\\cdot\\dfrac{450}{300}=3$.' },
+      ],
+    },
   ],
 
   TOEIC: [
