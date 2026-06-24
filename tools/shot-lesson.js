@@ -20,12 +20,12 @@ const wait = (ms) => new Promise((r) => setTimeout(r, ms));
     document.getElementById('screen-login').classList.add('hidden');
     document.getElementById('app-shell').classList.remove('hidden');
     App.state.tab = 'learn';
-    App.state.learn = { view: 'lesson', subjectCode: 'TOAN', subjectName: 'Toán', topicId: 't-toan-c4', topicTitle: 'Chương 4', lessonId: 'l-toan-ungdung-tp', lessonTitle: 'Ứng dụng tích phân' };
+    App.state.learn = { view: 'lesson', subjectCode: 'TOAN', subjectName: 'Toán', topicId: 't-toan-c1', topicTitle: 'Chương 1', lessonId: 'l-toan-tiemcan', lessonTitle: 'Tiệm cận' };
     switchTab('learn');
     return true;
   });
   await wait(700);
-  await p.screenshot({ path: path.join(ROOT, 'screenshots', 'lesson-tichphan.png'), fullPage: true });
+  await p.screenshot({ path: path.join(ROOT, 'screenshots', 'lesson-tiemcan.png'), fullPage: true });
   const r = await p.evaluate(() => ({
     katex: document.querySelectorAll('#lesson-content .katex').length,
     hasBBT: !!document.querySelector('#lesson-content table.bbt'),

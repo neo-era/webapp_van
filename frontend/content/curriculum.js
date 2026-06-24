@@ -64,6 +64,25 @@ const CURRICULUM = {
                     <p>$y'=-3x^2+6x=-3x(x-2)$; $y'=0 \\Leftrightarrow x=0$ hoặc $x=2$. Hàm số <strong>đồng biến</strong> trên $(0;2)$, <strong>nghịch biến</strong> trên $(-\\infty;0)$ và $(2;+\\infty)$.</p>
                   </details>
                 </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (hàm phân thức)</div>
+                  <p>Xét tính đơn điệu của $y=\\dfrac{x-2}{x+1}$.</p>
+                  <p><strong>Giải:</strong> TXĐ $\\mathbb{R}\\setminus\\{-1\\}$. $y'=\\dfrac{(x+1)-(x-2)}{(x+1)^2}=\\dfrac{3}{(x+1)^2}>0$.</p>
+                  <p>Vậy hàm <strong>đồng biến</strong> trên mỗi khoảng $(-\\infty;-1)$ và $(-1;+\\infty)$ (không kết luận đồng biến trên cả hai vì không liên tục tại $x=-1$).</p>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 3 (bài toán tham số)</div>
+                  <p>Tìm $m$ để $y=x^3+3x^2+mx-1$ đồng biến trên $\\mathbb{R}$.</p>
+                  <p><strong>Giải:</strong> $y'=3x^2+6x+m\\ge 0\\ \\forall x \\Leftrightarrow \\Delta'=9-3m\\le 0 \\Leftrightarrow m\\ge 3$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Xét tính đơn điệu của $y=x^4-2x^2$.</p>
+                  <details><summary>Đáp án</summary><p>$y'=4x^3-4x=4x(x-1)(x+1)$. Đồng biến trên $(-1;0)$ và $(1;+\\infty)$; nghịch biến trên $(-\\infty;-1)$ và $(0;1)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm $m$ để $y=\\dfrac{mx+1}{x+2}$ đồng biến trên từng khoảng xác định.</p>
+                  <details><summary>Đáp án</summary><p>$y'=\\dfrac{2m-1}{(x+2)^2}>0 \\Leftrightarrow 2m-1>0 \\Leftrightarrow m>\\dfrac{1}{2}$.</p></details>
+                </div>
               `,
             },
             {
@@ -99,6 +118,29 @@ const CURRICULUM = {
                     <p>$y'=3x^2-3m$. Hàm có 2 cực trị $\\Leftrightarrow y'=0$ có 2 nghiệm phân biệt $\\Leftrightarrow m>0$.</p>
                   </details>
                 </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (hàm trùng phương)</div>
+                  <p>Tìm cực trị của $y=x^4-2x^2$.</p>
+                  <p><strong>Giải:</strong> $y'=4x^3-4x=4x(x-1)(x+1)$; $y'=0\\Leftrightarrow x=0,\\pm1$.</p>
+                  <ul>
+                    <li>$x=\\pm1$: cực tiểu, $y_{CT}=-1$.</li>
+                    <li>$x=0$: cực đại, $y_{CĐ}=0$.</li>
+                  </ul>
+                  <p>Đồ thị dạng chữ W — có <strong>3 cực trị</strong>.</p>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 3 (dùng đạo hàm cấp hai)</div>
+                  <p>Xét $y=x^3-3x$: $y'=3x^2-3=0\\Leftrightarrow x=\\pm1$; $y''=6x$.</p>
+                  <p>$y''(-1)=-6<0$ ⇒ $x=-1$ cực đại; $y''(1)=6>0$ ⇒ $x=1$ cực tiểu.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Hàm $y=x^4+2x^2$ có mấy cực trị?</p>
+                  <details><summary>Đáp án</summary><p>$y'=4x^3+4x=4x(x^2+1)=0\\Leftrightarrow x=0$. Chỉ <strong>1 cực trị</strong> (cực tiểu tại $x=0$).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm $m$ để $y=x^4-2mx^2+1$ có 3 điểm cực trị.</p>
+                  <details><summary>Đáp án</summary><p>$y'=4x^3-4mx=4x(x^2-m)$. Có 3 cực trị $\\Leftrightarrow x^2=m$ có 2 nghiệm khác 0 $\\Leftrightarrow m>0$.</p></details>
+                </div>
               `,
             },
             {
@@ -128,6 +170,25 @@ const CURRICULUM = {
                     <p>$y'=1-\\dfrac{4}{x^2}=0 \\Leftrightarrow x=2$. Lập BBT ⇒ $\\min y = y(2)=4$ (theo Cô-si: $x+\\dfrac{4}{x}\\ge 2\\sqrt{4}=4$).</p>
                   </details>
                 </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (trên đoạn, hàm trùng phương)</div>
+                  <p>Tìm GTLN, GTNN của $y=x^4-2x^2+3$ trên $[-1;2]$.</p>
+                  <p><strong>Giải:</strong> $y'=4x^3-4x=4x(x-1)(x+1)$; nghiệm trong đoạn: $x=-1,0,1$.</p>
+                  <p>$y(-1)=2,\\ y(0)=3,\\ y(1)=2,\\ y(2)=11$. Vậy $\\max y=11$ tại $x=2$; $\\min y=2$ tại $x=\\pm1$.</p>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 3 (bài toán thực tế)</div>
+                  <p>Một mảnh vườn hình chữ nhật có chu vi $20$ m. Tìm kích thước để diện tích lớn nhất.</p>
+                  <p><strong>Giải:</strong> Gọi một cạnh là $x$ thì cạnh kia $10-x$. $S=x(10-x)=-x^2+10x$, $S'=-2x+10=0\\Leftrightarrow x=5$. Vậy hình vuông cạnh $5$ m, $S_{\\max}=25\\ \\text{m}^2$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm GTLN, GTNN của $y=2x^3-3x^2-12x+1$ trên $[-2;3]$.</p>
+                  <details><summary>Đáp án</summary><p>$y'=6x^2-6x-12=6(x-2)(x+1)$; nghiệm $-1,2$. $y(-2)=-3,\\ y(-1)=8,\\ y(2)=-19,\\ y(3)=-8$. Vậy $\\max=8$ tại $x=-1$; $\\min=-19$ tại $x=2$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm GTNN của $y=x+\\dfrac{9}{x}$ trên $(0;+\\infty)$.</p>
+                  <details><summary>Đáp án</summary><p>$y'=1-\\dfrac{9}{x^2}=0\\Leftrightarrow x=3$; $\\min y=y(3)=6$ (Cô-si).</p></details>
+                </div>
               `,
             },
             {
@@ -155,6 +216,33 @@ const CURRICULUM = {
                   <details><summary>Xem đáp án</summary>
                     <p>Tiệm cận đứng $x=2$ (mẫu $=0$); tiệm cận ngang $y=\\dfrac{1}{2}$.</p>
                   </details>
+                </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (đồ thị & tiệm cận của hàm phân thức)</div>
+                  <p>Đồ thị $y=\\dfrac{2x+1}{x-1}$ có tiệm cận đứng $x=1$ và tiệm cận ngang $y=2$ (đường nét đứt):</p>
+                  <svg class="graph" viewBox="0 0 220 180" width="220" height="180" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="95" x2="215" y2="95" stroke="#94a3b8"/>
+                    <line x1="60" y1="12" x2="60" y2="175" stroke="#94a3b8"/>
+                    <line x1="120" y1="12" x2="120" y2="175" stroke="#dc2626" stroke-width="1" stroke-dasharray="4 3"/>
+                    <line x1="10" y1="95" x2="215" y2="95" stroke="#16a34a" stroke-width="1" stroke-dasharray="4 3"/>
+                    <polyline points="20,104 70,114 95,133 108,170" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <polyline points="132,20 145,58 170,76 220,86" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <text x="124" y="24" fill="#dc2626">x=1</text>
+                    <text x="14" y="90" fill="#16a34a">y=2</text>
+                  </svg>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 3 (tiệm cận xiên)</div>
+                  <p>Tìm tiệm cận của $y=\\dfrac{x^2+1}{x}=x+\\dfrac{1}{x}$.</p>
+                  <p><strong>Giải:</strong> Tiệm cận đứng $x=0$. Tiệm cận xiên: $a=\\lim\\dfrac{y}{x}=1$, $b=\\lim(y-x)=\\lim\\dfrac{1}{x}=0$ ⇒ $y=x$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm tiệm cận đứng và ngang của $y=\\dfrac{3x-2}{x+1}$.</p>
+                  <details><summary>Đáp án</summary><p>Tiệm cận đứng $x=-1$; tiệm cận ngang $y=3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Đồ thị $y=\\dfrac{2x-1}{x^2-1}$ có tất cả bao nhiêu đường tiệm cận?</p>
+                  <details><summary>Đáp án</summary><p>Mẫu $x^2-1=(x-1)(x+1)$ ⇒ 2 tiệm cận đứng $x=\\pm1$; bậc tử $<$ bậc mẫu ⇒ tiệm cận ngang $y=0$. Tổng cộng <strong>3 tiệm cận</strong>.</p></details>
                 </div>
               `,
             },
@@ -203,6 +291,34 @@ const CURRICULUM = {
                   <details><summary>Xem đáp án</summary>
                     <p>$y'=-3x^2+6x=-3x(x-2)$; $x=0$ (CT, $y=0$), $x=2$ (CĐ, $y=4$). Đồng biến $(0;2)$, nghịch biến ngoài đoạn đó.</p>
                   </details>
+                </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 — Khảo sát $y=x^4-2x^2$ (hàm trùng phương)</div>
+                  <p>TXĐ $\\mathbb{R}$; $y'=4x^3-4x=4x(x-1)(x+1)$, nghiệm $x=0,\\pm1$. $\\lim\\limits_{x\\to\\pm\\infty}y=+\\infty$.</p>
+                  <table class="bbt">
+                    <tr><td class="lbl">$x$</td><td>$-\\infty$</td><td>$-1$</td><td>$0$</td><td>$1$</td><td>$+\\infty$</td></tr>
+                    <tr><td class="lbl">$y'$</td><td>$-$</td><td>$0\\,+$</td><td>$0\\,-$</td><td>$0\\,+$</td><td></td></tr>
+                    <tr><td class="lbl">$y$</td><td>↘</td><td>$-1$ ↗ $0$</td><td>↘ $-1$</td><td>↗</td><td></td></tr>
+                  </table>
+                  <p>Đồ thị đối xứng qua trục $Oy$ (hàm chẵn), dạng chữ W; CĐ $(0;0)$, hai CT $(\\pm1;-1)$:</p>
+                  <svg class="graph" viewBox="0 0 220 150" width="220" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="76" x2="215" y2="76" stroke="#94a3b8"/>
+                    <line x1="110" y1="20" x2="110" y2="140" stroke="#94a3b8"/>
+                    <polyline points="20,51 50,121 80,96 110,76 140,96 170,121 200,51" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <circle cx="110" cy="76" r="3" fill="#16a34a"/>
+                    <circle cx="50" cy="121" r="3" fill="#dc2626"/>
+                    <circle cx="170" cy="121" r="3" fill="#dc2626"/>
+                    <text x="113" y="18">y</text>
+                    <text x="205" y="73">x</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Lập bảng biến thiên của $y=-x^4+2x^2$ và nêu cực trị.</p>
+                  <details><summary>Đáp án</summary><p>$y'=-4x^3+4x=-4x(x-1)(x+1)$; CĐ tại $x=\\pm1$ ($y=1$), CT tại $x=0$ ($y=0$). Đồ thị dạng chữ M (úp ngược).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Đồ thị hàm $y=\\dfrac{ax+b}{cx+d}$ có dạng gì?</p>
+                  <details><summary>Đáp án</summary><p>Dạng <strong>hyperbol</strong> gồm hai nhánh, nhận tiệm cận đứng $x=-\\dfrac{d}{c}$ và tiệm cận ngang $y=\\dfrac{a}{c}$ làm tâm đối xứng.</p></details>
                 </div>
               `,
             },
