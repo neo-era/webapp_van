@@ -289,6 +289,8 @@ Nâng cấp từ công cụ lập kế hoạch thành **nền tảng học tập
 
 > "Trường chuyên biệt" được mô hình hóa bằng **mức độ Chuyên** (lớp nội dung/đề nâng cao hơn), không phải khung chương trình khác.
 
+> **Khung chương trình:** **GDPT 2018** là khung hiện hành (Thông tư 32/2018/TT-BGDĐT); năm 2026 lớp 12 đã áp dụng hoàn toàn. Không có "GDPT 2026". Lưu ý: từ **năm học 2026–2027** dùng **bộ SGK thống nhất toàn quốc** — nội dung bài giảng/đề nên bám bộ SGK này và cập nhật theo các điều chỉnh nội dung của Bộ GD&ĐT (nếu có).
+
 ### 10.3 Vai trò mở rộng
 Thêm vai trò **Quản trị nội dung (CONTENT_ADMIN)** — có thể là giáo viên được cấp quyền — phụ trách sinh nháp AI, duyệt và xuất bản bài giảng/câu hỏi. (Giai đoạn đầu: gộp vào vai trò Giáo viên.)
 
