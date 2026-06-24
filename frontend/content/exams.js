@@ -634,6 +634,21 @@ const EXAMS = {
         { stem: 'The store is open ____ 9 a.m. to 6 p.m.', options: ['in', 'at', 'from', 'since'], answer: 2, explanation: 'from ... to ...' },
       ],
     },
+    {
+      examId: 'toeic-4', title: 'TOEIC – Grammar & Vocabulary #4', durationMin: 20,
+      questions: [
+        { stem: 'The shipment will arrive ____ two days.', options: ['on', 'at', 'by', 'in'], answer: 3, explanation: 'in + khoảng thời gian (tương lai).' },
+        { stem: 'We are pleased ____ announce the results.', options: ['to', 'for', 'with', 'of'], answer: 0, explanation: 'be pleased to + V.' },
+        { stem: 'The contract must be signed ____ both parties.', options: ['with', 'of', 'by', 'to'], answer: 2, explanation: 'Bị động: by + tác nhân.' },
+        { stem: 'Sales ____ increased recently.', options: ['has', 'have', 'having', 'had'], answer: 1, explanation: '"Sales" số nhiều + have.' },
+        { stem: 'Thank you for ____ us.', options: ['contact', 'contacted', 'contacts', 'contacting'], answer: 3, explanation: 'for + V-ing.' },
+        { stem: 'Choose the synonym of "expand".', options: ['grow', 'shrink', 'reduce', 'cut'], answer: 0, explanation: 'expand ≈ grow.' },
+        { stem: 'The meeting was ____ due to bad weather.', options: ['cancel', 'cancelling', 'cancelled', 'cancels'], answer: 2, explanation: 'Bị động: was + V3.' },
+        { stem: 'Employees should ____ their manager of any problems.', options: ['informed', 'informing', 'informs', 'inform'], answer: 3, explanation: 'should + V nguyên thể.' },
+        { stem: 'Please reply ____ receipt of this email.', options: ['in', 'upon', 'at', 'of'], answer: 1, explanation: 'collocation "upon receipt".' },
+        { stem: 'Choose the synonym of "client".', options: ['employee', 'manager', 'customer', 'supplier'], answer: 2, explanation: 'client ≈ customer.' },
+      ],
+    },
   ],
 
   IELTS: [
