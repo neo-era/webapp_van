@@ -562,6 +562,21 @@ const EXAMS = {
         { stem: 'Global warming ____ a serious threat to humanity.', options: ['poses', 'makes', 'does', 'gives'], answer: 0, explanation: 'collocation "pose a threat".' },
       ],
     },
+    {
+      examId: 'ielts-kt-2', title: 'IELTS – Vocabulary & Grammar #2', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "significant".', options: ['minor', 'slight', 'considerable', 'rare'], answer: 2, explanation: 'significant ≈ considerable.' },
+        { stem: 'The graph ____ a sharp increase in sales.', options: ['shows', 'show', 'showing', 'shown'], answer: 0, explanation: 'Chủ ngữ số ít "The graph".' },
+        { stem: 'It is important to ____ a decision quickly.', options: ['do', 'take', 'have', 'make'], answer: 3, explanation: 'collocation "make a decision".' },
+        { stem: 'Choose the antonym of "rural".', options: ['remote', 'urban', 'quiet', 'village'], answer: 1, explanation: 'rural ↔ urban.' },
+        { stem: 'A large ____ of people attended the event.', options: ['amount', 'deal', 'number', 'piece'], answer: 2, explanation: '"a large number of" + danh từ đếm được.' },
+        { stem: '____ the heavy rain, they continued the trip.', options: ['Despite', 'Although', 'Because', 'So'], answer: 0, explanation: 'Despite + cụm danh từ.' },
+        { stem: 'Choose the synonym of "rapid".', options: ['slow', 'gradual', 'steady', 'quick'], answer: 3, explanation: 'rapid ≈ quick.' },
+        { stem: 'Recent research ____ that exercise improves mood.', options: ['suggest', 'suggests', 'suggesting', 'suggested'], answer: 1, explanation: '"research" (số ít) + suggests.' },
+        { stem: 'This factor accounts ____ about 20% of the total.', options: ['to', 'in', 'for', 'of'], answer: 2, explanation: 'account for = chiếm/giải thích.' },
+        { stem: 'Choose the synonym of "essential".', options: ['optional', 'minor', 'extra', 'vital'], answer: 3, explanation: 'essential ≈ vital.' },
+      ],
+    },
   ],
 };
 
