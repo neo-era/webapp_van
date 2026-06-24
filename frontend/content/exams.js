@@ -1594,6 +1594,21 @@ const EXAMS = {
         { stem: 'The newly hired manager will ____ next Monday.', options: ['started', 'start', 'starting', 'starts'], answer: 1, explanation: 'will + động từ nguyên thể (start).' },
       ],
     },
+    {
+      examId: 'toeic-20', title: 'TOEIC – Grammar & Vocabulary #20', durationMin: 20,
+      questions: [
+        { stem: 'The team worked ____ to meet the project deadline.', options: ['diligent', 'diligently', 'diligence', 'diligences'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa động từ ⇒ diligently.' },
+        { stem: 'Our company is a ____ in the technology industry.', options: ['leading', 'led', 'leadership', 'leader'], answer: 3, explanation: 'a leader = người dẫn đầu (danh từ).' },
+        { stem: 'Please ____ to the terms and conditions before signing.', options: ['agree', 'accept', 'approve', 'admit'], answer: 0, explanation: 'agree to + điều khoản.' },
+        { stem: 'The figures ____ a sharp rise in profit this year.', options: ['indicates', 'indicating', 'indication', 'indicate'], answer: 3, explanation: 'Chủ ngữ số nhiều (figures) ⇒ indicate.' },
+        { stem: 'We are ____ to announce the launch of our new product.', options: ['pleasing', 'pleased', 'pleasure', 'please'], answer: 1, explanation: 'be pleased to + V (vui mừng).' },
+        { stem: 'The contract is valid ____ December 31.', options: ['until', 'since', 'during', 'while'], answer: 0, explanation: 'until + mốc thời gian (cho đến).' },
+        { stem: 'She has ____ experience in project management.', options: ['consider', 'considerate', 'considerable', 'considering'], answer: 2, explanation: 'considerable experience = nhiều kinh nghiệm.' },
+        { stem: 'All full-time employees are ____ for a year-end bonus.', options: ['legible', 'illegible', 'fragile', 'eligible'], answer: 3, explanation: 'be eligible for = đủ điều kiện hưởng.' },
+        { stem: 'The project was completed ____ of schedule.', options: ['front', 'ahead', 'back', 'top'], answer: 1, explanation: 'ahead of schedule = sớm hơn dự kiến.' },
+        { stem: 'We greatly value your ____ on our services.', options: ['feeding', 'fed', 'feedback', 'feeds'], answer: 2, explanation: 'feedback = phản hồi.' },
+      ],
+    },
   ],
 
   IELTS: [
