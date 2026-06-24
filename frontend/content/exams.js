@@ -516,7 +516,23 @@ const EXAMS = {
     },
   ],
 
-  IELTS: [],
+  IELTS: [
+    {
+      examId: 'ielts-kt-1', title: 'IELTS – Vocabulary & Grammar #1', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "thorough": The report was very ____.', options: ['brief', 'shallow', 'comprehensive', 'quick'], answer: 2, explanation: 'thorough ≈ comprehensive.' },
+        { stem: 'She made a significant ____ to the project.', options: ['contribution', 'contribute', 'contributor', 'contributing'], answer: 0, explanation: 'Cần danh từ sau tính từ "significant".' },
+        { stem: 'Despite ____ hard, he failed the exam.', options: ['work', 'worked', 'to work', 'working'], answer: 3, explanation: 'despite + V-ing.' },
+        { stem: 'Choose the synonym of "crucial".', options: ['optional', 'essential', 'minor', 'rare'], answer: 1, explanation: 'crucial ≈ essential.' },
+        { stem: 'The number of students ____ increasing every year.', options: ['are', 'were', 'is', 'have'], answer: 2, explanation: '"The number of" + động từ số ít.' },
+        { stem: 'There is a wide ____ of options available.', options: ['range', 'amount', 'number', 'deal'], answer: 0, explanation: 'collocation "a wide range of".' },
+        { stem: 'Choose the antonym of "increase".', options: ['rise', 'grow', 'expand', 'decrease'], answer: 3, explanation: 'Trái nghĩa của increase là decrease.' },
+        { stem: 'I look forward to ____ from you soon.', options: ['hear', 'hearing', 'heard', 'to hear'], answer: 1, explanation: 'look forward to + V-ing.' },
+        { stem: 'Choose the synonym of "benefit".', options: ['drawback', 'problem', 'advantage', 'cost'], answer: 2, explanation: 'benefit ≈ advantage.' },
+        { stem: 'Global warming ____ a serious threat to humanity.', options: ['poses', 'makes', 'does', 'gives'], answer: 0, explanation: 'collocation "pose a threat".' },
+      ],
+    },
+  ],
 };
 
 const Exams = {
