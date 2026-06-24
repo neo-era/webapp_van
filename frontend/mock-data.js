@@ -88,6 +88,16 @@ const MOCK = {
     ],
   },
 
+  exams: [
+    { examId: 'e1', title: 'Kiểm tra nhanh: Đạo hàm', subjectCode: 'TOAN', grade: 12, kind: 'PRACTICE', questionIds: ['q1', 'q2'], durationMin: 15, published: true },
+  ],
+  examQuestions: {
+    e1: [
+      { questionId: 'q1', type: 'MCQ', stem: 'Đạo hàm của $y=x^2$ là?', options: ['$x$', '$2x$', '$x^2$', '$2$'], answer: '1', explanation: '$(x^2)\'=2x$.' },
+      { questionId: 'q2', type: 'MCQ', stem: 'Số nghiệm của $x^2-1=0$?', options: ['0', '1', '2', '3'], answer: '2', explanation: '$x=\\pm 1$.' },
+    ],
+  },
+
   classStudents: {
     c001: [
       { name: 'Nguyễn Văn An', progress: 72, late: 0 },

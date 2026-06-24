@@ -533,6 +533,7 @@ async function renderLearn() {
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
         <h2>${v.subjectName}</h2><p>Chọn chủ đề</p></div>
+      <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="learnOpenExams()">📝 Bài kiểm tra môn ${v.subjectName}</button>
       <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
     try {
       const topics = await Api.call('getTopics', { subjectCode: v.subjectCode, grade: App.state.user.grade || 12 });
@@ -570,6 +571,65 @@ async function renderLearn() {
         }).join('')
         : `<div class="empty">Bài giảng đang được biên soạn</div>`;
     } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+    return;
+  }
+
+  if (v.view === 'exams') {
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
+        <h2>Bài kiểm tra</h2><p>Chọn đề để làm</p></div>
+      <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
+    try {
+      const exams = await Api.call('getExams', { subjectCode: v.subjectCode, grade: App.state.user.grade || 12 });
+      $('#learn-body').innerHTML = exams.length
+        ? exams.map((e) => `
+          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnStartExam('${e.examId}','${e.title.replace(/'/g, '')}')">
+            <strong>${e.title}</strong>
+            <div class="task-meta"><span class="muted">${e.questionIds.length} câu${e.durationMin ? ' · ' + e.durationMin + ' phút' : ''}</span></div>
+          </div>`).join('')
+        : `<div class="empty">Chưa có đề kiểm tra nào</div>`;
+    } catch (e) { $('#learn-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+    return;
+  }
+
+  if (v.view === 'examTake') {
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('exams')">‹ Bài kiểm tra</p>
+        <h2>${v.examTitle}</h2></div>
+      <div id="exam-body"><div class="empty">Đang tải…</div></div>`;
+    try {
+      const exam = await Api.call('getExam', { examId: v.examId });
+      v.exam = exam;
+      $('#exam-body').innerHTML = exam.questions.map((q, i) => `
+        <div class="card" style="margin-bottom:12px">
+          <div class="q-stem" data-md>${i + 1}. ${q.stem}</div>
+          <div style="margin-top:8px">${renderQuestionInput(q, i)}</div>
+        </div>`).join('') +
+        `<button class="btn btn-primary btn-block" style="margin-top:8px" onclick="learnSubmitExam()">Nộp bài</button>`;
+      // render công thức trong đề
+      $$('#exam-body .q-stem').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
+      $$('#exam-body .opt-label').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
+    } catch (e) { $('#exam-body').innerHTML = `<div class="empty">${e.message}</div>`; }
+    return;
+  }
+
+  if (v.view === 'examResult') {
+    const r = v.result;
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('exams')">‹ Bài kiểm tra</p>
+        <h2>Kết quả: ${v.examTitle}</h2></div>
+      <div class="countdown section-block"><div class="days">${r.score10}</div>
+        <div class="label">điểm · đúng ${r.correct}/${r.gradable} câu</div></div>
+      ${r.results.map((it, i) => `
+        <div class="card" style="margin-bottom:10px;border-left:4px solid ${it.correct === true ? 'var(--success)' : (it.correct === false ? 'var(--danger)' : 'var(--warning)')}">
+          <div data-md class="q-stem">${i + 1}. ${it.stem}</div>
+          <div class="task-meta" style="margin-top:6px">
+            ${it.correct === true ? '<span class="pill pill-ok">Đúng</span>' : (it.correct === false ? '<span class="pill pill-late">Sai</span>' : '<span class="pill pill-warn">Tự luận</span>')}
+          </div>
+          ${it.explanation ? `<div class="muted" data-md style="margin-top:6px;font-size:0.88rem">💡 ${it.explanation}</div>` : ''}
+        </div>`).join('')}
+      <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="learnStartExam('${v.examId}','${(v.examTitle || '').replace(/'/g, '')}')">Làm lại</button>`;
+    $$('#screen-learn [data-md]').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     return;
   }
 
@@ -693,6 +753,59 @@ function learnBack(view) {
   if (view === 'subjects') App.state.learn = { view: 'subjects' };
   renderLearn();
 }
+/* ---- Bài kiểm tra ---- */
+function learnOpenExams() {
+  Object.assign(App.state.learn, { view: 'exams' });
+  renderLearn();
+}
+function learnStartExam(examId, title) {
+  Object.assign(App.state.learn, { view: 'examTake', examId: examId, examTitle: title });
+  renderLearn();
+}
+function renderQuestionInput(q, i) {
+  const name = 'q-' + q.questionId;
+  if (q.type === 'TRUEFALSE') {
+    return ['true', 'false'].map((val) => `
+      <label style="display:block;margin:4px 0"><input type="radio" name="${name}" value="${val}" />
+        ${val === 'true' ? 'Đúng' : 'Sai'}</label>`).join('');
+  }
+  if (q.type === 'SHORT') {
+    return `<input class="field" name="${name}" placeholder="Nhập đáp án…" />`;
+  }
+  if (q.type === 'ESSAY') {
+    return `<textarea class="field" name="${name}" rows="4" placeholder="Trả lời…"></textarea>`;
+  }
+  // MCQ
+  return (q.options || []).map((opt, idx) => `
+    <label style="display:flex;gap:8px;align-items:flex-start;margin:6px 0">
+      <input type="radio" name="${name}" value="${idx}" style="margin-top:4px" />
+      <span class="opt-label">${opt}</span></label>`).join('');
+}
+function collectAnswers(exam) {
+  const answers = {};
+  exam.questions.forEach((q) => {
+    const name = 'q-' + q.questionId;
+    const checked = document.querySelector('input[name="' + name + '"]:checked');
+    if (checked) { answers[q.questionId] = checked.value; return; }
+    const field = document.querySelector('[name="' + name + '"]');
+    if (field && field.value != null) answers[q.questionId] = field.value;
+  });
+  return answers;
+}
+async function learnSubmitExam() {
+  const v = App.state.learn;
+  if (!v.exam) return;
+  const answers = collectAnswers(v.exam);
+  showLoading();
+  try {
+    const r = await Api.call('submitAttempt', { examId: v.examId, answers: answers });
+    v.result = r; v.view = 'examResult';
+    renderLearn();
+    showToast('Đã nộp bài · ' + r.score10 + ' điểm', 'success');
+  } catch (e) { showToast(e.message, 'error'); }
+  finally { hideLoading(); }
+}
+
 async function learnToggleLearned() {
   const id = App.state.learn.lessonId;
   const learned = App.data.learned || (App.data.learned = []);

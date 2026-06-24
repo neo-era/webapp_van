@@ -109,6 +109,30 @@ const MockApi = {
         return { reply: '*(Bản demo)* Đây là câu trả lời mẫu của giáo viên AI. Khi cấu hình Claude API thật, AI sẽ giải thích theo bài giảng. Ví dụ công thức: $f\'(x) \\ge 0$.', remaining: 39 };
       case 'generateLesson':
         return { lessonId: 'l' + Date.now(), title: payload.title, status: 'DRAFT', source: 'AI', contentMd: '## Cốt lõi\n*(nháp demo)*' };
+      case 'generateQuestions':
+        return { created: 0 };
+
+      case 'getExams':
+        return MOCK.exams.filter((e) => !payload.subjectCode || e.subjectCode === payload.subjectCode);
+      case 'getExam': {
+        const e = MOCK.exams.find((x) => x.examId === payload.examId);
+        if (!e) return null;
+        const qs = (MOCK.examQuestions[e.examId] || []).map((q) => ({ questionId: q.questionId, type: q.type, stem: q.stem, options: q.options }));
+        return Object.assign({}, e, { questions: qs });
+      }
+      case 'submitAttempt': {
+        const qs = MOCK.examQuestions[payload.examId] || [];
+        let correct = 0, gradable = 0;
+        const results = qs.map((q) => {
+          const your = (payload.answers || {})[q.questionId];
+          const ok = String(your) === String(q.answer);
+          gradable++; if (ok) correct++;
+          return { questionId: q.questionId, type: q.type, stem: q.stem, your: your, answer: q.answer, explanation: q.explanation, correct: ok };
+        });
+        return { correct: correct, gradable: gradable, total: qs.length, score10: gradable ? Math.round((correct / gradable) * 100) / 10 : 0, results: results };
+      }
+      case 'getAttempts':
+        return [];
 
       case 'getStudentData':
         return {
