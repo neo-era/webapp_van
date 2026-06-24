@@ -575,6 +575,21 @@ const EXAMS = {
         { stem: 'He is taller ____ his brother.', options: ['than', 'then', 'as', 'that'], answer: 0, explanation: 'So sánh hơn: adj-er + than.' },
       ],
     },
+    {
+      examId: 'anh-kt45-4', title: 'Kiểm tra 45′ #4 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'If I ____ rich, I would help the poor.', options: ['am', 'was', 'were', 'be'], answer: 2, explanation: 'Điều kiện loại 2: were.' },
+        { stem: 'The letter ____ yesterday.', options: ['sends', 'was sent', 'sent', 'is sending'], answer: 1, explanation: 'Bị động quá khứ.' },
+        { stem: 'She is interested ____ classical music.', options: ['in', 'on', 'at', 'of'], answer: 0, explanation: 'interested in.' },
+        { stem: 'They have lived here ____ 2015.', options: ['for', 'from', 'ago', 'since'], answer: 3, explanation: 'since + mốc thời gian.' },
+        { stem: 'This is the man ____ helped me yesterday.', options: ['which', 'who', 'whose', 'where'], answer: 1, explanation: 'who cho người làm chủ ngữ.' },
+        { stem: 'I really enjoy ____ books in my free time.', options: ['read', 'to read', 'reading', 'reads'], answer: 2, explanation: 'enjoy + V-ing.' },
+        { stem: 'He runs ____ than me.', options: ['faster', 'fast', 'fastest', 'more fast'], answer: 0, explanation: 'So sánh hơn của trạng từ ngắn: faster.' },
+        { stem: 'Choose the synonym of "begin".', options: ['stop', 'end', 'finish', 'start'], answer: 3, explanation: 'begin ≈ start.' },
+        { stem: 'You ____ to wear a helmet when riding a motorbike.', options: ['have', 'has', 'having', 'had'], answer: 0, explanation: 'have to (nghĩa vụ).' },
+        { stem: 'Water ____ at 100°C.', options: ['boil', 'boiled', 'boils', 'boiling'], answer: 2, explanation: 'Chân lý ⇒ hiện tại đơn, ngôi thứ ba.' },
+      ],
+    },
   ],
 
   TOEIC: [
