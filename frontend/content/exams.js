@@ -403,6 +403,39 @@ const EXAMS = {
     },
   ],
 
+  LY: [
+    {
+      examId: 'ly-kt45-1', title: 'Kiểm tra 45′ #1 — Vật lí nhiệt & Khí lí tưởng', durationMin: 45,
+      questions: [
+        { stem: 'Định luật I Nhiệt động lực học: $\\Delta U=$?', options: ['$Q-A$', '$A+Q$', '$A-Q$', '$AQ$'], answer: 1, explanation: '$\\Delta U=A+Q$.' },
+        { stem: 'Đun $1$ kg nước ($c=4200$) tăng $5$ °C cần nhiệt lượng?', options: ['$4200$ J', '$21000$ J', '$1000$ J', '$84000$ J'], answer: 1, explanation: '$Q=mc\\Delta t=1\\cdot4200\\cdot5=21000$ J.' },
+        { stem: 'Đơn vị của nội năng là?', options: ['Niutơn (N)', 'Oát (W)', 'Jun (J)', 'Paxcan (Pa)'], answer: 2, explanation: 'Nội năng đo bằng jun.' },
+        { stem: 'Khí đẳng nhiệt $p_1=2$, $V_1=3$, nén còn $V_2=1$. Tính $p_2$.', options: ['$2$', '$3$', '$6$', '$1$'], answer: 2, explanation: '$p_2=\\dfrac{p_1V_1}{V_2}=6$.' },
+        { stem: '$27$ °C bằng bao nhiêu Kelvin?', options: ['$27$', '$300$', '$246$', '$273$'], answer: 1, explanation: '$T=27+273=300$ K.' },
+        { stem: 'Đẳng tích: $p_1=1$ atm ở $T_1=300$ K, đun tới $T_2=600$ K. Tính $p_2$.', options: ['$1$', '$2$', '$0{,}5$', '$4$'], answer: 1, explanation: '$\\dfrac{p}{T}$ const ⇒ $p_2=2$ atm.' },
+        { stem: 'Trong định luật I, $Q>0$ nghĩa là?', options: ['hệ tỏa nhiệt', 'hệ nhận nhiệt', 'hệ sinh công', 'nội năng không đổi'], answer: 1, explanation: 'Quy ước $Q>0$: nhận nhiệt.' },
+        { stem: 'Phương trình trạng thái khí lí tưởng: $\\dfrac{p_1V_1}{T_1}=$?', options: ['$p_2V_2T_2$', '$\\dfrac{T_2}{p_2V_2}$', '$\\dfrac{p_2V_2}{T_2}$', '$p_2+V_2$'], answer: 2, explanation: '$\\dfrac{p_1V_1}{T_1}=\\dfrac{p_2V_2}{T_2}$.' },
+        { stem: 'Đơn vị nhiệt dung riêng là?', options: ['J', 'J/kg', 'J/(kg·K)', 'W/K'], answer: 2, explanation: '$c$ đo bằng J/(kg·K).' },
+        { stem: 'Khi khí sinh công thì công $A$?', options: ['$A>0$', '$A=0$', '$A<0$', '$A=Q$'], answer: 2, explanation: 'Hệ sinh công ⇒ $A<0$.' },
+      ],
+    },
+    {
+      examId: 'ly-kt45-2', title: 'Kiểm tra 45′ #2 — Từ trường & Hạt nhân', durationMin: 45,
+      questions: [
+        { stem: 'Lực từ lên dây ($B=0{,}2$ T, $I=3$ A, $l=0{,}5$ m, vuông góc) là?', options: ['$0{,}3$ N', '$0{,}1$ N', '$3$ N', '$0{,}6$ N'], answer: 0, explanation: '$F=BIl=0{,}2\\cdot3\\cdot0{,}5=0{,}3$ N.' },
+        { stem: 'Đơn vị của cảm ứng từ $B$ là?', options: ['Vêbe (Wb)', 'Tesla (T)', 'Henry (H)', 'Jun (J)'], answer: 1, explanation: '$B$ đo bằng tesla.' },
+        { stem: 'Từ thông qua khung $N=5$ vòng, $B=0{,}4$ T, $S=0{,}02$ m², $\\alpha=0$?', options: ['$0{,}4$', '$0{,}04$', '$0{,}004$', '$4$'], answer: 1, explanation: '$\\Phi=NBS=5\\cdot0{,}4\\cdot0{,}02=0{,}04$ Wb.' },
+        { stem: 'Từ thông biến thiên $0{,}1$ Wb trong $0{,}5$ s. Suất điện động cảm ứng?', options: ['$0{,}05$ V', '$0{,}5$ V', '$0{,}2$ V', '$2$ V'], answer: 2, explanation: '$|e|=\\dfrac{0{,}1}{0{,}5}=0{,}2$ V.' },
+        { stem: 'Hạt nhân $^{4}_{2}He$ có bao nhiêu neutron?', options: ['$4$', '$2$', '$6$', '$0$'], answer: 1, explanation: '$N=A-Z=4-2=2$.' },
+        { stem: 'Năng lượng liên kết của hạt nhân tính bằng?', options: ['$\\Delta m\\,c$', '$\\Delta m\\,c^2$', '$mc^2$', '$\\dfrac{\\Delta m}{c^2}$'], answer: 1, explanation: '$W_{lk}=\\Delta m\\,c^2$.' },
+        { stem: 'Sau một chu kì bán rã, số hạt nhân còn lại bằng?', options: ['$100\\%$', '$50\\%$', '$25\\%$', '$0\\%$'], answer: 1, explanation: '$N=N_0/2$.' },
+        { stem: '$1$ u tương đương xấp xỉ?', options: ['$931{,}5$ MeV/$c^2$', '$1$ MeV', '$3\\cdot10^8$ m/s', '$9{,}1\\cdot10^{-31}$ kg'], answer: 0, explanation: '$1\\,u\\approx931{,}5$ MeV/$c^2$.' },
+        { stem: 'Lực Lorentz lên hạt điện tích là?', options: ['$qvB$ (luôn vậy)', '$|q|vB\\sin\\alpha$', '$BIl$', '$qE$'], answer: 1, explanation: '$f=|q|vB\\sin\\alpha$.' },
+        { stem: 'Định luật phóng xạ có dạng?', options: ['$N=N_0 2^{t/T}$', '$N=N_0 e^{\\lambda t}$', '$N=N_0 2^{-t/T}$', '$N=N_0 t$'], answer: 2, explanation: '$N=N_0 2^{-t/T}=N_0 e^{-\\lambda t}$.' },
+      ],
+    },
+  ],
+
   TOEIC: [
     {
       examId: 'toeic-reading', title: 'TOEIC Reading – Mini test', durationMin: 10,
