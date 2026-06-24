@@ -1259,6 +1259,30 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-anh-relative', title: 'Relative Clauses (mệnh đề quan hệ)',
+          lessons: [
+            {
+              id: 'l-anh-relative', title: 'Mệnh đề quan hệ', level: 'NANG_CAO',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> Mệnh đề quan hệ bổ nghĩa cho danh từ đứng trước, nối bằng đại từ quan hệ.</div>
+                <h2>Cốt lõi — Đại từ quan hệ</h2>
+                <ul>
+                  <li><strong>who</strong>: thay cho người (chủ ngữ). <em>The man <strong>who</strong> lives next door is a doctor.</em></li>
+                  <li><strong>whom</strong>: người (tân ngữ); <strong>which</strong>: vật; <strong>that</strong>: cả người và vật.</li>
+                  <li><strong>whose</strong>: sở hữu. <strong>where</strong>: nơi chốn. <strong>when</strong>: thời gian.</li>
+                </ul>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p><em>This is the house <strong>where</strong> I was born.</em></p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Điền đại từ quan hệ: "The book ____ I bought yesterday is interesting."</p>
+                  <details><summary>Đáp án</summary><p><strong>which</strong> hoặc <strong>that</strong> (bổ nghĩa cho vật, làm tân ngữ).</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 

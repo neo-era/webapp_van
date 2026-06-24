@@ -484,6 +484,24 @@ const EXAMS = {
     },
   ],
 
+  ANH: [
+    {
+      examId: 'anh-kt45-1', title: 'Kiểm tra 45′ #1 — Grammar (Tiếng Anh 12)', durationMin: 45,
+      questions: [
+        { stem: 'She ____ here since 2010.', options: ['lives', 'has lived', 'lived', 'living'], answer: 1, explanation: 'since + mốc thời gian ⇒ present perfect.' },
+        { stem: 'A letter ____ by Tom yesterday.', options: ['writes', 'wrote', 'was written', 'is writing'], answer: 2, explanation: 'Bị động quá khứ: was + V3.' },
+        { stem: 'If I ____ you, I would accept the offer.', options: ['am', 'was', 'be', 'were'], answer: 3, explanation: 'Điều kiện loại 2: dùng "were".' },
+        { stem: 'The man ____ lives next door is a doctor.', options: ['who', 'which', 'whom', 'whose'], answer: 0, explanation: '"who" thay cho người làm chủ ngữ.' },
+        { stem: 'This is the house ____ I was born.', options: ['which', 'when', 'where', 'who'], answer: 2, explanation: '"where" chỉ nơi chốn.' },
+        { stem: 'They ____ to Paris last summer.', options: ['go', 'went', 'gone', 'have gone'], answer: 1, explanation: 'last summer ⇒ quá khứ đơn.' },
+        { stem: 'English ____ all over the world.', options: ['speaks', 'spoke', 'speaking', 'is spoken'], answer: 3, explanation: 'Bị động hiện tại: is + V3.' },
+        { stem: 'If it ____ tomorrow, we will cancel the trip.', options: ['rains', 'rained', 'will rain', 'would rain'], answer: 0, explanation: 'Điều kiện loại 1: If + hiện tại đơn.' },
+        { stem: 'The girl ____ bag was stolen is crying.', options: ['which', 'whose', 'who', 'that'], answer: 1, explanation: '"whose" chỉ sở hữu.' },
+        { stem: 'I have ____ finished my homework.', options: ['yet', 'since', 'already', 'ago'], answer: 2, explanation: '"already" trong câu khẳng định hoàn thành.' },
+      ],
+    },
+  ],
+
   TOEIC: [
     {
       examId: 'toeic-reading', title: 'TOEIC Reading – Mini test', durationMin: 10,
