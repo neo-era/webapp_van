@@ -1112,6 +1112,21 @@ const EXAMS = {
         { stem: 'Số mol NaOH cần để trung hòa hết $0{,}2$ mol $H_2SO_4$?', options: ['$0{,}2$', '$0{,}1$', '$1$', '$0{,}4$'], answer: 3, explanation: '$H_2SO_4+2NaOH\\to Na_2SO_4+2H_2O$; cần $0{,}4$ mol NaOH.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-24', title: 'Kiểm tra 45′ #24 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $11{,}2$ g Fe ($M=56$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=11{,}2/56=0{,}2$ mol.' },
+        { stem: 'Khối lượng của $0{,}25$ mol $Na_2SO_4$ ($M=142$)?', options: ['$35{,}5$ g', '$28{,}4$ g', '$71$ g', '$17{,}75$ g'], answer: 0, explanation: '$m=0{,}25\\cdot142=35{,}5$ g.' },
+        { stem: 'Thể tích $H_2$ (đktc) khi $0{,}3$ mol Al tác dụng hết HCl? ($2Al+6HCl\\to2AlCl_3+3H_2$)', options: ['$6{,}72$ L', '$3{,}36$ L', '$10{,}08$ L', '$22{,}4$ L'], answer: 2, explanation: '$n_{H_2}=0{,}3\\cdot3/2=0{,}45$ mol $\\Rightarrow V=10{,}08$ L.' },
+        { stem: 'Số mol nguyên tử N trong $0{,}2$ mol $(NH_4)_2SO_4$?', options: ['$0{,}2$', '$0{,}6$', '$0{,}8$', '$0{,}4$'], answer: 3, explanation: 'Mỗi phân tử có 2 N ⇒ $0{,}2\\cdot2=0{,}4$ mol.' },
+        { stem: 'Dung dịch có $30$ g chất tan trong $120$ g dung dịch. Nồng độ phần trăm?', options: ['$25\\%$', '$20\\%$', '$30\\%$', '$15\\%$'], answer: 0, explanation: '$C\\%=30/120\\cdot100\\%=25\\%$.' },
+        { stem: 'Khối lượng mol của $Mg(NO_3)_2$ (Mg=24, N=14, O=16)?', options: ['$116$', '$148$', '$84$', '$172$'], answer: 1, explanation: '$24+2\\cdot(14+48)=148$ g/mol.' },
+        { stem: 'Kim loại nào sau đây bị nam châm hút?', options: ['đồng', 'nhôm', 'sắt', 'kẽm'], answer: 2, explanation: 'Sắt (Fe) có từ tính, bị nam châm hút.' },
+        { stem: 'Phần trăm khối lượng S trong $SO_3$ ($M=80$)?', options: ['$60\\%$', '$50\\%$', '$32\\%$', '$40\\%$'], answer: 3, explanation: '$32/80\\cdot100\\%=40\\%$.' },
+        { stem: 'Chất nào sau đây là một muối?', options: ['HCl', 'NaCl', 'NaOH', '$H_2O$'], answer: 1, explanation: 'NaCl là muối (tạo từ kim loại + gốc axit).' },
+        { stem: 'Số mol $O_2$ cần để đốt cháy hết $0{,}2$ mol $CH_4$? ($CH_4+2O_2\\to CO_2+2H_2O$)', options: ['$0{,}2$', '$0{,}1$', '$0{,}4$', '$0{,}8$'], answer: 2, explanation: '$0{,}2\\cdot2=0{,}4$ mol $O_2$.' },
+      ],
+    },
   ],
 
   ANH: [
