@@ -665,6 +665,21 @@ const EXAMS = {
         { stem: 'Choose the synonym of "rich".', options: ['wealthy', 'poor', 'broke', 'needy'], answer: 0, explanation: 'rich ≈ wealthy.' },
       ],
     },
+    {
+      examId: 'anh-kt45-6', title: 'Kiểm tra 45′ #6 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She suggested that he ____ a doctor.', options: ['sees', 'saw', 'see', 'seeing'], answer: 2, explanation: 'suggest that + S + V nguyên thể (giả định).' },
+        { stem: "It's high time we ____.", options: ['leave', 'leaving', 'to leave', 'left'], answer: 3, explanation: "It's high time + S + V quá khứ." },
+        { stem: 'He denied ____ the money.', options: ['steal', 'stealing', 'to steal', 'stole'], answer: 1, explanation: 'deny + V-ing.' },
+        { stem: 'No sooner ____ he left than the phone rang.', options: ['had', 'has', 'did', 'was'], answer: 0, explanation: 'Đảo ngữ: No sooner had S + V3.' },
+        { stem: 'Choose the synonym of "quickly".', options: ['slowly', 'gradually', 'rapidly', 'calmly'], answer: 2, explanation: 'quickly ≈ rapidly.' },
+        { stem: "I'm used to ____ early every morning.", options: ['get up', 'got up', 'get', 'getting up'], answer: 3, explanation: 'be used to + V-ing.' },
+        { stem: 'The teacher made us ____ the test again.', options: ['to take', 'take', 'taking', 'took'], answer: 1, explanation: 'make somebody + V nguyên thể.' },
+        { stem: 'Few people ____ aware of the danger.', options: ['is', 'was', 'are', 'has'], answer: 2, explanation: 'Few + danh từ số nhiều + are.' },
+        { stem: 'Choose the synonym of "difficult".', options: ['tough', 'easy', 'simple', 'light'], answer: 0, explanation: 'difficult ≈ tough.' },
+        { stem: 'If only I ____ harder for the exam!', options: ['studied', 'had studied', 'study', 'studying'], answer: 1, explanation: 'If only + quá khứ hoàn thành (tiếc nuối quá khứ).' },
+      ],
+    },
   ],
 
   TOEIC: [
