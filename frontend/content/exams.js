@@ -1672,6 +1672,21 @@ const EXAMS = {
         { stem: 'It was his determination ____ led to his success.', options: ['which', 'that', 'who', 'what'], answer: 1, explanation: 'Câu chẻ: It was … that …' },
       ],
     },
+    {
+      examId: 'ielts-kt-17', title: 'IELTS – Vocabulary & Grammar #17', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "utilize".', options: ['waste', 'discard', 'ignore', 'use'], answer: 3, explanation: 'utilize ≈ use (sử dụng).' },
+        { stem: 'Choose the synonym of "attain".', options: ['achieve', 'lose', 'fail', 'miss'], answer: 0, explanation: 'attain ≈ achieve (đạt được).' },
+        { stem: 'Choose the antonym of "frequent".', options: ['common', 'regular', 'often', 'rare'], answer: 3, explanation: 'frequent ↔ rare (hiếm).' },
+        { stem: 'Hardly had the sun risen ____ the birds began to sing.', options: ['than', 'when', 'then', 'that'], answer: 1, explanation: 'Hardly … when … (vừa … thì …).' },
+        { stem: 'Choose the synonym of "comprehend".', options: ['understand', 'forget', 'ignore', 'doubt'], answer: 0, explanation: 'comprehend ≈ understand (hiểu).' },
+        { stem: 'The scientist ____ research focuses on AI won the prize.', options: ['who', 'whom', 'whose', 'which'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "maximum".', options: ['peak', 'minimum', 'top', 'highest'], answer: 1, explanation: 'maximum ↔ minimum (tối thiểu).' },
+        { stem: 'Should it rain, the outdoor event ____ cancelled.', options: ['will be', 'would be', 'was', 'is'], answer: 0, explanation: 'Đảo ngữ điều kiện loại 1: Should + S …, … will + V.' },
+        { stem: 'Choose the synonym of "ample".', options: ['scarce', 'little', 'lacking', 'plenty'], answer: 3, explanation: 'ample ≈ plenty (dồi dào).' },
+        { stem: 'Never before ____ such a remarkable achievement.', options: ['we have seen', 'have we seen', 'we saw', 'did we saw'], answer: 1, explanation: 'Đảo ngữ với "Never before": + have + S + V3.' },
+      ],
+    },
   ],
 };
 
