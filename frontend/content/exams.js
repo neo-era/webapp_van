@@ -2074,6 +2074,21 @@ const EXAMS = {
         { stem: 'All goods are subject to ____ inspection before shipping.', options: ['qualify', 'qualified', 'quality', 'qualifies'], answer: 2, explanation: 'quality inspection = kiểm tra chất lượng (danh từ ghép).' },
       ],
     },
+    {
+      examId: 'toeic-28', title: 'TOEIC – Grammar & Vocabulary #28', durationMin: 20,
+      questions: [
+        { stem: 'The new branch will open ____ June.', options: ['on', 'in', 'at', 'by'], answer: 1, explanation: 'in + tháng.' },
+        { stem: 'He was praised for his ____ to the company.', options: ['contribution', 'contribute', 'contributing', 'contributed'], answer: 0, explanation: 'his + danh từ ⇒ contribution.' },
+        { stem: 'Please ____ the document carefully before signing.', options: ['exclaim', 'exhaust', 'exhibit', 'examine'], answer: 3, explanation: 'examine = xem xét kỹ.' },
+        { stem: 'Our team works ____ to achieve common goals.', options: ['collaborate', 'collaboration', 'collaborative', 'collaboratively'], answer: 3, explanation: 'Cần trạng từ bổ nghĩa "works" ⇒ collaboratively.' },
+        { stem: 'The store offers ____ customer support.', options: ['excel', 'excellent', 'excellence', 'excellently'], answer: 1, explanation: 'Cần tính từ bổ nghĩa danh từ ⇒ excellent.' },
+        { stem: 'All staff must ____ to safety procedures.', options: ['stuck', 'sticking', 'stick', 'sticks'], answer: 2, explanation: 'stick to = tuân thủ; must + nguyên thể.' },
+        { stem: 'The maintenance contract was ____ for another two years.', options: ['extended', 'extend', 'extends', 'extending'], answer: 0, explanation: 'Bị động: was extended.' },
+        { stem: 'We value ____ in the workplace.', options: ['diverse', 'diversify', 'diversely', 'diversity'], answer: 3, explanation: 'Cần danh từ làm tân ngữ ⇒ diversity.' },
+        { stem: 'The product is ____ at all major retailers.', options: ['sell', 'sold', 'selling', 'sells'], answer: 1, explanation: 'be + V3 (bị động): is sold.' },
+        { stem: 'Please respond ____ to this urgent email.', options: ['prompt', 'promptness', 'promptly', 'prompted'], answer: 2, explanation: 'Cần trạng từ bổ nghĩa "respond" ⇒ promptly.' },
+      ],
+    },
   ],
 
   IELTS: [
