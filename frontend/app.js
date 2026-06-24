@@ -8,6 +8,10 @@ const App = {
   data: { plans: [], goals: [], exam: null, notes: [], classes: [] },
 };
 
+// TẠM THỜI bỏ qua trang đăng nhập: tự đăng nhập demo khi mở app.
+// 'student' | 'teacher' để vào thẳng vai trò đó; đặt '' để KHÔI PHỤC trang đăng nhập.
+const DEV_AUTO_LOGIN = 'student';
+
 /* ---------- Helpers ---------- */
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => Array.from(document.querySelectorAll(sel));
@@ -985,5 +989,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Khôi phục phiên nếu đã đăng nhập trước đó
   let saved = null;
   try { saved = localStorage.getItem('thpt_token'); } catch (e) {}
-  if (saved) { App.state.token = saved; restoreSession(); }
+  if (saved) { App.state.token = saved; restoreSession(); return; }
+
+  // TẠM THỜI: tự đăng nhập demo (bỏ qua trang đăng nhập)
+  if (DEV_AUTO_LOGIN === 'student' || DEV_AUTO_LOGIN === 'teacher') {
+    loginDemo(DEV_AUTO_LOGIN);
+  }
 });
