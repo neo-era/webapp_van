@@ -1262,6 +1262,21 @@ const EXAMS = {
         { stem: 'Số mol $O_2$ cần để đốt cháy hết $0{,}1$ mol $C_2H_4$? ($C_2H_4+3O_2\\to2CO_2+2H_2O$)', options: ['$0{,}1$', '$0{,}3$', '$0{,}2$', '$0{,}4$'], answer: 1, explanation: '$0{,}1\\cdot3=0{,}3$ mol $O_2$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-29', title: 'Kiểm tra 45′ #29 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $8$ g CuO ($M=80$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=8/80=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}4$ mol MgO ($M=40$)?', options: ['$16$ g', '$8$ g', '$24$ g', '$32$ g'], answer: 0, explanation: '$m=0{,}4\\cdot40=16$ g.' },
+        { stem: 'Thể tích $H_2$ (đktc) khi $0{,}2$ mol Fe tác dụng hết với HCl?', options: ['$2{,}24$ L', '$6{,}72$ L', '$4{,}48$ L', '$1{,}12$ L'], answer: 2, explanation: '$Fe+2HCl\\to FeCl_2+H_2$; $0{,}2$ mol Fe ⇒ $0{,}2$ mol $H_2 \\Rightarrow V=4{,}48$ L.' },
+        { stem: 'Số mol nguyên tử S trong $0{,}1$ mol $Al_2(SO_4)_3$?', options: ['$0{,}1$', '$0{,}2$', '$0{,}6$', '$0{,}3$'], answer: 3, explanation: 'Mỗi phân tử có 3 nhóm $SO_4$ ⇒ $0{,}1\\cdot3=0{,}3$ mol S.' },
+        { stem: 'Hòa tan $24$ g chất tan trong $96$ g nước. Nồng độ phần trăm?', options: ['$10\\%$', '$20\\%$', '$24\\%$', '$25\\%$'], answer: 1, explanation: '$C\\%=24/120\\cdot100\\%=20\\%$.' },
+        { stem: 'Khối lượng mol của $AgNO_3$ (Ag=108, N=14, O=16)?', options: ['$154$', '$170$', '$186$', '$124$'], answer: 1, explanation: '$108+14+3\\cdot16=170$ g/mol.' },
+        { stem: 'Kim loại nào KHÔNG bị oxi hóa trong không khí (kim loại quý)?', options: ['Au', 'Fe', 'Al', 'Mg'], answer: 0, explanation: 'Vàng (Au) rất bền, không bị oxi hóa trong không khí.' },
+        { stem: 'Phần trăm khối lượng Cl trong NaCl ($M=58{,}5$)?', options: ['$39{,}3\\%$', '$50\\%$', '$60{,}7\\%$', '$35{,}5\\%$'], answer: 2, explanation: '$35{,}5/58{,}5\\cdot100\\%\\approx60{,}7\\%$.' },
+        { stem: 'Chất nào sau đây là một phi kim?', options: ['Fe', 'Cu', 'Na', 'S'], answer: 3, explanation: 'Lưu huỳnh (S) là phi kim.' },
+        { stem: 'Số mol ion $Cl^-$ trong $0{,}2$ mol $AlCl_3$?', options: ['$0{,}2$', '$0{,}6$', '$0{,}4$', '$1$'], answer: 1, explanation: 'Mỗi $AlCl_3 \\to 3Cl^-$ ⇒ $0{,}2\\cdot3=0{,}6$ mol.' },
+      ],
+    },
   ],
 
   ANH: [
