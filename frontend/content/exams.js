@@ -1774,6 +1774,21 @@ const EXAMS = {
         { stem: 'Our delivery service is highly ____.', options: ['reliable', 'rely', 'reliance', 'reliably'], answer: 0, explanation: 'Cần tính từ sau "highly" ⇒ reliable.' },
       ],
     },
+    {
+      examId: 'toeic-23', title: 'TOEIC – Grammar & Vocabulary #23', durationMin: 20,
+      questions: [
+        { stem: 'The hotel offers a ____ of amenities for guests.', options: ['various', 'vary', 'variously', 'variety'], answer: 3, explanation: 'a variety of = đa dạng (danh từ).' },
+        { stem: 'Customers can ____ their orders online in real time.', options: ['truck', 'track', 'trick', 'trek'], answer: 1, explanation: 'track an order = theo dõi đơn hàng.' },
+        { stem: 'The agreement was signed ____ both parties.', options: ['by', 'with', 'to', 'of'], answer: 0, explanation: 'Bị động: signed by + tác nhân.' },
+        { stem: 'We are ____ committed to environmental sustainability.', options: ['full', 'fully', 'fullness', 'fuller'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa "committed" ⇒ fully.' },
+        { stem: 'The new model is far more energy-____.', options: ['efficiently', 'efficiency', 'efficacy', 'efficient'], answer: 3, explanation: 'energy-efficient = tiết kiệm năng lượng (tính từ ghép).' },
+        { stem: 'Please ____ your appointment at least 24 hours in advance.', options: ['conform', 'confirm', 'conflict', 'confront'], answer: 1, explanation: 'confirm = xác nhận.' },
+        { stem: 'The store offers ____ shipping on all orders.', options: ['free', 'freely', 'freedom', 'frees'], answer: 0, explanation: 'free shipping = miễn phí vận chuyển (tính từ).' },
+        { stem: 'He was ____ to a senior management position.', options: ['promoting', 'promotion', 'promoted', 'promotes'], answer: 2, explanation: 'be + V3 (bị động): was promoted.' },
+        { stem: 'All product returns require a valid ____.', options: ['recipe', 'recede', 'recipient', 'receipt'], answer: 3, explanation: 'receipt = hóa đơn, biên lai.' },
+        { stem: 'We constantly strive for customer ____.', options: ['satisfaction', 'satisfy', 'satisfied', 'satisfying'], answer: 0, explanation: 'customer satisfaction = sự hài lòng của khách hàng.' },
+      ],
+    },
   ],
 
   IELTS: [
