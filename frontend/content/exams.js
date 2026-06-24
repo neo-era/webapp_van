@@ -1115,6 +1115,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'difficult'.", options: ['hard', 'tough', 'easy', 'complex'], answer: 2, explanation: 'difficult ↔ easy (dễ).' },
       ],
     },
+    {
+      examId: 'anh-kt45-16', title: 'Kiểm tra 45′ #16 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'I have been waiting ____ two hours.', options: ['since', 'during', 'in', 'for'], answer: 3, explanation: 'for + khoảng thời gian.' },
+        { stem: 'The children ____ playing outside when it started to rain.', options: ['were', 'was', 'are', 'is'], answer: 0, explanation: 'Quá khứ tiếp diễn, chủ ngữ số nhiều ⇒ were.' },
+        { stem: 'She speaks English very ____.', options: ['fluent', 'fluency', 'fluently', 'fluence'], answer: 2, explanation: 'Cần trạng từ bổ nghĩa động từ ⇒ fluently.' },
+        { stem: '____ you mind opening the window?', options: ['Do', 'Are', 'Will', 'Would'], answer: 3, explanation: 'Would you mind + V-ing (lời đề nghị lịch sự).' },
+        { stem: 'He has worked at this company ____ 2015.', options: ['for', 'since', 'during', 'by'], answer: 1, explanation: 'since + mốc thời gian.' },
+        { stem: "If it ____ tomorrow, we'll stay at home.", options: ['rained', 'will rain', 'rains', 'would rain'], answer: 2, explanation: 'Câu điều kiện loại 1: If + hiện tại đơn.' },
+        { stem: "Choose the synonym of 'smart'.", options: ['foolish', 'dull', 'intelligent', 'slow'], answer: 2, explanation: 'smart ≈ intelligent (thông minh).' },
+        { stem: 'The cake ____ by my mother yesterday.', options: ['made', 'makes', 'making', 'was made'], answer: 3, explanation: 'Bị động quá khứ: was made.' },
+        { stem: 'He studies hard ____ pass the final exam.', options: ['for', 'in order to', 'so', 'because'], answer: 1, explanation: 'in order to + V (chỉ mục đích).' },
+        { stem: "Choose the antonym of 'increase' (noun).", options: ['decrease', 'rise', 'growth', 'gain'], answer: 0, explanation: 'increase ↔ decrease (sự giảm).' },
+      ],
+    },
   ],
 
   TOEIC: [
