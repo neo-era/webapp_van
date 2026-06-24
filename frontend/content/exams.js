@@ -1520,6 +1520,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'big'.", options: ['large', 'huge', 'giant', 'small'], answer: 3, explanation: 'big ↔ small (nhỏ).' },
       ],
     },
+    {
+      examId: 'anh-kt45-25', title: 'Kiểm tra 45′ #25 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: "If I ____ you, I'd take the job offer.", options: ['were', 'am', 'was', 'be'], answer: 0, explanation: 'Câu điều kiện loại 2: If I were you …' },
+        { stem: "He's lived in this house ____ 2010.", options: ['for', 'ago', 'by', 'since'], answer: 3, explanation: 'since + mốc thời gian.' },
+        { stem: "I'm looking forward ____ you next week.", options: ['to seeing', 'to see', 'seeing', 'see'], answer: 0, explanation: 'look forward to + V-ing.' },
+        { stem: 'The film was so boring ____ I left halfway through.', options: ['as', 'that', 'which', 'what'], answer: 1, explanation: 'so + adj + that (chỉ kết quả).' },
+        { stem: 'She denied ____ the expensive vase.', options: ['to break', 'break', 'broke', 'breaking'], answer: 3, explanation: 'deny + V-ing.' },
+        { stem: 'Neither answer ____ correct.', options: ['are', 'were', 'is', 'am'], answer: 2, explanation: 'Neither + danh từ số ít ⇒ động từ số ít (is).' },
+        { stem: "Choose the synonym of 'clever'.", options: ['foolish', 'smart', 'dull', 'slow'], answer: 1, explanation: 'clever ≈ smart (thông minh).' },
+        { stem: "You ____ park here. It's strictly forbidden.", options: ['must', 'should', 'can', "mustn't"], answer: 3, explanation: "mustn't = cấm." },
+        { stem: 'By 2025, he ____ here for 10 years.', options: ['works', 'worked', 'will have worked', 'is working'], answer: 2, explanation: 'Tương lai hoàn thành: will have + V3.' },
+        { stem: "Choose the antonym of 'tall'.", options: ['high', 'short', 'big', 'long'], answer: 1, explanation: 'tall ↔ short (thấp).' },
+      ],
+    },
   ],
 
   TOEIC: [
