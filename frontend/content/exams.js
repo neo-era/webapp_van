@@ -1534,6 +1534,21 @@ const EXAMS = {
         { stem: 'The annual report must be ____ to the director.', options: ['submitted', 'submit', 'submitting', 'submission'], answer: 0, explanation: 'must be + V3 (bị động): submitted.' },
       ],
     },
+    {
+      examId: 'toeic-19', title: 'TOEIC – Grammar & Vocabulary #19', durationMin: 20,
+      questions: [
+        { stem: 'The annual conference will be ____ in Singapore this year.', options: ['posted', 'costed', 'roasted', 'hosted'], answer: 3, explanation: 'host a conference = tổ chức hội nghị.' },
+        { stem: 'We offer competitive ____ to all our employees.', options: ['beneficial', 'benefiting', 'benefits', 'benefited'], answer: 2, explanation: 'benefits = phúc lợi (danh từ số nhiều).' },
+        { stem: 'Please ____ your password regularly for security.', options: ['update', 'upgrade', 'upload', 'uphold'], answer: 0, explanation: 'update a password = cập nhật mật khẩu.' },
+        { stem: 'Your order has been ____ successfully.', options: ['played', 'placed', 'placing', 'place'], answer: 1, explanation: 'place an order ⇒ has been placed (bị động).' },
+        { stem: 'Our customer service is available ____ the clock.', options: ['about', 'across', 'around', 'along'], answer: 2, explanation: 'around the clock = 24/24.' },
+        { stem: 'All staff members are expected to be ____.', options: ['punctuate', 'punctuation', 'punctually', 'punctual'], answer: 3, explanation: 'Cần tính từ sau "be" ⇒ punctual.' },
+        { stem: 'We ____ to provide excellent service to every customer.', options: ['strive', 'strife', 'strike', 'stride'], answer: 0, explanation: 'strive to = nỗ lực.' },
+        { stem: 'The detailed figures are ____ in the appendix.', options: ['excluding', 'included', 'includes', 'include'], answer: 1, explanation: 'be + V3 (bị động): are included.' },
+        { stem: 'Our office is open ____ Monday to Friday.', options: ['in', 'on', 'from', 'at'], answer: 2, explanation: 'from … to … (khoảng thời gian).' },
+        { stem: 'The newly hired manager will ____ next Monday.', options: ['started', 'start', 'starting', 'starts'], answer: 1, explanation: 'will + động từ nguyên thể (start).' },
+      ],
+    },
   ],
 
   IELTS: [
