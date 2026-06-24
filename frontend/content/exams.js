@@ -1292,6 +1292,21 @@ const EXAMS = {
         { stem: 'Số mol ion $Cl^-$ trong $0{,}2$ mol $AlCl_3$?', options: ['$0{,}2$', '$0{,}6$', '$0{,}4$', '$1$'], answer: 1, explanation: 'Mỗi $AlCl_3 \\to 3Cl^-$ ⇒ $0{,}2\\cdot3=0{,}6$ mol.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-30', title: 'Kiểm tra 45′ #30 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4$ g NaOH ($M=40$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=4/40=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}5$ mol $H_2O$ ($M=18$)?', options: ['$9$ g', '$4{,}5$ g', '$18$ g', '$36$ g'], answer: 0, explanation: '$m=0{,}5\\cdot18=9$ g.' },
+        { stem: 'Thể tích $CO_2$ (đktc) khi đốt cháy hết $0{,}25$ mol C?', options: ['$2{,}8$ L', '$5{,}6$ L', '$11{,}2$ L', '$22{,}4$ L'], answer: 1, explanation: '$0{,}25$ mol $CO_2 \\Rightarrow V=5{,}6$ L.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}3$ mol $H_2SO_4$?', options: ['$0{,}3$', '$0{,}6$', '$0{,}9$', '$1{,}2$'], answer: 3, explanation: 'Mỗi phân tử có 4 O ⇒ $0{,}3\\cdot4=1{,}2$ mol.' },
+        { stem: 'Hòa tan $18$ g chất tan trong $82$ g nước. Nồng độ phần trăm?', options: ['$18\\%$', '$9\\%$', '$22\\%$', '$36\\%$'], answer: 0, explanation: '$C\\%=18/100\\cdot100\\%=18\\%$.' },
+        { stem: 'Khối lượng mol của $BaCl_2$ (Ba=137, Cl=35,5)?', options: ['$173$', '$208$', '$244$', '$154$'], answer: 1, explanation: '$137+2\\cdot35{,}5=208$ g/mol.' },
+        { stem: 'Kim loại nào dẫn nhiệt tốt nhất?', options: ['Fe', 'Pb', 'Ag', 'Zn'], answer: 2, explanation: 'Bạc (Ag) dẫn nhiệt và dẫn điện tốt nhất.' },
+        { stem: 'Phần trăm khối lượng H trong $H_2O$ ($M=18$)?', options: ['$88{,}9\\%$', '$50\\%$', '$2\\%$', '$11{,}1\\%$'], answer: 3, explanation: '$2/18\\cdot100\\%\\approx11{,}1\\%$.' },
+        { stem: 'Chất nào sau đây là hợp chất hữu cơ?', options: ['$CO_2$', '$CH_4$', '$CaCO_3$', '$NaHCO_3$'], answer: 1, explanation: '$CH_4$ (metan) là hợp chất hữu cơ (hidrocacbon).' },
+        { stem: 'Số mol $H_2SO_4$ cần để trung hòa hết $0{,}3$ mol KOH?', options: ['$0{,}3$', '$0{,}6$', '$0{,}15$', '$0{,}1$'], answer: 2, explanation: '$2KOH+H_2SO_4\\to K_2SO_4+2H_2O$; cần $0{,}15$ mol.' },
+      ],
+    },
   ],
 
   ANH: [
