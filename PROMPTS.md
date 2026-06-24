@@ -202,6 +202,109 @@ Lập danh sách việc còn tồn đọng nếu có.
 
 ---
 
+# PHẦN II — MỞ RỘNG: NỀN TẢNG HỌC TẬP (v2.0)
+
+> Giai đoạn 0–5 (Phần I) đã hoàn thành: app lập kế hoạch chạy thật trên GAS.
+> Các giai đoạn dưới đây xây nền tảng học tập theo **SRS.md Phần II** và **CLAUDE.md mục "Mở rộng v2.0"**.
+> MVP: **lớp 12, môn Toán/Lý/Hóa/Anh**. Khung **GDPT 2018**. Nội dung: **AI sinh nháp → giáo viên duyệt → xuất bản**.
+
+## GIAI ĐOẠN 6 — Module A: Danh mục môn học theo khối
+
+### Prompt 6.1 — Schema danh mục + môn/chủ đề
+```
+Đọc CLAUDE.md (mục Mở rộng v2.0) và SRS.md §11, §16.1.
+
+Backend:
+- Thêm SCHEMA cho sheet Subjects, Topics trong Utils.gs (ensureSheets tự tạo)
+- Classes.gs hoặc Catalog.gs: getSubjects (theo khối), getTopics (cây Chương→Bài theo môn+khối),
+  saveSubject/saveTopic (chỉ giáo viên/CONTENT_ADMIN)
+- Seed danh mục lớp 12: Toán, Vật lí, Hóa học, Tiếng Anh + vài chương mẫu mỗi môn
+- Đăng ký action vào Code.gs router
+
+Frontend: màn hình duyệt môn → chủ đề (chưa cần nội dung bài giảng).
+Push GAS + redeploy theo quy trình clasp trong CLAUDE.md.
+```
+
+## GIAI ĐOẠN 7 — Module B: Hệ thống bài giảng + công cụ AI sinh nháp
+
+### Prompt 7.1 — Bài giảng (CRUD + xem)
+```
+Đọc CLAUDE.md và SRS.md §12, §16.
+
+Backend Lessons.gs: getLessons (theo chủ đề, chỉ PUBLISHED cho HS), getLesson,
+saveLesson/deleteLesson (giáo viên), markLearned (LessonProgress).
+Trạng thái DRAFT/REVIEW/PUBLISHED; nội dung Markdown.
+Frontend: xem bài giảng theo cây chủ đề, render Markdown + KaTeX (công thức),
+tách Cốt lõi/Nâng cao, đánh dấu đã học, theo dõi tiến độ chủ đề.
+Push GAS + redeploy.
+```
+
+### Prompt 7.2 — Công cụ AI sinh nháp + quy trình duyệt
+```
+Đọc CLAUDE.md (mục AI + quy trình nội dung) và SRS.md §13.1, §16.2.
+
+Backend: action generateLesson(req) gọi Claude API qua UrlFetchApp (key trong Script Properties),
+sinh nháp bài giảng theo (môn, khối, chủ đề, mức độ) → lưu trạng thái DRAFT.
+Frontend (giáo viên): nút "Sinh nháp bằng AI" → xem/sửa → "Duyệt & xuất bản" (PUBLISHED).
+Tuân thủ: chỉ PUBLISHED hiển thị cho HS; ghi nguồn = AI.
+Lưu ý: cần đặt CLAUDE_API_KEY trong Script Properties trước khi test.
+```
+
+## GIAI ĐOẠN 8 — Module C: Giáo viên AI (chatbot)
+
+### Prompt 8.1 — Chatbot Claude gắn ngữ cảnh bài giảng
+```
+Đọc CLAUDE.md (mục AI) và SRS.md §13.
+
+Backend: action aiChat(req) — gọi Claude API, đính kèm nội dung bài giảng đang xem làm ngữ cảnh.
+Guardrail: chỉ phạm vi học tập; không làm hộ bài kiểm tra đang diễn ra.
+Kiểm soát chi phí: giới hạn lượt/HS/ngày; log token vào sheet AIChats. Model mặc định Haiku 4.5.
+Frontend: khung chat trong màn hình bài giảng, có loading (phản hồi ~3-10s), lưu lịch sử (tùy chọn).
+```
+
+## GIAI ĐOẠN 9 — Module D: Ngân hàng đề & bài kiểm tra
+
+### Prompt 9.1 — Ngân hàng câu hỏi + sinh nháp AI
+```
+Đọc CLAUDE.md và SRS.md §14, §16.
+
+Backend Questions.gs: CRUD câu hỏi (môn, khối, chủ đề, độ khó NB/TH/VD/VDC, loại, đáp án, lời giải),
+trạng thái DRAFT/PUBLISHED; generateQuestions(req) sinh nháp bằng AI.
+Frontend (giáo viên): quản lý + sinh nháp + duyệt câu hỏi.
+```
+
+### Prompt 9.2 — Tạo đề, làm bài, tự chấm
+```
+Đọc CLAUDE.md và SRS.md §14.
+
+Backend Exams.gs: tạo đề (chọn tay hoặc theo ma trận số câu/độ khó), getExam,
+submitAttempt (tự chấm trắc nghiệm, lưu Attempts), lịch sử làm bài.
+Frontend (HS): làm bài có đếm giờ → nộp → xem điểm + lời giải từng câu.
+Tự luận/Writing: chấm bằng AI theo rubric (tùy chọn), giáo viên duyệt lại.
+```
+
+## GIAI ĐOẠN 10 — Module E: Luyện thi IELTS / TOEIC
+
+### Prompt 10.1 — Nội dung & đề luyện theo kỹ năng
+```
+Đọc CLAUDE.md và SRS.md §15.
+
+Tái dùng Lessons/Questions với môn = IELTS / TOEIC + trường kỹ năng
+(IELTS: Listening/Reading/Writing/Speaking; TOEIC: Listening/Reading).
+Backend: placement test → lộ trình mục tiêu (IELTS 4.5→6.5, TOEIC 450→650).
+Đề luyện & thi thử theo định dạng; tự chấm Listening/Reading. Audio lưu Drive.
+```
+
+### Prompt 10.2 — AI chấm Writing/Speaking + theo dõi tiến độ
+```
+Đọc CLAUDE.md (mục AI) và SRS.md §15.
+
+Backend: action gradeWriting/gradeSpeaking — Claude chấm theo band descriptors, trả điểm + góp ý.
+Frontend: nộp bài Writing/Speaking → nhận nhận xét; biểu đồ tiến độ band/điểm theo thời gian.
+```
+
+---
+
 ## Mẹo khi chạy bộ prompt
 
 - Sau mỗi prompt, yêu cầu Claude **commit** với message rõ ràng trước khi sang prompt kế.

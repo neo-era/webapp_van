@@ -329,5 +329,50 @@ font-family: 'Inter','Be Vietnam Pro',system-ui,sans-serif; /* nạp qua Google 
 - [ ] Test mobile (375 → iPad), bottom nav hoạt động, không scroll ngang
 - [ ] Upload tài liệu (chặn >10MB và sai định dạng)
 - [ ] Có loading khi gọi backend; báo lỗi tiếng Việt rõ ràng
+
+---
+
+## Mở rộng v2.0 — Nền tảng học tập
+
+> Đặc tả đầy đủ ở **docs/SRS.md Phần II**. Mục này là quy ước kỹ thuật khi code các module mới.
+> **MVP:** lớp 12, môn **Toán / Vật lí / Hóa học / Tiếng Anh**. Khung **GDPT 2018** (xem SRS §10.2).
+
+### Phân kỳ
+A. Danh mục môn theo khối → B. Bài giảng → C. Giáo viên AI → D. Ngân hàng đề & kiểm tra → E. Luyện thi IELTS/TOEIC.
+Làm **bài giảng trước**; **Giáo viên AI (Claude) tích hợp ngay** khi có bài giảng.
+
+### Bảng dữ liệu mới (thêm vào SCHEMA trong Utils.gs để ensureSheets tự tạo)
+- **Subjects**: subjectCode, name, grades(csv), category(BAT_BUOC/TU_CHON), active
+- **Topics**: topicId, subjectCode, grade, parentId, title, order
+- **Lessons**: lessonId, subjectCode, grade, topicId, title, level(CO_BAN/NANG_CAO/CHUYEN), skill, contentMd, order, status(DRAFT/REVIEW/PUBLISHED), source(AI/MANUAL/IMPORT), createdBy, updatedAt
+- **Questions**: questionId, subjectCode, grade, topicId, type, difficulty(NB/TH/VD/VDC), level, stem, options(JSON), answer, explanation, status, source
+- **Exams**: examId, title, subjectCode, grade, kind(PRACTICE/TEST/MOCK), questionIds(JSON), durationMin, level, published
+- **Attempts**: attemptId, studentId, examId, answers(JSON), score, maxScore, startedAt, submittedAt
+- **LessonProgress**: studentId, lessonId, status(LEARNED), updatedAt
+- **AIChats**: msgId, studentId, context, role(USER/ASSISTANT), content, model, tokens, createdAt
+
+### Quy ước nội dung
+- Trạng thái: **DRAFT → REVIEW → PUBLISHED**; chỉ PUBLISHED hiển thị cho học sinh.
+- Quy trình: **AI sinh nháp → giáo viên duyệt/sửa → xuất bản**. Ghi `source` (AI/MANUAL/IMPORT).
+- Bài giảng dạng **Markdown**; công thức Toán/Lý/Hóa dùng **KaTeX/MathJax**; ảnh/audio lưu Drive.
+- Độ khó câu hỏi: **NB/TH/VD/VDC**. Mức độ: **Cơ bản / Nâng cao / Chuyên** (PTNK, LHP).
+
+### Quy ước Giáo viên AI (Claude API)
+- Backend gọi **Claude API** qua `UrlFetchApp` (action `aiChat`, `generateLesson`, `generateQuestions`, `gradeWriting`...).
+- **Khóa API** lưu ở **Script Properties** key `CLAUDE_API_KEY` — KHÔNG hardcode, KHÔNG lộ client.
+  Đọc: `PropertiesService.getScriptProperties().getProperty('CLAUDE_API_KEY')`.
+- **Model:** mặc định `claude-haiku-4-5` (rẻ/nhanh); nâng `claude-sonnet-4-6` / `claude-opus-4-8` cho bài khó hoặc chấm bài.
+- **Guardrail:** chỉ phạm vi học tập; KHÔNG tiết lộ đáp án bài thi đang làm; bám nội dung bài giảng đã xuất bản.
+- **Kiểm soát chi phí:** giới hạn lượt/HS/ngày; ghi log token vào sheet `AIChats`.
+- **Độ trễ:** Apps Script không stream → trả nguyên câu (~3–10s); luôn hiển thị loading.
+
+### Quy trình deploy lại sau khi sửa .gs (clasp)
+```
+clasp push --force
+clasp create-version "mô tả"
+clasp update-deployment -V <n> <deploymentId>   # GIỮ NGUYÊN URL, KHÔNG dùng create-deployment
+```
+Deployment ID hiện tại: `AKfycbzpCJYHRTwRmclDXEKg3kFpJLHtfHTaLlnMDXDzDlkOgJRBvw7NMoI99Ik8iwx99vfrdw`.
+Khi thêm scope mới (vd Drive, hoặc lần đầu dùng UrlFetchApp tới Claude) → cần **authorize lại 1 lần** trong editor.
 ```
 
