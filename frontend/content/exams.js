@@ -2347,6 +2347,21 @@ const EXAMS = {
         { stem: 'Were I in charge, I ____ change the policy immediately.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 2: Were … would + V.' },
       ],
     },
+    {
+      examId: 'ielts-kt-26', title: 'IELTS – Vocabulary & Grammar #26', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "substantiate".', options: ['prove', 'disprove', 'deny', 'refute'], answer: 0, explanation: 'substantiate ≈ prove (chứng minh).' },
+        { stem: 'Choose the synonym of "meticulous".', options: ['careful', 'careless', 'sloppy', 'hasty'], answer: 0, explanation: 'meticulous ≈ careful (tỉ mỉ).' },
+        { stem: 'Choose the antonym of "fluctuate".', options: ['vary', 'change', 'oscillate', 'stabilize'], answer: 3, explanation: 'fluctuate ↔ stabilize (ổn định).' },
+        { stem: 'Only in rare cases ____ exceptions made.', options: ['are', 'is', 'were', 'was'], answer: 0, explanation: 'Đảo ngữ; "exceptions" số nhiều hiện tại ⇒ are.' },
+        { stem: 'Choose the synonym of "curb".', options: ['encourage', 'promote', 'boost', 'restrain'], answer: 3, explanation: 'curb ≈ restrain (kiềm chế).' },
+        { stem: 'The theory, ____ validity is questioned, still persists.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "coherent".', options: ['logical', 'clear', 'organized', 'confused'], answer: 3, explanation: 'coherent ↔ confused (rời rạc, khó hiểu).' },
+        { stem: 'Hardly ever ____ such generosity.', options: ['I have witnessed', 'have I witnessed', 'I witnessed', 'did I witnessed'], answer: 1, explanation: 'Đảo ngữ với "Hardly ever": + have + S + V3.' },
+        { stem: 'Choose the synonym of "ubiquitous".', options: ['rare', 'omnipresent', 'scarce', 'absent'], answer: 1, explanation: 'ubiquitous ≈ omnipresent (có mặt khắp nơi).' },
+        { stem: 'So profound was the impact ____ it changed history.', options: ['as', 'which', 'that', 'when'], answer: 2, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
