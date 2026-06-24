@@ -1654,6 +1654,21 @@ const EXAMS = {
         { stem: 'We greatly value your ____ on our services.', options: ['feeding', 'fed', 'feedback', 'feeds'], answer: 2, explanation: 'feedback = phản hồi.' },
       ],
     },
+    {
+      examId: 'toeic-21', title: 'TOEIC – Grammar & Vocabulary #21', durationMin: 20,
+      questions: [
+        { stem: 'The product presentation will be ____ live online.', options: ['screamed', 'steamed', 'streamed', 'dreamed'], answer: 2, explanation: 'stream = phát trực tiếp.' },
+        { stem: 'Please ____ the assembly instructions carefully.', options: ['fellow', 'hollow', 'swallow', 'follow'], answer: 3, explanation: 'follow instructions = làm theo hướng dẫn.' },
+        { stem: 'Our prices are ____ than those of our competitors.', options: ['lower', 'low', 'lowest', 'lowly'], answer: 0, explanation: 'So sánh hơn + than ⇒ lower.' },
+        { stem: 'The new factory will ____ over 50 new jobs.', options: ['creative', 'creation', 'creator', 'create'], answer: 3, explanation: 'will + động từ nguyên thể (create).' },
+        { stem: 'Customers must ____ a valid receipt for returns.', options: ['prohibit', 'provide', 'promote', 'propose'], answer: 1, explanation: 'provide a receipt = xuất trình hóa đơn.' },
+        { stem: 'The submission deadline has been ____ to next week.', options: ['moved', 'removed', 'proved', 'approved'], answer: 0, explanation: 'move a deadline ⇒ has been moved.' },
+        { stem: 'All customer data is ____ confidential.', options: ['strict', 'strictly', 'strictness', 'stricter'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa tính từ ⇒ strictly.' },
+        { stem: 'Our company is committed ____ quality and innovation.', options: ['to', 'for', 'with', 'of'], answer: 0, explanation: 'be committed to + N.' },
+        { stem: 'The new shop is ____ located in the city center.', options: ['convenient', 'conveniently', 'convenience', 'conveniences'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa "located" ⇒ conveniently.' },
+        { stem: 'She was ____ for the Employee of the Year award.', options: ['dominated', 'terminated', 'eliminated', 'nominated'], answer: 3, explanation: 'be nominated for = được đề cử.' },
+      ],
+    },
   ],
 
   IELTS: [
