@@ -574,6 +574,21 @@ const EXAMS = {
         { stem: 'The manager ____ the proposal yesterday.', options: ['approve', 'approves', 'approved', 'approving'], answer: 2, explanation: 'yesterday ⇒ quá khứ đơn.' },
       ],
     },
+    {
+      examId: 'toeic-3', title: 'TOEIC – Grammar & Vocabulary #3', durationMin: 20,
+      questions: [
+        { stem: 'Please submit the report ____ Friday.', options: ['by', 'in', 'at', 'of'], answer: 0, explanation: 'by + hạn chót.' },
+        { stem: 'The company ____ a new product last month.', options: ['launch', 'launching', 'launched', 'launches'], answer: 2, explanation: 'last month ⇒ quá khứ đơn.' },
+        { stem: 'Employees are required ____ ID badges.', options: ['wear', 'to wear', 'wearing', 'worn'], answer: 1, explanation: 'be required + to V.' },
+        { stem: 'The company is trying to ____ operating costs.', options: ['increase', 'rise', 'raise', 'reduce'], answer: 3, explanation: 'cut/reduce costs.' },
+        { stem: 'The director will ____ the weekly meeting.', options: ['lead', 'do', 'make', 'take'], answer: 0, explanation: 'lead a meeting.' },
+        { stem: 'We apologize ____ the delay.', options: ['to', 'with', 'for', 'of'], answer: 2, explanation: 'apologize for something.' },
+        { stem: 'The invoice ____ to the client yesterday.', options: ['sends', 'was sent', 'sent', 'is sending'], answer: 1, explanation: 'Bị động quá khứ.' },
+        { stem: 'Choose the synonym of "increase" (verb).', options: ['fall', 'drop', 'cut', 'rise'], answer: 3, explanation: 'increase ≈ rise.' },
+        { stem: 'All staff ____ attend the safety training.', options: ['must', 'can', 'might', 'would'], answer: 0, explanation: 'yêu cầu bắt buộc: must.' },
+        { stem: 'The store is open ____ 9 a.m. to 6 p.m.', options: ['in', 'at', 'from', 'since'], answer: 2, explanation: 'from ... to ...' },
+      ],
+    },
   ],
 
   IELTS: [
