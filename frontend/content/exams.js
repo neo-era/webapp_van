@@ -1414,6 +1414,21 @@ const EXAMS = {
         { stem: 'We guarantee ____ delivery on all orders.', options: ['promptly', 'prompt', 'promptness', 'prompted'], answer: 1, explanation: 'Cần tính từ bổ nghĩa danh từ ⇒ prompt delivery.' },
       ],
     },
+    {
+      examId: 'toeic-17', title: 'TOEIC – Grammar & Vocabulary #17', durationMin: 20,
+      questions: [
+        { stem: 'The training program is ____ for all new staff.', options: ['optional', 'essential', 'voluntary', 'casual'], answer: 1, explanation: 'essential = thiết yếu, bắt buộc.' },
+        { stem: 'Our support team will ____ the issue promptly.', options: ['resolve', 'dissolve', 'evolve', 'involve'], answer: 0, explanation: 'resolve an issue = giải quyết vấn đề.' },
+        { stem: 'The store is ____ from 9 a.m. to 9 p.m. daily.', options: ['opened', 'opening', 'opens', 'open'], answer: 3, explanation: 'be open = mở cửa (tính từ).' },
+        { stem: 'We ____ your patience during the system maintenance.', options: ['depreciate', 'appreciate', 'apprehend', 'approximate'], answer: 1, explanation: 'appreciate = trân trọng, cảm kích.' },
+        { stem: 'Each department manages its own ____.', options: ['budgeting', 'budgeted', 'budgetary', 'budget'], answer: 3, explanation: 'Cần danh từ làm tân ngữ ⇒ budget.' },
+        { stem: 'The product comes ____ a two-year warranty.', options: ['with', 'on', 'at', 'of'], answer: 0, explanation: 'come with = đi kèm.' },
+        { stem: 'Please keep your phones ____ during the meeting.', options: ['off', 'on', 'up', 'out'], answer: 0, explanation: 'keep sth off = để tắt.' },
+        { stem: 'The candidate is well ____ for the management role.', options: ['suiting', 'suits', 'suit', 'suited'], answer: 3, explanation: 'be well suited for = rất phù hợp với.' },
+        { stem: 'We aim to ____ the highest quality standards.', options: ['contain', 'maintain', 'retain', 'detain'], answer: 1, explanation: 'maintain standards = duy trì tiêu chuẩn.' },
+        { stem: 'The latest sales figures show a ____ trend.', options: ['position', 'positively', 'positive', 'positivity'], answer: 2, explanation: 'Cần tính từ bổ nghĩa "trend" ⇒ positive.' },
+      ],
+    },
   ],
 
   IELTS: [
