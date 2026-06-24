@@ -1954,6 +1954,21 @@ const EXAMS = {
         { stem: 'All employees must ____ the company dress code.', options: ['following', 'follow', 'follows', 'followed'], answer: 1, explanation: 'must + động từ nguyên thể (follow).' },
       ],
     },
+    {
+      examId: 'toeic-26', title: 'TOEIC – Grammar & Vocabulary #26', durationMin: 20,
+      questions: [
+        { stem: 'The committee will ____ the proposal at the next meeting.', options: ['evaluation', 'evaluated', 'evaluating', 'evaluate'], answer: 3, explanation: 'will + động từ nguyên thể (evaluate).' },
+        { stem: "Our customers' ____ is our top priority.", options: ['trusting', 'trust', 'trusted', 'trusts'], answer: 1, explanation: 'trust = sự tin tưởng (danh từ).' },
+        { stem: 'He will ____ as the new managing director.', options: ['service', 'served', 'serve', 'serving'], answer: 2, explanation: 'will + nguyên thể; serve as = giữ chức.' },
+        { stem: 'Our prices are very ____ in the current market.', options: ['competitive', 'compete', 'competition', 'competitively'], answer: 0, explanation: 'Cần tính từ sau "very" ⇒ competitive.' },
+        { stem: 'The product warranty ____ for two full years.', options: ['last', 'lasting', 'lasted', 'lasts'], answer: 3, explanation: 'Chủ ngữ số ít, hiện tại đơn ⇒ lasts.' },
+        { stem: 'All staff members should ____ punctual.', options: ['are', 'be', 'being', 'been'], answer: 1, explanation: 'should + be + tính từ.' },
+        { stem: 'We ____ in providing high-quality customer service.', options: ['special', 'specialty', 'specialize', 'specialist'], answer: 2, explanation: 'specialize in = chuyên về.' },
+        { stem: 'Please submit your application ____ Friday.', options: ['by', 'until', 'since', 'while'], answer: 0, explanation: 'by + mốc thời gian (hạn chót).' },
+        { stem: 'The product is widely ____ for its durability.', options: ['knowing', 'knows', 'known', 'know'], answer: 2, explanation: 'be known for = nổi tiếng vì (bị động).' },
+        { stem: 'Our sales team is highly ____ and goal-oriented.', options: ['motivate', 'motivated', 'motivation', 'motivating'], answer: 1, explanation: 'highly motivated = đầy động lực (tính từ).' },
+      ],
+    },
   ],
 
   IELTS: [
