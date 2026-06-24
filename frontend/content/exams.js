@@ -530,6 +530,21 @@ const EXAMS = {
         { stem: "You ____ smoke here; it's forbidden.", options: ["mustn't", 'must', 'should', 'can'], answer: 0, explanation: "mustn't = cấm." },
       ],
     },
+    {
+      examId: 'anh-kt45-3', title: 'Kiểm tra 45′ #3 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She has worked here ____ five years.', options: ['since', 'in', 'for', 'ago'], answer: 2, explanation: 'for + khoảng thời gian.' },
+        { stem: 'The book ____ is on the table is mine.', options: ['which', 'who', 'whose', 'where'], answer: 0, explanation: 'which/that thay cho vật.' },
+        { stem: 'He ____ to school every day.', options: ['go', 'going', 'gone', 'goes'], answer: 3, explanation: 'Hiện tại đơn ngôi thứ ba: goes.' },
+        { stem: "I haven't seen him ____ Monday.", options: ['for', 'since', 'from', 'ago'], answer: 1, explanation: 'since + mốc thời gian.' },
+        { stem: 'If I had money, I ____ buy a car.', options: ['will', 'can', 'would', 'must'], answer: 2, explanation: 'Điều kiện loại 2: would + V.' },
+        { stem: 'This is ____ interesting book.', options: ['an', 'a', 'the', 'no'], answer: 0, explanation: 'an + nguyên âm (interesting).' },
+        { stem: 'They enjoy ____ football at weekends.', options: ['play', 'to play', 'played', 'playing'], answer: 3, explanation: 'enjoy + V-ing.' },
+        { stem: 'The cake ____ by Mary last night.', options: ['makes', 'was made', 'made', 'is making'], answer: 1, explanation: 'Bị động quá khứ.' },
+        { stem: 'Choose the synonym of "happy".', options: ['sad', 'angry', 'glad', 'tired'], answer: 2, explanation: 'happy ≈ glad.' },
+        { stem: 'He is taller ____ his brother.', options: ['than', 'then', 'as', 'that'], answer: 0, explanation: 'So sánh hơn: adj-er + than.' },
+      ],
+    },
   ],
 
   TOEIC: [
