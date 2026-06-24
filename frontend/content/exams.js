@@ -1340,6 +1340,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'open'.", options: ['ajar', 'closed', 'wide', 'unlock'], answer: 1, explanation: 'open ↔ closed (đóng).' },
       ],
     },
+    {
+      examId: 'anh-kt45-21', title: 'Kiểm tra 45′ #21 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: "I'll call you when I ____ home.", options: ['will get', 'got', 'getting', 'get'], answer: 3, explanation: 'Mệnh đề thời gian dùng hiện tại đơn (get).' },
+        { stem: "She's the woman ____ I met at the conference yesterday.", options: ['whom', 'who', 'which', 'whose'], answer: 0, explanation: 'whom làm tân ngữ chỉ người.' },
+        { stem: 'He has lived in Hanoi ____ five years.', options: ['since', 'ago', 'during', 'for'], answer: 3, explanation: 'for + khoảng thời gian.' },
+        { stem: 'The window ____ broken by the boys.', options: ['is', 'was', 'were', 'has'], answer: 1, explanation: 'Bị động quá khứ, chủ ngữ số ít ⇒ was.' },
+        { stem: 'I enjoy ____ to classical music.', options: ['listen', 'listening', 'to listen', 'listened'], answer: 1, explanation: 'enjoy + V-ing.' },
+        { stem: 'If she ____ harder, she would pass the exam.', options: ['studied', 'studies', 'study', 'has studied'], answer: 0, explanation: 'Câu điều kiện loại 2: If + quá khứ đơn.' },
+        { stem: "Choose the synonym of 'rich'.", options: ['poor', 'wealthy', 'broke', 'needy'], answer: 1, explanation: 'rich ≈ wealthy (giàu).' },
+        { stem: 'He spoke ____ that everyone understood him.', options: ['so clearly', 'such clearly', 'too clearly', 'very clearly'], answer: 0, explanation: 'so + trạng từ + that.' },
+        { stem: 'Nobody ____ the correct answer to that question.', options: ['know', 'are knowing', 'knows', 'have known'], answer: 2, explanation: '"Nobody" + động từ số ít (knows).' },
+        { stem: "Choose the antonym of 'happy'.", options: ['glad', 'joyful', 'cheerful', 'sad'], answer: 3, explanation: 'happy ↔ sad (buồn).' },
+      ],
+    },
   ],
 
   TOEIC: [
