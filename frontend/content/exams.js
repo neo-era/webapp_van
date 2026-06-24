@@ -962,6 +962,21 @@ const EXAMS = {
         { stem: 'Khí nào sau đây nhẹ hơn không khí?', options: ['$O_2$', '$H_2$', '$CO_2$', '$Cl_2$'], answer: 1, explanation: '$H_2$ ($M=2$) nhẹ hơn không khí ($M\\approx29$).' },
       ],
     },
+    {
+      examId: 'hoa-kt45-19', title: 'Kiểm tra 45′ #19 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $3{,}65$ g HCl ($M=36{,}5$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=3{,}65/36{,}5=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}5$ mol Fe ($M=56$)?', options: ['$28$ g', '$56$ g', '$14$ g', '$112$ g'], answer: 0, explanation: '$m=0{,}5\\cdot56=28$ g.' },
+        { stem: 'Thể tích $O_2$ (đktc) khi nhiệt phân $0{,}1$ mol $KClO_3$? ($2KClO_3\\to2KCl+3O_2$)', options: ['$2{,}24$ L', '$1{,}12$ L', '$3{,}36$ L', '$4{,}48$ L'], answer: 2, explanation: '$n_{O_2}=0{,}1\\cdot3/2=0{,}15$ mol $\\Rightarrow V=3{,}36$ L.' },
+        { stem: 'Thể tích $H_2$ (đktc) khi $0{,}1$ mol Mg tác dụng hết với HCl?', options: ['$1{,}12$ L', '$4{,}48$ L', '$0{,}224$ L', '$2{,}24$ L'], answer: 3, explanation: '$Mg+2HCl\\to MgCl_2+H_2$; $n_{H_2}=0{,}1\\Rightarrow V=2{,}24$ L.' },
+        { stem: 'Hòa tan $0{,}5$ mol NaCl vào nước được $250$ mL dung dịch. Nồng độ mol?', options: ['$0{,}5$', '$2$', '$1$', '$4$'], answer: 1, explanation: '$C_M=0{,}5/0{,}25=2$ M.' },
+        { stem: 'Khối lượng mol của $KMnO_4$ (K=39, Mn=55, O=16)?', options: ['$142$', '$119$', '$158$', '$174$'], answer: 2, explanation: '$39+55+4\\cdot16=158$ g/mol.' },
+        { stem: 'Phần trăm khối lượng O trong $CaCO_3$ ($M=100$)?', options: ['$48\\%$', '$40\\%$', '$12\\%$', '$60\\%$'], answer: 0, explanation: '$3\\cdot16/100\\cdot100\\%=48\\%$.' },
+        { stem: 'Kim loại nào tác dụng với nước tạo bazơ ở nhiệt độ thường?', options: ['Cu', 'Fe', 'Ag', 'K'], answer: 3, explanation: 'K (kim loại kiềm) tác dụng mạnh với nước tạo KOH.' },
+        { stem: 'Số mol nguyên tử H trong $0{,}2$ mol $H_2SO_4$?', options: ['$0{,}2$', '$0{,}4$', '$0{,}8$', '$0{,}1$'], answer: 1, explanation: 'Mỗi phân tử có 2 H ⇒ $0{,}2\\cdot2=0{,}4$ mol.' },
+        { stem: 'Khí nào sau đây có màu vàng lục?', options: ['$O_2$', '$Cl_2$', '$H_2$', '$N_2$'], answer: 1, explanation: 'Khí $Cl_2$ có màu vàng lục.' },
+      ],
+    },
   ],
 
   ANH: [
