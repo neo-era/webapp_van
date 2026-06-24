@@ -1025,6 +1025,21 @@ const EXAMS = {
         { stem: "He'd prefer ____ at home this weekend.", options: ['stay', 'to stay', 'staying', 'stayed'], answer: 1, explanation: 'would prefer + to + V.' },
       ],
     },
+    {
+      examId: 'anh-kt45-14', title: 'Kiểm tra 45′ #14 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'I wish I ____ to the party last night.', options: ['went', 'go', 'have gone', 'had gone'], answer: 3, explanation: 'wish + quá khứ hoàn thành (tiếc về quá khứ).' },
+        { stem: 'The teacher told us ____ talk during the test.', options: ['not to', 'to not', "don't", 'not'], answer: 0, explanation: 'tell sb not to + V (mệnh lệnh phủ định gián tiếp).' },
+        { stem: 'This bridge ____ in 1995.', options: ['built', 'was built', 'has built', 'builds'], answer: 1, explanation: 'Bị động quá khứ: was built.' },
+        { stem: 'She is interested ____ learning Japanese.', options: ['on', 'at', 'for', 'in'], answer: 3, explanation: 'be interested in + V-ing.' },
+        { stem: 'If I were you, I ____ accept the offer.', options: ['would', 'will', 'can', 'must'], answer: 0, explanation: 'Câu điều kiện loại 2: would + V.' },
+        { stem: 'Hardly ever ____ to the gym these days.', options: ['he goes', 'does he go', 'he go', 'goes he'], answer: 1, explanation: 'Đảo ngữ với "Hardly ever": + trợ động từ + S + V.' },
+        { stem: "Choose the synonym of 'begin'.", options: ['end', 'stop', 'finish', 'commence'], answer: 3, explanation: 'begin ≈ commence (bắt đầu).' },
+        { stem: "It's worth ____ the museum while in Paris.", options: ['to visit', 'visiting', 'visit', 'visited'], answer: 1, explanation: "It's worth + V-ing." },
+        { stem: 'He apologized ____ being late for the meeting.', options: ['for', 'to', 'with', 'about'], answer: 0, explanation: 'apologize for + V-ing.' },
+        { stem: "Choose the antonym of 'expensive'.", options: ['costly', 'pricey', 'cheap', 'dear'], answer: 2, explanation: 'expensive ↔ cheap (rẻ).' },
+      ],
+    },
   ],
 
   TOEIC: [
