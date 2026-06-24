@@ -2014,6 +2014,21 @@ const EXAMS = {
         { stem: 'Our sales team is highly ____ and goal-oriented.', options: ['motivate', 'motivated', 'motivation', 'motivating'], answer: 1, explanation: 'highly motivated = đầy động lực (tính từ).' },
       ],
     },
+    {
+      examId: 'toeic-27', title: 'TOEIC – Grammar & Vocabulary #27', durationMin: 20,
+      questions: [
+        { stem: 'The service contract is ____ for three years.', options: ['validate', 'validity', 'validly', 'valid'], answer: 3, explanation: 'be valid = có hiệu lực (tính từ).' },
+        { stem: 'Full-time employees are entitled to a paid ____.', options: ['leave', 'leaving', 'left', 'leaves'], answer: 0, explanation: 'paid leave = nghỉ phép có lương (danh từ).' },
+        { stem: 'We are ____ expanding into international markets.', options: ['current', 'currently', 'currency', 'currents'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa "expanding" ⇒ currently.' },
+        { stem: 'The board ____ the annual budget yesterday.', options: ['approved', 'approve', 'approves', 'approving'], answer: 0, explanation: 'Quá khứ đơn (yesterday): approved.' },
+        { stem: 'Customers should ____ a complaint form at the front desk.', options: ['summit', 'submit', 'subject', 'suspect'], answer: 1, explanation: 'submit a form = nộp mẫu đơn.' },
+        { stem: 'The new software is very ____ to use.', options: ['simply', 'simplify', 'simplicity', 'simple'], answer: 3, explanation: 'Cần tính từ sau "very" ⇒ simple.' },
+        { stem: 'Our company ____ in this industry for over 20 years.', options: ['has operated', 'operates', 'operating', 'operate'], answer: 0, explanation: 'for over 20 years ⇒ hiện tại hoàn thành.' },
+        { stem: 'Please ____ a copy of your identification to the form.', options: ['attack', 'attach', 'attend', 'attain'], answer: 1, explanation: 'attach = đính kèm.' },
+        { stem: "Yesterday's meeting was ____ productive.", options: ['high', 'height', 'higher', 'highly'], answer: 3, explanation: 'Cần trạng từ bổ nghĩa "productive" ⇒ highly.' },
+        { stem: 'All goods are subject to ____ inspection before shipping.', options: ['qualify', 'qualified', 'quality', 'qualifies'], answer: 2, explanation: 'quality inspection = kiểm tra chất lượng (danh từ ghép).' },
+      ],
+    },
   ],
 
   IELTS: [
