@@ -809,6 +809,21 @@ const EXAMS = {
         { stem: 'Đổi $107$ °C sang thang Kelvin?', options: ['$300$ K', '$380$ K', '$273$ K', '$350$ K'], answer: 1, explanation: '$107+273=380$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-28', title: 'Kiểm tra 45′ #28 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=2{,}5$ atm, $V_1=8$ L. Khi $p_2=5$ atm thì $V_2=?$', options: ['$4$ L', '$2$ L', '$8$ L', '$1$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=2{,}5\\cdot8/5=4$ L.' },
+        { stem: 'Nung $2$ kg đồng ($c=380$) tăng thêm $50$ °C cần nhiệt lượng?', options: ['$19000$ J', '$76000$ J', '$7600$ J', '$38000$ J'], answer: 3, explanation: '$Q=2\\cdot380\\cdot50=38000$ J.' },
+        { stem: 'Đoạn dây $L=0{,}5$ m chuyển động $v=10$ m/s vuông góc $B=0{,}6$ T. Suất điện động?', options: ['$1{,}5$ V', '$6$ V', '$3$ V', '$0{,}3$ V'], answer: 2, explanation: '$e=BLv=0{,}6\\cdot0{,}5\\cdot10=3$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{39}_{19}K$?', options: ['$20$', '$19$', '$39$', '$58$'], answer: 0, explanation: '$N=39-19=20$.' },
+        { stem: 'Hạt nhân nào có $9$ proton?', options: ['$^{16}O$', '$^{20}Ne$', '$^{14}N$', '$^{19}F$'], answer: 3, explanation: 'Flo có $Z=9$.' },
+        { stem: 'Thiết bị công suất $P=600$ W hoạt động $3$ s tiêu thụ công?', options: ['$900$ J', '$3600$ J', '$1800$ J', '$200$ J'], answer: 2, explanation: '$A=Pt=600\\cdot3=1800$ J.' },
+        { stem: 'Khí đẳng tích $p_1=9$ atm ở $300$ K, làm lạnh đến $100$ K. Áp suất sau?', options: ['$3$ atm', '$2$ atm', '$6$ atm', '$1$ atm'], answer: 0, explanation: '$p_2=p_1T_2/T_1=9\\cdot100/300=3$ atm.' },
+        { stem: 'Phản ứng nhiệt hạch tỏa năng lượng lớn vì?', options: ['hấp thụ neutron', 'một phần khối lượng giảm chuyển thành năng lượng', 'tạo ra electron', 'khối lượng không đổi'], answer: 1, explanation: 'Độ hụt khối chuyển thành năng lượng theo $E=\\Delta m\\,c^2$.' },
+        { stem: 'Sau $1$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1$', '$1/4$', '$1/8$', '$1/2$'], answer: 3, explanation: '$(1/2)^1=1/2$.' },
+        { stem: 'Đổi $47$ °C sang thang Kelvin?', options: ['$300$ K', '$320$ K', '$273$ K', '$290$ K'], answer: 1, explanation: '$47+273=320$ K.' },
+      ],
+    },
   ],
 
   HOA: [
