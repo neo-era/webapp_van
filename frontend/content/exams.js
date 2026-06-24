@@ -1565,6 +1565,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'tall'.", options: ['high', 'short', 'big', 'long'], answer: 1, explanation: 'tall ↔ short (thấp).' },
       ],
     },
+    {
+      examId: 'anh-kt45-26', title: 'Kiểm tra 45′ #26 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She asked me what time ____.', options: ['it was', 'was it', 'is it', 'it is'], answer: 0, explanation: 'Câu hỏi gián tiếp: trật tự S + V (it was).' },
+        { stem: 'He is ____ tired to continue working.', options: ['so', 'very', 'enough', 'too'], answer: 3, explanation: 'too + adj + to V (quá … để).' },
+        { stem: 'They ____ the house since 2015.', options: ['have owned', 'own', 'owned', 'owning'], answer: 0, explanation: 'since 2015 ⇒ hiện tại hoàn thành (have owned).' },
+        { stem: 'The teacher made us ____ the test again.', options: ['to take', 'taking', 'took', 'take'], answer: 3, explanation: 'make + O + V nguyên thể không to.' },
+        { stem: 'If you heat ice, it ____.', options: ['melt', 'melts', 'melted', 'will melt'], answer: 1, explanation: 'Câu điều kiện loại 0 (chân lý): hiện tại đơn cả hai vế.' },
+        { stem: "She's the person ____ helped me move house.", options: ['who', 'whom', 'which', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: "Choose the synonym of 'sad'.", options: ['happy', 'glad', 'cheerful', 'unhappy'], answer: 3, explanation: 'sad ≈ unhappy (buồn).' },
+        { stem: "It's high time we ____.", options: ['leave', 'left', 'leaving', 'to leave'], answer: 1, explanation: "It's high time + S + V quá khứ." },
+        { stem: 'He spent two hours ____ the report.', options: ['to write', 'writing', 'write', 'wrote'], answer: 1, explanation: 'spend + time + V-ing.' },
+        { stem: "Choose the antonym of 'easy'.", options: ['simple', 'light', 'difficult', 'clear'], answer: 2, explanation: 'easy ↔ difficult (khó).' },
+      ],
+    },
   ],
 
   TOEIC: [
