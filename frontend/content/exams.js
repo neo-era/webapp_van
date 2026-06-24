@@ -2134,6 +2134,21 @@ const EXAMS = {
         { stem: 'Please respond ____ to this urgent email.', options: ['prompt', 'promptness', 'promptly', 'prompted'], answer: 2, explanation: 'Cần trạng từ bổ nghĩa "respond" ⇒ promptly.' },
       ],
     },
+    {
+      examId: 'toeic-29', title: 'TOEIC – Grammar & Vocabulary #29', durationMin: 20,
+      questions: [
+        { stem: 'The flight has been ____ due to heavy fog.', options: ['canceling', 'cancel', 'cancels', 'cancelled'], answer: 3, explanation: 'has been + V3 (bị động): cancelled.' },
+        { stem: 'We greatly appreciate your ____ business with us.', options: ['continue', 'continued', 'continuing', 'continues'], answer: 1, explanation: 'continued business = sự hợp tác liên tục (tính từ).' },
+        { stem: 'The ____ of the new product was a great success.', options: ['launch', 'launching', 'launched', 'launcher'], answer: 0, explanation: 'the launch = sự ra mắt (danh từ).' },
+        { stem: 'All staff are ____ to attend the safety workshop.', options: ['encourage', 'encouraging', 'encourages', 'encouraged'], answer: 3, explanation: 'be + V3 (bị động): are encouraged.' },
+        { stem: 'Our headquarters is ____ in the city center.', options: ['base', 'based', 'basing', 'bases'], answer: 1, explanation: 'be based in = đặt trụ sở tại.' },
+        { stem: 'All job applications must be ____ online.', options: ['filed', 'file', 'filing', 'files'], answer: 0, explanation: 'must be + V3 (bị động): filed.' },
+        { stem: 'The new film received highly ____ reviews.', options: ['favor', 'favorably', 'favored', 'favorable'], answer: 3, explanation: 'Cần tính từ bổ nghĩa "reviews" ⇒ favorable.' },
+        { stem: 'We strive to ____ excellent service to every client.', options: ['insure', 'assure', 'ensure', 'secure'], answer: 2, explanation: 'ensure = đảm bảo.' },
+        { stem: 'The service contract is ____ until December.', options: ['effect', 'effective', 'effectively', 'effectiveness'], answer: 1, explanation: 'be effective = có hiệu lực (tính từ).' },
+        { stem: 'Please ____ any errors in the financial report.', options: ['correct', 'collect', 'connect', 'contact'], answer: 0, explanation: 'correct errors = sửa lỗi.' },
+      ],
+    },
   ],
 
   IELTS: [
