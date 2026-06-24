@@ -772,6 +772,21 @@ const EXAMS = {
         { stem: 'If it had not rained, we ____ have gone out.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Điều kiện loại 3: would have + V3.' },
       ],
     },
+    {
+      examId: 'ielts-kt-5', title: 'IELTS – Vocabulary & Grammar #5', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "achieve".', options: ['fail', 'lose', 'accomplish', 'miss'], answer: 2, explanation: 'achieve ≈ accomplish.' },
+        { stem: '____ being tired, he finished the work on time.', options: ['Despite', 'Because', 'So', 'And'], answer: 0, explanation: 'Despite + V-ing.' },
+        { stem: 'A variety of options ____ available to customers.', options: ['is', 'was', 'has', 'are'], answer: 3, explanation: '"a variety of" + danh từ số nhiều + are.' },
+        { stem: 'Choose the synonym of "consequently".', options: ['however', 'although', 'therefore', 'despite'], answer: 2, explanation: 'consequently ≈ therefore.' },
+        { stem: 'He is the ____ student in the class.', options: ['more intelligent', 'most intelligent', 'intelligent', 'intelligentest'], answer: 1, explanation: 'So sánh nhất: the most + adj dài.' },
+        { stem: 'Rarely ____ we see such talent.', options: ['does', 'did', 'are', 'do'], answer: 3, explanation: 'Đảo ngữ: Rarely do we…' },
+        { stem: 'Choose the synonym of "decline" (noun).', options: ['decrease', 'rise', 'growth', 'increase'], answer: 0, explanation: 'decline ≈ decrease.' },
+        { stem: 'The project, ____ took two years, was successful.', options: ['who', 'whose', 'which', 'where'], answer: 2, explanation: 'which cho vật.' },
+        { stem: 'Studies show that exercise ____ stress.', options: ['reduce', 'reduces', 'reducing', 'reduced'], answer: 1, explanation: '"exercise" (số ít) + reduces.' },
+        { stem: 'Choose the synonym of "feasible".', options: ['impossible', 'difficult', 'rare', 'possible'], answer: 3, explanation: 'feasible ≈ possible.' },
+      ],
+    },
   ],
 };
 
