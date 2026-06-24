@@ -95,6 +95,11 @@ function route(action, req) {
     case 'saveSubject':    return saveSubject(req);
     case 'saveTopic':      return saveTopic(req);
 
+    // --- v2.0 Giáo viên AI (AI.gs) ---
+    case 'aiChat':         return aiChat(req);
+    case 'generateLesson': return generateLesson(req);
+    case 'aiStatus':       return aiStatus(req);
+
     // --- v2.0 Bài giảng (Lessons.gs) ---
     case 'getLessons':       return getLessons(req);
     case 'getLesson':        return getLesson(req);

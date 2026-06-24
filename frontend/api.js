@@ -101,6 +101,14 @@ const MockApi = {
         return { lessonId: payload.lessonId, learned: !!payload.learned };
       case 'getLearnedLessons':
         return [];
+      case 'setLessonStatus':
+        return { lessonId: payload.lessonId, status: payload.status };
+      case 'aiStatus':
+        return { configured: false };
+      case 'aiChat':
+        return { reply: '*(Bản demo)* Đây là câu trả lời mẫu của giáo viên AI. Khi cấu hình Claude API thật, AI sẽ giải thích theo bài giảng. Ví dụ công thức: $f\'(x) \\ge 0$.', remaining: 39 };
+      case 'generateLesson':
+        return { lessonId: 'l' + Date.now(), title: payload.title, status: 'DRAFT', source: 'AI', contentMd: '## Cốt lõi\n*(nháp demo)*' };
 
       case 'getStudentData':
         return {

@@ -547,7 +547,8 @@ async function renderLearn() {
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
         <h2>${v.topicTitle}</h2><p>Danh sách bài giảng</p></div>
-      <div id="learn-body"><div class="empty">Đang tải…</div></div>`;
+      <div id="learn-body"><div class="empty">Đang tải…</div></div>
+      ${App.state.role === 'TEACHER' ? '<button class="btn btn-ghost btn-block" style="margin-top:12px" onclick="openGenerateLesson()">✨ Sinh nháp bài giảng bằng AI</button>' : ''}`;
     try {
       const [lessons, learned] = await Promise.all([
         Api.call('getLessons', { topicId: v.topicId }),
@@ -569,20 +570,99 @@ async function renderLearn() {
   }
 
   if (v.view === 'lesson') {
+    const isTeacher = App.state.role === 'TEACHER';
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('lessons')">‹ ${v.topicTitle}</p>
         <h2>${v.lessonTitle}</h2></div>
       <div class="card"><div id="lesson-content" class="lesson-content"><div class="empty">Đang tải…</div></div></div>
-      <button id="lesson-learn-btn" class="btn btn-block" style="margin-top:14px" onclick="learnToggleLearned()">…</button>`;
+      <button id="lesson-learn-btn" class="btn btn-block" style="margin-top:14px" onclick="learnToggleLearned()">…</button>
+      <div id="teacher-lesson-ctrl"></div>
+
+      <div class="section-block" style="margin-top:22px">
+        <div class="section-title">💬 Hỏi giáo viên AI</div>
+        <div class="card">
+          <div id="ai-answer" class="lesson-content" style="min-height:8px"></div>
+          <div style="display:flex;gap:8px;margin-top:10px">
+            <input id="ai-input" class="field" style="flex:1" placeholder="Hỏi về bài học này…"
+              onkeydown="if(event.key==='Enter')aiAsk()" />
+            <button class="btn btn-primary btn-sm" onclick="aiAsk()">Gửi</button>
+          </div>
+          <p class="muted" style="font-size:0.78rem;margin-top:6px">AI chỉ gợi ý học tập, không làm hộ bài kiểm tra.</p>
+        </div>
+      </div>`;
     try {
       const lesson = await Api.call('getLesson', { lessonId: v.lessonId });
       v.lesson = lesson;
       renderMarkdown(lesson.contentMd, $('#lesson-content'));
       const done = (App.data.learned || []).indexOf(v.lessonId) >= 0;
       updateLearnBtn(done);
+      if (isTeacher) {
+        $('#teacher-lesson-ctrl').innerHTML = `
+          <div class="card" style="margin-top:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span class="muted">Trạng thái: <b>${lesson.status}</b> · nguồn ${lesson.source}</span>
+              <button class="btn btn-sm ${lesson.status === 'PUBLISHED' ? 'btn-ghost' : 'btn-primary'}"
+                onclick="learnTogglePublish('${lesson.lessonId}','${lesson.status}')">
+                ${lesson.status === 'PUBLISHED' ? 'Ẩn (DRAFT)' : 'Xuất bản'}</button>
+            </div>
+          </div>`;
+      }
     } catch (e) { $('#lesson-content').innerHTML = `<div class="empty">${e.message}</div>`; }
     return;
   }
+}
+
+async function aiAsk() {
+  const input = $('#ai-input');
+  const q = input.value.trim();
+  if (!q) return;
+  const ans = $('#ai-answer');
+  ans.innerHTML = '<div class="muted">Giáo viên AI đang trả lời…</div>';
+  input.value = '';
+  try {
+    const r = await Api.call('aiChat', { message: q, lessonId: App.state.learn.lessonId });
+    renderMarkdown('**Hỏi:** ' + q + '\n\n' + r.reply, ans);
+  } catch (e) { ans.innerHTML = `<div class="empty">${e.message}</div>`; }
+}
+
+function openGenerateLesson() {
+  const v = App.state.learn;
+  openModal('Sinh nháp bài giảng (AI)', `
+    <label class="field"><span>Tiêu đề bài giảng</span><input id="m-title" placeholder="VD: Cực trị của hàm số" /></label>
+    <label class="field"><span>Mức độ</span><select id="m-level">
+      <option value="CO_BAN">Cơ bản</option>
+      <option value="NANG_CAO">Nâng cao</option>
+      <option value="CHUYEN">Chuyên</option>
+    </select></label>
+    <p class="muted" style="font-size:0.82rem">AI sẽ tạo bản nháp (DRAFT). Bạn xem lại và bấm "Xuất bản" để hiển thị cho học sinh.</p>
+    <button class="btn btn-primary btn-block" onclick="runGenerateLesson()">✨ Sinh nháp</button>`);
+}
+async function runGenerateLesson() {
+  const v = App.state.learn;
+  const title = $('#m-title').value.trim();
+  if (!title) { showToast('Nhập tiêu đề', 'error'); return; }
+  showLoading();
+  try {
+    await Api.call('generateLesson', {
+      subjectCode: v.subjectCode, grade: App.state.user.grade || 12,
+      topicId: v.topicId, title: title, level: $('#m-level').value,
+    });
+    closeModal(); renderLearn();
+    showToast('Đã tạo bản nháp. Mở bài để xem & xuất bản.', 'success');
+  } catch (e) { showToast(e.message, 'error'); }
+  finally { hideLoading(); }
+}
+
+async function learnTogglePublish(lessonId, status) {
+  const next = status === 'PUBLISHED' ? 'DRAFT' : 'PUBLISHED';
+  showLoading();
+  try {
+    await Api.call('setLessonStatus', { lessonId: lessonId, status: next });
+    if (App.state.learn.lesson) App.state.learn.lesson.status = next;
+    renderLearn();
+    showToast(next === 'PUBLISHED' ? 'Đã xuất bản' : 'Đã chuyển nháp', 'success');
+  } catch (e) { showToast(e.message, 'error'); }
+  finally { hideLoading(); }
 }
 
 function updateLearnBtn(done) {
