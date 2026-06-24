@@ -794,6 +794,21 @@ const EXAMS = {
         { stem: 'Đổi $67$ °C sang thang Kelvin?', options: ['$300$ K', '$340$ K', '$273$ K', '$313$ K'], answer: 1, explanation: '$67+273=340$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-27', title: 'Kiểm tra 45′ #27 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=4$ atm, $V_1=5$ L. Khi $p_2=10$ atm thì $V_2=?$', options: ['$2$ L', '$1$ L', '$3$ L', '$4$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=4\\cdot5/10=2$ L.' },
+        { stem: 'Nung $0{,}5$ kg sắt ($c=460$) tăng thêm $40$ °C cần nhiệt lượng?', options: ['$4600$ J', '$18400$ J', '$2300$ J', '$9200$ J'], answer: 3, explanation: '$Q=0{,}5\\cdot460\\cdot40=9200$ J.' },
+        { stem: 'Đoạn dây $L=0{,}5$ m chuyển động $v=6$ m/s vuông góc $B=0{,}4$ T. Suất điện động?', options: ['$0{,}6$ V', '$2{,}4$ V', '$1{,}2$ V', '$0{,}3$ V'], answer: 2, explanation: '$e=BLv=0{,}4\\cdot0{,}5\\cdot6=1{,}2$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{35}_{17}Cl$?', options: ['$18$', '$17$', '$35$', '$52$'], answer: 0, explanation: '$N=35-17=18$.' },
+        { stem: 'Hạt nhân nào có $12$ proton?', options: ['$^{23}Na$', '$^{27}Al$', '$^{20}Ne$', '$^{24}Mg$'], answer: 3, explanation: 'Magie có $Z=12$.' },
+        { stem: 'Thiết bị công suất $P=400$ W hoạt động $5$ s tiêu thụ công?', options: ['$1000$ J', '$4000$ J', '$2000$ J', '$500$ J'], answer: 2, explanation: '$A=Pt=400\\cdot5=2000$ J.' },
+        { stem: 'Khí đẳng áp $V_1=1$ L ở $200$ K, đun đến $800$ K. Thể tích sau?', options: ['$4$ L', '$2$ L', '$8$ L', '$3$ L'], answer: 0, explanation: '$V_2=V_1T_2/T_1=1\\cdot800/200=4$ L.' },
+        { stem: 'Phản ứng phân hạch tạo ra nhiều hạt nào tiếp tục gây phản ứng dây chuyền?', options: ['proton', 'neutron', 'electron', 'photon'], answer: 1, explanation: 'Các neutron sinh ra tiếp tục bắn phá hạt nhân khác.' },
+        { stem: 'Sau $8$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/64$', '$1/128$', '$1/512$', '$1/256$'], answer: 3, explanation: '$(1/2)^8=1/256$.' },
+        { stem: 'Đổi $107$ °C sang thang Kelvin?', options: ['$300$ K', '$380$ K', '$273$ K', '$350$ K'], answer: 1, explanation: '$107+273=380$ K.' },
+      ],
+    },
   ],
 
   HOA: [
