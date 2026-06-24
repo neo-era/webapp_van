@@ -171,6 +171,36 @@ const EXAMS = {
         { stem: 'Cho $y=x^3-3x$. Giá trị $y(1)$ là?', options: ['$2$', '$-2$', '$0$', '$-4$'], answer: 1, explanation: '$1-3=-2$.' },
       ],
     },
+    {
+      examId: 'kt45-9', title: 'Kiểm tra 45′ #9 — Hình học tọa độ không gian', durationMin: 45,
+      questions: [
+        { stem: 'Vectơ pháp tuyến của mặt phẳng $(Oxy)$ (tức $z=0$) là?', options: ['$(1;0;0)$', '$(0;1;0)$', '$(0;0;1)$', '$(1;1;0)$'], answer: 2, explanation: 'Mặt phẳng $z=0$ có VTPT $(0;0;1)$.' },
+        { stem: 'Giao điểm của $d:x=t,y=2t,z=3t$ với mặt phẳng $z=3$ là?', options: ['$(1;2;3)$', '$(0;0;3)$', '$(3;6;9)$', '$(1;1;1)$'], answer: 0, explanation: '$z=3t=3\\Rightarrow t=1$.' },
+        { stem: 'Phương trình mặt cầu tâm $O$ bán kính $2$ là?', options: ['$x^2+y^2+z^2=2$', '$x^2+y^2+z^2=4$', '$x^2+y^2+z^2=1$', '$x^2+y^2+z^2=16$'], answer: 1, explanation: '$R^2=4$.' },
+        { stem: 'Khoảng cách từ $M(2;0;0)$ đến gốc $O$ là?', options: ['$4$', '$1$', '$\\sqrt2$', '$2$'], answer: 3, explanation: '$OM=2$.' },
+        { stem: 'Hai mặt phẳng $x+y+z=0$ và $2x+2y+2z=5$ có vị trí?', options: ['Song song', 'Cắt nhau', 'Trùng nhau', 'Vuông góc'], answer: 0, explanation: 'VTPT cùng phương, hằng số khác ⇒ song song.' },
+        { stem: 'Vectơ pháp tuyến của $2x-y+2z-3=0$ là?', options: ['$(2;1;2)$', '$(2;-1;2)$', '$(2;-1;-2)$', '$(-2;1;2)$'], answer: 1, explanation: 'Hệ số $x,y,z$.' },
+        { stem: 'Trung điểm của $A(1;3;5)$ và $B(3;1;-1)$ là?', options: ['$(4;4;4)$', '$(1;1;1)$', '$(2;2;2)$', '$(2;2;3)$'], answer: 2, explanation: '$\\left(\\tfrac{1+3}{2};\\tfrac{3+1}{2};\\tfrac{5-1}{2}\\right)$.' },
+        { stem: 'Khoảng cách từ $O$ đến mặt phẳng $z=5$ là?', options: ['$5$', '$0$', '$1$', '$25$'], answer: 0, explanation: '$\\dfrac{|-5|}{1}=5$.' },
+        { stem: 'Đường thẳng qua $O$ có VTCP $(1;1;1)$ có dạng tham số?', options: ['$x=1,y=1,z=1$', '$x=t,y=2t,z=3t$', '$x=0$', '$x=t,y=t,z=t$'], answer: 3, explanation: 'Qua $O$, VTCP $(1;1;1)$.' },
+        { stem: 'Tâm mặt cầu $x^2+y^2+z^2-6z=0$ là?', options: ['$(0;0;-3)$', '$(0;0;3)$', '$(0;0;6)$', '$(0;3;0)$'], answer: 1, explanation: '$-2c=-6\\Rightarrow c=3$, $I(0;0;3)$.' },
+      ],
+    },
+    {
+      examId: 'kt45-10', title: 'Kiểm tra 45′ #10 — Tổng hợp cuối kỳ', durationMin: 45,
+      questions: [
+        { stem: 'Số điểm cực trị của $y=x^3-3x^2+4$ là?', options: ['$0$', '$1$', '$2$', '$3$'], answer: 2, explanation: '$y\'=3x^2-6x=3x(x-2)$ có 2 nghiệm.' },
+        { stem: 'Tính $\\displaystyle\\int_0^1 (x+1)\\,dx$.', options: ['$\\tfrac32$', '$1$', '$2$', '$\\tfrac12$'], answer: 0, explanation: '$[x^2/2+x]_0^1=\\tfrac32$.' },
+        { stem: 'Cho $P(A)=0{,}6$, $P(B\\mid A)=0{,}5$. Tính $P(A\\cap B)$.', options: ['$0{,}6$', '$0{,}3$', '$1{,}1$', '$0{,}5$'], answer: 1, explanation: '$P(A)P(B\\mid A)=0{,}3$.' },
+        { stem: 'GTNN của $y=x^2-6x+10$ trên $\\mathbb{R}$ là?', options: ['$10$', '$3$', '$0$', '$1$'], answer: 3, explanation: '$y=(x-3)^2+1\\ge 1$.' },
+        { stem: 'Tiệm cận đứng của $y=\\dfrac{2x+1}{x-1}$ là?', options: ['$x=1$', '$y=2$', '$x=-1$', '$y=1$'], answer: 0, explanation: 'Mẫu $=0\\Leftrightarrow x=1$.' },
+        { stem: '$\\displaystyle\\int \\sin x\\,dx$ bằng?', options: ['$\\cos x+C$', '$\\sin x+C$', '$-\\cos x+C$', '$-\\sin x+C$'], answer: 2, explanation: '$\\int\\sin x dx=-\\cos x+C$.' },
+        { stem: 'Độ dài $\\vec{u}=(3;4;0)$ là?', options: ['$7$', '$5$', '$25$', '$\\sqrt7$'], answer: 1, explanation: '$\\sqrt{9+16}=5$.' },
+        { stem: 'Trung vị của mẫu $2,4,6,8,10$ là?', options: ['$4$', '$8$', '$5$', '$6$'], answer: 3, explanation: 'Số ở giữa là $6$.' },
+        { stem: 'Đạo hàm của $y=x^2$ là?', options: ['$2x$', '$x^2$', '$2$', '$x$'], answer: 0, explanation: '$(x^2)\'=2x$.' },
+        { stem: 'Bán kính mặt cầu $(x-2)^2+y^2+z^2=9$ là?', options: ['$9$', '$\\sqrt3$', '$3$', '$6$'], answer: 2, explanation: '$R=\\sqrt9=3$.' },
+      ],
+    },
   ],
 
   TOEIC: [
