@@ -1822,6 +1822,21 @@ const EXAMS = {
         { stem: 'Hardly anyone ____ the correct answer.', options: ['know', 'are knowing', 'knows', 'have known'], answer: 2, explanation: '"Hardly anyone" + động từ số ít (knows).' },
       ],
     },
+    {
+      examId: 'ielts-kt-19', title: 'IELTS – Vocabulary & Grammar #19', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "eliminate".', options: ['remove', 'keep', 'add', 'retain'], answer: 0, explanation: 'eliminate ≈ remove (loại bỏ).' },
+        { stem: 'Choose the synonym of "controversial".', options: ['debatable', 'agreed', 'settled', 'certain'], answer: 0, explanation: 'controversial ≈ debatable (gây tranh cãi).' },
+        { stem: 'Choose the antonym of "scatter".', options: ['spread', 'disperse', 'gather', 'distribute'], answer: 2, explanation: 'scatter ↔ gather (tụ họp).' },
+        { stem: 'Such was the demand ____ the tickets sold out in minutes.', options: ['as', 'which', 'what', 'that'], answer: 3, explanation: 'Such … that … (kết quả).' },
+        { stem: 'Choose the synonym of "preserve".', options: ['waste', 'destroy', 'ruin', 'conserve'], answer: 3, explanation: 'preserve ≈ conserve (bảo tồn).' },
+        { stem: 'The teacher, ____ explanation was clear, helped us a lot.', options: ['who', 'whose', 'which', 'whom'], answer: 1, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "reveal".', options: ['show', 'expose', 'display', 'conceal'], answer: 3, explanation: 'reveal ↔ conceal (che giấu).' },
+        { stem: 'Were it not for his help, we ____ failed the project.', options: ['will have', 'had', 'would have', 'have'], answer: 2, explanation: 'Đảo ngữ điều kiện loại 3: Were it not for … would have + V3.' },
+        { stem: 'Choose the synonym of "tremendous".', options: ['tiny', 'huge', 'small', 'minor'], answer: 1, explanation: 'tremendous ≈ huge (to lớn).' },
+        { stem: 'No sooner had the show ended ____ the crowd left.', options: ['when', 'then', 'than', 'that'], answer: 2, explanation: 'No sooner … than …' },
+      ],
+    },
   ],
 };
 
