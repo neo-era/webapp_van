@@ -1114,6 +1114,21 @@ const EXAMS = {
         { stem: 'We look forward to ____ from you soon.', options: ['hear', 'hearing', 'heard', 'hears'], answer: 1, explanation: 'look forward to + V-ing.' },
       ],
     },
+    {
+      examId: 'toeic-12', title: 'TOEIC – Grammar & Vocabulary #12', durationMin: 20,
+      questions: [
+        { stem: 'The shipment ____ tomorrow morning at 9 a.m.', options: ['arrives', 'arriving', 'arrived', 'will arrive'], answer: 3, explanation: 'Mốc tương lai (tomorrow) ⇒ will arrive.' },
+        { stem: 'We need to ____ our inventory levels weekly.', options: ['mention', 'mediate', 'monitor', 'modify'], answer: 2, explanation: 'monitor = theo dõi, giám sát.' },
+        { stem: 'The form must be filled out ____ black ink.', options: ['on', 'in', 'at', 'by'], answer: 1, explanation: 'in + (loại mực) black ink.' },
+        { stem: 'Attendance at the safety seminar is ____.', options: ['optional', 'voluntary', 'casual', 'mandatory'], answer: 3, explanation: 'mandatory = bắt buộc.' },
+        { stem: 'She has extensive ____ in digital marketing.', options: ['experiment', 'experience', 'expert', 'expense'], answer: 1, explanation: 'experience = kinh nghiệm (danh từ không đếm được).' },
+        { stem: 'Please ____ us of any changes to your address.', options: ['notice', 'note', 'notable', 'notify'], answer: 3, explanation: 'notify someone of something = thông báo cho ai.' },
+        { stem: 'The submission deadline has been ____ to Friday.', options: ['extend', 'extending', 'extended', 'extension'], answer: 2, explanation: 'has been + V3 (bị động): extended.' },
+        { stem: 'Our new office is conveniently ____ near the station.', options: ['situated', 'situating', 'situation', 'situate'], answer: 0, explanation: 'be situated = tọa lạc.' },
+        { stem: 'The proposal is still ____ review by the management.', options: ['under', 'on', 'in', 'at'], answer: 0, explanation: 'under review = đang được xem xét.' },
+        { stem: 'All employees should ____ to the company dress code.', options: ['adjust', 'adhere', 'admire', 'admit'], answer: 1, explanation: 'adhere to = tuân thủ.' },
+      ],
+    },
   ],
 
   IELTS: [
