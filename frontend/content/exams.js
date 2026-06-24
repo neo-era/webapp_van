@@ -632,6 +632,21 @@ const EXAMS = {
         { stem: 'Nhôm bị thụ động hóa (không phản ứng) trong dung dịch nào sau đây?', options: ['$HNO_3$ đặc, nguội', 'HCl loãng', 'NaOH', '$H_2SO_4$ loãng'], answer: 0, explanation: 'Al thụ động trong $HNO_3$ đặc nguội và $H_2SO_4$ đặc nguội.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-8', title: 'Kiểm tra 45′ #8 — Hóa 12', durationMin: 45,
+      questions: [
+        { stem: 'Số oxi hóa của lưu huỳnh (S) trong $H_2SO_4$ là?', options: ['$+2$', '$+4$', '$-2$', '$+6$'], answer: 3, explanation: '$H_2SO_4$: H là $+1$, O là $-2$ ⇒ S là $+6$.' },
+        { stem: 'Trong phản ứng $Fe+2HCl\\rightarrow FeCl_2+H_2$, Fe đóng vai trò?', options: ['chất oxi hóa', 'chất khử', 'axit', 'môi trường'], answer: 1, explanation: 'Fe nhường electron ($Fe\\to Fe^{2+}$) ⇒ chất khử.' },
+        { stem: 'Dung dịch có $[H^+]=10^{-3}$ M có pH bằng?', options: ['$3$', '$11$', '$7$', '$1$'], answer: 0, explanation: '$pH=-\\log[H^+]=3$.' },
+        { stem: 'Dung dịch nào làm quỳ tím hóa đỏ?', options: ['NaOH', 'NaCl', 'HCl', '$NH_3$'], answer: 2, explanation: 'Axit (HCl) làm quỳ tím hóa đỏ.' },
+        { stem: 'Kim loại nào sau đây phản ứng với nước ở nhiệt độ thường?', options: ['Fe', 'Cu', 'Ag', 'Na'], answer: 3, explanation: 'Na (kim loại kiềm) tác dụng mạnh với nước ở nhiệt độ thường.' },
+        { stem: 'Khí nào sau đây là tác nhân chính gây hiệu ứng nhà kính?', options: ['$CO_2$', '$O_2$', '$N_2$', '$H_2$'], answer: 0, explanation: '$CO_2$ là khí nhà kính chủ yếu.' },
+        { stem: 'Công thức của acetic acid (có trong giấm ăn) là?', options: ['HCOOH', '$CH_3COOH$', '$C_2H_5OH$', '$CH_3CHO$'], answer: 1, explanation: 'Acetic acid: $CH_3COOH$.' },
+        { stem: 'Điều kiện cần để xảy ra ăn mòn điện hóa là?', options: ['chỉ một kim loại nguyên chất', 'môi trường khô', 'hai điện cực khác bản chất cùng trong dung dịch điện li', 'nhiệt độ cao'], answer: 2, explanation: 'Cần 2 điện cực khác nhau, tiếp xúc và cùng trong dung dịch điện li.' },
+        { stem: 'Khối lượng mol của NaOH (Na=23, O=16, H=1) là?', options: ['$23$', '$40$', '$56$', '$58{,}5$'], answer: 1, explanation: '$23+16+1=40$ g/mol.' },
+        { stem: 'Phản ứng ester hóa giữa acid carboxylic và ancol tạo ra?', options: ['muối + nước', 'ancol + acid', 'ester + nước', 'andehit'], answer: 2, explanation: '$RCOOH+R\'OH\\rightleftharpoons RCOOR\'+H_2O$.' },
+      ],
+    },
   ],
 
   ANH: [
