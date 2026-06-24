@@ -509,6 +509,21 @@ const EXAMS = {
         { stem: 'Khí nhận nhiệt $Q=100$ J và sinh công $40$ J lên môi trường. Độ biến thiên nội năng $\\Delta U$?', options: ['$60$ J', '$140$ J', '$-60$ J', '$100$ J'], answer: 0, explanation: '$\\Delta U=Q+A=100+(-40)=60$ J (khí sinh công nên $A<0$).' },
       ],
     },
+    {
+      examId: 'ly-kt45-8', title: 'Kiểm tra 45′ #8 — Vật lí 12', durationMin: 45,
+      questions: [
+        { stem: 'Nén đẳng nhiệt một lượng khí từ $V_1=3$ L (p=2 atm) xuống $V_2=1$ L. Áp suất sau?', options: ['$3$ atm', '$1{,}5$ atm', '$12$ atm', '$6$ atm'], answer: 3, explanation: 'Boyle: $p_2=p_1V_1/V_2=2\\cdot3/1=6$ atm.' },
+        { stem: 'Đun $0{,}5$ kg nước ($c=4200$) tăng thêm $10$ °C cần nhiệt lượng?', options: ['$21000$ J', '$4200$ J', '$42000$ J', '$2100$ J'], answer: 0, explanation: '$Q=mc\\Delta t=0{,}5\\cdot4200\\cdot10=21000$ J.' },
+        { stem: 'Trong quá trình đẳng nhiệt, đồ thị $p$ theo $V$ có dạng?', options: ['đường thẳng', 'parabol', 'hyperbol', 'đường tròn'], answer: 2, explanation: '$pV=$ const ⇒ hyperbol.' },
+        { stem: 'Khi dây dẫn mang dòng điện đặt song song với đường sức từ, lực từ tác dụng lên dây?', options: ['bằng 0', 'cực đại', '$BIl$', 'bằng nửa cực đại'], answer: 0, explanation: '$F=BIl\\sin\\theta$, $\\theta=0 \\Rightarrow F=0$.' },
+        { stem: 'Bên ngoài nam châm, đường sức từ đi ra từ cực nào?', options: ['cực Bắc (N)', 'cực Nam (S)', 'cả hai cực', 'không cực nào'], answer: 0, explanation: 'Đường sức từ đi ra từ cực Bắc, vào cực Nam (bên ngoài).' },
+        { stem: 'Năng lượng liên kết hạt nhân liên hệ với độ hụt khối $\\Delta m$ qua công thức?', options: ['$W_{lk}=\\Delta m\\cdot c$', '$W_{lk}=mc$', '$W_{lk}=\\Delta m\\cdot c^2$', '$W_{lk}=\\Delta m/c^2$'], answer: 2, explanation: 'Hệ thức Einstein: $W_{lk}=\\Delta m\\,c^2$.' },
+        { stem: 'Tia phóng xạ nào có bản chất là sóng điện từ?', options: ['tia $\\alpha$', 'tia $\\beta^-$', 'tia $\\gamma$', 'tia $\\beta^+$'], answer: 2, explanation: 'Tia $\\gamma$ là sóng điện từ năng lượng cao.' },
+        { stem: 'Đại lượng nào KHÔNG được bảo toàn trong phản ứng hạt nhân?', options: ['số nuclôn', 'điện tích', 'năng lượng toàn phần', 'khối lượng nghỉ'], answer: 3, explanation: 'Khối lượng nghỉ không bảo toàn (chuyển một phần thành năng lượng).' },
+        { stem: 'Ở điều kiện tiêu chuẩn (0 °C, 1 atm), $1$ mol khí lí tưởng chiếm thể tích?', options: ['$11{,}2$ L', '$22{,}4$ L', '$24$ L', '$44{,}8$ L'], answer: 1, explanation: 'Thể tích mol khí ở đktc: $22{,}4$ L.' },
+        { stem: 'Suất điện động cảm ứng xuất hiện trong mạch kín khi?', options: ['điện trở thay đổi', 'nhiệt độ tăng', 'dòng điện không đổi', 'từ thông qua mạch biến thiên'], answer: 3, explanation: 'Định luật Faraday: từ thông biến thiên sinh suất điện động cảm ứng.' },
+      ],
+    },
   ],
 
   HOA: [
