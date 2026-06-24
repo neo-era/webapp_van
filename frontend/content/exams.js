@@ -932,6 +932,21 @@ const EXAMS = {
         { stem: 'Phần trăm khối lượng H trong $NH_3$ ($M=17$)?', options: ['$82{,}4\\%$', '$17{,}6\\%$', '$50\\%$', '$25\\%$'], answer: 1, explanation: '$3/17\\cdot100\\%\\approx17{,}6\\%$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-18', title: 'Kiểm tra 45′ #18 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $6{,}5$ g Zn ($M=65$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=6{,}5/65=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}25$ mol $CaCO_3$ ($M=100$)?', options: ['$25$ g', '$10$ g', '$50$ g', '$100$ g'], answer: 0, explanation: '$m=0{,}25\\cdot100=25$ g.' },
+        { stem: 'Thể tích $CO_2$ (đktc) khi đốt cháy hết $0{,}2$ mol C?', options: ['$2{,}24$ L', '$6{,}72$ L', '$4{,}48$ L', '$1{,}12$ L'], answer: 2, explanation: '$0{,}2$ mol $CO_2 \\Rightarrow V=0{,}2\\cdot22{,}4=4{,}48$ L.' },
+        { stem: 'Dung dịch có $25$ g chất tan trong $100$ g dung dịch. Nồng độ phần trăm?', options: ['$10\\%$', '$50\\%$', '$20\\%$', '$25\\%$'], answer: 3, explanation: '$C\\%=25/100\\cdot100\\%=25\\%$.' },
+        { stem: 'Nhiệt phân $0{,}2$ mol $KClO_3$ ($2KClO_3\\to2KCl+3O_2$) thu được mol $O_2$?', options: ['$0{,}3$', '$0{,}2$', '$0{,}6$', '$0{,}1$'], answer: 0, explanation: '$2$ mol $KClO_3 \\to 3$ mol $O_2$; $0{,}2 \\to 0{,}3$ mol.' },
+        { stem: 'Khối lượng mol của $CuSO_4$ (Cu=64, S=32, O=16)?', options: ['$152$', '$144$', '$160$', '$98$'], answer: 2, explanation: '$64+32+4\\cdot16=160$ g/mol.' },
+        { stem: 'Số mol $H^+$ trong $0{,}5$ L dung dịch HCl $0{,}2$ M?', options: ['$0{,}05$', '$0{,}2$', '$0{,}4$', '$0{,}1$'], answer: 3, explanation: '$n=0{,}2\\cdot0{,}5=0{,}1$ mol.' },
+        { stem: 'Kim loại nào đẩy được Cu ra khỏi dung dịch $CuSO_4$?', options: ['Ag', 'Fe', 'Au', 'Hg'], answer: 1, explanation: 'Fe mạnh hơn Cu nên đẩy được Cu khỏi muối.' },
+        { stem: 'Phần trăm khối lượng Na trong NaOH ($M=40$)?', options: ['$40\\%$', '$23\\%$', '$57{,}5\\%$', '$17{,}5\\%$'], answer: 2, explanation: '$23/40\\cdot100\\%=57{,}5\\%$.' },
+        { stem: 'Khí nào sau đây nhẹ hơn không khí?', options: ['$O_2$', '$H_2$', '$CO_2$', '$Cl_2$'], answer: 1, explanation: '$H_2$ ($M=2$) nhẹ hơn không khí ($M\\approx29$).' },
+      ],
+    },
   ],
 
   ANH: [
