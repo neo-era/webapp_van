@@ -847,6 +847,21 @@ const EXAMS = {
         { stem: 'Choose the synonym of "feasible".', options: ['impossible', 'difficult', 'rare', 'possible'], answer: 3, explanation: 'feasible ≈ possible.' },
       ],
     },
+    {
+      examId: 'ielts-kt-6', title: 'IELTS – Vocabulary & Grammar #6', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "diverse".', options: ['similar', 'identical', 'varied', 'equal'], answer: 2, explanation: 'diverse ≈ varied.' },
+        { stem: 'The study, ____ findings were surprising, was published.', options: ['which', 'who', 'that', 'whose'], answer: 3, explanation: 'whose chỉ sở hữu.' },
+        { stem: 'Hardly any students ____ the lecture.', options: ['attend', 'attends', 'attended', 'attending'], answer: 2, explanation: 'Quá khứ đơn.' },
+        { stem: 'Choose the antonym of "ancient".', options: ['modern', 'old', 'historic', 'traditional'], answer: 0, explanation: 'ancient ↔ modern.' },
+        { stem: 'It is widely believed ____ exercise is beneficial.', options: ['what', 'that', 'which', 'who'], answer: 1, explanation: 'It is believed that…' },
+        { stem: 'Choose the synonym of "obvious".', options: ['hidden', 'unclear', 'vague', 'evident'], answer: 3, explanation: 'obvious ≈ evident.' },
+        { stem: 'Were I rich, I ____ travel the world.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Câu điều kiện loại 2 đảo ngữ ⇒ would.' },
+        { stem: 'A great deal of money ____ spent on the project.', options: ['were', 'are', 'was', 'have'], answer: 2, explanation: '"A great deal of money" (không đếm được) + was.' },
+        { stem: 'Choose the synonym of "tackle" (a problem).', options: ['address', 'ignore', 'avoid', 'create'], answer: 0, explanation: 'tackle ≈ address (giải quyết).' },
+        { stem: 'Such was his fame ____ everyone knew him.', options: ['as', 'which', 'that', 'what'], answer: 2, explanation: 'Such … that … (kết quả).' },
+      ],
+    },
   ],
 };
 
