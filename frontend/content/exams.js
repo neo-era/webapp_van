@@ -812,6 +812,21 @@ const EXAMS = {
         { stem: 'Kim loại nào sau đây nhẹ nhất (khối lượng riêng nhỏ nhất)?', options: ['Li', 'Na', 'K', 'Al'], answer: 0, explanation: 'Liti có $D\\approx0{,}53$ g/cm³, nhẹ nhất trong các kim loại.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-14', title: 'Kiểm tra 45′ #14 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Đốt cháy hoàn toàn $0{,}1$ mol $CH_4$ thu được bao nhiêu mol $CO_2$?', options: ['$0{,}2$', '$0{,}05$', '$0{,}1$', '$1$'], answer: 2, explanation: '$CH_4+2O_2\\to CO_2+2H_2O$; $0{,}1$ mol $CH_4 \\Rightarrow 0{,}1$ mol $CO_2$.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}5$ mol $H_2SO_4$?', options: ['$1$', '$4$', '$0{,}5$', '$2$'], answer: 3, explanation: 'Mỗi phân tử có 4 O ⇒ $0{,}5\\cdot4=2$ mol O.' },
+        { stem: 'Thể tích (đktc) của $3{,}2$ g $O_2$ ($M=32$)?', options: ['$2{,}24$ L', '$1{,}12$ L', '$3{,}36$ L', '$4{,}48$ L'], answer: 0, explanation: '$n=3{,}2/32=0{,}1$ mol $\\Rightarrow V=2{,}24$ L.' },
+        { stem: 'Khối lượng kết tủa AgCl ($M=143{,}5$) khi $0{,}1$ mol $AgNO_3$ phản ứng đủ với NaCl?', options: ['$7{,}175$ g', '$28{,}7$ g', '$143{,}5$ g', '$14{,}35$ g'], answer: 3, explanation: '$m=0{,}1\\cdot143{,}5=14{,}35$ g.' },
+        { stem: 'Cho $CaCO_3$ tác dụng với HCl, khí thoát ra là?', options: ['$O_2$', '$CO_2$', '$H_2$', '$NH_3$'], answer: 1, explanation: '$CaCO_3+2HCl\\to CaCl_2+H_2O+CO_2\\uparrow$.' },
+        { stem: 'Dung dịch HCl $0{,}1$ M có pH bằng?', options: ['$1$', '$0$', '$2$', '$13$'], answer: 0, explanation: '$[H^+]=0{,}1 \\Rightarrow pH=-\\log0{,}1=1$.' },
+        { stem: 'Số liên kết $\\pi$ trong phân tử $N_2$ ($N\\equiv N$)?', options: ['$0$', '$1$', '$2$', '$3$'], answer: 2, explanation: 'Liên kết ba gồm $1\\sigma$ và $2\\pi$.' },
+        { stem: 'Trong $1$ mol $H_2O$ có bao nhiêu mol nguyên tử H?', options: ['$1$', '$3$', '$0{,}5$', '$2$'], answer: 3, explanation: 'Mỗi phân tử $H_2O$ có 2 H ⇒ $2$ mol H.' },
+        { stem: 'Chất nào sau đây làm mất màu dung dịch nước brom?', options: ['metan', 'etan', 'etilen', 'propan'], answer: 2, explanation: 'Etilen (anken) có liên kết đôi nên làm mất màu nước brom.' },
+        { stem: 'Phần trăm khối lượng oxi trong $H_2O$ ($M=18$)?', options: ['$50\\%$', '$88{,}9\\%$', '$11{,}1\\%$', '$80\\%$'], answer: 1, explanation: '$16/18\\cdot100\\%\\approx88{,}9\\%$.' },
+      ],
+    },
   ],
 
   ANH: [
