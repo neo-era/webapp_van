@@ -482,6 +482,21 @@ const EXAMS = {
         { stem: 'Công thức amine no, đơn chức, mạch hở là?', options: ['$C_nH_{2n+1}N$', '$C_nH_{2n+3}N$', '$C_nH_{2n}N$', '$C_nH_{2n+2}N$'], answer: 1, explanation: '$C_nH_{2n+3}N$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-3', title: 'Kiểm tra 45′ #3 — Tổng hợp Hóa 12', durationMin: 45,
+      questions: [
+        { stem: 'Số nguyên tử carbon trong phân tử glucose là?', options: ['$5$', '$12$', '$6$', '$3$'], answer: 2, explanation: 'Glucose $C_6H_{12}O_6$.' },
+        { stem: 'Xà phòng hóa chất béo thu được muối của acid béo và?', options: ['glycerol', 'ethanol', 'nước', 'aldehyde'], answer: 0, explanation: 'Chất béo + NaOH → muối + glycerol.' },
+        { stem: 'Chất nào làm quỳ tím hóa xanh?', options: ['phenol', 'glucose', 'acetic acid', 'methylamine'], answer: 3, explanation: 'Amine có tính base.' },
+        { stem: 'Polymer nào được dùng làm tơ?', options: ['PE', 'nylon-6,6', 'PVC', 'cao su buna'], answer: 1, explanation: 'Nylon-6,6 là tơ poliamide.' },
+        { stem: 'Kim loại kiềm thuộc nhóm nào trong bảng tuần hoàn?', options: ['IA', 'IIA', 'IIIA', 'VIIIA'], answer: 0, explanation: 'Kim loại kiềm: nhóm IA.' },
+        { stem: 'Tính chất hóa học đặc trưng của kim loại là?', options: ['tính oxi hóa', 'tính acid', 'tính khử', 'tính base'], answer: 2, explanation: 'Kim loại nhường e ⇒ tính khử.' },
+        { stem: 'Glucose tác dụng $AgNO_3/NH_3$ tạo ra?', options: ['Cu', '$H_2$', '$CO_2$', 'Ag'], answer: 3, explanation: 'Phản ứng tráng bạc tạo Ag.' },
+        { stem: 'Amino acid đơn giản nhất là?', options: ['alanine', 'glycine', 'lysine', 'valine'], answer: 1, explanation: 'Glycine $H_2NCH_2COOH$.' },
+        { stem: 'Thủy phân saccharose thu được?', options: ['glucose + fructose', '2 glucose', 'maltose', 'tinh bột'], answer: 0, explanation: 'Saccharose → glucose + fructose.' },
+        { stem: 'Phản ứng trùng ngưng thường loại ra phân tử?', options: ['$CO_2$', '$O_2$', '$H_2O$', '$H_2$'], answer: 2, explanation: 'Trùng ngưng loại $H_2O$.' },
+      ],
+    },
   ],
 
   ANH: [
