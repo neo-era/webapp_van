@@ -1222,6 +1222,21 @@ const EXAMS = {
         { stem: 'It was not until 1990 ____ the law was finally changed.', options: ['when', 'which', 'then', 'that'], answer: 3, explanation: 'Câu chẻ: It was not until … that …' },
       ],
     },
+    {
+      examId: 'ielts-kt-11', title: 'IELTS – Vocabulary & Grammar #11', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "facilitate".', options: ['hinder', 'block', 'prevent', 'ease'], answer: 3, explanation: 'facilitate ≈ ease (làm cho dễ dàng).' },
+        { stem: 'Choose the synonym of "mitigate".', options: ['lessen', 'intensify', 'worsen', 'increase'], answer: 0, explanation: 'mitigate ≈ lessen (làm giảm nhẹ).' },
+        { stem: 'Choose the antonym of "transparent".', options: ['clear', 'opaque', 'obvious', 'visible'], answer: 1, explanation: 'transparent ↔ opaque (mờ đục).' },
+        { stem: 'Seldom ____ such dedication in a student.', options: ['we see', 'we do see', 'see we', 'do we see'], answer: 3, explanation: 'Đảo ngữ với "Seldom": + trợ động từ + S + V.' },
+        { stem: 'Choose the synonym of "advocate" (verb).', options: ['oppose', 'reject', 'support', 'criticize'], answer: 2, explanation: 'advocate ≈ support (ủng hộ).' },
+        { stem: 'The findings, ____ were published recently, are controversial.', options: ['which', 'who', 'whom', 'whose'], answer: 0, explanation: 'which mở đầu mệnh đề quan hệ cho vật.' },
+        { stem: 'Choose the antonym of "rigid".', options: ['stiff', 'firm', 'flexible', 'hard'], answer: 2, explanation: 'rigid ↔ flexible (linh hoạt).' },
+        { stem: 'Not only did sales rise, ____ profits also doubled.', options: ['and also', 'so also', 'or also', 'but'], answer: 3, explanation: 'Cấu trúc "Not only … but (also) …".' },
+        { stem: 'Choose the synonym of "deteriorate".', options: ['improve', 'worsen', 'stabilize', 'enhance'], answer: 1, explanation: 'deteriorate ≈ worsen (xấu đi).' },
+        { stem: 'Had I known about the problem, I ____ differently.', options: ['will act', 'had acted', 'would have acted', 'act'], answer: 2, explanation: 'Đảo ngữ điều kiện loại 3: Had + S + V3, … would have + V3.' },
+      ],
+    },
   ],
 };
 
