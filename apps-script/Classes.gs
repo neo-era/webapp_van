@@ -35,6 +35,23 @@ function getTeacherData(req) {
   return jsonOk({ teacher: publicUser(teacher), classes: result });
 }
 
+/** Danh sách lớp công khai (cho học sinh chọn khi đăng ký). */
+function getPublicClasses(req) {
+  const classes = getRows('Classes').map(function (c) {
+    return { classId: c.classId, name: c.name };
+  });
+  return jsonOk(classes);
+}
+
+/** Giáo viên tạo lớp mới. */
+function createClass(req) {
+  const teacher = requireTeacher(req.token);
+  if (!req.name) return jsonError('Vui lòng nhập tên lớp');
+  const cls = { classId: genId('c'), name: String(req.name), teacherId: teacher.userId, createdAt: now() };
+  appendRow('Classes', cls);
+  return jsonOk(cls);
+}
+
 /** Giáo viên giao 1 nhiệm vụ cho 1 học sinh hoặc cả lớp. */
 function assignTask(req) {
   const teacher = requireTeacher(req.token);

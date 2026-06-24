@@ -98,3 +98,12 @@ function initDatabase() {
   seedIfEmpty();
   Logger.log('Khởi tạo xong. Users: ' + getRows('Users').length);
 }
+
+/**
+ * Chạy hàm này 1 lần trong trình Apps Script để CẤP QUYỀN DRIVE
+ * (cần cho tính năng đính kèm tài liệu vào ghi chú).
+ */
+function _authorizeDrive() {
+  const folder = getOrCreateFolder_('THPT_Files');
+  Logger.log('Đã cấp quyền Drive. Folder: ' + folder.getName());
+}

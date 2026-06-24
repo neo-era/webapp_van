@@ -27,6 +27,7 @@
       <h1 class="auth-title">Học Kế Hoạch</h1>
       <p class="auth-sub">Lập kế hoạch học tập THPT</p>
 
+      <!-- FORM ĐĂNG NHẬP -->
       <form id="login-form" class="auth-form">
         <label class="field">
           <span>Email</span>
@@ -39,13 +40,37 @@
         <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
       </form>
 
-      <div class="auth-demo">
-        <p>Thử nhanh với tài khoản demo:</p>
-        <div class="auth-demo-btns">
-          <button class="btn btn-ghost" data-demo="student">👨‍🎓 Học sinh</button>
-          <button class="btn btn-ghost" data-demo="teacher">👩‍🏫 Giáo viên</button>
+      <div id="login-extra">
+        <div class="auth-demo">
+          <p>Thử nhanh với tài khoản demo:</p>
+          <div class="auth-demo-btns">
+            <button class="btn btn-ghost" data-demo="student">👨‍🎓 Học sinh</button>
+            <button class="btn btn-ghost" data-demo="teacher">👩‍🏫 Giáo viên</button>
+          </div>
         </div>
+        <p class="auth-switch">Chưa có tài khoản?
+          <a onclick="toggleAuth('register')">Đăng ký</a></p>
       </div>
+
+      <!-- FORM ĐĂNG KÝ (ẩn mặc định) -->
+      <form id="register-form" class="auth-form hidden">
+        <label class="field"><span>Họ và tên</span>
+          <input type="text" id="reg-name" placeholder="Nguyễn Văn A" required /></label>
+        <label class="field"><span>Email</span>
+          <input type="email" id="reg-email" placeholder="email@example.com" required /></label>
+        <label class="field"><span>Mật khẩu</span>
+          <input type="password" id="reg-password" placeholder="tối thiểu 6 ký tự" required /></label>
+        <label class="field"><span>Bạn là</span>
+          <select id="reg-role" onchange="onRegRoleChange()">
+            <option value="STUDENT">Học sinh</option>
+            <option value="TEACHER">Giáo viên</option>
+          </select></label>
+        <label class="field" id="reg-class-field"><span>Lớp (chọn nếu có)</span>
+          <select id="reg-class"><option value="">— Chưa chọn —</option></select></label>
+        <button type="submit" class="btn btn-primary btn-block">Tạo tài khoản</button>
+        <p class="auth-switch">Đã có tài khoản?
+          <a onclick="toggleAuth('login')">Đăng nhập</a></p>
+      </form>
     </div>
   </section>
 

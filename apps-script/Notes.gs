@@ -52,3 +52,25 @@ function deleteNote(req) {
   deleteRowById('Notes', 'noteId', req.noteId);
   return jsonOk({ deleted: req.noteId });
 }
+
+/** Upload tài liệu lên Google Drive (folder THPT_Files), trả link xem. */
+function uploadFile(req) {
+  requireAuth(req.token);
+  const allowed = { 'image/jpeg': 1, 'image/png': 1, 'image/webp': 1, 'application/pdf': 1 };
+  if (!allowed[req.mimeType]) return jsonError('Chỉ chấp nhận file jpg, png, webp, pdf');
+  if (!req.dataBase64) return jsonError('Thiếu dữ liệu file');
+
+  const bytes = Utilities.base64Decode(req.dataBase64);
+  if (bytes.length > 10 * 1024 * 1024) return jsonError('File tối đa 10MB');
+
+  const folder = getOrCreateFolder_('THPT_Files');
+  const blob = Utilities.newBlob(bytes, req.mimeType, req.filename || 'file');
+  const file = folder.createFile(blob);
+  file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+  return jsonOk({ fileUrl: file.getUrl(), name: file.getName() });
+}
+
+function getOrCreateFolder_(name) {
+  const it = DriveApp.getFoldersByName(name);
+  return it.hasNext() ? it.next() : DriveApp.createFolder(name);
+}

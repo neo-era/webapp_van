@@ -163,6 +163,8 @@ html, body {
 .auth-demo p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 10px; }
 .auth-demo-btns { display: flex; gap: 10px; }
 .auth-demo-btns .btn { flex: 1; }
+.auth-switch { margin-top: 16px; font-size: 0.88rem; color: var(--text-secondary); text-align: center; }
+.auth-switch a { color: var(--accent); font-weight: 600; cursor: pointer; }
 
 /* ============================================================
    KHUNG APP

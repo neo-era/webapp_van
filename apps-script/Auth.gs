@@ -54,6 +54,23 @@ function login(req) {
   return jsonOk({ token: token, user: publicUser(user) });
 }
 
+/** Trả về thông tin user từ token (dùng khôi phục phiên khi tải lại trang). */
+function whoami(req) {
+  const user = requireAuth(req.token);
+  return jsonOk(publicUser(user));
+}
+
+/** Đổi mật khẩu (cần mật khẩu hiện tại). */
+function changePassword(req) {
+  const user = requireAuth(req.token);
+  const oldP = String(req.oldPassword || '');
+  const newP = String(req.newPassword || '');
+  if (newP.length < 6) return jsonError('Mật khẩu mới tối thiểu 6 ký tự');
+  if (user.passwordHash !== sha256(oldP, SALT)) return jsonError('Mật khẩu hiện tại không đúng');
+  updateRowById('Users', 'userId', user.userId, { passwordHash: sha256(newP, SALT) });
+  return jsonOk({ changed: true });
+}
+
 /** Lọc bỏ passwordHash trước khi trả về client. */
 function publicUser(u) {
   return {

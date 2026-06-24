@@ -69,6 +69,21 @@ const MockApi = {
       case 'register':
         return MOCK.student;
 
+      case 'whoami':
+        return MOCK.student;
+
+      case 'changePassword':
+        return { changed: true };
+
+      case 'getPublicClasses':
+        return MOCK.classes.map((c) => ({ classId: c.classId, name: c.name }));
+
+      case 'createClass':
+        return { classId: 'c' + Date.now(), name: payload.name };
+
+      case 'uploadFile':
+        return { fileUrl: 'https://example.com/demo-file', name: payload.filename };
+
       case 'getStudentData':
         return {
           user: MOCK.student,

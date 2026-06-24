@@ -43,6 +43,15 @@ function fmtDay(d) {
 function daysLeft(dateStr) {
   return dayjs(dateStr).startOf('day').diff(dayjs().startOf('day'), 'day');
 }
+// Đọc file thành base64 (bỏ tiền tố data:...;base64,).
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const r = new FileReader();
+    r.onload = () => resolve(String(r.result).split(',')[1]);
+    r.onerror = reject;
+    r.readAsDataURL(file);
+  });
+}
 
 /* ============================================================
    ĐĂNG NHẬP & NẠP DỮ LIỆU
@@ -70,6 +79,66 @@ function loginDemo(role) {
   // Dùng mật khẩu của tài khoản demo đã seed (MockApi bỏ qua mật khẩu).
   const u = role === 'teacher' ? MOCK.teacher : MOCK.student;
   return doLogin(u.email, '123456');
+}
+
+/* ---------- Đăng ký / chuyển form auth ---------- */
+function toggleAuth(mode) {
+  const isReg = mode === 'register';
+  $('#login-form').classList.toggle('hidden', isReg);
+  $('#login-extra').classList.toggle('hidden', isReg);
+  $('#register-form').classList.toggle('hidden', !isReg);
+  $('.auth-sub').textContent = isReg ? 'Tạo tài khoản mới' : 'Lập kế hoạch học tập THPT';
+  if (isReg) { onRegRoleChange(); loadPublicClasses(); }
+}
+function onRegRoleChange() {
+  const isStudent = $('#reg-role').value === 'STUDENT';
+  $('#reg-class-field').classList.toggle('hidden', !isStudent);
+}
+async function loadPublicClasses() {
+  try {
+    const classes = await Api.call('getPublicClasses', {});
+    $('#reg-class').innerHTML = '<option value="">— Chưa chọn —</option>' +
+      classes.map((c) => `<option value="${c.classId}">${c.name}</option>`).join('');
+  } catch (e) {}
+}
+async function doRegister() {
+  const name = $('#reg-name').value.trim();
+  const email = $('#reg-email').value.trim();
+  const password = $('#reg-password').value;
+  const role = $('#reg-role').value;
+  if (!name || !email || !password) { showToast('Vui lòng nhập đủ thông tin', 'error'); return; }
+  if (password.length < 6) { showToast('Mật khẩu tối thiểu 6 ký tự', 'error'); return; }
+  showLoading();
+  try {
+    await Api.call('register', {
+      name: name, email: email, password: password, role: role,
+      grade: role === 'STUDENT' ? 12 : '',
+      classId: role === 'STUDENT' ? $('#reg-class').value : '',
+    });
+    await doLogin(email, password); // tự đăng nhập sau khi tạo
+  } catch (e) {
+    showToast(e.message, 'error');
+  } finally {
+    hideLoading();
+  }
+}
+
+/* ---------- Khôi phục phiên từ token đã lưu ---------- */
+async function restoreSession() {
+  showLoading();
+  try {
+    const user = await Api.call('whoami', {});
+    App.state.user = user;
+    App.state.role = user.role;
+    if (user.role === 'STUDENT') await loadStudentData();
+    else await loadTeacherData();
+    enterApp();
+  } catch (e) {
+    App.state.token = null;
+    try { localStorage.removeItem('thpt_token'); } catch (_) {}
+  } finally {
+    hideLoading();
+  }
 }
 
 async function loadStudentData() {
@@ -364,6 +433,7 @@ function notesHtml(list) {
         <span class="task-time">${n.updatedAt ? dayjs(n.updatedAt).format('DD/MM') : ''}</span>
       </div>
       <div class="muted" style="font-size:0.9rem">${n.content || ''}</div>
+      ${n.fileUrl ? `<a href="${n.fileUrl}" target="_blank" onclick="event.stopPropagation()" style="font-size:0.85rem">📎 Tài liệu</a>` : ''}
     </div>`).join('');
 }
 function filterNotes(q) {
@@ -391,7 +461,27 @@ function renderProfile() {
       <div class="profile-row"><span class="k">Email</span><span>${u.email}</span></div>
       ${u.role === 'STUDENT' ? `<div class="profile-row"><span class="k">Khối</span><span>Lớp ${u.grade || 12}</span></div>` : ''}
     </div>
-    <button class="btn btn-danger btn-block" style="margin-top:16px" onclick="logout()">Đăng xuất</button>`;
+    <button class="btn btn-ghost btn-block" style="margin-top:16px" onclick="openPasswordModal()">Đổi mật khẩu</button>
+    <button class="btn btn-danger btn-block" style="margin-top:8px" onclick="logout()">Đăng xuất</button>`;
+}
+
+function openPasswordModal() {
+  openModal('Đổi mật khẩu', `
+    <label class="field"><span>Mật khẩu hiện tại</span><input type="password" id="m-old" /></label>
+    <label class="field"><span>Mật khẩu mới</span><input type="password" id="m-new" placeholder="tối thiểu 6 ký tự" /></label>
+    <label class="field"><span>Nhập lại mật khẩu mới</span><input type="password" id="m-new2" /></label>
+    <button class="btn btn-primary btn-block" onclick="savePassword()">Lưu</button>`);
+}
+async function savePassword() {
+  const o = $('#m-old').value, n = $('#m-new').value, n2 = $('#m-new2').value;
+  if (n.length < 6) { showToast('Mật khẩu mới tối thiểu 6 ký tự', 'error'); return; }
+  if (n !== n2) { showToast('Mật khẩu nhập lại không khớp', 'error'); return; }
+  showLoading();
+  try {
+    await Api.call('changePassword', { oldPassword: o, newPassword: n });
+    closeModal(); showToast('Đã đổi mật khẩu', 'success');
+  } catch (e) { showToast(e.message, 'error'); }
+  finally { hideLoading(); }
 }
 
 /* ============================================================
@@ -402,7 +492,8 @@ function renderTeacher() {
   if (!classes.length) {
     $('#screen-teacher').innerHTML = `
       <div class="page-head"><h2>Lớp học</h2><p>Theo dõi tiến độ học sinh</p></div>
-      <div class="card"><div class="empty">Bạn chưa phụ trách lớp nào.</div></div>`;
+      <div class="card"><div class="empty">Bạn chưa phụ trách lớp nào.</div></div>
+      <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="openClassModal()">+ Tạo lớp mới</button>`;
     return;
   }
   if (!App._activeClass || !classes.find((c) => c.classId === App._activeClass)) {
@@ -440,9 +531,28 @@ function renderTeacher() {
         <thead><tr><th>Học sinh</th><th>Tiến độ</th><th>%</th><th>Nhiệm vụ</th></tr></thead>
         <tbody>${rows}</tbody></table></div>
     </div>
-    <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="openAssignModal()">+ Giao việc cho lớp ${active.name}</button>`;
+    <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="openAssignModal()">+ Giao việc cho lớp ${active.name}</button>
+    <button class="btn btn-ghost btn-block" style="margin-top:8px" onclick="openClassModal()">+ Tạo lớp mới</button>`;
 }
 function selectClass(cid) { App._activeClass = cid; renderTeacher(); }
+
+function openClassModal() {
+  openModal('Tạo lớp mới', `
+    <label class="field"><span>Tên lớp</span><input id="m-title" placeholder="VD: 12A3" /></label>
+    <button class="btn btn-primary btn-block" onclick="saveClass()">Tạo lớp</button>`);
+}
+async function saveClass() {
+  const name = $('#m-title').value.trim();
+  if (!name) { showToast('Nhập tên lớp', 'error'); return; }
+  showLoading();
+  try {
+    const c = await Api.call('createClass', { name: name });
+    await loadTeacherData();
+    App._activeClass = c.classId;
+    closeModal(); rerender(); showToast('Đã tạo lớp ' + name, 'success');
+  } catch (e) { showToast(e.message, 'error'); }
+  finally { hideLoading(); }
+}
 
 function openAssignModal() {
   const active = (App.data.classes || []).find((c) => c.classId === App._activeClass);
@@ -552,15 +662,28 @@ function openNoteModal(noteId) {
     <label class="field"><span>Tiêu đề</span><input id="m-title" value="${n ? n.title : ''}" placeholder="Tiêu đề ghi chú" /></label>
     <label class="field"><span>Môn học</span><select id="m-subject">${subjectOptions(n ? n.subject : 'TOAN')}</select></label>
     <label class="field"><span>Nội dung</span><textarea id="m-content" rows="5" placeholder="Nội dung…">${n ? n.content : ''}</textarea></label>
+    <label class="field"><span>Đính kèm (jpg/png/webp/pdf, ≤10MB)</span>
+      <input type="file" id="m-file" accept=".jpg,.jpeg,.png,.webp,.pdf" /></label>
+    ${n && n.fileUrl ? `<a href="${n.fileUrl}" target="_blank">📎 Tài liệu đã đính kèm</a>` : ''}
     <button class="btn btn-primary btn-block" onclick="saveNoteForm('${noteId || ''}')">Lưu</button>
     ${n ? `<button class="btn btn-danger btn-block" style="margin-top:8px" onclick="removeNote('${n.noteId}')">Xóa ghi chú</button>` : ''}`);
 }
 async function saveNoteForm(noteId) {
   const title = $('#m-title').value.trim();
   if (!title) { showToast('Nhập tiêu đề', 'error'); return; }
-  const note = { noteId: noteId || undefined, title: title, subject: $('#m-subject').value, content: $('#m-content').value };
+  const existing = noteId ? App.data.notes.find((x) => x.noteId === noteId) : null;
+  let fileUrl = existing ? (existing.fileUrl || '') : '';
   showLoading();
   try {
+    const fileInput = $('#m-file');
+    if (fileInput && fileInput.files && fileInput.files[0]) {
+      const f = fileInput.files[0];
+      if (f.size > 10 * 1024 * 1024) { showToast('File tối đa 10MB', 'error'); hideLoading(); return; }
+      const b64 = await fileToBase64(f);
+      const up = await Api.call('uploadFile', { filename: f.name, mimeType: f.type, dataBase64: b64 });
+      fileUrl = up.fileUrl;
+    }
+    const note = { noteId: noteId || undefined, title: title, subject: $('#m-subject').value, content: $('#m-content').value, fileUrl: fileUrl };
     const saved = await Api.call('saveNote', { note: note });
     const idx = App.data.notes.findIndex((x) => x.noteId === saved.noteId);
     if (idx >= 0) App.data.notes[idx] = saved; else App.data.notes.unshift(saved);
@@ -628,6 +751,7 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     doLogin($('#login-email').value.trim(), $('#login-password').value);
   });
+  $('#register-form').addEventListener('submit', (e) => { e.preventDefault(); doRegister(); });
   $$('[data-demo]').forEach((b) => b.addEventListener('click', () => loginDemo(b.dataset.demo)));
   $('#btn-logout').addEventListener('click', logout);
   $$('.nav-item').forEach((n) => n.addEventListener('click', () => switchTab(n.dataset.tab)));
@@ -638,5 +762,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const role = q.get('role');
   if (role === 'student' || role === 'teacher') {
     loginDemo(role).then(() => { const t = q.get('tab'); if (t) switchTab(t); });
+    return;
   }
+  // Khôi phục phiên nếu đã đăng nhập trước đó
+  let saved = null;
+  try { saved = localStorage.getItem('thpt_token'); } catch (e) {}
+  if (saved) { App.state.token = saved; restoreSession(); }
 });

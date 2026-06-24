@@ -51,8 +51,11 @@ function route(action, req) {
     case 'ping':      return jsonOk({ pong: true, time: now() });
 
     // --- Xác thực (Auth.gs) ---
-    case 'register':       return register(req);
-    case 'login':          return login(req);
+    case 'register':        return register(req);
+    case 'login':           return login(req);
+    case 'whoami':          return whoami(req);
+    case 'changePassword':  return changePassword(req);
+    case 'getPublicClasses': return getPublicClasses(req);
 
     // --- Gộp dữ liệu học sinh (1 lần gọi) ---
     case 'getStudentData': return getStudentData(req);
@@ -77,9 +80,13 @@ function route(action, req) {
     case 'saveNote':       return saveNote(req);
     case 'deleteNote':     return deleteNote(req);
 
+    // --- Ghi chú: upload (Notes.gs) ---
+    case 'uploadFile':     return uploadFile(req);
+
     // --- Giáo viên (Classes.gs) ---
     case 'getTeacherData': return getTeacherData(req);
     case 'assignTask':     return assignTask(req);
+    case 'createClass':    return createClass(req);
 
     default:               return jsonError('Action không hợp lệ: ' + action);
   }
