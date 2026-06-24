@@ -1475,6 +1475,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'cheap'.", options: ['expensive', 'affordable', 'inexpensive', 'low-cost'], answer: 0, explanation: 'cheap ↔ expensive (đắt).' },
       ],
     },
+    {
+      examId: 'anh-kt45-24', title: 'Kiểm tra 45′ #24 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: "I haven't decided ____ to go on holiday yet.", options: ['where', 'what', 'who', 'how'], answer: 0, explanation: 'where + to V (nơi để đi).' },
+        { stem: "She's been studying English ____ she was ten.", options: ['for', 'during', 'when', 'since'], answer: 3, explanation: 'since + mốc thời gian (mệnh đề quá khứ).' },
+        { stem: 'He suggested ____ to the beach this weekend.', options: ['going', 'to go', 'go', 'went'], answer: 0, explanation: 'suggest + V-ing.' },
+        { stem: 'We had a great time at the party, ____?', options: ['did', "hadn't", "weren't", "didn't we"], answer: 3, explanation: 'Câu hỏi đuôi cho "had a great time" (quá khứ đơn): didn’t we.' },
+        { stem: 'The book ____ on the table is mine.', options: ['lie', 'lay', 'lying', 'lain'], answer: 2, explanation: 'Mệnh đề rút gọn chủ động: lying = which is lying.' },
+        { stem: 'He runs as fast ____ a cheetah.', options: ['as', 'than', 'like', 'that'], answer: 0, explanation: 'So sánh ngang bằng: as + adj/adv + as.' },
+        { stem: "Choose the synonym of 'fast'.", options: ['slow', 'quick', 'lazy', 'late'], answer: 1, explanation: 'fast ≈ quick (nhanh).' },
+        { stem: "I'd rather you ____ here tonight.", options: ['stay', 'stayed', 'to stay', 'staying'], answer: 1, explanation: 'would rather + S + V quá khứ.' },
+        { stem: 'She is the ____ student in the whole class.', options: ['clever', 'cleverer', 'cleverest', 'more clever'], answer: 2, explanation: 'So sánh nhất: the cleverest.' },
+        { stem: "Choose the antonym of 'big'.", options: ['large', 'huge', 'giant', 'small'], answer: 3, explanation: 'big ↔ small (nhỏ).' },
+      ],
+    },
   ],
 
   TOEIC: [
