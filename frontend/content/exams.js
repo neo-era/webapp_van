@@ -479,6 +479,21 @@ const EXAMS = {
         { stem: 'Theo định luật Len-xơ, dòng điện cảm ứng có chiều?', options: ['cùng chiều biến thiên', 'không xác định', 'theo chiều dòng ngoài', 'chống lại sự biến thiên từ thông'], answer: 3, explanation: 'Dòng cảm ứng chống lại nguyên nhân sinh ra nó.' },
       ],
     },
+    {
+      examId: 'ly-kt45-6', title: 'Kiểm tra 45′ #6 — Vật lí 12', durationMin: 45,
+      questions: [
+        { stem: 'Khi nén nhanh (đoạn nhiệt) một khối khí, nhiệt độ của khí?', options: ['giảm', 'tăng', 'không đổi', 'bằng 0'], answer: 1, explanation: 'Nhận công ⇒ nội năng tăng ⇒ nhiệt độ tăng.' },
+        { stem: 'Làm nguội $1$ kg nước từ $80$ °C xuống $20$ °C ($c=4200$) tỏa ra nhiệt lượng?', options: ['$4200$ J', '$60000$ J', '$252000$ J', '$25200$ J'], answer: 2, explanation: '$Q=1\\cdot4200\\cdot60=252000$ J.' },
+        { stem: 'Ở áp suất không đổi, thể tích tỉ lệ thuận với nhiệt độ tuyệt đối — đó là quá trình?', options: ['đẳng áp (Charles)', 'đẳng nhiệt', 'đẳng tích', 'đoạn nhiệt'], answer: 0, explanation: 'Đẳng áp: $V/T=$ const.' },
+        { stem: 'Trong quá trình đẳng tích, đồ thị $p$ theo $T$ (tuyệt đối) có dạng?', options: ['parabol', 'hyperbol', 'đường tròn', 'đường thẳng qua gốc tọa độ'], answer: 3, explanation: '$p=kT$ ⇒ đường thẳng qua gốc.' },
+        { stem: 'Dây dẫn thẳng $I=10$ A trong $B=0{,}05$ T, $l=2$ m, vuông góc. Lực từ?', options: ['$0{,}5$ N', '$1$ N', '$2$ N', '$10$ N'], answer: 1, explanation: '$F=BIl=0{,}05\\cdot10\\cdot2=1$ N.' },
+        { stem: 'Khung $N=100$ vòng, $\\Delta\\Phi=0{,}01$ Wb trong $0{,}1$ s. Suất điện động?', options: ['$1$ V', '$0{,}1$ V', '$10$ V', '$100$ V'], answer: 2, explanation: '$|e|=N\\dfrac{\\Delta\\Phi}{\\Delta t}=100\\cdot\\dfrac{0{,}01}{0{,}1}=10$ V.' },
+        { stem: 'Số khối của hạt nhân $^{27}_{13}Al$ là?', options: ['$27$', '$13$', '$14$', '$40$'], answer: 0, explanation: 'Số khối $A=27$.' },
+        { stem: 'Tia phóng xạ nào là dòng electron?', options: ['tia $\\alpha$', 'tia $\\beta^-$', 'tia $\\gamma$', 'tia X'], answer: 1, explanation: 'Tia $\\beta^-$ là dòng electron.' },
+        { stem: 'Chu kì bán rã $8$ ngày; sau $16$ ngày còn lại bao nhiêu phần ban đầu?', options: ['$1/2$', '$1/8$', '$1/16$', '$1/4$'], answer: 3, explanation: '$16/8=2$ chu kì ⇒ $2^{-2}=1/4$.' },
+        { stem: 'Đơn vị năng lượng thường dùng trong vật lí hạt nhân là?', options: ['Jun', 'Oát', 'MeV (mega electron-vôn)', 'Vôn'], answer: 2, explanation: 'Năng lượng hạt nhân đo bằng MeV.' },
+      ],
+    },
   ],
 
   HOA: [
