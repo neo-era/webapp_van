@@ -902,6 +902,21 @@ const EXAMS = {
         { stem: 'Khối lượng mol của $CH_3COOH$ (acetic acid)?', options: ['$60$', '$46$', '$74$', '$32$'], answer: 0, explanation: '$2\\cdot12+4\\cdot1+2\\cdot16=60$ g/mol.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-17', title: 'Kiểm tra 45′ #17 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol của $5{,}6$ L khí $O_2$ ở điều kiện tiêu chuẩn?', options: ['$0{,}5$', '$1$', '$0{,}1$', '$0{,}25$'], answer: 3, explanation: '$n=5{,}6/22{,}4=0{,}25$ mol.' },
+        { stem: 'Khối lượng của $0{,}3$ mol $H_2O$ ($M=18$)?', options: ['$5{,}4$ g', '$3{,}6$ g', '$1{,}8$ g', '$9$ g'], answer: 0, explanation: '$m=0{,}3\\cdot18=5{,}4$ g.' },
+        { stem: 'Hòa tan $0{,}4$ mol HCl thành $2$ L dung dịch. Nồng độ mol?', options: ['$0{,}1$', '$0{,}4$', '$0{,}2$', '$0{,}8$'], answer: 2, explanation: '$C_M=0{,}4/2=0{,}2$ M.' },
+        { stem: 'Đốt $4$ mol $H_2$ ($2H_2+O_2\\to2H_2O$) cần bao nhiêu mol $O_2$?', options: ['$1$', '$2$', '$4$', '$8$'], answer: 1, explanation: '$4$ mol $H_2$ cần $2$ mol $O_2$.' },
+        { stem: 'Khí nào làm đục nước vôi trong?', options: ['$O_2$', '$CO_2$', '$H_2$', '$N_2$'], answer: 1, explanation: '$CO_2+Ca(OH)_2\\to CaCO_3\\downarrow+H_2O$.' },
+        { stem: 'Hóa trị của nhôm (Al) trong hợp chất?', options: ['I', 'II', 'III', 'IV'], answer: 2, explanation: 'Al có hóa trị III.' },
+        { stem: 'Khối lượng mol của $Fe_2O_3$ (Fe=56, O=16)?', options: ['$152$', '$144$', '$160$', '$112$'], answer: 2, explanation: '$2\\cdot56+3\\cdot16=160$ g/mol.' },
+        { stem: 'Dung dịch nào làm phenolphtalein hóa hồng?', options: ['HCl', 'NaCl', '$H_2SO_4$', 'NaOH'], answer: 3, explanation: 'Môi trường bazơ (NaOH) làm phenolphtalein hóa hồng.' },
+        { stem: 'Số mol electron nhường khi $0{,}2$ mol Na bị oxi hóa thành $Na^+$?', options: ['$0{,}2$', '$0{,}1$', '$0{,}4$', '$1$'], answer: 0, explanation: '$Na\\to Na^++1e$; $0{,}2$ mol Na ⇒ $0{,}2$ mol e.' },
+        { stem: 'Phần trăm khối lượng H trong $NH_3$ ($M=17$)?', options: ['$82{,}4\\%$', '$17{,}6\\%$', '$50\\%$', '$25\\%$'], answer: 1, explanation: '$3/17\\cdot100\\%\\approx17{,}6\\%$.' },
+      ],
+    },
   ],
 
   ANH: [
