@@ -614,6 +614,21 @@ const EXAMS = {
         { stem: 'Độ không tuyệt đối ($0$ K) tương ứng với nhiệt độ Celsius?', options: ['$0$ °C', '$-273$ °C', '$273$ °C', '$100$ °C'], answer: 1, explanation: '$0$ K $=-273$ °C.' },
       ],
     },
+    {
+      examId: 'ly-kt45-15', title: 'Kiểm tra 45′ #15 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí từ trạng thái ($2$ atm, $4$ L, $300$ K) sang ($4$ atm, $2$ L). Nhiệt độ sau?', options: ['$300$ K', '$150$ K', '$600$ K', '$450$ K'], answer: 0, explanation: '$\\dfrac{p_1V_1}{T_1}=\\dfrac{p_2V_2}{T_2}$; $\\dfrac{8}{300}=\\dfrac{8}{T_2}\\Rightarrow T_2=300$ K.' },
+        { stem: 'Nhiệt làm bay hơi $0{,}5$ kg nước ở $100$ °C ($L=2{,}3\\cdot10^6$ J/kg)?', options: ['$2{,}3\\cdot10^6$ J', '$4{,}6\\cdot10^6$ J', '$0{,}575\\cdot10^6$ J', '$1{,}15\\cdot10^6$ J'], answer: 3, explanation: '$Q=Lm=2{,}3\\cdot10^6\\cdot0{,}5=1{,}15\\cdot10^6$ J.' },
+        { stem: 'Ống dây $N=500$ vòng, từ thông mỗi vòng biến thiên $\\Delta\\Phi=0{,}002$ Wb trong $0{,}1$ s. Suất điện động?', options: ['$5$ V', '$10$ V', '$1$ V', '$100$ V'], answer: 1, explanation: '$|e|=N\\dfrac{\\Delta\\Phi}{\\Delta t}=500\\cdot\\dfrac{0{,}002}{0{,}1}=10$ V.' },
+        { stem: 'Dây dẫn $I=4$ A, $l=2$ m trong $B=0{,}25$ T, hợp góc $30^\\circ$. Lực từ?', options: ['$0{,}5$ N', '$2$ N', '$4$ N', '$1$ N'], answer: 3, explanation: '$F=BIl\\sin30^\\circ=0{,}25\\cdot4\\cdot2\\cdot0{,}5=1$ N.' },
+        { stem: 'Hạt nhân $^{210}_{84}Po$ phóng xạ $\\alpha$ tạo hạt nhân chì. Số khối của chì?', options: ['$206$', '$204$', '$208$', '$210$'], answer: 0, explanation: '$A=210-4=206$.' },
+        { stem: 'Một phản ứng hạt nhân tỏa $200$ MeV. Đổi ra Jun? ($1$ MeV $=1{,}6\\cdot10^{-13}$ J)', options: ['$200$ J', '$3{,}2\\cdot10^{-13}$ J', '$3{,}2\\cdot10^{-11}$ J', '$1{,}6\\cdot10^{-11}$ J'], answer: 2, explanation: '$200\\cdot1{,}6\\cdot10^{-13}=3{,}2\\cdot10^{-11}$ J.' },
+        { stem: 'Ở thể tích không đổi, nếu nhiệt độ tuyệt đối giảm một nửa thì áp suất?', options: ['tăng gấp đôi', 'không đổi', 'tăng 4 lần', 'giảm một nửa'], answer: 3, explanation: 'Đẳng tích: $p\\propto T$; $T$ giảm nửa ⇒ $p$ giảm nửa.' },
+        { stem: 'Số nuclôn của hạt nhân $^4_2He$?', options: ['$2$', '$4$', '$6$', '$8$'], answer: 1, explanation: 'Số nuclôn = số khối $A=4$.' },
+        { stem: 'Nhiệt độ $100$ °C ứng với bao nhiêu Kelvin?', options: ['$373$ K', '$273$ K', '$173$ K', '$100$ K'], answer: 0, explanation: '$T=100+273=373$ K.' },
+        { stem: 'Công suất tỏa nhiệt trên điện trở $R=10\\ \\Omega$ có dòng $I=2$ A?', options: ['$20$ W', '$40$ W', '$80$ W', '$10$ W'], answer: 1, explanation: '$P=I^2R=2^2\\cdot10=40$ W.' },
+      ],
+    },
   ],
 
   HOA: [
