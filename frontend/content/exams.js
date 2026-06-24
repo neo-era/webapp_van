@@ -1597,6 +1597,21 @@ const EXAMS = {
         { stem: 'So complex was the problem ____ no one could solve it.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-16', title: 'IELTS – Vocabulary & Grammar #16', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "elaborate" (adj).', options: ['simple', 'brief', 'plain', 'detailed'], answer: 3, explanation: 'elaborate ≈ detailed (chi tiết, công phu).' },
+        { stem: 'Choose the synonym of "persist".', options: ['continue', 'stop', 'cease', 'quit'], answer: 0, explanation: 'persist ≈ continue (kiên trì, tiếp diễn).' },
+        { stem: 'Choose the antonym of "superior".', options: ['excellent', 'inferior', 'supreme', 'dominant'], answer: 1, explanation: 'superior ↔ inferior (kém hơn).' },
+        { stem: 'Not until much later ____ realize the mistake.', options: ['I did', 'I do', 'do I', 'did I'], answer: 3, explanation: 'Đảo ngữ với "Not until…": + did + S + V.' },
+        { stem: 'Choose the synonym of "viable".', options: ['impossible', 'useless', 'workable', 'impractical'], answer: 2, explanation: 'viable ≈ workable (khả thi).' },
+        { stem: 'The author, ____ books are bestsellers, lives abroad.', options: ['whose', 'who', 'whom', 'which'], answer: 0, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "strengthen".', options: ['reinforce', 'fortify', 'weaken', 'boost'], answer: 2, explanation: 'strengthen ↔ weaken (làm yếu đi).' },
+        { stem: 'Little ____ he know what awaited him.', options: ['did', 'does', 'do', 'had'], answer: 0, explanation: 'Đảo ngữ với "Little": Little + did + S + V.' },
+        { stem: 'Choose the synonym of "intricate".', options: ['simple', 'plain', 'basic', 'complicated'], answer: 3, explanation: 'intricate ≈ complicated (phức tạp).' },
+        { stem: 'It was his determination ____ led to his success.', options: ['which', 'that', 'who', 'what'], answer: 1, explanation: 'Câu chẻ: It was … that …' },
+      ],
+    },
   ],
 };
 
