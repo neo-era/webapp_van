@@ -935,6 +935,21 @@ const EXAMS = {
         { stem: "It's no use ____ over spilt milk.", options: ['to cry', 'cry', 'crying', 'cried'], answer: 2, explanation: "It's no use + V-ing." },
       ],
     },
+    {
+      examId: 'anh-kt45-12', title: 'Kiểm tra 45′ #12 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'She works as ____ engineer at a large company.', options: ['a', 'the', '(no article)', 'an'], answer: 3, explanation: 'engineer bắt đầu bằng nguyên âm ⇒ an.' },
+        { stem: 'There ____ a lot of people at the concert last night.', options: ['were', 'was', 'is', 'has'], answer: 0, explanation: 'people số nhiều + quá khứ ⇒ were.' },
+        { stem: 'I look forward ____ you again next month.', options: ['to see', 'seeing', 'to seeing', 'see'], answer: 2, explanation: 'look forward to + V-ing.' },
+        { stem: 'He is the ____ person I have ever met.', options: ['kind', 'kinder', 'most kind', 'kindest'], answer: 3, explanation: 'So sánh nhất tính từ ngắn: the kindest.' },
+        { stem: 'Unless you hurry, you ____ the train.', options: ['will miss', 'miss', 'missed', 'would miss'], answer: 0, explanation: 'Unless + hiện tại đơn, mệnh đề chính will + V.' },
+        { stem: 'They have lived in this city ____ ten years.', options: ['since', 'during', 'for', 'in'], answer: 2, explanation: 'for + khoảng thời gian.' },
+        { stem: 'The film was ____ boring that I fell asleep.', options: ['so', 'such', 'too', 'very'], answer: 0, explanation: 'so + tính từ + that.' },
+        { stem: 'Could you tell me where ____?', options: ['is the station', 'the station', 'station is', 'the station is'], answer: 3, explanation: 'Câu hỏi gián tiếp: trật tự S + V (the station is).' },
+        { stem: 'She made me ____ for hours outside the office.', options: ['to wait', 'wait', 'waiting', 'waited'], answer: 1, explanation: 'make + O + V nguyên thể không to.' },
+        { stem: "Choose the antonym of 'artificial'.", options: ['fake', 'natural', 'synthetic', 'man-made'], answer: 1, explanation: 'artificial ↔ natural (tự nhiên).' },
+      ],
+    },
   ],
 
   TOEIC: [
