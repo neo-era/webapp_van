@@ -659,6 +659,21 @@ const EXAMS = {
         { stem: 'Công suất tiêu thụ của thiết bị có $U=12$ V, $I=2$ A?', options: ['$12$ W', '$24$ W', '$6$ W', '$48$ W'], answer: 1, explanation: '$P=UI=12\\cdot2=24$ W.' },
       ],
     },
+    {
+      examId: 'ly-kt45-18', title: 'Kiểm tra 45′ #18 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng áp $V_1=5$ L ở $250$ K, làm lạnh đến $V_2=3$ L. Nhiệt độ sau?', options: ['$150$ K', '$100$ K', '$200$ K', '$300$ K'], answer: 0, explanation: '$T_2=T_1V_2/V_1=250\\cdot3/5=150$ K.' },
+        { stem: 'Nung $0{,}4$ kg sắt ($c=460$) tăng thêm $50$ °C cần nhiệt lượng?', options: ['$4600$ J', '$18400$ J', '$2300$ J', '$9200$ J'], answer: 3, explanation: '$Q=mc\\Delta t=0{,}4\\cdot460\\cdot50=9200$ J.' },
+        { stem: 'Hạt $q=3{,}2\\cdot10^{-19}$ C bay $v=10^6$ m/s vuông góc $B=0{,}2$ T. Lực Lorentz?', options: ['$3{,}2\\cdot10^{-14}$ N', '$6{,}4\\cdot10^{-14}$ N', '$1{,}6\\cdot10^{-14}$ N', '$6{,}4\\cdot10^{-19}$ N'], answer: 1, explanation: '$f=qvB=3{,}2\\cdot10^{-19}\\cdot10^6\\cdot0{,}2=6{,}4\\cdot10^{-14}$ N.' },
+        { stem: 'Hạt nhân $^{22}_{11}Na$ phóng xạ $\\beta^+$. Số proton của hạt nhân con?', options: ['$10$', '$9$', '$11$', '$12$'], answer: 0, explanation: '$\\beta^+$: $Z$ giảm 1 ⇒ $11-1=10$.' },
+        { stem: 'Số proton trong hạt nhân $^{40}_{20}Ca$?', options: ['$18$', '$22$', '$40$', '$20$'], answer: 3, explanation: 'Số proton $Z=20$.' },
+        { stem: 'Một máy thực hiện công $A=600$ J trong $2$ s. Công suất?', options: ['$150$ W', '$300$ W', '$600$ W', '$1200$ W'], answer: 1, explanation: '$P=A/t=600/2=300$ W.' },
+        { stem: 'Đẳng nhiệt: nếu thể tích tăng gấp đôi thì áp suất?', options: ['tăng 2 lần', 'không đổi', 'tăng 4 lần', 'giảm một nửa'], answer: 3, explanation: '$pV=$ const ⇒ $V$ tăng 2 lần thì $p$ giảm một nửa.' },
+        { stem: 'Năng lượng nghỉ của vật $m=2$ g $=2\\cdot10^{-3}$ kg ($c=3\\cdot10^8$)?', options: ['$1{,}8\\cdot10^{14}$ J', '$9\\cdot10^{16}$ J', '$1{,}8\\cdot10^{17}$ J', '$6\\cdot10^5$ J'], answer: 0, explanation: '$E=mc^2=2\\cdot10^{-3}\\cdot9\\cdot10^{16}=1{,}8\\cdot10^{14}$ J.' },
+        { stem: 'Số nuclôn trong hạt nhân $^{23}_{11}Na$?', options: ['$11$', '$23$', '$12$', '$34$'], answer: 1, explanation: 'Số nuclôn = số khối $A=23$.' },
+        { stem: 'Đổi $300$ K sang nhiệt độ Celsius?', options: ['$0$ °C', '$300$ °C', '$27$ °C', '$573$ °C'], answer: 2, explanation: '$t=300-273=27$ °C.' },
+      ],
+    },
   ],
 
   HOA: [
