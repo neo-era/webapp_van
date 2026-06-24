@@ -453,6 +453,18 @@ const CURRICULUM = {
                   <p>Mẫu: $5,8,8,11,14,20$. Tính $R$ và $\\Delta_Q$.</p>
                   <details><summary>Xem đáp án</summary><p>$R=20-5=15$; $Q_1=8$, $Q_3=14 \\Rightarrow \\Delta_Q=6$. (Kiểm ngoại lệ: $20<14+1{,}5\\cdot 6=23$ nên không có ngoại lệ.)</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (mẫu ghép nhóm)</div>
+                  <p>Chiều cao (cm) học sinh: $[150;160)$ tần số 5, $[160;170)$ tần số 12, $[170;180)$ tần số 3.</p>
+                  <p><strong>Giải:</strong> Khoảng biến thiên $\\approx 180-150=30$ cm (lấy theo đầu mút nhóm đầu và cuối).</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Mẫu $3,7,7,10,15,18,21$. Tính $R$ và $\\Delta_Q$.</p>
+                  <details><summary>Đáp án</summary><p>$R=21-3=18$; trung vị $=10$, $Q_1=7$, $Q_3=18 \\Rightarrow \\Delta_Q=11$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm giá trị ngoại lệ (nếu có) của mẫu $2,5,6,7,8,30$.</p>
+                  <details><summary>Đáp án</summary><p>$Q_1=5,\\ Q_3=8,\\ \\Delta_Q=3$; ngưỡng trên $8+1{,}5\\cdot3=12{,}5$. Vậy $30$ là <strong>ngoại lệ</strong>.</p></details>
+                </div>
               `,
             },
             {
@@ -473,6 +485,30 @@ const CURRICULUM = {
                   <div class="bt-title">✏️ Bài tập</div>
                   <p>Tính phương sai của mẫu có giá trị đại diện $2,4,6$ với tần số $1,2,1$.</p>
                   <details><summary>Xem đáp án</summary><p>$\\bar{x}=\\dfrac{2+8+6}{4}=4$; $s^2=\\dfrac{1}{4}[1\\cdot4+2\\cdot0+1\\cdot4]=2$, $s=\\sqrt{2}$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (biểu đồ tần số)</div>
+                  <p>Mẫu ghép nhóm với tần số $2,5,3$ (ví dụ trên) có biểu đồ cột:</p>
+                  <svg class="graph" viewBox="0 0 220 150" width="220" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="20" y1="120" x2="200" y2="120" stroke="#94a3b8"/>
+                    <rect x="34" y="88" width="40" height="32" fill="#4f46e5" opacity="0.85"/>
+                    <rect x="90" y="40" width="40" height="80" fill="#4f46e5" opacity="0.85"/>
+                    <rect x="146" y="72" width="40" height="48" fill="#4f46e5" opacity="0.85"/>
+                    <text x="50" y="84" text-anchor="middle">2</text>
+                    <text x="110" y="36" text-anchor="middle">5</text>
+                    <text x="166" y="68" text-anchor="middle">3</text>
+                    <text x="54" y="132" text-anchor="middle">[0;10)</text>
+                    <text x="110" y="132" text-anchor="middle">[10;20)</text>
+                    <text x="166" y="132" text-anchor="middle">[20;30)</text>
+                  </svg>
+                  <p>So sánh độ ổn định: hai mẫu cùng $\\bar{x}$, mẫu nào có $s$ nhỏ hơn thì <strong>ổn định hơn</strong>.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tính phương sai mẫu có giá trị đại diện $10,20,30$ với tần số $3,4,3$.</p>
+                  <details><summary>Đáp án</summary><p>$\\bar{x}=\\dfrac{30+80+90}{10}=20$; $s^2=\\dfrac{1}{10}[3\\cdot100+4\\cdot0+3\\cdot100]=60$, $s=2\\sqrt{15}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Mẫu A có $s=2$, mẫu B có $s=5$ (cùng trung bình). Mẫu nào ổn định hơn?</p>
+                  <details><summary>Đáp án</summary><p>Mẫu A (độ lệch chuẩn nhỏ hơn ⇒ ít phân tán hơn).</p></details>
                 </div>
               `,
             },
@@ -499,6 +535,18 @@ const CURRICULUM = {
                   <p>Tìm $\\displaystyle\\int \\left(e^x+\\dfrac{1}{x}\\right)dx$.</p>
                   <details><summary>Xem đáp án</summary><p>$e^x+\\ln|x|+C$.</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (đổi biến đơn giản)</div>
+                  <p>Tìm $\\displaystyle\\int \\cos(2x)\\,dx$.</p>
+                  <p><strong>Giải:</strong> $\\displaystyle\\int \\cos(2x)\\,dx=\\dfrac{1}{2}\\sin(2x)+C$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm $\\displaystyle\\int (4x^3-2)\\,dx$.</p>
+                  <details><summary>Đáp án</summary><p>$x^4-2x+C$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm $\\displaystyle\\int e^{2x}\\,dx$.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{1}{2}e^{2x}+C$.</p></details>
+                </div>
               `,
             },
             {
@@ -518,6 +566,18 @@ const CURRICULUM = {
                   <div class="bt-title">✏️ Bài tập</div>
                   <p>Tính $\\displaystyle\\int_0^{\\pi/2}\\cos x\\,dx$.</p>
                   <details><summary>Xem đáp án</summary><p>$\\big[\\sin x\\big]_0^{\\pi/2}=1-0=1$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (tích phân từng phần)</div>
+                  <p>Tính $\\displaystyle\\int_0^1 x e^{x}\\,dx$.</p>
+                  <p><strong>Giải:</strong> Đặt $u=x,\\ dv=e^x dx$ ⇒ $du=dx,\\ v=e^x$. $\\int_0^1 xe^x dx=[xe^x]_0^1-\\int_0^1 e^x dx=e-(e-1)=1$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tính $\\displaystyle\\int_1^2 \\dfrac{1}{x}\\,dx$.</p>
+                  <details><summary>Đáp án</summary><p>$[\\ln x]_1^2=\\ln 2$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tính $\\displaystyle\\int_0^1 (3x^2+1)\\,dx$.</p>
+                  <details><summary>Đáp án</summary><p>$[x^3+x]_0^1=2$.</p></details>
                 </div>
               `,
             },
@@ -551,6 +611,29 @@ const CURRICULUM = {
                   <p>Tính thể tích khối tròn xoay khi quay $y=\\sqrt{x}$ quanh $Ox$, từ $x=0$ đến $x=4$.</p>
                   <details><summary>Xem đáp án</summary><p>$V=\\pi\\displaystyle\\int_0^4 x\\,dx=\\pi\\Big[\\dfrac{x^2}{2}\\Big]_0^4=8\\pi$.</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (diện tích giữa hai đường)</div>
+                  <p>Tính diện tích hình phẳng giới hạn bởi $y=x$ và $y=x^2$.</p>
+                  <p><strong>Giải:</strong> Giao điểm $x=0,\\ x=1$; trên $(0;1)$ thì $x\\ge x^2$.</p>
+                  <p>$S=\\displaystyle\\int_0^1 (x-x^2)\\,dx=\\Big[\\dfrac{x^2}{2}-\\dfrac{x^3}{3}\\Big]_0^1=\\dfrac{1}{2}-\\dfrac{1}{3}=\\dfrac{1}{6}$.</p>
+                  <svg class="graph" viewBox="0 0 200 160" width="200" height="160" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="20" y1="140" x2="190" y2="140" stroke="#94a3b8"/>
+                    <line x1="30" y1="15" x2="30" y2="150" stroke="#94a3b8"/>
+                    <path d="M30,140 L150,40 L120,84 L90,115 L60,134 Z" fill="rgba(79,70,229,0.18)" stroke="none"/>
+                    <polyline points="30,140 150,40" fill="none" stroke="#dc2626" stroke-width="2"/>
+                    <polyline points="30,140 60,134 90,115 120,84 150,40" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <text x="152" y="38" fill="#dc2626">y=x</text>
+                    <text x="150" y="60" fill="#4f46e5">y=x²</text>
+                    <text x="78" y="120">S=1/6</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Diện tích hình phẳng giới hạn $y=x^2$, $Ox$, $x=1$, $x=3$.</p>
+                  <details><summary>Đáp án</summary><p>$S=\\displaystyle\\int_1^3 x^2 dx=\\Big[\\dfrac{x^3}{3}\\Big]_1^3=\\dfrac{27-1}{3}=\\dfrac{26}{3}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Thể tích khi quay $y=x$ quanh $Ox$ từ $0$ đến $3$.</p>
+                  <details><summary>Đáp án</summary><p>$V=\\pi\\displaystyle\\int_0^3 x^2 dx=\\pi\\Big[\\dfrac{x^3}{3}\\Big]_0^3=9\\pi$.</p></details>
+                </div>
               `,
             },
           ],
@@ -576,6 +659,18 @@ const CURRICULUM = {
                   <p>Tính khoảng cách từ $M(1;1;1)$ đến $(P): x+2y+2z-9=0$.</p>
                   <details><summary>Xem đáp án</summary><p>$d=\\dfrac{|1+2+2-9|}{\\sqrt{1+4+4}}=\\dfrac{4}{3}$.</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (mặt phẳng qua 3 điểm)</div>
+                  <p>Viết phương trình mặt phẳng qua $A(1;0;0)$, $B(0;2;0)$, $C(0;0;3)$.</p>
+                  <p><strong>Giải:</strong> Dùng phương trình theo đoạn chắn: $\\dfrac{x}{1}+\\dfrac{y}{2}+\\dfrac{z}{3}=1 \\Leftrightarrow 6x+3y+2z-6=0$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Viết pt mặt phẳng qua $M(0;0;0)$ pháp tuyến $\\vec{n}=(1;1;1)$.</p>
+                  <details><summary>Đáp án</summary><p>$x+y+z=0$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Khoảng cách từ gốc $O$ đến $(P): 2x-2y+z+6=0$.</p>
+                  <details><summary>Đáp án</summary><p>$d=\\dfrac{|6|}{\\sqrt{4+4+1}}=\\dfrac{6}{3}=2$.</p></details>
+                </div>
               `,
             },
             {
@@ -599,6 +694,18 @@ const CURRICULUM = {
                   <p>Viết phương trình tham số đường thẳng qua $A(2;1;0)$ và $B(3;-1;2)$.</p>
                   <details><summary>Xem đáp án</summary><p>$\\vec{AB}=(1;-2;2)$; $x=2+t,\\ y=1-2t,\\ z=2t$.</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (điểm thuộc đường thẳng)</div>
+                  <p>Đường thẳng $d: x=1+2t,\\ y=-t,\\ z=3+t$. Điểm $A(3;-1;4)$ có thuộc $d$ không?</p>
+                  <p><strong>Giải:</strong> Từ $x$: $3=1+2t\\Rightarrow t=1$. Thay: $y=-1$ ✓, $z=4$ ✓. Vậy $A\\in d$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm một vectơ chỉ phương của $d:\\dfrac{x-1}{2}=\\dfrac{y}{-3}=\\dfrac{z+2}{1}$.</p>
+                  <details><summary>Đáp án</summary><p>$\\vec{u}=(2;-3;1)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Viết pt tham số đường thẳng qua $O$ và $A(1;2;3)$.</p>
+                  <details><summary>Đáp án</summary><p>$x=t,\\ y=2t,\\ z=3t$.</p></details>
+                </div>
               `,
             },
             {
@@ -618,6 +725,18 @@ const CURRICULUM = {
                   <div class="bt-title">✏️ Bài tập</div>
                   <p>Tìm tâm, bán kính mặt cầu $x^2+y^2+z^2-4x+6y-2z+5=0$.</p>
                   <details><summary>Xem đáp án</summary><p>Tâm $I(2;-3;1)$; $R=\\sqrt{4+9+1-5}=3$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (mặt cầu qua tâm & điểm)</div>
+                  <p>Viết phương trình mặt cầu tâm $I(1;0;-2)$ đi qua $A(3;0;-2)$.</p>
+                  <p><strong>Giải:</strong> $R=IA=\\sqrt{(3-1)^2+0+0}=2$. Vậy $(x-1)^2+y^2+(z+2)^2=4$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm tâm, bán kính của $(x+1)^2+(y-2)^2+z^2=9$.</p>
+                  <details><summary>Đáp án</summary><p>Tâm $I(-1;2;0)$, $R=3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Mặt cầu tâm $O$ bán kính $5$ có phương trình?</p>
+                  <details><summary>Đáp án</summary><p>$x^2+y^2+z^2=25$.</p></details>
                 </div>
               `,
             },
@@ -644,6 +763,18 @@ const CURRICULUM = {
                   <p>Rút ngẫu nhiên 1 lá bài. $A$: "lá Cơ", $B$: "lá màu đỏ". Tính $P(A\\mid B)$.</p>
                   <details><summary>Xem đáp án</summary><p>$B$ có 26 lá đỏ, $A\\cap B$ là 13 lá Cơ ⇒ $P(A\\mid B)=\\dfrac{13}{26}=\\dfrac{1}{2}$.</p></details>
                 </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (rút không hoàn lại)</div>
+                  <p>Hộp có 3 bi đỏ, 2 bi xanh. Rút lần lượt 2 bi (không hoàn lại). Tính xác suất bi thứ hai đỏ, biết bi thứ nhất đỏ.</p>
+                  <p><strong>Giải:</strong> Sau khi rút 1 bi đỏ, còn 2 đỏ + 2 xanh ⇒ $P=\\dfrac{2}{4}=\\dfrac{1}{2}$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cho $P(A\\cap B)=0{,}3$, $P(A\\mid B)=0{,}6$. Tính $P(B)$.</p>
+                  <details><summary>Đáp án</summary><p>$P(B)=\\dfrac{P(A\\cap B)}{P(A\\mid B)}=\\dfrac{0{,}3}{0{,}6}=0{,}5$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> $A,B$ độc lập, $P(A)=0{,}4$, $P(B)=0{,}5$. Tính $P(A\\cap B)$.</p>
+                  <details><summary>Đáp án</summary><p>$P(A\\cap B)=P(A)P(B)=0{,}2$.</p></details>
+                </div>
               `,
             },
             {
@@ -665,6 +796,35 @@ const CURRICULUM = {
                   <div class="bt-title">✏️ Bài tập</div>
                   <p>Hộp 1: 3 đỏ, 7 xanh; Hộp 2: 6 đỏ, 4 xanh. Chọn ngẫu nhiên 1 hộp rồi rút 1 viên, được viên đỏ. Tính xác suất viên đó lấy từ Hộp 1.</p>
                   <details><summary>Xem đáp án</summary><p>$P(\\text{đỏ})=0{,}5\\cdot0{,}3+0{,}5\\cdot0{,}6=0{,}45$; $P(H_1\\mid \\text{đỏ})=\\dfrac{0{,}15}{0{,}45}=\\dfrac{1}{3}$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ 2 (sơ đồ cây)</div>
+                  <p>Bài tập trên minh họa bằng sơ đồ cây (nhánh ghi xác suất):</p>
+                  <svg class="graph" viewBox="0 0 250 160" width="250" height="160" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="40" y1="80" x2="95" y2="45" stroke="#4f46e5"/>
+                    <line x1="40" y1="80" x2="95" y2="115" stroke="#4f46e5"/>
+                    <line x1="112" y1="45" x2="195" y2="25" stroke="#94a3b8"/>
+                    <line x1="112" y1="45" x2="195" y2="62" stroke="#94a3b8"/>
+                    <line x1="112" y1="115" x2="195" y2="100" stroke="#94a3b8"/>
+                    <line x1="112" y1="115" x2="195" y2="138" stroke="#94a3b8"/>
+                    <text x="20" y="83">Chọn</text>
+                    <text x="100" y="44" font-weight="bold">H₁</text>
+                    <text x="100" y="119" font-weight="bold">H₂</text>
+                    <text x="60" y="56" fill="#4f46e5">0,5</text>
+                    <text x="60" y="105" fill="#4f46e5">0,5</text>
+                    <text x="200" y="27">Đỏ (0,3)</text>
+                    <text x="200" y="64">Xanh</text>
+                    <text x="200" y="102">Đỏ (0,6)</text>
+                    <text x="200" y="140">Xanh</text>
+                  </svg>
+                  <p>$P(\\text{đỏ})=0{,}5\\cdot0{,}3+0{,}5\\cdot0{,}6=0{,}45$ (tổng tích các nhánh dẫn tới "Đỏ").</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Bệnh hiếm $P(B)=2\\%$, xét nghiệm đúng dương $90\\%$, dương giả $10\\%$. Tính $P(\\text{dương})$.</p>
+                  <details><summary>Đáp án</summary><p>$P(D)=0{,}02\\cdot0{,}9+0{,}98\\cdot0{,}1=0{,}018+0{,}098=0{,}116$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Với số liệu Bài 1, tính $P(B\\mid \\text{dương})$.</p>
+                  <details><summary>Đáp án</summary><p>$P(B\\mid D)=\\dfrac{0{,}018}{0{,}116}\\approx 0{,}155=15{,}5\\%$.</p></details>
                 </div>
               `,
             },
