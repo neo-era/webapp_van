@@ -8,15 +8,49 @@
 // (đổi sau sẽ làm sai toàn bộ mật khẩu đã lưu).
 const SALT = 'THPT_v1_doi_chuoi_nay_khi_setup';
 
+// Cấu trúc các tab (sheet) và cột header. Backend tự tạo nếu thiếu.
+const SCHEMA = {
+  Users:     ['userId', 'email', 'passwordHash', 'name', 'role', 'grade', 'classId', 'createdAt'],
+  Classes:   ['classId', 'name', 'teacherId', 'createdAt'],
+  Plans:     ['planId', 'studentId', 'title', 'subject', 'description', 'dueDate', 'status', 'assignedBy', 'createdAt'],
+  Goals:     ['goalId', 'studentId', 'subject', 'title', 'targetValue', 'progress', 'deadline', 'createdAt'],
+  ExamPlans: ['studentId', 'examDate', 'subjects', 'milestones'],
+  Notes:     ['noteId', 'studentId', 'subject', 'title', 'content', 'fileUrl', 'createdAt', 'updatedAt'],
+  Sessions:  ['token', 'userId', 'expiresAt'],
+};
+
 /** Spreadsheet đang gắn với Apps Script này. */
 function DB() {
   return SpreadsheetApp.getActiveSpreadsheet();
 }
 
-/** Lấy sheet theo tên (báo lỗi nếu thiếu). */
+/** Tạo các tab còn thiếu + ghi header đúng. Gọi đầu mỗi request (route). */
+function ensureSheets() {
+  const ss = DB();
+  Object.keys(SCHEMA).forEach(function (name) {
+    let sh = ss.getSheetByName(name);
+    if (!sh) sh = ss.insertSheet(name);
+    const header = SCHEMA[name];
+    const current = sh.getRange(1, 1, 1, header.length).getValues()[0].map(String);
+    const mismatch = header.some(function (h, i) { return current[i] !== h; });
+    if (mismatch) {
+      sh.getRange(1, 1, 1, header.length).setValues([header]);
+      sh.setFrozenRows(1);
+    }
+  });
+  // Xóa tab mặc định trống (vd "Trang tính1"/"Sheet1") không thuộc schema
+  ss.getSheets().forEach(function (sh) {
+    if (!SCHEMA[sh.getName()] && sh.getLastRow() === 0 && ss.getSheets().length > 1) {
+      try { ss.deleteSheet(sh); } catch (e) {}
+    }
+  });
+}
+
+/** Lấy sheet theo tên (tự tạo nếu thiếu). */
 function getSheet(name) {
-  const sh = DB().getSheetByName(name);
-  if (!sh) throw new Error('Không tìm thấy sheet "' + name + '". Kiểm tra lại theo docs/SETUP.md.');
+  let sh = DB().getSheetByName(name);
+  if (!sh && SCHEMA[name]) { ensureSheets(); sh = DB().getSheetByName(name); }
+  if (!sh) throw new Error('Không tìm thấy sheet "' + name + '".');
   return sh;
 }
 

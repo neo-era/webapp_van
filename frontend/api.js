@@ -5,10 +5,9 @@
    ============================================================ */
 
 const CONFIG = {
-  // 👉 Sau khi deploy Apps Script (SETUP.md Bước 5–6), dán URL dạng
-  //    https://script.google.com/macros/s/AKfy.../exec vào đây.
-  //    Để trống '' để chạy bản demo dữ liệu mẫu trên GitHub Pages.
-  WEB_APP_URL: '',
+  // URL Web App Apps Script (đã deploy tự động bằng clasp).
+  // Để trống '' nếu muốn quay lại chế độ demo dữ liệu mẫu.
+  WEB_APP_URL: 'https://script.google.com/macros/s/AKfycbzpCJYHRTwRmclDXEKg3kFpJLHtfHTaLlnMDXDzDlkOgJRBvw7NMoI99Ik8iwx99vfrdw/exec',
 };
 
 const Api = {

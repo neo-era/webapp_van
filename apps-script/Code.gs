@@ -43,6 +43,9 @@ function handleApi(req) {
 
 /** Bảng phân nhánh action → hàm xử lý. */
 function route(action, req) {
+  ensureSheets();   // tự tạo tab + header nếu thiếu
+  seedIfEmpty();    // tự seed dữ liệu demo nếu DB trống
+
   switch (action) {
     // --- Hệ thống ---
     case 'ping':      return jsonOk({ pong: true, time: now() });
