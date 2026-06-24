@@ -1022,6 +1022,21 @@ const EXAMS = {
         { stem: 'Chất nào sau đây KHÔNG dẫn điện ở trạng thái rắn?', options: ['kim loại đồng', 'muối NaCl rắn', 'than chì', 'dung dịch axit'], answer: 1, explanation: 'NaCl rắn không dẫn điện (chỉ dẫn khi nóng chảy hoặc trong dung dịch).' },
       ],
     },
+    {
+      examId: 'hoa-kt45-21', title: 'Kiểm tra 45′ #21 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4$ g NaOH ($M=40$)?', options: ['$0{,}2$', '$0{,}4$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=4/40=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}2$ mol $Fe_2O_3$ ($M=160$)?', options: ['$32$ g', '$16$ g', '$64$ g', '$80$ g'], answer: 0, explanation: '$m=0{,}2\\cdot160=32$ g.' },
+        { stem: 'Thể tích (đktc) của $0{,}5$ mol khí $NH_3$?', options: ['$5{,}6$ L', '$22{,}4$ L', '$11{,}2$ L', '$2{,}24$ L'], answer: 2, explanation: '$V=0{,}5\\cdot22{,}4=11{,}2$ L.' },
+        { stem: 'Phản ứng $N_2+3H_2\\to2NH_3$. Từ $0{,}3$ mol $H_2$ thu được mol $NH_3$?', options: ['$0{,}1$', '$0{,}3$', '$0{,}6$', '$0{,}2$'], answer: 3, explanation: '$3$ mol $H_2 \\to 2$ mol $NH_3$; $0{,}3 \\to 0{,}2$ mol.' },
+        { stem: 'Số mol nguyên tử H trong $0{,}1$ mol $H_3PO_4$?', options: ['$0{,}1$', '$0{,}2$', '$0{,}3$', '$0{,}4$'], answer: 2, explanation: 'Mỗi phân tử có 3 H ⇒ $0{,}1\\cdot3=0{,}3$ mol.' },
+        { stem: 'Khối lượng mol của $MgSO_4$ (Mg=24, S=32, O=16)?', options: ['$100$', '$120$', '$96$', '$136$'], answer: 1, explanation: '$24+32+4\\cdot16=120$ g/mol.' },
+        { stem: 'Hòa tan $0{,}3$ mol KCl thành $600$ mL dung dịch. Nồng độ mol?', options: ['$0{,}5$', '$0{,}3$', '$0{,}6$', '$1$'], answer: 0, explanation: '$C_M=0{,}3/0{,}6=0{,}5$ M.' },
+        { stem: 'Kim loại nào tác dụng với $H_2SO_4$ loãng giải phóng $H_2$?', options: ['Cu', 'Zn', 'Ag', 'Au'], answer: 1, explanation: 'Zn đứng trước H nên phản ứng giải phóng $H_2$.' },
+        { stem: 'Phần trăm khối lượng C trong $CO_2$ ($M=44$)?', options: ['$50\\%$', '$72{,}7\\%$', '$27{,}3\\%$', '$12\\%$'], answer: 2, explanation: '$12/44\\cdot100\\%\\approx27{,}3\\%$.' },
+        { stem: 'Chất nào sau đây là một base (bazơ)?', options: ['HCl', 'NaCl', '$CO_2$', 'NaOH'], answer: 3, explanation: 'NaOH là base mạnh.' },
+      ],
+    },
   ],
 
   ANH: [
