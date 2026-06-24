@@ -1142,6 +1142,21 @@ const EXAMS = {
         { stem: 'Số mol $O_2$ cần để đốt cháy hết $0{,}2$ mol $CH_4$? ($CH_4+2O_2\\to CO_2+2H_2O$)', options: ['$0{,}2$', '$0{,}1$', '$0{,}4$', '$0{,}8$'], answer: 2, explanation: '$0{,}2\\cdot2=0{,}4$ mol $O_2$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-25', title: 'Kiểm tra 45′ #25 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $9{,}8$ g $H_2SO_4$ ($M=98$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=9{,}8/98=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}4$ mol NaCl ($M=58{,}5$)?', options: ['$23{,}4$ g', '$11{,}7$ g', '$46{,}8$ g', '$58{,}5$ g'], answer: 0, explanation: '$m=0{,}4\\cdot58{,}5=23{,}4$ g.' },
+        { stem: 'Thể tích $CO_2$ (đktc) khi đốt cháy hết $0{,}5$ mol C?', options: ['$5{,}6$ L', '$22{,}4$ L', '$11{,}2$ L', '$2{,}24$ L'], answer: 2, explanation: '$0{,}5$ mol $CO_2 \\Rightarrow V=11{,}2$ L.' },
+        { stem: 'Số mol nguyên tử H trong $0{,}3$ mol $NH_3$?', options: ['$0{,}3$', '$0{,}6$', '$0{,}9$', '$1{,}2$'], answer: 2, explanation: 'Mỗi phân tử có 3 H ⇒ $0{,}3\\cdot3=0{,}9$ mol.' },
+        { stem: 'Hòa tan $16$ g chất tan trong $200$ g dung dịch. Nồng độ phần trăm?', options: ['$8\\%$', '$4\\%$', '$16\\%$', '$12\\%$'], answer: 0, explanation: '$C\\%=16/200\\cdot100\\%=8\\%$.' },
+        { stem: 'Khối lượng mol của $KNO_3$ (K=39, N=14, O=16)?', options: ['$85$', '$101$', '$122$', '$138$'], answer: 1, explanation: '$39+14+3\\cdot16=101$ g/mol.' },
+        { stem: 'Kim loại nào dẫn điện kém nhất trong các kim loại sau?', options: ['Ag', 'Cu', 'Au', 'Fe'], answer: 3, explanation: 'Thứ tự dẫn điện: Ag > Cu > Au > … > Fe; Fe kém nhất.' },
+        { stem: 'Phần trăm khối lượng Na trong NaCl ($M=58{,}5$)?', options: ['$39{,}3\\%$', '$60{,}7\\%$', '$50\\%$', '$23\\%$'], answer: 0, explanation: '$23/58{,}5\\cdot100\\%\\approx39{,}3\\%$.' },
+        { stem: 'Chất nào sau đây là một acid?', options: ['NaOH', '$H_2SO_4$', 'NaCl', 'KOH'], answer: 1, explanation: '$H_2SO_4$ là acid mạnh.' },
+        { stem: 'Số mol $H_2SO_4$ cần để trung hòa hết $0{,}4$ mol NaOH?', options: ['$0{,}4$', '$0{,}8$', '$0{,}1$', '$0{,}2$'], answer: 3, explanation: '$2NaOH+H_2SO_4\\to Na_2SO_4+2H_2O$; cần $0{,}2$ mol $H_2SO_4$.' },
+      ],
+    },
   ],
 
   ANH: [
