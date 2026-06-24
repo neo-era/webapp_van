@@ -1372,6 +1372,21 @@ const EXAMS = {
         { stem: 'Such ____ his enthusiasm that everyone soon joined in.', options: ['was', 'were', 'is', 'had'], answer: 0, explanation: 'Đảo ngữ "Such + be + S + that…": Such was his enthusiasm…' },
       ],
     },
+    {
+      examId: 'ielts-kt-13', title: 'IELTS – Vocabulary & Grammar #13', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "numerous".', options: ['few', 'single', 'rare', 'many'], answer: 3, explanation: 'numerous ≈ many (nhiều).' },
+        { stem: 'Choose the synonym of "evaluate".', options: ['assess', 'ignore', 'create', 'repeat'], answer: 0, explanation: 'evaluate ≈ assess (đánh giá).' },
+        { stem: 'Choose the antonym of "include".', options: ['contain', 'exclude', 'comprise', 'involve'], answer: 1, explanation: 'include ↔ exclude (loại trừ).' },
+        { stem: 'Not only is she talented, ____ she is also hardworking.', options: ['and', 'so', 'or', 'but'], answer: 3, explanation: 'Cấu trúc "Not only … but (also) …".' },
+        { stem: 'Choose the synonym of "consequence".', options: ['result', 'cause', 'reason', 'origin'], answer: 0, explanation: 'consequence ≈ result (hệ quả).' },
+        { stem: 'The project failed ____ a lack of funding.', options: ['owing to', 'despite', 'although', 'however'], answer: 0, explanation: 'owing to + N = do, bởi vì.' },
+        { stem: 'Choose the antonym of "accept".', options: ['agree', 'reject', 'approve', 'welcome'], answer: 1, explanation: 'accept ↔ reject (từ chối).' },
+        { stem: 'The teacher insisted that the student ____ on time.', options: ['is', 'be', 'was', 'being'], answer: 1, explanation: 'insist that + S + V nguyên thể (giả định): be.' },
+        { stem: 'Choose the synonym of "occur".', options: ['vanish', 'prevent', 'delay', 'happen'], answer: 3, explanation: 'occur ≈ happen (xảy ra).' },
+        { stem: 'Rarely do we ____ such remarkable talent.', options: ['avoid', 'lose', 'encounter', 'ignore'], answer: 2, explanation: 'encounter = bắt gặp, gặp phải.' },
+      ],
+    },
   ],
 };
 
