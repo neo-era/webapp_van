@@ -1070,6 +1070,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'expensive'.", options: ['costly', 'pricey', 'cheap', 'dear'], answer: 2, explanation: 'expensive ↔ cheap (rẻ).' },
       ],
     },
+    {
+      examId: 'anh-kt45-15', title: 'Kiểm tra 45′ #15 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: 'By the time she arrives, we ____ dinner.', options: ['finish', 'will finish', 'will have finished', 'finished'], answer: 2, explanation: 'Tương lai hoàn thành: will have + V3.' },
+        { stem: "I'm not used to ____ up early in the morning.", options: ['get', 'got', 'gets', 'getting'], answer: 3, explanation: 'be used to + V-ing.' },
+        { stem: 'The more I read, the ____ I understand.', options: ['more', 'the more', 'most', 'much'], answer: 0, explanation: 'So sánh kép: the more …, the more …' },
+        { stem: 'He ran ____ that he won the race easily.', options: ['so fast', 'such fast', 'too fast', 'very fast'], answer: 0, explanation: 'so + trạng từ + that (chỉ kết quả).' },
+        { stem: 'Either you or he ____ responsible for the error.', options: ['are', 'is', 'were', 'am'], answer: 1, explanation: 'Either…or… chia theo chủ ngữ gần nhất (he ⇒ is).' },
+        { stem: "I'd rather you ____ smoke in this room.", options: ["don't", 'not', "won't", "didn't"], answer: 3, explanation: 'would rather + S + V quá khứ (didn’t).' },
+        { stem: "Choose the synonym of 'happy'.", options: ['delighted', 'sad', 'angry', 'bored'], answer: 0, explanation: 'happy ≈ delighted (vui mừng).' },
+        { stem: 'Not until he apologized ____ forgive him.', options: ['she did', 'she does', 'does she', 'did she'], answer: 3, explanation: 'Đảo ngữ với "Not until…": + did + S + V.' },
+        { stem: 'He behaves ____ he owned the whole place.', options: ['as', 'as if', 'like that', 'so'], answer: 1, explanation: 'as if + mệnh đề (giả định).' },
+        { stem: "Choose the antonym of 'difficult'.", options: ['hard', 'tough', 'easy', 'complex'], answer: 2, explanation: 'difficult ↔ easy (dễ).' },
+      ],
+    },
   ],
 
   TOEIC: [
