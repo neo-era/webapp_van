@@ -1474,6 +1474,21 @@ const EXAMS = {
         { stem: 'The latest sales figures show a ____ trend.', options: ['position', 'positively', 'positive', 'positivity'], answer: 2, explanation: 'Cần tính từ bổ nghĩa "trend" ⇒ positive.' },
       ],
     },
+    {
+      examId: 'toeic-18', title: 'TOEIC – Grammar & Vocabulary #18', durationMin: 20,
+      questions: [
+        { stem: 'The new policy will ____ at the beginning of next month.', options: ['comment', 'commerce', 'commute', 'commence'], answer: 3, explanation: 'commence = bắt đầu.' },
+        { stem: 'We need to ____ costs to remain competitive.', options: ['maximize', 'minimize', 'organize', 'realize'], answer: 1, explanation: 'minimize costs = giảm thiểu chi phí.' },
+        { stem: 'The shipment is ____ for delivery on Monday.', options: ['schedule', 'scheduling', 'schedules', 'scheduled'], answer: 3, explanation: 'be scheduled for = được lên lịch.' },
+        { stem: 'Our products meet all international ____.', options: ['standard', 'standardize', 'standards', 'standardly'], answer: 2, explanation: 'Cần danh từ số nhiều ⇒ standards.' },
+        { stem: 'The HR manager is responsible ____ hiring new staff.', options: ['for', 'to', 'with', 'of'], answer: 0, explanation: 'be responsible for + V-ing.' },
+        { stem: 'Please ____ the customer survey by Friday.', options: ['compete', 'compile', 'complete', 'comply'], answer: 2, explanation: 'complete a survey = hoàn thành khảo sát.' },
+        { stem: 'All items are subject ____ availability.', options: ['for', 'with', 'on', 'to'], answer: 3, explanation: 'subject to = tùy thuộc vào.' },
+        { stem: 'The new system has greatly improved ____.', options: ['efficient', 'efficiently', 'efficiency', 'efficacious'], answer: 2, explanation: 'Cần danh từ làm tân ngữ ⇒ efficiency.' },
+        { stem: 'We will ____ a meeting to discuss the proposal.', options: ['arranged', 'arrange', 'arranging', 'arrangement'], answer: 1, explanation: 'will + động từ nguyên thể (arrange).' },
+        { stem: 'The annual report must be ____ to the director.', options: ['submitted', 'submit', 'submitting', 'submission'], answer: 0, explanation: 'must be + V3 (bị động): submitted.' },
+      ],
+    },
   ],
 
   IELTS: [
