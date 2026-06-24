@@ -1447,6 +1447,21 @@ const EXAMS = {
         { stem: 'Rarely do we ____ such remarkable talent.', options: ['avoid', 'lose', 'encounter', 'ignore'], answer: 2, explanation: 'encounter = bắt gặp, gặp phải.' },
       ],
     },
+    {
+      examId: 'ielts-kt-14', title: 'IELTS – Vocabulary & Grammar #14', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "rapid".', options: ['slow', 'gradual', 'steady', 'swift'], answer: 3, explanation: 'rapid ≈ swift (nhanh).' },
+        { stem: 'Choose the synonym of "constant".', options: ['continuous', 'occasional', 'rare', 'sporadic'], answer: 0, explanation: 'constant ≈ continuous (liên tục).' },
+        { stem: 'Choose the antonym of "ascend".', options: ['climb', 'descend', 'rise', 'soar'], answer: 1, explanation: 'ascend ↔ descend (đi xuống).' },
+        { stem: 'Were she here now, she ____ help us with the project.', options: ['would', 'will', 'can', 'must'], answer: 0, explanation: 'Đảo ngữ điều kiện loại 2: Were + S … would + V.' },
+        { stem: 'Choose the synonym of "modify".', options: ['keep', 'retain', 'fix', 'alter'], answer: 3, explanation: 'modify ≈ alter (thay đổi).' },
+        { stem: 'The book ____ I told you about is now on sale.', options: ['that', 'who', 'where', 'whom'], answer: 0, explanation: 'that thay cho vật, làm tân ngữ của "about".' },
+        { stem: 'Choose the antonym of "majority".', options: ['most', 'bulk', 'minority', 'mass'], answer: 2, explanation: 'majority ↔ minority (thiểu số).' },
+        { stem: 'No sooner had she left ____ it started raining heavily.', options: ['when', 'then', 'that', 'than'], answer: 3, explanation: 'No sooner … than … (vừa mới … thì …).' },
+        { stem: 'Choose the synonym of "halt".', options: ['continue', 'stop', 'proceed', 'resume'], answer: 1, explanation: 'halt ≈ stop (dừng lại).' },
+        { stem: 'The findings suggest that climate change ____ accelerating.', options: ['are', 'is', 'were', 'be'], answer: 1, explanation: '"climate change" số ít ⇒ is.' },
+      ],
+    },
   ],
 };
 
