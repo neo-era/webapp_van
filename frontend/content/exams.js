@@ -2272,6 +2272,21 @@ const EXAMS = {
         { stem: "Such was the noise ____ I couldn't sleep all night.", options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Such … that … (kết quả).' },
       ],
     },
+    {
+      examId: 'ielts-kt-25', title: 'IELTS – Vocabulary & Grammar #25', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "obscure".', options: ['unclear', 'clear', 'obvious', 'plain'], answer: 0, explanation: 'obscure ≈ unclear (mơ hồ, khó hiểu).' },
+        { stem: 'Choose the synonym of "plausible".', options: ['unlikely', 'impossible', 'believable', 'doubtful'], answer: 2, explanation: 'plausible ≈ believable (hợp lý, đáng tin).' },
+        { stem: 'Choose the antonym of "concise".', options: ['brief', 'short', 'succinct', 'wordy'], answer: 3, explanation: 'concise ↔ wordy (dài dòng).' },
+        { stem: 'Such ____ his anger that he stormed out of the room.', options: ['was', 'were', 'is', 'had'], answer: 0, explanation: 'Đảo ngữ "Such + be + S + that …".' },
+        { stem: 'Choose the synonym of "dwindle".', options: ['grow', 'expand', 'shrink', 'rise'], answer: 2, explanation: 'dwindle ≈ shrink (giảm dần).' },
+        { stem: 'The house, ____ roof was damaged, has been repaired.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "humble".', options: ['modest', 'meek', 'shy', 'arrogant'], answer: 3, explanation: 'humble ↔ arrogant (kiêu ngạo).' },
+        { stem: 'Not only did he win the race, ____ he also broke the record.', options: ['and', 'but', 'so', 'or'], answer: 1, explanation: 'Cấu trúc "Not only … but (also) …".' },
+        { stem: 'Choose the synonym of "imminent".', options: ['distant', 'remote', 'far', 'impending'], answer: 3, explanation: 'imminent ≈ impending (sắp xảy ra).' },
+        { stem: 'Were I in charge, I ____ change the policy immediately.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 2: Were … would + V.' },
+      ],
+    },
   ],
 };
 
