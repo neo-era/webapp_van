@@ -1090,6 +1090,53 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-hoa-c3', title: 'Chương 3 · Hợp chất chứa nitơ',
+          lessons: [
+            {
+              id: 'l-hoa-amine', title: 'Amine', level: 'CO_BAN',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Amine</em> sinh ra khi thay một hay nhiều nguyên tử H trong $NH_3$ bằng gốc hydrocarbon. Bậc của amine = số gốc gắn trực tiếp vào N (bậc 1, 2, 3).</div>
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Tính base:</strong> N còn cặp electron tự do nên amine có tính base. Methylamine $CH_3NH_2$ làm quỳ tím hóa xanh.</li>
+                  <li>Aniline $C_6H_5NH_2$: base rất yếu (không đổi màu quỳ), phản ứng với nước brom tạo kết tủa trắng (2,4,6-tribromoaniline).</li>
+                  <li>Phản ứng với acid: $CH_3NH_2 + HCl \\to CH_3NH_3Cl$.</li>
+                </ul>
+                <h2>Nâng cao</h2>
+                <p>Amine no, đơn chức, mạch hở có công thức $C_nH_{2n+3}N$.</p>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>So sánh tính base: $CH_3NH_2$ và $C_6H_5NH_2$.</p>
+                  <p><strong>Giải:</strong> $CH_3NH_2$ mạnh hơn (gốc đẩy e); aniline yếu hơn do gốc phenyl hút e.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Viết công thức phân tử amine no, đơn chức, mạch hở có 2 nguyên tử C.</p>
+                  <details><summary>Đáp án</summary><p>$C_2H_7N$ (ví dụ $C_2H_5NH_2$ — ethylamine).</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-hoa-aminoacid', title: 'Amino acid & Protein', level: 'NANG_CAO',
+              html: `
+                <div class="luuy"><strong>Khái niệm:</strong> <em>Amino acid</em> là hợp chất tạp chức, phân tử chứa đồng thời nhóm amino $-NH_2$ và nhóm carboxyl $-COOH$. Đơn giản nhất: glycine $H_2N{-}CH_2{-}COOH$.</div>
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Tính lưỡng tính:</strong> phản ứng được cả với acid ($-NH_2$) và base ($-COOH$).</li>
+                  <li><strong>Liên kết peptide</strong> $-CO{-}NH-$ hình thành khi các amino acid kết hợp; chuỗi nhiều amino acid tạo <strong>protein</strong>.</li>
+                  <li><strong>Phản ứng màu biure:</strong> protein + $Cu(OH)_2$ → phức màu tím.</li>
+                </ul>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div>
+                  <p>Glycine phản ứng với $HCl$ và với $NaOH$ thể hiện tính chất gì?</p>
+                  <p><strong>Giải:</strong> Với $HCl$: nhóm $-NH_2$ nhận $H^+$; với $NaOH$: nhóm $-COOH$ cho $H^+$ ⇒ tính <strong>lưỡng tính</strong>.</p>
+                </div>
+                <div class="bt"><div class="bt-title">✏️ Bài tập</div>
+                  <p>Dùng phản ứng nào để nhận biết protein?</p>
+                  <details><summary>Đáp án</summary><p>Phản ứng màu biure với $Cu(OH)_2$ cho màu tím đặc trưng.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
