@@ -451,6 +451,39 @@ const EXAMS = {
     },
   ],
 
+  HOA: [
+    {
+      examId: 'hoa-kt45-1', title: 'Kiểm tra 45′ #1 — Ester–Lipid & Carbohydrate', durationMin: 45,
+      questions: [
+        { stem: 'Công thức tổng quát ester no, đơn chức, mạch hở là?', options: ['$C_nH_{2n+2}O$', '$C_nH_{2n}O_2$', '$C_nH_{2n-2}O_2$', '$C_nH_{2n}O$'], answer: 1, explanation: 'Ester no đơn chức mạch hở: $C_nH_{2n}O_2\\ (n\\ge2)$.' },
+        { stem: 'Công thức của ethyl acetate là?', options: ['$HCOOCH_3$', '$CH_3COOC_2H_5$', '$C_2H_5COOH$', '$CH_3OH$'], answer: 1, explanation: 'Acetate $CH_3COO-$ + ethyl $C_2H_5$.' },
+        { stem: 'Thủy phân ester trong môi trường kiềm thu được?', options: ['acid + ancol', 'muối + ancol', 'aldehyde + nước', 'ester + nước'], answer: 1, explanation: 'Xà phòng hóa: $RCOOR\'+NaOH\\to RCOONa+R\'OH$.' },
+        { stem: 'Chất béo là trieste của glycerol với?', options: ['acid béo', 'glucose', 'amino acid', 'ethanol'], answer: 0, explanation: 'Chất béo = trieste của glycerol và acid béo.' },
+        { stem: 'Công thức phân tử của glucose là?', options: ['$C_{12}H_{22}O_{11}$', '$C_6H_{12}O_6$', '$(C_6H_{10}O_5)_n$', '$C_6H_6$'], answer: 1, explanation: 'Glucose: $C_6H_{12}O_6$.' },
+        { stem: 'Glucose tham gia phản ứng tráng bạc nhờ nhóm chức?', options: ['$-OH$', '$-COOH$', '$-CHO$', '$-NH_2$'], answer: 2, explanation: 'Nhóm aldehyde $-CHO$.' },
+        { stem: 'Thủy phân hoàn toàn tinh bột thu được?', options: ['fructose', 'saccharose', 'glucose', 'cellulose'], answer: 2, explanation: 'Tinh bột → glucose.' },
+        { stem: 'Công thức phân tử của saccharose là?', options: ['$C_6H_{12}O_6$', '$C_{12}H_{22}O_{11}$', '$(C_6H_{10}O_5)_n$', '$C_{11}H_{22}O_{12}$'], answer: 1, explanation: 'Saccharose: $C_{12}H_{22}O_{11}$.' },
+        { stem: 'Phản ứng ester hóa cần xúc tác?', options: ['$NaOH$', '$HCl$ loãng', '$H_2SO_4$ đặc, $t^\\circ$', '$AgNO_3$'], answer: 2, explanation: 'Xúc tác $H_2SO_4$ đặc, đun nóng.' },
+        { stem: 'Số nhóm $-OH$ trong phân tử glucose (mạch hở) là?', options: ['$3$', '$4$', '$5$', '$6$'], answer: 2, explanation: 'Glucose có 5 nhóm $-OH$ và 1 nhóm $-CHO$.' },
+      ],
+    },
+    {
+      examId: 'hoa-kt45-2', title: 'Kiểm tra 45′ #2 — Nitơ, Polymer & Kim loại', durationMin: 45,
+      questions: [
+        { stem: 'Methylamine $CH_3NH_2$ làm quỳ tím?', options: ['hóa đỏ', 'hóa xanh', 'không đổi màu', 'mất màu'], answer: 1, explanation: 'Amine có tính base ⇒ quỳ hóa xanh.' },
+        { stem: 'Công thức của glycine là?', options: ['$CH_3NH_2$', '$H_2N{-}CH_2{-}COOH$', '$C_6H_5NH_2$', '$CH_3COOH$'], answer: 1, explanation: 'Glycine: $H_2N{-}CH_2{-}COOH$.' },
+        { stem: 'Amino acid có tính chất?', options: ['chỉ acid', 'chỉ base', 'lưỡng tính', 'trung tính'], answer: 2, explanation: 'Có cả $-NH_2$ và $-COOH$.' },
+        { stem: 'Nhận biết protein bằng phản ứng?', options: ['tráng bạc', 'màu biure', 'với quỳ tím', 'với $NaCl$'], answer: 1, explanation: 'Phản ứng màu biure (với $Cu(OH)_2$ → tím).' },
+        { stem: 'Trùng hợp ethylene thu được?', options: ['PVC', 'PE', 'cao su', 'tơ nylon'], answer: 1, explanation: '$nCH_2{=}CH_2\\to(-CH_2-CH_2-)_n$ (PE).' },
+        { stem: 'Monomer để điều chế PVC là?', options: ['$CH_2{=}CH_2$', '$CH_2{=}CHCl$', '$CH_2{=}CH{-}CH_3$', '$CHCl_3$'], answer: 1, explanation: 'Vinyl chloride $CH_2{=}CHCl$.' },
+        { stem: 'Trong các kim loại $Cu, Fe, K, Ag$, kim loại nào tính khử mạnh nhất?', options: ['$Cu$', '$Fe$', '$K$', '$Ag$'], answer: 2, explanation: '$K$ đứng đầu dãy hoạt động.' },
+        { stem: 'Sản phẩm của $Fe + CuSO_4$ là?', options: ['$Fe_2(SO_4)_3 + Cu$', '$FeSO_4 + Cu$', '$FeS + CuO$', 'không phản ứng'], answer: 1, explanation: '$Fe + CuSO_4 \\to FeSO_4 + Cu$.' },
+        { stem: 'Liên kết peptide có dạng?', options: ['$-COO-$', '$-O-$', '$-CO{-}NH-$', '$-NH_2$'], answer: 2, explanation: 'Liên kết $-CO{-}NH-$.' },
+        { stem: 'Công thức amine no, đơn chức, mạch hở là?', options: ['$C_nH_{2n+1}N$', '$C_nH_{2n+3}N$', '$C_nH_{2n}N$', '$C_nH_{2n+2}N$'], answer: 1, explanation: '$C_nH_{2n+3}N$.' },
+      ],
+    },
+  ],
+
   TOEIC: [
     {
       examId: 'toeic-reading', title: 'TOEIC Reading – Mini test', durationMin: 10,
