@@ -1172,6 +1172,21 @@ const EXAMS = {
         { stem: 'Số mol $H_2SO_4$ cần để trung hòa hết $0{,}4$ mol NaOH?', options: ['$0{,}4$', '$0{,}8$', '$0{,}1$', '$0{,}2$'], answer: 3, explanation: '$2NaOH+H_2SO_4\\to Na_2SO_4+2H_2O$; cần $0{,}2$ mol $H_2SO_4$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-26', title: 'Kiểm tra 45′ #26 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $6{,}4$ g Cu ($M=64$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}5$', '$1$'], answer: 0, explanation: '$n=6{,}4/64=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}5$ mol $K_2SO_4$ ($M=174$)?', options: ['$87$ g', '$43{,}5$ g', '$174$ g', '$21{,}75$ g'], answer: 0, explanation: '$m=0{,}5\\cdot174=87$ g.' },
+        { stem: 'Thể tích $NH_3$ (đktc) khi $0{,}2$ mol $N_2$ phản ứng hết? ($N_2+3H_2\\to2NH_3$)', options: ['$4{,}48$ L', '$2{,}24$ L', '$8{,}96$ L', '$11{,}2$ L'], answer: 2, explanation: '$n_{NH_3}=0{,}2\\cdot2=0{,}4$ mol $\\Rightarrow V=8{,}96$ L.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}25$ mol $H_3PO_4$?', options: ['$0{,}25$', '$0{,}5$', '$0{,}75$', '$1$'], answer: 3, explanation: 'Mỗi phân tử có 4 O ⇒ $0{,}25\\cdot4=1$ mol.' },
+        { stem: 'Hòa tan $9$ g chất tan trong $91$ g nước. Nồng độ phần trăm?', options: ['$9\\%$', '$4{,}5\\%$', '$18\\%$', '$90\\%$'], answer: 0, explanation: '$C\\%=9/100\\cdot100\\%=9\\%$.' },
+        { stem: 'Khối lượng mol của $Fe(OH)_3$ (Fe=56, O=16, H=1)?', options: ['$90$', '$107$', '$89$', '$124$'], answer: 1, explanation: '$56+3\\cdot(16+1)=107$ g/mol.' },
+        { stem: 'Kim loại nào phản ứng mạnh nhất với nước ở nhiệt độ thường?', options: ['Fe', 'Cu', 'K', 'Mg'], answer: 2, explanation: 'K (kim loại kiềm) phản ứng mãnh liệt nhất với nước.' },
+        { stem: 'Phần trăm khối lượng Fe trong $Fe_2O_3$ ($M=160$)?', options: ['$30\\%$', '$50\\%$', '$56\\%$', '$70\\%$'], answer: 3, explanation: '$2\\cdot56/160\\cdot100\\%=70\\%$.' },
+        { stem: 'Chất nào sau đây là oxide bazơ?', options: ['$CO_2$', '$Na_2O$', '$SO_2$', '$P_2O_5$'], answer: 1, explanation: '$Na_2O$ là oxide bazơ; các chất còn lại là oxide acid.' },
+        { stem: 'Số mol HCl cần để tác dụng hết với $0{,}1$ mol $CaCO_3$?', options: ['$0{,}1$', '$0{,}05$', '$0{,}2$', '$1$'], answer: 2, explanation: '$CaCO_3+2HCl\\to CaCl_2+H_2O+CO_2$; cần $0{,}2$ mol HCl.' },
+      ],
+    },
   ],
 
   ANH: [
