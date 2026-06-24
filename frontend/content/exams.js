@@ -1054,6 +1054,21 @@ const EXAMS = {
         { stem: 'The latest sales figures ____ a steady growth.', options: ['shows', 'showing', 'show', 'shown'], answer: 2, explanation: 'Chủ ngữ số nhiều (figures) ⇒ show.' },
       ],
     },
+    {
+      examId: 'toeic-11', title: 'TOEIC – Grammar & Vocabulary #11', durationMin: 20,
+      questions: [
+        { stem: 'The new director will ____ his duties next Monday.', options: ['assume', 'assert', 'assign', 'assess'], answer: 0, explanation: 'assume duties = đảm nhận nhiệm vụ.' },
+        { stem: 'Please ____ the attached document carefully before signing.', options: ['renew', 'review', 'remove', 'reveal'], answer: 1, explanation: 'review = xem xét, rà soát.' },
+        { stem: 'Your order will be ____ within three business days.', options: ['proceeded', 'progressed', 'professed', 'processed'], answer: 3, explanation: 'process an order = xử lý đơn hàng.' },
+        { stem: 'Thank you ____ your prompt response to our inquiry.', options: ['to', 'with', 'for', 'of'], answer: 2, explanation: 'Thank you for + danh từ/V-ing.' },
+        { stem: 'Ms. Lee is in charge ____ the marketing project.', options: ['for', 'of', 'to', 'with'], answer: 1, explanation: 'in charge of = phụ trách.' },
+        { stem: 'All visitors must ____ at the front desk upon arrival.', options: ['registration', 'registered', 'register', 'registering'], answer: 2, explanation: 'must + động từ nguyên thể (register).' },
+        { stem: 'The proposal was ____ rejected by the committee.', options: ['unanimous', 'unanimity', 'unanimousness', 'unanimously'], answer: 3, explanation: 'Cần trạng từ bổ nghĩa cho động từ ⇒ unanimously.' },
+        { stem: 'Our products are now ____ in over 50 countries.', options: ['available', 'capable', 'suitable', 'reliable'], answer: 0, explanation: 'available = có sẵn, được cung cấp.' },
+        { stem: 'The CEO emphasized the ____ of teamwork.', options: ['important', 'importantly', 'importing', 'importance'], answer: 3, explanation: 'Sau mạo từ "the" cần danh từ ⇒ importance.' },
+        { stem: 'We look forward to ____ from you soon.', options: ['hear', 'hearing', 'heard', 'hears'], answer: 1, explanation: 'look forward to + V-ing.' },
+      ],
+    },
   ],
 
   IELTS: [
