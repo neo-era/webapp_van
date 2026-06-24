@@ -994,6 +994,21 @@ const EXAMS = {
         { stem: 'The new proposal was ____ by the board of directors.', options: ['approve', 'approved', 'approving', 'approval'], answer: 1, explanation: 'Bị động: was + V3 (approved).' },
       ],
     },
+    {
+      examId: 'toeic-10', title: 'TOEIC – Grammar & Vocabulary #10', durationMin: 20,
+      questions: [
+        { stem: 'The manager asked the team to ____ the deadline.', options: ['meet', 'miss', 'lose', 'break'], answer: 0, explanation: 'meet the deadline = đáp ứng hạn chót.' },
+        { stem: 'All applicants must ____ a valid form of identification.', options: ['presenting', 'present', 'presented', 'presents'], answer: 1, explanation: 'must + động từ nguyên thể (present).' },
+        { stem: 'The conference room is ____ on the third floor.', options: ['locating', 'location', 'locate', 'located'], answer: 3, explanation: 'be located = tọa lạc (bị động/tính từ).' },
+        { stem: 'We offer a 10% discount ____ bulk orders.', options: ['in', 'on', 'at', 'of'], answer: 1, explanation: 'a discount on sth.' },
+        { stem: 'Employees are encouraged to ____ honest feedback.', options: ['provide', 'deny', 'withhold', 'ignore'], answer: 0, explanation: 'provide feedback = đưa ra phản hồi.' },
+        { stem: 'The financial report must be ____ by Monday morning.', options: ['complete', 'completing', 'completion', 'completed'], answer: 3, explanation: 'must be + V3 (bị động): completed.' },
+        { stem: 'Our company specializes ____ software development.', options: ['on', 'at', 'for', 'in'], answer: 3, explanation: 'specialize in sth.' },
+        { stem: 'Please ____ the application form and return it to HR.', options: ['fill out', 'fill in for', 'look out', 'take out'], answer: 0, explanation: 'fill out a form = điền vào mẫu.' },
+        { stem: 'The newly appointed director is highly ____.', options: ['qualify', 'qualified', 'qualifying', 'qualification'], answer: 1, explanation: 'highly + tính từ (qualified).' },
+        { stem: 'The latest sales figures ____ a steady growth.', options: ['shows', 'showing', 'show', 'shown'], answer: 2, explanation: 'Chủ ngữ số nhiều (figures) ⇒ show.' },
+      ],
+    },
   ],
 
   IELTS: [
