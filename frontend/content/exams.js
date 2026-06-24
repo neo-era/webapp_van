@@ -754,6 +754,21 @@ const EXAMS = {
         { stem: 'Choose the synonym of "approximately".', options: ['exactly', 'about', 'rarely', 'never'], answer: 1, explanation: 'approximately ≈ about.' },
       ],
     },
+    {
+      examId: 'toeic-6', title: 'TOEIC – Grammar & Vocabulary #6', durationMin: 20,
+      questions: [
+        { stem: 'The manager asked the team ____ harder.', options: ['work', 'to work', 'working', 'worked'], answer: 1, explanation: 'ask somebody to + V.' },
+        { stem: 'Sales were lower ____ expected.', options: ['than', 'then', 'as', 'that'], answer: 0, explanation: 'so sánh hơn + than.' },
+        { stem: 'We regret ____ you that the flight is cancelled.', options: ['inform', 'informing', 'to inform', 'informed'], answer: 2, explanation: 'regret to inform (thông báo điều đáng tiếc).' },
+        { stem: 'The documents need ____ before Monday.', options: ['sign', 'signing', 'signed', 'to be signed'], answer: 3, explanation: 'need + to be V3 (bị động).' },
+        { stem: 'Choose the synonym of "deadline".', options: ['start', 'due date', 'holiday', 'meeting'], answer: 1, explanation: 'deadline ≈ due date.' },
+        { stem: 'Neither the manager ____ the staff was informed.', options: ['or', 'and', 'nor', 'but'], answer: 2, explanation: 'Neither … nor …' },
+        { stem: '____ the report, please send it to HR.', options: ['Having finished', 'Finish', 'Finished', 'To finish'], answer: 0, explanation: 'Phân từ hoàn thành: Having finished…' },
+        { stem: 'The company has offices ____ Asia.', options: ['between', 'throughout', 'among', 'beside'], answer: 1, explanation: 'throughout = khắp.' },
+        { stem: 'Choose the synonym of "efficient".', options: ['lazy', 'slow', 'productive', 'wasteful'], answer: 2, explanation: 'efficient ≈ productive.' },
+        { stem: 'Prices are expected to ____ next year.', options: ['raise', 'arise', 'arouse', 'rise'], answer: 3, explanation: 'rise (nội động từ) = tăng.' },
+      ],
+    },
   ],
 
   IELTS: [
