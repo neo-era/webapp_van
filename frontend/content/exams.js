@@ -1232,6 +1232,21 @@ const EXAMS = {
         { stem: 'Số mol $H_2$ sinh ra khi $0{,}3$ mol Zn tác dụng hết với HCl?', options: ['$0{,}15$', '$0{,}6$', '$0{,}1$', '$0{,}3$'], answer: 3, explanation: '$Zn+2HCl\\to ZnCl_2+H_2$; $0{,}3$ mol Zn ⇒ $0{,}3$ mol $H_2$.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-28', title: 'Kiểm tra 45′ #28 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $10$ g $CaCO_3$ ($M=100$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=10/100=0{,}1$ mol.' },
+        { stem: 'Khối lượng của $0{,}2$ mol $K_2CO_3$ ($M=138$)?', options: ['$27{,}6$ g', '$13{,}8$ g', '$55{,}2$ g', '$6{,}9$ g'], answer: 0, explanation: '$m=0{,}2\\cdot138=27{,}6$ g.' },
+        { stem: 'Thể tích $CO_2$ (đktc) khi nhiệt phân $0{,}15$ mol $CaCO_3$?', options: ['$2{,}24$ L', '$4{,}48$ L', '$3{,}36$ L', '$1{,}12$ L'], answer: 2, explanation: '$0{,}15$ mol $CO_2 \\Rightarrow V=3{,}36$ L.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}4$ mol $SO_2$?', options: ['$0{,}4$', '$0{,}6$', '$1$', '$0{,}8$'], answer: 3, explanation: 'Mỗi phân tử có 2 O ⇒ $0{,}4\\cdot2=0{,}8$ mol.' },
+        { stem: 'Hòa tan $15$ g chất tan trong $135$ g nước. Nồng độ phần trăm?', options: ['$5\\%$', '$10\\%$', '$15\\%$', '$20\\%$'], answer: 1, explanation: '$C\\%=15/150\\cdot100\\%=10\\%$.' },
+        { stem: 'Khối lượng mol của $Cu(NO_3)_2$ (Cu=64, N=14, O=16)?', options: ['$150$', '$188$', '$124$', '$216$'], answer: 1, explanation: '$64+2\\cdot(14+48)=188$ g/mol.' },
+        { stem: 'Kim loại nào có tính khử mạnh nhất?', options: ['Al', 'Mg', 'Na', 'K'], answer: 3, explanation: 'K đứng đầu dãy hoạt động ⇒ tính khử mạnh nhất.' },
+        { stem: 'Phần trăm khối lượng C trong CO ($M=28$)?', options: ['$57{,}1\\%$', '$50\\%$', '$42{,}9\\%$', '$12\\%$'], answer: 2, explanation: '$12/28\\cdot100\\%\\approx42{,}9\\%$.' },
+        { stem: 'Chất nào sau đây là oxide lưỡng tính?', options: ['$Al_2O_3$', '$Na_2O$', '$CO_2$', '$SO_2$'], answer: 0, explanation: '$Al_2O_3$ vừa tác dụng với acid vừa với base ⇒ oxide lưỡng tính.' },
+        { stem: 'Số mol $O_2$ cần để đốt cháy hết $0{,}1$ mol $C_2H_4$? ($C_2H_4+3O_2\\to2CO_2+2H_2O$)', options: ['$0{,}1$', '$0{,}3$', '$0{,}2$', '$0{,}4$'], answer: 1, explanation: '$0{,}1\\cdot3=0{,}3$ mol $O_2$.' },
+      ],
+    },
   ],
 
   ANH: [
