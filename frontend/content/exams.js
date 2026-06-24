@@ -872,6 +872,21 @@ const EXAMS = {
         { stem: 'Khối lượng mol của NaCl (Na=23, Cl=35,5)?', options: ['$23$', '$35{,}5$', '$58{,}5$', '$40$'], answer: 2, explanation: '$23+35{,}5=58{,}5$ g/mol.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-16', title: 'Kiểm tra 45′ #16 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $8$ g NaOH ($M=40$)?', options: ['$0{,}1$', '$0{,}4$', '$2$', '$0{,}2$'], answer: 3, explanation: '$n=8/40=0{,}2$ mol.' },
+        { stem: 'Đốt cháy $0{,}2$ mol $C_2H_4$ cần bao nhiêu mol $O_2$? ($C_2H_4+3O_2\\to2CO_2+2H_2O$)', options: ['$0{,}6$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 0, explanation: '$0{,}2\\cdot3=0{,}6$ mol $O_2$.' },
+        { stem: 'Khối lượng của $0{,}5$ mol CaO ($M=56$)?', options: ['$56$ g', '$28$ g', '$14$ g', '$112$ g'], answer: 1, explanation: '$m=0{,}5\\cdot56=28$ g.' },
+        { stem: 'Dung dịch $H_2SO_4$ $0{,}05$ M có pH bằng?', options: ['$1$', '$2$', '$0{,}5$', '$13$'], answer: 0, explanation: '$H_2SO_4\\to2H^+$; $[H^+]=0{,}1\\Rightarrow pH=1$.' },
+        { stem: 'Phản ứng tỏa nhiệt có dấu của biến thiên enthalpy?', options: ['$\\Delta H>0$', '$\\Delta H=0$', '$\\Delta H=1$', '$\\Delta H<0$'], answer: 3, explanation: 'Tỏa nhiệt ⇒ $\\Delta H<0$.' },
+        { stem: 'Sắt (Fe) thể hiện những hóa trị nào trong hợp chất?', options: ['chỉ II', 'II và III', 'chỉ III', 'chỉ I'], answer: 1, explanation: 'Fe có hóa trị II và III.' },
+        { stem: 'Số liên kết $\\sigma$ trong phân tử $CH_4$?', options: ['$2$', '$4$', '$3$', '$5$'], answer: 1, explanation: '4 liên kết C–H đều là liên kết $\\sigma$.' },
+        { stem: 'Chất nào sau đây tan tốt trong nước?', options: ['$CaCO_3$', 'AgCl', '$BaSO_4$', 'NaCl'], answer: 3, explanation: 'NaCl tan tốt; các chất còn lại là kết tủa.' },
+        { stem: 'Phần trăm khối lượng C trong $CH_4$ ($M=16$)?', options: ['$25\\%$', '$50\\%$', '$75\\%$', '$80\\%$'], answer: 2, explanation: '$12/16\\cdot100\\%=75\\%$.' },
+        { stem: 'Khối lượng mol của $CH_3COOH$ (acetic acid)?', options: ['$60$', '$46$', '$74$', '$32$'], answer: 0, explanation: '$2\\cdot12+4\\cdot1+2\\cdot16=60$ g/mol.' },
+      ],
+    },
   ],
 
   ANH: [
