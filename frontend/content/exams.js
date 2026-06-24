@@ -81,6 +81,36 @@ const EXAMS = {
         { stem: 'Tính $\\displaystyle\\int_0^1 (2x+1)\\,dx$.', options: ['$2$', '$1$', '$3$', '$0$'], answer: 0, explanation: '$[x^2+x]_0^1=2$.' },
       ],
     },
+    {
+      examId: 'kt45-3', title: 'Kiểm tra 45′ #3 — Vectơ & tọa độ Oxyz', durationMin: 45,
+      questions: [
+        { stem: 'Cho $A(1;2;3)$, $B(3;0;1)$. Tọa độ $\\vec{AB}$ là?', options: ['$(2;-2;-2)$', '$(-2;2;2)$', '$(4;2;4)$', '$(2;2;2)$'], answer: 0, explanation: '$\\vec{AB}=B-A=(2;-2;-2)$.' },
+        { stem: 'Độ dài của $\\vec{u}=(2;1;2)$ là?', options: ['$3$', '$5$', '$9$', '$\\sqrt{5}$'], answer: 0, explanation: '$|\\vec{u}|=\\sqrt{4+1+4}=3$.' },
+        { stem: 'Trung điểm của $A(0;0;0)$ và $B(2;4;6)$ là?', options: ['$(1;2;3)$', '$(2;4;6)$', '$(1;1;1)$', '$(0;2;3)$'], answer: 0, explanation: 'Trung điểm $=\\left(\\tfrac{0+2}{2};\\tfrac{0+4}{2};\\tfrac{0+6}{2}\\right)$.' },
+        { stem: 'Tích vô hướng $\\vec{u}\\cdot\\vec{v}$ với $\\vec{u}=(1;2;3)$, $\\vec{v}=(2;0;-1)$ là?', options: ['$-1$', '$5$', '$1$', '$2$'], answer: 0, explanation: '$2+0-3=-1$.' },
+        { stem: 'Vectơ nào vuông góc với $\\vec{u}=(2;1;2)$?', options: ['$(1;-2;0)$', '$(1;1;1)$', '$(0;0;1)$', '$(1;0;1)$'], answer: 0, explanation: '$(2)(1)+(1)(-2)+(2)(0)=0$.' },
+        { stem: 'Trọng tâm tam giác $A(1;1;1)$, $B(2;2;2)$, $C(3;3;3)$ là?', options: ['$(2;2;2)$', '$(6;6;6)$', '$(1;1;1)$', '$(3;3;3)$'], answer: 0, explanation: '$G=\\left(\\tfrac{1+2+3}{3};\\dots\\right)=(2;2;2)$.' },
+        { stem: 'Góc giữa $\\vec{u}=(1;0;0)$ và $\\vec{v}=(0;1;0)$ là?', options: ['$90^\\circ$', '$0^\\circ$', '$45^\\circ$', '$180^\\circ$'], answer: 0, explanation: '$\\vec{u}\\cdot\\vec{v}=0$.' },
+        { stem: 'Điểm nào nằm trên trục $Ox$?', options: ['$(3;0;0)$', '$(0;3;0)$', '$(0;0;3)$', '$(1;1;1)$'], answer: 0, explanation: 'Trên $Ox$: $y=z=0$.' },
+        { stem: 'Điểm đối xứng của $A(2;-1;0)$ qua gốc $O$ là?', options: ['$(-2;1;0)$', '$(2;1;0)$', '$(-2;-1;0)$', '$(2;-1;0)$'], answer: 0, explanation: 'Đổi dấu các tọa độ.' },
+        { stem: 'Hai vectơ $\\vec{u}=(1;1;1)$, $\\vec{v}=(2;2;2)$ có quan hệ gì?', options: ['Cùng phương ($\\vec{v}=2\\vec{u}$)', 'Vuông góc', 'Không cùng phương', 'Bằng nhau'], answer: 0, explanation: '$\\vec{v}=2\\vec{u}$.' },
+      ],
+    },
+    {
+      examId: 'kt45-4', title: 'Kiểm tra 45′ #4 — Mặt phẳng, đường thẳng, mặt cầu', durationMin: 45,
+      questions: [
+        { stem: 'Vectơ pháp tuyến của mặt phẳng $2x-3y+z-1=0$ là?', options: ['$(2;-3;1)$', '$(2;3;1)$', '$(2;-3;-1)$', '$(-1;2;-3)$'], answer: 0, explanation: 'Hệ số của $x,y,z$.' },
+        { stem: 'Khoảng cách từ $O$ đến mặt phẳng $x+y+z-3=0$ là?', options: ['$\\sqrt{3}$', '$3$', '$1$', '$\\sqrt{2}$'], answer: 0, explanation: '$d=\\dfrac{|-3|}{\\sqrt{3}}=\\sqrt{3}$.' },
+        { stem: 'Bán kính mặt cầu $(x-1)^2+(y+2)^2+z^2=9$ là?', options: ['$3$', '$9$', '$\\sqrt{3}$', '$1$'], answer: 0, explanation: '$R=\\sqrt{9}=3$.' },
+        { stem: 'Tâm mặt cầu $x^2+y^2+z^2-2x-4y+1=0$ là?', options: ['$(1;2;0)$', '$(-1;-2;0)$', '$(2;4;0)$', '$(1;2;1)$'], answer: 0, explanation: '$I(a;b;c)$ với $a=1,b=2,c=0$.' },
+        { stem: 'Vectơ chỉ phương của $d:\\dfrac{x-1}{2}=\\dfrac{y}{-1}=\\dfrac{z+2}{3}$ là?', options: ['$(2;-1;3)$', '$(1;0;-2)$', '$(2;1;3)$', '$(-2;1;3)$'], answer: 0, explanation: 'Mẫu số là tọa độ VTCP.' },
+        { stem: 'Mặt phẳng qua $O$ với pháp tuyến $(1;2;2)$ có phương trình?', options: ['$x+2y+2z=0$', '$x+2y+2z-1=0$', '$2x+y+2z=0$', '$x+y+z=0$'], answer: 0, explanation: 'Qua $O$ ⇒ $D=0$.' },
+        { stem: 'Điểm $M(1;1;1)$ có thuộc mặt phẳng $x+y+z-3=0$ không?', options: ['Có', 'Không', 'Không xác định', 'Chỉ khi đổi dấu'], answer: 0, explanation: '$1+1+1-3=0$.' },
+        { stem: 'Khoảng cách từ $M(1;0;0)$ đến mặt phẳng $2x+2y+z+4=0$ là?', options: ['$2$', '$6$', '$3$', '$1$'], answer: 0, explanation: '$\\dfrac{|2+0+0+4|}{\\sqrt{4+4+1}}=\\dfrac{6}{3}=2$.' },
+        { stem: 'Bán kính mặt cầu $x^2+y^2+z^2=16$ là?', options: ['$4$', '$16$', '$8$', '$2$'], answer: 0, explanation: '$R=\\sqrt{16}=4$.' },
+        { stem: 'Vectơ pháp tuyến của mặt phẳng $3x-4z+5=0$ là?', options: ['$(3;0;-4)$', '$(3;-4;0)$', '$(3;-4;5)$', '$(3;0;4)$'], answer: 0, explanation: 'Thiếu $y$ ⇒ hệ số $y=0$.' },
+      ],
+    },
   ],
 
   TOEIC: [
