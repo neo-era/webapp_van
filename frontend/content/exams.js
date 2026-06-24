@@ -524,6 +524,21 @@ const EXAMS = {
         { stem: 'Suất điện động cảm ứng xuất hiện trong mạch kín khi?', options: ['điện trở thay đổi', 'nhiệt độ tăng', 'dòng điện không đổi', 'từ thông qua mạch biến thiên'], answer: 3, explanation: 'Định luật Faraday: từ thông biến thiên sinh suất điện động cảm ứng.' },
       ],
     },
+    {
+      examId: 'ly-kt45-9', title: 'Kiểm tra 45′ #9 — Vật lí 12', durationMin: 45,
+      questions: [
+        { stem: 'Nung đẳng áp một lượng khí từ $300$ K lên $600$ K, thể tích ban đầu $2$ L. Thể tích sau?', options: ['$4$ L', '$2$ L', '$3$ L', '$8$ L'], answer: 0, explanation: 'Đẳng áp: $V_1/T_1=V_2/T_2 \\Rightarrow V_2=2\\cdot600/300=4$ L.' },
+        { stem: 'Đơn vị của nhiệt dung riêng là?', options: ['J/kg', 'J/K', 'W/kg', 'J/(kg·K)'], answer: 3, explanation: '$c=Q/(m\\Delta t)$ ⇒ đơn vị J/(kg·K).' },
+        { stem: 'Trong phương trình $pV=nRT$, đại lượng $R$ là?', options: ['hằng số khí lí tưởng', 'hằng số Planck', 'số Avogadro', 'hằng số Boltzmann'], answer: 0, explanation: '$R$ là hằng số khí lí tưởng ($\\approx8{,}31$ J/(mol·K)).' },
+        { stem: 'Khi mặt phẳng khung dây song song với cảm ứng từ $\\vec{B}$, từ thông qua khung bằng?', options: ['$BS$', '$0$', '$BS/2$', '$2BS$'], answer: 1, explanation: 'Pháp tuyến vuông góc $\\vec B$ ⇒ $\\alpha=90^\\circ$, $\\Phi=BS\\cos90^\\circ=0$.' },
+        { stem: 'Định luật Lenz dùng để xác định?', options: ['chiều dòng điện cảm ứng', 'độ lớn suất điện động', 'điện trở mạch', 'công suất tiêu thụ'], answer: 0, explanation: 'Định luật Lenz xác định chiều dòng điện cảm ứng (chống lại sự biến thiên từ thông).' },
+        { stem: 'Phản ứng phân hạch là quá trình?', options: ['hai hạt nhân nhẹ kết hợp', 'hạt nhân phát ra electron', 'hạt nhân hấp thụ neutron mà không vỡ', 'hạt nhân nặng vỡ thành các hạt nhân nhẹ hơn'], answer: 3, explanation: 'Phân hạch: hạt nhân nặng (U, Pu) vỡ thành các hạt nhân trung bình + neutron.' },
+        { stem: 'Phản ứng nhiệt hạch chỉ xảy ra trong điều kiện?', options: ['nhiệt độ thấp', 'áp suất thấp', 'nhiệt độ rất cao (hàng triệu độ)', 'chân không lạnh'], answer: 2, explanation: 'Nhiệt hạch cần nhiệt độ cực cao (trong lòng các sao).' },
+        { stem: 'Hạt nhân deuteri $^2_1D$ gồm?', options: ['$2$ proton', '$1$ proton và $2$ neutron', '$2$ neutron', '$1$ proton và $1$ neutron'], answer: 3, explanation: '$Z=1$ (1 proton), $A-Z=1$ (1 neutron).' },
+        { stem: 'Chu kì bán rã $T$ và hằng số phóng xạ $\\lambda$ liên hệ qua?', options: ['$T=\\lambda/\\ln2$', '$T=\\ln2/\\lambda$', '$T=\\lambda\\ln2$', '$T=1/\\lambda$'], answer: 1, explanation: '$T=\\dfrac{\\ln2}{\\lambda}$.' },
+        { stem: 'Năng lượng tỏa ra của phản ứng hạt nhân (khi khối lượng giảm) được tính bằng?', options: ['$\\Delta E=(m_{sau}-m_{trước})c^2$', '$\\Delta E=(m_{trước}-m_{sau})c^2$', '$\\Delta E=\\Delta m\\cdot c$', '$\\Delta E=\\Delta m/c^2$'], answer: 1, explanation: 'Năng lượng tỏa $=(m_{trước}-m_{sau})c^2>0$.' },
+      ],
+    },
   ],
 
   HOA: [
