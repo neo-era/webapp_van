@@ -3269,6 +3269,21 @@ const EXAMS = {
         { stem: 'Tế bào thần kinh còn được gọi là gì?', options: ['Hồng cầu', 'Tiểu cầu', 'Nơ-ron', 'Bạch cầu'], answer: 2, explanation: 'Tế bào thần kinh (nơ-ron) là đơn vị của hệ thần kinh.' },
       ],
     },
+    {
+      examId: 'khtn8-17', title: 'Kiểm tra 45′ #17 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4$ g NaOH ($M=40$)?', options: ['$0{,}05$', '$0{,}1$', '$0{,}2$', '$1$'], answer: 1, explanation: '$n=4/40=0{,}1$ mol.' },
+        { stem: 'Để giảm áp suất tác dụng lên mặt đất, ta nên?', options: ['Giảm diện tích tiếp xúc', 'Tăng lực ép', 'Tăng diện tích tiếp xúc', 'Giảm khối lượng vật'], answer: 2, explanation: '$p=F/S$: tăng $S$ ⇒ giảm $p$.' },
+        { stem: 'Một máy có công suất $300$ W hoạt động trong $10$ s thực hiện công bằng?', options: ['$30$ J', '$300$ J', '$30000$ J', '$3000$ J'], answer: 3, explanation: '$A=P\\cdot t=300\\times 10=3000$ J.' },
+        { stem: 'Oxide base tác dụng với nước tạo thành?', options: ['Dung dịch base', 'Acid', 'Muối khan', 'Khí oxi'], answer: 0, explanation: 'VD: $CaO+H_2O\\to Ca(OH)_2$ (base).' },
+        { stem: 'Hồng cầu trong máu có vai trò chính là?', options: ['Đông máu', 'Vận chuyển oxi', 'Tiêu diệt vi khuẩn', 'Tạo kháng thể'], answer: 1, explanation: 'Hồng cầu chứa hemoglobin vận chuyển $O_2$.' },
+        { stem: 'Hòa tan $25$ g chất tan vào $75$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$20\\%$', '$25\\%$', '$75\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=25/100\\times 100\\%=25\\%$.' },
+        { stem: 'Vật khối lượng $2$ kg đặt trên sàn, diện tích tiếp xúc $0{,}5$ m² (lấy $g=10$). Áp suất lên sàn?', options: ['$10$ Pa', '$20$ Pa', '$80$ Pa', '$40$ Pa'], answer: 3, explanation: '$F=P=mg=20$ N; $p=20/0{,}5=40$ Pa.' },
+        { stem: 'Phản ứng giữa kim loại và dung dịch acid (tạo muối + $H_2$) thuộc loại?', options: ['Phản ứng thế', 'Phản ứng phân hủy', 'Phản ứng hóa hợp', 'Phản ứng trao đổi'], answer: 0, explanation: 'Kim loại đẩy hiđro ra khỏi acid ⇒ phản ứng thế.' },
+        { stem: 'Cơ quan nào tiết dịch mật hỗ trợ tiêu hóa chất béo?', options: ['Dạ dày', 'Thận', 'Gan', 'Phổi'], answer: 2, explanation: 'Gan tiết mật, dự trữ ở túi mật.' },
+        { stem: 'Lực đẩy Archimedes tác dụng lên vật có thể tích $0{,}002$ m³ chìm trong nước ($d=10000$ N/m³)?', options: ['$10$ N', '$20$ N', '$40$ N', '$2$ N'], answer: 1, explanation: '$F_A=d\\cdot V=10000\\times 0{,}002=20$ N.' },
+      ],
+    },
   ],
 
   ANH8: [
