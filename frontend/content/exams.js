@@ -5417,6 +5417,21 @@ const EXAMS = {
         { stem: "Choose the synonym of 'happy'.", options: ['sad', 'angry', 'glad', 'tired'], answer: 2, explanation: 'happy = glad (vui).' },
       ],
     },
+    {
+      examId: 'anh8-59', title: 'Kiểm tra 45′ #59 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'While I ____ TV, the phone rang.', options: ['watch', 'watched', 'was watching', 'am watching'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ quá khứ tiếp diễn: was watching.' },
+        { stem: 'She is as ____ as her sister.', options: ['tall', 'taller', 'tallest', 'more tall'], answer: 0, explanation: 'Cấu trúc so sánh bằng: as + adj nguyên gốc + as.' },
+        { stem: 'You look tired. You ____ see a doctor.', options: ['must', 'should', 'can', 'will'], answer: 1, explanation: 'Lời khuyên ⇒ should.' },
+        { stem: "If we don't hurry, we ____ the bus.", options: ['miss', 'missed', 'would miss', 'will miss'], answer: 3, explanation: 'Điều kiện loại 1: If + hiện tại, will + V ⇒ will miss.' },
+        { stem: 'I have ____ finished my homework.', options: ['yet', 'already', 'since', 'ago'], answer: 1, explanation: '"already" đặt giữa have và V3 trong câu khẳng định hoàn thành.' },
+        { stem: 'The book ____ I bought yesterday is very interesting.', options: ['which', 'who', 'whose', 'when'], answer: 0, explanation: 'Đại từ quan hệ chỉ vật ⇒ which.' },
+        { stem: 'English ____ all over the world.', options: ['speaks', 'speak', 'is spoken', 'spoken'], answer: 2, explanation: 'Bị động hiện tại đơn ⇒ is spoken.' },
+        { stem: 'A person who grows crops on a farm is a ____.', options: ['teacher', 'doctor', 'driver', 'farmer'], answer: 3, explanation: 'Người trồng trọt trên nông trại ⇒ farmer.' },
+        { stem: "Choose the antonym of 'expensive'.", options: ['cheap', 'costly', 'dear', 'pricey'], answer: 0, explanation: 'expensive (đắt) ↔ cheap (rẻ).' },
+        { stem: 'I think it ____ rain tomorrow.', options: ['shall', 'will', 'would', 'going'], answer: 1, explanation: 'Dự đoán tương lai với "I think" ⇒ will + V.' },
+      ],
+    },
   ],
 };
 
