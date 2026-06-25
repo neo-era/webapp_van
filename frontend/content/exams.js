@@ -3131,6 +3131,21 @@ const EXAMS = {
         { stem: 'Mốt của dãy số $5, 3, 8, 8, 6$?', options: ['$5$', '$6$', '$8$', '$3$'], answer: 2, explanation: 'Giá trị $8$ xuất hiện nhiều nhất ⇒ mốt $=8$.' },
       ],
     },
+    {
+      examId: 'toan8-25', title: 'Kiểm tra 45′ #25 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+7)^2$?', options: ['$x^2+49$', '$x^2+7x+49$', '$x^2+14x+49$', '$x^2+14x+7$'], answer: 2, explanation: '$(x+7)^2=x^2+14x+49$.' },
+        { stem: 'Phân tích $x^2+2x-3$ thành nhân tử?', options: ['$(x+3)(x-1)$', '$(x-3)(x+1)$', '$(x+3)(x+1)$', '$(x-1)(x-3)$'], answer: 0, explanation: '$x^2+2x-3=(x+3)(x-1)$.' },
+        { stem: 'Nghiệm của phương trình $6-x=2x$?', options: ['$x=3$', '$x=2$', '$x=6$', '$x=-2$'], answer: 1, explanation: '$6=3x \\Leftrightarrow x=2$.' },
+        { stem: 'Rút gọn $\\dfrac{3x^2-3}{x-1}$ (với $x\\ne1$)?', options: ['$x+1$', '$3x-3$', '$3$', '$3x+3$'], answer: 3, explanation: '$\\dfrac{3(x-1)(x+1)}{x-1}=3(x+1)=3x+3$.' },
+        { stem: 'Hàm số $y=5x$ đồng biến hay nghịch biến trên $\\mathbb{R}$?', options: ['Nghịch biến', 'Hằng số', 'Đồng biến', 'Không xác định'], answer: 2, explanation: 'Hệ số $a=5>0$ ⇒ hàm đồng biến.' },
+        { stem: 'Tam giác có ba cạnh $5, 12, 13$ là tam giác?', options: ['đều', 'vuông', 'cân', 'tù'], answer: 1, explanation: '$5^2+12^2=13^2$ ⇒ tam giác vuông.' },
+        { stem: 'Khai triển $(x-y)(x+y)$?', options: ['$x^2-y^2$', '$x^2+y^2$', '$x^2-2xy+y^2$', '$x^2+2xy+y^2$'], answer: 0, explanation: 'Hiệu hai bình phương: $x^2-y^2$.' },
+        { stem: 'Diện tích hình thang có hai đáy $3$ và $7$, chiều cao $4$?', options: ['$42$', '$14$', '$10$', '$20$'], answer: 3, explanation: '$S=\\dfrac{(3+7)}{2}\\cdot4=20$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-16}{x-4}$ (với $x\\ne4$)?', options: ['$x-4$', '$x+4$', '$x^2+4$', '$4$'], answer: 1, explanation: '$\\dfrac{(x-4)(x+4)}{x-4}=x+4$.' },
+        { stem: 'Hộp có $3$ bi đỏ và $2$ bi xanh. Xác suất lấy ngẫu nhiên được bi đỏ?', options: ['$\\dfrac{2}{5}$', '$\\dfrac{1}{5}$', '$\\dfrac{3}{5}$', '$\\dfrac{1}{3}$'], answer: 2, explanation: '$\\dfrac{3}{3+2}=\\dfrac{3}{5}$.' },
+      ],
+    },
   ],
 
   KHTN8: [
