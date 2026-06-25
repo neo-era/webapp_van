@@ -4922,6 +4922,21 @@ const EXAMS = {
         { stem: 'She has ____ eaten durian before.', options: ['ever', 'yet', 'never', 'since'], answer: 2, explanation: 'never = chưa bao giờ (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-48', title: 'Kiểm tra 45′ #48 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'While I ____ TV, the lights went out.', options: ['watched', 'watches', 'was watching', 'watch'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ was watching.' },
+        { stem: 'An apartment is ____ than a house.', options: ['cheaper', 'cheap', 'cheapest', 'more cheap'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: cheaper.' },
+        { stem: 'You ____ park your car here. It is allowed.', options: ['must', 'can', 'should', 'would'], answer: 1, explanation: 'can = được phép.' },
+        { stem: 'If we leave early, we ____ the traffic jam.', options: ['avoid', 'avoided', 'would avoid', 'will avoid'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The cakes ____ in the bakery near my house.', options: ['sell', 'sells', 'are sold', 'is sold'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are sold.' },
+        { stem: 'The lady ____ I talked to is my aunt.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who (whom) chỉ người làm tân ngữ.' },
+        { stem: 'He has been a singer ____ 2015.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (2015).' },
+        { stem: "Choose the synonym of 'right'.", options: ['wrong', 'false', 'bad', 'correct'], answer: 3, explanation: 'right ≈ correct (đúng).' },
+        { stem: "Choose the antonym of 'above'.", options: ['over', 'below', 'up', 'high'], answer: 1, explanation: 'above ↔ below (dưới).' },
+        { stem: '____ they finished lunch yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
