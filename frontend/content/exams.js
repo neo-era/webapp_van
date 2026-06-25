@@ -1790,6 +1790,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'wide'.", options: ['broad', 'vast', 'narrow', 'large'], answer: 2, explanation: 'wide ↔ narrow (hẹp).' },
       ],
     },
+    {
+      examId: 'anh-kt45-31', title: 'Kiểm tra 45′ #31 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: "She's the girl ____ won the first prize.", options: ['who', 'which', 'whose', 'whom'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'We ____ dinner when they arrived.', options: ['had', 'were having', 'have', 'has'], answer: 1, explanation: 'Quá khứ tiếp diễn (đang ăn thì bị cắt ngang).' },
+        { stem: 'If it ____ tomorrow, the match will be postponed.', options: ['rains', 'rained', 'will rain', 'would rain'], answer: 0, explanation: 'Câu điều kiện loại 1: If + hiện tại đơn.' },
+        { stem: "He's lived here ____ he was a child.", options: ['for', 'ago', 'during', 'since'], answer: 3, explanation: 'since + mệnh đề quá khứ.' },
+        { stem: "I'd love ____ you again soon.", options: ['to see', 'see', 'seeing', 'saw'], answer: 0, explanation: 'would love + to + V.' },
+        { stem: 'She speaks Spanish ____ than I do.', options: ['good', 'well', 'best', 'better'], answer: 3, explanation: 'So sánh hơn của "well" ⇒ better.' },
+        { stem: "Choose the synonym of 'old'.", options: ['new', 'ancient', 'modern', 'fresh'], answer: 1, explanation: 'old ≈ ancient (cổ, xưa).' },
+        { stem: 'He suggested ____ a walk in the park.', options: ['to take', 'taking', 'take', 'took'], answer: 1, explanation: 'suggest + V-ing.' },
+        { stem: 'The book ____ cover is red belongs to me.', options: ['who', 'which', 'that', 'whose'], answer: 3, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: "Choose the antonym of 'full'.", options: ['filled', 'complete', 'empty', 'packed'], answer: 2, explanation: 'full ↔ empty (rỗng).' },
+      ],
+    },
   ],
 
   TOEIC: [
