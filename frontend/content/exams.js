@@ -3056,6 +3056,21 @@ const EXAMS = {
         { stem: 'Tần số xuất hiện của giá trị $5$ trong dãy $5, 5, 3, 5, 2$?', options: ['$1$', '$2$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $5$ xuất hiện $3$ lần.' },
       ],
     },
+    {
+      examId: 'toan8-20', title: 'Kiểm tra 45′ #20 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-7)(x+7)$?', options: ['$x^2+49$', '$x^2-14x+49$', '$x^2-49$', '$x^2-7x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-49$.' },
+        { stem: 'Phân tích $x^2-x$ thành nhân tử?', options: ['$x(x-1)$', '$x(x+1)$', '$(x-1)^2$', '$x^2$'], answer: 0, explanation: '$x^2-x=x(x-1)$.' },
+        { stem: 'Nghiệm của phương trình $2(x+1)=3x-4$?', options: ['$x=4$', '$x=6$', '$x=2$', '$x=-6$'], answer: 1, explanation: '$2x+2=3x-4 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{6x+9}{3}$?', options: ['$x+3$', '$2x+9$', '$6x+3$', '$2x+3$'], answer: 3, explanation: '$\\dfrac{3(2x+3)}{3}=2x+3$.' },
+        { stem: 'Đường thẳng $y=-3x+6$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=6$', '$x=-2$', '$x=2$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 3x=6 \\Rightarrow x=2$.' },
+        { stem: 'Hai tam giác đồng dạng tỉ số $3$ thì tỉ số diện tích bằng?', options: ['$3$', '$9$', '$6$', '$27$'], answer: 1, explanation: 'Tỉ số diện tích $=k^2=3^2=9$.' },
+        { stem: 'Khai triển $(a+2b)(a-2b)$?', options: ['$a^2-4b^2$', '$a^2+4b^2$', '$a^2-2b^2$', '$a^2-4ab+4b^2$'], answer: 0, explanation: 'Hiệu hai bình phương: $a^2-4b^2$.' },
+        { stem: 'Chu vi hình tròn bán kính $7$ (lấy $\\pi\\approx3{,}14$)?', options: ['$21{,}98$', '$153{,}86$', '$14$', '$43{,}96$'], answer: 3, explanation: '$C=2\\pi r=2\\cdot3{,}14\\cdot7=43{,}96$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+x}{x+1}$ (với $x\\ne-1$)?', options: ['$x+1$', '$x$', '$x^2$', '$1$'], answer: 1, explanation: '$\\dfrac{x(x+1)}{x+1}=x$.' },
+        { stem: 'Khoảng biến thiên của dãy số $3, 7, 5, 9, 1$?', options: ['$9$', '$1$', '$8$', '$10$'], answer: 2, explanation: 'Khoảng biến thiên $=9-1=8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
