@@ -2846,6 +2846,21 @@ const EXAMS = {
         { stem: 'Thể tích hình hộp chữ nhật kích thước $2\\times3\\times4$?', options: ['$9$', '$12$', '$24$', '$14$'], answer: 2, explanation: '$V=2\\cdot3\\cdot4=24$.' },
       ],
     },
+    {
+      examId: 'toan8-6', title: 'Kiểm tra 45′ #6 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x-3)^2$?', options: ['$4x^2-6x+9$', '$4x^2-12x-9$', '$4x^2-12x+9$', '$2x^2-12x+9$'], answer: 2, explanation: '$(2x-3)^2=4x^2-12x+9$.' },
+        { stem: 'Hạng tử tự do trong khai triển $(x+1)^3$?', options: ['$3$', '$x^3$', '$0$', '$1$'], answer: 3, explanation: '$(x+1)^3=x^3+3x^2+3x+1$ ⇒ hạng tử tự do $=1$.' },
+        { stem: 'Phân tích $x^2-7x+12$ thành nhân tử?', options: ['$(x+3)(x+4)$', '$(x-3)(x-4)$', '$(x-2)(x-6)$', '$(x-12)(x+1)$'], answer: 1, explanation: '$(-3)+(-4)=-7$ và $(-3)(-4)=12$.' },
+        { stem: 'Nghiệm của phương trình $5x-3=2x+9$?', options: ['$3$', '$4$', '$6$', '$12$'], answer: 1, explanation: '$3x=12 \\Leftrightarrow x=4$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{3x-1}{2x}$?', options: ['$x\\ne1$', '$x\\ne\\dfrac{1}{2}$', '$x\\ne0$', '$x\\ne-\\dfrac{1}{2}$'], answer: 2, explanation: 'Mẫu $2x\\ne0 \\Leftrightarrow x\\ne0$.' },
+        { stem: 'Đường thẳng $y=4x-2$ cắt trục tung tại điểm?', options: ['$(0;2)$', '$(0;4)$', '$(2;0)$', '$(0;-2)$'], answer: 3, explanation: 'Cho $x=0 \\Rightarrow y=-2$.' },
+        { stem: 'Chu vi hình chữ nhật dài $9$, rộng $4$?', options: ['$26$', '$13$', '$36$', '$18$'], answer: 0, explanation: '$P=2(9+4)=26$.' },
+        { stem: 'Số đo mỗi góc trong của tam giác đều?', options: ['$45^\\circ$', '$50^\\circ$', '$60^\\circ$', '$90^\\circ$'], answer: 2, explanation: 'Tam giác đều có 3 góc bằng nhau: $180/3=60^\\circ$.' },
+        { stem: 'Hai tam giác đồng dạng tỉ số $k$. Tỉ số chu vi của chúng?', options: ['$k^2$', '$k$', '$2k$', '$1$'], answer: 1, explanation: 'Tỉ số chu vi bằng tỉ số đồng dạng $k$.' },
+        { stem: 'Rút gọn $\\dfrac{6x^2y}{2xy}$ (với $x,y\\ne0$)?', options: ['$3x$', '$3xy$', '$3$', '$x$'], answer: 0, explanation: '$\\dfrac{6x^2y}{2xy}=3x$.' },
+      ],
+    },
   ],
 
   KHTN8: [
