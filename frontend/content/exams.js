@@ -3281,6 +3281,21 @@ const EXAMS = {
         { stem: 'Mốt của dãy số $1, 3, 3, 5, 5, 5, 7$?', options: ['$1$', '$3$', '$5$', '$7$'], answer: 2, explanation: 'Giá trị $5$ xuất hiện nhiều nhất ⇒ mốt $=5$.' },
       ],
     },
+    {
+      examId: 'toan8-35', title: 'Kiểm tra 45′ #35 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(4x-3)^2$?', options: ['$16x^2+24x+9$', '$16x^2-9$', '$16x^2-24x+9$', '$4x^2-24x+9$'], answer: 2, explanation: '$(4x-3)^2=16x^2-24x+9$.' },
+        { stem: 'Phân tích $x^2+8x+15$ thành nhân tử?', options: ['$(x+3)(x+5)$', '$(x-3)(x-5)$', '$(x+1)(x+15)$', '$(x+3)(x-5)$'], answer: 0, explanation: '$x^2+8x+15=(x+3)(x+5)$.' },
+        { stem: 'Nghiệm của phương trình $5(x-2)=3x$?', options: ['$x=2$', '$x=5$', '$x=10$', '$x=-5$'], answer: 1, explanation: '$5x-10=3x \\Leftrightarrow 2x=10 \\Leftrightarrow x=5$.' },
+        { stem: 'Rút gọn $\\dfrac{3x^2-6x}{x-2}$ (với $x\\ne2$)?', options: ['$3x-6$', '$x$', '$3$', '$3x$'], answer: 3, explanation: '$\\dfrac{3x(x-2)}{x-2}=3x$.' },
+        { stem: 'Hàm số $y=4x$ đồng biến hay nghịch biến trên $\\mathbb{R}$?', options: ['Nghịch biến', 'Hằng số', 'Đồng biến', 'Không xác định'], answer: 2, explanation: 'Hệ số $a=4>0$ ⇒ hàm đồng biến.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $12$ và $16$. Cạnh huyền?', options: ['$28$', '$20$', '$18$', '$24$'], answer: 1, explanation: '$\\sqrt{12^2+16^2}=\\sqrt{400}=20$.' },
+        { stem: 'Khai triển $(a+7)^2$?', options: ['$a^2+14a+49$', '$a^2+49$', '$a^2+7a+49$', '$a^2+14a+7$'], answer: 0, explanation: '$(a+7)^2=a^2+14a+49$.' },
+        { stem: 'Diện tích hình thang có hai đáy $5$ và $9$, chiều cao $6$?', options: ['$70$', '$14$', '$28$', '$42$'], answer: 3, explanation: '$S=\\dfrac{(5+9)}{2}\\cdot6=42$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+6x+8}{x+2}$ (với $x\\ne-2$)?', options: ['$x+2$', '$x+4$', '$x-4$', '$x^2+4$'], answer: 1, explanation: '$\\dfrac{(x+2)(x+4)}{x+2}=x+4$.' },
+        { stem: 'Gieo một con xúc xắc cân đối, xác suất ra mặt có số chấm lớn hơn $4$?', options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$\\dfrac{2}{3}$'], answer: 2, explanation: 'Hai mặt $\\{5,6\\}$ ⇒ $2/6=\\dfrac{1}{3}$.' },
+      ],
+    },
   ],
 
   KHTN8: [
