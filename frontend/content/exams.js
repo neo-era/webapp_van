@@ -3977,6 +3977,21 @@ const EXAMS = {
         { stem: 'We ____ the news already.', options: ['has heard', 'hear', 'have heard', 'heard'], answer: 2, explanation: 'Hiện tại hoàn thành với "we" ⇒ have heard.' },
       ],
     },
+    {
+      examId: 'anh8-27', title: 'Kiểm tra 45′ #27 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ to the radio when I entered the room.', options: ['listened', 'listens', 'was listening', 'listen'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ was listening.' },
+        { stem: 'First class is ____ than economy class.', options: ['comfortable', 'comfortabler', 'most comfortable', 'more comfortable'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more comfortable.' },
+        { stem: 'You ____ finish the report by Friday.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = bắt buộc.' },
+        { stem: 'If she studies hard, she ____ good marks.', options: ['will get', 'gets', 'got', 'would get'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Millions of cars ____ every year.', options: ['produce', 'produces', 'are produced', 'is produced'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are produced.' },
+        { stem: 'I know a quiet place ____ you can relax.', options: ['where', 'which', 'who', 'whose'], answer: 0, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'We have waited for the bus ____ two hours.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (two hours).' },
+        { stem: "Choose the synonym of 'angry'.", options: ['calm', 'glad', 'pleased', 'furious'], answer: 3, explanation: 'angry ≈ furious (giận dữ).' },
+        { stem: "Choose the antonym of 'begin'.", options: ['start', 'finish', 'open', 'continue'], answer: 1, explanation: 'begin ↔ finish (kết thúc).' },
+        { stem: '____ you ever eaten sushi?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
