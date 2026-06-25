@@ -3809,6 +3809,21 @@ const EXAMS = {
         { stem: 'Sự trao đổi khí ở phế nang xảy ra dựa trên sự chênh lệch của yếu tố nào?', options: ['Màu sắc khí', 'Nồng độ khí', 'Nhiệt độ phòng', 'Áp suất khí quyển'], answer: 1, explanation: 'Khí khuếch tán theo chênh lệch nồng độ.' },
       ],
     },
+    {
+      examId: 'khtn8-35', title: 'Kiểm tra 45′ #35 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $28$ g Fe ($M=56$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=28/56=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $3$ m trong dầu ($d=8000$ N/m³)?', options: ['$24000$ Pa', '$2400$ Pa', '$11000$ Pa', '$240$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 3=24000$ Pa.' },
+        { stem: 'Một vật có khối lượng $45$ g và thể tích $50$ cm³. Khối lượng riêng?', options: ['$9$ g/cm³', '$0{,}9$ g/cm³', '$90$ g/cm³', '$0{,}09$ g/cm³'], answer: 1, explanation: '$D=m/V=45/50=0{,}9$ g/cm³.' },
+        { stem: 'Nhiệt phân $KClO_3$ tạo thành $KCl$ và $O_2$ thuộc loại phản ứng?', options: ['Hóa hợp', 'Thế', 'Trao đổi', 'Phân hủy'], answer: 3, explanation: 'Một chất tạo nhiều chất ⇒ phản ứng phân hủy.' },
+        { stem: 'Hệ cơ quan nào vận chuyển máu đi khắp cơ thể?', options: ['Hệ tuần hoàn', 'Hệ tiêu hóa', 'Hệ hô hấp', 'Hệ thần kinh'], answer: 0, explanation: 'Hệ tuần hoàn (tim, mạch máu) vận chuyển máu.' },
+        { stem: 'Hòa tan $4$ g chất tan vào $36$ g nước. Nồng độ phần trăm dung dịch?', options: ['$4\\%$', '$36\\%$', '$10\\%$', '$25\\%$'], answer: 2, explanation: '$m_{dd}=40$ g ⇒ $C\\%=4/40\\times 100\\%=10\\%$.' },
+        { stem: 'Lực $50$ N kéo vật di chuyển $10$ m theo phương của lực. Công thực hiện?', options: ['$5$ J', '$500$ J', '$50$ J', '$5000$ J'], answer: 1, explanation: '$A=F\\cdot s=50\\times 10=500$ J.' },
+        { stem: 'Khối lượng của $2$ mol NaOH ($M=40$)?', options: ['$20$ g', '$40$ g', '$160$ g', '$80$ g'], answer: 3, explanation: '$m=2\\times 40=80$ g.' },
+        { stem: 'Bộ phận nào của não điều khiển sự thăng bằng và phối hợp vận động?', options: ['Đại não', 'Tủy sống', 'Tiểu não', 'Hành não'], answer: 2, explanation: 'Tiểu não giữ thăng bằng và điều hòa vận động.' },
+        { stem: 'Tại cùng một độ sâu trong cùng một chất lỏng, áp suất chất lỏng sẽ?', options: ['Khác nhau hoàn toàn', 'Bằng nhau theo mọi hướng', 'Bằng $0$', 'Chỉ tác dụng hướng xuống'], answer: 1, explanation: 'Áp suất chất lỏng tại cùng độ sâu bằng nhau theo mọi hướng.' },
+      ],
+    },
   ],
 
   ANH8: [
