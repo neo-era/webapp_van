@@ -574,8 +574,10 @@ async function renderLearn() {
   const el = $('#screen-learn');
 
   if (v.view === 'subjects') {
-    const subs = Content.subjects();
-    el.innerHTML = `<div class="page-head"><h2>Học</h2><p>Chọn môn để xem bài giảng</p></div>
+    const g = (App.state.user && App.state.user.grade) || 12;
+    // Lọc theo khối lớp: môn có grade trùng lớp HS; môn không gắn grade (IELTS/TOEIC) hiện cho mọi lớp.
+    const subs = Content.subjects().filter((s) => !s.grade || s.grade === g);
+    el.innerHTML = `<div class="page-head"><h2>Học</h2><p>Chọn môn để xem bài giảng · Lớp ${g}</p></div>
       ${subs.map((s) => `
         <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.code}','${s.name.replace(/'/g, '')}')">
           <div style="display:flex;justify-content:space-between;align-items:center">

@@ -2768,6 +2768,61 @@ const EXAMS = {
       ],
     },
   ],
+
+  /* ===================== LỚP 8 (GDPT 2018) ===================== */
+  TOAN8: [
+    {
+      examId: 'toan8-1', title: 'Kiểm tra 45′ #1 — Toán 8 (Đại số)', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+3)^2$?', options: ['$x^2+9$', '$x^2+3x+9$', '$x^2+6x+9$', '$x^2+6x+3$'], answer: 2, explanation: '$(x+3)^2=x^2+2\\cdot3x+9=x^2+6x+9$.' },
+        { stem: 'Khai triển $(x-2)^2$?', options: ['$x^2-4x+4$', '$x^2-2x+4$', '$x^2-4x-4$', '$x^2+4x+4$'], answer: 0, explanation: '$(x-2)^2=x^2-4x+4$.' },
+        { stem: 'Phân tích $x^2-25$ thành nhân tử?', options: ['$(x-25)(x+1)$', '$(x-5)^2$', '$(x+5)^2$', '$(x-5)(x+5)$'], answer: 3, explanation: '$x^2-25=x^2-5^2=(x-5)(x+5)$.' },
+        { stem: 'Nghiệm của phương trình $2x-8=0$?', options: ['$2$', '$4$', '$8$', '$-4$'], answer: 1, explanation: '$2x=8 \\Leftrightarrow x=4$.' },
+        { stem: 'Nghiệm của phương trình $3x+6=0$?', options: ['$2$', '$6$', '$-6$', '$-2$'], answer: 3, explanation: '$3x=-6 \\Leftrightarrow x=-2$.' },
+        { stem: 'Hệ số của $a^2b$ trong khai triển $(a+b)^3$?', options: ['$1$', '$2$', '$3$', '$6$'], answer: 2, explanation: '$(a+b)^3=a^3+3a^2b+3ab^2+b^3$.' },
+        { stem: 'Phân tích $x^2+2x+1$ thành nhân tử?', options: ['$(x+1)^2$', '$(x-1)^2$', '$(x+1)(x-1)$', '$(x+2)(x+1)$'], answer: 0, explanation: '$x^2+2x+1=(x+1)^2$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{1}{x-3}$?', options: ['$x\\ne0$', '$x=3$', '$x\\ne3$', '$x\\ne-3$'], answer: 2, explanation: 'Mẫu khác 0: $x-3\\ne0 \\Leftrightarrow x\\ne3$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-4}{x-2}$ (với $x\\ne2$)?', options: ['$x+2$', '$x-2$', '$x^2-2$', '$2$'], answer: 0, explanation: '$\\dfrac{(x-2)(x+2)}{x-2}=x+2$.' },
+        { stem: 'Nghiệm của phương trình $\\dfrac{x}{2}=5$?', options: ['$2{,}5$', '$10$', '$7$', '$5$'], answer: 1, explanation: '$x=5\\cdot2=10$.' },
+      ],
+    },
+  ],
+
+  KHTN8: [
+    {
+      examId: 'khtn8-1', title: 'Kiểm tra 45′ #1 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4$ g NaOH ($M=40$)?', options: ['$0{,}2$', '$0{,}4$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=m/M=4/40=0{,}1$ mol.' },
+        { stem: 'Áp lực $F=100$ N ép vuông góc lên diện tích $S=2\\,m^2$. Áp suất?', options: ['$50$ Pa', '$25$ Pa', '$100$ Pa', '$200$ Pa'], answer: 0, explanation: '$p=F/S=100/2=50$ Pa.' },
+        { stem: 'Phản ứng $A+B\\to C+D$ có $m_A=4$ g, $m_B=6$ g, $m_C=7$ g. Khối lượng D?', options: ['$2$ g', '$4$ g', '$3$ g', '$10$ g'], answer: 2, explanation: 'Bảo toàn khối lượng: $4+6=7+m_D \\Rightarrow m_D=3$ g.' },
+        { stem: 'Lực đẩy Archimedes lên vật ($d=10000\\,N/m^3$, $V=0{,}002\\,m^3$)?', options: ['$10$ N', '$40$ N', '$2$ N', '$20$ N'], answer: 3, explanation: '$F_A=d\\cdot V=10000\\cdot0{,}002=20$ N.' },
+        { stem: 'Cơ quan nào hấp thụ chất dinh dưỡng chủ yếu ở người?', options: ['dạ dày', 'gan', 'ruột non', 'thực quản'], answer: 2, explanation: 'Ruột non là nơi hấp thụ chất dinh dưỡng chính.' },
+        { stem: 'Khối lượng riêng của vật $m=200$ g, $V=100\\,cm^3$?', options: ['$2\\,g/cm^3$', '$1\\,g/cm^3$', '$0{,}5\\,g/cm^3$', '$20\\,g/cm^3$'], answer: 0, explanation: '$D=m/V=200/100=2\\,g/cm^3$.' },
+        { stem: 'Dung dịch có pH = 4 thuộc môi trường?', options: ['trung tính', 'acid', 'base', 'kiềm mạnh'], answer: 1, explanation: 'pH < 7 ⇒ môi trường acid.' },
+        { stem: 'Khí mà cơ thể người thải ra khi hô hấp?', options: ['$O_2$', '$N_2$', '$CO_2$', '$H_2$'], answer: 2, explanation: 'Hô hấp lấy $O_2$, thải $CO_2$.' },
+        { stem: 'Khối lượng của $0{,}5$ mol $CO_2$ ($M=44$)?', options: ['$11$ g', '$44$ g', '$88$ g', '$22$ g'], answer: 3, explanation: '$m=0{,}5\\cdot44=22$ g.' },
+        { stem: 'Tim của người có mấy ngăn?', options: ['$2$', '$4$', '$3$', '$1$'], answer: 1, explanation: 'Tim người có 4 ngăn (2 tâm nhĩ, 2 tâm thất).' },
+      ],
+    },
+  ],
+
+  ANH8: [
+    {
+      examId: 'anh8-1', title: 'Kiểm tra 45′ #1 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'She ____ to school every day.', options: ['goes', 'go', 'going', 'went'], answer: 0, explanation: 'Hiện tại đơn, chủ ngữ số ít ⇒ goes.' },
+        { stem: 'They ____ football now.', options: ['play', 'plays', 'played', 'are playing'], answer: 3, explanation: 'Có "now" ⇒ hiện tại tiếp diễn (are playing).' },
+        { stem: 'This book is ____ than that one.', options: ['interesting', 'most interesting', 'more interesting', 'interestinger'], answer: 2, explanation: 'Tính từ dài: more + adj + than.' },
+        { stem: 'He is the ____ student in the class.', options: ['tall', 'taller', 'more tall', 'tallest'], answer: 3, explanation: 'So sánh nhất tính từ ngắn: the tallest.' },
+        { stem: 'If it rains, we ____ at home.', options: ['will stay', 'stay', 'stayed', 'staying'], answer: 0, explanation: 'Câu điều kiện loại 1: If + hiện tại đơn, will + V.' },
+        { stem: 'We ____ Hue last summer.', options: ['visit', 'visited', 'visits', 'visiting'], answer: 1, explanation: 'Quá khứ đơn (last summer): visited.' },
+        { stem: "Choose the synonym of 'big'.", options: ['small', 'tiny', 'little', 'large'], answer: 3, explanation: 'big ≈ large (to, lớn).' },
+        { stem: 'I have ____ my homework.', options: ['finished', 'finish', 'finishes', 'finishing'], answer: 0, explanation: 'Hiện tại hoàn thành: have + V3 (finished).' },
+        { stem: 'She is good ____ English.', options: ['in', 'on', 'at', 'for'], answer: 2, explanation: 'be good at + N.' },
+        { stem: "Choose the antonym of 'happy'.", options: ['glad', 'sad', 'joyful', 'cheerful'], answer: 1, explanation: 'happy ↔ sad (buồn).' },
+      ],
+    },
+  ],
 };
 
 const Exams = {

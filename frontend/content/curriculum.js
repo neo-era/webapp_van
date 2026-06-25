@@ -1327,6 +1327,235 @@ const CURRICULUM = {
         },
       ],
     },
+
+    /* ===================== LỚP 8 (GDPT 2018) ===================== */
+    {
+      code: 'TOAN8', name: 'Toán 8', grade: 8,
+      topics: [
+        {
+          id: 't-toan8-hdt', title: 'Đại số · Hằng đẳng thức đáng nhớ',
+          lessons: [
+            {
+              id: 'l-toan8-hdt', title: 'Bảy hằng đẳng thức đáng nhớ', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Bảy hằng đẳng thức đáng nhớ (với $A,B$ là các biểu thức tùy ý):</p>
+                <ul>
+                  <li>$(A+B)^2 = A^2 + 2AB + B^2$</li>
+                  <li>$(A-B)^2 = A^2 - 2AB + B^2$</li>
+                  <li>$A^2 - B^2 = (A-B)(A+B)$</li>
+                  <li>$(A+B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$</li>
+                  <li>$(A-B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$</li>
+                  <li>$A^3 + B^3 = (A+B)(A^2 - AB + B^2)$</li>
+                  <li>$A^3 - B^3 = (A-B)(A^2 + AB + B^2)$</li>
+                </ul>
+                <div class="luuy"><strong>Khái niệm:</strong> Hằng đẳng thức là đẳng thức <em>đúng với mọi giá trị</em> của biến. Dùng để khai triển nhanh và phân tích đa thức thành nhân tử.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tính nhanh $51^2$.</p>
+                  <p><strong>Giải:</strong> $51^2 = (50+1)^2 = 50^2 + 2\\cdot50\\cdot1 + 1^2 = 2500 + 100 + 1 = 2601$.</p>
+                  <p>Phân tích $x^2 - 9 = x^2 - 3^2 = (x-3)(x+3)$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Phân tích $x^3 - 8$ thành nhân tử.
+                  <details><summary>Đáp án</summary>$x^3 - 8 = x^3 - 2^3 = (x-2)(x^2 + 2x + 4)$.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-ptbn', title: 'Đại số · Phương trình bậc nhất một ẩn',
+          lessons: [
+            {
+              id: 'l-toan8-ptbn', title: 'Phương trình bậc nhất một ẩn $ax+b=0$', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Phương trình bậc nhất một ẩn có dạng $ax + b = 0$ với $a \\ne 0$. Nghiệm duy nhất: $x = -\\dfrac{b}{a}$.</p>
+                <div class="luuy"><strong>Quy tắc:</strong> chuyển vế đổi dấu; nhân/chia hai vế cho cùng một số khác 0.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Giải $2x - 6 = 0$.</p>
+                  <p><strong>Giải:</strong> $2x = 6 \\Leftrightarrow x = 3$.</p>
+                  <p>Giải $3(x-1) = 2x + 4$: $3x - 3 = 2x + 4 \\Leftrightarrow x = 7$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Giải $5x + 2 = 3x - 4$.
+                  <details><summary>Đáp án</summary>$2x = -6 \\Leftrightarrow x = -3$.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-pythagore', title: 'Hình học · Định lí Pythagore & Tam giác đồng dạng',
+          lessons: [
+            {
+              id: 'l-toan8-pythagore', title: 'Định lí Pythagore', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Trong tam giác vuông, bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông:</p>
+                <p style="text-align:center">$a^2 + b^2 = c^2$ &nbsp; (với $c$ là cạnh huyền).</p>
+                <div class="luuy"><strong>Định lí đảo:</strong> nếu $a^2+b^2=c^2$ thì tam giác vuông tại đỉnh đối diện cạnh $c$.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tam giác vuông có hai cạnh góc vuông $3$ và $4$. Cạnh huyền?</p>
+                  <p><strong>Giải:</strong> $c = \\sqrt{3^2+4^2} = \\sqrt{25} = 5$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Cạnh huyền $13$, một cạnh góc vuông $5$. Cạnh còn lại?
+                  <details><summary>Đáp án</summary>$\\sqrt{13^2-5^2}=\\sqrt{144}=12$.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      code: 'KHTN8', name: 'KHTN 8 (Lý–Hóa–Sinh)', grade: 8,
+      topics: [
+        {
+          id: 't-khtn8-hoa', title: 'Hóa học · Mol, bảo toàn khối lượng, nồng độ',
+          lessons: [
+            {
+              id: 'l-khtn8-mol', title: 'Mol và tính toán hóa học', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Mol là lượng chất chứa $N_A \\approx 6{,}022\\cdot10^{23}$ hạt. Các công thức:</p>
+                <ul>
+                  <li>Số mol: $n = \\dfrac{m}{M}$ (m: khối lượng g, M: khối lượng mol g/mol).</li>
+                  <li>Thể tích khí (đktc $0^\\circ C$, 1 atm): $V = 22{,}4\\,n$ (L).</li>
+                  <li>Nồng độ phần trăm: $C\\% = \\dfrac{m_{ct}}{m_{dd}}\\cdot100\\%$.</li>
+                  <li>Nồng độ mol: $C_M = \\dfrac{n}{V}$ (mol/L).</li>
+                </ul>
+                <div class="luuy"><strong>Định luật bảo toàn khối lượng:</strong> trong phản ứng hóa học, tổng khối lượng các chất sản phẩm bằng tổng khối lượng các chất tham gia.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tính số mol trong $8$ g NaOH ($M=40$).</p>
+                  <p><strong>Giải:</strong> $n = 8/40 = 0{,}2$ mol.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Khối lượng của $0{,}5$ mol $H_2O$ ($M=18$)?
+                  <details><summary>Đáp án</summary>$m = 0{,}5\\cdot18 = 9$ g.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-khtn8-acid', title: 'Acid – Base – Oxide – Muối và thang pH', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Acid</strong>: phân tử có H liên kết gốc acid (HCl, $H_2SO_4$), làm quỳ tím hóa đỏ.</li>
+                  <li><strong>Base</strong>: có nhóm $OH$ (NaOH, $Ca(OH)_2$), làm quỳ tím hóa xanh, phenolphtalein hóa hồng.</li>
+                  <li><strong>Oxide</strong>: hợp chất của oxi với 1 nguyên tố (oxide acid như $CO_2$, oxide base như $Na_2O$).</li>
+                  <li><strong>Muối</strong>: tạo từ kim loại (hoặc $NH_4^+$) và gốc acid (NaCl, $CaCO_3$).</li>
+                </ul>
+                <div class="luuy"><strong>Thang pH:</strong> pH < 7 môi trường acid, pH = 7 trung tính, pH > 7 môi trường base.</div>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div><p>Dung dịch có pH = 3 ⇒ môi trường acid; pH = 10 ⇒ môi trường base.</p></div>
+                <div class="bt"><strong>Bài tập:</strong> Chất nào làm quỳ tím hóa xanh: HCl hay NaOH?
+                  <details><summary>Đáp án</summary>NaOH (base).</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-khtn8-ly', title: 'Vật lí · Khối lượng riêng, áp suất, lực đẩy Archimedes',
+          lessons: [
+            {
+              id: 'l-khtn8-apsuat', title: 'Áp suất – Khối lượng riêng – Lực đẩy Archimedes', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li>Khối lượng riêng: $D = \\dfrac{m}{V}$ (kg/m³).</li>
+                  <li>Áp suất: $p = \\dfrac{F}{S}$ (Pa $= N/m^2$); $F$ là áp lực vuông góc, $S$ là diện tích bị ép.</li>
+                  <li>Áp suất chất lỏng: $p = d\\cdot h$ ($d$ trọng lượng riêng, $h$ độ sâu).</li>
+                  <li>Lực đẩy Archimedes: $F_A = d\\cdot V$ ($V$ thể tích phần chất lỏng bị vật chiếm chỗ).</li>
+                </ul>
+                <div class="luuy"><strong>Điều kiện nổi/chìm:</strong> vật nổi khi $F_A > P$, lơ lửng khi $F_A = P$, chìm khi $F_A < P$.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Lực $F=200$ N ép lên diện tích $S=0{,}5\\,m^2$. Áp suất?</p>
+                  <p><strong>Giải:</strong> $p = 200/0{,}5 = 400$ Pa.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Vật thể tích $0{,}001\\,m^3$ chìm trong nước ($d=10000\\,N/m^3$). Lực đẩy Archimedes?
+                  <details><summary>Đáp án</summary>$F_A = 10000\\cdot0{,}001 = 10$ N.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-khtn8-sinh', title: 'Sinh học · Cơ thể người',
+          lessons: [
+            {
+              id: 'l-khtn8-tieuhoa', title: 'Hệ tiêu hóa, tuần hoàn, hô hấp ở người', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Tiêu hóa:</strong> biến đổi thức ăn thành chất dinh dưỡng cơ thể hấp thụ. Ruột non là nơi hấp thụ chính.</li>
+                  <li><strong>Tuần hoàn:</strong> tim 4 ngăn bơm máu; máu vận chuyển $O_2$, dinh dưỡng và thải $CO_2$, chất thải.</li>
+                  <li><strong>Hô hấp:</strong> trao đổi khí ở phổi — lấy $O_2$, thải $CO_2$; đơn vị là phế nang.</li>
+                </ul>
+                <div class="luuy"><strong>Liên hệ:</strong> ba hệ phối hợp cung cấp $O_2$ và dinh dưỡng cho mọi tế bào, đào thải chất cặn bã.</div>
+                <div class="bt"><strong>Bài tập:</strong> Cơ quan nào hấp thụ chất dinh dưỡng chủ yếu?
+                  <details><summary>Đáp án</summary>Ruột non.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      code: 'ANH8', name: 'Tiếng Anh 8', grade: 8,
+      topics: [
+        {
+          id: 't-anh8-grammar', title: 'Grammar · Thì, so sánh, câu điều kiện',
+          lessons: [
+            {
+              id: 'l-anh8-tenses', title: 'Các thì cơ bản & câu so sánh', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Present simple:</strong> thói quen — S + V(s/es). <em>She works every day.</em></li>
+                  <li><strong>Present continuous:</strong> đang xảy ra — S + am/is/are + V-ing. <em>They are playing.</em></li>
+                  <li><strong>Past simple:</strong> quá khứ — S + V2/ed. <em>We visited Hue last year.</em></li>
+                  <li><strong>Present perfect:</strong> S + have/has + V3. <em>I have finished.</em></li>
+                  <li><strong>So sánh hơn:</strong> tính từ ngắn + -er + than; dài: more + adj + than.</li>
+                  <li><strong>So sánh nhất:</strong> the + adj-est / the most + adj.</li>
+                </ul>
+                <div class="luuy"><strong>Câu điều kiện loại 1:</strong> If + present simple, S + will + V. <em>If it rains, we will stay home.</em></div>
+                <div class="vd"><div class="vd-title">📝 Ví dụ</div><p>"Tall" → taller → the tallest. "Beautiful" → more beautiful → the most beautiful.</p></div>
+                <div class="bt"><strong>Bài tập:</strong> Đổi sang so sánh hơn: "This book is (interesting) than that one."
+                  <details><summary>Đáp án</summary>more interesting.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-anh8-vocab', title: 'Vocabulary · Chủ đề lớp 8',
+          lessons: [
+            {
+              id: 'l-anh8-vocab', title: 'Từ vựng theo chủ đề (leisure, environment, science)', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Một số chủ đề từ vựng quan trọng lớp 8:</p>
+                <ul>
+                  <li><strong>Leisure activities:</strong> hang out, do DIY, make crafts, play games.</li>
+                  <li><strong>Life in the countryside:</strong> harvest, herd, paddy field, peaceful.</li>
+                  <li><strong>Environment:</strong> pollution, recycle, reduce, reuse, deforestation.</li>
+                  <li><strong>Science & technology:</strong> invention, device, robot, explore.</li>
+                </ul>
+                <div class="bt"><strong>Bài tập:</strong> Từ trái nghĩa của "pollute the environment" theo hướng tích cực?
+                  <details><summary>Đáp án</summary>protect / clean up the environment.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 

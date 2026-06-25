@@ -11,12 +11,17 @@ const url = 'file:///' + path.join(ROOT, 'frontend', 'index.html').replace(/\\/g
   await p.goto(url, { waitUntil: 'domcontentloaded' });
   await new Promise((r) => setTimeout(r, 700));
   const r = await p.evaluate(() => {
-    const out = { TOAN: 0, list: [], totalQ: 0 };
-    (EXAMS.TOAN || []).forEach((e) => { out.TOAN++; out.list.push(e.title.slice(0, 30) + ' (' + e.questions.length + 'c)'); out.totalQ += e.questions.length; });
+    const out = {};
+    Object.keys(EXAMS).forEach((k) => {
+      out[k] = { n: (EXAMS[k] || []).length, q: (EXAMS[k] || []).reduce((s, e) => s + e.questions.length, 0) };
+    });
     return out;
   });
   console.log('Lỗi JS:', errs.length ? errs : 'không có');
-  console.log('Số đề TOAN:', r.TOAN, '| tổng câu:', r.totalQ);
-  r.list.forEach((l) => console.log(' -', l));
+  const g8 = ['TOAN8', 'KHTN8', 'ANH8'];
+  let totN = 0, totQ = 0;
+  Object.keys(r).forEach((k) => { totN += r[k].n; totQ += r[k].q; });
+  console.log('LỚP 8 →', g8.map((k) => k + ': ' + (r[k] ? r[k].n : 0)).join(' | '));
+  console.log('TỔNG (mọi môn):', totN, 'đề /', totQ, 'câu');
   await b.close();
 })();
