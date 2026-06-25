@@ -4529,6 +4529,21 @@ const EXAMS = {
         { stem: 'Sự chuyển từ thể lỏng sang thể khí gọi là?', options: ['Sự đông đặc', 'Sự bay hơi', 'Sự nóng chảy', 'Sự ngưng tụ'], answer: 1, explanation: 'Lỏng → khí gọi là sự bay hơi (hoặc sôi).' },
       ],
     },
+    {
+      examId: 'khtn8-59', title: 'Kiểm tra 45′ #59 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $8$ g khí $O_2$ ($M=32$)?', options: ['$0{,}5$ mol', '$0{,}25$ mol', '$1$ mol', '$0{,}125$ mol'], answer: 1, explanation: '$n=8/32=0{,}25$ mol.' },
+        { stem: 'Nồng độ mol của dung dịch chứa $0{,}5$ mol chất tan trong $2$ lít?', options: ['$1$ M', '$0{,}5$ M', '$2$ M', '$0{,}25$ M'], answer: 3, explanation: '$C_M=n/V=0{,}5/2=0{,}25$ M.' },
+        { stem: 'Phản ứng $A+B\\to C+D$ có $m_A=10$ g, $m_B=8$ g, $m_C=12$ g. Khối lượng D?', options: ['$6$ g', '$30$ g', '$14$ g', '$4$ g'], answer: 0, explanation: 'Bảo toàn khối lượng: $m_D=(10+8)-12=6$ g.' },
+        { stem: 'Dung dịch có $pH<7$ là dung dịch?', options: ['Base', 'Trung tính', 'Acid', 'Muối trung hòa'], answer: 2, explanation: '$pH<7$ ⇒ môi trường acid.' },
+        { stem: 'Áp suất do lực $200$ N tác dụng vuông góc lên diện tích $0{,}5$ m²?', options: ['$100$ Pa', '$400$ Pa', '$200$ Pa', '$40$ Pa'], answer: 1, explanation: '$p=F/S=200/0{,}5=400$ Pa.' },
+        { stem: 'Lực đẩy Archimedes lên vật chìm trong nước ($d=10000$ N/m³, $V=0{,}002$ m³)?', options: ['$20$ N', '$200$ N', '$2$ N', '$5$ N'], answer: 0, explanation: '$F_A=d\\cdot V=10000\\times 0{,}002=20$ N.' },
+        { stem: 'Công thực hiện khi lực $50$ N kéo vật đi $4$ m theo phương lực?', options: ['$50$ J', '$12{,}5$ J', '$800$ J', '$200$ J'], answer: 3, explanation: '$A=F\\cdot s=50\\times 4=200$ J.' },
+        { stem: 'Cơ quan thực hiện trao đổi khí với máu ở người là?', options: ['Tim', 'Gan', 'Phổi', 'Thận'], answer: 2, explanation: 'Phổi là nơi trao đổi $O_2$ và $CO_2$ với máu.' },
+        { stem: 'Đơn vị chức năng lọc máu tạo nước tiểu ở thận gọi là?', options: ['Nơron', 'Đơn vị thận (nephron)', 'Phế nang', 'Tiểu cầu'], answer: 1, explanation: 'Thận gồm nhiều đơn vị thận (nephron) thực hiện lọc máu.' },
+        { stem: 'Khí được thải ra nhiều khi cơ thể thở ra là?', options: ['$O_2$', '$N_2$', '$H_2$', '$CO_2$'], answer: 3, explanation: 'Hô hấp thải ra khí $CO_2$.' },
+      ],
+    },
   ],
 
   ANH8: [
