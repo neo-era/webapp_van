@@ -2004,6 +2004,144 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-anh8-modals-passive', title: 'Grammar · Modal verbs & câu bị động',
+          lessons: [
+            {
+              id: 'l-anh8-modals', title: 'Modal verbs (must, have to, should, can…)', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Động từ khuyết thiếu (modals) + V (nguyên thể không "to"):</p>
+                <ul>
+                  <li><strong>can / could:</strong> khả năng, xin phép. <em>She can swim. Could you help me?</em></li>
+                  <li><strong>must:</strong> bắt buộc (do người nói), <strong>mustn't:</strong> cấm. <em>You must wear a helmet. You mustn't smoke here.</em></li>
+                  <li><strong>have to:</strong> bắt buộc do hoàn cảnh/quy định; <strong>don't have to:</strong> không cần thiết. <em>I have to study. You don't have to come.</em></li>
+                  <li><strong>should / ought to:</strong> lời khuyên. <em>You should rest.</em></li>
+                </ul>
+                <div class="luuy"><strong>Phân biệt:</strong> <em>mustn't</em> = bị cấm (không được làm); <em>don't have to</em> = không bắt buộc (làm hay không tùy ý).</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ</div>
+                  <p>It's raining. You <strong>should</strong> take an umbrella. — Students <strong>must</strong> be quiet in the library.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Điền modal chỉ lời khuyên: "You ____ see a doctor."
+                  <details><summary>Đáp án</summary>should (hoặc ought to).</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-anh8-passive', title: 'Câu bị động (Passive voice)', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Câu bị động nhấn mạnh đối tượng chịu tác động: <strong>be + V3/V-ed</strong> (chia "be" theo thì).</p>
+                <ul>
+                  <li><strong>Hiện tại đơn:</strong> am/is/are + V3. <em>English is spoken here.</em></li>
+                  <li><strong>Quá khứ đơn:</strong> was/were + V3. <em>The house was built in 1990.</em></li>
+                  <li>Tác nhân (nếu cần) thêm <strong>by</strong> + ... <em>The cake was made by my mother.</em></li>
+                </ul>
+                <div class="luuy"><strong>Cách đổi:</strong> tân ngữ câu chủ động → chủ ngữ câu bị động; động từ → "be + V3"; chủ ngữ cũ → "by + ...".</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ</div>
+                  <p>Active: They clean the room every day. → Passive: The room <strong>is cleaned</strong> every day.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Chuyển sang bị động: "Shakespeare wrote this play."
+                  <details><summary>Đáp án</summary>This play was written by Shakespeare.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-anh8-clauses-tenses', title: 'Grammar · Mệnh đề quan hệ, quá khứ tiếp diễn, tường thuật',
+          lessons: [
+            {
+              id: 'l-anh8-relative', title: 'Mệnh đề quan hệ (Relative clauses)', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Đại từ quan hệ nối mệnh đề bổ nghĩa cho danh từ:</p>
+                <ul>
+                  <li><strong>who</strong> — chỉ người. <em>The man who lives here is kind.</em></li>
+                  <li><strong>which</strong> — chỉ vật. <em>The book which I read…</em></li>
+                  <li><strong>that</strong> — chỉ người hoặc vật (thay who/which).</li>
+                  <li><strong>whose</strong> — chỉ sở hữu. <em>The girl whose father is a doctor.</em></li>
+                  <li><strong>where</strong> — chỉ nơi chốn; <strong>when</strong> — chỉ thời gian.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ</div>
+                  <p>This is the school <strong>where</strong> I study. — That's the boy <strong>whose</strong> bike was stolen.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Điền đại từ quan hệ: "The woman ____ is talking to him is my teacher."
+                  <details><summary>Đáp án</summary>who (hoặc that).</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-anh8-pastcont', title: 'Quá khứ tiếp diễn & câu tường thuật (intro)', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Quá khứ tiếp diễn:</strong> was/were + V-ing — hành động đang diễn ra tại một thời điểm trong quá khứ. Thường đi với <em>when/while</em>. <em>While I was cooking, the phone rang.</em></li>
+                  <li><strong>Câu tường thuật (reported speech):</strong> thuật lại lời người khác, thường lùi một thì và đổi đại từ. <em>"I am tired," she said.</em> → She said (that) she <strong>was</strong> tired.</li>
+                </ul>
+                <div class="luuy"><strong>Lùi thì cơ bản:</strong> present simple → past simple; present continuous → past continuous; will → would; can → could.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ</div>
+                  <p>"I will call you," he said. → He said he <strong>would</strong> call me.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Đổi sang tường thuật: "I am hungry," Tom said.
+                  <details><summary>Đáp án</summary>Tom said (that) he was hungry.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-anh8-gerund', title: 'Gerunds & to-infinitives', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>V-ing (gerund)</strong> theo sau: enjoy, like, love, hate, avoid, finish, mind, practise. <em>I enjoy reading.</em></li>
+                  <li><strong>to + V (to-infinitive)</strong> theo sau: want, decide, hope, plan, would like, need, agree. <em>She wants to go.</em></li>
+                  <li>Một số động từ dùng được cả hai (like, love, start) với nghĩa gần nhau.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ</div>
+                  <p>They <strong>decided to travel</strong> abroad. — He <strong>avoids eating</strong> fast food.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Chia đúng dạng: "I hope ____ (see) you soon."
+                  <details><summary>Đáp án</summary>to see.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-anh8-vocab-units', title: 'Vocabulary · 12 chủ đề lớp 8 (Global Success)',
+          lessons: [
+            {
+              id: 'l-anh8-vocab-units', title: 'Từ vựng theo 12 chủ đề chương trình', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Các chủ đề từ vựng trọng tâm Tiếng Anh 8:</p>
+                <ul>
+                  <li><strong>1. Leisure activities:</strong> hang out, do DIY, make crafts, socialise.</li>
+                  <li><strong>2. Life in the countryside:</strong> harvest, herd buffaloes, paddy field, peaceful.</li>
+                  <li><strong>3. Teenagers:</strong> generation gap, hobby, confident, get changed.</li>
+                  <li><strong>4. Ethnic groups of Viet Nam:</strong> ethnic minority, costume, terraced fields, stilt house.</li>
+                  <li><strong>5. Customs and traditions:</strong> custom, tradition, table manners, worship.</li>
+                  <li><strong>6. Lifestyles:</strong> healthy, modern, traditional, balanced diet.</li>
+                  <li><strong>7. Environmental protection:</strong> pollution, recycle, reduce, reuse, deforestation.</li>
+                  <li><strong>8. Shopping:</strong> shopping centre, customer, discount, online shopping.</li>
+                  <li><strong>9. Natural disasters:</strong> earthquake, flood, drought, typhoon, erupt.</li>
+                  <li><strong>10. Communication in the future:</strong> video call, smart device, instant message.</li>
+                  <li><strong>11. Science and technology:</strong> invention, robot, device, explore.</li>
+                  <li><strong>12. Life on other planets:</strong> planet, alien, spacecraft, gravity.</li>
+                </ul>
+                <div class="luuy"><strong>Synonym/Antonym thường gặp:</strong> big = large; happy = glad; expensive ↔ cheap; many ↔ few; protect ↔ destroy.</div>
+                <div class="bt"><strong>Bài tập:</strong> Từ chỉ thiên tai "động đất" trong tiếng Anh là gì?
+                  <details><summary>Đáp án</summary>earthquake.</details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
   ],
