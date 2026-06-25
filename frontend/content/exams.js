@@ -2966,6 +2966,21 @@ const EXAMS = {
         { stem: 'Mốt của dãy số $2, 3, 3, 5, 3, 7$?', options: ['$2$', '$7$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $3$ xuất hiện nhiều nhất ⇒ mốt $=3$.' },
       ],
     },
+    {
+      examId: 'toan8-14', title: 'Kiểm tra 45′ #14 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-5)(x+5)$?', options: ['$x^2+25$', '$x^2-10x+25$', '$x^2-25$', '$x^2-5x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-25$.' },
+        { stem: 'Phân tích $x^2-4x+4$ thành nhân tử?', options: ['$(x-2)^2$', '$(x+2)^2$', '$(x-4)(x-1)$', '$(x-2)(x+2)$'], answer: 0, explanation: '$x^2-4x+4=(x-2)^2$.' },
+        { stem: 'Nghiệm của phương trình $5x-10=0$?', options: ['$x=5$', '$x=-2$', '$x=10$', '$x=2$'], answer: 3, explanation: '$5x=10 \\Leftrightarrow x=2$.' },
+        { stem: 'Giá trị của phân thức $\\dfrac{x-3}{x+1}$ tại $x=2$?', options: ['$\\dfrac{1}{3}$', '$-\\dfrac{1}{3}$', '$1$', '$-1$'], answer: 1, explanation: '$\\dfrac{2-3}{2+1}=-\\dfrac{1}{3}$.' },
+        { stem: 'Đồ thị hàm số $y=3x$ đi qua điểm nào?', options: ['$(1;3)$', '$(3;1)$', '$(0;3)$', '$(1;0)$'], answer: 0, explanation: 'Thay $x=1 \\Rightarrow y=3$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $13$, một cạnh góc vuông $5$. Cạnh góc vuông còn lại?', options: ['$12$', '$8$', '$\\sqrt{194}$', '$18$'], answer: 0, explanation: '$\\sqrt{13^2-5^2}=\\sqrt{144}=12$.' },
+        { stem: 'Rút gọn $(x+y)^2-(x-y)^2$?', options: ['$2xy$', '$4xy$', '$0$', '$2x^2$'], answer: 1, explanation: '$(x+y)^2-(x-y)^2=4xy$.' },
+        { stem: 'Thể tích hình lập phương cạnh $3$?', options: ['$9$', '$18$', '$27$', '$6$'], answer: 2, explanation: '$V=3^3=27$.' },
+        { stem: 'Mẫu thức chung của $\\dfrac{1}{x}$ và $\\dfrac{1}{x+1}$?', options: ['$x$', '$x+1$', '$x(x+1)$', '$1$'], answer: 2, explanation: 'MTC $=x(x+1)$.' },
+        { stem: 'Xác suất tung một đồng xu cân đối được mặt ngửa?', options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{3}$', '$1$', '$\\dfrac{1}{2}$'], answer: 3, explanation: 'Hai khả năng đồng khả năng ⇒ $\\dfrac{1}{2}$.' },
+      ],
+    },
   ],
 
   KHTN8: [
