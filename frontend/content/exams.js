@@ -2876,6 +2876,21 @@ const EXAMS = {
         { stem: 'Trung vị của dãy số $3, 5, 7, 9, 11$?', options: ['$7$', '$5$', '$9$', '$35$'], answer: 0, explanation: 'Dãy đã sắp xếp, 5 số ⇒ trung vị là số ở giữa $=7$.' },
       ],
     },
+    {
+      examId: 'toan8-8', title: 'Kiểm tra 45′ #8 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Tích $(x-1)(x^2+x+1)$ bằng?', options: ['$x^3+1$', '$x^3-x$', '$(x-1)^3$', '$x^3-1$'], answer: 3, explanation: 'Hằng đẳng thức: $A^3-B^3$ với $B=1$.' },
+        { stem: 'Khai triển $(x+3)(x-2)$?', options: ['$x^2-x-6$', '$x^2+x-6$', '$x^2+5x-6$', '$x^2-6$'], answer: 1, explanation: '$x^2-2x+3x-6=x^2+x-6$.' },
+        { stem: 'Phân tích $2x^2-8$ thành nhân tử?', options: ['$2(x-2)(x+2)$', '$(2x-8)(x+1)$', '$2(x^2-4)$', '$(x-2)(x+2)$'], answer: 0, explanation: '$2x^2-8=2(x^2-4)=2(x-2)(x+2)$.' },
+        { stem: 'Nghiệm của phương trình $4(x+1)=20$?', options: ['$5$', '$6$', '$16$', '$4$'], answer: 3, explanation: '$x+1=5 \\Leftrightarrow x=4$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{x}{x^2-9}$?', options: ['$x\\ne\\pm3$', '$x\\ne3$', '$x\\ne-3$', '$x\\ne9$'], answer: 0, explanation: '$x^2-9\\ne0 \\Leftrightarrow x\\ne\\pm3$.' },
+        { stem: 'Đồ thị hàm số $y=x$ có đi qua gốc tọa độ không?', options: ['không', 'có', 'song song trục Ox', 'song song trục Oy'], answer: 1, explanation: 'Khi $x=0$ thì $y=0$ nên đồ thị qua gốc tọa độ.' },
+        { stem: 'Diện tích hình thang có hai đáy $5, 7$ và chiều cao $4$?', options: ['$24$', '$48$', '$12$', '$28$'], answer: 0, explanation: '$S=\\dfrac{(5+7)}{2}\\cdot4=24$.' },
+        { stem: 'Từ tỉ lệ thức $\\dfrac{a}{b}=\\dfrac{c}{d}$ suy ra?', options: ['$ab=cd$', '$ac=bd$', '$ad=bc$', '$a+d=b+c$'], answer: 2, explanation: 'Tính chất tỉ lệ thức: $ad=bc$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-1}{x+1}$ (với $x\\ne-1$)?', options: ['$x+1$', '$x^2-1$', '$1$', '$x-1$'], answer: 3, explanation: '$\\dfrac{(x-1)(x+1)}{x+1}=x-1$.' },
+        { stem: 'Xác suất gieo một con xúc xắc cân đối được số chẵn?', options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$\\dfrac{2}{3}$'], answer: 1, explanation: 'Số chẵn $\\{2,4,6\\}$ ⇒ $P=3/6=1/2$.' },
+      ],
+    },
   ],
 
   KHTN8: [
