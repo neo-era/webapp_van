@@ -3719,6 +3719,21 @@ const EXAMS = {
         { stem: 'Khi nhiệt độ tăng, áp suất của khí trong bình kín sẽ?', options: ['Giảm', 'Tăng', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: 'Nhiệt độ tăng ⇒ phân tử khí chuyển động nhanh hơn ⇒ áp suất tăng.' },
       ],
     },
+    {
+      examId: 'khtn8-32', title: 'Kiểm tra 45′ #32 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $18$ g $H_2O$ ($M=18$)?', options: ['$0{,}5$', '$2$', '$1$', '$0{,}25$'], answer: 2, explanation: '$n=18/18=1$ mol.' },
+        { stem: 'Lực $250$ N ép vuông góc lên diện tích $0{,}5$ m². Áp suất là?', options: ['$500$ Pa', '$125$ Pa', '$50$ Pa', '$1250$ Pa'], answer: 0, explanation: '$p=F/S=250/0{,}5=500$ Pa.' },
+        { stem: 'Một vật có khối lượng $170$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$85$ g/cm³', '$8{,}5$ g/cm³', '$0{,}85$ g/cm³', '$850$ g/cm³'], answer: 1, explanation: '$D=m/V=170/20=8{,}5$ g/cm³.' },
+        { stem: 'Cho $CaCO_3$ tác dụng với dung dịch HCl, khí thoát ra là?', options: ['$O_2$', '$H_2$', '$N_2$', '$CO_2$'], answer: 3, explanation: '$CaCO_3+2HCl\\to CaCl_2+H_2O+CO_2$.' },
+        { stem: 'Tế bào máu nào có khả năng thay đổi hình dạng để bắt và tiêu diệt vi khuẩn?', options: ['Bạch cầu', 'Hồng cầu', 'Tiểu cầu', 'Huyết tương'], answer: 0, explanation: 'Bạch cầu thực bào vi khuẩn.' },
+        { stem: 'Hòa tan $21$ g chất tan vào $79$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$79\\%$', '$21\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=21/100\\times 100\\%=21\\%$.' },
+        { stem: 'Một người đẩy thùng hàng nhưng thùng không di chuyển. Công cơ học người đó thực hiện?', options: ['Rất lớn', 'Bằng $0$', 'Bằng trọng lượng thùng', 'Không xác định'], answer: 1, explanation: 'Không có quãng đường dịch chuyển ⇒ $A=0$.' },
+        { stem: 'Khối lượng của $0{,}2$ mol Fe ($M=56$)?', options: ['$5{,}6$ g', '$56$ g', '$22{,}4$ g', '$11{,}2$ g'], answer: 3, explanation: '$m=0{,}2\\times 56=11{,}2$ g.' },
+        { stem: 'Cơ quan nào sản xuất dịch mật và lọc bỏ chất độc trong cơ thể?', options: ['Thận', 'Phổi', 'Gan', 'Tim'], answer: 2, explanation: 'Gan tiết mật và khử độc.' },
+        { stem: 'Tại sao mũi kim, lưỡi dao thường được làm nhọn và mỏng?', options: ['Để giảm áp suất', 'Để tăng áp suất (giảm diện tích tiếp xúc)', 'Để giảm lực', 'Để trang trí'], answer: 1, explanation: '$p=F/S$: giảm $S$ ⇒ tăng $p$, dễ cắt/đâm.' },
+      ],
+    },
   ],
 
   ANH8: [
