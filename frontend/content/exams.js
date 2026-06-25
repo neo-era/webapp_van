@@ -4019,6 +4019,21 @@ const EXAMS = {
         { stem: 'Khi ngâm chân vào chậu nước nóng, nước nguội dần là do?', options: ['Nước bay hơi hết', 'Nhiệt truyền từ nước sang chân', 'Nước đông đặc', 'Hơi nước ngưng tụ'], answer: 1, explanation: 'Nhiệt truyền từ vật nóng (nước) sang vật lạnh hơn (chân).' },
       ],
     },
+    {
+      examId: 'khtn8-42', title: 'Kiểm tra 45′ #42 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $5{,}6$ g KOH ($M=56$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=5{,}6/56=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $8$ m trong nước ($d=10000$ N/m³)?', options: ['$80000$ Pa', '$8000$ Pa', '$800000$ Pa', '$18000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 8=80000$ Pa.' },
+        { stem: 'Một vật có khối lượng $156$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$78$ g/cm³', '$7{,}8$ g/cm³', '$0{,}78$ g/cm³', '$780$ g/cm³'], answer: 1, explanation: '$D=m/V=156/20=7{,}8$ g/cm³.' },
+        { stem: 'KOH thuộc loại hợp chất nào?', options: ['Acid', 'Muối', 'Oxide', 'Base'], answer: 3, explanation: 'KOH là base (kiềm).' },
+        { stem: 'Hệ tuần hoàn của người thuộc loại tuần hoàn nào?', options: ['Kín (máu lưu thông trong mạch)', 'Hở', 'Không có mạch máu', 'Chỉ một vòng'], answer: 0, explanation: 'Máu luôn lưu thông trong hệ mạch kín.' },
+        { stem: 'Hòa tan $16$ g chất tan vào $184$ g nước. Nồng độ phần trăm dung dịch?', options: ['$16\\%$', '$184\\%$', '$8\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=16/200\\times 100\\%=8\\%$.' },
+        { stem: 'Một máy thực hiện công $1000$ J trong $10$ s. Công suất là?', options: ['$10000$ W', '$100$ W', '$10$ W', '$1000$ W'], answer: 1, explanation: '$P=A/t=1000/10=100$ W.' },
+        { stem: 'Khối lượng của $0{,}1$ mol $Na_2CO_3$ ($M=106$)?', options: ['$106$ g', '$1{,}06$ g', '$53$ g', '$10{,}6$ g'], answer: 3, explanation: '$m=0{,}1\\times 106=10{,}6$ g.' },
+        { stem: 'Trung khu của các phản xạ không điều kiện (như rụt tay khi chạm vật nóng) nằm ở?', options: ['Đại não', 'Tiểu não', 'Tủy sống', 'Hành não'], answer: 2, explanation: 'Tủy sống là trung khu của nhiều phản xạ không điều kiện.' },
+        { stem: 'Vì sao khi xe phanh gấp, hành khách bị chúi người về phía trước?', options: ['Do trọng lực', 'Do quán tính', 'Do lực ma sát', 'Do lực đẩy'], answer: 1, explanation: 'Do quán tính, cơ thể có xu hướng giữ nguyên chuyển động.' },
+      ],
+    },
   ],
 
   ANH8: [
