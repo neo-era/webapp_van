@@ -3239,6 +3239,21 @@ const EXAMS = {
         { stem: 'Bộ phận nào điều khiển các hoạt động có ý thức của cơ thể?', options: ['Đại não', 'Tủy sống', 'Tiểu não', 'Hành não'], answer: 0, explanation: 'Đại não là trung khu của các hoạt động có ý thức.' },
       ],
     },
+    {
+      examId: 'khtn8-16', title: 'Kiểm tra 45′ #16 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $7{,}1$ g $Cl_2$ ($M=71$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=7{,}1/71=0{,}1$ mol.' },
+        { stem: 'Áp suất tại điểm cách mặt thoáng $0{,}5$ m trong nước ($d=10000$ N/m³)?', options: ['$5000$ Pa', '$50000$ Pa', '$500$ Pa', '$2000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 0{,}5=5000$ Pa.' },
+        { stem: 'Một bình chứa $200$ ml nước ($D=1$ g/ml). Khối lượng nước là?', options: ['$20$ g', '$100$ g', '$2000$ g', '$200$ g'], answer: 3, explanation: '$m=D\\cdot V=1\\times 200=200$ g.' },
+        { stem: 'NaOH thuộc loại hợp chất nào?', options: ['Acid', 'Base', 'Muối', 'Oxide'], answer: 1, explanation: 'NaOH là base (kiềm).' },
+        { stem: 'Đường dẫn khí của hệ hô hấp gồm các bộ phận nào?', options: ['Mũi - khí quản - phế quản', 'Ruột - dạ dày', 'Tim - mạch máu', 'Thận - bóng đái'], answer: 0, explanation: 'Đường dẫn khí: mũi, họng, thanh quản, khí quản, phế quản.' },
+        { stem: 'Nồng độ mol của $0{,}2$ mol $H_2SO_4$ trong $0{,}5$ lít dung dịch?', options: ['$0{,}1$ M', '$0{,}5$ M', '$0{,}4$ M', '$1$ M'], answer: 2, explanation: '$C_M=0{,}2/0{,}5=0{,}4$ M.' },
+        { stem: 'Lực ma sát xuất hiện khi nào?', options: ['Vật đứng yên trong không khí', 'Vật rơi tự do', 'Không có lực nào', 'Hai bề mặt tiếp xúc trượt hoặc có xu hướng trượt lên nhau'], answer: 3, explanation: 'Ma sát sinh ra ở chỗ tiếp xúc giữa hai vật.' },
+        { stem: 'Phản ứng tỏa nhiệt là phản ứng?', options: ['Thu nhiệt từ môi trường', 'Giải phóng nhiệt ra môi trường', 'Không thay đổi nhiệt', 'Hấp thụ ánh sáng'], answer: 1, explanation: 'Phản ứng tỏa nhiệt giải phóng năng lượng nhiệt.' },
+        { stem: 'Máu đỏ tươi trong động mạch giàu khí nào?', options: ['$CO_2$', '$N_2$', '$H_2$', '$O_2$'], answer: 3, explanation: 'Máu đỏ tươi giàu oxi ($O_2$).' },
+        { stem: 'Tế bào thần kinh còn được gọi là gì?', options: ['Hồng cầu', 'Tiểu cầu', 'Nơ-ron', 'Bạch cầu'], answer: 2, explanation: 'Tế bào thần kinh (nơ-ron) là đơn vị của hệ thần kinh.' },
+      ],
+    },
   ],
 
   ANH8: [
