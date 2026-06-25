@@ -3749,6 +3749,21 @@ const EXAMS = {
         { stem: 'Tại sao mũi kim, lưỡi dao thường được làm nhọn và mỏng?', options: ['Để giảm áp suất', 'Để tăng áp suất (giảm diện tích tiếp xúc)', 'Để giảm lực', 'Để trang trí'], answer: 1, explanation: '$p=F/S$: giảm $S$ ⇒ tăng $p$, dễ cắt/đâm.' },
       ],
     },
+    {
+      examId: 'khtn8-33', title: 'Kiểm tra 45′ #33 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $11{,}2$ g khí $N_2$ ($M=28$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}4$', '$1$'], answer: 2, explanation: '$n=11{,}2/28=0{,}4$ mol.' },
+        { stem: 'Áp suất tại độ sâu $0{,}8$ m trong nước ($d=10000$ N/m³)?', options: ['$8000$ Pa', '$800$ Pa', '$80000$ Pa', '$1800$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 0{,}8=8000$ Pa.' },
+        { stem: 'Một vật có khối lượng $120$ g và thể tích $15$ cm³. Khối lượng riêng?', options: ['$80$ g/cm³', '$8$ g/cm³', '$0{,}8$ g/cm³', '$800$ g/cm³'], answer: 1, explanation: '$D=m/V=120/15=8$ g/cm³.' },
+        { stem: '$CO_2$ thuộc loại oxide nào?', options: ['Oxide base', 'Acid', 'Base', 'Oxide acid'], answer: 3, explanation: '$CO_2$ là oxide acid (tác dụng base tạo muối).' },
+        { stem: 'Đơn vị đo thể tích trong hệ SI là?', options: ['m³', 'kg', 'N', 'lít'], answer: 0, explanation: 'Thể tích đo bằng mét khối (m³).' },
+        { stem: 'Hòa tan $7$ g chất tan vào $43$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$43\\%$', '$14\\%$', '$7\\%$'], answer: 2, explanation: '$m_{dd}=50$ g ⇒ $C\\%=7/50\\times 100\\%=14\\%$.' },
+        { stem: 'Một vật chuyển động thẳng đều khi nào?', options: ['Có lực kéo rất lớn', 'Hợp lực tác dụng lên vật bằng $0$', 'Không có lực nào tác dụng', 'Trọng lực rất lớn'], answer: 1, explanation: 'Hợp lực bằng $0$ ⇒ vật chuyển động thẳng đều hoặc đứng yên.' },
+        { stem: 'Khối lượng của $0{,}3$ mol $H_2O$ ($M=18$)?', options: ['$1{,}8$ g', '$18$ g', '$0{,}54$ g', '$5{,}4$ g'], answer: 3, explanation: '$m=0{,}3\\times 18=5{,}4$ g.' },
+        { stem: 'Máu vận chuyển những chất nào đến nuôi tế bào?', options: ['Chỉ nước', 'Chỉ muối', 'Oxi và chất dinh dưỡng', 'Chỉ khí $CO_2$'], answer: 2, explanation: 'Máu mang oxi và chất dinh dưỡng đến tế bào.' },
+        { stem: 'Để tăng ma sát giúp xe phanh tốt hơn, người ta thường?', options: ['Bôi dầu vào lốp', 'Làm rãnh trên lốp xe', 'Làm lốp thật nhẵn', 'Giảm khối lượng xe'], answer: 1, explanation: 'Rãnh lốp tăng độ nhám ⇒ tăng ma sát.' },
+      ],
+    },
   ],
 
   ANH8: [
