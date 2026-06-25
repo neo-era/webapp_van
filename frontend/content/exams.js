@@ -3536,6 +3536,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $12, 12, 12, 12, 12, 18$?', options: ['$12$', '$18$', '$13$', '$78$'], answer: 2, explanation: '$\\dfrac{12\\cdot5+18}{6}=\\dfrac{78}{6}=13$.' },
       ],
     },
+    {
+      examId: 'toan8-52', title: 'Kiểm tra 45′ #52 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(4x+5)(4x-5)$?', options: ['$16x^2+25$', '$4x^2-25$', '$16x^2-25$', '$16x^2-40x-25$'], answer: 2, explanation: 'Hiệu hai bình phương: $16x^2-25$.' },
+        { stem: 'Phân tích $x^2+6x+5$ thành nhân tử?', options: ['$(x+1)(x+5)$', '$(x-1)(x-5)$', '$(x+2)(x+3)$', '$(x+1)(x-5)$'], answer: 0, explanation: '$x^2+6x+5=(x+1)(x+5)$.' },
+        { stem: 'Nghiệm của phương trình $12x-17=9x+1$?', options: ['$x=3$', '$x=6$', '$x=18$', '$x=-6$'], answer: 1, explanation: '$3x=18 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+22x+121}{x+11}$ (với $x\\ne-11$)?', options: ['$x-11$', '$x$', '$x^2+11$', '$x+11$'], answer: 3, explanation: '$\\dfrac{(x+11)^2}{x+11}=x+11$.' },
+        { stem: 'Đường thẳng $y=4x+16$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=16$', '$x=4$', '$x=-4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 4x=-16 \\Rightarrow x=-4$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $20$, một cạnh góc vuông $16$. Cạnh góc vuông còn lại?', options: ['$4$', '$12$', '$\\sqrt{656}$', '$8$'], answer: 1, explanation: '$\\sqrt{20^2-16^2}=\\sqrt{144}=12$.' },
+        { stem: 'Khai triển $(3x-7)^2$?', options: ['$9x^2-42x+49$', '$9x^2+42x+49$', '$9x^2-49$', '$3x^2-42x+49$'], answer: 0, explanation: '$(3x-7)^2=9x^2-42x+49$.' },
+        { stem: 'Diện tích hình bình hành có đáy $8$ và chiều cao $7$?', options: ['$15$', '$28$', '$64$', '$56$'], answer: 3, explanation: '$S=a\\cdot h=8\\cdot7=56$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-10x+21}{x-3}$ (với $x\\ne3$)?', options: ['$x+7$', '$x-7$', '$x^2-7$', '$7$'], answer: 1, explanation: '$\\dfrac{(x-3)(x-7)}{x-3}=x-7$.' },
+        { stem: 'Số trung bình cộng của $15, 15, 15, 15, 30$?', options: ['$15$', '$30$', '$18$', '$90$'], answer: 2, explanation: '$\\dfrac{15\\cdot4+30}{5}=\\dfrac{90}{5}=18$.' },
+      ],
+    },
   ],
 
   KHTN8: [
