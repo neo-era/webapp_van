@@ -5012,6 +5012,21 @@ const EXAMS = {
         { stem: 'She has ____ gone home, so the office is empty.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
       ],
     },
+    {
+      examId: 'anh8-50', title: 'Kiểm tra 45′ #50 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ his homework right now.', options: ['does', 'do', 'is doing', 'did'], answer: 2, explanation: '"right now" ⇒ hiện tại tiếp diễn: is doing.' },
+        { stem: 'A computer is ____ than a calculator.', options: ['useful', 'usefuler', 'most useful', 'more useful'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more useful.' },
+        { stem: 'You ____ wash your hands before eating.', options: ['must', 'should', 'can', 'would'], answer: 1, explanation: 'should = lời khuyên nên làm.' },
+        { stem: "If you don't wear a coat, you ____ cold.", options: ['will be', 'are', 'were', 'would be'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'Coffee ____ in many countries around the world.', options: ['drink', 'drinks', 'is drunk', 'are drunk'], answer: 2, explanation: 'Bị động hiện tại đơn: is drunk.' },
+        { stem: 'The girl ____ won the race is very fast.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'I have studied at this school ____ September.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (September).' },
+        { stem: "Choose the synonym of 'save'.", options: ['hurt', 'harm', 'lose', 'rescue'], answer: 3, explanation: 'save ≈ rescue (cứu).' },
+        { stem: "Choose the antonym of 'increase'.", options: ['grow', 'decrease', 'rise', 'expand'], answer: 1, explanation: 'increase ↔ decrease (giảm).' },
+        { stem: 'She has ____ been late for school.', options: ['ever', 'yet', 'never', 'since'], answer: 2, explanation: 'never = chưa bao giờ (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
