@@ -5327,6 +5327,21 @@ const EXAMS = {
         { stem: 'He has ____ finished the race, so he is resting.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-57', title: 'Kiểm tra 45′ #57 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ in Hue for two years before moving here.', options: ['live', 'lived', 'had lived', 'living'], answer: 2, explanation: 'Hành động xảy ra trước một mốc quá khứ ⇒ had lived.' },
+        { stem: 'A truck is ____ than a car.', options: ['bigger', 'big', 'biggest', 'more big'], answer: 0, explanation: 'So sánh hơn (gấp đôi phụ âm): bigger.' },
+        { stem: "You ____ touch the wet paint.", options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = không được phép." },
+        { stem: 'If the team plays well, they ____ the match.', options: ['win', 'won', 'would win', 'will win'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'These toys ____ in China.', options: ['make', 'makes', 'are made', 'is made'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are made.' },
+        { stem: 'That is the school ____ I studied when I was young.', options: ['where', 'which', 'who', 'whose'], answer: 0, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'He has been here ____ an hour.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (an hour).' },
+        { stem: "Choose the synonym of 'amazing'.", options: ['terrible', 'awful', 'dull', 'fantastic'], answer: 3, explanation: 'amazing ≈ fantastic (tuyệt vời).' },
+        { stem: "Choose the antonym of 'many'.", options: ['much', 'few', 'lots', 'plenty'], answer: 1, explanation: 'many ↔ few (ít).' },
+        { stem: '____ you visited Ha Long Bay?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
