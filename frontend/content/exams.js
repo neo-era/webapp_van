@@ -4562,6 +4562,21 @@ const EXAMS = {
         { stem: '____ you ever met a famous person?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-40', title: 'Kiểm tra 45′ #40 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'We ____ to the beach next weekend.', options: ['go', 'went', 'will go', 'would go'], answer: 2, explanation: 'next weekend ⇒ tương lai đơn: will go.' },
+        { stem: 'A motorbike is ____ than a bicycle.', options: ['faster', 'fast', 'fastest', 'more fast'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: faster.' },
+        { stem: 'You ____ wear a seatbelt in the car.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = bắt buộc.' },
+        { stem: 'If I find your book, I ____ it to you.', options: ['give', 'gave', 'would give', 'will give'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Many trees ____ in this area every year.', options: ['cut', 'cuts', 'are cut', 'is cut'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are cut.' },
+        { stem: 'The doctor ____ treated me was very kind.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'She has worked in this office ____ April.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (April).' },
+        { stem: "Choose the synonym of 'easy'.", options: ['hard', 'difficult', 'tough', 'simple'], answer: 3, explanation: 'easy ≈ simple (đơn giản).' },
+        { stem: "Choose the antonym of 'loud'.", options: ['noisy', 'quiet', 'loud', 'deafening'], answer: 1, explanation: 'loud ↔ quiet (yên tĩnh).' },
+        { stem: '____ they ever travelled by plane?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
