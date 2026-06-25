@@ -3209,6 +3209,21 @@ const EXAMS = {
         { stem: 'Một vật sẽ nổi trong chất lỏng khi nào?', options: ['$P>F_A$', '$P=F_A$', '$P<F_A$', '$P=0$'], answer: 2, explanation: 'Trọng lượng nhỏ hơn lực đẩy Archimedes ⇒ vật nổi.' },
       ],
     },
+    {
+      examId: 'khtn8-15', title: 'Kiểm tra 45′ #15 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $9$ g $H_2O$ ($M=18$)?', options: ['$1$', '$0{,}25$', '$0{,}5$', '$2$'], answer: 2, explanation: '$n=9/18=0{,}5$ mol.' },
+        { stem: 'Áp suất tại đáy bình chất lỏng phụ thuộc vào yếu tố nào?', options: ['Độ sâu và trọng lượng riêng của chất lỏng', 'Chỉ thể tích chất lỏng', 'Màu sắc chất lỏng', 'Diện tích đáy bình'], answer: 0, explanation: '$p=d\\cdot h$ phụ thuộc độ sâu $h$ và trọng lượng riêng $d$.' },
+        { stem: 'Một khối nhôm có $D=2{,}7$ g/cm³ và khối lượng $54$ g. Thể tích khối nhôm?', options: ['$27$ cm³', '$2$ cm³', '$145{,}8$ cm³', '$20$ cm³'], answer: 3, explanation: '$V=m/D=54/2{,}7=20$ cm³.' },
+        { stem: 'Acid tác dụng với base (phản ứng trung hòa) tạo thành?', options: ['Oxide', 'Muối và nước', 'Kim loại', 'Khí $H_2$'], answer: 1, explanation: 'VD: $HCl+NaOH\\to NaCl+H_2O$.' },
+        { stem: 'Đơn vị đo lực trong hệ SI là?', options: ['Kilôgam (kg)', 'Pascal (Pa)', 'Niuton (N)', 'Jun (J)'], answer: 2, explanation: 'Lực đo bằng Niuton (N).' },
+        { stem: 'Đơn vị chức năng của thận là?', options: ['Nephron (đơn vị thận)', 'Nơ-ron thần kinh', 'Phế nang', 'Mao mạch'], answer: 0, explanation: 'Mỗi thận gồm hàng triệu nephron lọc máu.' },
+        { stem: 'Nồng độ mol của $1$ mol NaOH trong $2$ lít dung dịch?', options: ['$2$ M', '$0{,}5$ M', '$1$ M', '$0{,}25$ M'], answer: 1, explanation: '$C_M=1/2=0{,}5$ M.' },
+        { stem: 'Khí oxi chiếm khoảng bao nhiêu phần trăm thể tích không khí?', options: ['$78\\%$', '$50\\%$', '$100\\%$', '$21\\%$'], answer: 3, explanation: 'Oxi chiếm khoảng $21\\%$, nitơ khoảng $78\\%$.' },
+        { stem: 'Công thức tính công cơ học là?', options: ['$A=F/s$', '$A=m\\cdot g$', '$A=F\\cdot s$', '$A=p\\cdot V$'], answer: 2, explanation: 'Công $A=F\\cdot s$ (lực nhân quãng đường).' },
+        { stem: 'Bộ phận nào điều khiển các hoạt động có ý thức của cơ thể?', options: ['Đại não', 'Tủy sống', 'Tiểu não', 'Hành não'], answer: 0, explanation: 'Đại não là trung khu của các hoạt động có ý thức.' },
+      ],
+    },
   ],
 
   ANH8: [
