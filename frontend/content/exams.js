@@ -3479,6 +3479,21 @@ const EXAMS = {
         { stem: 'Lực kế là dụng cụ dùng để đo?', options: ['Khối lượng', 'Lực (trọng lượng)', 'Thể tích', 'Nhiệt độ'], answer: 1, explanation: 'Lực kế đo độ lớn của lực.' },
       ],
     },
+    {
+      examId: 'khtn8-24', title: 'Kiểm tra 45′ #24 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4{,}4$ g $CO_2$ ($M=44$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=4{,}4/44=0{,}1$ mol.' },
+        { stem: 'Lực $1000$ N ép vuông góc lên diện tích $4$ m². Áp suất là?', options: ['$250$ Pa', '$4000$ Pa', '$400$ Pa', '$25$ Pa'], answer: 0, explanation: '$p=F/S=1000/4=250$ Pa.' },
+        { stem: 'Một khối gỗ có khối lượng $600$ g và thể tích $1000$ cm³. Khối lượng riêng?', options: ['$6$ g/cm³', '$0{,}6$ g/cm³', '$60$ g/cm³', '$0{,}06$ g/cm³'], answer: 1, explanation: '$D=m/V=600/1000=0{,}6$ g/cm³.' },
+        { stem: 'Oxide acid $SO_2$ tác dụng với nước tạo thành?', options: ['Base', 'Muối', 'Oxide base', 'Acid'], answer: 3, explanation: '$SO_2+H_2O\\to H_2SO_3$ (acid).' },
+        { stem: 'Hệ thần kinh ở người gồm những bộ phận nào?', options: ['Bộ phận trung ương và bộ phận ngoại biên', 'Chỉ có não', 'Chỉ có tủy sống', 'Chỉ có dây thần kinh'], answer: 0, explanation: 'Trung ương (não, tủy sống) và ngoại biên (dây thần kinh, hạch).' },
+        { stem: 'Hòa tan $18$ g chất tan vào $82$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$22\\%$', '$18\\%$', '$82\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=18/100\\times 100\\%=18\\%$.' },
+        { stem: 'Vật nằm yên trên mặt bàn, lực nào cân bằng với trọng lực?', options: ['Lực ma sát', 'Phản lực của mặt bàn', 'Lực đẩy Archimedes', 'Lực hút'], answer: 1, explanation: 'Phản lực của mặt bàn hướng lên cân bằng trọng lực.' },
+        { stem: 'Phản ứng giữa hai dung dịch trao đổi thành phần để tạo chất mới là?', options: ['Phản ứng thế', 'Phản ứng phân hủy', 'Phản ứng hóa hợp', 'Phản ứng trao đổi'], answer: 3, explanation: 'VD: $BaCl_2+Na_2SO_4\\to BaSO_4+2NaCl$.' },
+        { stem: 'Tiểu cầu trong máu có vai trò chính là?', options: ['Vận chuyển oxi', 'Tiêu diệt vi khuẩn', 'Tham gia đông máu', 'Tiêu hóa thức ăn'], answer: 2, explanation: 'Tiểu cầu giúp hình thành cục máu đông.' },
+        { stem: 'Lớp không khí bao quanh Trái Đất gây ra?', options: ['Lực ma sát', 'Áp suất khí quyển', 'Lực đẩy Archimedes', 'Trọng lực'], answer: 1, explanation: 'Trọng lượng khí quyển gây ra áp suất khí quyển.' },
+      ],
+    },
   ],
 
   ANH8: [
