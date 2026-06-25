@@ -2981,6 +2981,21 @@ const EXAMS = {
         { stem: 'Xác suất tung một đồng xu cân đối được mặt ngửa?', options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{3}$', '$1$', '$\\dfrac{1}{2}$'], answer: 3, explanation: 'Hai khả năng đồng khả năng ⇒ $\\dfrac{1}{2}$.' },
       ],
     },
+    {
+      examId: 'toan8-15', title: 'Kiểm tra 45′ #15 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(3x-2)^2$?', options: ['$9x^2-12x+4$', '$9x^2-6x+4$', '$3x^2-12x+4$', '$9x^2+12x+4$'], answer: 0, explanation: '$(3x-2)^2=9x^2-12x+4$.' },
+        { stem: 'Phân tích $2x^2-8$ thành nhân tử?', options: ['$2(x^2-4)$', '$(2x-4)(x+2)$', '$(x-2)(x+2)$', '$2(x-2)(x+2)$'], answer: 3, explanation: '$2x^2-8=2(x^2-4)=2(x-2)(x+2)$.' },
+        { stem: 'Nghiệm của phương trình $\\dfrac{x}{3}+1=3$?', options: ['$x=3$', '$x=9$', '$x=6$', '$x=2$'], answer: 2, explanation: '$\\dfrac{x}{3}=2 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-9}{x+3}$ (với $x\\ne-3$)?', options: ['$x+3$', '$x-3$', '$x^2-3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x-3)(x+3)}{x+3}=x-3$.' },
+        { stem: 'Hàm số $y=ax+b$ là hàm số bậc nhất khi nào?', options: ['$a=0$', '$b\\ne0$', '$b=0$', '$a\\ne0$'], answer: 3, explanation: 'Điều kiện hàm bậc nhất là $a\\ne0$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $6$ và $8$. Chu vi tam giác?', options: ['$24$', '$48$', '$14$', '$20$'], answer: 0, explanation: 'Cạnh huyền $=\\sqrt{36+64}=10$; chu vi $=6+8+10=24$.' },
+        { stem: 'Khai triển $(a+b)^3$?', options: ['$a^3+b^3$', '$a^3+3a^2b+3ab^2+b^3$', '$a^3-3a^2b+3ab^2-b^3$', '$a^3+3ab+b^3$'], answer: 1, explanation: '$(a+b)^3=a^3+3a^2b+3ab^2+b^3$.' },
+        { stem: 'Diện tích tam giác có đáy $10$ và chiều cao $6$?', options: ['$60$', '$16$', '$30$', '$15$'], answer: 2, explanation: '$S=\\dfrac{1}{2}\\cdot10\\cdot6=30$.' },
+        { stem: 'Hai tam giác đồng dạng theo trường hợp góc–góc khi?', options: ['Ba cạnh tương ứng tỉ lệ', 'Hai góc của tam giác này bằng hai góc của tam giác kia', 'Một góc bằng nhau', 'Hai cạnh tỉ lệ'], answer: 1, explanation: 'Trường hợp g–g: hai cặp góc tương ứng bằng nhau.' },
+        { stem: 'Trung vị của dãy số $1, 3, 5, 7, 9$?', options: ['$5$', '$3$', '$7$', '$1$'], answer: 0, explanation: 'Số ở giữa dãy đã sắp xếp là $5$.' },
+      ],
+    },
   ],
 
   KHTN8: [
