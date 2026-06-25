@@ -2816,6 +2816,21 @@ const EXAMS = {
         { stem: 'Đường trung bình của tam giác có độ dài bằng?', options: ['bằng cạnh đáy', 'gấp đôi cạnh đáy', '$\\dfrac{1}{3}$ cạnh đáy', 'nửa cạnh đáy'], answer: 3, explanation: 'Đường trung bình song song và bằng nửa cạnh thứ ba.' },
       ],
     },
+    {
+      examId: 'toan8-4', title: 'Kiểm tra 45′ #4 — Toán 8 (Đại số)', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-5)^2$?', options: ['$x^2-25$', '$x^2-5x+25$', '$x^2+10x+25$', '$x^2-10x+25$'], answer: 3, explanation: '$(x-5)^2=x^2-10x+25$.' },
+        { stem: 'Tính $(3x)^2$?', options: ['$3x^2$', '$6x^2$', '$9x^2$', '$9x$'], answer: 2, explanation: '$(3x)^2=9x^2$.' },
+        { stem: 'Phân tích $4x^2-9$ thành nhân tử?', options: ['$(4x-9)(x+1)$', '$(2x-3)^2$', '$(2x-3)(2x+3)$', '$(2x+3)^2$'], answer: 2, explanation: '$4x^2-9=(2x)^2-3^2=(2x-3)(2x+3)$.' },
+        { stem: 'Nghiệm của phương trình $x+7=2$?', options: ['$-5$', '$5$', '$9$', '$-9$'], answer: 0, explanation: '$x=2-7=-5$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{2}{x-1}$?', options: ['$x\\ne0$', '$x\\ne1$', '$x\\ne-1$', '$x=1$'], answer: 1, explanation: 'Mẫu khác 0: $x\\ne1$.' },
+        { stem: 'Nghiệm của phương trình $3x=15$?', options: ['$3$', '$12$', '$18$', '$5$'], answer: 3, explanation: '$x=15/3=5$.' },
+        { stem: 'Diện tích hình vuông cạnh $7$?', options: ['$49$', '$14$', '$28$', '$21$'], answer: 0, explanation: '$S=7^2=49$.' },
+        { stem: 'Rút gọn $(a+b)^2-(a-b)^2$?', options: ['$2ab$', '$4ab$', '$ab$', '$0$'], answer: 1, explanation: '$(a^2+2ab+b^2)-(a^2-2ab+b^2)=4ab$.' },
+        { stem: 'Trường hợp đồng dạng góc–góc (g.g) cần mấy cặp góc bằng nhau?', options: ['$1$', '$3$', '$2$', '$0$'], answer: 2, explanation: 'Hai tam giác đồng dạng (g.g) khi có 2 cặp góc bằng nhau.' },
+        { stem: 'Phân tích $x^2-x$ thành nhân tử?', options: ['$x(x+1)$', '$(x-1)^2$', '$x^2$', '$x(x-1)$'], answer: 3, explanation: '$x^2-x=x(x-1)$.' },
+      ],
+    },
   ],
 
   KHTN8: [
