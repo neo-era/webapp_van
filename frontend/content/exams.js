@@ -4409,6 +4409,21 @@ const EXAMS = {
         { stem: 'Vì sao mặt đường nhựa (màu đen) nóng hơn vỉa hè sáng màu khi trời nắng?', options: ['Vì nhựa nặng hơn', 'Vì màu đen hấp thụ nhiệt nhiều hơn', 'Vì nhựa mềm', 'Không có lý do'], answer: 1, explanation: 'Vật màu sẫm hấp thụ bức xạ nhiệt mạnh hơn.' },
       ],
     },
+    {
+      examId: 'khtn8-55', title: 'Kiểm tra 45′ #55 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $12{,}6$ g $HNO_3$ ($M=63$)?', options: ['$0{,}1$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 2, explanation: '$n=12{,}6/63=0{,}2$ mol.' },
+        { stem: 'Áp suất tại độ sâu $4{,}5$ m trong nước ($d=10000$ N/m³)?', options: ['$45000$ Pa', '$4500$ Pa', '$450000$ Pa', '$14500$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 4{,}5=45000$ Pa.' },
+        { stem: 'Một vật có khối lượng $42$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$21$ g/cm³', '$2{,}1$ g/cm³', '$0{,}21$ g/cm³', '$210$ g/cm³'], answer: 1, explanation: '$D=m/V=42/20=2{,}1$ g/cm³.' },
+        { stem: 'Đốt cháy khí hydro trong oxi tạo thành sản phẩm nào?', options: ['$O_2$', '$H_2$', '$CO_2$', '$H_2O$'], answer: 3, explanation: '$2H_2+O_2\\to 2H_2O$.' },
+        { stem: 'Tuyến nội tiết nào tham gia điều hòa lượng đường trong máu?', options: ['Tuyến tụy', 'Phổi', 'Dạ dày', 'Tim'], answer: 0, explanation: 'Tuyến tụy tiết insulin và glucagon điều hòa đường huyết.' },
+        { stem: 'Hòa tan $13{,}5$ g chất tan vào $86{,}5$ g nước. Nồng độ phần trăm dung dịch?', options: ['$27\\%$', '$86{,}5\\%$', '$13{,}5\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=13{,}5/100\\times 100\\%=13{,}5\\%$.' },
+        { stem: 'Tay nắm cửa đặt xa bản lề (trục quay) nhằm mục đích gì?', options: ['Lợi về đường đi', 'Lợi về lực (dễ mở hơn)', 'Thiệt về lực', 'Không thay đổi gì'], answer: 1, explanation: 'Cánh tay đòn dài hơn ⇒ tốn ít lực hơn để mở cửa.' },
+        { stem: 'Khối lượng của $0{,}5$ mol HCl ($M=36{,}5$)?', options: ['$36{,}5$ g', '$73$ g', '$9{,}125$ g', '$18{,}25$ g'], answer: 3, explanation: '$m=0{,}5\\times 36{,}5=18{,}25$ g.' },
+        { stem: 'Phản xạ có điều kiện được hình thành chủ yếu nhờ?', options: ['Bẩm sinh', 'Di truyền', 'Học tập và rèn luyện', 'Ngẫu nhiên'], answer: 2, explanation: 'Phản xạ có điều kiện hình thành qua quá trình học tập, lặp lại.' },
+        { stem: 'Vì sao đáy ấm đun nước thường làm bằng nhôm hoặc kim loại?', options: ['Cho đẹp', 'Vì nhôm dẫn nhiệt tốt', 'Cho nhẹ', 'Cho rẻ'], answer: 1, explanation: 'Kim loại dẫn nhiệt tốt giúp đun nước nhanh sôi.' },
+      ],
+    },
   ],
 
   ANH8: [
