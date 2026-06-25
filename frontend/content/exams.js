@@ -3509,6 +3509,21 @@ const EXAMS = {
         { stem: 'Lớp không khí bao quanh Trái Đất gây ra?', options: ['Lực ma sát', 'Áp suất khí quyển', 'Lực đẩy Archimedes', 'Trọng lực'], answer: 1, explanation: 'Trọng lượng khí quyển gây ra áp suất khí quyển.' },
       ],
     },
+    {
+      examId: 'khtn8-25', title: 'Kiểm tra 45′ #25 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $3{,}4$ g $H_2S$ ($M=34$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=3{,}4/34=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $0{,}5$ m trong rượu ($d=8000$ N/m³)?', options: ['$4000$ Pa', '$16000$ Pa', '$400$ Pa', '$1600$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 0{,}5=4000$ Pa.' },
+        { stem: 'Cùng một thể tích, vật làm bằng chì (D lớn) so với vật bằng nhôm (D nhỏ) sẽ?', options: ['Nhẹ hơn', 'Nặng hơn', 'Bằng nhau', 'Không xác định'], answer: 1, explanation: '$m=D\\cdot V$, cùng $V$ thì $D$ lớn hơn ⇒ nặng hơn.' },
+        { stem: 'Phản ứng $Fe+CuSO_4\\to FeSO_4+Cu$ thuộc loại?', options: ['Hóa hợp', 'Phân hủy', 'Trao đổi', 'Thế'], answer: 3, explanation: 'Fe đẩy Cu ra khỏi muối ⇒ phản ứng thế.' },
+        { stem: 'Khí $CO_2$ làm đục nước vôi trong vì tạo thành?', options: ['Kết tủa $CaCO_3$', 'Khí $H_2$', 'Muối ăn', 'Nước'], answer: 0, explanation: '$CO_2+Ca(OH)_2\\to CaCO_3\\downarrow+H_2O$.' },
+        { stem: 'Hòa tan $12$ g chất tan vào $48$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$25\\%$', '$20\\%$', '$12\\%$'], answer: 2, explanation: '$m_{dd}=60$ g ⇒ $C\\%=12/60\\times 100\\%=20\\%$.' },
+        { stem: 'Đơn vị đo khối lượng riêng trong hệ SI là?', options: ['kg', 'kg/m³', 'N/m³', 'm³'], answer: 1, explanation: 'Khối lượng riêng đo bằng kg/m³.' },
+        { stem: 'Vòng tuần hoàn nhỏ đưa máu từ tim đến cơ quan nào để trao đổi khí?', options: ['Gan', 'Thận', 'Ruột', 'Phổi'], answer: 3, explanation: 'Vòng tuần hoàn nhỏ: tim → phổi → tim.' },
+        { stem: 'Quỳ tím chuyển sang màu đỏ khi gặp dung dịch?', options: ['Base', 'Acid', 'Muối trung tính', 'Nước cất'], answer: 1, explanation: 'Acid làm quỳ tím hóa đỏ.' },
+        { stem: 'Khi nén khí trong xilanh làm thể tích giảm thì áp suất khí sẽ?', options: ['Giảm', 'Không đổi', 'Tăng', 'Bằng $0$'], answer: 2, explanation: 'Thể tích giảm ⇒ áp suất khí tăng.' },
+      ],
+    },
   ],
 
   ANH8: [
