@@ -3929,6 +3929,21 @@ const EXAMS = {
         { stem: 'Lực ma sát nghỉ có vai trò gì khi ta đi bộ?', options: ['Làm ta mệt hơn', 'Giữ chân không bị trượt', 'Làm chân nóng lên', 'Không có tác dụng'], answer: 1, explanation: 'Ma sát nghỉ giữ chân bám đất, không trượt.' },
       ],
     },
+    {
+      examId: 'khtn8-39', title: 'Kiểm tra 45′ #39 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $14$ g CaO ($M=56$)?', options: ['$0{,}1$', '$0{,}5$', '$0{,}25$', '$1$'], answer: 2, explanation: '$n=14/56=0{,}25$ mol.' },
+        { stem: 'Áp suất tại độ sâu $7$ m trong nước ($d=10000$ N/m³)?', options: ['$70000$ Pa', '$7000$ Pa', '$700000$ Pa', '$17000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 7=70000$ Pa.' },
+        { stem: 'Một vật có khối lượng $39$ g và thể tích $5$ cm³. Khối lượng riêng?', options: ['$78$ g/cm³', '$7{,}8$ g/cm³', '$0{,}78$ g/cm³', '$780$ g/cm³'], answer: 1, explanation: '$D=m/V=39/5=7{,}8$ g/cm³.' },
+        { stem: 'Kim loại nào sau đây KHÔNG phản ứng với dung dịch HCl?', options: ['Zn', 'Fe', 'Mg', 'Cu'], answer: 3, explanation: 'Cu đứng sau H nên không đẩy được hiđro.' },
+        { stem: 'Vai trò chính của hệ hô hấp là gì?', options: ['Cung cấp $O_2$ và thải $CO_2$', 'Lọc máu', 'Tiêu hóa thức ăn', 'Vận chuyển máu'], answer: 0, explanation: 'Hệ hô hấp trao đổi $O_2$ và $CO_2$ với môi trường.' },
+        { stem: 'Hòa tan $13$ g chất tan vào $37$ g nước. Nồng độ phần trăm dung dịch?', options: ['$13\\%$', '$37\\%$', '$26\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=50$ g ⇒ $C\\%=13/50\\times 100\\%=26\\%$.' },
+        { stem: 'Khi đun nóng, chất lỏng nở ra vì sao?', options: ['Các phân tử đứng yên', 'Các phân tử chuyển động nhanh hơn, khoảng cách tăng', 'Khối lượng tăng', 'Màu sắc thay đổi'], answer: 1, explanation: 'Nhiệt độ tăng ⇒ phân tử chuyển động mạnh ⇒ thể tích tăng.' },
+        { stem: 'Khối lượng của $0{,}2$ mol $H_2SO_4$ ($M=98$)?', options: ['$9{,}8$ g', '$98$ g', '$49$ g', '$19{,}6$ g'], answer: 3, explanation: '$m=0{,}2\\times 98=19{,}6$ g.' },
+        { stem: 'Cơ quan nào trong ống tiêu hóa có chiều dài lớn nhất?', options: ['Dạ dày', 'Thực quản', 'Ruột non', 'Khoang miệng'], answer: 2, explanation: 'Ruột non dài khoảng 6–7 m, dài nhất.' },
+        { stem: 'Áp suất khí quyển chuẩn ở mực nước biển xấp xỉ?', options: ['$10000$ Pa', '$100000$ Pa', '$1000$ Pa', '$1000000$ Pa'], answer: 1, explanation: 'Khoảng $101325$ Pa $\\approx 100000$ Pa (1 atm).' },
+      ],
+    },
   ],
 
   ANH8: [
