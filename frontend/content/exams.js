@@ -3521,6 +3521,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $10, 10, 10, 10, 20$?', options: ['$10$', '$20$', '$12$', '$60$'], answer: 2, explanation: '$\\dfrac{10\\cdot4+20}{5}=\\dfrac{60}{5}=12$.' },
       ],
     },
+    {
+      examId: 'toan8-51', title: 'Kiểm tra 45′ #51 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(3x+4)(3x-4)$?', options: ['$9x^2+16$', '$3x^2-16$', '$9x^2-16$', '$9x^2-24x-16$'], answer: 2, explanation: 'Hiệu hai bình phương: $(3x)^2-4^2=9x^2-16$.' },
+        { stem: 'Phân tích $x^2+4x+3$ thành nhân tử?', options: ['$(x+1)(x+3)$', '$(x-1)(x-3)$', '$(x+1)(x-3)$', '$(x+2)(x+2)$'], answer: 0, explanation: '$x^2+4x+3=(x+1)(x+3)$.' },
+        { stem: 'Nghiệm của phương trình $11x-15=8x+6$?', options: ['$x=3$', '$x=7$', '$x=21$', '$x=-7$'], answer: 1, explanation: '$3x=21 \\Leftrightarrow x=7$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-169}{x+13}$ (với $x\\ne-13$)?', options: ['$x+13$', '$x$', '$x^2-13$', '$x-13$'], answer: 3, explanation: '$\\dfrac{(x-13)(x+13)}{x+13}=x-13$.' },
+        { stem: 'Đường thẳng $y=3x+12$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=12$', '$x=4$', '$x=-4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 3x=-12 \\Rightarrow x=-4$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $65$ và $72$. Cạnh huyền?', options: ['$137$', '$97$', '$90$', '$95$'], answer: 1, explanation: '$\\sqrt{65^2+72^2}=\\sqrt{9409}=97$.' },
+        { stem: 'Khai triển $(a-10)^2$?', options: ['$a^2-20a+100$', '$a^2+20a+100$', '$a^2-100$', '$a^2-10a+100$'], answer: 0, explanation: '$(a-10)^2=a^2-20a+100$.' },
+        { stem: 'Diện tích hình thang có hai đáy $7$ và $13$, chiều cao $4$?', options: ['$80$', '$20$', '$28$', '$40$'], answer: 3, explanation: '$S=\\dfrac{(7+13)}{2}\\cdot4=40$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-8x+15}{x-3}$ (với $x\\ne3$)?', options: ['$x+5$', '$x-5$', '$x^2-5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x-3)(x-5)}{x-3}=x-5$.' },
+        { stem: 'Số trung bình cộng của $12, 12, 12, 12, 12, 18$?', options: ['$12$', '$18$', '$13$', '$78$'], answer: 2, explanation: '$\\dfrac{12\\cdot5+18}{6}=\\dfrac{78}{6}=13$.' },
+      ],
+    },
   ],
 
   KHTN8: [
