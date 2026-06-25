@@ -4169,6 +4169,21 @@ const EXAMS = {
         { stem: 'Vì sao cốc thủy tinh dày dễ vỡ hơn cốc mỏng khi rót nước nóng vào?', options: ['Thủy tinh quá nặng', 'Thủy tinh nở vì nhiệt không đều', 'Nước quá nóng', 'Cốc quá cũ'], answer: 1, explanation: 'Lớp trong nóng nở trước, lớp ngoài chưa nở ⇒ nứt vỡ.' },
       ],
     },
+    {
+      examId: 'khtn8-47', title: 'Kiểm tra 45′ #47 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $17$ g $NH_3$ ($M=17$)?', options: ['$0{,}5$', '$2$', '$1$', '$0{,}25$'], answer: 2, explanation: '$n=17/17=1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $15$ m trong nước ($d=10000$ N/m³)?', options: ['$150000$ Pa', '$15000$ Pa', '$1500000$ Pa', '$25000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 15=150000$ Pa.' },
+        { stem: 'Một vật có khối lượng $27$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$27$ g/cm³', '$2{,}7$ g/cm³', '$0{,}27$ g/cm³', '$270$ g/cm³'], answer: 1, explanation: '$D=m/V=27/10=2{,}7$ g/cm³.' },
+        { stem: 'Cho CaO tác dụng với dung dịch HCl tạo thành?', options: ['Khí $H_2$', 'Base', 'Oxide acid', 'Muối và nước'], answer: 3, explanation: '$CaO+2HCl\\to CaCl_2+H_2O$.' },
+        { stem: 'Cơ quan nào hấp thụ chất dinh dưỡng nhiều nhất trong ống tiêu hóa?', options: ['Ruột non', 'Dạ dày', 'Ruột già', 'Thực quản'], answer: 0, explanation: 'Ruột non có lông ruột, hấp thụ phần lớn chất dinh dưỡng.' },
+        { stem: 'Hòa tan $9$ g chất tan vào $141$ g nước. Nồng độ phần trăm dung dịch?', options: ['$9\\%$', '$141\\%$', '$6\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=150$ g ⇒ $C\\%=9/150\\times 100\\%=6\\%$.' },
+        { stem: 'Đòn bẩy có điểm tựa ở giữa, hai cánh tay đòn bằng nhau thì?', options: ['Lợi gấp đôi về lực', 'Không lợi cũng không thiệt về lực', 'Thiệt về lực', 'Lợi về đường đi'], answer: 1, explanation: 'Hai cánh tay đòn bằng nhau ⇒ lực hai bên bằng nhau.' },
+        { stem: 'Khối lượng của $0{,}5$ mol khí $H_2$ ($M=2$)?', options: ['$0{,}5$ g', '$2$ g', '$4$ g', '$1$ g'], answer: 3, explanation: '$m=0{,}5\\times 2=1$ g.' },
+        { stem: 'Tuyến nội tiết nào tiết hormone insulin điều hòa đường huyết?', options: ['Tuyến giáp', 'Tuyến yên', 'Tuyến tụy', 'Tuyến trên thận'], answer: 2, explanation: 'Tuyến tụy tiết insulin làm giảm đường huyết.' },
+        { stem: 'Khi đun nước, nước nóng đi lên và nước lạnh đi xuống tạo dòng. Đây là hình thức truyền nhiệt nào?', options: ['Dẫn nhiệt', 'Đối lưu', 'Bức xạ nhiệt', 'Bay hơi'], answer: 1, explanation: 'Sự truyền nhiệt bằng dòng chất lỏng/khí gọi là đối lưu.' },
+      ],
+    },
   ],
 
   ANH8: [
