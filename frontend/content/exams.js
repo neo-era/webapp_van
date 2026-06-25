@@ -4022,6 +4022,21 @@ const EXAMS = {
         { stem: '____ you ever eaten sushi?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-28', title: 'Kiểm tra 45′ #28 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'The sun ____ in the east.', options: ['rise', 'rose', 'rises', 'rising'], answer: 2, explanation: 'Chân lý ⇒ hiện tại đơn, chủ ngữ số ít ⇒ rises.' },
+        { stem: 'This road is ____ than that one.', options: ['narrower', 'narrow', 'narrowest', 'more narrow'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: narrower.' },
+        { stem: 'I ____ help you carry the bags if you want.', options: ['must', 'can', 'should', 'would'], answer: 1, explanation: 'can = đề nghị giúp đỡ.' },
+        { stem: 'If they invite me, I ____ to the party.', options: ['come', 'came', 'would come', 'will come'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The letters ____ every morning.', options: ['deliver', 'delivers', 'are delivered', 'is delivered'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are delivered.' },
+        { stem: 'The day ____ I was born was sunny.', options: ['when', 'which', 'who', 'whose'], answer: 0, explanation: 'when chỉ thời gian.' },
+        { stem: 'He has been a teacher ____ 15 years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (15 years).' },
+        { stem: "Choose the synonym of 'start'.", options: ['stop', 'end', 'finish', 'begin'], answer: 3, explanation: 'start ≈ begin (bắt đầu).' },
+        { stem: "Choose the antonym of 'buy'.", options: ['purchase', 'sell', 'get', 'own'], answer: 1, explanation: 'buy ↔ sell (bán).' },
+        { stem: 'She ____ never tried Thai food before.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ has.' },
+      ],
+    },
   ],
 };
 
