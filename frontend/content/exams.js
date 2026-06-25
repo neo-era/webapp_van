@@ -3476,6 +3476,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $6, 6, 6, 6, 16$?', options: ['$6$', '$16$', '$8$', '$40$'], answer: 2, explanation: '$\\dfrac{6+6+6+6+16}{5}=\\dfrac{40}{5}=8$.' },
       ],
     },
+    {
+      examId: 'toan8-48', title: 'Kiểm tra 45′ #48 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+18)(x-18)$?', options: ['$x^2+324$', '$x^2-36x+324$', '$x^2-324$', '$x^2-18x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-324$.' },
+        { stem: 'Phân tích $x^2-5x$ thành nhân tử?', options: ['$x(x-5)$', '$x(x+5)$', '$(x-5)^2$', '$5x$'], answer: 0, explanation: '$x^2-5x=x(x-5)$.' },
+        { stem: 'Nghiệm của phương trình $8x-9=5x+6$?', options: ['$x=3$', '$x=5$', '$x=15$', '$x=-5$'], answer: 1, explanation: '$3x=15 \\Leftrightarrow x=5$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-100}{x-10}$ (với $x\\ne10$)?', options: ['$x-10$', '$x$', '$x^2+10$', '$x+10$'], answer: 3, explanation: '$\\dfrac{(x-10)(x+10)}{x-10}=x+10$.' },
+        { stem: 'Đường thẳng $y=11x-33$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=33$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 11x=33 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $25$, một cạnh góc vuông $20$. Cạnh góc vuông còn lại?', options: ['$45$', '$15$', '$\\sqrt{1025}$', '$5$'], answer: 1, explanation: '$\\sqrt{25^2-20^2}=\\sqrt{225}=15$.' },
+        { stem: 'Khai triển $(10x-1)^2$?', options: ['$100x^2-20x+1$', '$100x^2+20x+1$', '$100x^2-1$', '$10x^2-20x+1$'], answer: 0, explanation: '$(10x-1)^2=100x^2-20x+1$.' },
+        { stem: 'Thể tích hình lập phương cạnh $7$?', options: ['$49$', '$21$', '$147$', '$343$'], answer: 3, explanation: '$V=7^3=343$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+5x-24}{x+8}$ (với $x\\ne-8$)?', options: ['$x+3$', '$x-3$', '$x^2-3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x+8)(x-3)}{x+8}=x-3$.' },
+        { stem: 'Số trung bình cộng của $9, 9, 9, 9, 9, 15$?', options: ['$9$', '$15$', '$10$', '$60$'], answer: 2, explanation: '$\\dfrac{9\\cdot5+15}{6}=\\dfrac{60}{6}=10$.' },
+      ],
+    },
   ],
 
   KHTN8: [
