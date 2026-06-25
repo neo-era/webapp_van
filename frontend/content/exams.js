@@ -3221,6 +3221,21 @@ const EXAMS = {
         { stem: 'Mốt của dãy số $7, 7, 7, 9, 10$?', options: ['$9$', '$10$', '$7$', '$5$'], answer: 2, explanation: 'Giá trị $7$ xuất hiện nhiều nhất ⇒ mốt $=7$.' },
       ],
     },
+    {
+      examId: 'toan8-31', title: 'Kiểm tra 45′ #31 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x+7)(2x-7)$?', options: ['$4x^2+49$', '$2x^2-49$', '$4x^2-49$', '$4x^2-14x-49$'], answer: 2, explanation: 'Hiệu hai bình phương: $4x^2-49$.' },
+        { stem: 'Phân tích $x^2-2x-8$ thành nhân tử?', options: ['$(x-4)(x+2)$', '$(x+4)(x-2)$', '$(x-4)(x-2)$', '$(x+4)(x+2)$'], answer: 0, explanation: '$x^2-2x-8=(x-4)(x+2)$.' },
+        { stem: 'Nghiệm của phương trình $9-2x=5$?', options: ['$x=3$', '$x=2$', '$x=7$', '$x=-2$'], answer: 1, explanation: '$-2x=-4 \\Leftrightarrow x=2$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-25}{x^2-5x}$ (với $x\\ne0, x\\ne5$)?', options: ['$x+5$', '$x-5$', '$\\dfrac{x}{x-5}$', '$\\dfrac{x+5}{x}$'], answer: 3, explanation: '$\\dfrac{(x-5)(x+5)}{x(x-5)}=\\dfrac{x+5}{x}$.' },
+        { stem: 'Đường thẳng $y=2x+6$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=6$', '$x=3$', '$x=-3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 2x=-6 \\Rightarrow x=-3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $20$ và $21$. Cạnh huyền?', options: ['$41$', '$29$', '$39$', '$31$'], answer: 1, explanation: '$\\sqrt{20^2+21^2}=\\sqrt{841}=29$.' },
+        { stem: 'Khai triển $(4-x)^2$?', options: ['$16-8x+x^2$', '$16+8x+x^2$', '$16-x^2$', '$16-4x+x^2$'], answer: 0, explanation: '$(4-x)^2=16-8x+x^2$.' },
+        { stem: 'Diện tích hình thoi có hai đường chéo $10$ và $12$?', options: ['$120$', '$22$', '$30$', '$60$'], answer: 3, explanation: '$S=\\dfrac{1}{2}d_1d_2=\\dfrac{1}{2}\\cdot10\\cdot12=60$.' },
+        { stem: 'Rút gọn $\\dfrac{x^3-x}{x}$ (với $x\\ne0$)?', options: ['$x^2+1$', '$x^2-1$', '$x-1$', '$x^2$'], answer: 1, explanation: '$\\dfrac{x(x^2-1)}{x}=x^2-1$.' },
+        { stem: 'Trung vị của dãy số $3, 5, 7, 9, 11$?', options: ['$5$', '$9$', '$7$', '$11$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
