@@ -3416,6 +3416,21 @@ const EXAMS = {
         { stem: 'Trung vị của dãy số $2, 2, 5, 8, 9$?', options: ['$2$', '$8$', '$5$', '$9$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $5$.' },
       ],
     },
+    {
+      examId: 'toan8-44', title: 'Kiểm tra 45′ #44 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+14)(x-14)$?', options: ['$x^2+196$', '$x^2-28x+196$', '$x^2-196$', '$x^2-14x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-196$.' },
+        { stem: 'Phân tích $x^2+15x+56$ thành nhân tử?', options: ['$(x+7)(x+8)$', '$(x-7)(x-8)$', '$(x+6)(x+9)$', '$(x+7)(x-8)$'], answer: 0, explanation: '$x^2+15x+56=(x+7)(x+8)$.' },
+        { stem: 'Nghiệm của phương trình $7x-2=3x+14$?', options: ['$x=2$', '$x=4$', '$x=16$', '$x=-4$'], answer: 1, explanation: '$4x=16 \\Leftrightarrow x=4$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-14x+49}{x-7}$ (với $x\\ne7$)?', options: ['$x+7$', '$x$', '$x^2-7$', '$x-7$'], answer: 3, explanation: '$\\dfrac{(x-7)^2}{x-7}=x-7$.' },
+        { stem: 'Đường thẳng $y=7x-21$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=21$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 7x=21 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $33$ và $44$. Cạnh huyền?', options: ['$77$', '$55$', '$50$', '$53$'], answer: 1, explanation: '$\\sqrt{33^2+44^2}=\\sqrt{3025}=55$.' },
+        { stem: 'Khai triển $(6x-1)^2$?', options: ['$36x^2-12x+1$', '$36x^2+12x+1$', '$36x^2-1$', '$6x^2-12x+1$'], answer: 0, explanation: '$(6x-1)^2=36x^2-12x+1$.' },
+        { stem: 'Diện tích hình thang có hai đáy $6$ và $10$, chiều cao $8$?', options: ['$128$', '$16$', '$48$', '$64$'], answer: 3, explanation: '$S=\\dfrac{(6+10)}{2}\\cdot8=64$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+3x-10}{x-2}$ (với $x\\ne2$)?', options: ['$x-5$', '$x+5$', '$x^2+5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x-2)(x+5)}{x-2}=x+5$.' },
+        { stem: 'Số trung bình cộng của $4, 8, 12, 16, 20, 24$?', options: ['$12$', '$24$', '$14$', '$84$'], answer: 2, explanation: '$\\dfrac{4+8+12+16+20+24}{6}=\\dfrac{84}{6}=14$.' },
+      ],
+    },
   ],
 
   KHTN8: [
