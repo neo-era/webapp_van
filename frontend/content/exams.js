@@ -3629,6 +3629,21 @@ const EXAMS = {
         { stem: 'Lực ma sát trượt xuất hiện khi nào?', options: ['Vật đứng yên', 'Một vật trượt trên bề mặt vật khác', 'Vật bay trong không khí', 'Vật rơi tự do'], answer: 1, explanation: 'Ma sát trượt sinh ra khi vật trượt trên bề mặt khác.' },
       ],
     },
+    {
+      examId: 'khtn8-29', title: 'Kiểm tra 45′ #29 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $1{,}7$ g $NH_3$ ($M=17$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=1{,}7/17=0{,}1$ mol.' },
+        { stem: 'Lực $350$ N ép vuông góc lên diện tích $0{,}5$ m². Áp suất là?', options: ['$700$ Pa', '$175$ Pa', '$70$ Pa', '$1750$ Pa'], answer: 0, explanation: '$p=F/S=350/0{,}5=700$ Pa.' },
+        { stem: 'Một vật có khối lượng $63$ g và thể tích $9$ cm³. Khối lượng riêng?', options: ['$63$ g/cm³', '$7$ g/cm³', '$0{,}7$ g/cm³', '$70$ g/cm³'], answer: 1, explanation: '$D=m/V=63/9=7$ g/cm³.' },
+        { stem: 'Oxide base CaO hấp thụ khí nào để tạo thành $CaCO_3$?', options: ['$O_2$', '$N_2$', '$H_2$', '$CO_2$'], answer: 3, explanation: '$CaO+CO_2\\to CaCO_3$.' },
+        { stem: 'Khí thở ra khỏi cơ thể giàu thành phần nào?', options: ['$CO_2$ và hơi nước', 'Chỉ có $O_2$', 'Chỉ có $N_2$', 'Chỉ có $H_2$'], answer: 0, explanation: 'Khí thở ra giàu $CO_2$ và hơi nước.' },
+        { stem: 'Hòa tan $8$ g chất tan vào $32$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$25\\%$', '$20\\%$', '$8\\%$'], answer: 2, explanation: '$m_{dd}=40$ g ⇒ $C\\%=8/40\\times 100\\%=20\\%$.' },
+        { stem: 'Trọng lượng của vật khối lượng $2$ kg (lấy $g=10$ N/kg)?', options: ['$2$ N', '$20$ N', '$200$ N', '$0{,}2$ N'], answer: 1, explanation: '$P=10\\cdot m=10\\times 2=20$ N.' },
+        { stem: 'Đốt cháy $4$ g $H_2$ với $O_2$ ($2H_2+O_2\\to 2H_2O$). Số mol nước tạo thành?', options: ['$0{,}5$', '$1$', '$4$', '$2$'], answer: 3, explanation: '$n_{H_2}=2$ mol ⇒ $n_{H_2O}=2$ mol.' },
+        { stem: 'Bộ phận nào của hệ tiêu hóa chứa dịch vị (acid HCl và pepsin)?', options: ['Ruột non', 'Gan', 'Dạ dày', 'Thực quản'], answer: 2, explanation: 'Dạ dày tiết dịch vị tiêu hóa protein.' },
+        { stem: 'Khi tăng diện tích bị ép và giữ nguyên áp lực, áp suất sẽ?', options: ['Tăng', 'Giảm', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: '$p=F/S$: $S$ tăng, $F$ không đổi ⇒ $p$ giảm.' },
+      ],
+    },
   ],
 
   ANH8: [
