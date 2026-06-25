@@ -2891,6 +2891,21 @@ const EXAMS = {
         { stem: 'Xác suất gieo một con xúc xắc cân đối được số chẵn?', options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$\\dfrac{2}{3}$'], answer: 1, explanation: 'Số chẵn $\\{2,4,6\\}$ ⇒ $P=3/6=1/2$.' },
       ],
     },
+    {
+      examId: 'toan8-9', title: 'Kiểm tra 45′ #9 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Rút gọn $(x+y)^2+(x-y)^2$?', options: ['$4xy$', '$x^2+y^2$', '$2x^2-2y^2$', '$2x^2+2y^2$'], answer: 3, explanation: 'Cộng hai khai triển: $2x^2+2y^2$.' },
+        { stem: 'Khai triển $(2a+b)^2$?', options: ['$4a^2+2ab+b^2$', '$2a^2+4ab+b^2$', '$4a^2+4ab+b^2$', '$4a^2+4ab+2b^2$'], answer: 2, explanation: '$(2a+b)^2=4a^2+4ab+b^2$.' },
+        { stem: 'Phân tích $x^3+27$ thành nhân tử?', options: ['$(x+3)^3$', '$(x-3)(x^2+3x+9)$', '$(x+3)(x^2-3x+9)$', '$(x+3)(x^2+3x+9)$'], answer: 2, explanation: '$x^3+3^3=(x+3)(x^2-3x+9)$.' },
+        { stem: 'Nghiệm của phương trình $7-2x=1$?', options: ['$2$', '$4$', '$-3$', '$3$'], answer: 3, explanation: '$2x=6 \\Leftrightarrow x=3$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{x-2}{x+5}$?', options: ['$x\\ne2$', '$x\\ne5$', '$x\\ne-5$', '$x\\ne-2$'], answer: 2, explanation: '$x+5\\ne0 \\Leftrightarrow x\\ne-5$.' },
+        { stem: 'Hàm số bậc nhất $y=ax+b$ nghịch biến khi nào?', options: ['$a<0$', '$a>0$', '$a=0$', '$b<0$'], answer: 0, explanation: 'Hàm số bậc nhất nghịch biến khi $a<0$.' },
+        { stem: 'Chu vi của tam giác đều cạnh $a$?', options: ['$a$', '$3a$', '$2a$', '$a^2$'], answer: 1, explanation: 'Tam giác đều có 3 cạnh bằng nhau ⇒ $P=3a$.' },
+        { stem: 'Hai tam giác bằng nhau thì chúng?', options: ['không đồng dạng', 'đồng dạng tỉ số $2$', 'khác nhau', 'đồng dạng tỉ số $1$'], answer: 3, explanation: 'Hai tam giác bằng nhau là trường hợp đặc biệt của đồng dạng với $k=1$.' },
+        { stem: 'Rút gọn $\\dfrac{x}{x}+\\dfrac{1}{x}$ (với $x\\ne0$)?', options: ['$\\dfrac{2}{x}$', '$\\dfrac{x+1}{x}$', '$x+1$', '$\\dfrac{1}{x}$'], answer: 1, explanation: '$1+\\dfrac{1}{x}=\\dfrac{x+1}{x}$.' },
+        { stem: 'Số trung bình cộng của $2, 4, 6, 8, 10, 12$?', options: ['$7$', '$6$', '$8$', '$42$'], answer: 0, explanation: '$42/6=7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
