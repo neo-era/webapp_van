@@ -5147,6 +5147,21 @@ const EXAMS = {
         { stem: 'She has ____ visited that museum, so it is not new to her.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
       ],
     },
+    {
+      examId: 'anh8-53', title: 'Kiểm tra 45′ #53 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ in this house since 2010.', options: ['lives', 'lived', 'has lived', 'living'], answer: 2, explanation: 'since 2010 ⇒ hiện tại hoàn thành: has lived.' },
+        { stem: 'Health is ____ than money.', options: ['precious', 'preciouser', 'most precious', 'more precious'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more precious.' },
+        { stem: 'I ____ help you carry that box.', options: ['must', 'can', 'should', 'would'], answer: 1, explanation: 'can = đề nghị giúp đỡ.' },
+        { stem: 'If it rains, we ____ the football match.', options: ['will cancel', 'cancel', 'cancelled', 'would cancel'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The room ____ by my mother every day.', options: ['clean', 'cleans', 'is cleaned', 'are cleaned'], answer: 2, explanation: 'Bị động hiện tại đơn: is cleaned.' },
+        { stem: 'The boy ____ is playing football is my brother.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: "She has been here ____ 9 o'clock.", options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (9 o\'clock).' },
+        { stem: "Choose the synonym of 'shout'.", options: ['whisper', 'mutter', 'murmur', 'yell'], answer: 3, explanation: 'shout ≈ yell (hét).' },
+        { stem: "Choose the antonym of 'soft'.", options: ['smooth', 'hard', 'gentle', 'mild'], answer: 1, explanation: 'soft ↔ hard (cứng).' },
+        { stem: '____ he ever played the violin?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ Has.' },
+      ],
+    },
   ],
 };
 
