@@ -3212,6 +3212,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'noisy'.", options: ['loud', 'noisy', 'quiet', 'deafening'], answer: 2, explanation: 'noisy ↔ quiet (yên tĩnh).' },
       ],
     },
+    {
+      examId: 'anh8-10', title: 'Kiểm tra 45′ #10 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ in this house for ten years.', options: ['live', 'lives', 'living', 'have lived'], answer: 3, explanation: 'for ten years ⇒ hiện tại hoàn thành.' },
+        { stem: 'My bag is ____ than yours.', options: ['heavier', 'heavy', 'heaviest', 'more heavy'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: heavier.' },
+        { stem: "You ____ touch that. It's dangerous.", options: ['must', 'can', "mustn't", 'may'], answer: 2, explanation: "mustn't = không được phép (cấm)." },
+        { stem: 'The window ____ by the strong wind.', options: ['broke', 'was broken', 'broken', 'breaks'], answer: 1, explanation: 'Câu bị động quá khứ: was broken.' },
+        { stem: 'If it is hot, ice ____.', options: ['melt', 'melted', 'will melt', 'melts'], answer: 3, explanation: 'Câu điều kiện loại 0 (chân lý): hiện tại đơn.' },
+        { stem: 'We saw a man ____ was crying in the street.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: "Choose the synonym of 'angry'.", options: ['calm', 'mad', 'happy', 'glad'], answer: 1, explanation: 'angry ≈ mad (tức giận).' },
+        { stem: "She ____ her keys. She can't find them.", options: ['has lost', 'loses', 'lost', 'losing'], answer: 0, explanation: 'Kết quả ở hiện tại ⇒ hiện tại hoàn thành (has lost).' },
+        { stem: "There isn't ____ sugar in the jar.", options: ['many', 'few', 'some', 'much'], answer: 3, explanation: 'sugar không đếm được ⇒ much.' },
+        { stem: "Choose the antonym of 'strong'.", options: ['powerful', 'strong', 'weak', 'tough'], answer: 2, explanation: 'strong ↔ weak (yếu).' },
+      ],
+    },
   ],
 };
 
