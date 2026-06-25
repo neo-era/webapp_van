@@ -3167,6 +3167,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'wet'.", options: ['damp', 'dry', 'moist', 'soaked'], answer: 1, explanation: 'wet ↔ dry (khô).' },
       ],
     },
+    {
+      examId: 'anh8-9', title: 'Kiểm tra 45′ #9 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: "She doesn't like coffee, ____ she?", options: ['does', "doesn't", 'is', "isn't"], answer: 0, explanation: 'Câu phủ định ⇒ đuôi khẳng định (does she).' },
+        { stem: 'I have ____ apples in my bag.', options: ['any', 'much', 'a', 'some'], answer: 3, explanation: 'Câu khẳng định, danh từ đếm được số nhiều ⇒ some.' },
+        { stem: "This is ____ interesting movie I've ever seen.", options: ['the most', 'most', 'more', 'the more'], answer: 0, explanation: 'So sánh nhất tính từ dài: the most.' },
+        { stem: 'He ____ to the radio when I came in.', options: ['listened', 'listens', 'listen', 'was listening'], answer: 3, explanation: 'Quá khứ tiếp diễn (đang nghe thì bị cắt ngang).' },
+        { stem: 'We must ____ our parents.', options: ['obeys', 'obey', 'obeying', 'obeyed'], answer: 1, explanation: 'must + động từ nguyên thể (obey).' },
+        { stem: 'If you study hard, you ____ good marks.', options: ['will get', 'get', 'got', 'getting'], answer: 0, explanation: 'Câu điều kiện loại 1: will get.' },
+        { stem: "Choose the synonym of 'fast'.", options: ['slow', 'late', 'quick', 'lazy'], answer: 2, explanation: 'fast ≈ quick (nhanh).' },
+        { stem: 'The bridge ____ last year.', options: ['built', 'builds', 'building', 'was built'], answer: 3, explanation: 'Câu bị động quá khứ: was built.' },
+        { stem: 'She is ____ as her sister.', options: ['taller', 'as tall', 'tallest', 'more tall'], answer: 1, explanation: 'So sánh ngang bằng: as tall as.' },
+        { stem: "Choose the antonym of 'noisy'.", options: ['loud', 'noisy', 'quiet', 'deafening'], answer: 2, explanation: 'noisy ↔ quiet (yên tĩnh).' },
+      ],
+    },
   ],
 };
 
