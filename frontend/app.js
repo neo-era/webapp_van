@@ -525,10 +525,22 @@ function renderProfile() {
     </div>
     <div class="card" style="margin-top:14px">
       <div class="profile-row"><span class="k">Email</span><span>${u.email}</span></div>
-      ${u.role === 'STUDENT' ? `<div class="profile-row"><span class="k">Khối</span><span>Lớp ${u.grade || 12}</span></div>` : ''}
+      ${u.role === 'STUDENT' ? `<div class="profile-row"><span class="k">Khối</span>
+        <select id="profile-grade" onchange="changeGrade(this.value)" style="padding:6px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg-surface);color:var(--text-primary);font-size:16px">
+          ${[8, 10, 11, 12].map((g) => `<option value="${g}"${(+u.grade || 12) === g ? ' selected' : ''}>Lớp ${g}</option>`).join('')}
+        </select></div>` : ''}
     </div>
     <button class="btn btn-ghost btn-block" style="margin-top:16px" onclick="openPasswordModal()">Đổi mật khẩu</button>
     <button class="btn btn-danger btn-block" style="margin-top:8px" onclick="logout()">Đăng xuất</button>`;
+}
+
+async function changeGrade(g) {
+  const grade = +g;
+  App.state.user.grade = grade;
+  saveSession();
+  App.state.learn = { view: 'subjects' };
+  showToast(`Đã chuyển sang Lớp ${grade}`, 'success');
+  try { await Api.call('updateProfile', { grade }); } catch (e) {}
 }
 
 function openPasswordModal() {
