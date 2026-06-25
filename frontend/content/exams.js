@@ -3257,6 +3257,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'strong'.", options: ['powerful', 'strong', 'weak', 'tough'], answer: 2, explanation: 'strong ↔ weak (yếu).' },
       ],
     },
+    {
+      examId: 'anh8-11', title: 'Kiểm tra 45′ #11 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'Look! They ____ football in the yard.', options: ['are playing', 'play', 'plays', 'played'], answer: 0, explanation: '"Look!" ⇒ hiện tại tiếp diễn: are playing.' },
+        { stem: 'This film is ____ than the one we saw last week.', options: ['interesting', 'interestinger', 'most interesting', 'more interesting'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn dùng "more interesting".' },
+        { stem: 'You ____ wear a helmet when riding a motorbike.', options: ['can', 'must', 'might', 'would'], answer: 1, explanation: 'Bắt buộc ⇒ must.' },
+        { stem: 'If it rains tomorrow, we ____ at home.', options: ['stayed', 'would stay', 'will stay', 'stay'], answer: 2, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The homework ____ by students every day.', options: ['is done', 'does', 'did', 'done'], answer: 0, explanation: 'Bị động hiện tại đơn: is + V3 (is done).' },
+        { stem: 'The man ____ lives next door is a doctor.', options: ['which', 'where', 'whose', 'who'], answer: 3, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'She has worked here ____ 2010.', options: ['for', 'since', 'in', 'at'], answer: 1, explanation: 'since + mốc thời gian (2010).' },
+        { stem: "Choose the synonym of 'huge'.", options: ['tiny', 'narrow', 'enormous', 'calm'], answer: 2, explanation: 'huge ≈ enormous (khổng lồ).' },
+        { stem: "Choose the antonym of 'ancient'.", options: ['old', 'historic', 'antique', 'modern'], answer: 3, explanation: 'ancient ↔ modern (hiện đại).' },
+        { stem: 'We ____ to the museum yesterday.', options: ['went', 'go', 'going', 'gone'], answer: 0, explanation: 'yesterday ⇒ quá khứ đơn: went.' },
+      ],
+    },
   ],
 };
 
