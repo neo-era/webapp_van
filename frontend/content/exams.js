@@ -2996,6 +2996,21 @@ const EXAMS = {
         { stem: 'Trung vị của dãy số $1, 3, 5, 7, 9$?', options: ['$5$', '$3$', '$7$', '$1$'], answer: 0, explanation: 'Số ở giữa dãy đã sắp xếp là $5$.' },
       ],
     },
+    {
+      examId: 'toan8-16', title: 'Kiểm tra 45′ #16 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+4)^2$?', options: ['$x^2+16$', '$x^2+4x+16$', '$x^2+8x+8$', '$x^2+8x+16$'], answer: 3, explanation: '$(x+4)^2=x^2+8x+16$.' },
+        { stem: 'Phân tích $x^3-8$ thành nhân tử?', options: ['$(x-2)(x^2+2x+4)$', '$(x-2)^3$', '$(x-2)(x^2-2x+4)$', '$(x+2)(x^2-2x+4)$'], answer: 0, explanation: '$x^3-8=(x-2)(x^2+2x+4)$.' },
+        { stem: 'Nghiệm của phương trình $4(x-1)=8$?', options: ['$x=2$', '$x=1$', '$x=3$', '$x=4$'], answer: 2, explanation: '$x-1=2 \\Leftrightarrow x=3$.' },
+        { stem: 'Phân thức $\\dfrac{6}{x-1}$ xác định khi nào?', options: ['$x\\ne0$', '$x\\ne1$', '$x\\ne6$', '$x\\ne-1$'], answer: 1, explanation: '$x-1\\ne0 \\Leftrightarrow x\\ne1$.' },
+        { stem: 'Hệ số góc của đường thẳng $y=-2x+3$?', options: ['$3$', '$2$', '$-3$', '$-2$'], answer: 3, explanation: 'Hệ số góc là hệ số của $x$, bằng $-2$.' },
+        { stem: 'Hai tam giác đồng dạng tỉ số $k$ thì tỉ số chu vi bằng?', options: ['$k^2$', '$2k$', '$k^3$', '$k$'], answer: 3, explanation: 'Tỉ số chu vi bằng tỉ số đồng dạng $k$.' },
+        { stem: 'Tính nhanh $99^2$ bằng hằng đẳng thức?', options: ['$9801$', '$9999$', '$9899$', '$9081$'], answer: 0, explanation: '$(100-1)^2=10000-200+1=9801$.' },
+        { stem: 'Diện tích hình chữ nhật có chiều dài $8$ và chiều rộng $5$?', options: ['$13$', '$26$', '$40$', '$45$'], answer: 2, explanation: '$S=8\\cdot5=40$.' },
+        { stem: 'Rút gọn $\\dfrac{x}{x^2}$ (với $x\\ne0$)?', options: ['$x$', '$\\dfrac{1}{x}$', '$x^2$', '$1$'], answer: 1, explanation: '$\\dfrac{x}{x^2}=\\dfrac{1}{x}$.' },
+        { stem: 'Gieo một con xúc xắc cân đối $6$ mặt, xác suất ra mặt có số chấm chẵn?', options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{3}$'], answer: 2, explanation: 'Có 3 mặt chẵn $\\{2,4,6\\}$ ⇒ $3/6=\\dfrac{1}{2}$.' },
+      ],
+    },
   ],
 
   KHTN8: [
