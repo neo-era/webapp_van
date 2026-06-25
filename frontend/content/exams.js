@@ -3326,6 +3326,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $4, 8, 12, 16, 20$?', options: ['$10$', '$20$', '$12$', '$60$'], answer: 2, explanation: '$\\dfrac{4+8+12+16+20}{5}=\\dfrac{60}{5}=12$.' },
       ],
     },
+    {
+      examId: 'toan8-38', title: 'Kiểm tra 45′ #38 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(6x+1)(6x-1)$?', options: ['$36x^2+1$', '$6x^2-1$', '$36x^2-1$', '$36x^2-12x-1$'], answer: 2, explanation: 'Hiệu hai bình phương: $36x^2-1$.' },
+        { stem: 'Phân tích $x^2+9x+18$ thành nhân tử?', options: ['$(x+3)(x+6)$', '$(x-3)(x-6)$', '$(x+2)(x+9)$', '$(x+3)(x-6)$'], answer: 0, explanation: '$x^2+9x+18=(x+3)(x+6)$.' },
+        { stem: 'Nghiệm của phương trình $8x-3=5x+9$?', options: ['$x=2$', '$x=4$', '$x=12$', '$x=-4$'], answer: 1, explanation: '$3x=12 \\Leftrightarrow x=4$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-49}{x-7}$ (với $x\\ne7$)?', options: ['$x-7$', '$x$', '$x^2+7$', '$x+7$'], answer: 3, explanation: '$\\dfrac{(x-7)(x+7)}{x-7}=x+7$.' },
+        { stem: 'Đường thẳng $y=3x-12$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=12$', '$x=-4$', '$x=4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 3x=12 \\Rightarrow x=4$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $18$ và $24$. Cạnh huyền?', options: ['$42$', '$30$', '$36$', '$28$'], answer: 1, explanation: '$\\sqrt{18^2+24^2}=\\sqrt{900}=30$.' },
+        { stem: 'Khai triển $(4-3x)^2$?', options: ['$16-24x+9x^2$', '$16+24x+9x^2$', '$16-9x^2$', '$16-12x+9x^2$'], answer: 0, explanation: '$(4-3x)^2=16-24x+9x^2$.' },
+        { stem: 'Diện tích hình thoi có hai đường chéo $8$ và $14$?', options: ['$112$', '$22$', '$28$', '$56$'], answer: 3, explanation: '$S=\\dfrac{1}{2}d_1d_2=\\dfrac{1}{2}\\cdot8\\cdot14=56$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+2x-15}{x-3}$ (với $x\\ne3$)?', options: ['$x-5$', '$x+5$', '$x^2+5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x-3)(x+5)}{x-3}=x+5$.' },
+        { stem: 'Trung vị của dãy số $5, 5, 5, 8, 12$?', options: ['$8$', '$12$', '$5$', '$25$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $5$.' },
+      ],
+    },
   ],
 
   KHTN8: [
