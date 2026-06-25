@@ -4112,6 +4112,21 @@ const EXAMS = {
         { stem: 'I have ____ finished my lunch.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-30', title: 'Kiểm tra 45′ #30 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'Right now, she ____ an interesting book.', options: ['reads', 'read', 'is reading', 'was reading'], answer: 2, explanation: '"Right now" ⇒ hiện tại tiếp diễn: is reading.' },
+        { stem: 'This building is ____ than that tower.', options: ['higher', 'high', 'highest', 'more high'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: higher.' },
+        { stem: '____ I borrow your pen, please?', options: ['Must', 'May', 'Should', 'Would'], answer: 1, explanation: 'May = xin phép lịch sự.' },
+        { stem: 'If the alarm rings, everyone ____ the building.', options: ['leave', 'left', 'would leave', 'will leave'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Chocolate ____ from cocoa beans.', options: ['make', 'makes', 'is made', 'are made'], answer: 2, explanation: 'Bị động hiện tại đơn: is made.' },
+        { stem: 'The house ____ roof is red belongs to us.', options: ['whose', 'who', 'which', 'where'], answer: 0, explanation: 'whose chỉ sự sở hữu.' },
+        { stem: 'I have studied French ____ three years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (three years).' },
+        { stem: "Choose the synonym of 'cold'.", options: ['hot', 'warm', 'mild', 'chilly'], answer: 3, explanation: 'cold ≈ chilly (lạnh).' },
+        { stem: "Choose the antonym of 'long'.", options: ['tall', 'short', 'wide', 'deep'], answer: 1, explanation: 'long ↔ short (ngắn).' },
+        { stem: '____ he arrived at the station yet?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ Has.' },
+      ],
+    },
   ],
 };
 
