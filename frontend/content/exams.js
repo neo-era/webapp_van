@@ -3179,6 +3179,21 @@ const EXAMS = {
         { stem: 'Đòn bẩy cân bằng khi $F_1\\cdot l_1=F_2\\cdot l_2$. Biết $F_1=10$ N, $l_1=4$ cm, $l_2=2$ cm thì $F_2$ bằng?', options: ['$5$ N', '$20$ N', '$40$ N', '$10$ N'], answer: 1, explanation: '$F_2=\\dfrac{10\\times 4}{2}=20$ N.' },
       ],
     },
+    {
+      examId: 'khtn8-14', title: 'Kiểm tra 45′ #14 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số phân tử có trong $0{,}5$ mol nước (lấy $N_A=6{,}022\\cdot10^{23}$)?', options: ['$6{,}022\\cdot10^{23}$', '$3{,}011\\cdot10^{23}$', '$1{,}2\\cdot10^{24}$', '$0{,}5$'], answer: 1, explanation: '$0{,}5\\times 6{,}022\\cdot10^{23}=3{,}011\\cdot10^{23}$.' },
+        { stem: 'Để tăng áp suất tác dụng lên mặt sàn, ta nên?', options: ['Tăng diện tích bị ép', 'Giảm lực ép', 'Tăng nhiệt độ', 'Giảm diện tích bị ép'], answer: 3, explanation: '$p=F/S$: giảm $S$ ⇒ tăng $p$.' },
+        { stem: 'Công cơ học sinh ra khi nào?', options: ['Chỉ cần có lực tác dụng', 'Vật dịch chuyển theo phương của lực dưới tác dụng của lực', 'Vật đứng yên', 'Có nhiệt độ cao'], answer: 1, explanation: 'Cần có lực và quãng đường dịch chuyển theo phương lực.' },
+        { stem: 'Phản ứng $A+B\\to C+D$ có $m_A=4$ g, $m_B=6$ g, $m_C=7$ g. Khối lượng $D$ là?', options: ['$3$ g', '$10$ g', '$17$ g', '$1$ g'], answer: 0, explanation: 'Bảo toàn KL: $4+6=7+m_D \\Rightarrow m_D=3$ g.' },
+        { stem: 'Tim của người trưởng thành có mấy ngăn?', options: ['$2$', '$3$', '$4$', '$1$'], answer: 2, explanation: 'Tim người có 4 ngăn: 2 tâm nhĩ, 2 tâm thất.' },
+        { stem: 'Hòa tan $15$ g chất tan vào $135$ g nước. Nồng độ phần trăm dung dịch?', options: ['$15\\%$', '$11\\%$', '$9\\%$', '$10\\%$'], answer: 3, explanation: '$m_{dd}=150$ g ⇒ $C\\%=15/150\\times 100\\%=10\\%$.' },
+        { stem: 'Đơn vị đo công suất trong hệ SI là?', options: ['Jun (J)', 'Niuton (N)', 'Watt (W)', 'Pascal (Pa)'], answer: 2, explanation: '$1$ W $=1$ J/s.' },
+        { stem: 'Khí chủ yếu được thải ra khi cơ thể hô hấp là?', options: ['$CO_2$', '$O_2$', '$N_2$', '$H_2$'], answer: 0, explanation: 'Cơ thể hấp thụ $O_2$, thải $CO_2$.' },
+        { stem: 'Cho Mg tác dụng với dung dịch HCl, khí sinh ra là?', options: ['$O_2$', '$H_2$', '$CO_2$', '$Cl_2$'], answer: 1, explanation: '$Mg+2HCl\\to MgCl_2+H_2$.' },
+        { stem: 'Một vật sẽ nổi trong chất lỏng khi nào?', options: ['$P>F_A$', '$P=F_A$', '$P<F_A$', '$P=0$'], answer: 2, explanation: 'Trọng lượng nhỏ hơn lực đẩy Archimedes ⇒ vật nổi.' },
+      ],
+    },
   ],
 
   ANH8: [
