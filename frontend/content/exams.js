@@ -3527,6 +3527,21 @@ const EXAMS = {
         { stem: 'She ____ never been to Japan before.', options: ['have', 'had', 'having', 'has'], answer: 3, explanation: 'Hiện tại hoàn thành với "she" ⇒ has.' },
       ],
     },
+    {
+      examId: 'anh8-17', title: 'Kiểm tra 45′ #17 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'She ____ to music when the phone rang.', options: ['listened', 'listens', 'listen', 'was listening'], answer: 3, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ was listening.' },
+        { stem: 'A train is ____ than a bicycle.', options: ['faster', 'fast', 'fastest', 'more fast'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: faster.' },
+        { stem: 'You look pale. You ____ see a doctor.', options: ['must', 'should', 'can', 'would'], answer: 1, explanation: 'should = lời khuyên.' },
+        { stem: 'If the weather is nice, we ____ a picnic.', options: ['have', 'had', 'will have', 'having'], answer: 2, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The classroom ____ every day by the students.', options: ['cleans', 'cleaned', 'clean', 'is cleaned'], answer: 3, explanation: 'Bị động hiện tại đơn: is cleaned.' },
+        { stem: 'The teacher ____ teaches us English is very kind.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'I have studied English ____ six years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (six years).' },
+        { stem: "Choose the synonym of 'clever'.", options: ['silly', 'lazy', 'intelligent', 'foolish'], answer: 2, explanation: 'clever ≈ intelligent (thông minh).' },
+        { stem: "Choose the antonym of 'wide'.", options: ['broad', 'narrow', 'large', 'huge'], answer: 1, explanation: 'wide ↔ narrow (hẹp).' },
+        { stem: 'They ____ just arrived at the airport.', options: ['have', 'has', 'had', 'having'], answer: 0, explanation: 'Hiện tại hoàn thành với "they" ⇒ have.' },
+      ],
+    },
   ],
 };
 
