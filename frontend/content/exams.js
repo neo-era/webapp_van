@@ -3149,6 +3149,21 @@ const EXAMS = {
         { stem: 'Trọng lượng của vật khối lượng $5$ kg (lấy $g=10$ N/kg)?', options: ['$5$ N', '$50$ N', '$500$ N', '$0{,}5$ N'], answer: 1, explanation: '$P=10\\cdot m=10\\times 5=50$ N.' },
       ],
     },
+    {
+      examId: 'khtn8-13', title: 'Kiểm tra 45′ #13 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}5$ mol $O_2$ ($M=32$) là?', options: ['$8$ g', '$16$ g', '$32$ g', '$64$ g'], answer: 1, explanation: '$m=0{,}5\\times 32=16$ g.' },
+        { stem: 'Lực $300$ N ép vuông góc lên diện tích $2$ m². Áp suất là?', options: ['$150$ Pa', '$600$ Pa', '$100$ Pa', '$50$ Pa'], answer: 0, explanation: '$p=F/S=300/2=150$ Pa.' },
+        { stem: 'Một máy thực hiện công $600$ J trong $30$ s. Công suất là?', options: ['$18000$ W', '$30$ W', '$2$ W', '$20$ W'], answer: 3, explanation: '$P=A/t=600/30=20$ W.' },
+        { stem: 'Cho $Zn+2HCl\\to ZnCl_2+H_2$. Cho $0{,}5$ mol Zn phản ứng hết thu được bao nhiêu mol $H_2$?', options: ['$0{,}25$', '$1$', '$0{,}5$', '$2$'], answer: 2, explanation: 'Tỉ lệ $1:1$ giữa Zn và $H_2$ ⇒ $0{,}5$ mol.' },
+        { stem: 'Cơ quan nào đóng vai trò bơm máu trong hệ tuần hoàn?', options: ['Tim', 'Gan', 'Phổi', 'Thận'], answer: 0, explanation: 'Tim co bóp đẩy máu đi khắp cơ thể.' },
+        { stem: 'Nồng độ mol của $0{,}5$ mol HCl trong $0{,}25$ lít dung dịch?', options: ['$0{,}5$ M', '$1$ M', '$4$ M', '$2$ M'], answer: 3, explanation: '$C_M=0{,}5/0{,}25=2$ M.' },
+        { stem: 'Lực đẩy Archimedes phụ thuộc vào yếu tố nào?', options: ['Khối lượng của vật', 'Màu sắc của vật', 'Trọng lượng riêng chất lỏng và thể tích vật chiếm chỗ', 'Nhiệt độ phòng'], answer: 2, explanation: '$F_A=d\\cdot V$ (d chất lỏng, V phần vật chìm).' },
+        { stem: 'Ruột non là nơi chủ yếu diễn ra quá trình nào?', options: ['Lọc máu', 'Hấp thụ chất dinh dưỡng', 'Trao đổi khí', 'Bài tiết mồ hôi'], answer: 1, explanation: 'Ruột non hấp thụ phần lớn chất dinh dưỡng.' },
+        { stem: 'Chất nào sau đây là oxide acid?', options: ['$CaO$', '$Na_2O$', '$CO_2$', '$MgO$'], answer: 2, explanation: '$CO_2$ là oxide acid (tác dụng base tạo muối).' },
+        { stem: 'Đòn bẩy cân bằng khi $F_1\\cdot l_1=F_2\\cdot l_2$. Biết $F_1=10$ N, $l_1=4$ cm, $l_2=2$ cm thì $F_2$ bằng?', options: ['$5$ N', '$20$ N', '$40$ N', '$10$ N'], answer: 1, explanation: '$F_2=\\dfrac{10\\times 4}{2}=20$ N.' },
+      ],
+    },
   ],
 
   ANH8: [
