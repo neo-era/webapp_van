@@ -3437,6 +3437,21 @@ const EXAMS = {
         { stem: "Look at those dark clouds! It ____ rain.", options: ['will', 'goes to', 'is going to', 'going'], answer: 2, explanation: 'Có dấu hiệu hiện tại ⇒ be going to (dự đoán).' },
       ],
     },
+    {
+      examId: 'anh8-15', title: 'Kiểm tra 45′ #15 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'We ____ in this city since 2018.', options: ['have lived', 'lived', 'live', 'are living'], answer: 0, explanation: 'since 2018 ⇒ hiện tại hoàn thành: have lived.' },
+        { stem: 'This exercise is ____ than that one.', options: ['easy', 'easier', 'easiest', 'more easy'], answer: 1, explanation: 'So sánh hơn tính từ ngắn: easier.' },
+        { stem: 'Students ____ wear uniforms at school.', options: ['has to', 'must to', 'having to', 'have to'], answer: 3, explanation: 'Nghĩa vụ ⇒ have to (số nhiều).' },
+        { stem: "If you don't hurry, you ____ the bus.", options: ['miss', 'missed', 'will miss', 'would miss'], answer: 2, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Rice ____ in many tropical countries.', options: ['is grown', 'grows', 'grew', 'growing'], answer: 0, explanation: 'Bị động hiện tại đơn: is grown.' },
+        { stem: 'The car ____ he bought last week is red.', options: ['who', 'which', 'where', 'whose'], answer: 1, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'She has worked here ____ five years.', options: ['since', 'at', 'in', 'for'], answer: 3, explanation: 'for + khoảng thời gian (five years).' },
+        { stem: "Choose the synonym of 'big'.", options: ['small', 'tiny', 'large', 'narrow'], answer: 2, explanation: 'big ≈ large (to lớn).' },
+        { stem: "Choose the antonym of 'old' (person).", options: ['aged', 'young', 'elderly', 'mature'], answer: 1, explanation: 'old ↔ young (trẻ).' },
+        { stem: 'How long ____ you lived in this town?', options: ['has', 'had', 'having', 'have'], answer: 3, explanation: 'Hiện tại hoàn thành với "you" ⇒ have.' },
+      ],
+    },
   ],
 };
 
