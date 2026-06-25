@@ -4109,6 +4109,21 @@ const EXAMS = {
         { stem: 'Để giảm ma sát ở ổ trục bánh xe, người ta thường?', options: ['Làm nhám bề mặt', 'Tra dầu mỡ bôi trơn', 'Tăng áp lực', 'Làm khô bề mặt'], answer: 1, explanation: 'Dầu mỡ bôi trơn làm giảm ma sát.' },
       ],
     },
+    {
+      examId: 'khtn8-45', title: 'Kiểm tra 45′ #45 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $10$ g NaOH ($M=40$)?', options: ['$0{,}1$', '$0{,}5$', '$0{,}25$', '$1$'], answer: 2, explanation: '$n=10/40=0{,}25$ mol.' },
+        { stem: 'Áp suất tại độ sâu $5$ m trong dầu ($d=8000$ N/m³)?', options: ['$40000$ Pa', '$4000$ Pa', '$400000$ Pa', '$13000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 5=40000$ Pa.' },
+        { stem: 'Một vật có khối lượng $104$ g và thể tích $8$ cm³. Khối lượng riêng?', options: ['$104$ g/cm³', '$13$ g/cm³', '$1{,}3$ g/cm³', '$130$ g/cm³'], answer: 1, explanation: '$D=m/V=104/8=13$ g/cm³.' },
+        { stem: 'Cho $CO_2$ tác dụng với dung dịch NaOH (dư) tạo thành?', options: ['Chỉ NaCl', 'Chỉ $CO_2$', 'NaOH dư', '$Na_2CO_3$ và $H_2O$'], answer: 3, explanation: '$CO_2+2NaOH\\to Na_2CO_3+H_2O$.' },
+        { stem: 'Cơ quan nào đóng vai trò bơm máu trong hệ tuần hoàn?', options: ['Tim', 'Phổi', 'Gan', 'Thận'], answer: 0, explanation: 'Tim co bóp bơm máu đi khắp cơ thể.' },
+        { stem: 'Hòa tan $35$ g chất tan vào $165$ g nước. Nồng độ phần trăm dung dịch?', options: ['$35\\%$', '$165\\%$', '$17{,}5\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=35/200\\times 100\\%=17{,}5\\%$.' },
+        { stem: 'Bóng đèn ghi $220$V$-100$W. Công suất định mức của bóng là?', options: ['$220$ W', '$100$ W', '$320$ W', '$2{,}2$ W'], answer: 1, explanation: 'Số oát ghi trên đèn là công suất định mức $=100$ W.' },
+        { stem: 'Khối lượng của $0{,}5$ mol $K_2O$ ($M=94$)?', options: ['$94$ g', '$188$ g', '$23{,}5$ g', '$47$ g'], answer: 3, explanation: '$m=0{,}5\\times 94=47$ g.' },
+        { stem: 'Khi vận động mạnh, nhịp thở và nhịp tim thay đổi như thế nào?', options: ['Giảm đi', 'Không đổi', 'Tăng lên', 'Ngừng hẳn'], answer: 2, explanation: 'Cơ thể cần nhiều $O_2$ hơn ⇒ nhịp thở và nhịp tim tăng.' },
+        { stem: 'Hai vật có cùng khối lượng, vật có thể tích lớn hơn thì khối lượng riêng?', options: ['Lớn hơn', 'Nhỏ hơn', 'Bằng nhau', 'Bằng $0$'], answer: 1, explanation: '$D=m/V$: cùng $m$, $V$ lớn hơn ⇒ $D$ nhỏ hơn.' },
+      ],
+    },
   ],
 
   ANH8: [
