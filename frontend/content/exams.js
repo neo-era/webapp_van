@@ -3086,6 +3086,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $10, 20, 30$?', options: ['$10$', '$30$', '$20$', '$60$'], answer: 2, explanation: '$\\dfrac{10+20+30}{3}=20$.' },
       ],
     },
+    {
+      examId: 'toan8-22', title: 'Kiểm tra 45′ #22 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+1)(x-1)$?', options: ['$x^2+1$', '$x^2-2x+1$', '$x^2-1$', '$x^2-x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-1$.' },
+        { stem: 'Phân tích $x^2+4x+4$ thành nhân tử?', options: ['$(x+2)^2$', '$(x-2)^2$', '$(x+4)(x+1)$', '$(x+2)(x-2)$'], answer: 0, explanation: '$x^2+4x+4=(x+2)^2$.' },
+        { stem: 'Nghiệm của phương trình $4x-7=2x+5$?', options: ['$x=4$', '$x=6$', '$x=2$', '$x=12$'], answer: 1, explanation: '$2x=12 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+3x}{x}$ (với $x\\ne0$)?', options: ['$x$', '$3x$', '$x^2$', '$x+3$'], answer: 3, explanation: '$\\dfrac{x(x+3)}{x}=x+3$.' },
+        { stem: 'Đồ thị hàm số $y=2x$ đi qua điểm nào?', options: ['$(4;2)$', '$(1;2)$', '$(2;4)$', '$(2;2)$'], answer: 2, explanation: 'Thay $x=2 \\Rightarrow y=4$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $8$ và $15$. Cạnh huyền?', options: ['$23$', '$17$', '$\\sqrt{161}$', '$18$'], answer: 1, explanation: '$\\sqrt{8^2+15^2}=\\sqrt{289}=17$.' },
+        { stem: 'Khai triển $(a-3)^2$?', options: ['$a^2-6a+9$', '$a^2+6a+9$', '$a^2-9$', '$a^2-3a+9$'], answer: 0, explanation: '$(a-3)^2=a^2-6a+9$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có đáy $5\\times5$ và chiều cao $4$?', options: ['$20$', '$14$', '$25$', '$100$'], answer: 3, explanation: '$V=5\\cdot5\\cdot4=100$.' },
+        { stem: 'Rút gọn $\\dfrac{4x-8}{x-2}$ (với $x\\ne2$)?', options: ['$x-2$', '$4$', '$4x$', '$x$'], answer: 1, explanation: '$\\dfrac{4(x-2)}{x-2}=4$.' },
+        { stem: 'Trung vị của dãy số $2, 5, 8, 11, 14$?', options: ['$5$', '$11$', '$8$', '$14$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
