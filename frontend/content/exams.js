@@ -4832,6 +4832,21 @@ const EXAMS = {
         { stem: '____ you done your homework yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-46', title: 'Kiểm tra 45′ #46 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'We ____ a film at the cinema yesterday.', options: ['watch', 'watches', 'watched', 'watching'], answer: 2, explanation: 'yesterday ⇒ quá khứ đơn: watched.' },
+        { stem: 'A diamond is ____ than glass.', options: ['harder', 'hard', 'hardest', 'more hard'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: harder.' },
+        { stem: 'Students ____ use phones during the exam.', options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = cấm." },
+        { stem: 'If you train regularly, you ____ stronger.', options: ['become', 'became', 'would become', 'will become'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Rice ____ in the fields in summer.', options: ['grow', 'grows', 'is grown', 'are grown'], answer: 2, explanation: 'Bị động hiện tại, danh từ không đếm được ⇒ is grown.' },
+        { stem: 'The book ____ cover is red is mine.', options: ['whose', 'who', 'which', 'where'], answer: 0, explanation: 'whose chỉ sự sở hữu.' },
+        { stem: 'We have been waiting ____ an hour.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (an hour).' },
+        { stem: "Choose the synonym of 'gift'.", options: ['bill', 'money', 'cost', 'present'], answer: 3, explanation: 'gift ≈ present (món quà).' },
+        { stem: "Choose the antonym of 'love'.", options: ['like', 'hate', 'adore', 'enjoy'], answer: 1, explanation: 'love ↔ hate (ghét).' },
+        { stem: 'He ____ visited Paris twice.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ has.' },
+      ],
+    },
   ],
 };
 
