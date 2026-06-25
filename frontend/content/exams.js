@@ -4202,6 +4202,21 @@ const EXAMS = {
         { stem: 'She ____ already done the dishes.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ has.' },
       ],
     },
+    {
+      examId: 'anh8-32', title: 'Kiểm tra 45′ #32 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'Yesterday, we ____ a movie at home.', options: ['watch', 'watches', 'watched', 'watching'], answer: 2, explanation: 'Yesterday ⇒ quá khứ đơn: watched.' },
+        { stem: 'This question is ____ than the others.', options: ['difficult', 'difficulter', 'most difficult', 'more difficult'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more difficult.' },
+        { stem: 'She ____ play the guitar very well.', options: ['must', 'can', 'should', 'would'], answer: 1, explanation: 'can = khả năng.' },
+        { stem: 'If it gets dark, we ____ the lights.', options: ['will turn on', 'turn on', 'turned on', 'would turn on'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Newspapers ____ every day.', options: ['sell', 'sells', 'are sold', 'is sold'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are sold.' },
+        { stem: 'The boy ____ broke the window ran away.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'They have been married ____ 2005.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (2005).' },
+        { stem: "Choose the synonym of 'hard'.", options: ['easy', 'simple', 'soft', 'difficult'], answer: 3, explanation: 'hard ≈ difficult (khó).' },
+        { stem: "Choose the antonym of 'hot'.", options: ['warm', 'cold', 'mild', 'boiling'], answer: 1, explanation: 'hot ↔ cold (lạnh).' },
+        { stem: 'I have ____ seen that movie, so it will be new to me.', options: ['ever', 'yet', 'never', 'for'], answer: 2, explanation: 'never = chưa từng (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
