@@ -1322,6 +1322,21 @@ const EXAMS = {
         { stem: 'Số mol $H_2SO_4$ cần để trung hòa hết $0{,}3$ mol KOH?', options: ['$0{,}3$', '$0{,}6$', '$0{,}15$', '$0{,}1$'], answer: 2, explanation: '$2KOH+H_2SO_4\\to K_2SO_4+2H_2O$; cần $0{,}15$ mol.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-31', title: 'Kiểm tra 45′ #31 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $12$ g C ($M=12$)?', options: ['$0{,}5$', '$2$', '$0{,}1$', '$1$'], answer: 3, explanation: '$n=12/12=1$ mol.' },
+        { stem: 'Khối lượng của $0{,}2$ mol $CuSO_4$ ($M=160$)?', options: ['$32$ g', '$16$ g', '$64$ g', '$8$ g'], answer: 0, explanation: '$m=0{,}2\\cdot160=32$ g.' },
+        { stem: 'Thể tích $O_2$ (đktc) để đốt cháy hết $0{,}1$ mol C?', options: ['$1{,}12$ L', '$4{,}48$ L', '$2{,}24$ L', '$0{,}224$ L'], answer: 2, explanation: '$C+O_2\\to CO_2$; $0{,}1$ mol $O_2 \\Rightarrow V=2{,}24$ L.' },
+        { stem: 'Số mol nguyên tử O trong $0{,}5$ mol $KNO_3$?', options: ['$0{,}5$', '$1$', '$2$', '$1{,}5$'], answer: 3, explanation: 'Mỗi phân tử có 3 O ⇒ $0{,}5\\cdot3=1{,}5$ mol.' },
+        { stem: 'Hòa tan $25$ g chất tan trong $75$ g nước. Nồng độ phần trăm?', options: ['$25\\%$', '$20\\%$', '$30\\%$', '$33\\%$'], answer: 0, explanation: '$C\\%=25/100\\cdot100\\%=25\\%$.' },
+        { stem: 'Khối lượng mol của $(NH_4)_2SO_4$ (N=14, H=1, S=32, O=16)?', options: ['$114$', '$132$', '$96$', '$150$'], answer: 1, explanation: '$2\\cdot18+32+4\\cdot16=132$ g/mol.' },
+        { stem: 'Kim loại nào tồn tại ở thể lỏng ở nhiệt độ thường?', options: ['Fe', 'Cu', 'Hg', 'Al'], answer: 2, explanation: 'Thủy ngân (Hg) là kim loại lỏng ở nhiệt độ thường.' },
+        { stem: 'Phần trăm khối lượng Ca trong $CaCO_3$ ($M=100$)?', options: ['$60\\%$', '$12\\%$', '$48\\%$', '$40\\%$'], answer: 3, explanation: '$40/100\\cdot100\\%=40\\%$.' },
+        { stem: 'Chất nào sau đây là đơn chất?', options: ['$H_2O$', '$O_2$', '$CO_2$', 'NaCl'], answer: 1, explanation: '$O_2$ chỉ gồm một nguyên tố ⇒ đơn chất.' },
+        { stem: 'Số mol NaOH cần để trung hòa hết $0{,}15$ mol HCl?', options: ['$0{,}3$', '$0{,}075$', '$0{,}15$', '$1$'], answer: 2, explanation: '$NaOH+HCl\\to NaCl+H_2O$; tỉ lệ 1:1 ⇒ $0{,}15$ mol.' },
+      ],
+    },
   ],
 
   ANH: [
