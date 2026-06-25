@@ -3299,6 +3299,21 @@ const EXAMS = {
         { stem: 'Lực đẩy Archimedes tác dụng lên vật có thể tích $0{,}002$ m³ chìm trong nước ($d=10000$ N/m³)?', options: ['$10$ N', '$20$ N', '$40$ N', '$2$ N'], answer: 1, explanation: '$F_A=d\\cdot V=10000\\times 0{,}002=20$ N.' },
       ],
     },
+    {
+      examId: 'khtn8-18', title: 'Kiểm tra 45′ #18 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $6{,}4$ g $SO_2$ ($M=64$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=6{,}4/64=0{,}1$ mol.' },
+        { stem: 'Lực $150$ N ép vuông góc lên diện tích $0{,}3$ m². Áp suất là?', options: ['$500$ Pa', '$50$ Pa', '$450$ Pa', '$5000$ Pa'], answer: 0, explanation: '$p=F/S=150/0{,}3=500$ Pa.' },
+        { stem: 'Một vật có khối lượng $400$ g và thể tích $50$ cm³. Khối lượng riêng?', options: ['$4$ g/cm³', '$8$ g/cm³', '$80$ g/cm³', '$0{,}125$ g/cm³'], answer: 1, explanation: '$D=m/V=400/50=8$ g/cm³.' },
+        { stem: 'Công thức hóa học của sắt(III) oxide là?', options: ['$FeO$', '$Fe_3O_4$', '$FeO_2$', '$Fe_2O_3$'], answer: 3, explanation: 'Sắt hóa trị III ⇒ $Fe_2O_3$.' },
+        { stem: 'Ở ruột non, chất dinh dưỡng được hấp thụ vào máu chủ yếu qua?', options: ['Lông ruột (nhung mao)', 'Phế nang', 'Cầu thận', 'Tế bào gan'], answer: 0, explanation: 'Lông ruột làm tăng diện tích hấp thụ.' },
+        { stem: 'Hòa tan $40$ g chất tan vào $160$ g nước. Nồng độ phần trăm dung dịch?', options: ['$40\\%$', '$25\\%$', '$20\\%$', '$16\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=40/200\\times 100\\%=20\\%$.' },
+        { stem: 'Để đòn bẩy cho lợi về lực, cánh tay đòn của lực tác dụng phải?', options: ['Ngắn hơn cánh tay đòn của vật', 'Dài hơn cánh tay đòn của vật', 'Bằng cánh tay đòn của vật', 'Bằng không'], answer: 1, explanation: 'Cánh tay đòn dài hơn ⇒ lực nhỏ hơn (lợi về lực).' },
+        { stem: 'Sự trao đổi khí ở phế nang diễn ra theo cơ chế nào?', options: ['Vận chuyển chủ động', 'Thẩm thấu', 'Lọc', 'Khuếch tán'], answer: 3, explanation: 'Khí khuếch tán từ nơi nồng độ cao đến thấp.' },
+        { stem: 'Chất nào sau đây là một acid?', options: ['$NaOH$', '$HCl$', '$NaCl$', '$CaO$'], answer: 1, explanation: 'HCl là acid (axit clohiđric).' },
+        { stem: 'Lực đẩy Archimedes lên vật chìm hoàn toàn, thể tích $0{,}001$ m³ trong nước ($d=10000$ N/m³)?', options: ['$1$ N', '$5$ N', '$10$ N', '$100$ N'], answer: 2, explanation: '$F_A=d\\cdot V=10000\\times 0{,}001=10$ N.' },
+      ],
+    },
   ],
 
   ANH8: [
