@@ -2849,6 +2849,21 @@ const EXAMS = {
         { stem: 'Khí nào làm đục nước vôi trong?', options: ['$O_2$', '$CO_2$', '$H_2$', '$N_2$'], answer: 1, explanation: '$CO_2+Ca(OH)_2\\to CaCO_3\\downarrow+H_2O$.' },
       ],
     },
+    {
+      examId: 'khtn8-3', title: 'Kiểm tra 45′ #3 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Thể tích (đktc) của $0{,}25$ mol khí?', options: ['$2{,}24$ L', '$11{,}2$ L', '$22{,}4$ L', '$5{,}6$ L'], answer: 3, explanation: '$V=0{,}25\\cdot22{,}4=5{,}6$ L.' },
+        { stem: 'Áp lực $F=300$ N ép vuông góc lên diện tích $S=0{,}5\\,m^2$. Áp suất?', options: ['$600$ Pa', '$150$ Pa', '$60$ Pa', '$300$ Pa'], answer: 0, explanation: '$p=F/S=300/0{,}5=600$ Pa.' },
+        { stem: 'Trọng lượng của vật $m=2$ kg (lấy $g=10$)?', options: ['$2$ N', '$200$ N', '$20$ N', '$10$ N'], answer: 2, explanation: '$P=mg=2\\cdot10=20$ N.' },
+        { stem: 'Đốt $2{,}4$ g Mg với $1{,}6$ g $O_2$ thu được bao nhiêu g MgO?', options: ['$2$ g', '$0{,}8$ g', '$1{,}6$ g', '$4$ g'], answer: 3, explanation: 'Bảo toàn khối lượng: $2{,}4+1{,}6=4$ g.' },
+        { stem: 'Hệ thần kinh ở người gồm những bộ phận nào?', options: ['não và tim', 'não, tủy sống và dây thần kinh', 'phổi và gan', 'dạ dày và ruột'], answer: 1, explanation: 'Hệ thần kinh gồm não, tủy sống và các dây thần kinh.' },
+        { stem: 'Hòa tan $0{,}5$ mol NaCl thành $2$ L dung dịch. Nồng độ mol?', options: ['$0{,}25$', '$0{,}5$', '$1$', '$2$'], answer: 0, explanation: '$C_M=n/V=0{,}5/2=0{,}25$ M.' },
+        { stem: 'Chất nào sau đây là acid?', options: ['NaOH', 'HCl', 'NaCl', 'CaO'], answer: 1, explanation: 'HCl là acid (làm quỳ tím hóa đỏ).' },
+        { stem: 'Đòn bẩy cho lợi về lực khi?', options: ['cánh tay đòn của lực ngắn hơn cánh tay đòn của tải', 'hai cánh tay đòn bằng nhau', 'cánh tay đòn của lực dài hơn cánh tay đòn của tải', 'không liên quan đến cánh tay đòn'], answer: 2, explanation: 'Cánh tay đòn của lực càng dài thì càng lợi về lực.' },
+        { stem: 'Máu đỏ tươi giàu chất khí nào?', options: ['$O_2$', '$CO_2$', '$N_2$', 'ure'], answer: 0, explanation: 'Máu đỏ tươi là máu giàu oxi ($O_2$).' },
+        { stem: 'Chất nào sau đây là oxide base?', options: ['$CO_2$', '$SO_2$', '$P_2O_5$', '$Na_2O$'], answer: 3, explanation: '$Na_2O$ là oxide base; các chất còn lại là oxide acid.' },
+      ],
+    },
   ],
 
   ANH8: [
