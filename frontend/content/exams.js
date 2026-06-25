@@ -3752,6 +3752,21 @@ const EXAMS = {
         { stem: '____ you ever visited London?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-22', title: 'Kiểm tra 45′ #22 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'I ____ my homework when my friend called.', options: ['did', 'do', 'was doing', 'done'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ was doing.' },
+        { stem: 'The Nile is ____ river in the world.', options: ['longer', 'long', 'longest', 'the longest'], answer: 3, explanation: 'So sánh nhất: the longest.' },
+        { stem: "You ____ touch that wire. It's dangerous.", options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = cấm (nguy hiểm)." },
+        { stem: "If we don't save water, we ____ serious problems.", options: ['will have', 'have', 'had', 'would have'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'This song ____ by many young people.', options: ['loves', 'loved', 'is loved', 'are loved'], answer: 2, explanation: 'Bị động hiện tại đơn: is loved.' },
+        { stem: 'The woman ____ lives upstairs is a nurse.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'They have studied at this school ____ September.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (September).' },
+        { stem: "Choose the synonym of 'important'.", options: ['minor', 'small', 'trivial', 'significant'], answer: 3, explanation: 'important ≈ significant (quan trọng).' },
+        { stem: "Choose the antonym of 'high'.", options: ['tall', 'low', 'deep', 'wide'], answer: 1, explanation: 'high ↔ low (thấp).' },
+        { stem: 'I have ____ seen this film, so let\'s watch another one.', options: ['yet', 'since', 'already', 'for'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
+      ],
+    },
   ],
 };
 
