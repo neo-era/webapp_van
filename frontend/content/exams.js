@@ -4469,6 +4469,21 @@ const EXAMS = {
         { stem: 'Vì sao khi trời lạnh, cơ thể ta thường run?', options: ['Do sợ hãi', 'Để các cơ co liên tục sinh nhiệt giữ ấm', 'Do mệt mỏi', 'Không có lý do'], answer: 1, explanation: 'Run là phản xạ co cơ sinh nhiệt, giúp giữ ấm cơ thể.' },
       ],
     },
+    {
+      examId: 'khtn8-57', title: 'Kiểm tra 45′ #57 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $9{,}2$ g Na ($M=23$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}4$', '$1$'], answer: 2, explanation: '$n=9{,}2/23=0{,}4$ mol.' },
+        { stem: 'Áp suất tại độ sâu $7{,}5$ m trong dầu ($d=8000$ N/m³)?', options: ['$60000$ Pa', '$6000$ Pa', '$600000$ Pa', '$16000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 7{,}5=60000$ Pa.' },
+        { stem: 'Một vật có khối lượng $88$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$88$ g/cm³', '$8{,}8$ g/cm³', '$0{,}88$ g/cm³', '$880$ g/cm³'], answer: 1, explanation: '$D=m/V=88/10=8{,}8$ g/cm³.' },
+        { stem: 'Phản ứng $Zn+H_2SO_4\\to ZnSO_4+H_2$ thuộc loại?', options: ['Hóa hợp', 'Phân hủy', 'Trao đổi', 'Thế'], answer: 3, explanation: 'Zn đẩy hiđro ra khỏi acid ⇒ phản ứng thế.' },
+        { stem: 'Tế bào nào tiếp nhận và dẫn truyền xung thần kinh?', options: ['Nơ-ron (tế bào thần kinh)', 'Hồng cầu', 'Bạch cầu', 'Tiểu cầu'], answer: 0, explanation: 'Nơ-ron là đơn vị cấu tạo và dẫn truyền của hệ thần kinh.' },
+        { stem: 'Hòa tan $45$ g chất tan vào $155$ g nước. Nồng độ phần trăm dung dịch?', options: ['$45\\%$', '$155\\%$', '$22{,}5\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=45/200\\times 100\\%=22{,}5\\%$.' },
+        { stem: 'Đơn vị công suất $1$ W tương đương với?', options: ['$1$ N', '$1$ J/s', '$1$ Pa', '$1$ m/s'], answer: 1, explanation: '$1$ W $=1$ J/s.' },
+        { stem: 'Khối lượng của $0{,}5$ mol Mg ($M=24$)?', options: ['$24$ g', '$48$ g', '$6$ g', '$12$ g'], answer: 3, explanation: '$m=0{,}5\\times 24=12$ g.' },
+        { stem: 'Trong hệ tiêu hóa, gan tiết ra dịch gì hỗ trợ tiêu hóa chất béo?', options: ['Acid HCl', 'Insulin', 'Dịch mật', 'Nước bọt'], answer: 2, explanation: 'Gan tiết dịch mật giúp nhũ tương hóa chất béo.' },
+        { stem: 'Nhiệt năng của một vật phụ thuộc chủ yếu vào yếu tố nào?', options: ['Màu sắc vật', 'Nhiệt độ của vật', 'Hình dạng vật', 'Vị trí vật'], answer: 1, explanation: 'Nhiệt độ càng cao, phân tử chuyển động càng nhanh, nhiệt năng càng lớn.' },
+      ],
+    },
   ],
 
   ANH8: [
