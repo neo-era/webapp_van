@@ -4607,6 +4607,21 @@ const EXAMS = {
         { stem: '____ they ever travelled by plane?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-41', title: 'Kiểm tra 45′ #41 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'I ____ a strange noise last night.', options: ['hear', 'hears', 'heard', 'hearing'], answer: 2, explanation: 'last night ⇒ quá khứ đơn: heard.' },
+        { stem: 'A bicycle is ____ than a car.', options: ['cheaper', 'cheap', 'cheapest', 'more cheap'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: cheaper.' },
+        { stem: 'You ____ help your parents at home.', options: ['must', 'should', 'can', 'would'], answer: 1, explanation: 'should = lời khuyên nên làm.' },
+        { stem: 'If the weather is bad, we ____ at home.', options: ['stay', 'stayed', 'would stay', 'will stay'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Bread ____ from flour.', options: ['make', 'makes', 'is made', 'are made'], answer: 2, explanation: 'Bị động hiện tại đơn: is made.' },
+        { stem: 'The pen ____ I lost yesterday was expensive.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'He has been in Hanoi ____ Monday.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (Monday).' },
+        { stem: "Choose the synonym of 'happy'.", options: ['sad', 'angry', 'upset', 'joyful'], answer: 3, explanation: 'happy ≈ joyful (vui vẻ).' },
+        { stem: "Choose the antonym of 'good'.", options: ['great', 'bad', 'fine', 'nice'], answer: 1, explanation: 'good ↔ bad (xấu/tệ).' },
+        { stem: 'She has ____ seen snow in her life.', options: ['ever', 'yet', 'never', 'since'], answer: 2, explanation: 'never = chưa bao giờ (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
