@@ -3491,6 +3491,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $9, 9, 9, 9, 9, 15$?', options: ['$9$', '$15$', '$10$', '$60$'], answer: 2, explanation: '$\\dfrac{9\\cdot5+15}{6}=\\dfrac{60}{6}=10$.' },
       ],
     },
+    {
+      examId: 'toan8-49', title: 'Kiểm tra 45′ #49 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+19)(x-19)$?', options: ['$x^2+361$', '$x^2-38x+361$', '$x^2-361$', '$x^2-19x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-361$.' },
+        { stem: 'Phân tích $x^2-19x+90$ thành nhân tử?', options: ['$(x-9)(x-10)$', '$(x+9)(x+10)$', '$(x-6)(x-15)$', '$(x-9)(x+10)$'], answer: 0, explanation: '$x^2-19x+90=(x-9)(x-10)$.' },
+        { stem: 'Nghiệm của phương trình $9x-11=6x+7$?', options: ['$x=3$', '$x=6$', '$x=18$', '$x=-6$'], answer: 1, explanation: '$3x=18 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-121}{x-11}$ (với $x\\ne11$)?', options: ['$x-11$', '$x$', '$x^2+11$', '$x+11$'], answer: 3, explanation: '$\\dfrac{(x-11)(x+11)}{x-11}=x+11$.' },
+        { stem: 'Đường thẳng $y=12x-36$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=36$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 12x=36 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $36$ và $48$. Cạnh huyền?', options: ['$84$', '$60$', '$50$', '$56$'], answer: 1, explanation: '$\\sqrt{36^2+48^2}=\\sqrt{3600}=60$.' },
+        { stem: 'Khai triển $(11x-1)^2$?', options: ['$121x^2-22x+1$', '$121x^2+22x+1$', '$121x^2-1$', '$11x^2-22x+1$'], answer: 0, explanation: '$(11x-1)^2=121x^2-22x+1$.' },
+        { stem: 'Diện tích tam giác có đáy $18$ và chiều cao $5$?', options: ['$90$', '$23$', '$36$', '$45$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot18\\cdot5=45$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+6x-16}{x+8}$ (với $x\\ne-8$)?', options: ['$x+2$', '$x-2$', '$x^2-2$', '$2$'], answer: 1, explanation: '$\\dfrac{(x+8)(x-2)}{x+8}=x-2$.' },
+        { stem: 'Số trung bình cộng của $8, 8, 8, 8, 8, 2$?', options: ['$8$', '$2$', '$7$', '$42$'], answer: 2, explanation: '$\\dfrac{8\\cdot5+2}{6}=\\dfrac{42}{6}=7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
