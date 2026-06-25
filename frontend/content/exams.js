@@ -3071,6 +3071,21 @@ const EXAMS = {
         { stem: 'Khoảng biến thiên của dãy số $3, 7, 5, 9, 1$?', options: ['$9$', '$1$', '$8$', '$10$'], answer: 2, explanation: 'Khoảng biến thiên $=9-1=8$.' },
       ],
     },
+    {
+      examId: 'toan8-21', title: 'Kiểm tra 45′ #21 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x+5)(2x-5)$?', options: ['$4x^2+25$', '$2x^2-25$', '$4x^2-25$', '$4x^2-10x-25$'], answer: 2, explanation: 'Hiệu hai bình phương: $(2x)^2-5^2=4x^2-25$.' },
+        { stem: 'Phân tích $3x^2+6x$ thành nhân tử?', options: ['$3x(x+2)$', '$3(x^2+2x)$', '$x(3x+6)$', '$3x(x+6)$'], answer: 0, explanation: '$3x^2+6x=3x(x+2)$.' },
+        { stem: 'Nghiệm của phương trình $5x+2=3x+10$?', options: ['$x=2$', '$x=4$', '$x=6$', '$x=8$'], answer: 1, explanation: '$2x=8 \\Leftrightarrow x=4$.' },
+        { stem: 'Rút gọn $\\dfrac{10x^2}{5x}$ (với $x\\ne0$)?', options: ['$5x$', '$x$', '$2$', '$2x$'], answer: 3, explanation: '$\\dfrac{10x^2}{5x}=2x$.' },
+        { stem: 'Đường thẳng $y=x-3$ cắt trục tung tại điểm có tung độ?', options: ['$3$', '$0$', '$-3$', '$1$'], answer: 2, explanation: 'Cho $x=0 \\Rightarrow y=-3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $9$ và $12$. Cạnh huyền?', options: ['$21$', '$15$', '$\\sqrt{63}$', '$18$'], answer: 1, explanation: '$\\sqrt{9^2+12^2}=\\sqrt{225}=15$.' },
+        { stem: 'Rút gọn $(x+3)^2-(x-3)^2$?', options: ['$12x$', '$18$', '$6x$', '$0$'], answer: 0, explanation: '$(x^2+6x+9)-(x^2-6x+9)=12x$.' },
+        { stem: 'Diện tích tam giác vuông có hai cạnh góc vuông $6$ và $8$?', options: ['$48$', '$14$', '$28$', '$24$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot6\\cdot8=24$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-25}{x+5}$ (với $x\\ne-5$)?', options: ['$x+5$', '$x-5$', '$x^2-5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x-5)(x+5)}{x+5}=x-5$.' },
+        { stem: 'Số trung bình cộng của $10, 20, 30$?', options: ['$10$', '$30$', '$20$', '$60$'], answer: 2, explanation: '$\\dfrac{10+20+30}{3}=20$.' },
+      ],
+    },
   ],
 
   KHTN8: [
