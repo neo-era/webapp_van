@@ -3089,6 +3089,21 @@ const EXAMS = {
         { stem: 'Số mol có trong $6$ g C ($M=12$)?', options: ['$0{,}25$', '$0{,}5$', '$1$', '$2$'], answer: 1, explanation: '$n=6/12=0{,}5$ mol.' },
       ],
     },
+    {
+      examId: 'khtn8-11', title: 'Kiểm tra 45′ #11 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}1$ mol $H_2SO_4$ ($M=98$) là?', options: ['$4{,}9$ g', '$19{,}6$ g', '$49$ g', '$9{,}8$ g'], answer: 3, explanation: '$m=0{,}1\\times 98=9{,}8$ g.' },
+        { stem: 'Lực $600$ N ép vuông góc lên diện tích $1{,}5$ m². Áp suất là?', options: ['$400$ Pa', '$900$ Pa', '$100$ Pa', '$4$ Pa'], answer: 0, explanation: '$p=F/S=600/1{,}5=400$ Pa.' },
+        { stem: 'Vật thể tích $0{,}004$ m³ chìm trong nước ($d=10000$ N/m³). Lực đẩy Archimedes là?', options: ['$4$ N', '$400$ N', '$40$ N', '$0{,}4$ N'], answer: 2, explanation: '$F_A=d\\cdot V=10000\\times 0{,}004=40$ N.' },
+        { stem: 'Cho $Fe+2HCl\\to FeCl_2+H_2$. Để phản ứng hết $0{,}2$ mol Fe cần bao nhiêu mol HCl?', options: ['$0{,}1$', '$0{,}2$', '$1$', '$0{,}4$'], answer: 3, explanation: 'Tỉ lệ $1:2$ ⇒ $n_{HCl}=2\\times 0{,}2=0{,}4$ mol.' },
+        { stem: 'Hệ vận động ở người gồm những cơ quan nào?', options: ['Tim và máu', 'Xương và cơ', 'Phổi và khí quản', 'Não và dây thần kinh'], answer: 1, explanation: 'Hệ vận động gồm bộ xương và hệ cơ.' },
+        { stem: 'Hòa tan $0{,}3$ mol NaCl vào nước được $1{,}5$ lít dung dịch. Nồng độ mol là?', options: ['$0{,}5$ M', '$0{,}2$ M', '$0{,}3$ M', '$1$ M'], answer: 1, explanation: '$C_M=n/V=0{,}3/1{,}5=0{,}2$ M.' },
+        { stem: 'Đơn vị đo áp suất trong hệ SI là?', options: ['Niuton (N)', 'Jun (J)', 'Pascal (Pa)', 'Oát (W)'], answer: 2, explanation: '$1$ Pa $=1$ N/m².' },
+        { stem: 'Acid tác dụng với oxide base tạo thành?', options: ['Khí và base', 'Oxide acid', 'Kim loại', 'Muối và nước'], answer: 3, explanation: 'VD: $2HCl+CuO\\to CuCl_2+H_2O$.' },
+        { stem: 'Quá trình hô hấp tế bào cần khí nào để oxi hóa chất hữu cơ?', options: ['$CO_2$', '$N_2$', '$O_2$', '$H_2$'], answer: 2, explanation: 'Tế bào dùng $O_2$, thải $CO_2$.' },
+        { stem: 'Số mol có trong $11{,}2$ g Fe ($M=56$)?', options: ['$0{,}2$', '$0{,}1$', '$0{,}4$', '$1$'], answer: 0, explanation: '$n=11{,}2/56=0{,}2$ mol.' },
+      ],
+    },
   ],
 
   ANH8: [
