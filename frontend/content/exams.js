@@ -3596,6 +3596,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $30, 30, 30, 30, 50$?', options: ['$30$', '$50$', '$34$', '$170$'], answer: 2, explanation: '$\\dfrac{30\\cdot4+50}{5}=\\dfrac{170}{5}=34$.' },
       ],
     },
+    {
+      examId: 'toan8-56', title: 'Kiểm tra 45′ #56 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(8x+9)(8x-9)$?', options: ['$64x^2+81$', '$8x^2-81$', '$64x^2-81$', '$64x^2-144x-81$'], answer: 2, explanation: 'Hiệu hai bình phương: $64x^2-81$.' },
+        { stem: 'Phân tích $x^2+11x+28$ thành nhân tử?', options: ['$(x+4)(x+7)$', '$(x-4)(x-7)$', '$(x+3)(x+8)$', '$(x+4)(x-7)$'], answer: 0, explanation: '$x^2+11x+28=(x+4)(x+7)$.' },
+        { stem: 'Nghiệm của phương trình $16x-13=13x+5$?', options: ['$x=3$', '$x=6$', '$x=18$', '$x=-6$'], answer: 1, explanation: '$3x=18 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-289}{x-17}$ (với $x\\ne17$)?', options: ['$x-17$', '$x$', '$x^2+17$', '$x+17$'], answer: 3, explanation: '$\\dfrac{(x-17)(x+17)}{x-17}=x+17$.' },
+        { stem: 'Đường thẳng $y=9x+36$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=36$', '$x=4$', '$x=-4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 9x=-36 \\Rightarrow x=-4$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $33$ và $56$. Cạnh huyền?', options: ['$89$', '$65$', '$60$', '$70$'], answer: 1, explanation: '$\\sqrt{33^2+56^2}=\\sqrt{4225}=65$.' },
+        { stem: 'Khai triển $(4x-9)^2$?', options: ['$16x^2-72x+81$', '$16x^2+72x+81$', '$16x^2-81$', '$4x^2-72x+81$'], answer: 0, explanation: '$(4x-9)^2=16x^2-72x+81$.' },
+        { stem: 'Diện tích hình bình hành có đáy $12$ và chiều cao $9$?', options: ['$21$', '$54$', '$96$', '$108$'], answer: 3, explanation: '$S=a\\cdot h=12\\cdot9=108$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-2x-35}{x-7}$ (với $x\\ne7$)?', options: ['$x-5$', '$x+5$', '$x^2-5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x-7)(x+5)}{x-7}=x+5$.' },
+        { stem: 'Số trung bình cộng của $40, 40, 40, 40, 60$?', options: ['$40$', '$60$', '$44$', '$220$'], answer: 2, explanation: '$\\dfrac{40\\cdot4+60}{5}=\\dfrac{220}{5}=44$.' },
+      ],
+    },
   ],
 
   KHTN8: [
