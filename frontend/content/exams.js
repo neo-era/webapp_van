@@ -3347,6 +3347,21 @@ const EXAMS = {
         { stem: 'We ____ already finished our homework.', options: ['has', 'had', 'having', 'have'], answer: 3, explanation: 'Hiện tại hoàn thành với "we" ⇒ have finished.' },
       ],
     },
+    {
+      examId: 'anh8-13', title: 'Kiểm tra 45′ #13 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ to Da Nang last summer.', options: ['traveled', 'travel', 'travels', 'traveling'], answer: 0, explanation: 'last summer ⇒ quá khứ đơn: traveled.' },
+        { stem: 'She is ____ student in her class.', options: ['good', 'better', 'the best', 'best'], answer: 2, explanation: 'So sánh nhất: the best.' },
+        { stem: "You ____ smoke here. It's forbidden.", options: ['should', "mustn't", 'may', 'would'], answer: 1, explanation: "mustn't = cấm, không được phép." },
+        { stem: 'If I ____ rich, I will buy a big house.', options: ['am', 'will be', 'were', 'was'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề if dùng hiện tại đơn ⇒ am.' },
+        { stem: 'A lot of trees ____ in our school garden last year.', options: ['planted', 'was planted', 'were planted', 'are planted'], answer: 2, explanation: 'Bị động quá khứ, chủ ngữ số nhiều ⇒ were planted.' },
+        { stem: 'This is the house ____ I was born.', options: ['which', 'who', 'when', 'where'], answer: 3, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'They have known each other ____ 2015.', options: ['for', 'since', 'at', 'on'], answer: 1, explanation: 'since + mốc thời gian (2015).' },
+        { stem: "Choose the synonym of 'smart'.", options: ['lazy', 'clever', 'slow', 'weak'], answer: 1, explanation: 'smart ≈ clever (thông minh).' },
+        { stem: "Choose the antonym of 'difficult'.", options: ['easy', 'hard', 'tough', 'complex'], answer: 0, explanation: 'difficult ↔ easy (dễ).' },
+        { stem: 'Water ____ at 100 degrees Celsius.', options: ['boil', 'boiled', 'boiling', 'boils'], answer: 3, explanation: 'Chân lý ⇒ hiện tại đơn: boils.' },
+      ],
+    },
   ],
 };
 
