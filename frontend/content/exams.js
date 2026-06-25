@@ -4697,6 +4697,21 @@ const EXAMS = {
         { stem: 'He has ____ done his homework, so he can play now.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
       ],
     },
+    {
+      examId: 'anh8-43', title: 'Kiểm tra 45′ #43 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ a new bridge in our town now.', options: ['build', 'builds', 'are building', 'built'], answer: 2, explanation: '"now" ⇒ hiện tại tiếp diễn: are building.' },
+        { stem: 'A good pen is ____ than a pencil.', options: ['expensive', 'expensiver', 'most expensive', 'more expensive'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more expensive.' },
+        { stem: 'You ____ be careful with that sharp knife.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = bắt buộc (cảnh báo).' },
+        { stem: 'If she calls, I ____ her the news.', options: ['will tell', 'tell', 'told', 'would tell'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The flowers ____ every day.', options: ['water', 'waters', 'are watered', 'is watered'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are watered.' },
+        { stem: 'The house ____ we bought last year is old.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'We have lived here ____ ten years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (ten years).' },
+        { stem: "Choose the synonym of 'speak'.", options: ['listen', 'hear', 'write', 'talk'], answer: 3, explanation: 'speak ≈ talk (nói).' },
+        { stem: "Choose the antonym of 'first'.", options: ['second', 'last', 'next', 'early'], answer: 1, explanation: 'first ↔ last (cuối cùng).' },
+        { stem: 'She has ____ left, so we missed her.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
