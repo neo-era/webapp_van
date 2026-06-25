@@ -2722,6 +2722,21 @@ const EXAMS = {
         { stem: 'So determined was she ____ she never gave up.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-31', title: 'IELTS – Vocabulary & Grammar #31', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "assiduous".', options: ['hardworking', 'lazy', 'idle', 'careless'], answer: 0, explanation: 'assiduous ≈ hardworking (cần mẫn).' },
+        { stem: 'Choose the synonym of "pertinent".', options: ['relevant', 'irrelevant', 'unrelated', 'trivial'], answer: 0, explanation: 'pertinent ≈ relevant (thích đáng, liên quan).' },
+        { stem: 'Choose the antonym of "ample".', options: ['plenty', 'abundant', 'sufficient', 'insufficient'], answer: 3, explanation: 'ample ↔ insufficient (không đủ).' },
+        { stem: 'Rarely ____ such dedication in one so young.', options: ['we find', 'do we find', 'we found', 'found we'], answer: 1, explanation: 'Đảo ngữ với "Rarely": + do/does + S + V.' },
+        { stem: 'Choose the synonym of "champion" (verb).', options: ['support', 'oppose', 'reject', 'criticize'], answer: 0, explanation: 'champion ≈ support (ủng hộ, bảo vệ).' },
+        { stem: 'The building, ____ design won awards, is now iconic.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "victory".', options: ['win', 'triumph', 'success', 'defeat'], answer: 3, explanation: 'victory ↔ defeat (thất bại).' },
+        { stem: 'Were the price lower, more people ____ buy it.', options: ['will', 'would', 'can', 'must'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 2: Were … would + V.' },
+        { stem: 'Choose the synonym of "copious".', options: ['scarce', 'rare', 'limited', 'plentiful'], answer: 3, explanation: 'copious ≈ plentiful (dồi dào).' },
+        { stem: 'So loud was the music ____ the neighbors complained.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
