@@ -3581,6 +3581,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $25, 25, 25, 25, 50$?', options: ['$25$', '$50$', '$30$', '$150$'], answer: 2, explanation: '$\\dfrac{25\\cdot4+50}{5}=\\dfrac{150}{5}=30$.' },
       ],
     },
+    {
+      examId: 'toan8-55', title: 'Kiểm tra 45′ #55 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(7x+8)(7x-8)$?', options: ['$49x^2+64$', '$7x^2-64$', '$49x^2-64$', '$49x^2-112x-64$'], answer: 2, explanation: 'Hiệu hai bình phương: $49x^2-64$.' },
+        { stem: 'Phân tích $x^2-13x+40$ thành nhân tử?', options: ['$(x-5)(x-8)$', '$(x+5)(x+8)$', '$(x-4)(x-10)$', '$(x-5)(x+8)$'], answer: 0, explanation: '$x^2-13x+40=(x-5)(x-8)$.' },
+        { stem: 'Nghiệm của phương trình $15x-11=12x+10$?', options: ['$x=3$', '$x=7$', '$x=21$', '$x=-7$'], answer: 1, explanation: '$3x=21 \\Leftrightarrow x=7$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-256}{x-16}$ (với $x\\ne16$)?', options: ['$x-16$', '$x$', '$x^2+16$', '$x+16$'], answer: 3, explanation: '$\\dfrac{(x-16)(x+16)}{x-16}=x+16$.' },
+        { stem: 'Đường thẳng $y=8x+32$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=32$', '$x=4$', '$x=-4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 8x=-32 \\Rightarrow x=-4$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $26$, một cạnh góc vuông $24$. Cạnh góc vuông còn lại?', options: ['$50$', '$10$', '$\\sqrt{1252}$', '$12$'], answer: 1, explanation: '$\\sqrt{26^2-24^2}=\\sqrt{100}=10$.' },
+        { stem: 'Khai triển $(a-12)^2$?', options: ['$a^2-24a+144$', '$a^2+24a+144$', '$a^2-144$', '$a^2-12a+144$'], answer: 0, explanation: '$(a-12)^2=a^2-24a+144$.' },
+        { stem: 'Diện tích tam giác có đáy $20$ và chiều cao $6$?', options: ['$120$', '$26$', '$40$', '$60$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot20\\cdot6=60$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+x-30}{x+6}$ (với $x\\ne-6$)?', options: ['$x+5$', '$x-5$', '$x^2-5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x+6)(x-5)}{x+6}=x-5$.' },
+        { stem: 'Số trung bình cộng của $30, 30, 30, 30, 50$?', options: ['$30$', '$50$', '$34$', '$170$'], answer: 2, explanation: '$\\dfrac{30\\cdot4+50}{5}=\\dfrac{170}{5}=34$.' },
+      ],
+    },
   ],
 
   KHTN8: [
