@@ -2879,6 +2879,21 @@ const EXAMS = {
         { stem: 'Chất nào sau đây là oxide base?', options: ['$CO_2$', '$SO_2$', '$P_2O_5$', '$Na_2O$'], answer: 3, explanation: '$Na_2O$ là oxide base; các chất còn lại là oxide acid.' },
       ],
     },
+    {
+      examId: 'khtn8-4', title: 'Kiểm tra 45′ #4 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}2$ mol $CaCO_3$ ($M=100$)?', options: ['$20$ g', '$10$ g', '$50$ g', '$100$ g'], answer: 0, explanation: '$m=0{,}2\\cdot100=20$ g.' },
+        { stem: 'Áp lực $F=80$ N ép vuông góc lên diện tích $S=0{,}4\\,m^2$. Áp suất?', options: ['$20$ Pa', '$32$ Pa', '$100$ Pa', '$200$ Pa'], answer: 3, explanation: '$p=F/S=80/0{,}4=200$ Pa.' },
+        { stem: 'Khối lượng riêng của vật $m=5$ kg, $V=2\\,m^3$?', options: ['$10\\,kg/m^3$', '$2\\,kg/m^3$', '$2{,}5\\,kg/m^3$', '$7\\,kg/m^3$'], answer: 2, explanation: '$D=m/V=5/2=2{,}5\\,kg/m^3$.' },
+        { stem: 'Cho $0{,}1$ mol Zn tác dụng hết HCl ($Zn+2HCl\\to ZnCl_2+H_2$). Số mol $H_2$?', options: ['$0{,}05$', '$0{,}2$', '$1$', '$0{,}1$'], answer: 3, explanation: 'Tỉ lệ 1:1 ⇒ $0{,}1$ mol $H_2$.' },
+        { stem: 'Thành phần nào của máu vận chuyển khí $O_2$?', options: ['bạch cầu', 'hồng cầu', 'tiểu cầu', 'huyết tương'], answer: 1, explanation: 'Hồng cầu chứa hemoglobin vận chuyển $O_2$.' },
+        { stem: 'Hòa tan $25$ g muối trong dung dịch $100$ g. Nồng độ phần trăm?', options: ['$12{,}5\\%$', '$20\\%$', '$25\\%$', '$30\\%$'], answer: 2, explanation: '$C\\%=25/100\\cdot100\\%=25\\%$.' },
+        { stem: 'Lực đẩy Archimedes ($d=10000\\,N/m^3$, $V=0{,}005\\,m^3$)?', options: ['$50$ N', '$25$ N', '$5$ N', '$100$ N'], answer: 0, explanation: '$F_A=d\\cdot V=10000\\cdot0{,}005=50$ N.' },
+        { stem: 'Dung dịch base làm phenolphtalein chuyển sang màu?', options: ['không màu', 'hóa xanh', 'hóa hồng', 'hóa đỏ'], answer: 2, explanation: 'Phenolphtalein hóa hồng trong môi trường base.' },
+        { stem: 'Cơ quan hô hấp chính ở người là?', options: ['tim', 'phổi', 'gan', 'thận'], answer: 1, explanation: 'Phổi là cơ quan trao đổi khí chính.' },
+        { stem: 'Quỳ tím trong môi trường acid có màu?', options: ['xanh', 'vàng', 'tím', 'đỏ'], answer: 3, explanation: 'Acid làm quỳ tím hóa đỏ.' },
+      ],
+    },
   ],
 
   ANH8: [
