@@ -3236,6 +3236,21 @@ const EXAMS = {
         { stem: 'Trung vị của dãy số $3, 5, 7, 9, 11$?', options: ['$5$', '$9$', '$7$', '$11$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $7$.' },
       ],
     },
+    {
+      examId: 'toan8-32', title: 'Kiểm tra 45′ #32 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+9)(x-9)$?', options: ['$x^2+81$', '$x^2-18x+81$', '$x^2-81$', '$x^2-9x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-81$.' },
+        { stem: 'Phân tích $x^2+7x+12$ thành nhân tử?', options: ['$(x+3)(x+4)$', '$(x-3)(x-4)$', '$(x+2)(x+6)$', '$(x+1)(x+12)$'], answer: 0, explanation: '$x^2+7x+12=(x+3)(x+4)$.' },
+        { stem: 'Nghiệm của phương trình $11-3x=2$?', options: ['$x=2$', '$x=3$', '$x=9$', '$x=-3$'], answer: 1, explanation: '$-3x=-9 \\Leftrightarrow x=3$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+8x+16}{x+4}$ (với $x\\ne-4$)?', options: ['$x-4$', '$x$', '$x^2+4$', '$x+4$'], answer: 3, explanation: '$\\dfrac{(x+4)^2}{x+4}=x+4$.' },
+        { stem: 'Đồ thị hàm số $y=\\dfrac{x}{2}$ đi qua điểm nào?', options: ['$(2;4)$', '$(1;2)$', '$(4;2)$', '$(2;2)$'], answer: 2, explanation: 'Thay $x=4 \\Rightarrow y=2$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $10$ và $24$. Cạnh huyền?', options: ['$34$', '$26$', '$24$', '$28$'], answer: 1, explanation: '$\\sqrt{10^2+24^2}=\\sqrt{676}=26$.' },
+        { stem: 'Khai triển $(6+x)^2$?', options: ['$36+12x+x^2$', '$36-12x+x^2$', '$36+x^2$', '$36+6x+x^2$'], answer: 0, explanation: '$(6+x)^2=36+12x+x^2$.' },
+        { stem: 'Diện tích tam giác có đáy $12$ và chiều cao $5$?', options: ['$60$', '$17$', '$24$', '$30$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot12\\cdot5=30$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-2x-3}{x+1}$ (với $x\\ne-1$)?', options: ['$x+3$', '$x-3$', '$x^2-3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x-3)(x+1)}{x+1}=x-3$.' },
+        { stem: 'Số trung bình cộng của $2, 4, 6, 8, 10, 12$?', options: ['$6$', '$8$', '$7$', '$42$'], answer: 2, explanation: '$\\dfrac{2+4+6+8+10+12}{6}=\\dfrac{42}{6}=7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
