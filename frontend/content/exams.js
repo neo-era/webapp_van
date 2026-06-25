@@ -2999,6 +2999,21 @@ const EXAMS = {
         { stem: 'Số mol có trong $16$ g $O_2$ ($M=32$)?', options: ['$0{,}25$', '$1$', '$0{,}5$', '$2$'], answer: 2, explanation: '$n=16/32=0{,}5$ mol.' },
       ],
     },
+    {
+      examId: 'khtn8-8', title: 'Kiểm tra 45′ #8 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}4$ mol HCl ($M=36{,}5$)?', options: ['$14{,}6$ g', '$7{,}3$ g', '$29{,}2$ g', '$3{,}65$ g'], answer: 0, explanation: '$m=0{,}4\\cdot36{,}5=14{,}6$ g.' },
+        { stem: 'Áp lực $F=50$ N ép vuông góc lên diện tích $S=0{,}25\\,m^2$. Áp suất?', options: ['$12{,}5$ Pa', '$100$ Pa', '$20$ Pa', '$200$ Pa'], answer: 3, explanation: '$p=F/S=50/0{,}25=200$ Pa.' },
+        { stem: 'Khối lượng riêng của vật $m=80$ g, $V=40\\,cm^3$?', options: ['$2\\,g/cm^3$', '$1\\,g/cm^3$', '$0{,}5\\,g/cm^3$', '$4\\,g/cm^3$'], answer: 0, explanation: '$D=m/V=80/40=2\\,g/cm^3$.' },
+        { stem: 'Đốt cháy $0{,}2$ mol S ($S+O_2\\to SO_2$) thu được mol $SO_2$?', options: ['$0{,}1$', '$0{,}4$', '$1$', '$0{,}2$'], answer: 3, explanation: 'Tỉ lệ 1:1 ⇒ $0{,}2$ mol $SO_2$.' },
+        { stem: 'Máu từ tim đi nuôi cơ thể được vận chuyển qua loại mạch nào?', options: ['tĩnh mạch', 'động mạch', 'mao mạch', 'mạch bạch huyết'], answer: 1, explanation: 'Động mạch đưa máu từ tim đến các cơ quan.' },
+        { stem: 'Hòa tan $8$ g chất tan trong dung dịch $200$ g. Nồng độ phần trăm?', options: ['$4\\%$', '$2\\%$', '$8\\%$', '$16\\%$'], answer: 0, explanation: '$C\\%=8/200\\cdot100\\%=4\\%$.' },
+        { stem: 'Một vật sẽ nổi lên trong chất lỏng khi?', options: ['$F_A < P$', '$F_A > P$', '$F_A = P$', 'không liên quan'], answer: 1, explanation: 'Lực đẩy lớn hơn trọng lượng ⇒ vật nổi lên.' },
+        { stem: 'Acid tác dụng với kim loại (đứng trước H) tạo ra?', options: ['muối + nước', 'oxide', 'base', 'muối + khí $H_2$'], answer: 3, explanation: 'VD: $Zn+2HCl\\to ZnCl_2+H_2$.' },
+        { stem: 'Đơn vị cấu tạo cơ bản của cơ thể sống là?', options: ['mô', 'cơ quan', 'tế bào', 'hệ cơ quan'], answer: 2, explanation: 'Tế bào là đơn vị cấu tạo cơ bản.' },
+        { stem: 'Số mol có trong $7$ g CaO ($M=56$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$0{,}125$'], answer: 3, explanation: '$n=7/56=0{,}125$ mol.' },
+      ],
+    },
   ],
 
   ANH8: [
