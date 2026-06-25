@@ -3869,6 +3869,21 @@ const EXAMS = {
         { stem: 'Áp suất của chất lỏng tăng lên khi nào?', options: ['Diện tích đáy bình tăng', 'Độ sâu tăng', 'Nhiệt độ giảm', 'Màu sắc thay đổi'], answer: 1, explanation: '$p=d\\cdot h$: độ sâu $h$ tăng ⇒ áp suất tăng.' },
       ],
     },
+    {
+      examId: 'khtn8-37', title: 'Kiểm tra 45′ #37 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $16$ g CuO ($M=80$)?', options: ['$0{,}1$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 2, explanation: '$n=16/80=0{,}2$ mol.' },
+        { stem: 'Áp suất tại độ sâu $6$ m trong nước ($d=10000$ N/m³)?', options: ['$60000$ Pa', '$6000$ Pa', '$600000$ Pa', '$16000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 6=60000$ Pa.' },
+        { stem: 'Một vật có khối lượng $63$ g và thể tích $3$ cm³. Khối lượng riêng?', options: ['$210$ g/cm³', '$21$ g/cm³', '$2{,}1$ g/cm³', '$2100$ g/cm³'], answer: 1, explanation: '$D=m/V=63/3=21$ g/cm³.' },
+        { stem: 'Trộn vừa đủ dung dịch HCl với NaOH, dung dịch thu được có pH bằng?', options: ['$1$', '$5$', '$9$', '$7$'], answer: 3, explanation: 'Tạo NaCl trung tính ⇒ $pH=7$.' },
+        { stem: 'Hệ tiêu hóa biến đổi thức ăn thành dạng nào để cơ thể sử dụng?', options: ['Chất dinh dưỡng cơ thể hấp thụ được', 'Khí oxi', 'Nước tiểu', 'Mồ hôi'], answer: 0, explanation: 'Thức ăn được biến đổi thành chất dinh dưỡng đơn giản.' },
+        { stem: 'Hòa tan $2$ g chất tan vào $18$ g nước. Nồng độ phần trăm dung dịch?', options: ['$2\\%$', '$18\\%$', '$10\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=20$ g ⇒ $C\\%=2/20\\times 100\\%=10\\%$.' },
+        { stem: 'Một vật khối lượng $10$ kg đặt trên sàn (lấy $g=10$). Áp lực vật tác dụng lên sàn?', options: ['$10$ N', '$100$ N', '$1000$ N', '$1$ N'], answer: 1, explanation: '$F=P=mg=10\\times 10=100$ N.' },
+        { stem: 'Khối lượng của $1{,}5$ mol khí $H_2$ ($M=2$)?', options: ['$1{,}5$ g', '$0{,}75$ g', '$6$ g', '$3$ g'], answer: 3, explanation: '$m=1{,}5\\times 2=3$ g.' },
+        { stem: 'Loại mạch máu nào có thành dày nhất để chịu áp lực cao của máu?', options: ['Tĩnh mạch', 'Mao mạch', 'Động mạch', 'Mạch bạch huyết'], answer: 2, explanation: 'Động mạch có thành dày, đàn hồi chịu áp lực cao.' },
+        { stem: 'Tại sao xe tải nặng thường có nhiều bánh xe?', options: ['Để trang trí', 'Để giảm áp suất lên mặt đường', 'Để tăng tốc độ', 'Để giảm khối lượng'], answer: 1, explanation: 'Nhiều bánh ⇒ tăng diện tích ⇒ giảm áp suất, tránh lún đường.' },
+      ],
+    },
   ],
 
   ANH8: [
