@@ -3839,6 +3839,21 @@ const EXAMS = {
         { stem: 'Tại cùng một độ sâu trong cùng một chất lỏng, áp suất chất lỏng sẽ?', options: ['Khác nhau hoàn toàn', 'Bằng nhau theo mọi hướng', 'Bằng $0$', 'Chỉ tác dụng hướng xuống'], answer: 1, explanation: 'Áp suất chất lỏng tại cùng độ sâu bằng nhau theo mọi hướng.' },
       ],
     },
+    {
+      examId: 'khtn8-36', title: 'Kiểm tra 45′ #36 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $9{,}8$ g $H_2SO_4$ ($M=98$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=9{,}8/98=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $5$ m trong nước ($d=10000$ N/m³)?', options: ['$50000$ Pa', '$5000$ Pa', '$500000$ Pa', '$15000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 5=50000$ Pa.' },
+        { stem: 'Một vật có khối lượng $33{,}6$ g và thể tích $3$ cm³. Khối lượng riêng?', options: ['$112$ g/cm³', '$11{,}2$ g/cm³', '$1{,}12$ g/cm³', '$1120$ g/cm³'], answer: 1, explanation: '$D=m/V=33{,}6/3=11{,}2$ g/cm³.' },
+        { stem: 'Khí nào gây ra hiệu ứng nhà kính chủ yếu?', options: ['$O_2$', '$N_2$', '$H_2$', '$CO_2$'], answer: 3, explanation: '$CO_2$ là khí nhà kính chủ yếu.' },
+        { stem: 'Hệ cơ quan nào tiếp nhận và xử lý thông tin, điều khiển cơ thể?', options: ['Hệ thần kinh', 'Hệ tiêu hóa', 'Hệ tuần hoàn', 'Hệ hô hấp'], answer: 0, explanation: 'Hệ thần kinh điều khiển và phối hợp hoạt động cơ thể.' },
+        { stem: 'Hòa tan $6$ g chất tan vào $24$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$24\\%$', '$20\\%$', '$6\\%$'], answer: 2, explanation: '$m_{dd}=30$ g ⇒ $C\\%=6/30\\times 100\\%=20\\%$.' },
+        { stem: 'Một máy thực hiện công $900$ J trong $30$ s. Công suất là?', options: ['$900$ W', '$30$ W', '$3$ W', '$270$ W'], answer: 1, explanation: '$P=A/t=900/30=30$ W.' },
+        { stem: 'Khối lượng của $0{,}5$ mol CaO ($M=56$)?', options: ['$56$ g', '$112$ g', '$14$ g', '$28$ g'], answer: 3, explanation: '$m=0{,}5\\times 56=28$ g.' },
+        { stem: 'Bộ phận nào của tim nhận máu trở về từ tĩnh mạch?', options: ['Tâm thất', 'Van tim', 'Tâm nhĩ', 'Động mạch'], answer: 2, explanation: 'Tâm nhĩ nhận máu từ tĩnh mạch đổ về.' },
+        { stem: 'Áp suất của chất lỏng tăng lên khi nào?', options: ['Diện tích đáy bình tăng', 'Độ sâu tăng', 'Nhiệt độ giảm', 'Màu sắc thay đổi'], answer: 1, explanation: '$p=d\\cdot h$: độ sâu $h$ tăng ⇒ áp suất tăng.' },
+      ],
+    },
   ],
 
   ANH8: [
