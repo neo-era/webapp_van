@@ -3932,6 +3932,21 @@ const EXAMS = {
         { stem: 'She has ____ left the office, so you missed her.', options: ['yet', 'ever', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-26', title: 'Kiểm tra 45′ #26 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'I usually ____ up at 6 am.', options: ['get', 'gets', 'getting', 'got'], answer: 0, explanation: 'usually ⇒ hiện tại đơn, chủ ngữ "I" ⇒ get.' },
+        { stem: 'Winter is ____ than summer.', options: ['cold', 'coldest', 'colder', 'more cold'], answer: 2, explanation: 'So sánh hơn tính từ ngắn: colder.' },
+        { stem: 'Students ____ be quiet in the library.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = bắt buộc.' },
+        { stem: 'If we plant more trees, the air ____ cleaner.', options: ['is', 'was', 'would be', 'will be'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'The cake ____ by my sister yesterday.', options: ['made', 'makes', 'was made', 'is made'], answer: 2, explanation: 'Bị động quá khứ đơn: was made.' },
+        { stem: "That's the dog ____ barks all night.", options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho con vật làm chủ ngữ.' },
+        { stem: 'I have been very busy ____ Monday.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (Monday).' },
+        { stem: "Choose the synonym of 'tired'.", options: ['fresh', 'lively', 'active', 'exhausted'], answer: 3, explanation: 'tired ≈ exhausted (mệt).' },
+        { stem: "Choose the antonym of 'dark'.", options: ['dim', 'bright', 'gloomy', 'shady'], answer: 1, explanation: 'dark ↔ bright (sáng).' },
+        { stem: 'We ____ the news already.', options: ['has heard', 'hear', 'have heard', 'heard'], answer: 2, explanation: 'Hiện tại hoàn thành với "we" ⇒ have heard.' },
+      ],
+    },
   ],
 };
 
