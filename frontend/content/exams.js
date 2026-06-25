@@ -3026,6 +3026,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của dãy $2, 4, 6, 8, 10$?', options: ['$6$', '$5$', '$30$', '$8$'], answer: 0, explanation: '$\\dfrac{2+4+6+8+10}{5}=\\dfrac{30}{5}=6$.' },
       ],
     },
+    {
+      examId: 'toan8-18', title: 'Kiểm tra 45′ #18 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-1)^3$?', options: ['$x^3+3x^2+3x+1$', '$x^3-1$', '$x^3-3x^2+3x-1$', '$x^3-3x^2-3x-1$'], answer: 2, explanation: '$(x-1)^3=x^3-3x^2+3x-1$.' },
+        { stem: 'Phân tích $x^2-5x+6$ thành nhân tử?', options: ['$(x-2)(x-3)$', '$(x+2)(x+3)$', '$(x-1)(x-6)$', '$(x-2)(x+3)$'], answer: 0, explanation: '$x^2-5x+6=(x-2)(x-3)$.' },
+        { stem: 'Nghiệm của phương trình $3x-5=2x+1$?', options: ['$x=2$', '$x=4$', '$x=-6$', '$x=6$'], answer: 3, explanation: '$3x-2x=1+5 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+2x}{x+2}$ (với $x\\ne-2$)?', options: ['$x+2$', '$x$', '$x^2$', '$2x$'], answer: 1, explanation: '$\\dfrac{x(x+2)}{x+2}=x$.' },
+        { stem: 'Đồ thị hàm số $y=x+2$ đi qua điểm nào?', options: ['$(2;0)$', '$(1;2)$', '$(0;2)$', '$(2;2)$'], answer: 2, explanation: 'Thay $x=0 \\Rightarrow y=2$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $5$, một cạnh góc vuông $3$. Cạnh góc vuông còn lại?', options: ['$4$', '$6$', '$\\sqrt{34}$', '$8$'], answer: 0, explanation: '$\\sqrt{5^2-3^2}=\\sqrt{16}=4$.' },
+        { stem: 'Phân tích $x^2-2x+1$ thành nhân tử?', options: ['$(x+1)^2$', '$(x-1)^2$', '$(x-1)(x+1)$', '$(x-2)^2$'], answer: 1, explanation: '$x^2-2x+1=(x-1)^2$.' },
+        { stem: 'Diện tích hình vuông cạnh $7$?', options: ['$14$', '$28$', '$21$', '$49$'], answer: 3, explanation: '$S=7^2=49$.' },
+        { stem: 'Rút gọn $\\dfrac{a^2-b^2}{a-b}$ (với $a\\ne b$)?', options: ['$a+b$', '$a-b$', '$a^2+b^2$', '$ab$'], answer: 0, explanation: '$\\dfrac{(a-b)(a+b)}{a-b}=a+b$.' },
+        { stem: 'Rút ngẫu nhiên $1$ lá từ bộ bài $52$ lá (có $26$ lá đỏ). Xác suất rút được lá đỏ?', options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{2}$', '$\\dfrac{1}{13}$', '$\\dfrac{2}{13}$'], answer: 1, explanation: '$\\dfrac{26}{52}=\\dfrac{1}{2}$.' },
+      ],
+    },
   ],
 
   KHTN8: [
