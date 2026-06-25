@@ -3431,6 +3431,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $4, 8, 12, 16, 20, 24$?', options: ['$12$', '$24$', '$14$', '$84$'], answer: 2, explanation: '$\\dfrac{4+8+12+16+20+24}{6}=\\dfrac{84}{6}=14$.' },
       ],
     },
+    {
+      examId: 'toan8-45', title: 'Kiểm tra 45′ #45 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+15)(x-15)$?', options: ['$x^2+225$', '$x^2-30x+225$', '$x^2-225$', '$x^2-15x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-225$.' },
+        { stem: 'Phân tích $x^2-16x+64$ thành nhân tử?', options: ['$(x-8)^2$', '$(x+8)^2$', '$(x-8)(x+8)$', '$(x-16)(x-4)$'], answer: 0, explanation: '$x^2-16x+64=(x-8)^2$.' },
+        { stem: 'Nghiệm của phương trình $4x+5=2x+17$?', options: ['$x=4$', '$x=6$', '$x=12$', '$x=-6$'], answer: 1, explanation: '$2x=12 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+13x+42}{x+6}$ (với $x\\ne-6$)?', options: ['$x+6$', '$x$', '$x^2+7$', '$x+7$'], answer: 3, explanation: '$\\dfrac{(x+6)(x+7)}{x+6}=x+7$.' },
+        { stem: 'Đường thẳng $y=8x-24$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=24$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 8x=24 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $15$, một cạnh góc vuông $9$. Cạnh góc vuông còn lại?', options: ['$17$', '$12$', '$\\sqrt{306}$', '$6$'], answer: 1, explanation: '$\\sqrt{15^2-9^2}=\\sqrt{144}=12$.' },
+        { stem: 'Khai triển $(7x+1)^2$?', options: ['$49x^2+14x+1$', '$49x^2-14x+1$', '$49x^2+1$', '$7x^2+14x+1$'], answer: 0, explanation: '$(7x+1)^2=49x^2+14x+1$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có đáy $5\\times6$ và chiều cao $4$?', options: ['$30$', '$15$', '$60$', '$120$'], answer: 3, explanation: '$V=5\\cdot6\\cdot4=120$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-2x-24}{x-6}$ (với $x\\ne6$)?', options: ['$x-4$', '$x+4$', '$x^2+4$', '$4$'], answer: 1, explanation: '$\\dfrac{(x-6)(x+4)}{x-6}=x+4$.' },
+        { stem: 'Số trung bình cộng của $1, 1, 1, 4, 7, 10$?', options: ['$1$', '$10$', '$4$', '$24$'], answer: 2, explanation: '$\\dfrac{1+1+1+4+7+10}{6}=\\dfrac{24}{6}=4$.' },
+      ],
+    },
   ],
 
   KHTN8: [
