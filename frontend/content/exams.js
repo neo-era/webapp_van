@@ -2939,6 +2939,21 @@ const EXAMS = {
         { stem: 'Khối lượng mol của NaCl (Na=23, Cl=35,5)?', options: ['$40$', '$36{,}5$', '$58{,}5$', '$23$'], answer: 2, explanation: '$23+35{,}5=58{,}5$ g/mol.' },
       ],
     },
+    {
+      examId: 'khtn8-6', title: 'Kiểm tra 45′ #6 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $5{,}6$ g Fe ($M=56$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=5{,}6/56=0{,}1$ mol.' },
+        { stem: 'Trọng lượng của vật $m=3$ kg (lấy $g=10$)?', options: ['$30$ N', '$3$ N', '$300$ N', '$0{,}3$ N'], answer: 0, explanation: '$P=mg=3\\cdot10=30$ N.' },
+        { stem: 'Áp suất của dầu ($d=8000\\,N/m^3$) tại độ sâu $h=0{,}5$ m?', options: ['$16000$ Pa', '$4000$ Pa', '$1600$ Pa', '$400$ Pa'], answer: 1, explanation: '$p=d\\cdot h=8000\\cdot0{,}5=4000$ Pa.' },
+        { stem: 'Đốt cháy $0{,}3$ mol C thu được bao nhiêu g $CO_2$ ($M=44$)?', options: ['$6{,}6$', '$26{,}4$', '$4{,}4$', '$13{,}2$'], answer: 3, explanation: '$0{,}3$ mol $CO_2$, $m=0{,}3\\cdot44=13{,}2$ g.' },
+        { stem: 'Ruột non hấp thụ tốt chất dinh dưỡng nhờ?', options: ['thành ruột dày', 'lớp lông ruột (nhung mao)', 'chiều dài ngắn', 'không có mạch máu'], answer: 1, explanation: 'Lông ruột làm tăng diện tích hấp thụ.' },
+        { stem: 'Hòa tan $0{,}4$ mol NaOH thành $0{,}5$ L dung dịch. Nồng độ mol?', options: ['$0{,}2$', '$0{,}8$', '$0{,}4$', '$1$'], answer: 1, explanation: '$C_M=0{,}4/0{,}5=0{,}8$ M.' },
+        { stem: 'Với đòn bẩy, lực tác dụng càng xa điểm tựa thì?', options: ['càng lợi về lực', 'càng tốn lực', 'không thay đổi', 'đòn bẩy gãy'], answer: 0, explanation: 'Cánh tay đòn dài hơn ⇒ càng lợi về lực.' },
+        { stem: 'Chất nào sau đây là muối?', options: ['HCl', 'NaOH', 'CaO', 'NaCl'], answer: 3, explanation: 'NaCl là muối.' },
+        { stem: 'Hệ bài tiết nước tiểu gồm những cơ quan chính nào?', options: ['tim và phổi', 'gan và dạ dày', 'thận và bóng đái', 'não và tủy sống'], answer: 2, explanation: 'Hệ bài tiết gồm thận, ống dẫn nước tiểu và bóng đái.' },
+        { stem: 'Số mol có trong $4{,}4$ g $CO_2$ ($M=44$)?', options: ['$0{,}1$', '$0{,}05$', '$0{,}2$', '$1$'], answer: 0, explanation: '$n=4{,}4/44=0{,}1$ mol.' },
+      ],
+    },
   ],
 
   ANH8: [
