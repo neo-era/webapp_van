@@ -2801,6 +2801,21 @@ const EXAMS = {
         { stem: 'Biểu thức $A^2-2AB+B^2$ là hằng đẳng thức nào?', options: ['$(A-B)^2$', '$(A+B)^2$', '$A^2-B^2$', '$(A-B)(A+B)$'], answer: 0, explanation: '$A^2-2AB+B^2=(A-B)^2$.' },
       ],
     },
+    {
+      examId: 'toan8-3', title: 'Kiểm tra 45′ #3 — Toán 8 (Hình & Thống kê)', durationMin: 45,
+      questions: [
+        { stem: 'Hai tam giác đồng dạng với tỉ số $k=2$. Tỉ số diện tích của chúng?', options: ['$2$', '$8$', '$\\dfrac{1}{2}$', '$4$'], answer: 3, explanation: 'Tỉ số diện tích $=k^2=2^2=4$.' },
+        { stem: 'Hàm số bậc nhất $y=ax+b$ đồng biến khi nào?', options: ['$a>0$', '$a<0$', '$a=0$', '$b>0$'], answer: 0, explanation: 'Hàm số bậc nhất đồng biến khi hệ số $a>0$.' },
+        { stem: 'Diện tích hình chữ nhật có chiều dài $8$, chiều rộng $5$?', options: ['$40$', '$13$', '$26$', '$20$'], answer: 0, explanation: '$S=8\\cdot5=40$.' },
+        { stem: 'Thể tích hình lập phương cạnh $3$?', options: ['$9$', '$27$', '$18$', '$6$'], answer: 1, explanation: '$V=3^3=27$.' },
+        { stem: 'Trung bình cộng của $4, 6, 8, 10$?', options: ['$6$', '$8$', '$28$', '$7$'], answer: 3, explanation: '$(4+6+8+10)/4=28/4=7$.' },
+        { stem: 'Xác suất tung một đồng xu cân đối được mặt ngửa?', options: ['$\\dfrac{1}{2}$', '$\\dfrac{1}{4}$', '$\\dfrac{1}{3}$', '$1$'], answer: 0, explanation: '2 khả năng đồng khả năng ⇒ $P=1/2$.' },
+        { stem: 'Tam giác có hai góc $50^\\circ$ và $60^\\circ$. Góc còn lại?', options: ['$60^\\circ$', '$70^\\circ$', '$80^\\circ$', '$90^\\circ$'], answer: 1, explanation: 'Tổng ba góc $180^\\circ$: $180-50-60=70^\\circ$.' },
+        { stem: 'Hàm số $y=3x$. Khi $x=2$ thì $y$ bằng?', options: ['$5$', '$6$', '$9$', '$1{,}5$'], answer: 1, explanation: '$y=3\\cdot2=6$.' },
+        { stem: 'Diện tích tam giác có đáy $6$, chiều cao $4$?', options: ['$24$', '$10$', '$12$', '$48$'], answer: 2, explanation: '$S=\\dfrac{1}{2}\\cdot6\\cdot4=12$.' },
+        { stem: 'Đường trung bình của tam giác có độ dài bằng?', options: ['bằng cạnh đáy', 'gấp đôi cạnh đáy', '$\\dfrac{1}{3}$ cạnh đáy', 'nửa cạnh đáy'], answer: 3, explanation: 'Đường trung bình song song và bằng nửa cạnh thứ ba.' },
+      ],
+    },
   ],
 
   KHTN8: [
