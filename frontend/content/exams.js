@@ -3122,6 +3122,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'cheap'.", options: ['affordable', 'low', 'expensive', 'inexpensive'], answer: 2, explanation: 'cheap ↔ expensive (đắt).' },
       ],
     },
+    {
+      examId: 'anh8-8', title: 'Kiểm tra 45′ #8 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'We ____ English for three years.', options: ['study', 'studies', 'studying', 'have studied'], answer: 3, explanation: 'for three years ⇒ hiện tại hoàn thành.' },
+        { stem: 'He runs ____ than me.', options: ['faster', 'fast', 'fastest', 'more fast'], answer: 0, explanation: 'So sánh hơn trạng từ ngắn: faster.' },
+        { stem: '____ I open the window, please?', options: ['May', 'Do', 'Will', 'Are'], answer: 0, explanation: 'May I…? (xin phép lịch sự).' },
+        { stem: 'The students ____ to the museum last week.', options: ['took', 'were taken', 'take', 'taking'], answer: 1, explanation: 'Câu bị động quá khứ: were taken.' },
+        { stem: 'If you mix blue and yellow, you ____ green.', options: ['will get', 'got', 'getting', 'get'], answer: 3, explanation: 'Câu điều kiện loại 0 (chân lý): hiện tại đơn.' },
+        { stem: 'She is the ____ in her family.', options: ['young', 'younger', 'youngest', 'more young'], answer: 2, explanation: 'So sánh nhất: the youngest.' },
+        { stem: "Choose the synonym of 'begin'.", options: ['start', 'end', 'finish', 'stop'], answer: 0, explanation: 'begin ≈ start (bắt đầu).' },
+        { stem: 'Nobody ____ the answer to this question.', options: ['know', 'are knowing', 'have known', 'knows'], answer: 3, explanation: '"Nobody" + động từ số ít (knows).' },
+        { stem: 'The book ____ I borrowed is very interesting.', options: ['who', 'which', 'where', 'whose'], answer: 1, explanation: 'which thay cho vật, làm tân ngữ.' },
+        { stem: "Choose the antonym of 'wet'.", options: ['damp', 'dry', 'moist', 'soaked'], answer: 1, explanation: 'wet ↔ dry (khô).' },
+      ],
+    },
   ],
 };
 
