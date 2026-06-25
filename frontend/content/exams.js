@@ -5192,6 +5192,21 @@ const EXAMS = {
         { stem: '____ he ever played the violin?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ Has.' },
       ],
     },
+    {
+      examId: 'anh8-54', title: 'Kiểm tra 45′ #54 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'I ____ my keys this morning.', options: ['lose', 'loses', 'lost', 'losing'], answer: 2, explanation: 'this morning ⇒ quá khứ đơn: lost.' },
+        { stem: 'A house is ____ than a flat.', options: ['larger', 'large', 'largest', 'more large'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: larger.' },
+        { stem: 'You ____ tell lies. It is wrong.', options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = không được phép." },
+        { stem: 'If we hurry, we ____ the bus.', options: ['catch', 'caught', 'would catch', 'will catch'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The letters ____ by the postman every morning.', options: ['deliver', 'delivers', 'are delivered', 'is delivered'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are delivered.' },
+        { stem: 'The day ____ we first met was rainy.', options: ['when', 'which', 'who', 'whose'], answer: 0, explanation: 'when chỉ thời gian.' },
+        { stem: 'He has had this car ____ five years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (five years).' },
+        { stem: "Choose the synonym of 'fix'.", options: ['break', 'damage', 'ruin', 'repair'], answer: 3, explanation: 'fix ≈ repair (sửa).' },
+        { stem: "Choose the antonym of 'lose'.", options: ['miss', 'find', 'drop', 'leave'], answer: 1, explanation: 'lose ↔ find (tìm thấy).' },
+        { stem: '____ they arrived yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
