@@ -3311,6 +3311,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $6, 6, 6, 9, 12, 15$?', options: ['$6$', '$12$', '$9$', '$54$'], answer: 2, explanation: '$\\dfrac{6+6+6+9+12+15}{6}=\\dfrac{54}{6}=9$.' },
       ],
     },
+    {
+      examId: 'toan8-37', title: 'Kiểm tra 45′ #37 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(5x+3)^2$?', options: ['$25x^2+9$', '$25x^2+15x+9$', '$25x^2+30x+9$', '$5x^2+30x+9$'], answer: 2, explanation: '$(5x+3)^2=25x^2+30x+9$.' },
+        { stem: 'Phân tích $x^2-11x+30$ thành nhân tử?', options: ['$(x-5)(x-6)$', '$(x+5)(x+6)$', '$(x-3)(x-10)$', '$(x-5)(x+6)$'], answer: 0, explanation: '$x^2-11x+30=(x-5)(x-6)$.' },
+        { stem: 'Nghiệm của phương trình $6x-4=2x+12$?', options: ['$x=2$', '$x=4$', '$x=16$', '$x=-4$'], answer: 1, explanation: '$4x=16 \\Leftrightarrow x=4$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-36}{x+6}$ (với $x\\ne-6$)?', options: ['$x+6$', '$x$', '$x^2-6$', '$x-6$'], answer: 3, explanation: '$\\dfrac{(x-6)(x+6)}{x+6}=x-6$.' },
+        { stem: 'Đường thẳng $y=-2x+10$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=10$', '$x=-5$', '$x=5$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 2x=10 \\Rightarrow x=5$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $15$ và $20$. Cạnh huyền?', options: ['$35$', '$25$', '$30$', '$28$'], answer: 1, explanation: '$\\sqrt{15^2+20^2}=\\sqrt{625}=25$.' },
+        { stem: 'Khai triển $(x-9)^2$?', options: ['$x^2-18x+81$', '$x^2+18x+81$', '$x^2-81$', '$x^2-9x+81$'], answer: 0, explanation: '$(x-9)^2=x^2-18x+81$.' },
+        { stem: 'Diện tích hình vuông cạnh $10$?', options: ['$20$', '$40$', '$50$', '$100$'], answer: 3, explanation: '$S=10^2=100$.' },
+        { stem: 'Rút gọn $\\dfrac{2x^2-8x}{x-4}$ (với $x\\ne4$)?', options: ['$2x-8$', '$2x$', '$x$', '$2$'], answer: 1, explanation: '$\\dfrac{2x(x-4)}{x-4}=2x$.' },
+        { stem: 'Số trung bình cộng của $4, 8, 12, 16, 20$?', options: ['$10$', '$20$', '$12$', '$60$'], answer: 2, explanation: '$\\dfrac{4+8+12+16+20}{5}=\\dfrac{60}{5}=12$.' },
+      ],
+    },
   ],
 
   KHTN8: [
