@@ -2647,6 +2647,21 @@ const EXAMS = {
         { stem: 'So skilled was the surgeon ____ the operation succeeded.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
       ],
     },
+    {
+      examId: 'ielts-kt-30', title: 'IELTS – Vocabulary & Grammar #30', durationMin: 20,
+      questions: [
+        { stem: 'Choose the synonym of "resilient".', options: ['tough', 'fragile', 'weak', 'delicate'], answer: 0, explanation: 'resilient ≈ tough (kiên cường, bền bỉ).' },
+        { stem: 'Choose the synonym of "indispensable".', options: ['essential', 'optional', 'trivial', 'minor'], answer: 0, explanation: 'indispensable ≈ essential (thiết yếu).' },
+        { stem: 'Choose the antonym of "literal".', options: ['exact', 'precise', 'accurate', 'figurative'], answer: 3, explanation: 'literal ↔ figurative (nghĩa bóng).' },
+        { stem: 'At no time ____ aware of the danger.', options: ['they were', 'were they', 'they are', 'are they'], answer: 1, explanation: 'Đảo ngữ với "At no time": + were + S.' },
+        { stem: 'Choose the synonym of "merge".', options: ['combine', 'separate', 'divide', 'split'], answer: 0, explanation: 'merge ≈ combine (hợp nhất).' },
+        { stem: 'The novel, ____ ending shocked readers, became a bestseller.', options: ['who', 'which', 'whose', 'that'], answer: 2, explanation: 'whose chỉ quan hệ sở hữu.' },
+        { stem: 'Choose the antonym of "summon".', options: ['call', 'invite', 'gather', 'dismiss'], answer: 3, explanation: 'summon ↔ dismiss (giải tán, cho về).' },
+        { stem: 'Had it not been for the rain, we ____ the picnic.', options: ['will have', 'would have had', 'had', 'have had'], answer: 1, explanation: 'Đảo ngữ điều kiện loại 3: Had it not been for … would have + V3.' },
+        { stem: 'Choose the synonym of "probe".', options: ['ignore', 'neglect', 'dismiss', 'investigate'], answer: 3, explanation: 'probe ≈ investigate (điều tra, dò xét).' },
+        { stem: 'So determined was she ____ she never gave up.', options: ['as', 'that', 'which', 'when'], answer: 1, explanation: 'Đảo ngữ "So + adj + be + S + that …".' },
+      ],
+    },
   ],
 };
 
