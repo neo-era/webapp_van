@@ -2852,6 +2852,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'happy'.", options: ['glad', 'sad', 'joyful', 'cheerful'], answer: 1, explanation: 'happy ↔ sad (buồn).' },
       ],
     },
+    {
+      examId: 'anh8-2', title: 'Kiểm tra 45′ #2 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'My sister ____ TV every evening.', options: ['watch', 'watching', 'watched', 'watches'], answer: 3, explanation: 'Hiện tại đơn, chủ ngữ số ít ⇒ watches.' },
+        { stem: 'Look! The children ____ in the garden.', options: ['are playing', 'play', 'plays', 'played'], answer: 0, explanation: '"Look!" ⇒ hiện tại tiếp diễn (are playing).' },
+        { stem: 'Mount Everest is the ____ mountain in the world.', options: ['high', 'higher', 'more high', 'highest'], answer: 3, explanation: 'So sánh nhất: the highest.' },
+        { stem: 'You ____ wear a helmet when riding a bike.', options: ['will', 'should', 'can', 'may'], answer: 1, explanation: 'should = nên (lời khuyên).' },
+        { stem: 'If you study hard, you ____ pass the exam.', options: ['will', 'would', 'can', 'must'], answer: 0, explanation: 'Câu điều kiện loại 1: will + V.' },
+        { stem: 'She ____ in Hanoi since 2015.', options: ['lives', 'has lived', 'lived', 'living'], answer: 1, explanation: 'since 2015 ⇒ hiện tại hoàn thành (has lived).' },
+        { stem: "Choose the synonym of 'beautiful'.", options: ['ugly', 'pretty', 'plain', 'dull'], answer: 1, explanation: 'beautiful ≈ pretty (đẹp, xinh).' },
+        { stem: 'There ____ a lot of people at the party last night.', options: ['was', 'is', 'are', 'were'], answer: 3, explanation: 'people số nhiều + quá khứ ⇒ were.' },
+        { stem: "I'm interested ____ music.", options: ['in', 'on', 'at', 'for'], answer: 0, explanation: 'be interested in + N.' },
+        { stem: "Choose the antonym of 'old' (for things).", options: ['old', 'aged', 'new', 'antique'], answer: 2, explanation: 'old ↔ new (mới).' },
+      ],
+    },
   ],
 };
 
