@@ -854,6 +854,21 @@ const EXAMS = {
         { stem: 'Đổi $137$ °C sang thang Kelvin?', options: ['$400$ K', '$410$ K', '$300$ K', '$273$ K'], answer: 1, explanation: '$137+273=410$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-31', title: 'Kiểm tra 45′ #31 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=5$ atm, $V_1=12$ L. Khi $p_2=15$ atm thì $V_2=?$', options: ['$4$ L', '$3$ L', '$6$ L', '$8$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=5\\cdot12/15=4$ L.' },
+        { stem: 'Đun $0{,}8$ kg nước ($c=4200$) tăng thêm $25$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$168$ kJ', '$21$ kJ', '$84$ kJ'], answer: 3, explanation: '$Q=0{,}8\\cdot4200\\cdot25=84000$ J $=84$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}8$ m chuyển động $v=5$ m/s vuông góc $B=0{,}5$ T. Suất điện động?', options: ['$1$ V', '$4$ V', '$2$ V', '$0{,}5$ V'], answer: 2, explanation: '$e=BLv=0{,}5\\cdot0{,}8\\cdot5=2$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{32}_{16}S$?', options: ['$32$', '$48$', '$8$', '$16$'], answer: 3, explanation: '$N=32-16=16$.' },
+        { stem: 'Hạt nhân nào có $20$ proton?', options: ['$^{40}Ca$', '$^{39}K$', '$^{40}Ar$', '$^{35}Cl$'], answer: 0, explanation: 'Canxi có $Z=20$.' },
+        { stem: 'Thiết bị công suất $P=300$ W hoạt động $6$ s tiêu thụ công?', options: ['$900$ J', '$3600$ J', '$1800$ J', '$600$ J'], answer: 2, explanation: '$A=Pt=300\\cdot6=1800$ J.' },
+        { stem: 'Khí đẳng áp $V_1=1$ L ở $150$ K, đun đến $600$ K. Thể tích sau?', options: ['$4$ L', '$2$ L', '$8$ L', '$3$ L'], answer: 0, explanation: '$V_2=V_1T_2/T_1=1\\cdot600/150=4$ L.' },
+        { stem: 'Đơn vị của điện trở là?', options: ['Vôn', 'Ôm', 'Ampe', 'Oát'], answer: 1, explanation: 'Điện trở đo bằng Ôm ($\\Omega$).' },
+        { stem: 'Sau $4$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/4$', '$1/8$', '$1/32$', '$1/16$'], answer: 3, explanation: '$(1/2)^4=1/16$.' },
+        { stem: 'Đổi $327$ °C sang thang Kelvin?', options: ['$500$ K', '$600$ K', '$400$ K', '$300$ K'], answer: 1, explanation: '$327+273=600$ K.' },
+      ],
+    },
   ],
 
   HOA: [
