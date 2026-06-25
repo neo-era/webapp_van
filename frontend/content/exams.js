@@ -3779,6 +3779,21 @@ const EXAMS = {
         { stem: 'Để tăng ma sát giúp xe phanh tốt hơn, người ta thường?', options: ['Bôi dầu vào lốp', 'Làm rãnh trên lốp xe', 'Làm lốp thật nhẵn', 'Giảm khối lượng xe'], answer: 1, explanation: 'Rãnh lốp tăng độ nhám ⇒ tăng ma sát.' },
       ],
     },
+    {
+      examId: 'khtn8-34', title: 'Kiểm tra 45′ #34 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $12{,}8$ g $SO_2$ ($M=64$)?', options: ['$0{,}1$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 2, explanation: '$n=12{,}8/64=0{,}2$ mol.' },
+        { stem: 'Lực $600$ N ép vuông góc lên diện tích $0{,}3$ m². Áp suất là?', options: ['$2000$ Pa', '$180$ Pa', '$200$ Pa', '$1800$ Pa'], answer: 0, explanation: '$p=F/S=600/0{,}3=2000$ Pa.' },
+        { stem: 'Một vật có khối lượng $104$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$104$ g/cm³', '$10{,}4$ g/cm³', '$1{,}04$ g/cm³', '$1040$ g/cm³'], answer: 1, explanation: '$D=m/V=104/10=10{,}4$ g/cm³.' },
+        { stem: 'Cho quỳ tím vào dung dịch trung tính (như NaCl), quỳ tím sẽ?', options: ['Hóa đỏ', 'Hóa xanh', 'Mất màu', 'Không đổi màu'], answer: 3, explanation: 'Dung dịch trung tính không làm quỳ tím đổi màu.' },
+        { stem: 'Tim co bóp tạo ra điều gì để máu lưu thông?', options: ['Lực đẩy máu (huyết áp)', 'Lực hô hấp', 'Lực tiêu hóa', 'Lực bài tiết'], answer: 0, explanation: 'Tim co bóp tạo huyết áp đẩy máu đi.' },
+        { stem: 'Hòa tan $3$ g chất tan vào $12$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$25\\%$', '$20\\%$', '$12\\%$'], answer: 2, explanation: '$m_{dd}=15$ g ⇒ $C\\%=3/15\\times 100\\%=20\\%$.' },
+        { stem: 'Dùng đòn bẩy để nâng vật nặng đem lại lợi ích gì?', options: ['Lợi về đường đi', 'Lợi về lực (nâng dễ hơn)', 'Tăng khối lượng vật', 'Không có lợi'], answer: 1, explanation: 'Đòn bẩy cho lợi về lực khi cánh tay đòn lực dài hơn.' },
+        { stem: 'Đốt cháy $0{,}4$ mol Mg ($2Mg+O_2\\to 2MgO$). Số mol $MgO$ thu được?', options: ['$0{,}2$', '$0{,}8$', '$1$', '$0{,}4$'], answer: 3, explanation: 'Tỉ lệ $1:1$ giữa Mg và MgO ⇒ $0{,}4$ mol.' },
+        { stem: 'Chức năng chính của thận trong hệ bài tiết là?', options: ['Trao đổi khí', 'Tiêu hóa thức ăn', 'Lọc máu và thải nước tiểu', 'Bơm máu'], answer: 2, explanation: 'Thận lọc máu tạo và thải nước tiểu.' },
+        { stem: 'Sự trao đổi khí ở phế nang xảy ra dựa trên sự chênh lệch của yếu tố nào?', options: ['Màu sắc khí', 'Nồng độ khí', 'Nhiệt độ phòng', 'Áp suất khí quyển'], answer: 1, explanation: 'Khí khuếch tán theo chênh lệch nồng độ.' },
+      ],
+    },
   ],
 
   ANH8: [
