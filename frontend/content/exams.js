@@ -5057,6 +5057,21 @@ const EXAMS = {
         { stem: 'She has ____ been late for school.', options: ['ever', 'yet', 'never', 'since'], answer: 2, explanation: 'never = chưa bao giờ (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-51', title: 'Kiểm tra 45′ #51 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'We ____ a great holiday last summer.', options: ['has', 'have', 'had', 'having'], answer: 2, explanation: 'last summer ⇒ quá khứ đơn: had.' },
+        { stem: 'A motorbike is ____ than a car.', options: ['smaller', 'small', 'smallest', 'more small'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: smaller.' },
+        { stem: "You ____ swim here. It's dangerous.", options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = cấm (nguy hiểm)." },
+        { stem: 'If we plant more trees, the city ____ greener.', options: ['is', 'was', 'would be', 'will be'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'The bridge ____ by skilled engineers.', options: ['build', 'builds', 'was built', 'is built'], answer: 2, explanation: 'Bị động quá khứ đơn: was built.' },
+        { stem: 'This is the book ____ I told you about.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'He has lived in this city ____ two years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (two years).' },
+        { stem: "Choose the synonym of 'trip'.", options: ['home', 'house', 'hotel', 'journey'], answer: 3, explanation: 'trip ≈ journey (chuyến đi).' },
+        { stem: "Choose the antonym of 'polite'.", options: ['kind', 'rude', 'gentle', 'nice'], answer: 1, explanation: 'polite ↔ rude (thô lỗ).' },
+        { stem: '____ you done your homework?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
