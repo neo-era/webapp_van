@@ -3551,6 +3551,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $15, 15, 15, 15, 30$?', options: ['$15$', '$30$', '$18$', '$90$'], answer: 2, explanation: '$\\dfrac{15\\cdot4+30}{5}=\\dfrac{90}{5}=18$.' },
       ],
     },
+    {
+      examId: 'toan8-53', title: 'Kiểm tra 45′ #53 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(5x+6)(5x-6)$?', options: ['$25x^2+36$', '$5x^2-36$', '$25x^2-36$', '$25x^2-60x-36$'], answer: 2, explanation: 'Hiệu hai bình phương: $25x^2-36$.' },
+        { stem: 'Phân tích $x^2-7x+12$ thành nhân tử?', options: ['$(x-3)(x-4)$', '$(x+3)(x+4)$', '$(x-2)(x-6)$', '$(x-3)(x+4)$'], answer: 0, explanation: '$x^2-7x+12=(x-3)(x-4)$.' },
+        { stem: 'Nghiệm của phương trình $13x-9=10x+12$?', options: ['$x=3$', '$x=7$', '$x=21$', '$x=-7$'], answer: 1, explanation: '$3x=21 \\Leftrightarrow x=7$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-196}{x+14}$ (với $x\\ne-14$)?', options: ['$x+14$', '$x$', '$x^2-14$', '$x-14$'], answer: 3, explanation: '$\\dfrac{(x-14)(x+14)}{x+14}=x-14$.' },
+        { stem: 'Đường thẳng $y=6x+24$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=24$', '$x=4$', '$x=-4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 6x=-24 \\Rightarrow x=-4$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $80$ và $60$. Cạnh huyền?', options: ['$140$', '$100$', '$90$', '$110$'], answer: 1, explanation: '$\\sqrt{80^2+60^2}=\\sqrt{10000}=100$.' },
+        { stem: 'Khai triển $(a+8)^2$?', options: ['$a^2+16a+64$', '$a^2-16a+64$', '$a^2-64$', '$a^2+8a+64$'], answer: 0, explanation: '$(a+8)^2=a^2+16a+64$.' },
+        { stem: 'Thể tích hình lập phương cạnh $9$?', options: ['$81$', '$27$', '$243$', '$729$'], answer: 3, explanation: '$V=9^3=729$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+2x-35}{x+7}$ (với $x\\ne-7$)?', options: ['$x+5$', '$x-5$', '$x^2-5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x+7)(x-5)}{x+7}=x-5$.' },
+        { stem: 'Số trung bình cộng của $20, 20, 20, 20, 40$?', options: ['$20$', '$40$', '$24$', '$120$'], answer: 2, explanation: '$\\dfrac{20\\cdot4+40}{5}=\\dfrac{120}{5}=24$.' },
+      ],
+    },
   ],
 
   KHTN8: [
