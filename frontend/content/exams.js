@@ -3626,6 +3626,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $50, 50, 50, 50, 70$?', options: ['$50$', '$70$', '$54$', '$270$'], answer: 2, explanation: '$\\dfrac{50\\cdot4+70}{5}=\\dfrac{270}{5}=54$.' },
       ],
     },
+    {
+      examId: 'toan8-58', title: 'Kiểm tra 45′ #58 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(10x+3)(10x-3)$?', options: ['$100x^2+9$', '$10x^2-9$', '$100x^2-9$', '$100x^2-60x-9$'], answer: 2, explanation: 'Hiệu hai bình phương: $100x^2-9$.' },
+        { stem: 'Phân tích $x^2+12x+32$ thành nhân tử?', options: ['$(x+4)(x+8)$', '$(x-4)(x-8)$', '$(x+2)(x+16)$', '$(x+4)(x-8)$'], answer: 0, explanation: '$x^2+12x+32=(x+4)(x+8)$.' },
+        { stem: 'Nghiệm của phương trình $18x-20=15x+1$?', options: ['$x=3$', '$x=7$', '$x=21$', '$x=-7$'], answer: 1, explanation: '$3x=21 \\Leftrightarrow x=7$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-361}{x-19}$ (với $x\\ne19$)?', options: ['$x-19$', '$x$', '$x^2+19$', '$x+19$'], answer: 3, explanation: '$\\dfrac{(x-19)(x+19)}{x-19}=x+19$.' },
+        { stem: 'Đường thẳng $y=11x+44$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=44$', '$x=4$', '$x=-4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 11x=-44 \\Rightarrow x=-4$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $65$, một cạnh góc vuông $33$. Cạnh góc vuông còn lại?', options: ['$98$', '$56$', '$\\sqrt{3256}$', '$60$'], answer: 1, explanation: '$\\sqrt{65^2-33^2}=\\sqrt{3136}=56$.' },
+        { stem: 'Khai triển $(6x-5)^2$?', options: ['$36x^2-60x+25$', '$36x^2+60x+25$', '$36x^2-25$', '$6x^2-60x+25$'], answer: 0, explanation: '$(6x-5)^2=36x^2-60x+25$.' },
+        { stem: 'Diện tích tam giác có đáy $22$ và chiều cao $5$?', options: ['$110$', '$27$', '$44$', '$55$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot22\\cdot5=55$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+4x-32}{x+8}$ (với $x\\ne-8$)?', options: ['$x+4$', '$x-4$', '$x^2-4$', '$4$'], answer: 1, explanation: '$\\dfrac{(x+8)(x-4)}{x+8}=x-4$.' },
+        { stem: 'Số trung bình cộng của $60, 60, 60, 60, 80$?', options: ['$60$', '$80$', '$64$', '$320$'], answer: 2, explanation: '$\\dfrac{60\\cdot4+80}{5}=\\dfrac{320}{5}=64$.' },
+      ],
+    },
   ],
 
   KHTN8: [
