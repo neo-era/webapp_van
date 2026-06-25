@@ -4499,6 +4499,21 @@ const EXAMS = {
         { stem: 'Nhiệt năng của một vật phụ thuộc chủ yếu vào yếu tố nào?', options: ['Màu sắc vật', 'Nhiệt độ của vật', 'Hình dạng vật', 'Vị trí vật'], answer: 1, explanation: 'Nhiệt độ càng cao, phân tử chuyển động càng nhanh, nhiệt năng càng lớn.' },
       ],
     },
+    {
+      examId: 'khtn8-58', title: 'Kiểm tra 45′ #58 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $28$ g CaO ($M=56$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=28/56=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $6{,}5$ m trong nước ($d=10000$ N/m³)?', options: ['$65000$ Pa', '$6500$ Pa', '$650000$ Pa', '$16500$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 6{,}5=65000$ Pa.' },
+        { stem: 'Một vật có khối lượng $270$ g và thể tích $30$ cm³. Khối lượng riêng?', options: ['$90$ g/cm³', '$9$ g/cm³', '$0{,}9$ g/cm³', '$900$ g/cm³'], answer: 1, explanation: '$D=m/V=270/30=9$ g/cm³.' },
+        { stem: 'Cho natri (Na) vào nước, khí thoát ra là?', options: ['$O_2$', '$Cl_2$', '$CO_2$', '$H_2$'], answer: 3, explanation: '$2Na+2H_2O\\to 2NaOH+H_2$.' },
+        { stem: 'Đơn vị đo lượng chất trong hóa học là?', options: ['mol', 'gam', 'lít', 'kg'], answer: 0, explanation: 'Lượng chất được đo bằng mol.' },
+        { stem: 'Hòa tan $27$ g chất tan vào $73$ g nước. Nồng độ phần trăm dung dịch?', options: ['$73\\%$', '$54\\%$', '$27\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=27/100\\times 100\\%=27\\%$.' },
+        { stem: 'Ròng rọc động cho ta lợi ích gì?', options: ['Chỉ đổi hướng lực', 'Lợi 2 lần về lực', 'Lợi cả lực và đường đi', 'Không lợi gì'], answer: 1, explanation: 'Ròng rọc động cho lợi 2 lần về lực nhưng thiệt 2 lần đường đi.' },
+        { stem: 'Khối lượng của $0{,}25$ mol $H_2O$ ($M=18$)?', options: ['$18$ g', '$9$ g', '$2{,}25$ g', '$4{,}5$ g'], answer: 3, explanation: '$m=0{,}25\\times 18=4{,}5$ g.' },
+        { stem: 'Hệ cơ quan gồm tim và hệ thống mạch máu là?', options: ['Hệ hô hấp', 'Hệ tiêu hóa', 'Hệ tuần hoàn', 'Hệ bài tiết'], answer: 2, explanation: 'Tim và mạch máu tạo thành hệ tuần hoàn.' },
+        { stem: 'Sự chuyển từ thể lỏng sang thể khí gọi là?', options: ['Sự đông đặc', 'Sự bay hơi', 'Sự nóng chảy', 'Sự ngưng tụ'], answer: 1, explanation: 'Lỏng → khí gọi là sự bay hơi (hoặc sôi).' },
+      ],
+    },
   ],
 
   ANH8: [
