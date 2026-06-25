@@ -3041,6 +3041,21 @@ const EXAMS = {
         { stem: 'Rút ngẫu nhiên $1$ lá từ bộ bài $52$ lá (có $26$ lá đỏ). Xác suất rút được lá đỏ?', options: ['$\\dfrac{1}{4}$', '$\\dfrac{1}{2}$', '$\\dfrac{1}{13}$', '$\\dfrac{2}{13}$'], answer: 1, explanation: '$\\dfrac{26}{52}=\\dfrac{1}{2}$.' },
       ],
     },
+    {
+      examId: 'toan8-19', title: 'Kiểm tra 45′ #19 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(3x+1)^2$?', options: ['$9x^2+6x+1$', '$9x^2+1$', '$3x^2+6x+1$', '$9x^2+3x+1$'], answer: 0, explanation: '$(3x+1)^2=9x^2+6x+1$.' },
+        { stem: 'Phân tích $5x^2-10x$ thành nhân tử?', options: ['$5(x^2-2x)$', '$x(5x-10)$', '$5x(x-2)$', '$5x(x-10)$'], answer: 2, explanation: '$5x^2-10x=5x(x-2)$.' },
+        { stem: 'Nghiệm của phương trình $\\dfrac{x+2}{4}=3$?', options: ['$x=4$', '$x=10$', '$x=12$', '$x=14$'], answer: 1, explanation: '$x+2=12 \\Leftrightarrow x=10$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-4x}{x-4}$ (với $x\\ne4$)?', options: ['$x-4$', '$x+4$', '$4x$', '$x$'], answer: 3, explanation: '$\\dfrac{x(x-4)}{x-4}=x$.' },
+        { stem: 'Giá trị của hàm số $y=2x+1$ tại $x=-1$?', options: ['$-1$', '$1$', '$3$', '$-3$'], answer: 0, explanation: '$y=2\\cdot(-1)+1=-1$.' },
+        { stem: 'Diện tích hình thang có hai đáy $4$ và $6$, chiều cao $5$?', options: ['$50$', '$30$', '$25$', '$20$'], answer: 2, explanation: '$S=\\dfrac{(4+6)}{2}\\cdot5=25$.' },
+        { stem: 'Khai triển $(2a+b)^2$?', options: ['$4a^2+b^2$', '$4a^2+4ab+b^2$', '$2a^2+4ab+b^2$', '$4a^2+2ab+b^2$'], answer: 1, explanation: '$(2a+b)^2=4a^2+4ab+b^2$.' },
+        { stem: 'Thể tích hình lập phương cạnh $4$?', options: ['$16$', '$12$', '$48$', '$64$'], answer: 3, explanation: '$V=4^3=64$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{3x-1}{x^2+1}$?', options: ['Mọi $x\\in\\mathbb{R}$', '$x\\ne1$', '$x\\ne-1$', '$x\\ne0$'], answer: 0, explanation: '$x^2+1>0$ với mọi $x$ nên phân thức luôn xác định.' },
+        { stem: 'Tần số xuất hiện của giá trị $5$ trong dãy $5, 5, 3, 5, 2$?', options: ['$1$', '$2$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $5$ xuất hiện $3$ lần.' },
+      ],
+    },
   ],
 
   KHTN8: [
