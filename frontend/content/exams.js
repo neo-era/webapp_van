@@ -4337,6 +4337,21 @@ const EXAMS = {
         { stem: '____ you finished your homework?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-35', title: 'Kiểm tra 45′ #35 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'Last year, they ____ in a small town.', options: ['live', 'lives', 'lived', 'living'], answer: 2, explanation: 'Last year ⇒ quá khứ đơn: lived.' },
+        { stem: 'Math is ____ than English for me.', options: ['easier', 'easy', 'easiest', 'more easy'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: easier.' },
+        { stem: 'I think you ____ apologize to her.', options: ['must', 'should', 'can', 'would'], answer: 1, explanation: 'should = lời khuyên.' },
+        { stem: 'If it stops raining, we ____ outside.', options: ['go', 'went', 'would go', 'will go'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Vegetables ____ in the school garden.', options: ['grow', 'grows', 'are grown', 'is grown'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are grown.' },
+        { stem: 'The man ____ helped us is a policeman.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'She has been a doctor ____ ten years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (ten years).' },
+        { stem: "Choose the synonym of 'scared'.", options: ['brave', 'calm', 'bold', 'afraid'], answer: 3, explanation: 'scared ≈ afraid (sợ hãi).' },
+        { stem: "Choose the antonym of 'full'.", options: ['packed', 'empty', 'crowded', 'loaded'], answer: 1, explanation: 'full ↔ empty (rỗng).' },
+        { stem: '____ they visited the museum before?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
