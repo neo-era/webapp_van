@@ -3887,6 +3887,21 @@ const EXAMS = {
         { stem: '____ they finished the project yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-25', title: 'Kiểm tra 45′ #25 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'When I arrived, they ____ dinner.', options: ['had', 'have', 'were having', 'are having'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ were having.' },
+        { stem: 'Gold is ____ than silver.', options: ['valuable', 'valuabler', 'most valuable', 'more valuable'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more valuable.' },
+        { stem: 'It ____ rain later. Take an umbrella.', options: ['must', 'might', 'should', 'can'], answer: 1, explanation: 'might = có thể (khả năng không chắc chắn).' },
+        { stem: "If you don't water the plants, they ____.", options: ['will die', 'die', 'died', 'would die'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The house ____ every year.', options: ['paint', 'paints', 'is painted', 'are painted'], answer: 2, explanation: 'Bị động hiện tại đơn: is painted.' },
+        { stem: 'I met a girl ____ comes from Japan.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'They have lived in this village ____ a long time.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (a long time).' },
+        { stem: "Choose the synonym of 'buy'.", options: ['sell', 'give', 'lend', 'purchase'], answer: 3, explanation: 'buy ≈ purchase (mua).' },
+        { stem: "Choose the antonym of 'cheap'.", options: ['low', 'expensive', 'free', 'fair'], answer: 1, explanation: 'cheap ↔ expensive (đắt).' },
+        { stem: 'She has ____ left the office, so you missed her.', options: ['yet', 'ever', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
