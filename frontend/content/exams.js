@@ -3032,6 +3032,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'tall'.", options: ['high', 'big', 'short', 'long'], answer: 2, explanation: 'tall ↔ short (thấp).' },
       ],
     },
+    {
+      examId: 'anh8-6', title: 'Kiểm tra 45′ #6 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'I ____ TV when she called.', options: ['watch', 'watched', 'watches', 'was watching'], answer: 3, explanation: 'Quá khứ tiếp diễn (đang xem thì bị cắt ngang).' },
+        { stem: 'My brother is ____ at math than me.', options: ['better', 'good', 'best', 'more good'], answer: 0, explanation: 'So sánh hơn của "good" ⇒ better.' },
+        { stem: "You ____ smoke here. It's forbidden.", options: ['must', 'should', "mustn't", 'can'], answer: 2, explanation: "mustn't = cấm." },
+        { stem: 'She has worked here ____ 2010.', options: ['for', 'ago', 'at', 'since'], answer: 3, explanation: 'since + mốc thời gian.' },
+        { stem: 'This is the man ____ helped me yesterday.', options: ['who', 'which', 'whose', 'where'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'We ____ a test tomorrow.', options: ['have', 'had', 'having', 'will have'], answer: 3, explanation: 'Tương lai (tomorrow): will have.' },
+        { stem: "Choose the synonym of 'small'.", options: ['little', 'big', 'large', 'huge'], answer: 0, explanation: 'small ≈ little (nhỏ).' },
+        { stem: 'The letter ____ yesterday.', options: ['sent', 'was sent', 'sends', 'sending'], answer: 1, explanation: 'Câu bị động quá khứ: was sent.' },
+        { stem: 'If we plant trees, the air ____ cleaner.', options: ['is', 'was', 'will be', 'would be'], answer: 2, explanation: 'Câu điều kiện loại 1: will be.' },
+        { stem: "Choose the antonym of 'rich'.", options: ['wealthy', 'poor', 'affluent', 'loaded'], answer: 1, explanation: 'rich ↔ poor (nghèo).' },
+      ],
+    },
   ],
 };
 
