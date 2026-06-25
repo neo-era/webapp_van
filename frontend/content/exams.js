@@ -3641,6 +3641,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $60, 60, 60, 60, 80$?', options: ['$60$', '$80$', '$64$', '$320$'], answer: 2, explanation: '$\\dfrac{60\\cdot4+80}{5}=\\dfrac{320}{5}=64$.' },
       ],
     },
+    {
+      examId: 'toan8-59', title: 'Kiểm tra 45′ #59 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x+3)^2$?', options: ['$4x^2+9$', '$4x^2+6x+9$', '$4x^2+12x+9$', '$2x^2+12x+9$'], answer: 2, explanation: '$(2x+3)^2=4x^2+2\\cdot2x\\cdot3+9=4x^2+12x+9$.' },
+        { stem: 'Phân tích $x^2-9$ thành nhân tử?', options: ['$(x-3)(x+3)$', '$(x-3)^2$', '$(x+3)^2$', '$(x-9)(x+1)$'], answer: 0, explanation: 'Hiệu hai bình phương: $x^2-3^2=(x-3)(x+3)$.' },
+        { stem: 'Giải phương trình $5x-7=3x+5$.', options: ['$x=5$', '$x=6$', '$x=7$', '$x=-6$'], answer: 1, explanation: '$2x=12\\Rightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-25}{x+5}$ (với $x\\ne-5$)?', options: ['$x+5$', '$x^2-5$', '$5-x$', '$x-5$'], answer: 3, explanation: '$\\dfrac{(x-5)(x+5)}{x+5}=x-5$.' },
+        { stem: 'Đồ thị hàm số $y=2x-4$ cắt trục tung tại điểm có tung độ?', options: ['$4$', '$2$', '$-4$', '$0$'], answer: 2, explanation: 'Cho $x=0\\Rightarrow y=-4$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $9$ và $12$. Cạnh huyền?', options: ['$15$', '$21$', '$225$', '$13$'], answer: 0, explanation: '$\\sqrt{9^2+12^2}=\\sqrt{225}=15$.' },
+        { stem: 'Phân tích $x^2-7x+12$ thành nhân tử?', options: ['$(x+3)(x+4)$', '$(x-3)(x-4)$', '$(x-2)(x-6)$', '$(x-1)(x-12)$'], answer: 1, explanation: 'Tìm hai số tích $12$, tổng $-7$: $-3,-4\\Rightarrow(x-3)(x-4)$.' },
+        { stem: 'Diện tích hình thoi có hai đường chéo $6$ cm và $8$ cm?', options: ['$48$ cm²', '$14$ cm²', '$28$ cm²', '$24$ cm²'], answer: 3, explanation: '$S=\\dfrac{d_1 d_2}{2}=\\dfrac{6\\cdot8}{2}=24$ cm².' },
+        { stem: 'Phân tích $x^3-8$ thành nhân tử?', options: ['$(x-2)^3$', '$(x-2)(x^2-2x+4)$', '$(x-2)(x^2+2x+4)$', '$(x+2)(x^2-2x+4)$'], answer: 2, explanation: 'Hiệu hai lập phương: $x^3-2^3=(x-2)(x^2+2x+4)$.' },
+        { stem: 'Số trung bình cộng của $4, 6, 8, 10, 12$?', options: ['$6$', '$8$', '$10$', '$7$'], answer: 1, explanation: '$\\dfrac{4+6+8+10+12}{5}=\\dfrac{40}{5}=8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
