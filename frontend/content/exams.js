@@ -1745,6 +1745,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'dark'.", options: ['black', 'dim', 'light', 'gloomy'], answer: 2, explanation: 'dark ↔ light (sáng).' },
       ],
     },
+    {
+      examId: 'anh-kt45-30', title: 'Kiểm tra 45′ #30 — Grammar & Vocabulary', durationMin: 45,
+      questions: [
+        { stem: "I've never met ____ a kind person before.", options: ['such', 'so', 'very', 'too'], answer: 0, explanation: 'such + (a) + adj + noun.' },
+        { stem: "He works ____ hard that he's always tired.", options: ['such', 'very', 'too', 'so'], answer: 3, explanation: 'so + adj/adv + that.' },
+        { stem: 'By next month, I ____ this course.', options: ['will have completed', 'complete', 'will complete', 'completed'], answer: 0, explanation: 'Tương lai hoàn thành: will have + V3.' },
+        { stem: "She's looking forward to ____ on holiday.", options: ['go', 'to go', 'gone', 'going'], answer: 3, explanation: 'look forward to + V-ing.' },
+        { stem: 'The keys ____ on the table.', options: ['is', 'are', 'was', 'has'], answer: 1, explanation: 'keys số nhiều ⇒ are.' },
+        { stem: 'If I had more money, I ____ travel around the world.', options: ['will', 'can', 'would', 'must'], answer: 2, explanation: 'Câu điều kiện loại 2: would + V.' },
+        { stem: "Choose the synonym of 'end' (verb).", options: ['finish', 'start', 'continue', 'open'], answer: 0, explanation: 'end ≈ finish (kết thúc).' },
+        { stem: 'Hardly had we left the house ____ it started to rain.', options: ['than', 'then', 'that', 'when'], answer: 3, explanation: 'Hardly … when … (vừa … thì …).' },
+        { stem: 'He denied ____ the window during the game.', options: ['to break', 'breaking', 'break', 'broke'], answer: 1, explanation: 'deny + V-ing.' },
+        { stem: "Choose the antonym of 'wide'.", options: ['broad', 'vast', 'narrow', 'large'], answer: 2, explanation: 'wide ↔ narrow (hẹp).' },
+      ],
+    },
   ],
 
   TOEIC: [
