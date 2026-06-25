@@ -3899,6 +3899,21 @@ const EXAMS = {
         { stem: 'Tại sao xe tải nặng thường có nhiều bánh xe?', options: ['Để trang trí', 'Để giảm áp suất lên mặt đường', 'Để tăng tốc độ', 'Để giảm khối lượng'], answer: 1, explanation: 'Nhiều bánh ⇒ tăng diện tích ⇒ giảm áp suất, tránh lún đường.' },
       ],
     },
+    {
+      examId: 'khtn8-38', title: 'Kiểm tra 45′ #38 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $20$ g $CaCO_3$ ($M=100$)?', options: ['$0{,}1$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 2, explanation: '$n=20/100=0{,}2$ mol.' },
+        { stem: 'Áp suất tại độ sâu $1$ m trong dầu ($d=8000$ N/m³)?', options: ['$8000$ Pa', '$800$ Pa', '$80000$ Pa', '$1800$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 1=8000$ Pa.' },
+        { stem: 'Một vật có khối lượng $240$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$120$ g/cm³', '$12$ g/cm³', '$1{,}2$ g/cm³', '$1200$ g/cm³'], answer: 1, explanation: '$D=m/V=240/20=12$ g/cm³.' },
+        { stem: 'Khi đốt cháy nhiên liệu, nhiên liệu kết hợp với khí nào?', options: ['$N_2$', '$CO_2$', '$H_2$', '$O_2$'], answer: 3, explanation: 'Sự cháy là phản ứng của nhiên liệu với oxi ($O_2$).' },
+        { stem: 'Cơ quan chính của hệ bài tiết nước tiểu là?', options: ['Thận', 'Gan', 'Phổi', 'Dạ dày'], answer: 0, explanation: 'Thận là cơ quan chính tạo nước tiểu.' },
+        { stem: 'Hòa tan $11$ g chất tan vào $39$ g nước. Nồng độ phần trăm dung dịch?', options: ['$11\\%$', '$39\\%$', '$22\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=50$ g ⇒ $C\\%=11/50\\times 100\\%=22\\%$.' },
+        { stem: 'Khi đi trên tuyết, người ta dùng ván trượt bản rộng để làm gì?', options: ['Để trông đẹp', 'Để giảm áp suất, tránh bị lún', 'Để tăng tốc độ', 'Để nặng hơn'], answer: 1, explanation: 'Tăng diện tích tiếp xúc ⇒ giảm áp suất ⇒ không lún.' },
+        { stem: 'Khối lượng của $0{,}1$ mol $Fe_2O_3$ ($M=160$)?', options: ['$160$ g', '$1{,}6$ g', '$32$ g', '$16$ g'], answer: 3, explanation: '$m=0{,}1\\times 160=16$ g.' },
+        { stem: 'Sau khi trao đổi khí ở phổi, máu giàu oxi trở về ngăn nào của tim?', options: ['Tâm thất phải', 'Tâm nhĩ phải', 'Tâm nhĩ trái', 'Tâm thất trái'], answer: 2, explanation: 'Máu giàu oxi từ phổi đổ về tâm nhĩ trái.' },
+        { stem: 'Lực ma sát nghỉ có vai trò gì khi ta đi bộ?', options: ['Làm ta mệt hơn', 'Giữ chân không bị trượt', 'Làm chân nóng lên', 'Không có tác dụng'], answer: 1, explanation: 'Ma sát nghỉ giữ chân bám đất, không trượt.' },
+      ],
+    },
   ],
 
   ANH8: [
