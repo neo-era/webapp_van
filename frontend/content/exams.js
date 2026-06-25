@@ -2897,6 +2897,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'old' (for things).", options: ['old', 'aged', 'new', 'antique'], answer: 2, explanation: 'old ↔ new (mới).' },
       ],
     },
+    {
+      examId: 'anh8-3', title: 'Kiểm tra 45′ #3 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ his homework yesterday.', options: ['do', 'did', 'does', 'doing'], answer: 1, explanation: 'Quá khứ đơn (yesterday): did.' },
+        { stem: 'We ____ to the zoo next Sunday.', options: ['go', 'went', 'going', 'will go'], answer: 3, explanation: 'Tương lai (next Sunday): will go.' },
+        { stem: 'This is ____ interesting book.', options: ['an', 'a', 'the', '(no article)'], answer: 0, explanation: 'interesting bắt đầu bằng nguyên âm ⇒ an.' },
+        { stem: 'Tom is ____ than Jerry.', options: ['taller', 'tall', 'tallest', 'more tall'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: taller + than.' },
+        { stem: 'She can ____ English very well.', options: ['speaks', 'speak', 'speaking', 'spoke'], answer: 1, explanation: 'can + động từ nguyên thể (speak).' },
+        { stem: 'If we recycle, we ____ the environment.', options: ['protect', 'protected', 'protecting', 'will protect'], answer: 3, explanation: 'Câu điều kiện loại 1: will + V.' },
+        { stem: "Choose the synonym of 'clever'.", options: ['smart', 'silly', 'slow', 'lazy'], answer: 0, explanation: 'clever ≈ smart (thông minh).' },
+        { stem: 'He has lived here ____ five years.', options: ['since', 'for', 'ago', 'at'], answer: 1, explanation: 'for + khoảng thời gian.' },
+        { stem: 'English ____ all over the world.', options: ['speaks', 'speak', 'is spoken', 'spoken'], answer: 2, explanation: 'Câu bị động: is spoken.' },
+        { stem: "Choose the antonym of 'fast'.", options: ['quick', 'rapid', 'swift', 'slow'], answer: 3, explanation: 'fast ↔ slow (chậm).' },
+      ],
+    },
   ],
 };
 
