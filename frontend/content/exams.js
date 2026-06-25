@@ -3392,6 +3392,21 @@ const EXAMS = {
         { stem: 'Water ____ at 100 degrees Celsius.', options: ['boil', 'boiled', 'boiling', 'boils'], answer: 3, explanation: 'Chân lý ⇒ hiện tại đơn: boils.' },
       ],
     },
+    {
+      examId: 'anh8-14', title: 'Kiểm tra 45′ #14 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ his homework before he went out.', options: ['had done', 'did', 'has done', 'does'], answer: 0, explanation: 'Hành động xảy ra trước một mốc quá khứ ⇒ quá khứ hoàn thành: had done.' },
+        { stem: 'Mount Everest is ____ mountain in the world.', options: ['higher', 'high', 'the highest', 'highest'], answer: 2, explanation: 'So sánh nhất: the highest.' },
+        { stem: '____ you help me carry this box, please?', options: ['Must', 'Could', 'Should', 'Need'], answer: 1, explanation: 'Could = lời đề nghị/yêu cầu lịch sự.' },
+        { stem: 'If it ____ sunny tomorrow, we will go to the beach.', options: ['will be', 'was', 'were', 'is'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề if dùng hiện tại đơn ⇒ is.' },
+        { stem: 'The letter ____ to my friend yesterday.', options: ['sent', 'sends', 'was sent', 'is sent'], answer: 2, explanation: 'Bị động quá khứ đơn: was sent.' },
+        { stem: 'The girl ____ mother is a teacher is my friend.', options: ['who', 'which', 'where', 'whose'], answer: 3, explanation: 'whose chỉ sự sở hữu.' },
+        { stem: "I haven't seen her ____ last Monday.", options: ['for', 'since', 'ago', 'in'], answer: 1, explanation: 'since + mốc thời gian (last Monday).' },
+        { stem: "Choose the synonym of 'happy'.", options: ['sad', 'glad', 'angry', 'tired'], answer: 1, explanation: 'happy ≈ glad (vui).' },
+        { stem: "Choose the antonym of 'fast'.", options: ['slow', 'quick', 'rapid', 'swift'], answer: 0, explanation: 'fast ↔ slow (chậm).' },
+        { stem: "Look at those dark clouds! It ____ rain.", options: ['will', 'goes to', 'is going to', 'going'], answer: 2, explanation: 'Có dấu hiệu hiện tại ⇒ be going to (dự đoán).' },
+      ],
+    },
   ],
 };
 
