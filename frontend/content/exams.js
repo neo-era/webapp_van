@@ -3506,6 +3506,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $8, 8, 8, 8, 8, 2$?', options: ['$8$', '$2$', '$7$', '$42$'], answer: 2, explanation: '$\\dfrac{8\\cdot5+2}{6}=\\dfrac{42}{6}=7$.' },
       ],
     },
+    {
+      examId: 'toan8-50', title: 'Kiểm tra 45′ #50 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+20)(x-20)$?', options: ['$x^2+400$', '$x^2-40x+400$', '$x^2-400$', '$x^2-20x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-400$.' },
+        { stem: 'Phân tích $x^2-21x+108$ thành nhân tử?', options: ['$(x-9)(x-12)$', '$(x+9)(x+12)$', '$(x-6)(x-18)$', '$(x-9)(x+12)$'], answer: 0, explanation: '$x^2-21x+108=(x-9)(x-12)$.' },
+        { stem: 'Nghiệm của phương trình $10x-13=7x+5$?', options: ['$x=3$', '$x=6$', '$x=18$', '$x=-6$'], answer: 1, explanation: '$3x=18 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-144}{x-12}$ (với $x\\ne12$)?', options: ['$x-12$', '$x$', '$x^2+12$', '$x+12$'], answer: 3, explanation: '$\\dfrac{(x-12)(x+12)}{x-12}=x+12$.' },
+        { stem: 'Giá trị của hàm số $y=2x-1$ tại $x=3$?', options: ['$3$', '$1$', '$5$', '$-1$'], answer: 2, explanation: '$y=2\\cdot3-1=5$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $48$ và $55$. Cạnh huyền?', options: ['$103$', '$73$', '$70$', '$75$'], answer: 1, explanation: '$\\sqrt{48^2+55^2}=\\sqrt{5329}=73$.' },
+        { stem: 'Khai triển $(12x-1)^2$?', options: ['$144x^2-24x+1$', '$144x^2+24x+1$', '$144x^2-1$', '$12x^2-24x+1$'], answer: 0, explanation: '$(12x-1)^2=144x^2-24x+1$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có đáy $4\\times6$ và chiều cao $5$?', options: ['$24$', '$30$', '$60$', '$120$'], answer: 3, explanation: '$V=4\\cdot6\\cdot5=120$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-9x+18}{x-6}$ (với $x\\ne6$)?', options: ['$x+3$', '$x-3$', '$x^2-3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x-6)(x-3)}{x-6}=x-3$.' },
+        { stem: 'Số trung bình cộng của $10, 10, 10, 10, 20$?', options: ['$10$', '$20$', '$12$', '$60$'], answer: 2, explanation: '$\\dfrac{10\\cdot4+20}{5}=\\dfrac{60}{5}=12$.' },
+      ],
+    },
   ],
 
   KHTN8: [
