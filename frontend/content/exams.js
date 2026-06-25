@@ -3356,6 +3356,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $10, 10, 10, 20, 30, 40$?', options: ['$10$', '$40$', '$20$', '$120$'], answer: 2, explanation: '$\\dfrac{10+10+10+20+30+40}{6}=\\dfrac{120}{6}=20$.' },
       ],
     },
+    {
+      examId: 'toan8-40', title: 'Kiểm tra 45′ #40 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(8x+1)(8x-1)$?', options: ['$64x^2+1$', '$8x^2-1$', '$64x^2-1$', '$64x^2-16x-1$'], answer: 2, explanation: 'Hiệu hai bình phương: $64x^2-1$.' },
+        { stem: 'Phân tích $x^2-12x+35$ thành nhân tử?', options: ['$(x-5)(x-7)$', '$(x+5)(x+7)$', '$(x-3)(x-12)$', '$(x-5)(x+7)$'], answer: 0, explanation: '$x^2-12x+35=(x-5)(x-7)$.' },
+        { stem: 'Nghiệm của phương trình $10x-6=7x+9$?', options: ['$x=3$', '$x=5$', '$x=15$', '$x=-5$'], answer: 1, explanation: '$3x=15 \\Leftrightarrow x=5$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-100}{x+10}$ (với $x\\ne-10$)?', options: ['$x+10$', '$x$', '$x^2-10$', '$x-10$'], answer: 3, explanation: '$\\dfrac{(x-10)(x+10)}{x+10}=x-10$.' },
+        { stem: 'Đường thẳng $y=2x-14$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=14$', '$x=-7$', '$x=7$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 2x=14 \\Rightarrow x=7$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $12$ và $35$. Cạnh huyền?', options: ['$47$', '$37$', '$35$', '$41$'], answer: 1, explanation: '$\\sqrt{12^2+35^2}=\\sqrt{1369}=37$.' },
+        { stem: 'Khai triển $(x+10)^2$?', options: ['$x^2+20x+100$', '$x^2+100$', '$x^2+10x+100$', '$x^2+20x+10$'], answer: 0, explanation: '$(x+10)^2=x^2+20x+100$.' },
+        { stem: 'Diện tích tam giác có đáy $14$ và chiều cao $6$?', options: ['$84$', '$20$', '$28$', '$42$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot14\\cdot6=42$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-5x+6}{x-2}$ (với $x\\ne2$)?', options: ['$x+3$', '$x-3$', '$x^2-3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x-2)(x-3)}{x-2}=x-3$.' },
+        { stem: 'Mốt của dãy số $7, 7, 7, 7, 12$?', options: ['$12$', '$4$', '$7$', '$5$'], answer: 2, explanation: 'Giá trị $7$ xuất hiện nhiều nhất ⇒ mốt $=7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
