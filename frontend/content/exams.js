@@ -3116,6 +3116,21 @@ const EXAMS = {
         { stem: 'Tung đồng thời hai đồng xu cân đối, xác suất được cả hai mặt ngửa?', options: ['$\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{4}$', '$\\dfrac{3}{4}$'], answer: 2, explanation: '$4$ kết quả, chỉ $1$ là NN ⇒ $\\dfrac{1}{4}$.' },
       ],
     },
+    {
+      examId: 'toan8-24', title: 'Kiểm tra 45′ #24 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-4)(x+4)$?', options: ['$x^2+16$', '$x^2-8x+16$', '$x^2-16$', '$x^2-4x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-16$.' },
+        { stem: 'Phân tích $x^2-7x$ thành nhân tử?', options: ['$x(x-7)$', '$x(x+7)$', '$(x-7)^2$', '$7x$'], answer: 0, explanation: '$x^2-7x=x(x-7)$.' },
+        { stem: 'Nghiệm của phương trình $3(2x-1)=15$?', options: ['$x=2$', '$x=3$', '$x=4$', '$x=9$'], answer: 1, explanation: '$6x-3=15 \\Leftrightarrow 6x=18 \\Leftrightarrow x=3$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-x-6}{x-3}$ (với $x\\ne3$)?', options: ['$x-2$', '$x-3$', '$x+3$', '$x+2$'], answer: 3, explanation: '$\\dfrac{(x-3)(x+2)}{x-3}=x+2$.' },
+        { stem: 'Đường thẳng $y=4-2x$ cắt trục tung tại điểm có tung độ?', options: ['$-4$', '$2$', '$4$', '$0$'], answer: 2, explanation: 'Cho $x=0 \\Rightarrow y=4$.' },
+        { stem: 'Mỗi góc nhọn của tam giác vuông cân bằng?', options: ['$30^\\circ$', '$45^\\circ$', '$60^\\circ$', '$90^\\circ$'], answer: 1, explanation: 'Hai góc nhọn bằng nhau và cộng lại $90^\\circ$ ⇒ mỗi góc $45^\\circ$.' },
+        { stem: 'Khai triển $(3a-2b)^2$?', options: ['$9a^2-12ab+4b^2$', '$9a^2+12ab+4b^2$', '$9a^2-4b^2$', '$3a^2-12ab+4b^2$'], answer: 0, explanation: '$(3a-2b)^2=9a^2-12ab+4b^2$.' },
+        { stem: 'Thể tích hình lập phương cạnh $5$?', options: ['$25$', '$15$', '$75$', '$125$'], answer: 3, explanation: '$V=5^3=125$.' },
+        { stem: 'Rút gọn $\\dfrac{6x^3}{2x}$ (với $x\\ne0$)?', options: ['$3x$', '$3x^2$', '$4x^2$', '$12x^2$'], answer: 1, explanation: '$\\dfrac{6x^3}{2x}=3x^2$.' },
+        { stem: 'Mốt của dãy số $5, 3, 8, 8, 6$?', options: ['$5$', '$6$', '$8$', '$3$'], answer: 2, explanation: 'Giá trị $8$ xuất hiện nhiều nhất ⇒ mốt $=8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
