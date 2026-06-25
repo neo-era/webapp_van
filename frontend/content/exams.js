@@ -3599,6 +3599,21 @@ const EXAMS = {
         { stem: 'Áp suất khí quyển được đo bằng dụng cụ nào?', options: ['Nhiệt kế', 'Khí áp kế', 'Lực kế', 'Ẩm kế'], answer: 1, explanation: 'Khí áp kế dùng đo áp suất khí quyển.' },
       ],
     },
+    {
+      examId: 'khtn8-28', title: 'Kiểm tra 45′ #28 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $11$ g $CO_2$ ($M=44$)?', options: ['$0{,}1$', '$0{,}5$', '$0{,}25$', '$1$'], answer: 2, explanation: '$n=11/44=0{,}25$ mol.' },
+        { stem: 'Áp suất tại độ sâu $0{,}2$ m trong nước ($d=10000$ N/m³)?', options: ['$2000$ Pa', '$200$ Pa', '$20000$ Pa', '$5000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 0{,}2=2000$ Pa.' },
+        { stem: 'Một vật có khối lượng $21{,}6$ g và thể tích $2$ cm³. Khối lượng riêng?', options: ['$108$ g/cm³', '$10{,}8$ g/cm³', '$1{,}08$ g/cm³', '$1080$ g/cm³'], answer: 1, explanation: '$D=m/V=21{,}6/2=10{,}8$ g/cm³.' },
+        { stem: 'Dung dịch base làm quỳ tím chuyển sang màu gì?', options: ['Phenolphtalein không màu', 'Quỳ tím hóa đỏ', 'Nước vôi đục', 'Quỳ tím hóa xanh'], answer: 3, explanation: 'Base làm quỳ tím hóa xanh.' },
+        { stem: 'Van tim trong hệ tuần hoàn có vai trò gì?', options: ['Đảm bảo máu chảy một chiều', 'Lọc máu', 'Tạo hồng cầu', 'Trao đổi khí'], answer: 0, explanation: 'Van tim ngăn máu chảy ngược, giữ máu đi một chiều.' },
+        { stem: 'Hòa tan $5$ g chất tan vào $45$ g nước. Nồng độ phần trăm dung dịch?', options: ['$5\\%$', '$20\\%$', '$10\\%$', '$50\\%$'], answer: 2, explanation: '$m_{dd}=50$ g ⇒ $C\\%=5/50\\times 100\\%=10\\%$.' },
+        { stem: 'Hai lực cân bằng có đặc điểm nào?', options: ['Khác độ lớn', 'Cùng độ lớn, cùng phương, ngược chiều, cùng đặt lên một vật', 'Cùng chiều', 'Vuông góc với nhau'], answer: 1, explanation: 'Hai lực cân bằng cùng độ lớn, ngược chiều, cùng giá.' },
+        { stem: 'Đốt cháy $6$ g cacbon ($M=12$) trong oxi ($C+O_2\\to CO_2$). Số mol $CO_2$?', options: ['$0{,}25$', '$1$', '$2$', '$0{,}5$'], answer: 3, explanation: '$n_C=0{,}5$ mol ⇒ $n_{CO_2}=0{,}5$ mol.' },
+        { stem: 'Cơ quan nào tiết enzyme tiêu hóa đổ vào ruột non?', options: ['Gan', 'Dạ dày', 'Tuyến tụy', 'Lá lách'], answer: 2, explanation: 'Tuyến tụy tiết dịch tụy chứa nhiều enzyme tiêu hóa.' },
+        { stem: 'Lực ma sát trượt xuất hiện khi nào?', options: ['Vật đứng yên', 'Một vật trượt trên bề mặt vật khác', 'Vật bay trong không khí', 'Vật rơi tự do'], answer: 1, explanation: 'Ma sát trượt sinh ra khi vật trượt trên bề mặt khác.' },
+      ],
+    },
   ],
 
   ANH8: [
