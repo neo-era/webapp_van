@@ -3011,6 +3011,21 @@ const EXAMS = {
         { stem: 'Gieo một con xúc xắc cân đối $6$ mặt, xác suất ra mặt có số chấm chẵn?', options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{2}{3}$'], answer: 2, explanation: 'Có 3 mặt chẵn $\\{2,4,6\\}$ ⇒ $3/6=\\dfrac{1}{2}$.' },
       ],
     },
+    {
+      examId: 'toan8-17', title: 'Kiểm tra 45′ #17 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x-3)(2x+3)$?', options: ['$4x^2+9$', '$4x^2-9$', '$2x^2-9$', '$4x^2-6x-9$'], answer: 1, explanation: 'Hiệu hai bình phương: $(2x)^2-3^2=4x^2-9$.' },
+        { stem: 'Phân tích $x^2+10x+25$ thành nhân tử?', options: ['$(x+5)^2$', '$(x-5)^2$', '$(x+5)(x-5)$', '$(x+10)(x+15)$'], answer: 0, explanation: '$x^2+10x+25=(x+5)^2$.' },
+        { stem: 'Nghiệm của phương trình $2x+3=x+7$?', options: ['$x=2$', '$x=10$', '$x=3$', '$x=4$'], answer: 3, explanation: '$2x-x=7-3 \\Leftrightarrow x=4$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{x+2}{x^2-1}$?', options: ['$x\\ne1$', '$x\\ne-1$', '$x\\ne\\pm1$', '$x\\ne2$'], answer: 2, explanation: '$x^2-1\\ne0 \\Leftrightarrow x\\ne\\pm1$.' },
+        { stem: 'Đường thẳng $y=4x-1$ cắt trục tung tại điểm có tung độ?', options: ['$1$', '$-1$', '$4$', '$0$'], answer: 1, explanation: 'Cho $x=0 \\Rightarrow y=-1$.' },
+        { stem: 'Tam giác vuông cân có cạnh góc vuông bằng $3$. Độ dài cạnh huyền?', options: ['$3\\sqrt2$', '$6$', '$9$', '$3$'], answer: 0, explanation: '$\\sqrt{3^2+3^2}=\\sqrt{18}=3\\sqrt2$.' },
+        { stem: 'Khai triển $(a-b)(a^2+ab+b^2)$?', options: ['$a^3+b^3$', '$(a-b)^3$', '$a^3-b^3$', '$a^3-3a^2b$'], answer: 2, explanation: '$(a-b)(a^2+ab+b^2)=a^3-b^3$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có đáy $2\\times3$ và chiều cao $5$?', options: ['$10$', '$25$', '$60$', '$30$'], answer: 3, explanation: '$V=2\\cdot3\\cdot5=30$.' },
+        { stem: 'Rút gọn $\\dfrac{4x^2-1}{2x-1}$ (với $x\\ne\\dfrac{1}{2}$)?', options: ['$2x-1$', '$2x+1$', '$4x+1$', '$x+1$'], answer: 1, explanation: '$\\dfrac{(2x-1)(2x+1)}{2x-1}=2x+1$.' },
+        { stem: 'Số trung bình cộng của dãy $2, 4, 6, 8, 10$?', options: ['$6$', '$5$', '$30$', '$8$'], answer: 0, explanation: '$\\dfrac{2+4+6+8+10}{5}=\\dfrac{30}{5}=6$.' },
+      ],
+    },
   ],
 
   KHTN8: [
