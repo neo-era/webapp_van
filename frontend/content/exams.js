@@ -4877,6 +4877,21 @@ const EXAMS = {
         { stem: 'He ____ visited Paris twice.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ has.' },
       ],
     },
+    {
+      examId: 'anh8-47', title: 'Kiểm tra 45′ #47 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ his bike to school every day.', options: ['ride', 'rides', 'riding', 'rode'], answer: 1, explanation: 'every day ⇒ hiện tại đơn, chủ ngữ số ít ⇒ rides.' },
+        { stem: 'Gold is ____ than iron.', options: ['heavier', 'heavy', 'heaviest', 'more heavy'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: heavier.' },
+        { stem: 'You ____ ask permission before leaving the room.', options: ['can', 'may', 'must', 'would'], answer: 2, explanation: 'must = bắt buộc.' },
+        { stem: 'If they win the match, they ____ a prize.', options: ['get', 'got', 'would get', 'will get'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'In the countryside, the houses ____ of wood.', options: ['build', 'builds', 'are built', 'is built'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are built.' },
+        { stem: 'The dog ____ is black is very friendly.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho con vật làm chủ ngữ.' },
+        { stem: 'He has played football ____ he was a child.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mệnh đề mốc thời gian (he was a child).' },
+        { stem: "Choose the synonym of 'small'.", options: ['huge', 'large', 'big', 'tiny'], answer: 3, explanation: 'small ≈ tiny (nhỏ xíu).' },
+        { stem: "Choose the antonym of 'up'.", options: ['top', 'down', 'high', 'above'], answer: 1, explanation: 'up ↔ down (xuống).' },
+        { stem: 'She has ____ eaten durian before.', options: ['ever', 'yet', 'never', 'since'], answer: 2, explanation: 'never = chưa bao giờ (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
