@@ -3797,6 +3797,21 @@ const EXAMS = {
         { stem: 'I have ____ seen this film, so let\'s watch another one.', options: ['yet', 'since', 'already', 'for'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
       ],
     },
+    {
+      examId: 'anh8-23', title: 'Kiểm tra 45′ #23 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'We ____ a great time at the party last night.', options: ['has', 'have', 'had', 'having'], answer: 2, explanation: 'last night ⇒ quá khứ đơn: had.' },
+        { stem: 'Your bag is ____ than mine.', options: ['smaller', 'small', 'smallest', 'more small'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: smaller.' },
+        { stem: 'I ____ swim when I was six years old.', options: ['can', 'could', 'may', 'must'], answer: 1, explanation: 'could = khả năng trong quá khứ.' },
+        { stem: 'If you press this button, the machine ____.', options: ['start', 'started', 'would start', 'will start'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The windows ____ once a week.', options: ['clean', 'cleans', 'are cleaned', 'is cleaned'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are cleaned.' },
+        { stem: 'This is the restaurant ____ we had dinner yesterday.', options: ['where', 'which', 'who', 'whose'], answer: 0, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'He has worked in this company ____ ten years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (ten years).' },
+        { stem: "Choose the synonym of 'begin'.", options: ['stop', 'end', 'finish', 'start'], answer: 3, explanation: 'begin ≈ start (bắt đầu).' },
+        { stem: "Choose the antonym of 'open'.", options: ['ajar', 'closed', 'wide', 'free'], answer: 1, explanation: 'open ↔ closed (đóng).' },
+        { stem: 'She ____ to the gym every morning.', options: ['go', 'going', 'goes', 'went'], answer: 2, explanation: 'every morning ⇒ hiện tại đơn, chủ ngữ số ít ⇒ goes.' },
+      ],
+    },
   ],
 };
 
