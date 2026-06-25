@@ -3329,6 +3329,21 @@ const EXAMS = {
         { stem: 'Lực đẩy Archimedes lên vật chìm hoàn toàn, thể tích $0{,}001$ m³ trong nước ($d=10000$ N/m³)?', options: ['$1$ N', '$5$ N', '$10$ N', '$100$ N'], answer: 2, explanation: '$F_A=d\\cdot V=10000\\times 0{,}001=10$ N.' },
       ],
     },
+    {
+      examId: 'khtn8-19', title: 'Kiểm tra 45′ #19 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $3{,}2$ g $O_2$ ($M=32$)?', options: ['$0{,}05$', '$0{,}1$', '$0{,}2$', '$1$'], answer: 1, explanation: '$n=3{,}2/32=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $2$ m trong dầu ($d=8000$ N/m³)?', options: ['$8000$ Pa', '$4000$ Pa', '$16000$ Pa', '$1600$ Pa'], answer: 2, explanation: '$p=d\\cdot h=8000\\times 2=16000$ Pa.' },
+        { stem: 'Một chất có khối lượng $100$ g và thể tích $125$ cm³. Khối lượng riêng?', options: ['$0{,}8$ g/cm³', '$1{,}25$ g/cm³', '$8$ g/cm³', '$12{,}5$ g/cm³'], answer: 0, explanation: '$D=m/V=100/125=0{,}8$ g/cm³.' },
+        { stem: '$K_2O$ thuộc loại oxide nào?', options: ['Oxide acid', 'Acid', 'Muối', 'Oxide base'], answer: 3, explanation: 'K là kim loại ⇒ $K_2O$ là oxide base.' },
+        { stem: 'Hệ tuần hoàn của người có mấy vòng tuần hoàn?', options: ['$1$', '$2$', '$3$', '$4$'], answer: 1, explanation: 'Vòng tuần hoàn lớn và vòng tuần hoàn nhỏ.' },
+        { stem: 'Nồng độ mol của $0{,}4$ mol chất tan trong $0{,}2$ lít dung dịch?', options: ['$0{,}5$ M', '$1$ M', '$2$ M', '$4$ M'], answer: 2, explanation: '$C_M=0{,}4/0{,}2=2$ M.' },
+        { stem: 'Lực $20$ N kéo vật đi $3$ m. Công thực hiện?', options: ['$60$ J', '$23$ J', '$6{,}7$ J', '$600$ J'], answer: 0, explanation: '$A=F\\cdot s=20\\times 3=60$ J.' },
+        { stem: 'Khí $CO_2$ trong máu được vận chuyển đến đâu để thải ra ngoài?', options: ['Gan', 'Thận', 'Tim', 'Phổi'], answer: 3, explanation: '$CO_2$ được thải qua phổi khi thở ra.' },
+        { stem: 'Dung dịch có $pH=7$ mang tính gì?', options: ['Acid', 'Trung tính', 'Base', 'Muối'], answer: 1, explanation: '$pH=7$ ⇒ trung tính (như nước cất).' },
+        { stem: 'Áp suất khí quyển thay đổi thế nào khi ta lên cao?', options: ['Tăng khi xuống thấp', 'Tăng khi nhiệt độ tăng', 'Giảm khi lên cao', 'Tăng khi trời mưa'], answer: 2, explanation: 'Càng lên cao, áp suất khí quyển càng giảm.' },
+      ],
+    },
   ],
 
   ANH8: [
