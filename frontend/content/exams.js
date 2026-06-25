@@ -2942,6 +2942,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'fast'.", options: ['quick', 'rapid', 'swift', 'slow'], answer: 3, explanation: 'fast ↔ slow (chậm).' },
       ],
     },
+    {
+      examId: 'anh8-4', title: 'Kiểm tra 45′ #4 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: '____ you like some tea?', options: ['Would', 'Do', 'Are', 'Will'], answer: 0, explanation: 'Would you like…? (lời mời lịch sự).' },
+        { stem: 'She is the ____ girl in my class.', options: ['beautiful', 'beautifuler', 'more beautiful', 'most beautiful'], answer: 3, explanation: 'So sánh nhất tính từ dài: the most beautiful.' },
+        { stem: 'They ____ to the cinema last night.', options: ['went', 'go', 'goes', 'going'], answer: 0, explanation: 'Quá khứ đơn (last night): went.' },
+        { stem: 'We must ____ our teachers.', options: ['respects', 'respect', 'respecting', 'respected'], answer: 1, explanation: 'must + động từ nguyên thể (respect).' },
+        { stem: 'The book ____ I read last week was great.', options: ['who', 'which', 'where', 'whose'], answer: 1, explanation: 'which thay cho vật, làm tân ngữ.' },
+        { stem: 'He ____ never been to Japan.', options: ['have', 'had', 'is', 'has'], answer: 3, explanation: 'Hiện tại hoàn thành, chủ ngữ số ít ⇒ has.' },
+        { stem: "Choose the synonym of 'happy'.", options: ['sad', 'angry', 'glad', 'bored'], answer: 2, explanation: 'happy ≈ glad (vui).' },
+        { stem: 'If it ____ sunny, we will go out.', options: ['was', 'is', 'were', 'will be'], answer: 1, explanation: 'Câu điều kiện loại 1: If + hiện tại đơn.' },
+        { stem: 'The cake ____ by my mother.', options: ['made', 'makes', 'making', 'was made'], answer: 3, explanation: 'Câu bị động quá khứ: was made.' },
+        { stem: "Choose the antonym of 'easy'.", options: ['difficult', 'simple', 'easy', 'light'], answer: 0, explanation: 'easy ↔ difficult (khó).' },
+      ],
+    },
   ],
 };
 
