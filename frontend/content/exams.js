@@ -4472,6 +4472,21 @@ const EXAMS = {
         { stem: '____ she ever been abroad?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
       ],
     },
+    {
+      examId: 'anh8-38', title: 'Kiểm tra 45′ #38 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ football when it started to rain.', options: ['played', 'plays', 'were playing', 'play'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ were playing.' },
+        { stem: 'An ocean is ____ than a lake.', options: ['deeper', 'deep', 'deepest', 'more deep'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: deeper.' },
+        { stem: 'You ____ be quiet in the hospital.', options: ['must', 'should', 'can', 'would'], answer: 1, explanation: 'should = lời khuyên nên làm.' },
+        { stem: 'If she practices every day, she ____ better.', options: ['get', 'got', 'would get', 'will get'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'English and French ____ in Canada.', options: ['speak', 'speaks', 'are spoken', 'is spoken'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are spoken.' },
+        { stem: 'The book ____ I read last week was exciting.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'He has lived abroad ____ many years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (many years).' },
+        { stem: "Choose the synonym of 'kind'.", options: ['rude', 'mean', 'cruel', 'friendly'], answer: 3, explanation: 'kind ≈ friendly (tử tế).' },
+        { stem: "Choose the antonym of 'wet'.", options: ['damp', 'dry', 'moist', 'soaked'], answer: 1, explanation: 'wet ↔ dry (khô).' },
+        { stem: 'She has ____ finished her project.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
