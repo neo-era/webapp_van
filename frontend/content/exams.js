@@ -5237,6 +5237,21 @@ const EXAMS = {
         { stem: '____ they arrived yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-55', title: 'Kiểm tra 45′ #55 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'Look! The baby ____.', options: ['cries', 'cried', 'is crying', 'cry'], answer: 2, explanation: '"Look!" ⇒ hiện tại tiếp diễn: is crying.' },
+        { stem: 'A lake is ____ than a pond.', options: ['deeper', 'deep', 'deepest', 'more deep'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: deeper.' },
+        { stem: 'You ____ drive a car without a license.', options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = không được phép (cấm)." },
+        { stem: 'If you press play, the song ____.', options: ['start', 'started', 'would start', 'will start'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The car ____ every weekend.', options: ['wash', 'washes', 'is washed', 'are washed'], answer: 2, explanation: 'Bị động hiện tại đơn: is washed.' },
+        { stem: 'The woman ____ teaches us English is friendly.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'I have studied the piano ____ I was six.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mệnh đề mốc thời gian (I was six).' },
+        { stem: "Choose the synonym of 'afraid'.", options: ['calm', 'brave', 'bold', 'frightened'], answer: 3, explanation: 'afraid ≈ frightened (sợ).' },
+        { stem: "Choose the antonym of 'asleep'.", options: ['sleeping', 'awake', 'dozing', 'resting'], answer: 1, explanation: 'asleep ↔ awake (tỉnh).' },
+        { stem: '____ she finished cooking?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
+      ],
+    },
   ],
 };
 
