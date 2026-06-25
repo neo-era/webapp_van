@@ -2831,6 +2831,21 @@ const EXAMS = {
         { stem: 'Phân tích $x^2-x$ thành nhân tử?', options: ['$x(x+1)$', '$(x-1)^2$', '$x^2$', '$x(x-1)$'], answer: 3, explanation: '$x^2-x=x(x-1)$.' },
       ],
     },
+    {
+      examId: 'toan8-5', title: 'Kiểm tra 45′ #5 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+4)(x-4)$?', options: ['$x^2+16$', '$x^2-8x-16$', '$x^2-4x$', '$x^2-16$'], answer: 3, explanation: 'Hiệu hai bình phương: $x^2-16$.' },
+        { stem: 'Phân tích $x^2+5x+6$ thành nhân tử?', options: ['$(x+1)(x+6)$', '$(x-2)(x-3)$', '$(x+2)(x+3)$', '$(x+6)(x-1)$'], answer: 2, explanation: '$2+3=5$ và $2\\cdot3=6 \\Rightarrow (x+2)(x+3)$.' },
+        { stem: 'Nghiệm của phương trình $2x+3=11$?', options: ['$7$', '$4$', '$-4$', '$14$'], answer: 1, explanation: '$2x=8 \\Leftrightarrow x=4$.' },
+        { stem: 'Tính nhanh $99\\cdot101$ (dùng hằng đẳng thức)?', options: ['$9999$', '$10000$', '$9899$', '$10001$'], answer: 0, explanation: '$(100-1)(100+1)=100^2-1=9999$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{x+1}{x^2-4}$?', options: ['$x\\ne2$', '$x\\ne\\pm2$', '$x\\ne-2$', '$x\\ne0$'], answer: 1, explanation: '$x^2-4\\ne0 \\Leftrightarrow x\\ne\\pm2$.' },
+        { stem: 'Hệ số góc của đường thẳng $y=-x+3$?', options: ['$1$', '$3$', '$-3$', '$-1$'], answer: 3, explanation: 'Hệ số góc là hệ số của $x$: $-1$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $5$ và $12$. Cạnh huyền?', options: ['$17$', '$13$', '$7$', '$60$'], answer: 1, explanation: '$\\sqrt{5^2+12^2}=\\sqrt{169}=13$.' },
+        { stem: 'Diện tích hình thoi có hai đường chéo $6$ và $8$?', options: ['$24$', '$48$', '$14$', '$28$'], answer: 0, explanation: '$S=\\dfrac{1}{2}d_1d_2=\\dfrac{1}{2}\\cdot6\\cdot8=24$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+x}{x}$ (với $x\\ne0$)?', options: ['$x$', '$x^2+1$', '$1$', '$x+1$'], answer: 3, explanation: '$\\dfrac{x(x+1)}{x}=x+1$.' },
+        { stem: 'Thể tích hình hộp chữ nhật kích thước $2\\times3\\times4$?', options: ['$9$', '$12$', '$24$', '$14$'], answer: 2, explanation: '$V=2\\cdot3\\cdot4=24$.' },
+      ],
+    },
   ],
 
   KHTN8: [
