@@ -3611,6 +3611,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $40, 40, 40, 40, 60$?', options: ['$40$', '$60$', '$44$', '$220$'], answer: 2, explanation: '$\\dfrac{40\\cdot4+60}{5}=\\dfrac{220}{5}=44$.' },
       ],
     },
+    {
+      examId: 'toan8-57', title: 'Kiểm tra 45′ #57 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(9x+10)(9x-10)$?', options: ['$81x^2+100$', '$9x^2-100$', '$81x^2-100$', '$81x^2-180x-100$'], answer: 2, explanation: 'Hiệu hai bình phương: $81x^2-100$.' },
+        { stem: 'Phân tích $x^2-14x+45$ thành nhân tử?', options: ['$(x-5)(x-9)$', '$(x+5)(x+9)$', '$(x-3)(x-15)$', '$(x-5)(x+9)$'], answer: 0, explanation: '$x^2-14x+45=(x-5)(x-9)$.' },
+        { stem: 'Nghiệm của phương trình $17x-15=14x+9$?', options: ['$x=3$', '$x=8$', '$x=24$', '$x=-8$'], answer: 1, explanation: '$3x=24 \\Leftrightarrow x=8$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-324}{x-18}$ (với $x\\ne18$)?', options: ['$x-18$', '$x$', '$x^2+18$', '$x+18$'], answer: 3, explanation: '$\\dfrac{(x-18)(x+18)}{x-18}=x+18$.' },
+        { stem: 'Đường thẳng $y=10x+40$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=40$', '$x=4$', '$x=-4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 10x=-40 \\Rightarrow x=-4$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $16$ và $63$. Cạnh huyền?', options: ['$79$', '$65$', '$60$', '$70$'], answer: 1, explanation: '$\\sqrt{16^2+63^2}=\\sqrt{4225}=65$.' },
+        { stem: 'Khai triển $(5x-4)^2$?', options: ['$25x^2-40x+16$', '$25x^2+40x+16$', '$25x^2-16$', '$5x^2-40x+16$'], answer: 0, explanation: '$(5x-4)^2=25x^2-40x+16$.' },
+        { stem: 'Diện tích hình thang có hai đáy $8$ và $16$, chiều cao $5$?', options: ['$120$', '$24$', '$40$', '$60$'], answer: 3, explanation: '$S=\\dfrac{(8+16)}{2}\\cdot5=60$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-x-42}{x-7}$ (với $x\\ne7$)?', options: ['$x-6$', '$x+6$', '$x^2+6$', '$6$'], answer: 1, explanation: '$\\dfrac{(x-7)(x+6)}{x-7}=x+6$.' },
+        { stem: 'Số trung bình cộng của $50, 50, 50, 50, 70$?', options: ['$50$', '$70$', '$54$', '$270$'], answer: 2, explanation: '$\\dfrac{50\\cdot4+70}{5}=\\dfrac{270}{5}=54$.' },
+      ],
+    },
   ],
 
   KHTN8: [
