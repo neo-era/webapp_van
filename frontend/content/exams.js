@@ -3461,6 +3461,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $5, 10, 15, 20, 25$?', options: ['$10$', '$25$', '$15$', '$75$'], answer: 2, explanation: '$\\dfrac{5+10+15+20+25}{5}=\\dfrac{75}{5}=15$.' },
       ],
     },
+    {
+      examId: 'toan8-47', title: 'Kiểm tra 45′ #47 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+17)(x-17)$?', options: ['$x^2+289$', '$x^2-34x+289$', '$x^2-289$', '$x^2-17x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-289$.' },
+        { stem: 'Phân tích $x^2+18x+81$ thành nhân tử?', options: ['$(x+9)^2$', '$(x-9)^2$', '$(x+9)(x-9)$', '$(x+81)(x+1)$'], answer: 0, explanation: '$x^2+18x+81=(x+9)^2$.' },
+        { stem: 'Nghiệm của phương trình $5x-8=3x+4$?', options: ['$x=2$', '$x=6$', '$x=12$', '$x=-6$'], answer: 1, explanation: '$2x=12 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-81}{x-9}$ (với $x\\ne9$)?', options: ['$x-9$', '$x$', '$x^2+9$', '$x+9$'], answer: 3, explanation: '$\\dfrac{(x-9)(x+9)}{x-9}=x+9$.' },
+        { stem: 'Đường thẳng $y=10x-30$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=30$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 10x=30 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $13$ và $84$. Cạnh huyền?', options: ['$97$', '$85$', '$80$', '$88$'], answer: 1, explanation: '$\\sqrt{13^2+84^2}=\\sqrt{7225}=85$.' },
+        { stem: 'Khai triển $(9x-2)^2$?', options: ['$81x^2-36x+4$', '$81x^2+36x+4$', '$81x^2-4$', '$9x^2-36x+4$'], answer: 0, explanation: '$(9x-2)^2=81x^2-36x+4$.' },
+        { stem: 'Diện tích hình bình hành có đáy $15$ và chiều cao $6$?', options: ['$21$', '$45$', '$30$', '$90$'], answer: 3, explanation: '$S=a\\cdot h=15\\cdot6=90$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-3x-28}{x-7}$ (với $x\\ne7$)?', options: ['$x-4$', '$x+4$', '$x^2+4$', '$4$'], answer: 1, explanation: '$\\dfrac{(x-7)(x+4)}{x-7}=x+4$.' },
+        { stem: 'Số trung bình cộng của $6, 6, 6, 6, 16$?', options: ['$6$', '$16$', '$8$', '$40$'], answer: 2, explanation: '$\\dfrac{6+6+6+6+16}{5}=\\dfrac{40}{5}=8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
