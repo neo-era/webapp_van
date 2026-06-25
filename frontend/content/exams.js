@@ -3302,6 +3302,21 @@ const EXAMS = {
         { stem: 'We ____ to the museum yesterday.', options: ['went', 'go', 'going', 'gone'], answer: 0, explanation: 'yesterday ⇒ quá khứ đơn: went.' },
       ],
     },
+    {
+      examId: 'anh8-12', title: 'Kiểm tra 45′ #12 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'My sister ____ TV when I came home.', options: ['was watching', 'watched', 'watches', 'is watching'], answer: 0, explanation: 'Hành động đang xảy ra trong quá khứ ⇒ was watching.' },
+        { stem: 'This is ____ shop in the town.', options: ['expensive', 'more expensive', 'the most expensive', 'expensiver'], answer: 2, explanation: 'So sánh nhất tính từ dài: the most expensive.' },
+        { stem: '____ I open the window, please?', options: ['Must', 'Should', 'Need', 'May'], answer: 3, explanation: 'May = xin phép lịch sự.' },
+        { stem: 'If you heat ice, it ____.', options: ['will melt', 'melted', 'melts', 'melt'], answer: 2, explanation: 'Điều kiện loại 0 (chân lý): hiện tại đơn ⇒ melts.' },
+        { stem: 'English ____ all over the world.', options: ['speaks', 'spoke', 'is speaking', 'is spoken'], answer: 3, explanation: 'Bị động hiện tại đơn: is spoken.' },
+        { stem: 'The book ____ I bought yesterday is interesting.', options: ['who', 'which', 'where', 'whose'], answer: 1, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'He has been ill ____ three days.', options: ['for', 'since', 'in', 'at'], answer: 0, explanation: 'for + khoảng thời gian (three days).' },
+        { stem: "Choose the synonym of 'begin'.", options: ['stop', 'cheap', 'start', 'end'], answer: 2, explanation: 'begin ≈ start (bắt đầu).' },
+        { stem: "Choose the antonym of 'expensive'.", options: ['costly', 'cheap', 'pricey', 'dear'], answer: 1, explanation: 'expensive ↔ cheap (rẻ).' },
+        { stem: 'We ____ already finished our homework.', options: ['has', 'had', 'having', 'have'], answer: 3, explanation: 'Hiện tại hoàn thành với "we" ⇒ have finished.' },
+      ],
+    },
   ],
 };
 
