@@ -4517,6 +4517,21 @@ const EXAMS = {
         { stem: 'She has ____ finished her project.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-39', title: 'Kiểm tra 45′ #39 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'She ____ to the radio every morning.', options: ['listen', 'listens', 'listening', 'listened'], answer: 1, explanation: 'every morning ⇒ hiện tại đơn, chủ ngữ số ít ⇒ listens.' },
+        { stem: 'A river is ____ than a stream.', options: ['wider', 'wide', 'widest', 'more wide'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: wider.' },
+        { stem: 'You ____ smoke in the gas station.', options: ['should', 'can', "mustn't", 'may'], answer: 2, explanation: "mustn't = cấm (nguy hiểm)." },
+        { stem: 'If we recycle waste, we ____ money.', options: ['save', 'saved', 'would save', 'will save'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Tea ____ in many countries around the world.', options: ['drink', 'drinks', 'is drunk', 'are drunk'], answer: 2, explanation: 'Bị động hiện tại đơn: is drunk.' },
+        { stem: 'The place ____ I visited last year was crowded.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'They have been here ____ noon.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (noon).' },
+        { stem: "Choose the synonym of 'sad'.", options: ['glad', 'joyful', 'merry', 'unhappy'], answer: 3, explanation: 'sad ≈ unhappy (buồn).' },
+        { stem: "Choose the antonym of 'near'.", options: ['close', 'far', 'nearby', 'beside'], answer: 1, explanation: 'near ↔ far (xa).' },
+        { stem: '____ you ever met a famous person?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
