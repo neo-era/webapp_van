@@ -4199,6 +4199,21 @@ const EXAMS = {
         { stem: 'Khi đun nước, nước nóng đi lên và nước lạnh đi xuống tạo dòng. Đây là hình thức truyền nhiệt nào?', options: ['Dẫn nhiệt', 'Đối lưu', 'Bức xạ nhiệt', 'Bay hơi'], answer: 1, explanation: 'Sự truyền nhiệt bằng dòng chất lỏng/khí gọi là đối lưu.' },
       ],
     },
+    {
+      examId: 'khtn8-48', title: 'Kiểm tra 45′ #48 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $5{,}85$ g NaCl ($M=58{,}5$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=5{,}85/58{,}5=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $6$ m trong dầu ($d=8000$ N/m³)?', options: ['$48000$ Pa', '$4800$ Pa', '$480000$ Pa', '$14000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 6=48000$ Pa.' },
+        { stem: 'Một vật có khối lượng $158$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$79$ g/cm³', '$7{,}9$ g/cm³', '$0{,}79$ g/cm³', '$790$ g/cm³'], answer: 1, explanation: '$D=m/V=158/20=7{,}9$ g/cm³.' },
+        { stem: 'Khí CO (cacbon monoxide) có đặc điểm nào sau đây?', options: ['Không độc', 'Có màu nâu đỏ', 'Có mùi thơm', 'Độc, không màu không mùi'], answer: 3, explanation: 'CO rất độc, không màu, không mùi.' },
+        { stem: 'Máu vận chuyển chất nào từ phổi đến các tế bào?', options: ['Oxi', '$CO_2$', 'Nước tiểu', 'Muối khoáng dư'], answer: 0, explanation: 'Máu mang oxi từ phổi đến nuôi tế bào.' },
+        { stem: 'Hòa tan $4{,}5$ g chất tan vào $25{,}5$ g nước. Nồng độ phần trăm dung dịch?', options: ['$4{,}5\\%$', '$25{,}5\\%$', '$15\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=30$ g ⇒ $C\\%=4{,}5/30\\times 100\\%=15\\%$.' },
+        { stem: 'Một vật được treo đứng yên trên dây. Lực căng dây cân bằng với lực nào?', options: ['Lực đẩy Archimedes', 'Trọng lực của vật', 'Lực ma sát', 'Áp suất khí quyển'], answer: 1, explanation: 'Vật đứng yên ⇒ lực căng dây cân bằng trọng lực.' },
+        { stem: 'Khối lượng của $0{,}25$ mol Fe ($M=56$)?', options: ['$56$ g', '$28$ g', '$7$ g', '$14$ g'], answer: 3, explanation: '$m=0{,}25\\times 56=14$ g.' },
+        { stem: 'Tuyến nội tiết nào tiết hormone tăng trưởng?', options: ['Tuyến giáp', 'Tuyến tụy', 'Tuyến yên', 'Tuyến trên thận'], answer: 2, explanation: 'Tuyến yên tiết hormone tăng trưởng (GH).' },
+        { stem: 'Vì sao về mùa hè ta nên mặc áo màu sáng?', options: ['Để đẹp hơn', 'Áo sáng hấp thụ ít nhiệt hơn áo tối', 'Áo sáng nặng hơn', 'Không có lý do'], answer: 1, explanation: 'Màu sáng phản xạ bức xạ nhiệt tốt, hấp thụ ít nhiệt.' },
+      ],
+    },
   ],
 
   ANH8: [
