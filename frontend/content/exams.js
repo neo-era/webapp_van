@@ -3101,6 +3101,21 @@ const EXAMS = {
         { stem: 'Trung vị của dãy số $2, 5, 8, 11, 14$?', options: ['$5$', '$11$', '$8$', '$14$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $8$.' },
       ],
     },
+    {
+      examId: 'toan8-23', title: 'Kiểm tra 45′ #23 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(5x-1)(5x+1)$?', options: ['$25x^2+1$', '$5x^2-1$', '$25x^2-1$', '$25x^2-10x-1$'], answer: 2, explanation: 'Hiệu hai bình phương: $(5x)^2-1^2=25x^2-1$.' },
+        { stem: 'Phân tích $2x^2-4x+2$ thành nhân tử?', options: ['$2(x-1)^2$', '$2(x+1)^2$', '$(2x-2)^2$', '$2(x^2-1)$'], answer: 0, explanation: '$2x^2-4x+2=2(x^2-2x+1)=2(x-1)^2$.' },
+        { stem: 'Nghiệm của phương trình $7-2x=x-2$?', options: ['$x=1$', '$x=3$', '$x=5$', '$x=-3$'], answer: 1, explanation: '$9=3x \\Leftrightarrow x=3$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-2x}{x-2}$ (với $x\\ne2$)?', options: ['$x-2$', '$2x$', '$x^2$', '$x$'], answer: 3, explanation: '$\\dfrac{x(x-2)}{x-2}=x$.' },
+        { stem: 'Hệ số góc của đường thẳng $y=-x+5$?', options: ['$1$', '$5$', '$-1$', '$-5$'], answer: 2, explanation: 'Hệ số của $x$ là $-1$.' },
+        { stem: 'Hai tam giác đồng dạng có cặp cạnh tương ứng $4$ và $6$. Tỉ số đồng dạng?', options: ['$\\dfrac{3}{2}$', '$\\dfrac{2}{3}$', '$\\dfrac{1}{2}$', '$24$'], answer: 1, explanation: 'Tỉ số $=\\dfrac{4}{6}=\\dfrac{2}{3}$.' },
+        { stem: 'Khai triển $(2x+3)^2$?', options: ['$4x^2+12x+9$', '$4x^2+6x+9$', '$4x^2+9$', '$2x^2+12x+9$'], answer: 0, explanation: '$(2x+3)^2=4x^2+12x+9$.' },
+        { stem: 'Diện tích hình bình hành có đáy $7$ và chiều cao $4$?', options: ['$11$', '$14$', '$21$', '$28$'], answer: 3, explanation: '$S=a\\cdot h=7\\cdot4=28$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+5x+6}{x+2}$ (với $x\\ne-2$)?', options: ['$x+2$', '$x+3$', '$x-3$', '$x^2+3$'], answer: 1, explanation: '$\\dfrac{(x+2)(x+3)}{x+2}=x+3$.' },
+        { stem: 'Tung đồng thời hai đồng xu cân đối, xác suất được cả hai mặt ngửa?', options: ['$\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$\\dfrac{1}{4}$', '$\\dfrac{3}{4}$'], answer: 2, explanation: '$4$ kết quả, chỉ $1$ là NN ⇒ $\\dfrac{1}{4}$.' },
+      ],
+    },
   ],
 
   KHTN8: [
