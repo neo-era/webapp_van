@@ -1407,6 +1407,267 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-toan8-dathuc', title: 'Đại số · Đa thức nhiều biến & phép chia',
+          lessons: [
+            {
+              id: 'l-toan8-dathuc', title: 'Đa thức nhiều biến — cộng, trừ, nhân, chia', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p><strong>Đơn thức</strong> là tích của số với các biến (mỗi biến lũy thừa số tự nhiên). <strong>Đa thức</strong> là tổng của những đơn thức. Đơn thức đồng dạng có cùng phần biến.</p>
+                <ul>
+                  <li>Cộng/trừ đa thức: thu gọn các đơn thức đồng dạng.</li>
+                  <li>Nhân đơn thức với đa thức: $A(B+C)=AB+AC$.</li>
+                  <li>Nhân hai đa thức: nhân từng hạng tử rồi thu gọn.</li>
+                  <li>Chia đa thức cho đơn thức: chia từng hạng tử.</li>
+                </ul>
+                <div class="luuy"><strong>Lưu ý:</strong> $x^m\\cdot x^n = x^{m+n}$; $x^m : x^n = x^{m-n}$ (với $m\\ge n$).</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Nhân: $2x(3x-5) = 6x^2 - 10x$.</p>
+                  <p>$(x+2)(x-3) = x^2 - 3x + 2x - 6 = x^2 - x - 6$.</p>
+                  <p>Chia: $(6x^3 - 9x^2) : (3x) = 2x^2 - 3x$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Rút gọn $(2x+1)(x-4)$.
+                  <details><summary>Đáp án</summary>$2x^2 - 8x + x - 4 = 2x^2 - 7x - 4$.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-ptnt', title: 'Phân tích đa thức thành nhân tử', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Phân tích đa thức thành nhân tử là viết đa thức thành tích của những đa thức. Bốn phương pháp chính:</p>
+                <ul>
+                  <li><strong>Đặt nhân tử chung:</strong> $ab + ac = a(b+c)$.</li>
+                  <li><strong>Dùng hằng đẳng thức:</strong> $x^2 - 9 = (x-3)(x+3)$.</li>
+                  <li><strong>Nhóm hạng tử:</strong> nhóm để xuất hiện nhân tử chung.</li>
+                  <li><strong>Tách hạng tử:</strong> với tam thức $x^2+bx+c$, tách $bx$ thành hai số có tích $c$, tổng $b$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Đặt nhân tử chung: $5x^2 - 10x = 5x(x-2)$.</p>
+                  <p>Nhóm: $x^2 + xy + 3x + 3y = x(x+y) + 3(x+y) = (x+y)(x+3)$.</p>
+                  <p>Tách hạng tử: $x^2 + 5x + 6 = x^2 + 2x + 3x + 6 = (x+2)(x+3)$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Phân tích $x^2 - 5x + 6$.
+                  <details><summary>Đáp án</summary>$x^2 - 2x - 3x + 6 = (x-2)(x-3)$.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-phanthuc', title: 'Đại số · Phân thức đại số',
+          lessons: [
+            {
+              id: 'l-toan8-phanthuc', title: 'Phân thức — điều kiện xác định, rút gọn, phép tính', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Phân thức đại số có dạng $\\dfrac{A}{B}$ với $A,B$ là đa thức và $B \\ne 0$.</p>
+                <ul>
+                  <li><strong>Điều kiện xác định (ĐKXĐ):</strong> mẫu $B \\ne 0$.</li>
+                  <li><strong>Tính chất cơ bản:</strong> $\\dfrac{A}{B} = \\dfrac{A\\cdot M}{B\\cdot M}$ ($M\\ne0$) — dùng để rút gọn và quy đồng.</li>
+                  <li><strong>Cộng/trừ:</strong> quy đồng mẫu rồi cộng/trừ tử.</li>
+                  <li><strong>Nhân:</strong> $\\dfrac{A}{B}\\cdot\\dfrac{C}{D} = \\dfrac{AC}{BD}$. <strong>Chia:</strong> nhân với phân thức nghịch đảo.</li>
+                </ul>
+                <div class="luuy"><strong>Lưu ý:</strong> luôn tìm ĐKXĐ trước khi rút gọn; chỉ được rút gọn nhân tử chung của tử và mẫu.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Rút gọn $\\dfrac{x^2-4}{x^2+4x+4}$ (ĐKXĐ $x\\ne-2$): $\\dfrac{(x-2)(x+2)}{(x+2)^2} = \\dfrac{x-2}{x+2}$.</p>
+                  <p>Cộng: $\\dfrac{1}{x} + \\dfrac{1}{x+1} = \\dfrac{(x+1)+x}{x(x+1)} = \\dfrac{2x+1}{x(x+1)}$ (ĐKXĐ $x\\ne0, x\\ne-1$).</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Rút gọn $\\dfrac{3x+6}{x^2-4}$ và nêu ĐKXĐ.
+                  <details><summary>Đáp án</summary>ĐKXĐ $x\\ne\\pm2$. $\\dfrac{3(x+2)}{(x-2)(x+2)} = \\dfrac{3}{x-2}$.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-hamso', title: 'Đại số · Hàm số bậc nhất & đồ thị',
+          lessons: [
+            {
+              id: 'l-toan8-hamso', title: 'Hàm số bậc nhất $y = ax + b$ và đồ thị', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Hàm số bậc nhất có dạng $y = ax + b$ với $a \\ne 0$.</p>
+                <ul>
+                  <li>Đồ thị là một <strong>đường thẳng</strong> cắt trục tung tại điểm $(0; b)$.</li>
+                  <li>$a$ là <strong>hệ số góc</strong>: $a>0$ hàm đồng biến (đường thẳng đi lên), $a<0$ nghịch biến (đi xuống).</li>
+                  <li>Cách vẽ: xác định hai điểm — thường lấy giao với hai trục — rồi nối lại.</li>
+                </ul>
+                <div class="luuy"><strong>Vị trí tương đối:</strong> hai đường thẳng $y=ax+b$ và $y=a'x+b'$ <em>song song</em> khi $a=a', b\\ne b'$; <em>cắt nhau</em> khi $a\\ne a'$; <em>trùng nhau</em> khi $a=a', b=b'$.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Hàm $y = 2x - 3$: hệ số góc $a=2>0$ ⇒ đồng biến; cắt $Oy$ tại $(0;-3)$, cắt $Ox$ tại $\\left(\\tfrac{3}{2};0\\right)$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Đường thẳng $y = -x + 5$ cắt trục tung tại điểm nào và đồng biến hay nghịch biến?
+                  <details><summary>Đáp án</summary>Cắt $Oy$ tại $(0;5)$; $a=-1<0$ ⇒ nghịch biến.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-lapphuongtrinh', title: 'Đại số · Giải bài toán bằng cách lập phương trình',
+          lessons: [
+            {
+              id: 'l-toan8-lapphuongtrinh', title: 'Giải bài toán bằng cách lập phương trình', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Các bước giải:</p>
+                <ol>
+                  <li>Chọn ẩn, đặt điều kiện cho ẩn và đơn vị.</li>
+                  <li>Biểu diễn các đại lượng chưa biết qua ẩn.</li>
+                  <li>Lập phương trình thể hiện mối liên hệ.</li>
+                  <li>Giải phương trình, đối chiếu điều kiện và trả lời.</li>
+                </ol>
+                <div class="luuy"><strong>Dạng quen thuộc:</strong> toán chuyển động $s = v\\cdot t$; toán tổng–hiệu; toán năng suất/công việc.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Hai số có tổng $30$, số lớn hơn số bé $6$ đơn vị. Tìm hai số.</p>
+                  <p><strong>Giải:</strong> Gọi số bé là $x$ ⇒ số lớn $x+6$. Ta có $x + (x+6) = 30 \\Leftrightarrow 2x = 24 \\Leftrightarrow x = 12$. Vậy hai số là $12$ và $18$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Một ô tô đi $150$ km trong $t$ giờ với vận tốc $50$ km/h. Tìm $t$.
+                  <details><summary>Đáp án</summary>$50t = 150 \\Leftrightarrow t = 3$ giờ.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-tugiac', title: 'Hình học · Tứ giác & các hình đặc biệt',
+          lessons: [
+            {
+              id: 'l-toan8-tugiac', title: 'Tứ giác, hình thang, hình bình hành', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Tứ giác lồi:</strong> tổng bốn góc bằng $360^\\circ$.</li>
+                  <li><strong>Hình thang:</strong> tứ giác có hai cạnh đối song song. Hình thang cân có hai góc kề một đáy bằng nhau và hai đường chéo bằng nhau.</li>
+                  <li><strong>Hình bình hành:</strong> hai cặp cạnh đối song song. Tính chất: cạnh đối bằng nhau, góc đối bằng nhau, hai đường chéo cắt nhau tại trung điểm mỗi đường.</li>
+                </ul>
+                <div class="luuy"><strong>Diện tích:</strong> hình thang $S=\\dfrac{(a+b)h}{2}$; hình bình hành $S = a\\cdot h$ (cạnh nhân chiều cao tương ứng).</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Hình thang có hai đáy $6$ cm và $10$ cm, chiều cao $4$ cm. Diện tích?</p>
+                  <p><strong>Giải:</strong> $S = \\dfrac{(6+10)\\cdot4}{2} = 32$ cm².</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Một tứ giác có ba góc $80^\\circ, 100^\\circ, 90^\\circ$. Góc thứ tư?
+                  <details><summary>Đáp án</summary>$360^\\circ - (80+100+90)^\\circ = 90^\\circ$.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-hcn-thoi-vuong', title: 'Hình chữ nhật, hình thoi, hình vuông', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Hình chữ nhật:</strong> hình bình hành có một góc vuông ⇒ bốn góc vuông, hai đường chéo bằng nhau và cắt nhau tại trung điểm. $S = a\\cdot b$.</li>
+                  <li><strong>Hình thoi:</strong> hình bình hành có hai cạnh kề bằng nhau ⇒ bốn cạnh bằng nhau, hai đường chéo vuông góc và là phân giác các góc. $S = \\dfrac{d_1 d_2}{2}$.</li>
+                  <li><strong>Hình vuông:</strong> vừa là hình chữ nhật vừa là hình thoi ⇒ bốn cạnh bằng, bốn góc vuông. $S = a^2$.</li>
+                </ul>
+                <div class="luuy"><strong>Dấu hiệu nhận biết hình vuông:</strong> hình chữ nhật có hai cạnh kề bằng nhau, hoặc hình thoi có một góc vuông.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Hình thoi có hai đường chéo $6$ cm và $8$ cm. Diện tích và độ dài cạnh?</p>
+                  <p><strong>Giải:</strong> $S = \\dfrac{6\\cdot8}{2} = 24$ cm². Cạnh $= \\sqrt{3^2+4^2} = 5$ cm (nửa hai đường chéo là cạnh góc vuông).</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Hình vuông cạnh $5$ cm có diện tích bao nhiêu?
+                  <details><summary>Đáp án</summary>$S = 5^2 = 25$ cm².</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-thales', title: 'Hình học · Định lí Thalès & Tam giác đồng dạng',
+          lessons: [
+            {
+              id: 'l-toan8-thales', title: 'Định lí Thalès trong tam giác', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p><strong>Định lí Thalès:</strong> nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ.</p>
+                <p style="text-align:center">Tam giác $ABC$, $DE \\parallel BC$ ($D\\in AB, E\\in AC$): $\\dfrac{AD}{AB} = \\dfrac{AE}{AC} = \\dfrac{DE}{BC}$.</p>
+                <div class="luuy"><strong>Hệ quả & định lí đảo:</strong> nếu $\\dfrac{AD}{AB}=\\dfrac{AE}{AC}$ thì $DE \\parallel BC$. Đường trung bình của tam giác song song và bằng nửa cạnh thứ ba.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tam giác $ABC$ có $DE\\parallel BC$, $AD=3, DB=6, AE=4$. Tính $EC$.</p>
+                  <p><strong>Giải:</strong> $\\dfrac{AD}{DB}=\\dfrac{AE}{EC} \\Rightarrow \\dfrac{3}{6}=\\dfrac{4}{EC} \\Rightarrow EC = 8$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> $DE\\parallel BC$, $AD=2, AB=6, DE=4$. Tính $BC$.
+                  <details><summary>Đáp án</summary>$\\dfrac{AD}{AB}=\\dfrac{DE}{BC} \\Rightarrow \\dfrac{2}{6}=\\dfrac{4}{BC} \\Rightarrow BC=12$.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-dongdang', title: 'Hai tam giác đồng dạng', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p>Hai tam giác đồng dạng khi các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ. Ba trường hợp đồng dạng:</p>
+                <ul>
+                  <li><strong>(c.c.c):</strong> ba cặp cạnh tương ứng tỉ lệ.</li>
+                  <li><strong>(c.g.c):</strong> hai cặp cạnh tỉ lệ và góc xen giữa bằng nhau.</li>
+                  <li><strong>(g.g):</strong> hai cặp góc bằng nhau.</li>
+                </ul>
+                <div class="luuy"><strong>Tỉ số:</strong> nếu tỉ số đồng dạng là $k$ thì tỉ số chu vi bằng $k$, tỉ số diện tích bằng $k^2$.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Hai tam giác đồng dạng tỉ số $k=\\dfrac{1}{2}$, tam giác lớn có diện tích $40$ cm². Diện tích tam giác nhỏ?</p>
+                  <p><strong>Giải:</strong> Tỉ số diện tích $k^2 = \\dfrac{1}{4} \\Rightarrow S = 40\\cdot\\dfrac{1}{4} = 10$ cm².</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Tam giác $ABC \\sim DEF$ tỉ số $3$, chu vi $DEF$ là $12$ cm. Chu vi $ABC$?
+                  <details><summary>Đáp án</summary>Chu vi tỉ lệ theo $k=3$: $12\\cdot3 = 36$ cm.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-toan8-thongke', title: 'Thống kê & Xác suất',
+          lessons: [
+            {
+              id: 'l-toan8-thongke', title: 'Thu thập & biểu diễn dữ liệu', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Dữ liệu:</strong> phân loại định tính (màu sắc, giới tính…) và định lượng (chiều cao, điểm số…).</li>
+                  <li><strong>Bảng tần số:</strong> liệt kê giá trị và số lần xuất hiện.</li>
+                  <li><strong>Biểu đồ:</strong> biểu đồ cột (so sánh số lượng), biểu đồ đoạn thẳng (biến đổi theo thời gian), biểu đồ hình quạt tròn (tỉ lệ phần trăm của tổng thể).</li>
+                </ul>
+                <div class="luuy"><strong>Số đặc trưng:</strong> số trung bình cộng $\\bar{x}=\\dfrac{\\text{tổng các giá trị}}{\\text{số giá trị}}$; biểu đồ quạt: mỗi phần ứng với một phần trăm của $360^\\circ$.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Điểm kiểm tra: $6, 7, 8, 9, 10$. Số trung bình cộng?</p>
+                  <p><strong>Giải:</strong> $\\bar{x} = \\dfrac{6+7+8+9+10}{5} = \\dfrac{40}{5} = 8$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Trong biểu đồ quạt, một loại chiếm $25\\%$. Góc ở tâm tương ứng?
+                  <details><summary>Đáp án</summary>$25\\% \\times 360^\\circ = 90^\\circ$.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-xacsuat', title: 'Xác suất của biến cố', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Xác suất lí thuyết</strong> (kết quả đồng khả năng): $P = \\dfrac{\\text{số kết quả thuận lợi}}{\\text{số kết quả có thể}}$.</li>
+                  <li><strong>Xác suất thực nghiệm:</strong> $\\dfrac{\\text{số lần biến cố xảy ra}}{\\text{số lần thực hiện}}$; khi số lần đủ lớn sẽ xấp xỉ xác suất lí thuyết.</li>
+                  <li>Xác suất luôn nằm trong khoảng từ $0$ (không thể) đến $1$ (chắc chắn).</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tung một con xúc xắc cân đối. Xác suất xuất hiện mặt $6$ chấm?</p>
+                  <p><strong>Giải:</strong> $P = \\dfrac{1}{6}$. Xác suất ra số chẵn $= \\dfrac{3}{6} = \\dfrac{1}{2}$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Một hộp có $3$ bi đỏ và $2$ bi xanh. Lấy ngẫu nhiên $1$ bi. Xác suất lấy được bi đỏ?
+                  <details><summary>Đáp án</summary>$P = \\dfrac{3}{5}$.</details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
