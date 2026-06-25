@@ -4157,6 +4157,21 @@ const EXAMS = {
         { stem: '____ he arrived at the station yet?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ Has.' },
       ],
     },
+    {
+      examId: 'anh8-31', title: 'Kiểm tra 45′ #31 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ his car every weekend.', options: ['wash', 'washes', 'washing', 'washed'], answer: 1, explanation: 'every weekend ⇒ hiện tại đơn, chủ ngữ số ít ⇒ washes.' },
+        { stem: 'An elephant is ____ than a dog.', options: ['heavier', 'heavy', 'heaviest', 'more heavy'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: heavier.' },
+        { stem: 'You ____ cross the road carefully.', options: ['must', 'can', 'should', 'would'], answer: 2, explanation: 'should = lời khuyên nên làm.' },
+        { stem: 'If we run fast, we ____ the train.', options: ['catch', 'caught', 'would catch', 'will catch'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Many books ____ in the library.', options: ['keep', 'keeps', 'are kept', 'is kept'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are kept.' },
+        { stem: 'The film ____ we watched last night was boring.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'He has worn glasses ____ he was ten.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mệnh đề mốc thời gian (he was ten).' },
+        { stem: "Choose the synonym of 'famous'.", options: ['unknown', 'secret', 'hidden', 'well-known'], answer: 3, explanation: 'famous ≈ well-known (nổi tiếng).' },
+        { stem: "Choose the antonym of 'clean'.", options: ['tidy', 'dirty', 'neat', 'pure'], answer: 1, explanation: 'clean ↔ dirty (bẩn).' },
+        { stem: 'She ____ already done the dishes.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ has.' },
+      ],
+    },
   ],
 };
 
