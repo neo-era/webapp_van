@@ -3077,6 +3077,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'rich'.", options: ['wealthy', 'poor', 'affluent', 'loaded'], answer: 1, explanation: 'rich ↔ poor (nghèo).' },
       ],
     },
+    {
+      examId: 'anh8-7', title: 'Kiểm tra 45′ #7 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: '____ she go to school yesterday?', options: ['Did', 'Do', 'Does', 'Was'], answer: 0, explanation: 'Câu hỏi quá khứ đơn: Did + S + V.' },
+        { stem: 'This exercise is ____ than that one.', options: ['easy', 'easiest', 'more easy', 'easier'], answer: 3, explanation: 'So sánh hơn tính từ ngắn: easier.' },
+        { stem: 'They ____ already finished the project.', options: ['have', 'has', 'had', 'are'], answer: 0, explanation: 'Hiện tại hoàn thành, chủ ngữ "they" ⇒ have.' },
+        { stem: 'You ____ be quiet in the library.', options: ['would', 'could', 'must', 'may'], answer: 2, explanation: 'must = phải (bắt buộc).' },
+        { stem: 'The girl ____ is wearing a red dress is my sister.', options: ['which', 'whose', 'where', 'who'], answer: 3, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'We ____ a picnic if the weather is nice.', options: ['have', 'will have', 'had', 'having'], answer: 1, explanation: 'Câu điều kiện loại 1: will have.' },
+        { stem: "Choose the synonym of 'tired'.", options: ['energetic', 'fresh', 'exhausted', 'lively'], answer: 2, explanation: 'tired ≈ exhausted (mệt).' },
+        { stem: 'These cars ____ in Japan.', options: ['makes', 'make', 'making', 'are made'], answer: 3, explanation: 'Câu bị động: are made.' },
+        { stem: 'She is ____ student in the class.', options: ['clever', 'the cleverest', 'cleverer', 'more clever'], answer: 1, explanation: 'So sánh nhất: the cleverest.' },
+        { stem: "Choose the antonym of 'cheap'.", options: ['affordable', 'low', 'expensive', 'inexpensive'], answer: 2, explanation: 'cheap ↔ expensive (đắt).' },
+      ],
+    },
   ],
 };
 
