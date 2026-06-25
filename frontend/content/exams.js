@@ -4049,6 +4049,21 @@ const EXAMS = {
         { stem: 'Vì sao khi xe phanh gấp, hành khách bị chúi người về phía trước?', options: ['Do trọng lực', 'Do quán tính', 'Do lực ma sát', 'Do lực đẩy'], answer: 1, explanation: 'Do quán tính, cơ thể có xu hướng giữ nguyên chuyển động.' },
       ],
     },
+    {
+      examId: 'khtn8-43', title: 'Kiểm tra 45′ #43 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $9{,}5$ g $MgCl_2$ ($M=95$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=9{,}5/95=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $4$ m trong dầu ($d=8000$ N/m³)?', options: ['$32000$ Pa', '$3200$ Pa', '$320000$ Pa', '$12000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 4=32000$ Pa.' },
+        { stem: 'Một vật có khối lượng $192$ g và thể tích $24$ cm³. Khối lượng riêng?', options: ['$80$ g/cm³', '$8$ g/cm³', '$0{,}8$ g/cm³', '$800$ g/cm³'], answer: 1, explanation: '$D=m/V=192/24=8$ g/cm³.' },
+        { stem: 'Đốt cháy hoàn toàn khí metan ($CH_4+2O_2\\to ?$) thu được sản phẩm nào?', options: ['Chỉ $CO_2$', 'Chỉ $H_2O$', 'CO và $H_2$', '$CO_2$ và $H_2O$'], answer: 3, explanation: '$CH_4+2O_2\\to CO_2+2H_2O$.' },
+        { stem: 'Bào quan nào trong tế bào thực hiện hô hấp, tạo năng lượng?', options: ['Ti thể', 'Nhân', 'Màng tế bào', 'Không bào'], answer: 0, explanation: 'Ti thể là nơi diễn ra hô hấp tế bào.' },
+        { stem: 'Hòa tan $2{,}5$ g chất tan vào $47{,}5$ g nước. Nồng độ phần trăm dung dịch?', options: ['$2{,}5\\%$', '$47{,}5\\%$', '$5\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=50$ g ⇒ $C\\%=2{,}5/50\\times 100\\%=5\\%$.' },
+        { stem: 'Một vật được nâng lên cao $2$ m bằng lực $100$ N. Công thực hiện?', options: ['$50$ J', '$200$ J', '$20$ J', '$2000$ J'], answer: 1, explanation: '$A=F\\cdot s=100\\times 2=200$ J.' },
+        { stem: 'Khối lượng của $0{,}3$ mol $CaCO_3$ ($M=100$)?', options: ['$100$ g', '$3$ g', '$10$ g', '$30$ g'], answer: 3, explanation: '$m=0{,}3\\times 100=30$ g.' },
+        { stem: 'Máu nghèo oxi sau khi đi nuôi cơ thể trở về tim qua loại mạch nào?', options: ['Động mạch', 'Mao mạch', 'Tĩnh mạch', 'Van tim'], answer: 2, explanation: 'Tĩnh mạch dẫn máu từ cơ thể trở về tim.' },
+        { stem: 'Đặt thìa kim loại vào cốc nước nóng, cán thìa nóng lên là hình thức truyền nhiệt nào?', options: ['Bức xạ nhiệt', 'Dẫn nhiệt', 'Đối lưu', 'Bay hơi'], answer: 1, explanation: 'Kim loại dẫn nhiệt tốt, nhiệt truyền dọc theo thìa.' },
+      ],
+    },
   ],
 
   ANH8: [
