@@ -4967,6 +4967,21 @@ const EXAMS = {
         { stem: '____ they finished lunch yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-49', title: 'Kiểm tra 45′ #49 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ to the park last weekend.', options: ['go', 'goes', 'went', 'gone'], answer: 2, explanation: 'last weekend ⇒ quá khứ đơn: went.' },
+        { stem: 'A skyscraper is ____ than a house.', options: ['taller', 'tall', 'tallest', 'more tall'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: taller.' },
+        { stem: 'You ____ be tired. You worked all day.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = suy đoán chắc chắn.' },
+        { stem: 'If you study hard, you ____ the exam.', options: ['pass', 'passed', 'would pass', 'will pass'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The streets ____ every morning.', options: ['sweep', 'sweeps', 'are swept', 'is swept'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are swept.' },
+        { stem: 'The shop ____ I bought this bag is closed now.', options: ['where', 'which', 'who', 'whose'], answer: 0, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'We have been friends ____ primary school.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (primary school).' },
+        { stem: "Choose the synonym of 'clever'.", options: ['dull', 'slow', 'lazy', 'bright'], answer: 3, explanation: 'clever ≈ bright (thông minh).' },
+        { stem: "Choose the antonym of 'remember'.", options: ['recall', 'forget', 'remind', 'memorize'], answer: 1, explanation: 'remember ↔ forget (quên).' },
+        { stem: 'She has ____ gone home, so the office is empty.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
+      ],
+    },
   ],
 };
 
