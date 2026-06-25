@@ -5462,6 +5462,21 @@ const EXAMS = {
         { stem: 'I think it ____ rain tomorrow.', options: ['shall', 'will', 'would', 'going'], answer: 1, explanation: 'Dự đoán tương lai với "I think" ⇒ will + V.' },
       ],
     },
+    {
+      examId: 'anh8-60', title: 'Kiểm tra 45′ #60 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'He ____ to school every day.', options: ['go', 'goes', 'going', 'went'], answer: 1, explanation: 'Hiện tại đơn, chủ ngữ ngôi 3 số ít ⇒ goes.' },
+        { stem: 'Maths is ____ than English for me.', options: ['hard', 'hardest', 'harder', 'more hard'], answer: 2, explanation: 'Tính từ ngắn ⇒ so sánh hơn thêm "-er": harder.' },
+        { stem: 'When I was young, I ____ swim very well.', options: ['could', 'can', 'should', 'must'], answer: 0, explanation: 'Khả năng trong quá khứ ⇒ could.' },
+        { stem: 'If she studies hard, she ____ the exam.', options: ['passes', 'passed', 'would pass', 'will pass'], answer: 3, explanation: 'Điều kiện loại 1: If + hiện tại, will + V ⇒ will pass.' },
+        { stem: 'They ____ go to school yesterday.', options: ["doesn't", "didn't", "weren't", "hadn't"], answer: 1, explanation: "Phủ định quá khứ đơn ⇒ didn't + V." },
+        { stem: "That's the girl ____ father is a teacher.", options: ['who', 'which', 'whose', 'whom'], answer: 2, explanation: 'Chỉ sở hữu ⇒ whose.' },
+        { stem: 'The letter ____ to her last week.', options: ['sends', 'sent', 'is sent', 'was sent'], answer: 3, explanation: 'Bị động quá khứ đơn ⇒ was sent.' },
+        { stem: 'Cutting down forests on a large scale is called ____.', options: ['deforestation', 'pollution', 'recycling', 'planting'], answer: 0, explanation: 'Chặt phá rừng ⇒ deforestation.' },
+        { stem: "Choose the synonym of 'big'.", options: ['small', 'tiny', 'large', 'narrow'], answer: 2, explanation: 'big = large (to, lớn).' },
+        { stem: 'Look at those dark clouds! It ____ rain.', options: ['will', 'is going to', 'would', 'goes to'], answer: 1, explanation: 'Có dấu hiệu hiện tại ⇒ dự đoán bằng "be going to".' },
+      ],
+    },
   ],
 };
 
