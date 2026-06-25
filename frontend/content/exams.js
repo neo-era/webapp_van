@@ -3842,6 +3842,21 @@ const EXAMS = {
         { stem: 'She ____ to the gym every morning.', options: ['go', 'going', 'goes', 'went'], answer: 2, explanation: 'every morning ⇒ hiện tại đơn, chủ ngữ số ít ⇒ goes.' },
       ],
     },
+    {
+      examId: 'anh8-24', title: 'Kiểm tra 45′ #24 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'I ____ visit my grandparents tomorrow.', options: ['am', 'was', 'will', 'would'], answer: 2, explanation: 'tomorrow ⇒ tương lai đơn: will visit.' },
+        { stem: 'This test is ____ than the last one.', options: ['harder', 'hard', 'hardest', 'more hard'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: harder.' },
+        { stem: 'She ____ speak three languages fluently.', options: ['must', 'can', 'should', 'may'], answer: 1, explanation: 'can = khả năng.' },
+        { stem: 'If it snows, the children ____ very happy.', options: ['are', 'were', 'would be', 'will be'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'A lot of toys ____ in this factory.', options: ['make', 'makes', 'are made', 'is made'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are made.' },
+        { stem: 'The book ____ is on the table is mine.', options: ['which', 'who', 'where', 'whose'], answer: 0, explanation: 'which thay cho vật làm chủ ngữ.' },
+        { stem: 'We have known each other ____ 2010.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (2010).' },
+        { stem: "Choose the synonym of 'nice'.", options: ['rude', 'awful', 'bad', 'pleasant'], answer: 3, explanation: 'nice ≈ pleasant (dễ chịu).' },
+        { stem: "Choose the antonym of 'weak'.", options: ['feeble', 'strong', 'frail', 'faint'], answer: 1, explanation: 'weak ↔ strong (mạnh).' },
+        { stem: '____ they finished the project yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
