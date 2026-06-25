@@ -3359,6 +3359,21 @@ const EXAMS = {
         { stem: 'Áp suất khí quyển thay đổi thế nào khi ta lên cao?', options: ['Tăng khi xuống thấp', 'Tăng khi nhiệt độ tăng', 'Giảm khi lên cao', 'Tăng khi trời mưa'], answer: 2, explanation: 'Càng lên cao, áp suất khí quyển càng giảm.' },
       ],
     },
+    {
+      examId: 'khtn8-20', title: 'Kiểm tra 45′ #20 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $2$ g khí $H_2$ ($M=2$)?', options: ['$0{,}5$', '$2$', '$1$', '$4$'], answer: 2, explanation: '$n=2/2=1$ mol.' },
+        { stem: 'Lực $120$ N ép vuông góc lên diện tích $0{,}4$ m². Áp suất là?', options: ['$300$ Pa', '$48$ Pa', '$480$ Pa', '$30$ Pa'], answer: 0, explanation: '$p=F/S=120/0{,}4=300$ Pa.' },
+        { stem: 'Khối lượng của $0{,}5$ m³ nước ($D=1000$ kg/m³)?', options: ['$50$ kg', '$500$ kg', '$5000$ kg', '$250$ kg'], answer: 1, explanation: '$m=D\\cdot V=1000\\times 0{,}5=500$ kg.' },
+        { stem: 'Trong phản ứng $CuO+H_2\\to Cu+H_2O$, khí $H_2$ đóng vai trò là?', options: ['Chất oxi hóa', 'Acid', 'Base', 'Chất khử'], answer: 3, explanation: '$H_2$ lấy oxi của CuO ⇒ là chất khử.' },
+        { stem: 'Tế bào máu được sản sinh chủ yếu ở đâu?', options: ['Tủy xương (tủy đỏ)', 'Gan', 'Lá lách', 'Thận'], answer: 0, explanation: 'Tủy đỏ trong xương sinh ra các tế bào máu.' },
+        { stem: 'Hòa tan $30$ g chất tan vào $120$ g nước. Nồng độ phần trăm dung dịch?', options: ['$30\\%$', '$25\\%$', '$20\\%$', '$15\\%$'], answer: 2, explanation: '$m_{dd}=150$ g ⇒ $C\\%=30/150\\times 100\\%=20\\%$.' },
+        { stem: 'Đơn vị $1$ Pa tương đương với?', options: ['$1$ N·m', '$1$ N/m²', '$1$ N/kg', '$1$ J/s'], answer: 1, explanation: '$1$ Pa $=1$ N/m².' },
+        { stem: 'Phổi được cấu tạo từ rất nhiều túi khí nhỏ gọi là?', options: ['Phế quản', 'Khí quản', 'Tiểu phế quản', 'Phế nang'], answer: 3, explanation: 'Phế nang là nơi trao đổi khí.' },
+        { stem: 'Công thức hóa học của acid sulfuric là?', options: ['$HCl$', '$H_2SO_4$', '$HNO_3$', '$H_3PO_4$'], answer: 1, explanation: 'Acid sulfuric là $H_2SO_4$.' },
+        { stem: 'Vật nặng $30$ N nhúng chìm trong nước chịu lực đẩy $F_A=10$ N. Số chỉ lực kế?', options: ['$40$ N', '$30$ N', '$20$ N', '$10$ N'], answer: 2, explanation: 'Số chỉ $=P-F_A=30-10=20$ N.' },
+      ],
+    },
   ],
 
   ANH8: [
