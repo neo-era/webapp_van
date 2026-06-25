@@ -4427,6 +4427,21 @@ const EXAMS = {
         { stem: 'He has ____ written three books.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
       ],
     },
+    {
+      examId: 'anh8-37', title: 'Kiểm tra 45′ #37 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'We ____ a test tomorrow.', options: ['have', 'had', 'will have', 'would have'], answer: 2, explanation: 'tomorrow ⇒ tương lai đơn: will have.' },
+        { stem: 'This bag is ____ than that one.', options: ['lighter', 'light', 'lightest', 'more light'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: lighter.' },
+        { stem: "Children ____ play near the river. It's dangerous.", options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = cấm (nguy hiểm)." },
+        { stem: 'If you eat too much, you ____ sick.', options: ['feel', 'felt', 'would feel', 'will feel'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The new school ____ last year.', options: ['build', 'builds', 'was built', 'is built'], answer: 2, explanation: 'Bị động quá khứ đơn: was built.' },
+        { stem: 'The teacher ____ subject is math is very strict.', options: ['whose', 'who', 'which', 'where'], answer: 0, explanation: 'whose chỉ sự sở hữu.' },
+        { stem: 'He has worked here ____ five months.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (five months).' },
+        { stem: "Choose the synonym of 'answer'.", options: ['ask', 'question', 'demand', 'reply'], answer: 3, explanation: 'answer ≈ reply (trả lời).' },
+        { stem: "Choose the antonym of 'come'.", options: ['arrive', 'go', 'reach', 'enter'], answer: 1, explanation: 'come ↔ go (đi).' },
+        { stem: '____ she ever been abroad?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
+      ],
+    },
   ],
 };
 
