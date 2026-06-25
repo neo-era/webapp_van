@@ -3059,6 +3059,21 @@ const EXAMS = {
         { stem: 'Số mol có trong $5{,}4$ g Al ($M=27$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}3$', '$0{,}4$'], answer: 1, explanation: '$n=5{,}4/27=0{,}2$ mol.' },
       ],
     },
+    {
+      examId: 'khtn8-10', title: 'Kiểm tra 45′ #10 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}25$ mol $Fe_2O_3$ ($M=160$)?', options: ['$40$ g', '$20$ g', '$80$ g', '$10$ g'], answer: 0, explanation: '$m=0{,}25\\cdot160=40$ g.' },
+        { stem: 'Công của lực $F=15$ N kéo vật đi $s=8$ m (cùng hướng)?', options: ['$23$ J', '$7{,}5$ J', '$60$ J', '$120$ J'], answer: 3, explanation: '$A=F\\cdot s=15\\cdot8=120$ J.' },
+        { stem: 'Thể tích của vật $m=600$ g, khối lượng riêng $D=3\\,g/cm^3$?', options: ['$1800\\,cm^3$', '$2\\,cm^3$', '$200\\,cm^3$', '$100\\,cm^3$'], answer: 2, explanation: '$V=m/D=600/3=200\\,cm^3$.' },
+        { stem: 'Đốt $4{,}8$ g Mg với $3{,}2$ g $O_2$ ($2Mg+O_2\\to2MgO$) thu được g MgO?', options: ['$4$ g', '$1{,}6$ g', '$3{,}2$ g', '$8$ g'], answer: 3, explanation: 'Bảo toàn khối lượng: $4{,}8+3{,}2=8$ g.' },
+        { stem: 'Khí oxi chiếm khoảng bao nhiêu phần trăm thể tích không khí?', options: ['$78\\%$', '$50\\%$', '$21\\%$', '$1\\%$'], answer: 2, explanation: 'Oxi $\\approx21\\%$, nitơ $\\approx78\\%$.' },
+        { stem: 'Hòa tan $12$ g muối trong $188$ g nước. Nồng độ phần trăm?', options: ['$6\\%$', '$3\\%$', '$12\\%$', '$24\\%$'], answer: 0, explanation: '$C\\%=12/200\\cdot100\\%=6\\%$.' },
+        { stem: 'Lực ma sát có chiều như thế nào so với chuyển động của vật?', options: ['cùng chiều chuyển động', 'vuông góc', 'ngược chiều chuyển động', 'không có chiều'], answer: 2, explanation: 'Lực ma sát luôn cản trở, ngược chiều chuyển động.' },
+        { stem: 'Dung dịch có pH = 9 thuộc môi trường?', options: ['acid', 'base', 'trung tính', 'không xác định'], answer: 1, explanation: 'pH > 7 ⇒ môi trường base.' },
+        { stem: 'Cơ quan sinh sản nữ tạo ra trứng là?', options: ['tử cung', 'âm đạo', 'vòi trứng', 'buồng trứng'], answer: 3, explanation: 'Buồng trứng sản sinh trứng.' },
+        { stem: 'Số mol có trong $6$ g C ($M=12$)?', options: ['$0{,}25$', '$0{,}5$', '$1$', '$2$'], answer: 1, explanation: '$n=6/12=0{,}5$ mol.' },
+      ],
+    },
   ],
 
   ANH8: [
