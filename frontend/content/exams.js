@@ -3449,6 +3449,21 @@ const EXAMS = {
         { stem: 'Khi diện tích bị ép không đổi, tăng áp lực thì áp suất sẽ?', options: ['Giảm', 'Không đổi', 'Tăng', 'Bằng $0$'], answer: 2, explanation: '$p=F/S$: $F$ tăng, $S$ không đổi ⇒ $p$ tăng.' },
       ],
     },
+    {
+      examId: 'khtn8-23', title: 'Kiểm tra 45′ #23 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $8{,}5$ g $NH_3$ ($M=17$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=8{,}5/17=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $10$ m trong nước ($d=10000$ N/m³)?', options: ['$100000$ Pa', '$10000$ Pa', '$1000$ Pa', '$50000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 10=100000$ Pa.' },
+        { stem: 'Khối lượng của $2$ m³ nước ($D=1000$ kg/m³)?', options: ['$200$ kg', '$2000$ kg', '$20000$ kg', '$1000$ kg'], answer: 1, explanation: '$m=D\\cdot V=1000\\times 2=2000$ kg.' },
+        { stem: 'Muối ăn NaCl có thể tạo thành từ phản ứng nào?', options: ['Đốt natri trong oxi', 'Điện phân nước', 'Nung $CaCO_3$', '$HCl+NaOH$'], answer: 3, explanation: '$HCl+NaOH\\to NaCl+H_2O$ (trung hòa).' },
+        { stem: 'Khí $O_2$ trong máu được vận chuyển chủ yếu nhờ chất nào trong hồng cầu?', options: ['Hemoglobin (huyết sắc tố)', 'Bạch cầu', 'Tiểu cầu', 'Huyết tương'], answer: 0, explanation: 'Hemoglobin gắn và vận chuyển oxi.' },
+        { stem: 'Hòa tan $50$ g chất tan vào $50$ g nước. Nồng độ phần trăm dung dịch?', options: ['$25\\%$', '$100\\%$', '$50\\%$', '$33\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=50/100\\times 100\\%=50\\%$.' },
+        { stem: 'Cánh tay đòn của một lực trong đòn bẩy là?', options: ['Độ dài thanh đòn', 'Khoảng cách từ điểm tựa đến phương của lực', 'Khối lượng vật', 'Trọng lượng vật'], answer: 1, explanation: 'Cánh tay đòn là khoảng cách từ trục quay đến giá của lực.' },
+        { stem: 'Phản ứng hóa hợp là phản ứng?', options: ['Một chất tạo nhiều chất', 'Hai chất trao đổi thành phần', 'Kim loại đẩy hiđro', 'Nhiều chất tạo thành một chất'], answer: 3, explanation: 'VD: $2H_2+O_2\\to 2H_2O$.' },
+        { stem: 'Ở khoang miệng, enzyme nào biến đổi tinh bột thành đường?', options: ['Pepsin', 'Lipase', 'Amylase (trong nước bọt)', 'Trypsin'], answer: 2, explanation: 'Amylase trong nước bọt phân giải tinh bột.' },
+        { stem: 'Lực kế là dụng cụ dùng để đo?', options: ['Khối lượng', 'Lực (trọng lượng)', 'Thể tích', 'Nhiệt độ'], answer: 1, explanation: 'Lực kế đo độ lớn của lực.' },
+      ],
+    },
   ],
 
   ANH8: [
