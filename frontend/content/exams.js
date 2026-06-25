@@ -3707,6 +3707,21 @@ const EXAMS = {
         { stem: 'We ____ to Paris twice.', options: ['has been', 'go', 'have been', 'went'], answer: 2, explanation: 'Trải nghiệm đến hiện tại ⇒ hiện tại hoàn thành: have been.' },
       ],
     },
+    {
+      examId: 'anh8-21', title: 'Kiểm tra 45′ #21 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'Listen! The birds ____ in the garden.', options: ['sing', 'sings', 'are singing', 'sang'], answer: 2, explanation: '"Listen!" ⇒ hiện tại tiếp diễn: are singing.' },
+        { stem: 'A car is ____ than a motorbike.', options: ['expensive', 'expensiver', 'most expensive', 'more expensive'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more expensive.' },
+        { stem: "You ____ park here. There's a no-parking sign.", options: ['should', "can't", 'may', 'would'], answer: 1, explanation: "can't = không được phép." },
+        { stem: 'If I have time, I ____ you with your homework.', options: ['will help', 'helped', 'would help', 'help'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Rice and noodles ____ in many Asian countries.', options: ['eat', 'eats', 'are eaten', 'is eaten'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are eaten.' },
+        { stem: "That's the man ____ car was stolen last night.", options: ['who', 'which', 'where', 'whose'], answer: 3, explanation: 'whose chỉ sự sở hữu.' },
+        { stem: 'She has played the piano ____ five years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (five years).' },
+        { stem: "Choose the synonym of 'large'.", options: ['big', 'small', 'tiny', 'narrow'], answer: 0, explanation: 'large ≈ big (to lớn).' },
+        { stem: "Choose the antonym of 'easy'.", options: ['simple', 'difficult', 'clear', 'light'], answer: 1, explanation: 'easy ↔ difficult (khó).' },
+        { stem: '____ you ever visited London?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
