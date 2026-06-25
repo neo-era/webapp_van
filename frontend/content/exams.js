@@ -2861,6 +2861,21 @@ const EXAMS = {
         { stem: 'Rút gọn $\\dfrac{6x^2y}{2xy}$ (với $x,y\\ne0$)?', options: ['$3x$', '$3xy$', '$3$', '$x$'], answer: 0, explanation: '$\\dfrac{6x^2y}{2xy}=3x$.' },
       ],
     },
+    {
+      examId: 'toan8-7', title: 'Kiểm tra 45′ #7 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+2)(x+5)$?', options: ['$x^2+7x+10$', '$x^2+10x+7$', '$x^2+7x+7$', '$x^2+10$'], answer: 0, explanation: '$x^2+5x+2x+10=x^2+7x+10$.' },
+        { stem: 'Trong khai triển $(a-b)^3$, hạng tử chứa $b^3$ là?', options: ['$+b^3$', 'không xuất hiện', '$3b^3$', '$-b^3$'], answer: 3, explanation: '$(a-b)^3=a^3-3a^2b+3ab^2-b^3$.' },
+        { stem: 'Phân tích $x^2-16x+64$ thành nhân tử?', options: ['$(x+8)^2$', '$(x-8)^2$', '$(x-16)(x-4)$', '$(x-8)(x+8)$'], answer: 1, explanation: '$x^2-16x+64=(x-8)^2$.' },
+        { stem: 'Nghiệm của phương trình $\\dfrac{x}{3}+1=4$?', options: ['$3$', '$12$', '$15$', '$9$'], answer: 3, explanation: '$\\dfrac{x}{3}=3 \\Leftrightarrow x=9$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{5}{x^2+1}$?', options: ['$x\\ne1$', 'mọi $x$', '$x\\ne-1$', '$x\\ne0$'], answer: 1, explanation: '$x^2+1>0$ với mọi $x$ ⇒ xác định với mọi $x$.' },
+        { stem: 'Đường thẳng $y=2x-4$ cắt trục hoành tại điểm?', options: ['$(2;0)$', '$(0;-4)$', '$(-2;0)$', '$(0;2)$'], answer: 0, explanation: 'Cho $y=0 \\Rightarrow x=2$.' },
+        { stem: 'Diện tích tam giác vuông có hai cạnh góc vuông $6$ và $8$?', options: ['$48$', '$14$', '$28$', '$24$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot6\\cdot8=24$.' },
+        { stem: 'Hai tam giác đồng dạng tỉ số $3$. Tỉ số diện tích?', options: ['$3$', '$9$', '$6$', '$\\dfrac{1}{3}$'], answer: 1, explanation: 'Tỉ số diện tích $=3^2=9$.' },
+        { stem: 'Rút gọn $\\dfrac{4x+8}{4}$?', options: ['$x+8$', '$4x+2$', '$x+2$', '$x+4$'], answer: 2, explanation: '$\\dfrac{4(x+2)}{4}=x+2$.' },
+        { stem: 'Trung vị của dãy số $3, 5, 7, 9, 11$?', options: ['$7$', '$5$', '$9$', '$35$'], answer: 0, explanation: 'Dãy đã sắp xếp, 5 số ⇒ trung vị là số ở giữa $=7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
