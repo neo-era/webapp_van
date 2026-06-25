@@ -2906,6 +2906,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $2, 4, 6, 8, 10, 12$?', options: ['$7$', '$6$', '$8$', '$42$'], answer: 0, explanation: '$42/6=7$.' },
       ],
     },
+    {
+      examId: 'toan8-10', title: 'Kiểm tra 45′ #10 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(3-x)^2$?', options: ['$9+6x+x^2$', '$9-3x+x^2$', '$3-6x+x^2$', '$9-6x+x^2$'], answer: 3, explanation: '$(3-x)^2=9-6x+x^2$.' },
+        { stem: 'Phân tích $5x-5y$ thành nhân tử?', options: ['$5(x+y)$', '$5xy$', '$5(x-y)$', '$x-y$'], answer: 2, explanation: 'Đặt nhân tử chung $5$: $5(x-y)$.' },
+        { stem: 'Phân tích $x^2-9x+20$ thành nhân tử?', options: ['$(x+4)(x+5)$', '$(x-4)(x-5)$', '$(x-2)(x-10)$', '$(x-20)(x+1)$'], answer: 1, explanation: '$(-4)+(-5)=-9$ và $(-4)(-5)=20$.' },
+        { stem: 'Nghiệm của phương trình $2(x-3)=4$?', options: ['$3$', '$7$', '$2$', '$5$'], answer: 3, explanation: '$x-3=2 \\Leftrightarrow x=5$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{1}{x(x-1)}$?', options: ['$x\\ne0$ và $x\\ne1$', '$x\\ne0$', '$x\\ne1$', '$x\\ne-1$'], answer: 0, explanation: 'Mẫu $\\ne0 \\Leftrightarrow x\\ne0$ và $x\\ne1$.' },
+        { stem: 'Tung độ gốc của đường thẳng $y=3x+1$?', options: ['$1$', '$3$', '$-1$', '$0$'], answer: 0, explanation: 'Tung độ gốc là hằng số $b=1$.' },
+        { stem: 'Tam giác vuông cân có hai cạnh góc vuông $5$. Độ dài cạnh huyền?', options: ['$5$', '$5\\sqrt{2}$', '$10$', '$25$'], answer: 1, explanation: '$\\sqrt{5^2+5^2}=\\sqrt{50}=5\\sqrt{2}$.' },
+        { stem: 'Diện tích hình bình hành có đáy $8$, chiều cao $5$?', options: ['$13$', '$26$', '$20$', '$40$'], answer: 3, explanation: '$S=\\text{đáy}\\times\\text{cao}=8\\cdot5=40$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+2x}{x+2}$ (với $x\\ne-2$)?', options: ['$x+2$', '$x$', '$x^2$', '$2x$'], answer: 1, explanation: '$\\dfrac{x(x+2)}{x+2}=x$.' },
+        { stem: 'Mốt (yếu vị) của dãy số $2, 3, 3, 4, 5$?', options: ['$2$', '$4$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $3$ xuất hiện nhiều nhất ⇒ mốt $=3$.' },
+      ],
+    },
   ],
 
   KHTN8: [
