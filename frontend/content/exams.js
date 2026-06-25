@@ -3539,6 +3539,21 @@ const EXAMS = {
         { stem: 'Khi nén khí trong xilanh làm thể tích giảm thì áp suất khí sẽ?', options: ['Giảm', 'Không đổi', 'Tăng', 'Bằng $0$'], answer: 2, explanation: 'Thể tích giảm ⇒ áp suất khí tăng.' },
       ],
     },
+    {
+      examId: 'khtn8-26', title: 'Kiểm tra 45′ #26 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $16$ g khí $O_2$ ($M=32$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=16/32=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $4$ m trong nước ($d=10000$ N/m³)?', options: ['$40000$ Pa', '$4000$ Pa', '$400$ Pa', '$14000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 4=40000$ Pa.' },
+        { stem: 'Một vật có khối lượng $113$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$1130$ g/cm³', '$11{,}3$ g/cm³', '$1{,}13$ g/cm³', '$0{,}11$ g/cm³'], answer: 1, explanation: '$D=m/V=113/10=11{,}3$ g/cm³.' },
+        { stem: 'Trong phản ứng $2Mg+O_2\\to 2MgO$, hệ số của $MgO$ là?', options: ['$1$', '$3$', '$4$', '$2$'], answer: 3, explanation: 'Cân bằng phương trình ⇒ hệ số $MgO$ là $2$.' },
+        { stem: 'Cơ quan nào trong hệ tiêu hóa hấp thụ nước chủ yếu?', options: ['Ruột già', 'Dạ dày', 'Gan', 'Thực quản'], answer: 0, explanation: 'Ruột già hấp thụ lại nước từ chất bã.' },
+        { stem: 'Hòa tan $24$ g chất tan vào $96$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$25\\%$', '$20\\%$', '$24\\%$'], answer: 2, explanation: '$m_{dd}=120$ g ⇒ $C\\%=24/120\\times 100\\%=20\\%$.' },
+        { stem: 'Loại lực ma sát nào giúp ta cầm nắm được đồ vật?', options: ['Ma sát trượt', 'Ma sát nghỉ', 'Ma sát lăn', 'Không có ma sát'], answer: 1, explanation: 'Ma sát nghỉ giữ vật không trượt khỏi tay.' },
+        { stem: 'Đốt cháy hoàn toàn $32$ g lưu huỳnh ($M=32$): $S+O_2\\to SO_2$. Số mol $SO_2$?', options: ['$0{,}5$', '$2$', '$0{,}25$', '$1$'], answer: 3, explanation: '$n_S=1$ mol ⇒ $n_{SO_2}=1$ mol.' },
+        { stem: 'Chức năng chính của phổi trong hệ hô hấp là?', options: ['Tiêu hóa thức ăn', 'Lọc máu', 'Trao đổi khí $O_2$ và $CO_2$', 'Bài tiết mồ hôi'], answer: 2, explanation: 'Phổi là nơi trao đổi khí giữa máu và không khí.' },
+        { stem: 'Khi một vật chìm sâu hơn trong chất lỏng, áp suất chất lỏng tác dụng lên vật sẽ?', options: ['Giảm', 'Tăng', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: '$p=d\\cdot h$: $h$ tăng ⇒ $p$ tăng.' },
+      ],
+    },
   ],
 
   ANH8: [
