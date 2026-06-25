@@ -4742,6 +4742,21 @@ const EXAMS = {
         { stem: 'She has ____ left, so we missed her.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-44', title: 'Kiểm tra 45′ #44 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'I ____ my homework yesterday evening.', options: ['do', 'does', 'did', 'doing'], answer: 2, explanation: 'yesterday evening ⇒ quá khứ đơn: did.' },
+        { stem: 'A train is ____ than a bus.', options: ['comfortable', 'comfortabler', 'most comfortable', 'more comfortable'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more comfortable.' },
+        { stem: 'You ____ try harder next time.', options: ['must', 'should', 'can', 'would'], answer: 1, explanation: 'should = lời khuyên.' },
+        { stem: 'If it is sunny tomorrow, we ____ a picnic.', options: ['will have', 'have', 'had', 'would have'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The window ____ by the strong wind last night.', options: ['break', 'breaks', 'was broken', 'is broken'], answer: 2, explanation: 'Bị động quá khứ đơn: was broken.' },
+        { stem: 'The man ____ lives next to us is a teacher.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'I have known her ____ 2012.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (2012).' },
+        { stem: "Choose the synonym of 'quiet'.", options: ['loud', 'noisy', 'busy', 'silent'], answer: 3, explanation: 'quiet ≈ silent (yên lặng).' },
+        { stem: "Choose the antonym of 'day'.", options: ['morning', 'night', 'noon', 'dawn'], answer: 1, explanation: 'day ↔ night (đêm).' },
+        { stem: '____ she ever played chess?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
+      ],
+    },
   ],
 };
 
