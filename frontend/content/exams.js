@@ -869,6 +869,21 @@ const EXAMS = {
         { stem: 'Đổi $327$ °C sang thang Kelvin?', options: ['$500$ K', '$600$ K', '$400$ K', '$300$ K'], answer: 1, explanation: '$327+273=600$ K.' },
       ],
     },
+    {
+      examId: 'ly-kt45-32', title: 'Kiểm tra 45′ #32 — Vật lí 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Khí đẳng nhiệt $p_1=8$ atm, $V_1=3$ L. Khi $p_2=6$ atm thì $V_2=?$', options: ['$4$ L', '$2$ L', '$6$ L', '$3$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=8\\cdot3/6=4$ L.' },
+        { stem: 'Đun $1$ kg nước ($c=4200$) tăng thêm $30$ °C cần nhiệt lượng?', options: ['$63$ kJ', '$252$ kJ', '$42$ kJ', '$126$ kJ'], answer: 3, explanation: '$Q=1\\cdot4200\\cdot30=126000$ J $=126$ kJ.' },
+        { stem: 'Đoạn dây $L=0{,}5$ m chuyển động $v=10$ m/s vuông góc $B=0{,}4$ T. Suất điện động?', options: ['$1$ V', '$4$ V', '$2$ V', '$0{,}5$ V'], answer: 2, explanation: '$e=BLv=0{,}4\\cdot0{,}5\\cdot10=2$ V.' },
+        { stem: 'Số neutron trong hạt nhân $^{24}_{12}Mg$?', options: ['$24$', '$36$', '$6$', '$12$'], answer: 3, explanation: '$N=24-12=12$.' },
+        { stem: 'Hạt nhân nào có $16$ proton?', options: ['$^{32}S$', '$^{31}P$', '$^{35}Cl$', '$^{28}Si$'], answer: 0, explanation: 'Lưu huỳnh có $Z=16$.' },
+        { stem: 'Thiết bị công suất $P=500$ W hoạt động $4$ s tiêu thụ công?', options: ['$1000$ J', '$4000$ J', '$2000$ J', '$500$ J'], answer: 2, explanation: '$A=Pt=500\\cdot4=2000$ J.' },
+        { stem: 'Khí đẳng tích $p_1=1$ atm ở $300$ K, đun đến $900$ K. Áp suất sau?', options: ['$3$ atm', '$2$ atm', '$4$ atm', '$6$ atm'], answer: 0, explanation: '$p_2=p_1T_2/T_1=1\\cdot900/300=3$ atm.' },
+        { stem: 'Đơn vị của hiệu điện thế là?', options: ['Ampe', 'Vôn', 'Ôm', 'Oát'], answer: 1, explanation: 'Hiệu điện thế đo bằng Vôn (V).' },
+        { stem: 'Sau $5$ chu kì bán rã, lượng chất phóng xạ còn lại bằng?', options: ['$1/16$', '$1/64$', '$1/128$', '$1/32$'], answer: 3, explanation: '$(1/2)^5=1/32$.' },
+        { stem: 'Đổi $57$ °C sang thang Kelvin?', options: ['$300$ K', '$330$ K', '$273$ K', '$350$ K'], answer: 1, explanation: '$57+273=330$ K.' },
+      ],
+    },
   ],
 
   HOA: [
