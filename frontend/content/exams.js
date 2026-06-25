@@ -4787,6 +4787,21 @@ const EXAMS = {
         { stem: '____ she ever played chess?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
       ],
     },
+    {
+      examId: 'anh8-45', title: 'Kiểm tra 45′ #45 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'Listen! Someone ____ at the door.', options: ['knocks', 'knocked', 'is knocking', 'knock'], answer: 2, explanation: '"Listen!" ⇒ hiện tại tiếp diễn: is knocking.' },
+        { stem: 'Math is ____ than history for me.', options: ['interesting', 'interestinger', 'most interesting', 'more interesting'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more interesting.' },
+        { stem: 'You ____ run in the corridor.', options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = cấm." },
+        { stem: 'If you water the plant, it ____.', options: ['will grow', 'grow', 'grew', 'would grow'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The cars ____ in Japan.', options: ['make', 'makes', 'are made', 'is made'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are made.' },
+        { stem: 'The teacher ____ helped me is retired now.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'She has been ill ____ Sunday.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (Sunday).' },
+        { stem: "Choose the synonym of 'shut'.", options: ['open', 'lock', 'key', 'close'], answer: 3, explanation: 'shut ≈ close (đóng).' },
+        { stem: "Choose the antonym of 'thick'.", options: ['fat', 'thin', 'wide', 'broad'], answer: 1, explanation: 'thick ↔ thin (mỏng).' },
+        { stem: '____ you done your homework yet?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
