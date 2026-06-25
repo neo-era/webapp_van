@@ -4247,6 +4247,21 @@ const EXAMS = {
         { stem: 'I have ____ seen that movie, so it will be new to me.', options: ['ever', 'yet', 'never', 'for'], answer: 2, explanation: 'never = chưa từng (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-33', title: 'Kiểm tra 45′ #33 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: "At 8 o'clock last night, I ____ dinner.", options: ['had', 'have', 'was having', 'am having'], answer: 2, explanation: 'Hành động đang diễn ra tại một thời điểm trong quá khứ ⇒ was having.' },
+        { stem: 'A lion is ____ than a cat.', options: ['dangerous', 'dangerouser', 'most dangerous', 'more dangerous'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more dangerous.' },
+        { stem: '____ you please open the door?', options: ['Must', 'Could', 'Should', 'Need'], answer: 1, explanation: 'Could = yêu cầu lịch sự.' },
+        { stem: 'If the bus is late, I ____ a taxi.', options: ['will take', 'take', 'took', 'would take'], answer: 0, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'These shoes ____ in Vietnam.', options: ['make', 'makes', 'are made', 'is made'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are made.' },
+        { stem: 'The town ____ I grew up is very small.', options: ['where', 'which', 'who', 'whose'], answer: 0, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'We have been close friends ____ many years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (many years).' },
+        { stem: "Choose the synonym of 'rich'.", options: ['poor', 'broke', 'needy', 'wealthy'], answer: 3, explanation: 'rich ≈ wealthy (giàu).' },
+        { stem: "Choose the antonym of 'win'.", options: ['succeed', 'lose', 'gain', 'earn'], answer: 1, explanation: 'win ↔ lose (thua).' },
+        { stem: 'He ____ just left, so you can still catch him.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ has.' },
+      ],
+    },
   ],
 };
 
