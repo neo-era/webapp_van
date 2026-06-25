@@ -2786,6 +2786,21 @@ const EXAMS = {
         { stem: 'Nghiệm của phương trình $\\dfrac{x}{2}=5$?', options: ['$2{,}5$', '$10$', '$7$', '$5$'], answer: 1, explanation: '$x=5\\cdot2=10$.' },
       ],
     },
+    {
+      examId: 'toan8-2', title: 'Kiểm tra 45′ #2 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x+1)^2$?', options: ['$2x^2+2x+1$', '$4x^2+2x+1$', '$4x^2+4x+1$', '$4x^2+4x+2$'], answer: 2, explanation: '$(2x+1)^2=4x^2+4x+1$.' },
+        { stem: 'Tích $(x+y)(x-y)$ bằng?', options: ['$x^2+y^2$', '$x^2-y^2$', '$(x-y)^2$', '$(x+y)^2$'], answer: 1, explanation: 'Hằng đẳng thức hiệu hai bình phương.' },
+        { stem: 'Phân tích $x^2-6x+9$ thành nhân tử?', options: ['$(x+3)^2$', '$(x-9)(x-1)$', '$(x-3)(x+3)$', '$(x-3)^2$'], answer: 3, explanation: '$x^2-6x+9=(x-3)^2$.' },
+        { stem: 'Nghiệm của phương trình $4x-12=0$?', options: ['$3$', '$4$', '$12$', '$-3$'], answer: 0, explanation: '$4x=12 \\Leftrightarrow x=3$.' },
+        { stem: 'Nghiệm của phương trình $-2x+10=0$?', options: ['$-5$', '$10$', '$2$', '$5$'], answer: 3, explanation: '$-2x=-10 \\Leftrightarrow x=5$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{x}{x+2}$?', options: ['$x\\ne2$', '$x\\ne-2$', '$x\\ne0$', '$x=-2$'], answer: 1, explanation: 'Mẫu khác 0: $x+2\\ne0 \\Leftrightarrow x\\ne-2$.' },
+        { stem: 'Hàm số $y=2x-1$. Khi $x=3$ thì $y$ bằng?', options: ['$7$', '$5$', '$3$', '$6$'], answer: 1, explanation: '$y=2\\cdot3-1=5$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $6$ và $8$. Cạnh huyền?', options: ['$10$', '$12$', '$14$', '$7$'], answer: 0, explanation: '$\\sqrt{6^2+8^2}=\\sqrt{100}=10$.' },
+        { stem: 'Rút gọn $\\dfrac{3x}{6x^2}$ (với $x\\ne0$)?', options: ['$\\dfrac{1}{2}$', '$2x$', '$\\dfrac{3}{6x^2}$', '$\\dfrac{1}{2x}$'], answer: 3, explanation: '$\\dfrac{3x}{6x^2}=\\dfrac{1}{2x}$.' },
+        { stem: 'Biểu thức $A^2-2AB+B^2$ là hằng đẳng thức nào?', options: ['$(A-B)^2$', '$(A+B)^2$', '$A^2-B^2$', '$(A-B)(A+B)$'], answer: 0, explanation: '$A^2-2AB+B^2=(A-B)^2$.' },
+      ],
+    },
   ],
 
   KHTN8: [
