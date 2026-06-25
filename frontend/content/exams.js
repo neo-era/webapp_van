@@ -3572,6 +3572,21 @@ const EXAMS = {
         { stem: 'They ____ just arrived at the airport.', options: ['have', 'has', 'had', 'having'], answer: 0, explanation: 'Hiện tại hoàn thành với "they" ⇒ have.' },
       ],
     },
+    {
+      examId: 'anh8-18', title: 'Kiểm tra 45′ #18 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'By the time we arrived, the train ____.', options: ['left', 'leaves', 'had left', 'leaving'], answer: 2, explanation: 'Hành động xảy ra trước một mốc quá khứ ⇒ had left.' },
+        { stem: 'Health is ____ than wealth.', options: ['important', 'importanter', 'most important', 'more important'], answer: 3, explanation: 'Tính từ dài ⇒ so sánh hơn: more important.' },
+        { stem: 'When I was young, I ____ run very fast.', options: ['could', 'can', 'may', 'must'], answer: 0, explanation: 'could = khả năng trong quá khứ.' },
+        { stem: 'If you study hard, you ____ the exam.', options: ['pass', 'will pass', 'passed', 'would pass'], answer: 1, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Many languages ____ in India.', options: ['speak', 'speaks', 'is spoken', 'are spoken'], answer: 3, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are spoken.' },
+        { stem: 'I really like the book ____ you gave me.', options: ['who', 'which', 'where', 'whose'], answer: 1, explanation: 'which thay cho vật làm tân ngữ.' },
+        { stem: 'We have been here ____ two hours.', options: ['since', 'at', 'for', 'in'], answer: 2, explanation: 'for + khoảng thời gian (two hours).' },
+        { stem: "Choose the synonym of 'quick'.", options: ['fast', 'slow', 'late', 'weak'], answer: 0, explanation: 'quick ≈ fast (nhanh).' },
+        { stem: "Choose the antonym of 'empty'.", options: ['vacant', 'full', 'hollow', 'bare'], answer: 1, explanation: 'empty ↔ full (đầy).' },
+        { stem: '____ she finished her work yet?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
+      ],
+    },
   ],
 };
 
