@@ -2921,6 +2921,21 @@ const EXAMS = {
         { stem: 'Mốt (yếu vị) của dãy số $2, 3, 3, 4, 5$?', options: ['$2$', '$4$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $3$ xuất hiện nhiều nhất ⇒ mốt $=3$.' },
       ],
     },
+    {
+      examId: 'toan8-11', title: 'Kiểm tra 45′ #11 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+6)(x-6)$?', options: ['$x^2+36$', '$x^2-12x-36$', '$x^2-6x$', '$x^2-36$'], answer: 3, explanation: 'Hiệu hai bình phương: $x^2-36$.' },
+        { stem: 'Rút gọn $(x-y)^2+2xy$?', options: ['$x^2-y^2$', '$2x^2+2y^2$', '$x^2+y^2$', '$x^2+2xy+y^2$'], answer: 2, explanation: '$x^2-2xy+y^2+2xy=x^2+y^2$.' },
+        { stem: 'Phân tích $3x^2-3$ thành nhân tử?', options: ['$3(x^2-1)$', '$3(x-1)(x+1)$', '$(3x-3)(x+1)$', '$(x-1)(x+1)$'], answer: 1, explanation: '$3x^2-3=3(x^2-1)=3(x-1)(x+1)$.' },
+        { stem: 'Nghiệm của phương trình $\\dfrac{2x}{5}=4$?', options: ['$8$', '$20$', '$2$', '$10$'], answer: 3, explanation: '$2x=20 \\Leftrightarrow x=10$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{x+3}{2x-6}$?', options: ['$x\\ne-3$', '$x\\ne3$', '$x\\ne6$', '$x\\ne0$'], answer: 1, explanation: '$2x-6\\ne0 \\Leftrightarrow x\\ne3$.' },
+        { stem: 'Đường thẳng qua hai điểm $(0;2)$ và $(1;5)$ có hệ số góc?', options: ['$3$', '$2$', '$5$', '$1$'], answer: 0, explanation: '$\\dfrac{5-2}{1-0}=3$.' },
+        { stem: 'Tam giác có ba cạnh $3, 4, 5$ là tam giác?', options: ['đều', 'vuông', 'cân', 'tù'], answer: 1, explanation: '$3^2+4^2=5^2$ ⇒ tam giác vuông.' },
+        { stem: 'Diện tích hình tròn bán kính $5$ (lấy $\\pi\\approx3{,}14$)?', options: ['$31{,}4$', '$25$', '$15{,}7$', '$78{,}5$'], answer: 3, explanation: '$S=\\pi r^2=3{,}14\\cdot25=78{,}5$.' },
+        { stem: 'Rút gọn $\\dfrac{2x-4}{x-2}$ (với $x\\ne2$)?', options: ['$2$', '$x-2$', '$x$', '$2x$'], answer: 0, explanation: '$\\dfrac{2(x-2)}{x-2}=2$.' },
+        { stem: 'Khoảng biến thiên của dãy số $4, 8, 2, 10, 6$?', options: ['$6$', '$10$', '$8$', '$12$'], answer: 2, explanation: 'Khoảng biến thiên $=10-2=8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
