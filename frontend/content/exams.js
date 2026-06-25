@@ -3689,6 +3689,21 @@ const EXAMS = {
         { stem: 'Áp suất chất khí trong bình kín tác dụng lên thành bình theo hướng nào?', options: ['Chỉ tác dụng xuống đáy bình', 'Theo mọi phương', 'Chỉ sang hai bên', 'Chỉ hướng lên trên'], answer: 1, explanation: 'Chất khí gây áp suất lên thành bình theo mọi phương.' },
       ],
     },
+    {
+      examId: 'khtn8-31', title: 'Kiểm tra 45′ #31 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $14$ g khí $N_2$ ($M=28$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=14/28=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $1{,}5$ m trong nước ($d=10000$ N/m³)?', options: ['$15000$ Pa', '$1500$ Pa', '$150000$ Pa', '$6500$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 1{,}5=15000$ Pa.' },
+        { stem: 'Một vật có khối lượng $78$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$78$ g/cm³', '$7{,}8$ g/cm³', '$0{,}78$ g/cm³', '$780$ g/cm³'], answer: 1, explanation: '$D=m/V=78/10=7{,}8$ g/cm³.' },
+        { stem: 'Cho Zn tác dụng với dung dịch HCl, khí thoát ra là?', options: ['$O_2$', '$Cl_2$', '$CO_2$', '$H_2$'], answer: 3, explanation: '$Zn+2HCl\\to ZnCl_2+H_2$.' },
+        { stem: 'Đơn vị tính nồng độ mol của dung dịch là?', options: ['mol/lít (M)', 'gam', 'lít', 'kg/m³'], answer: 0, explanation: 'Nồng độ mol đo bằng mol/lít (M).' },
+        { stem: 'Hòa tan $9$ g chất tan vào $91$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$91\\%$', '$9\\%$', '$8\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=9/100\\times 100\\%=9\\%$.' },
+        { stem: 'Khi treo một vật vào lò xo, lò xo dãn ra là do?', options: ['Lực đẩy không khí', 'Trọng lực của vật', 'Lực ma sát', 'Áp suất khí quyển'], answer: 1, explanation: 'Trọng lực của vật kéo lò xo dãn ra.' },
+        { stem: 'Đốt cháy $0{,}5$ mol cacbon trong oxi ($C+O_2\\to CO_2$). Số mol $CO_2$?', options: ['$1$', '$2$', '$0{,}25$', '$0{,}5$'], answer: 3, explanation: 'Tỉ lệ $1:1$ ⇒ $n_{CO_2}=0{,}5$ mol.' },
+        { stem: 'Quá trình tiêu hóa thức ăn bắt đầu ở cơ quan nào?', options: ['Dạ dày', 'Ruột non', 'Khoang miệng', 'Thực quản'], answer: 2, explanation: 'Tiêu hóa bắt đầu ở khoang miệng (nhai và enzyme amylase).' },
+        { stem: 'Khi nhiệt độ tăng, áp suất của khí trong bình kín sẽ?', options: ['Giảm', 'Tăng', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: 'Nhiệt độ tăng ⇒ phân tử khí chuyển động nhanh hơn ⇒ áp suất tăng.' },
+      ],
+    },
   ],
 
   ANH8: [
