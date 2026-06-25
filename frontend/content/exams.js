@@ -3482,6 +3482,21 @@ const EXAMS = {
         { stem: 'How long ____ you lived in this town?', options: ['has', 'had', 'having', 'have'], answer: 3, explanation: 'Hiện tại hoàn thành với "you" ⇒ have.' },
       ],
     },
+    {
+      examId: 'anh8-16', title: 'Kiểm tra 45′ #16 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'While they ____ a film, I called them.', options: ['watched', 'watch', 'were watching', 'are watching'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ were watching.' },
+        { stem: 'Today is ____ than yesterday.', options: ['hotter', 'hot', 'hottest', 'more hot'], answer: 0, explanation: 'So sánh hơn tính từ ngắn (gấp đôi phụ âm): hotter.' },
+        { stem: 'You ____ be tired after such a long trip.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = suy đoán chắc chắn.' },
+        { stem: 'If we recycle waste, we ____ the environment.', options: ['protect', 'protected', 'would protect', 'will protect'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'These cakes ____ by my mother every weekend.', options: ['make', 'makes', 'are made', 'is made'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are made.' },
+        { stem: 'Tet is the festival ____ takes place in spring.', options: ['who', 'which', 'where', 'whose'], answer: 1, explanation: 'which thay cho vật làm chủ ngữ.' },
+        { stem: 'They have been close friends ____ childhood.', options: ['since', 'for', 'at', 'in'], answer: 0, explanation: 'since + mốc thời gian (childhood).' },
+        { stem: "Choose the synonym of 'beautiful'.", options: ['ugly', 'plain', 'dull', 'pretty'], answer: 3, explanation: 'beautiful ≈ pretty (đẹp).' },
+        { stem: "Choose the antonym of 'tall'.", options: ['high', 'short', 'long', 'big'], answer: 1, explanation: 'tall ↔ short (thấp).' },
+        { stem: 'She ____ never been to Japan before.', options: ['have', 'had', 'having', 'has'], answer: 3, explanation: 'Hiện tại hoàn thành với "she" ⇒ has.' },
+      ],
+    },
   ],
 };
 
