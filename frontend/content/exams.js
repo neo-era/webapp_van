@@ -2254,6 +2254,21 @@ const EXAMS = {
         { stem: 'Thank you for your ____ during the transition.', options: ['understanding', 'understand', 'understood', 'understands'], answer: 0, explanation: 'your + danh từ ⇒ understanding.' },
       ],
     },
+    {
+      examId: 'toeic-31', title: 'TOEIC – Grammar & Vocabulary #31', durationMin: 20,
+      questions: [
+        { stem: 'The new product exceeded all sales ____.', options: ['expect', 'expected', 'expecting', 'expectations'], answer: 3, explanation: 'sales expectations = kỳ vọng doanh số (danh từ số nhiều).' },
+        { stem: 'We must ____ our practices with industry standards.', options: ['assign', 'resign', 'design', 'align'], answer: 3, explanation: 'align with = đồng bộ/phù hợp với.' },
+        { stem: 'The report highlights several key ____.', options: ['findings', 'find', 'found', 'finds'], answer: 0, explanation: 'key findings = các phát hiện chính (danh từ).' },
+        { stem: 'Our staff are ____ trained professionals.', options: ['high', 'highly', 'height', 'higher'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa "trained" ⇒ highly.' },
+        { stem: 'Please ____ your account details before proceeding.', options: ['vary', 'very', 'verify', 'varies'], answer: 2, explanation: 'verify = xác minh.' },
+        { stem: 'The new smartphone has many advanced ____.', options: ['feature', 'featured', 'features', 'featuring'], answer: 2, explanation: 'advanced features = tính năng tiên tiến (danh từ số nhiều).' },
+        { stem: 'We ____ all major credit cards.', options: ['except', 'accept', 'expect', 'access'], answer: 1, explanation: 'accept = chấp nhận (thanh toán).' },
+        { stem: 'The submission deadline is ____ approaching.', options: ['rapid', 'rapidly', 'rapidity', 'rapider'], answer: 1, explanation: 'Cần trạng từ bổ nghĩa "approaching" ⇒ rapidly.' },
+        { stem: 'Our company ____ in renewable energy projects.', options: ['invests', 'invest', 'investing', 'investment'], answer: 0, explanation: 'Chủ ngữ số ít, hiện tại đơn ⇒ invests.' },
+        { stem: 'Please ____ to the attached document for details.', options: ['prefer', 'defer', 'infer', 'refer'], answer: 3, explanation: 'refer to = tham khảo.' },
+      ],
+    },
   ],
 
   IELTS: [
