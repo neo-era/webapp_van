@@ -4559,6 +4559,21 @@ const EXAMS = {
         { stem: 'Khí được thải ra nhiều khi cơ thể thở ra là?', options: ['$O_2$', '$N_2$', '$H_2$', '$CO_2$'], answer: 3, explanation: 'Hô hấp thải ra khí $CO_2$.' },
       ],
     },
+    {
+      examId: 'khtn8-60', title: 'Kiểm tra 45′ #60 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $5{,}6$ g sắt Fe ($M=56$)?', options: ['$0{,}1$ mol', '$0{,}2$ mol', '$1$ mol', '$0{,}5$ mol'], answer: 0, explanation: '$n=5{,}6/56=0{,}1$ mol.' },
+        { stem: 'Hòa tan $20$ g muối vào $180$ g nước. Nồng độ phần trăm dung dịch?', options: ['$20\\%$', '$11\\%$', '$10\\%$', '$5\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=20/200\\times100\\%=10\\%$.' },
+        { stem: 'Oxide nào tác dụng với nước tạo thành dung dịch base?', options: ['$CO_2$', '$SO_2$', '$P_2O_5$', '$CaO$'], answer: 3, explanation: '$CaO+H_2O\\to Ca(OH)_2$ (base). Các oxide còn lại là oxide acid.' },
+        { stem: 'Chất nào sau đây là acid?', options: ['$NaOH$', '$HCl$', '$NaCl$', '$CaO$'], answer: 1, explanation: '$HCl$ là acid; $NaOH$ là base, $NaCl$ là muối, $CaO$ là oxide base.' },
+        { stem: 'Khối lượng riêng của vật có $m=156$ g, $V=20$ cm³?', options: ['$78$ g/cm³', '$0{,}78$ g/cm³', '$7{,}8$ g/cm³', '$780$ g/cm³'], answer: 2, explanation: '$D=m/V=156/20=7{,}8$ g/cm³.' },
+        { stem: 'Áp suất nước tại độ sâu $10$ m ($d=10000$ N/m³)?', options: ['$100000$ Pa', '$10000$ Pa', '$1000000$ Pa', '$110000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times10=100000$ Pa.' },
+        { stem: 'Một máy thực hiện công $600$ J trong $30$ s. Công suất của máy?', options: ['$600$ W', '$20$ W', '$18000$ W', '$2$ W'], answer: 1, explanation: '$P=A/t=600/30=20$ W.' },
+        { stem: 'Tế bào máu nào làm nhiệm vụ vận chuyển khí oxygen?', options: ['Bạch cầu', 'Tiểu cầu', 'Tế bào thần kinh', 'Hồng cầu'], answer: 3, explanation: 'Hồng cầu chứa hemoglobin vận chuyển $O_2$.' },
+        { stem: 'Cơ quan chính bài tiết nước tiểu trong cơ thể người là?', options: ['Gan', 'Phổi', 'Thận', 'Tim'], answer: 2, explanation: 'Thận lọc máu và bài tiết nước tiểu.' },
+        { stem: 'Hệ thần kinh trung ương ở người gồm những bộ phận nào?', options: ['Não và tủy sống', 'Các dây thần kinh', 'Các hạch thần kinh', 'Cơ quan thụ cảm'], answer: 0, explanation: 'Hệ thần kinh trung ương gồm não bộ và tủy sống.' },
+      ],
+    },
   ],
 
   ANH8: [
