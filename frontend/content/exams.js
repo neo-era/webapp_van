@@ -4439,6 +4439,21 @@ const EXAMS = {
         { stem: 'Vì sao đáy ấm đun nước thường làm bằng nhôm hoặc kim loại?', options: ['Cho đẹp', 'Vì nhôm dẫn nhiệt tốt', 'Cho nhẹ', 'Cho rẻ'], answer: 1, explanation: 'Kim loại dẫn nhiệt tốt giúp đun nước nhanh sôi.' },
       ],
     },
+    {
+      examId: 'khtn8-56', title: 'Kiểm tra 45′ #56 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4{,}6$ g Na ($M=23$)?', options: ['$0{,}1$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 2, explanation: '$n=4{,}6/23=0{,}2$ mol.' },
+        { stem: 'Áp suất tại độ sâu $5{,}5$ m trong nước ($d=10000$ N/m³)?', options: ['$55000$ Pa', '$5500$ Pa', '$550000$ Pa', '$15500$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 5{,}5=55000$ Pa.' },
+        { stem: 'Một vật có khối lượng $126$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$126$ g/cm³', '$12{,}6$ g/cm³', '$1{,}26$ g/cm³', '$1260$ g/cm³'], answer: 1, explanation: '$D=m/V=126/10=12{,}6$ g/cm³.' },
+        { stem: 'Cho đá vôi ($CaCO_3$) tác dụng với giấm (acid), khí thoát ra là?', options: ['$O_2$', '$H_2$', '$N_2$', '$CO_2$'], answer: 3, explanation: '$CaCO_3$ + acid → muối + $H_2O$ + $CO_2$.' },
+        { stem: 'Bộ phận nào của hệ thần kinh nằm trong hộp sọ?', options: ['Não bộ', 'Tủy sống', 'Dây thần kinh', 'Hạch thần kinh'], answer: 0, explanation: 'Não bộ được bảo vệ trong hộp sọ.' },
+        { stem: 'Hòa tan $5$ g chất tan vào $95$ g nước. Nồng độ phần trăm dung dịch?', options: ['$50\\%$', '$95\\%$', '$5\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=5/100\\times 100\\%=5\\%$.' },
+        { stem: 'Ròng rọc cố định có tác dụng chính là gì?', options: ['Lợi về lực', 'Đổi hướng của lực', 'Tăng quãng đường', 'Tăng độ lớn lực'], answer: 1, explanation: 'Ròng rọc cố định chỉ đổi hướng lực, không lợi về lực.' },
+        { stem: 'Khối lượng của $0{,}2$ mol $CaCO_3$ ($M=100$)?', options: ['$100$ g', '$50$ g', '$10$ g', '$20$ g'], answer: 3, explanation: '$m=0{,}2\\times 100=20$ g.' },
+        { stem: 'Khi vận động viên chạy, năng lượng hóa học trong cơ thể chuyển hóa thành?', options: ['Chỉ nhiệt năng', 'Chỉ điện năng', 'Cơ năng và nhiệt năng', 'Quang năng'], answer: 2, explanation: 'Một phần thành cơ năng (vận động), một phần tỏa nhiệt.' },
+        { stem: 'Vì sao khi trời lạnh, cơ thể ta thường run?', options: ['Do sợ hãi', 'Để các cơ co liên tục sinh nhiệt giữ ấm', 'Do mệt mỏi', 'Không có lý do'], answer: 1, explanation: 'Run là phản xạ co cơ sinh nhiệt, giúp giữ ấm cơ thể.' },
+      ],
+    },
   ],
 
   ANH8: [
