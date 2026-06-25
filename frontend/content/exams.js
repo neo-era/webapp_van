@@ -5102,6 +5102,21 @@ const EXAMS = {
         { stem: '____ you done your homework?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-52', title: 'Kiểm tra 45′ #52 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'The students ____ in the library now.', options: ['study', 'studies', 'are studying', 'studied'], answer: 2, explanation: '"now" ⇒ hiện tại tiếp diễn: are studying.' },
+        { stem: 'A plane is ____ than a train.', options: ['faster', 'fast', 'fastest', 'more fast'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: faster.' },
+        { stem: 'You ____ finish this report by tomorrow.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = bắt buộc.' },
+        { stem: 'If it is cold tonight, we ____ at home.', options: ['stay', 'stayed', 'would stay', 'will stay'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The homework ____ by the students every day.', options: ['do', 'does', 'is done', 'are done'], answer: 2, explanation: 'Bị động hiện tại, "homework" không đếm được ⇒ is done.' },
+        { stem: 'The man ____ car is red is my neighbor.', options: ['whose', 'who', 'which', 'where'], answer: 0, explanation: 'whose chỉ sự sở hữu.' },
+        { stem: 'She has worked here ____ three months.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (three months).' },
+        { stem: "Choose the synonym of 'choose'.", options: ['refuse', 'reject', 'drop', 'select'], answer: 3, explanation: 'choose ≈ select (chọn).' },
+        { stem: "Choose the antonym of 'before'.", options: ['during', 'after', 'while', 'then'], answer: 1, explanation: 'before ↔ after (sau).' },
+        { stem: 'She has ____ visited that museum, so it is not new to her.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
+      ],
+    },
   ],
 };
 
