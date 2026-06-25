@@ -3569,6 +3569,21 @@ const EXAMS = {
         { stem: 'Khi một vật chìm sâu hơn trong chất lỏng, áp suất chất lỏng tác dụng lên vật sẽ?', options: ['Giảm', 'Tăng', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: '$p=d\\cdot h$: $h$ tăng ⇒ $p$ tăng.' },
       ],
     },
+    {
+      examId: 'khtn8-27', title: 'Kiểm tra 45′ #27 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $2{,}8$ g khí CO ($M=28$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=2{,}8/28=0{,}1$ mol.' },
+        { stem: 'Lực $900$ N ép vuông góc lên diện tích $3$ m². Áp suất là?', options: ['$300$ Pa', '$2700$ Pa', '$270$ Pa', '$30$ Pa'], answer: 0, explanation: '$p=F/S=900/3=300$ Pa.' },
+        { stem: 'Một vật có khối lượng $89$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$89$ g/cm³', '$8{,}9$ g/cm³', '$0{,}89$ g/cm³', '$890$ g/cm³'], answer: 1, explanation: '$D=m/V=89/10=8{,}9$ g/cm³.' },
+        { stem: 'Đốt cháy photpho trong oxi thu được sản phẩm nào?', options: ['$PO$', '$P_2O_3$', '$PO_2$', '$P_2O_5$'], answer: 3, explanation: '$4P+5O_2\\to 2P_2O_5$.' },
+        { stem: 'Cơ quan nào vừa điều hòa thân nhiệt vừa bài tiết qua mồ hôi?', options: ['Da', 'Gan', 'Phổi', 'Tim'], answer: 0, explanation: 'Da điều hòa nhiệt và bài tiết mồ hôi.' },
+        { stem: 'Hòa tan $30$ g chất tan vào $170$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$30\\%$', '$15\\%$', '$17\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=30/200\\times 100\\%=15\\%$.' },
+        { stem: 'Trọng lực có phương và chiều như thế nào?', options: ['Nằm ngang hướng sang trái', 'Thẳng đứng, hướng xuống', 'Thẳng đứng, hướng lên', 'Theo mọi hướng'], answer: 1, explanation: 'Trọng lực luôn hướng thẳng đứng xuống dưới.' },
+        { stem: 'Đốt cháy $24$ g Mg ($M=24$): $2Mg+O_2\\to 2MgO$. Số mol $MgO$ thu được?', options: ['$0{,}5$', '$2$', '$0{,}25$', '$1$'], answer: 3, explanation: '$n_{Mg}=1$ mol ⇒ $n_{MgO}=1$ mol.' },
+        { stem: 'Khi hít vào, cơ hoành chuyển động như thế nào?', options: ['Nâng lên', 'Đứng yên', 'Hạ xuống làm tăng thể tích lồng ngực', 'Co bóp như tim'], answer: 2, explanation: 'Cơ hoành hạ xuống ⇒ lồng ngực nở ra ⇒ hít vào.' },
+        { stem: 'Áp suất khí quyển được đo bằng dụng cụ nào?', options: ['Nhiệt kế', 'Khí áp kế', 'Lực kế', 'Ẩm kế'], answer: 1, explanation: 'Khí áp kế dùng đo áp suất khí quyển.' },
+      ],
+    },
   ],
 
   ANH8: [
