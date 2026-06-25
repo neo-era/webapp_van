@@ -3401,6 +3401,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $3, 3, 3, 6, 9, 12$?', options: ['$3$', '$12$', '$6$', '$36$'], answer: 2, explanation: '$\\dfrac{3+3+3+6+9+12}{6}=\\dfrac{36}{6}=6$.' },
       ],
     },
+    {
+      examId: 'toan8-43', title: 'Kiểm tra 45′ #43 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-13)(x+13)$?', options: ['$x^2+169$', '$x^2-26x+169$', '$x^2-169$', '$x^2-13x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-169$.' },
+        { stem: 'Phân tích $x^2-4x$ thành nhân tử?', options: ['$x(x-4)$', '$x(x+4)$', '$(x-4)^2$', '$4x$'], answer: 0, explanation: '$x^2-4x=x(x-4)$.' },
+        { stem: 'Nghiệm của phương trình $2(3x-1)=4x+8$?', options: ['$x=2$', '$x=5$', '$x=10$', '$x=-5$'], answer: 1, explanation: '$6x-2=4x+8 \\Leftrightarrow 2x=10 \\Leftrightarrow x=5$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-12x+36}{x-6}$ (với $x\\ne6$)?', options: ['$x+6$', '$x$', '$x^2-6$', '$x-6$'], answer: 3, explanation: '$\\dfrac{(x-6)^2}{x-6}=x-6$.' },
+        { stem: 'Đường thẳng $y=6x-18$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=18$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 6x=18 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $16$ và $30$. Cạnh huyền?', options: ['$46$', '$34$', '$30$', '$32$'], answer: 1, explanation: '$\\sqrt{16^2+30^2}=\\sqrt{1156}=34$.' },
+        { stem: 'Khai triển $(5x-2)^2$?', options: ['$25x^2-20x+4$', '$25x^2+20x+4$', '$25x^2-4$', '$5x^2-20x+4$'], answer: 0, explanation: '$(5x-2)^2=25x^2-20x+4$.' },
+        { stem: 'Diện tích tam giác vuông có hai cạnh góc vuông $9$ và $12$?', options: ['$108$', '$21$', '$36$', '$54$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot9\\cdot12=54$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+x-20}{x+5}$ (với $x\\ne-5$)?', options: ['$x+4$', '$x-4$', '$x^2-4$', '$4$'], answer: 1, explanation: '$\\dfrac{(x+5)(x-4)}{x+5}=x-4$.' },
+        { stem: 'Trung vị của dãy số $2, 2, 5, 8, 9$?', options: ['$2$', '$8$', '$5$', '$9$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $5$.' },
+      ],
+    },
   ],
 
   KHTN8: [
