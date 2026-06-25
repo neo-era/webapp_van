@@ -3959,6 +3959,21 @@ const EXAMS = {
         { stem: 'Áp suất khí quyển chuẩn ở mực nước biển xấp xỉ?', options: ['$10000$ Pa', '$100000$ Pa', '$1000$ Pa', '$1000000$ Pa'], answer: 1, explanation: 'Khoảng $101325$ Pa $\\approx 100000$ Pa (1 atm).' },
       ],
     },
+    {
+      examId: 'khtn8-40', title: 'Kiểm tra 45′ #40 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $12$ g Mg ($M=24$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=12/24=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $2{,}5$ m trong dầu ($d=8000$ N/m³)?', options: ['$20000$ Pa', '$2000$ Pa', '$200000$ Pa', '$5000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 2{,}5=20000$ Pa.' },
+        { stem: 'Một vật có khối lượng $54$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$27$ g/cm³', '$2{,}7$ g/cm³', '$0{,}27$ g/cm³', '$270$ g/cm³'], answer: 1, explanation: '$D=m/V=54/20=2{,}7$ g/cm³.' },
+        { stem: 'Oxide acid $SO_3$ tác dụng với nước tạo thành?', options: ['Base', 'Muối', 'Oxide base', 'Acid'], answer: 3, explanation: '$SO_3+H_2O\\to H_2SO_4$ (acid).' },
+        { stem: 'Vai trò chính của hệ vận động là gì?', options: ['Giúp cơ thể di chuyển và nâng đỡ', 'Tiêu hóa thức ăn', 'Trao đổi khí', 'Bài tiết mồ hôi'], answer: 0, explanation: 'Hệ vận động (xương, cơ) giúp di chuyển và nâng đỡ.' },
+        { stem: 'Hòa tan $25$ g chất tan vào $225$ g nước. Nồng độ phần trăm dung dịch?', options: ['$25\\%$', '$90\\%$', '$10\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=250$ g ⇒ $C\\%=25/250\\times 100\\%=10\\%$.' },
+        { stem: 'Vật được kéo chuyển động đều trên sàn bằng lực $30$ N. Độ lớn lực ma sát?', options: ['$0$', '$30$ N', '$60$ N', '$15$ N'], answer: 1, explanation: 'Chuyển động đều ⇒ lực ma sát cân bằng lực kéo $=30$ N.' },
+        { stem: 'Khối lượng của $2$ mol $CO_2$ ($M=44$)?', options: ['$44$ g', '$22$ g', '$176$ g', '$88$ g'], answer: 3, explanation: '$m=2\\times 44=88$ g.' },
+        { stem: 'Một tế bào thần kinh (nơ-ron) gồm các bộ phận chính nào?', options: ['Chỉ thân', 'Chỉ sợi trục', 'Thân, sợi trục và sợi nhánh', 'Chỉ sợi nhánh'], answer: 2, explanation: 'Nơ-ron gồm thân, sợi trục và các sợi nhánh.' },
+        { stem: 'Áp suất tác dụng lên chất lỏng trong bình kín được truyền đi như thế nào?', options: ['Chỉ truyền xuống đáy', 'Truyền nguyên vẹn theo mọi hướng', 'Không truyền đi', 'Chỉ truyền lên trên'], answer: 1, explanation: 'Định luật Pascal: áp suất truyền nguyên vẹn theo mọi hướng.' },
+      ],
+    },
   ],
 
   ANH8: [
