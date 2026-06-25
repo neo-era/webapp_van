@@ -3176,6 +3176,21 @@ const EXAMS = {
         { stem: 'Mốt của dãy số $1, 2, 2, 3, 3, 3$?', options: ['$1$', '$2$', '$3$', '$6$'], answer: 2, explanation: 'Giá trị $3$ xuất hiện nhiều nhất ⇒ mốt $=3$.' },
       ],
     },
+    {
+      examId: 'toan8-28', title: 'Kiểm tra 45′ #28 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+8)(x-8)$?', options: ['$x^2+64$', '$x^2-16x+64$', '$x^2-64$', '$x^2-8x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-64$.' },
+        { stem: 'Phân tích $x^2+x$ thành nhân tử?', options: ['$x(x+1)$', '$x(x-1)$', '$(x+1)^2$', '$2x$'], answer: 0, explanation: '$x^2+x=x(x+1)$.' },
+        { stem: 'Nghiệm của phương trình $5x+1=4x-2$?', options: ['$x=3$', '$x=-3$', '$x=1$', '$x=-1$'], answer: 1, explanation: '$5x-4x=-2-1 \\Leftrightarrow x=-3$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-9}{x^2+3x}$ (với $x\\ne0, x\\ne-3$)?', options: ['$x-3$', '$\\dfrac{x+3}{x}$', '$\\dfrac{x}{x-3}$', '$\\dfrac{x-3}{x}$'], answer: 3, explanation: '$\\dfrac{(x-3)(x+3)}{x(x+3)}=\\dfrac{x-3}{x}$.' },
+        { stem: 'Đường thẳng $y=2x+4$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=4$', '$x=2$', '$x=-2$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 2x=-4 \\Rightarrow x=-2$.' },
+        { stem: 'Tam giác có ba cạnh $8, 15, 17$ là tam giác?', options: ['đều', 'vuông', 'cân', 'nhọn'], answer: 1, explanation: '$8^2+15^2=17^2$ ⇒ tam giác vuông.' },
+        { stem: 'Khai triển $(x+6)^2$?', options: ['$x^2+12x+36$', '$x^2+36$', '$x^2+6x+36$', '$x^2+12x+6$'], answer: 0, explanation: '$(x+6)^2=x^2+12x+36$.' },
+        { stem: 'Diện tích hình vuông cạnh $9$?', options: ['$18$', '$36$', '$27$', '$81$'], answer: 3, explanation: '$S=9^2=81$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-x}{x-1}$ (với $x\\ne1$)?', options: ['$x-1$', '$x$', '$x^2$', '$1$'], answer: 1, explanation: '$\\dfrac{x(x-1)}{x-1}=x$.' },
+        { stem: 'Số trung bình cộng của $10, 20, 30, 40, 50$?', options: ['$25$', '$50$', '$30$', '$150$'], answer: 2, explanation: '$\\dfrac{10+20+30+40+50}{5}=\\dfrac{150}{5}=30$.' },
+      ],
+    },
   ],
 
   KHTN8: [
