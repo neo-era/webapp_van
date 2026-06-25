@@ -4289,6 +4289,21 @@ const EXAMS = {
         { stem: 'Khi bơm xe đạp, ta nén khí làm thể tích giảm thì áp suất khí?', options: ['Giảm', 'Tăng', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: 'Thể tích giảm ⇒ áp suất tăng.' },
       ],
     },
+    {
+      examId: 'khtn8-51', title: 'Kiểm tra 45′ #51 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $6{,}4$ g khí $O_2$ ($M=32$)?', options: ['$0{,}1$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 2, explanation: '$n=6{,}4/32=0{,}2$ mol.' },
+        { stem: 'Áp suất tại độ sâu $2{,}2$ m trong nước ($d=10000$ N/m³)?', options: ['$22000$ Pa', '$2200$ Pa', '$220000$ Pa', '$12000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 2{,}2=22000$ Pa.' },
+        { stem: 'Một vật có khối lượng $95$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$95$ g/cm³', '$9{,}5$ g/cm³', '$0{,}95$ g/cm³', '$950$ g/cm³'], answer: 1, explanation: '$D=m/V=95/10=9{,}5$ g/cm³.' },
+        { stem: 'Dung dịch nào làm phenolphtalein chuyển sang màu hồng?', options: ['Acid', 'Muối trung tính', 'Nước cất', 'Base (kiềm)'], answer: 3, explanation: 'Phenolphtalein hóa hồng trong môi trường base.' },
+        { stem: 'Bộ phận nào của đường hô hấp giúp lọc bụi và làm ấm không khí?', options: ['Mũi (khoang mũi)', 'Phổi', 'Dạ dày', 'Tim'], answer: 0, explanation: 'Khoang mũi có lông và niêm mạc lọc bụi, sưởi ấm khí.' },
+        { stem: 'Hòa tan $14$ g chất tan vào $86$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$86\\%$', '$14\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=14/100\\times 100\\%=14\\%$.' },
+        { stem: 'Người trọng lượng $500$ N đi lên cầu thang cao $3$ m. Công tối thiểu thực hiện?', options: ['$500$ J', '$1500$ J', '$167$ J', '$5000$ J'], answer: 1, explanation: '$A=P\\cdot h=500\\times 3=1500$ J.' },
+        { stem: 'Khối lượng của $0{,}2$ mol KOH ($M=56$)?', options: ['$56$ g', '$28$ g', '$5{,}6$ g', '$11{,}2$ g'], answer: 3, explanation: '$m=0{,}2\\times 56=11{,}2$ g.' },
+        { stem: 'Thành phần nào của máu đóng vai trò chính trong quá trình đông máu?', options: ['Hồng cầu', 'Bạch cầu', 'Tiểu cầu', 'Huyết tương'], answer: 2, explanation: 'Tiểu cầu giúp hình thành cục máu đông.' },
+        { stem: 'Vì sao nồi, chảo nấu ăn thường được làm bằng kim loại?', options: ['Vì rẻ tiền', 'Vì kim loại dẫn nhiệt tốt', 'Vì nhẹ', 'Vì đẹp'], answer: 1, explanation: 'Kim loại dẫn nhiệt tốt nên truyền nhiệt nhanh cho thức ăn.' },
+      ],
+    },
   ],
 
   ANH8: [
