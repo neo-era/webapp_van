@@ -4079,6 +4079,21 @@ const EXAMS = {
         { stem: 'Đặt thìa kim loại vào cốc nước nóng, cán thìa nóng lên là hình thức truyền nhiệt nào?', options: ['Bức xạ nhiệt', 'Dẫn nhiệt', 'Đối lưu', 'Bay hơi'], answer: 1, explanation: 'Kim loại dẫn nhiệt tốt, nhiệt truyền dọc theo thìa.' },
       ],
     },
+    {
+      examId: 'khtn8-44', title: 'Kiểm tra 45′ #44 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $8{,}5$ g $AgNO_3$ ($M=170$)?', options: ['$0{,}1$', '$0{,}5$', '$0{,}05$', '$1$'], answer: 2, explanation: '$n=8{,}5/170=0{,}05$ mol.' },
+        { stem: 'Áp suất tại độ sâu $9$ m trong nước ($d=10000$ N/m³)?', options: ['$90000$ Pa', '$9000$ Pa', '$900000$ Pa', '$19000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 9=90000$ Pa.' },
+        { stem: 'Một vật có khối lượng $64$ g và thể tích $8$ cm³. Khối lượng riêng?', options: ['$64$ g/cm³', '$8$ g/cm³', '$0{,}8$ g/cm³', '$80$ g/cm³'], answer: 1, explanation: '$D=m/V=64/8=8$ g/cm³.' },
+        { stem: 'Phản ứng giữa HCl và KOH tạo thành sản phẩm nào?', options: ['$KOH$', '$HCl$', '$K_2O$', '$KCl$ và $H_2O$'], answer: 3, explanation: '$HCl+KOH\\to KCl+H_2O$ (trung hòa).' },
+        { stem: 'Hệ cơ quan nào lọc và đào thải chất cặn bã qua nước tiểu?', options: ['Hệ bài tiết', 'Hệ tuần hoàn', 'Hệ hô hấp', 'Hệ vận động'], answer: 0, explanation: 'Hệ bài tiết (thận) đào thải chất thải qua nước tiểu.' },
+        { stem: 'Hòa tan $30$ g chất tan vào $70$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$70\\%$', '$30\\%$', '$43\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=30/100\\times 100\\%=30\\%$.' },
+        { stem: 'Khi một vật rơi xuống, dạng năng lượng nào của vật tăng dần?', options: ['Thế năng', 'Động năng', 'Hóa năng', 'Quang năng'], answer: 1, explanation: 'Vật rơi nhanh dần ⇒ động năng tăng.' },
+        { stem: 'Khối lượng của $0{,}4$ mol KCl ($M=74{,}5$)?', options: ['$74{,}5$ g', '$14{,}9$ g', '$7{,}45$ g', '$29{,}8$ g'], answer: 3, explanation: '$m=0{,}4\\times 74{,}5=29{,}8$ g.' },
+        { stem: 'Quá trình đưa khí $CO_2$ và hơi nước ra khỏi cơ thể gọi là?', options: ['Hít vào', 'Tiêu hóa', 'Thở ra', 'Bài tiết nước tiểu'], answer: 2, explanation: 'Thở ra đẩy khí $CO_2$ và hơi nước ra ngoài.' },
+        { stem: 'Để giảm ma sát ở ổ trục bánh xe, người ta thường?', options: ['Làm nhám bề mặt', 'Tra dầu mỡ bôi trơn', 'Tăng áp lực', 'Làm khô bề mặt'], answer: 1, explanation: 'Dầu mỡ bôi trơn làm giảm ma sát.' },
+      ],
+    },
   ],
 
   ANH8: [
