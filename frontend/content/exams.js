@@ -3371,6 +3371,21 @@ const EXAMS = {
         { stem: 'Mốt của dãy số $7, 7, 7, 7, 12$?', options: ['$12$', '$4$', '$7$', '$5$'], answer: 2, explanation: 'Giá trị $7$ xuất hiện nhiều nhất ⇒ mốt $=7$.' },
       ],
     },
+    {
+      examId: 'toan8-41', title: 'Kiểm tra 45′ #41 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(9x-1)(9x+1)$?', options: ['$81x^2+1$', '$9x^2-1$', '$81x^2-1$', '$81x^2-18x-1$'], answer: 2, explanation: 'Hiệu hai bình phương: $81x^2-1$.' },
+        { stem: 'Phân tích $x^2+14x+49$ thành nhân tử?', options: ['$(x+7)^2$', '$(x-7)^2$', '$(x+7)(x-7)$', '$(x+49)(x+1)$'], answer: 0, explanation: '$x^2+14x+49=(x+7)^2$.' },
+        { stem: 'Nghiệm của phương trình $12-5x=2$?', options: ['$x=3$', '$x=2$', '$x=10$', '$x=-2$'], answer: 1, explanation: '$-5x=-10 \\Leftrightarrow x=2$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+9x+20}{x+4}$ (với $x\\ne-4$)?', options: ['$x+4$', '$x$', '$x^2+5$', '$x+5$'], answer: 3, explanation: '$\\dfrac{(x+4)(x+5)}{x+4}=x+5$.' },
+        { stem: 'Đường thẳng $y=4x-8$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=8$', '$x=-2$', '$x=2$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 4x=8 \\Rightarrow x=2$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $21$ và $28$. Cạnh huyền?', options: ['$49$', '$35$', '$31$', '$33$'], answer: 1, explanation: '$\\sqrt{21^2+28^2}=\\sqrt{1225}=35$.' },
+        { stem: 'Khai triển $(3x+4)^2$?', options: ['$9x^2+24x+16$', '$9x^2+16$', '$9x^2+12x+16$', '$3x^2+24x+16$'], answer: 0, explanation: '$(3x+4)^2=9x^2+24x+16$.' },
+        { stem: 'Diện tích hình bình hành có đáy $13$ và chiều cao $4$?', options: ['$17$', '$26$', '$34$', '$52$'], answer: 3, explanation: '$S=a\\cdot h=13\\cdot4=52$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-7x+10}{x-2}$ (với $x\\ne2$)?', options: ['$x+5$', '$x-5$', '$x^2-5$', '$5$'], answer: 1, explanation: '$\\dfrac{(x-2)(x-5)}{x-2}=x-5$.' },
+        { stem: 'Trung vị của dãy số $2, 4, 6, 8, 10, 12, 14$?', options: ['$6$', '$10$', '$8$', '$56$'], answer: 2, explanation: 'Số ở giữa (vị trí thứ 4) là $8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
