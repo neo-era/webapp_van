@@ -3656,6 +3656,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $4, 6, 8, 10, 12$?', options: ['$6$', '$8$', '$10$', '$7$'], answer: 1, explanation: '$\\dfrac{4+6+8+10+12}{5}=\\dfrac{40}{5}=8$.' },
       ],
     },
+    {
+      examId: 'toan8-60', title: 'Kiểm tra 45′ #60 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-5)^2$?', options: ['$x^2+25$', '$x^2-25$', '$x^2-10x+25$', '$x^2+10x+25$'], answer: 2, explanation: '$(x-5)^2=x^2-2\\cdot5x+25=x^2-10x+25$.' },
+        { stem: 'Phân tích $x^2+6x+9$ thành nhân tử?', options: ['$(x+3)^2$', '$(x-3)^2$', '$(x+3)(x-3)$', '$(x+9)(x+1)$'], answer: 0, explanation: '$x^2+6x+9=(x+3)^2$.' },
+        { stem: 'Giải phương trình $4(x-2)=2x+6$.', options: ['$x=6$', '$x=7$', '$x=8$', '$x=-7$'], answer: 1, explanation: '$4x-8=2x+6\\Rightarrow 2x=14\\Rightarrow x=7$.' },
+        { stem: 'Rút gọn $\\dfrac{3x^2-3}{x-1}$ (với $x\\ne1$)?', options: ['$3x-3$', '$x+1$', '$3$', '$3x+3$'], answer: 3, explanation: '$\\dfrac{3(x-1)(x+1)}{x-1}=3(x+1)=3x+3$.' },
+        { stem: 'Hệ số góc của đường thẳng $y=-3x+6$ là?', options: ['$3$', '$6$', '$-3$', '$-6$'], answer: 2, explanation: 'Hàm số $y=ax+b$ có hệ số góc $a=-3$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $25$, một cạnh góc vuông $7$. Cạnh còn lại?', options: ['$24$', '$18$', '$576$', '$26$'], answer: 0, explanation: '$\\sqrt{25^2-7^2}=\\sqrt{576}=24$.' },
+        { stem: 'Phân tích $x^2-x-12$ thành nhân tử?', options: ['$(x+4)(x-3)$', '$(x-4)(x+3)$', '$(x-4)(x-3)$', '$(x-2)(x+6)$'], answer: 1, explanation: 'Hai số tích $-12$, tổng $-1$: $-4,3\\Rightarrow(x-4)(x+3)$.' },
+        { stem: 'Thể tích hình hộp chữ nhật kích thước $2\\times3\\times5$ (cm)?', options: ['$10$ cm³', '$60$ cm³', '$15$ cm³', '$30$ cm³'], answer: 3, explanation: '$V=2\\cdot3\\cdot5=30$ cm³.' },
+        { stem: 'Rút gọn biểu thức $(a+b)^2-(a-b)^2$?', options: ['$2ab$', '$a^2+b^2$', '$4ab$', '$2a^2+2b^2$'], answer: 2, explanation: '$(a+b)^2-(a-b)^2=4ab$.' },
+        { stem: 'Tung một con xúc xắc cân đối. Xác suất xuất hiện mặt có số chấm chẵn?', options: ['$\\dfrac{1}{3}$', '$\\dfrac{1}{2}$', '$\\dfrac{1}{6}$', '$\\dfrac{2}{3}$'], answer: 1, explanation: 'Mặt chẵn: $2,4,6$ ⇒ $\\dfrac{3}{6}=\\dfrac{1}{2}$.' },
+      ],
+    },
   ],
 
   KHTN8: [
