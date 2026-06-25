@@ -3341,6 +3341,21 @@ const EXAMS = {
         { stem: 'Trung vị của dãy số $5, 5, 5, 8, 12$?', options: ['$8$', '$12$', '$5$', '$25$'], answer: 2, explanation: 'Số ở giữa dãy đã sắp xếp là $5$.' },
       ],
     },
+    {
+      examId: 'toan8-39', title: 'Kiểm tra 45′ #39 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(7x-2)^2$?', options: ['$49x^2+4$', '$49x^2-14x+4$', '$49x^2-28x+4$', '$7x^2-28x+4$'], answer: 2, explanation: '$(7x-2)^2=49x^2-28x+4$.' },
+        { stem: 'Phân tích $x^2+13x+40$ thành nhân tử?', options: ['$(x+5)(x+8)$', '$(x-5)(x-8)$', '$(x+4)(x+10)$', '$(x+5)(x-8)$'], answer: 0, explanation: '$x^2+13x+40=(x+5)(x+8)$.' },
+        { stem: 'Nghiệm của phương trình $9x+5=6x+20$?', options: ['$x=3$', '$x=5$', '$x=15$', '$x=-5$'], answer: 1, explanation: '$3x=15 \\Leftrightarrow x=5$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-64}{x-8}$ (với $x\\ne8$)?', options: ['$x-8$', '$x$', '$x^2+8$', '$x+8$'], answer: 3, explanation: '$\\dfrac{(x-8)(x+8)}{x-8}=x+8$.' },
+        { stem: 'Đường thẳng $y=x-4$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=-4$', '$x=8$', '$x=4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow x=4$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $17$, một cạnh góc vuông $8$. Cạnh góc vuông còn lại?', options: ['$25$', '$15$', '$\\sqrt{353}$', '$18$'], answer: 1, explanation: '$\\sqrt{17^2-8^2}=\\sqrt{225}=15$.' },
+        { stem: 'Khai triển $(1-4x)^2$?', options: ['$1-8x+16x^2$', '$1+8x+16x^2$', '$1-16x^2$', '$1-4x+16x^2$'], answer: 0, explanation: '$(1-4x)^2=1-8x+16x^2$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có đáy $6\\times7$ và chiều cao $2$?', options: ['$42$', '$15$', '$76$', '$84$'], answer: 3, explanation: '$V=6\\cdot7\\cdot2=84$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-x-12}{x-4}$ (với $x\\ne4$)?', options: ['$x-3$', '$x+3$', '$x^2+3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x-4)(x+3)}{x-4}=x+3$.' },
+        { stem: 'Số trung bình cộng của $10, 10, 10, 20, 30, 40$?', options: ['$10$', '$40$', '$20$', '$120$'], answer: 2, explanation: '$\\dfrac{10+10+10+20+30+40}{6}=\\dfrac{120}{6}=20$.' },
+      ],
+    },
   ],
 
   KHTN8: [
