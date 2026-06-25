@@ -3989,6 +3989,21 @@ const EXAMS = {
         { stem: 'Áp suất tác dụng lên chất lỏng trong bình kín được truyền đi như thế nào?', options: ['Chỉ truyền xuống đáy', 'Truyền nguyên vẹn theo mọi hướng', 'Không truyền đi', 'Chỉ truyền lên trên'], answer: 1, explanation: 'Định luật Pascal: áp suất truyền nguyên vẹn theo mọi hướng.' },
       ],
     },
+    {
+      examId: 'khtn8-41', title: 'Kiểm tra 45′ #41 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $7{,}4$ g $Ca(OH)_2$ ($M=74$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=7{,}4/74=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $2{,}5$ m trong nước ($d=10000$ N/m³)?', options: ['$25000$ Pa', '$2500$ Pa', '$250000$ Pa', '$5000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 2{,}5=25000$ Pa.' },
+        { stem: 'Một vật có khối lượng $48$ g và thể tích $6$ cm³. Khối lượng riêng?', options: ['$48$ g/cm³', '$8$ g/cm³', '$0{,}8$ g/cm³', '$80$ g/cm³'], answer: 1, explanation: '$D=m/V=48/6=8$ g/cm³.' },
+        { stem: '$HNO_3$ thuộc loại hợp chất nào?', options: ['Base', 'Muối', 'Oxide', 'Acid'], answer: 3, explanation: '$HNO_3$ là acid (axit nitric).' },
+        { stem: 'Bộ phận nào của ống tiêu hóa nối khoang miệng (họng) với dạ dày?', options: ['Thực quản', 'Ruột non', 'Gan', 'Tụy'], answer: 0, explanation: 'Thực quản dẫn thức ăn từ họng xuống dạ dày.' },
+        { stem: 'Hòa tan $7{,}5$ g chất tan vào $42{,}5$ g nước. Nồng độ phần trăm dung dịch?', options: ['$7{,}5\\%$', '$42{,}5\\%$', '$15\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=50$ g ⇒ $C\\%=7{,}5/50\\times 100\\%=15\\%$.' },
+        { stem: 'Vật trọng lượng $20$ N rơi từ độ cao $3$ m. Công của trọng lực?', options: ['$20$ J', '$60$ J', '$6{,}7$ J', '$600$ J'], answer: 1, explanation: '$A=P\\cdot h=20\\times 3=60$ J.' },
+        { stem: 'Khối lượng của $0{,}5$ mol Cu ($M=64$)?', options: ['$64$ g', '$16$ g', '$128$ g', '$32$ g'], answer: 3, explanation: '$m=0{,}5\\times 64=32$ g.' },
+        { stem: 'Khí nào chiếm tỉ lệ lớn nhất (khoảng $78\\%$) trong không khí?', options: ['$O_2$', '$CO_2$', '$N_2$', '$H_2$'], answer: 2, explanation: 'Nitơ ($N_2$) chiếm khoảng $78\\%$ thể tích không khí.' },
+        { stem: 'Khi ngâm chân vào chậu nước nóng, nước nguội dần là do?', options: ['Nước bay hơi hết', 'Nhiệt truyền từ nước sang chân', 'Nước đông đặc', 'Hơi nước ngưng tụ'], answer: 1, explanation: 'Nhiệt truyền từ vật nóng (nước) sang vật lạnh hơn (chân).' },
+      ],
+    },
   ],
 
   ANH8: [
