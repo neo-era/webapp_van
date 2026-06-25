@@ -3446,6 +3446,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $1, 1, 1, 4, 7, 10$?', options: ['$1$', '$10$', '$4$', '$24$'], answer: 2, explanation: '$\\dfrac{1+1+1+4+7+10}{6}=\\dfrac{24}{6}=4$.' },
       ],
     },
+    {
+      examId: 'toan8-46', title: 'Kiểm tra 45′ #46 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+16)(x-16)$?', options: ['$x^2+256$', '$x^2-32x+256$', '$x^2-256$', '$x^2-16x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-256$.' },
+        { stem: 'Phân tích $x^2-17x+72$ thành nhân tử?', options: ['$(x-8)(x-9)$', '$(x+8)(x+9)$', '$(x-6)(x-12)$', '$(x-8)(x+9)$'], answer: 0, explanation: '$x^2-17x+72=(x-8)(x-9)$.' },
+        { stem: 'Nghiệm của phương trình $6x-7=4x+5$?', options: ['$x=2$', '$x=6$', '$x=12$', '$x=-6$'], answer: 1, explanation: '$2x=12 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+16x+64}{x+8}$ (với $x\\ne-8$)?', options: ['$x-8$', '$x$', '$x^2+8$', '$x+8$'], answer: 3, explanation: '$\\dfrac{(x+8)^2}{x+8}=x+8$.' },
+        { stem: 'Đường thẳng $y=9x-27$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=27$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 9x=27 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $11$ và $60$. Cạnh huyền?', options: ['$71$', '$61$', '$60$', '$65$'], answer: 1, explanation: '$\\sqrt{11^2+60^2}=\\sqrt{3721}=61$.' },
+        { stem: 'Khai triển $(8x-1)^2$?', options: ['$64x^2-16x+1$', '$64x^2+16x+1$', '$64x^2-1$', '$8x^2-16x+1$'], answer: 0, explanation: '$(8x-1)^2=64x^2-16x+1$.' },
+        { stem: 'Diện tích tam giác có đáy $16$ và chiều cao $5$?', options: ['$80$', '$21$', '$32$', '$40$'], answer: 3, explanation: '$S=\\dfrac{1}{2}\\cdot16\\cdot5=40$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+4x-21}{x+7}$ (với $x\\ne-7$)?', options: ['$x+3$', '$x-3$', '$x^2-3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x+7)(x-3)}{x+7}=x-3$.' },
+        { stem: 'Số trung bình cộng của $5, 10, 15, 20, 25$?', options: ['$10$', '$25$', '$15$', '$75$'], answer: 2, explanation: '$\\dfrac{5+10+15+20+25}{5}=\\dfrac{75}{5}=15$.' },
+      ],
+    },
   ],
 
   KHTN8: [
