@@ -2987,6 +2987,21 @@ const EXAMS = {
         { stem: "Choose the antonym of 'easy'.", options: ['difficult', 'simple', 'easy', 'light'], answer: 0, explanation: 'easy ↔ difficult (khó).' },
       ],
     },
+    {
+      examId: 'anh8-5', title: 'Kiểm tra 45′ #5 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'There ____ some milk in the fridge.', options: ['is', 'are', 'am', 'were'], answer: 0, explanation: 'milk không đếm được ⇒ is.' },
+        { stem: 'How ____ books do you have?', options: ['much', 'some', 'any', 'many'], answer: 3, explanation: 'books đếm được số nhiều ⇒ many.' },
+        { stem: 'She ____ playing the piano now.', options: ['are', 'is', 'am', 'be'], answer: 1, explanation: 'Hiện tại tiếp diễn, chủ ngữ số ít ⇒ is.' },
+        { stem: 'He is ____ than his brother.', options: ['stronger', 'strong', 'strongest', 'more strong'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: stronger.' },
+        { stem: 'We ____ visit our grandparents every weekend.', options: ['usual', 'usualy', 'usuality', 'usually'], answer: 3, explanation: 'Trạng từ tần suất: usually.' },
+        { stem: "If you don't hurry, you ____ late.", options: ['are', 'will be', 'were', 'would be'], answer: 1, explanation: 'Câu điều kiện loại 1: will be.' },
+        { stem: "Choose the synonym of 'difficult'.", options: ['easy', 'hard', 'simple', 'light'], answer: 1, explanation: 'difficult ≈ hard (khó).' },
+        { stem: 'This house ____ in 1990.', options: ['built', 'builds', 'building', 'was built'], answer: 3, explanation: 'Câu bị động quá khứ: was built.' },
+        { stem: 'I ____ to music every day.', options: ['listen', 'listens', 'listening', 'listened'], answer: 0, explanation: 'Hiện tại đơn, chủ ngữ "I" ⇒ listen.' },
+        { stem: "Choose the antonym of 'tall'.", options: ['high', 'big', 'short', 'long'], answer: 2, explanation: 'tall ↔ short (thấp).' },
+      ],
+    },
   ],
 };
 
