@@ -4067,6 +4067,21 @@ const EXAMS = {
         { stem: 'She ____ never tried Thai food before.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ has.' },
       ],
     },
+    {
+      examId: 'anh8-29', title: 'Kiểm tra 45′ #29 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ to the cinema last Sunday.', options: ['go', 'goes', 'went', 'gone'], answer: 2, explanation: 'last Sunday ⇒ quá khứ đơn: went.' },
+        { stem: 'My new phone is ____ than my old one.', options: ['better', 'good', 'best', 'gooder'], answer: 0, explanation: 'So sánh hơn bất quy tắc: good → better.' },
+        { stem: 'We ____ not be late for the meeting.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must not = không được phép (bắt buộc).' },
+        { stem: "If you don't sleep enough, you ____ tired.", options: ['feel', 'felt', 'would feel', 'will feel'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'The streets ____ at night.', options: ['light', 'lights', 'are lit', 'is lit'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are lit.' },
+        { stem: 'The student ____ won the prize is my friend.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'She has played tennis ____ she was young.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mệnh đề mốc thời gian (she was young).' },
+        { stem: "Choose the synonym of 'great'.", options: ['terrible', 'awful', 'poor', 'wonderful'], answer: 3, explanation: 'great ≈ wonderful (tuyệt vời).' },
+        { stem: "Choose the antonym of 'young'.", options: ['youthful', 'old', 'fresh', 'new'], answer: 1, explanation: 'young ↔ old (già).' },
+        { stem: 'I have ____ finished my lunch.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
