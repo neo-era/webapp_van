@@ -4382,6 +4382,21 @@ const EXAMS = {
         { stem: '____ they visited the museum before?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "they" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-36', title: 'Kiểm tra 45′ #36 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'While she ____, the doorbell rang.', options: ['cooked', 'cooks', 'was cooking', 'cook'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ was cooking.' },
+        { stem: 'My grade this term is ____ than last term.', options: ['better', 'good', 'best', 'gooder'], answer: 0, explanation: 'So sánh hơn bất quy tắc: good → better.' },
+        { stem: 'Visitors ____ wear ID cards in the factory.', options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = bắt buộc.' },
+        { stem: 'If you call me, I ____ the phone.', options: ['answer', 'answered', 'would answer', 'will answer'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'These products ____ in China.', options: ['make', 'makes', 'are made', 'is made'], answer: 2, explanation: 'Bị động hiện tại, chủ ngữ số nhiều ⇒ are made.' },
+        { stem: 'The hotel ____ we stayed last summer was very nice.', options: ['where', 'which', 'who', 'whose'], answer: 0, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'We have known him ____ 2018.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (2018).' },
+        { stem: "Choose the synonym of 'old'.", options: ['new', 'modern', 'recent', 'ancient'], answer: 3, explanation: 'old ≈ ancient (cổ xưa).' },
+        { stem: "Choose the antonym of 'true'.", options: ['correct', 'false', 'right', 'real'], answer: 1, explanation: 'true ↔ false (sai).' },
+        { stem: 'He has ____ written three books.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
+      ],
+    },
   ],
 };
 
