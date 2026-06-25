@@ -4652,6 +4652,21 @@ const EXAMS = {
         { stem: 'She has ____ seen snow in her life.', options: ['ever', 'yet', 'never', 'since'], answer: 2, explanation: 'never = chưa bao giờ (hiện tại hoàn thành).' },
       ],
     },
+    {
+      examId: 'anh8-42', title: 'Kiểm tra 45′ #42 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'She ____ the piano when the guests arrived.', options: ['played', 'plays', 'was playing', 'play'], answer: 2, explanation: 'Hành động đang diễn ra trong quá khứ ⇒ was playing.' },
+        { stem: "Today's weather is ____ than yesterday's.", options: ['worse', 'bad', 'worst', 'more bad'], answer: 0, explanation: 'So sánh hơn bất quy tắc: bad → worse.' },
+        { stem: "We ____ leave now or we'll miss the train.", options: ['can', 'must', 'may', 'would'], answer: 1, explanation: 'must = bắt buộc (sự cần thiết).' },
+        { stem: 'If you join us, we ____ very happy.', options: ['are', 'were', 'would be', 'will be'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'The classroom ____ after school every day.', options: ['clean', 'cleans', 'is cleaned', 'are cleaned'], answer: 2, explanation: 'Bị động hiện tại đơn: is cleaned.' },
+        { stem: 'The girl ____ I met yesterday is my cousin.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who (whom) chỉ người làm tân ngữ.' },
+        { stem: 'They have studied English ____ four years.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (four years).' },
+        { stem: "Choose the synonym of 'wrong'.", options: ['correct', 'right', 'true', 'incorrect'], answer: 3, explanation: 'wrong ≈ incorrect (sai).' },
+        { stem: "Choose the antonym of 'left'.", options: ['west', 'right', 'up', 'north'], answer: 1, explanation: 'left ↔ right (phải).' },
+        { stem: 'He has ____ done his homework, so he can play now.', options: ['yet', 'ever', 'already', 'since'], answer: 2, explanation: 'already dùng trong câu khẳng định hiện tại hoàn thành.' },
+      ],
+    },
   ],
 };
 
