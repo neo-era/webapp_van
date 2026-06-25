@@ -5372,6 +5372,21 @@ const EXAMS = {
         { stem: '____ you visited Ha Long Bay?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
       ],
     },
+    {
+      examId: 'anh8-58', title: 'Kiểm tra 45′ #58 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'This book is ____ than that one.', options: ['interesting', 'interestinger', 'more interesting', 'most interesting'], answer: 2, explanation: 'Tính từ dài ⇒ so sánh hơn dùng "more + adj".' },
+        { stem: 'Look! The children ____ in the garden.', options: ['are playing', 'is playing', 'play', 'played'], answer: 0, explanation: '"Look!" ⇒ hiện tại tiếp diễn; chủ ngữ số nhiều ⇒ are playing.' },
+        { stem: "You ____ smoke here. It's forbidden.", options: ['must', 'should', 'can', "mustn't"], answer: 3, explanation: "Điều bị cấm ⇒ mustn't (không được phép)." },
+        { stem: 'If it rains tomorrow, we ____ at home.', options: ['stay', 'will stay', 'stayed', 'would stay'], answer: 1, explanation: 'Câu điều kiện loại 1: If + hiện tại, will + V.' },
+        { stem: 'She ____ to Da Nang last summer.', options: ['go', 'goes', 'went', 'gone'], answer: 2, explanation: '"last summer" ⇒ quá khứ đơn ⇒ went.' },
+        { stem: 'Everest is the ____ mountain in the world.', options: ['highest', 'higher', 'high', 'more high'], answer: 0, explanation: 'So sánh nhất ⇒ the highest.' },
+        { stem: 'The man ____ lives next door is a doctor.', options: ['which', 'who', 'whose', 'where'], answer: 1, explanation: 'Đại từ quan hệ chỉ người làm chủ ngữ ⇒ who.' },
+        { stem: 'This house ____ in 1990.', options: ['builds', 'is built', 'built', 'was built'], answer: 3, explanation: 'Bị động quá khứ ⇒ was built.' },
+        { stem: 'We should ____ paper to protect the environment.', options: ['recycle', 'waste', 'throw', 'burn'], answer: 0, explanation: 'Bảo vệ môi trường ⇒ recycle (tái chế).' },
+        { stem: "Choose the synonym of 'happy'.", options: ['sad', 'angry', 'glad', 'tired'], answer: 2, explanation: 'happy = glad (vui).' },
+      ],
+    },
   ],
 };
 
