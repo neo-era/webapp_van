@@ -1352,6 +1352,21 @@ const EXAMS = {
         { stem: 'Số mol NaOH cần để trung hòa hết $0{,}15$ mol HCl?', options: ['$0{,}3$', '$0{,}075$', '$0{,}15$', '$1$'], answer: 2, explanation: '$NaOH+HCl\\to NaCl+H_2O$; tỉ lệ 1:1 ⇒ $0{,}15$ mol.' },
       ],
     },
+    {
+      examId: 'hoa-kt45-32', title: 'Kiểm tra 45′ #32 — Hóa 12 (tính toán)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $20$ g $CaCO_3$ ($M=100$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=20/100=0{,}2$ mol.' },
+        { stem: 'Khối lượng của $0{,}3$ mol NaCl ($M=58{,}5$)?', options: ['$17{,}55$ g', '$11{,}7$ g', '$23{,}4$ g', '$29{,}25$ g'], answer: 0, explanation: '$m=0{,}3\\cdot58{,}5=17{,}55$ g.' },
+        { stem: 'Thể tích $CO_2$ (đktc) khi đốt cháy hết $0{,}4$ mol C?', options: ['$4{,}48$ L', '$6{,}72$ L', '$8{,}96$ L', '$11{,}2$ L'], answer: 2, explanation: '$0{,}4$ mol $CO_2 \\Rightarrow V=8{,}96$ L.' },
+        { stem: 'Số mol nguyên tử H trong $0{,}2$ mol $CH_4$?', options: ['$0{,}2$', '$0{,}4$', '$0{,}6$', '$0{,}8$'], answer: 3, explanation: 'Mỗi phân tử có 4 H ⇒ $0{,}2\\cdot4=0{,}8$ mol.' },
+        { stem: 'Hòa tan $14$ g chất tan trong $86$ g nước. Nồng độ phần trăm?', options: ['$14\\%$', '$7\\%$', '$16\\%$', '$28\\%$'], answer: 0, explanation: '$C\\%=14/100\\cdot100\\%=14\\%$.' },
+        { stem: 'Khối lượng mol của $Na_2O$ (Na=23, O=16)?', options: ['$39$', '$62$', '$78$', '$54$'], answer: 1, explanation: '$2\\cdot23+16=62$ g/mol.' },
+        { stem: 'Kim loại nào phổ biến nhất trong vỏ Trái Đất?', options: ['sắt', 'đồng', 'nhôm', 'vàng'], answer: 2, explanation: 'Nhôm (Al) là kim loại phổ biến nhất trong vỏ Trái Đất.' },
+        { stem: 'Phần trăm khối lượng O trong $CO_2$ ($M=44$)?', options: ['$27{,}3\\%$', '$50\\%$', '$32\\%$', '$72{,}7\\%$'], answer: 3, explanation: '$32/44\\cdot100\\%\\approx72{,}7\\%$.' },
+        { stem: 'Chất nào sau đây là một hợp chất?', options: ['$O_2$', '$H_2O$', '$N_2$', 'Fe'], answer: 1, explanation: '$H_2O$ gồm hai nguyên tố ⇒ hợp chất.' },
+        { stem: 'Số mol HCl cần để tác dụng hết với $0{,}2$ mol Zn?', options: ['$0{,}2$', '$0{,}1$', '$0{,}4$', '$0{,}8$'], answer: 2, explanation: '$Zn+2HCl\\to ZnCl_2+H_2$; cần $0{,}4$ mol HCl.' },
+      ],
+    },
   ],
 
   ANH: [
