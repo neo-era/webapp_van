@@ -3419,6 +3419,21 @@ const EXAMS = {
         { stem: 'Áp lực là gì?', options: ['Lực kéo', 'Trọng lực', 'Lực ép vuông góc lên mặt bị ép', 'Lực ma sát'], answer: 2, explanation: 'Áp lực là lực ép có phương vuông góc với mặt bị ép.' },
       ],
     },
+    {
+      examId: 'khtn8-22', title: 'Kiểm tra 45′ #22 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $10$ g $CaCO_3$ ($M=100$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=10/100=0{,}1$ mol.' },
+        { stem: 'Lực $500$ N ép vuông góc lên diện tích $2{,}5$ m². Áp suất là?', options: ['$200$ Pa', '$1250$ Pa', '$125$ Pa', '$20$ Pa'], answer: 0, explanation: '$p=F/S=500/2{,}5=200$ Pa.' },
+        { stem: 'Một vật có khối lượng $158$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$79$ g/cm³', '$7{,}9$ g/cm³', '$0{,}79$ g/cm³', '$3160$ g/cm³'], answer: 1, explanation: '$D=m/V=158/20=7{,}9$ g/cm³.' },
+        { stem: 'Đốt cháy hoàn toàn $12$ g cacbon ($M=12$): $C+O_2\\to CO_2$. Số mol $CO_2$ tạo thành?', options: ['$0{,}5$', '$2$', '$0{,}1$', '$1$'], answer: 3, explanation: '$n_C=1$ mol ⇒ $n_{CO_2}=1$ mol.' },
+        { stem: 'Quá trình lọc máu tạo nước tiểu đầu diễn ra ở đâu?', options: ['Cầu thận', 'Bóng đái', 'Niệu đạo', 'Gan'], answer: 0, explanation: 'Nước tiểu đầu được tạo ở cầu thận.' },
+        { stem: 'Nồng độ mol của $0{,}1$ mol chất tan trong $0{,}5$ lít dung dịch?', options: ['$0{,}5$ M', '$1$ M', '$0{,}2$ M', '$2$ M'], answer: 2, explanation: '$C_M=0{,}1/0{,}5=0{,}2$ M.' },
+        { stem: 'Lực đẩy Archimedes có phương và chiều như thế nào?', options: ['Thẳng đứng từ trên xuống', 'Thẳng đứng từ dưới lên', 'Nằm ngang', 'Theo mọi hướng'], answer: 1, explanation: 'Lực đẩy hướng thẳng đứng từ dưới lên.' },
+        { stem: 'Phản ứng phân hủy là phản ứng?', options: ['Nhiều chất tạo thành một chất', 'Hai chất trao đổi thành phần', 'Kim loại đẩy hiđro', 'Một chất tạo thành nhiều chất'], answer: 3, explanation: 'VD: $CaCO_3\\to CaO+CO_2$.' },
+        { stem: 'Máu gồm những thành phần chính nào?', options: ['Huyết tương và các tế bào máu', 'Chỉ có hồng cầu', 'Chỉ có nước', 'Chỉ có bạch cầu'], answer: 0, explanation: 'Máu gồm huyết tương và các tế bào máu (hồng cầu, bạch cầu, tiểu cầu).' },
+        { stem: 'Khi diện tích bị ép không đổi, tăng áp lực thì áp suất sẽ?', options: ['Giảm', 'Không đổi', 'Tăng', 'Bằng $0$'], answer: 2, explanation: '$p=F/S$: $F$ tăng, $S$ không đổi ⇒ $p$ tăng.' },
+      ],
+    },
   ],
 
   ANH8: [
