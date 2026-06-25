@@ -4349,6 +4349,21 @@ const EXAMS = {
         { stem: 'Vì sao về mùa đông chim thường xù lông?', options: ['Để trông đẹp', 'Để giữ lớp không khí cách nhiệt, giảm mất nhiệt', 'Để bay tốt hơn', 'Không có lý do'], answer: 1, explanation: 'Lớp không khí giữa lông dẫn nhiệt kém, giúp giữ ấm.' },
       ],
     },
+    {
+      examId: 'khtn8-53', title: 'Kiểm tra 45′ #53 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $4$ g khí $CH_4$ ($M=16$)?', options: ['$0{,}1$', '$0{,}5$', '$0{,}25$', '$1$'], answer: 2, explanation: '$n=4/16=0{,}25$ mol.' },
+        { stem: 'Áp suất tại độ sâu $10$ m trong dầu ($d=8000$ N/m³)?', options: ['$80000$ Pa', '$8000$ Pa', '$800000$ Pa', '$18000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 10=80000$ Pa.' },
+        { stem: 'Một vật có khối lượng $63$ g và thể tích $5$ cm³. Khối lượng riêng?', options: ['$126$ g/cm³', '$12{,}6$ g/cm³', '$1{,}26$ g/cm³', '$1260$ g/cm³'], answer: 1, explanation: '$D=m/V=63/5=12{,}6$ g/cm³.' },
+        { stem: 'Cho nhôm (Al) tác dụng với dung dịch HCl, khí thoát ra là?', options: ['$O_2$', '$Cl_2$', '$CO_2$', '$H_2$'], answer: 3, explanation: '$2Al+6HCl\\to 2AlCl_3+3H_2$.' },
+        { stem: 'Cơ quan nào của cơ thể tổng hợp vitamin D nhờ ánh nắng mặt trời?', options: ['Da', 'Gan', 'Phổi', 'Thận'], answer: 0, explanation: 'Da tổng hợp vitamin D khi tiếp xúc ánh nắng.' },
+        { stem: 'Hòa tan $24$ g chất tan vào $76$ g nước. Nồng độ phần trăm dung dịch?', options: ['$12\\%$', '$76\\%$', '$24\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=24/100\\times 100\\%=24\\%$.' },
+        { stem: 'Lực $1$ N tác dụng vuông góc lên diện tích $1$ m² gây ra áp suất bằng?', options: ['$1$ N', '$1$ Pa', '$1$ J', '$1$ W'], answer: 1, explanation: '$p=F/S=1/1=1$ Pa.' },
+        { stem: 'Khối lượng của $0{,}3$ mol NaOH ($M=40$)?', options: ['$40$ g', '$4$ g', '$120$ g', '$12$ g'], answer: 3, explanation: '$m=0{,}3\\times 40=12$ g.' },
+        { stem: 'Khi cơ thể nóng lên, cơ thể hạ nhiệt chủ yếu bằng cách?', options: ['Run rẩy', 'Co mạch máu', 'Tăng tiết mồ hôi', 'Tăng nhịp tim'], answer: 2, explanation: 'Mồ hôi bay hơi thu nhiệt, giúp hạ nhiệt cơ thể.' },
+        { stem: 'Phích nước (bình giữ nhiệt) giữ nước nóng lâu nhờ?', options: ['Vỏ rất dày', 'Lớp chân không ngăn truyền nhiệt', 'Nước được đun sẵn', 'Màu bạc bên trong'], answer: 1, explanation: 'Lớp chân không giữa hai vỏ ngăn dẫn nhiệt và đối lưu.' },
+      ],
+    },
   ],
 
   ANH8: [
