@@ -3206,6 +3206,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $5, 5, 5, 10, 15$?', options: ['$5$', '$10$', '$8$', '$40$'], answer: 2, explanation: '$\\dfrac{5+5+5+10+15}{5}=\\dfrac{40}{5}=8$.' },
       ],
     },
+    {
+      examId: 'toan8-30', title: 'Kiểm tra 45′ #30 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+10)(x-10)$?', options: ['$x^2+100$', '$x^2-20x+100$', '$x^2-100$', '$x^2-10x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-100$.' },
+        { stem: 'Phân tích $x^2+5x+6$ thành nhân tử?', options: ['$(x+2)(x+3)$', '$(x-2)(x-3)$', '$(x+1)(x+6)$', '$(x+2)(x-3)$'], answer: 0, explanation: '$x^2+5x+6=(x+2)(x+3)$.' },
+        { stem: 'Nghiệm của phương trình $7x-3=4x+9$?', options: ['$x=2$', '$x=4$', '$x=6$', '$x=12$'], answer: 1, explanation: '$3x=12 \\Leftrightarrow x=4$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-4x+4}{x-2}$ (với $x\\ne2$)?', options: ['$x+2$', '$x$', '$x^2-2$', '$x-2$'], answer: 3, explanation: '$\\dfrac{(x-2)^2}{x-2}=x-2$.' },
+        { stem: 'Đường thẳng $y=-3x+9$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=9$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 3x=9 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $9$ và $40$. Cạnh huyền?', options: ['$49$', '$41$', '$39$', '$31$'], answer: 1, explanation: '$\\sqrt{9^2+40^2}=\\sqrt{1681}=41$.' },
+        { stem: 'Khai triển $(5-2x)^2$?', options: ['$25-20x+4x^2$', '$25+20x+4x^2$', '$25-4x^2$', '$25-10x+4x^2$'], answer: 0, explanation: '$(5-2x)^2=25-20x+4x^2$.' },
+        { stem: 'Thể tích hình lập phương cạnh $6$?', options: ['$36$', '$18$', '$72$', '$216$'], answer: 3, explanation: '$V=6^3=216$.' },
+        { stem: 'Rút gọn $\\dfrac{3x^2+6x}{x+2}$ (với $x\\ne-2$)?', options: ['$3x+2$', '$3x$', '$x$', '$3$'], answer: 1, explanation: '$\\dfrac{3x(x+2)}{x+2}=3x$.' },
+        { stem: 'Mốt của dãy số $7, 7, 7, 9, 10$?', options: ['$9$', '$10$', '$7$', '$5$'], answer: 2, explanation: 'Giá trị $7$ xuất hiện nhiều nhất ⇒ mốt $=7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
