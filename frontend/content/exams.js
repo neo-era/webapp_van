@@ -2194,6 +2194,21 @@ const EXAMS = {
         { stem: 'Please ____ any errors in the financial report.', options: ['correct', 'collect', 'connect', 'contact'], answer: 0, explanation: 'correct errors = sửa lỗi.' },
       ],
     },
+    {
+      examId: 'toeic-30', title: 'TOEIC – Grammar & Vocabulary #30', durationMin: 20,
+      questions: [
+        { stem: 'We are committed to ____ our carbon footprint.', options: ['reduce', 'reduced', 'reduces', 'reducing'], answer: 3, explanation: 'be committed to + V-ing.' },
+        { stem: 'The new manager ____ excellent leadership skills.', options: ['demonstrate', 'demonstrates', 'demonstration', 'demonstrated'], answer: 1, explanation: 'Chủ ngữ số ít, hiện tại đơn ⇒ demonstrates.' },
+        { stem: 'Please ____ this form to complete your registration.', options: ['fill in for', 'fill on', 'fill out', 'fill at'], answer: 2, explanation: 'fill out a form = điền vào mẫu.' },
+        { stem: 'Our company has a strong ____ for quality.', options: ['reputational', 'repute', 'reputed', 'reputation'], answer: 3, explanation: 'a strong reputation = danh tiếng tốt (danh từ).' },
+        { stem: 'Your order will be processed ____ 24 hours.', options: ['since', 'among', 'within', 'between'], answer: 2, explanation: 'within + khoảng thời gian.' },
+        { stem: 'She was ____ for her outstanding performance.', options: ['reward', 'rewarding', 'rewarded', 'rewards'], answer: 2, explanation: 'be + V3 (bị động): was rewarded.' },
+        { stem: 'We aim to ____ our market share next year.', options: ['decrease', 'increase', 'reduce', 'lower'], answer: 1, explanation: 'increase market share = tăng thị phần.' },
+        { stem: 'All our products are ____ priced.', options: ['compete', 'competitive', 'competition', 'competitively'], answer: 3, explanation: 'Cần trạng từ bổ nghĩa "priced" ⇒ competitively.' },
+        { stem: 'All staff must ____ the company code of conduct.', options: ['respect', 'expect', 'inspect', 'suspect'], answer: 0, explanation: 'respect the rules = tôn trọng quy tắc.' },
+        { stem: 'Thank you for your ____ during the transition.', options: ['understanding', 'understand', 'understood', 'understands'], answer: 0, explanation: 'your + danh từ ⇒ understanding.' },
+      ],
+    },
   ],
 
   IELTS: [
