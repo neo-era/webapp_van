@@ -3566,6 +3566,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $20, 20, 20, 20, 40$?', options: ['$20$', '$40$', '$24$', '$120$'], answer: 2, explanation: '$\\dfrac{20\\cdot4+40}{5}=\\dfrac{120}{5}=24$.' },
       ],
     },
+    {
+      examId: 'toan8-54', title: 'Kiểm tra 45′ #54 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(6x+7)(6x-7)$?', options: ['$36x^2+49$', '$6x^2-49$', '$36x^2-49$', '$36x^2-84x-49$'], answer: 2, explanation: 'Hiệu hai bình phương: $36x^2-49$.' },
+        { stem: 'Phân tích $x^2+10x+24$ thành nhân tử?', options: ['$(x+4)(x+6)$', '$(x-4)(x-6)$', '$(x+3)(x+8)$', '$(x+4)(x-6)$'], answer: 0, explanation: '$x^2+10x+24=(x+4)(x+6)$.' },
+        { stem: 'Nghiệm của phương trình $14x-8=11x+10$?', options: ['$x=3$', '$x=6$', '$x=18$', '$x=-6$'], answer: 1, explanation: '$3x=18 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-225}{x-15}$ (với $x\\ne15$)?', options: ['$x-15$', '$x$', '$x^2+15$', '$x+15$'], answer: 3, explanation: '$\\dfrac{(x-15)(x+15)}{x-15}=x+15$.' },
+        { stem: 'Đường thẳng $y=7x+21$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=21$', '$x=3$', '$x=-3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 7x=-21 \\Rightarrow x=-3$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $45$ và $60$. Cạnh huyền?', options: ['$105$', '$75$', '$70$', '$80$'], answer: 1, explanation: '$\\sqrt{45^2+60^2}=\\sqrt{5625}=75$.' },
+        { stem: 'Khai triển $(5x-3)^2$?', options: ['$25x^2-30x+9$', '$25x^2+30x+9$', '$25x^2-9$', '$5x^2-30x+9$'], answer: 0, explanation: '$(5x-3)^2=25x^2-30x+9$.' },
+        { stem: 'Diện tích hình thang có hai đáy $9$ và $11$, chiều cao $6$?', options: ['$120$', '$30$', '$40$', '$60$'], answer: 3, explanation: '$S=\\dfrac{(9+11)}{2}\\cdot6=60$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-12x+35}{x-5}$ (với $x\\ne5$)?', options: ['$x+7$', '$x-7$', '$x^2-7$', '$7$'], answer: 1, explanation: '$\\dfrac{(x-5)(x-7)}{x-5}=x-7$.' },
+        { stem: 'Số trung bình cộng của $25, 25, 25, 25, 50$?', options: ['$25$', '$50$', '$30$', '$150$'], answer: 2, explanation: '$\\dfrac{25\\cdot4+50}{5}=\\dfrac{150}{5}=30$.' },
+      ],
+    },
   ],
 
   KHTN8: [
