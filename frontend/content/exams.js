@@ -2936,6 +2936,21 @@ const EXAMS = {
         { stem: 'Khoảng biến thiên của dãy số $4, 8, 2, 10, 6$?', options: ['$6$', '$10$', '$8$', '$12$'], answer: 2, explanation: 'Khoảng biến thiên $=10-2=8$.' },
       ],
     },
+    {
+      examId: 'toan8-12', title: 'Kiểm tra 45′ #12 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+3)^2$?', options: ['$x^2+6x+9$', '$x^2+9$', '$x^2+3x+9$', '$x^2+6x+3$'], answer: 0, explanation: '$(x+3)^2=x^2+6x+9$.' },
+        { stem: 'Phân tích $x^2-9$ thành nhân tử?', options: ['$(x-9)(x+1)$', '$(x-3)(x+3)$', '$(x-3)^2$', '$(x+3)^2$'], answer: 1, explanation: 'Hiệu hai bình phương: $(x-3)(x+3)$.' },
+        { stem: 'Nghiệm của phương trình $2x-6=0$?', options: ['$x=2$', '$x=-3$', '$x=3$', '$x=6$'], answer: 2, explanation: '$2x=6 \\Leftrightarrow x=3$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{1}{x-2}$?', options: ['$x\\ne0$', '$x\\ne-2$', '$x\\ne1$', '$x\\ne2$'], answer: 3, explanation: '$x-2\\ne0 \\Leftrightarrow x\\ne2$.' },
+        { stem: 'Hàm số $y=2x-1$, khi $x=2$ thì $y$ bằng?', options: ['$3$', '$1$', '$5$', '$-3$'], answer: 0, explanation: '$y=2\\cdot2-1=3$.' },
+        { stem: 'Tam giác $ABC$ có ba cạnh $3, 4, 5$, độ dài cạnh huyền là?', options: ['$7$', '$\\sqrt7$', '$5$', '$6$'], answer: 2, explanation: 'Cạnh huyền lớn nhất $=5$ (vì $3^2+4^2=5^2$).' },
+        { stem: 'Khai triển $(a-b)^2$?', options: ['$a^2-b^2$', '$a^2+2ab+b^2$', '$a^2-ab+b^2$', '$a^2-2ab+b^2$'], answer: 3, explanation: '$(a-b)^2=a^2-2ab+b^2$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có ba kích thước $2, 3, 4$?', options: ['$9$', '$24$', '$12$', '$48$'], answer: 1, explanation: '$V=2\\cdot3\\cdot4=24$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-1}{x-1}$ (với $x\\ne1$)?', options: ['$x+1$', '$x-1$', '$x^2+1$', '$1$'], answer: 0, explanation: '$\\dfrac{(x-1)(x+1)}{x-1}=x+1$.' },
+        { stem: 'Trung bình cộng của $4, 6, 8, 10$?', options: ['$6$', '$8$', '$7$', '$28$'], answer: 2, explanation: '$\\dfrac{4+6+8+10}{4}=\\dfrac{28}{4}=7$.' },
+      ],
+    },
   ],
 
   KHTN8: [
