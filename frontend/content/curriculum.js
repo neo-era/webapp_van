@@ -1764,6 +1764,195 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-khtn8-pthh', title: 'Hóa học · Phản ứng & phương trình hóa học, dung dịch',
+          lessons: [
+            {
+              id: 'l-khtn8-pthh', title: 'Phản ứng hóa học & lập phương trình hóa học', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <p><strong>Phản ứng hóa học</strong> là quá trình biến đổi chất này thành chất khác; liên kết giữa các nguyên tử thay đổi, còn số nguyên tử mỗi nguyên tố được bảo toàn.</p>
+                <p><strong>Các bước lập phương trình hóa học:</strong></p>
+                <ol>
+                  <li>Viết sơ đồ phản ứng (công thức chất tham gia → sản phẩm).</li>
+                  <li>Cân bằng số nguyên tử mỗi nguyên tố ở hai vế bằng cách thêm hệ số.</li>
+                  <li>Viết phương trình hoàn chỉnh.</li>
+                </ol>
+                <div class="luuy"><strong>Lưu ý:</strong> chỉ được thêm hệ số (đặt trước công thức), <em>không</em> được sửa chỉ số trong công thức hóa học.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Cân bằng: $H_2 + O_2 \\rightarrow H_2O$.</p>
+                  <p><strong>Giải:</strong> $2H_2 + O_2 \\rightarrow 2H_2O$ (4 H và 2 O ở mỗi vế).</p>
+                  <p>$Fe + O_2 \\rightarrow Fe_2O_3$ ⇒ $4Fe + 3O_2 \\rightarrow 2Fe_2O_3$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Cân bằng $Na + O_2 \\rightarrow Na_2O$.
+                  <details><summary>Đáp án</summary>$4Na + O_2 \\rightarrow 2Na_2O$.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-khtn8-dungdich', title: 'Dung dịch — độ tan, nồng độ, pha chế', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Dung dịch</strong> = chất tan + dung môi. Khối lượng dung dịch $m_{dd} = m_{ct} + m_{dm}$.</li>
+                  <li><strong>Độ tan</strong> $S$: số gam chất tan tan tối đa trong $100$ g nước ở nhiệt độ xác định để tạo dung dịch bão hòa.</li>
+                  <li><strong>Nồng độ phần trăm:</strong> $C\\% = \\dfrac{m_{ct}}{m_{dd}}\\cdot100\\%$.</li>
+                  <li><strong>Nồng độ mol:</strong> $C_M = \\dfrac{n}{V}$ (mol/L).</li>
+                </ul>
+                <div class="luuy"><strong>Pha chế:</strong> muốn pha dung dịch có $C\\%$ cho trước, tính khối lượng chất tan và nước cần dùng từ công thức trên.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Hòa tan $20$ g đường vào $80$ g nước. Tính $C\\%$.</p>
+                  <p><strong>Giải:</strong> $m_{dd} = 100$ g ⇒ $C\\% = \\dfrac{20}{100}\\cdot100\\% = 20\\%$.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Hòa tan $0{,}5$ mol NaCl vào nước được $250$ mL dung dịch. Tính $C_M$.
+                  <details><summary>Đáp án</summary>$C_M = \\dfrac{0{,}5}{0{,}25} = 2$ mol/L.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-khtn8-moment', title: 'Vật lí · Tác dụng làm quay của lực — Đòn bẩy',
+          lessons: [
+            {
+              id: 'l-khtn8-moment', title: 'Moment lực & đòn bẩy', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li>Lực tác dụng lên vật có trục quay làm vật <strong>quay</strong>. Tác dụng làm quay phụ thuộc độ lớn lực và khoảng cách từ trục quay đến giá của lực (cánh tay đòn).</li>
+                  <li><strong>Moment lực:</strong> $M = F\\cdot d$ ($d$ là cánh tay đòn).</li>
+                  <li><strong>Đòn bẩy cân bằng</strong> khi hai moment bằng nhau: $F_1\\cdot d_1 = F_2\\cdot d_2$.</li>
+                </ul>
+                <div class="luuy"><strong>Ứng dụng:</strong> dùng đòn bẩy để được lợi về lực — đặt vật ở phía cánh tay đòn ngắn, tác dụng lực ở phía cánh tay đòn dài.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Đòn bẩy cân bằng: vật $100$ N đặt cách trục $0{,}2$ m. Cần đặt lực bao nhiêu ở cách trục $0{,}5$ m?</p>
+                  <p><strong>Giải:</strong> $F_1 d_1 = F_2 d_2 \\Rightarrow 100\\cdot0{,}2 = F_2\\cdot0{,}5 \\Rightarrow F_2 = 40$ N.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Lực $30$ N có cánh tay đòn $0{,}4$ m. Moment lực?
+                  <details><summary>Đáp án</summary>$M = 30\\cdot0{,}4 = 12$ N·m.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-khtn8-dien', title: 'Vật lí · Điện',
+          lessons: [
+            {
+              id: 'l-khtn8-dien', title: 'Dòng điện, cường độ dòng điện, hiệu điện thế', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Dòng điện</strong> là dòng các hạt mang điện chuyển động có hướng. Nguồn điện (pin, ắc quy) duy trì dòng điện trong mạch kín.</li>
+                  <li><strong>Cường độ dòng điện</strong> $I$ đo bằng <em>ampe kế</em> (mắc nối tiếp), đơn vị ampe (A).</li>
+                  <li><strong>Hiệu điện thế</strong> $U$ đo bằng <em>vôn kế</em> (mắc song song với vật), đơn vị vôn (V).</li>
+                  <li><strong>Tác dụng của dòng điện:</strong> nhiệt, phát sáng, từ, hóa học và sinh lí.</li>
+                </ul>
+                <div class="luuy"><strong>Mạch nối tiếp:</strong> cường độ dòng điện như nhau tại mọi điểm; hiệu điện thế bằng tổng. <strong>Mạch song song:</strong> hiệu điện thế giữa các nhánh bằng nhau; dòng điện mạch chính bằng tổng dòng các nhánh.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Hai bóng đèn mắc nối tiếp, dòng qua đèn 1 là $0{,}3$ A. Dòng qua đèn 2?</p>
+                  <p><strong>Giải:</strong> Mạch nối tiếp ⇒ $I$ như nhau ⇒ $0{,}3$ A.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Mạch song song hai nhánh có dòng $0{,}2$ A và $0{,}5$ A. Dòng điện mạch chính?
+                  <details><summary>Đáp án</summary>$I = 0{,}2 + 0{,}5 = 0{,}7$ A.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-khtn8-nhiet', title: 'Vật lí · Nhiệt',
+          lessons: [
+            {
+              id: 'l-khtn8-nhiet', title: 'Năng lượng nhiệt, truyền nhiệt & sự nở vì nhiệt', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Năng lượng nhiệt (nhiệt năng)</strong> của vật là tổng động năng của các phân tử cấu tạo nên vật; nhiệt độ càng cao thì phân tử chuyển động càng nhanh.</li>
+                  <li><strong>Ba hình thức truyền nhiệt:</strong> dẫn nhiệt (chủ yếu ở chất rắn — kim loại dẫn nhiệt tốt), đối lưu (ở chất lỏng và chất khí), bức xạ nhiệt (truyền qua cả chân không, ví dụ nhiệt Mặt Trời).</li>
+                  <li><strong>Sự nở vì nhiệt:</strong> hầu hết các chất nở ra khi nóng lên, co lại khi lạnh đi. Chất khí nở nhiều hơn chất lỏng, chất lỏng nở nhiều hơn chất rắn.</li>
+                </ul>
+                <div class="luuy"><strong>Ứng dụng & lưu ý:</strong> để khe hở ở đường ray, cầu thép; nung nóng vòng kim loại để lắp khít; nhiệt luôn truyền từ vật nóng hơn sang vật lạnh hơn cho đến khi cân bằng nhiệt.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ</div>
+                  <p>Cầm thìa kim loại nhúng trong nước nóng thấy nóng tay — đó là hiện tượng <strong>dẫn nhiệt</strong>. Nước trong ấm sôi nóng đều nhờ <strong>đối lưu</strong>. Đứng gần lửa thấy nóng là do <strong>bức xạ nhiệt</strong>.</p>
+                </div>
+                <div class="bt"><strong>Bài tập:</strong> Hình thức truyền nhiệt nào xảy ra được trong chân không?
+                  <details><summary>Đáp án</summary>Bức xạ nhiệt.</details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-khtn8-cothenguoi2', title: 'Sinh học · Bài tiết, thần kinh, nội tiết, vận động',
+          lessons: [
+            {
+              id: 'l-khtn8-vandong', title: 'Hệ vận động — xương và cơ', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Bộ xương</strong> nâng đỡ, bảo vệ cơ thể và là chỗ bám cho cơ. Xương gồm chất hữu cơ (đàn hồi) và chất khoáng (canxi — cứng chắc).</li>
+                  <li><strong>Khớp:</strong> khớp động (vai, gối), khớp bán động (cột sống), khớp bất động (hộp sọ).</li>
+                  <li><strong>Cơ</strong> bám vào xương; khi co làm xương cử động, tạo nên vận động.</li>
+                </ul>
+                <div class="luuy"><strong>Bảo vệ:</strong> ngồi học đúng tư thế, mang vác cân đối để tránh cong vẹo cột sống; bổ sung canxi và vitamin D cho xương chắc khỏe.</div>
+                <div class="bt"><strong>Bài tập:</strong> Khớp ở hộp sọ thuộc loại khớp nào?
+                  <details><summary>Đáp án</summary>Khớp bất động.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-khtn8-baitiet', title: 'Hệ bài tiết — thận và nước tiểu', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Bài tiết</strong> giúp loại bỏ chất thải và giữ ổn định môi trường trong cơ thể. Cơ quan bài tiết chính là thận; ngoài ra còn có da (mồ hôi) và phổi ($CO_2$).</li>
+                  <li><strong>Đơn vị chức năng của thận</strong> là đơn vị thận (nephron) — nơi lọc máu tạo nước tiểu.</li>
+                  <li>Đường dẫn: thận → ống dẫn nước tiểu → bóng đái → ống đái.</li>
+                </ul>
+                <div class="luuy"><strong>Giữ gìn:</strong> uống đủ nước, không nhịn tiểu, ăn uống hợp vệ sinh để bảo vệ thận và đường tiết niệu.</div>
+                <div class="bt"><strong>Bài tập:</strong> Đơn vị chức năng lọc máu của thận tên là gì?
+                  <details><summary>Đáp án</summary>Đơn vị thận (nephron).</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-khtn8-thankinh', title: 'Hệ thần kinh & các giác quan', level: 'CO_BAN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Hệ thần kinh</strong> điều khiển, điều hòa và phối hợp hoạt động các cơ quan. Gồm <em>thần kinh trung ương</em> (não bộ và tủy sống) và <em>thần kinh ngoại biên</em> (các dây thần kinh, hạch).</li>
+                  <li>Đơn vị cấu tạo là <strong>nơron</strong> (tế bào thần kinh).</li>
+                  <li><strong>Giác quan:</strong> mắt (thị giác), tai (thính giác và giữ thăng bằng), mũi (khứu giác), lưỡi (vị giác), da (xúc giác).</li>
+                </ul>
+                <div class="luuy"><strong>Bảo vệ:</strong> ngủ đủ giấc, học tập – nghỉ ngơi hợp lí; giữ vệ sinh mắt, đeo kính đúng độ; tránh tiếng ồn lớn để bảo vệ tai.</div>
+                <div class="bt"><strong>Bài tập:</strong> Hệ thần kinh trung ương gồm những bộ phận nào?
+                  <details><summary>Đáp án</summary>Não bộ và tủy sống.</details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-khtn8-noitiet', title: 'Hệ nội tiết & da điều hòa thân nhiệt', level: 'NANG_CAO',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Tuyến nội tiết</strong> tiết ra <em>hormone</em> đổ thẳng vào máu để điều hòa các quá trình sống. Một số tuyến: tuyến yên, tuyến giáp, tuyến tụy, tuyến trên thận.</li>
+                  <li>Ví dụ: tuyến tụy tiết <em>insulin</em> điều hòa lượng đường trong máu; tuyến giáp tiết hormone điều hòa trao đổi chất.</li>
+                  <li><strong>Da & điều hòa thân nhiệt:</strong> khi nóng, mạch máu dưới da giãn và tuyến mồ hôi tiết mồ hôi để tỏa nhiệt; khi lạnh, mạch co lại và cơ run để sinh nhiệt, giữ thân nhiệt ổn định khoảng $37^\\circ C$.</li>
+                </ul>
+                <div class="luuy"><strong>Phân biệt:</strong> tuyến nội tiết đổ chất tiết vào máu (không có ống dẫn); tuyến ngoại tiết (mồ hôi, nước bọt) có ống dẫn ra ngoài.</div>
+                <div class="bt"><strong>Bài tập:</strong> Hormone nào điều hòa lượng đường trong máu, do tuyến tụy tiết ra?
+                  <details><summary>Đáp án</summary>Insulin.</details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
