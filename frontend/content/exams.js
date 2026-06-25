@@ -2951,6 +2951,21 @@ const EXAMS = {
         { stem: 'Trung bình cộng của $4, 6, 8, 10$?', options: ['$6$', '$8$', '$7$', '$28$'], answer: 2, explanation: '$\\dfrac{4+6+8+10}{4}=\\dfrac{28}{4}=7$.' },
       ],
     },
+    {
+      examId: 'toan8-13', title: 'Kiểm tra 45′ #13 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x+1)^2$?', options: ['$4x^2+4x+1$', '$4x^2+1$', '$2x^2+4x+1$', '$4x^2+2x+1$'], answer: 0, explanation: '$(2x+1)^2=4x^2+4x+1$.' },
+        { stem: 'Phân tích $x^2+6x+9$ thành nhân tử?', options: ['$(x+3)^2$', '$(x-3)^2$', '$(x+9)(x-1)$', '$(x+6)(x+3)$'], answer: 0, explanation: '$x^2+6x+9=(x+3)^2$.' },
+        { stem: 'Nghiệm của phương trình $3x+9=0$?', options: ['$x=3$', '$x=-3$', '$x=-9$', '$x=9$'], answer: 1, explanation: '$3x=-9 \\Leftrightarrow x=-3$.' },
+        { stem: 'Điều kiện xác định của phân thức $\\dfrac{x}{x^2-4}$?', options: ['$x\\ne2$', '$x\\ne4$', '$x\\ne\\pm2$', '$x\\ne0$'], answer: 2, explanation: '$x^2-4\\ne0 \\Leftrightarrow x\\ne\\pm2$.' },
+        { stem: 'Đường thẳng $y=-x+4$ cắt trục tung tại điểm có tung độ bằng?', options: ['$-1$', '$0$', '$-4$', '$4$'], answer: 3, explanation: 'Cho $x=0 \\Rightarrow y=4$.' },
+        { stem: 'Hai tam giác đồng dạng tỉ số $2$ thì tỉ số diện tích là?', options: ['$2$', '$4$', '$8$', '$6$'], answer: 1, explanation: 'Tỉ số diện tích $=k^2=2^2=4$.' },
+        { stem: 'Hằng đẳng thức $a^3+b^3$ bằng?', options: ['$(a+b)(a^2+ab+b^2)$', '$(a-b)(a^2+ab+b^2)$', '$(a+b)(a^2-ab+b^2)$', '$(a+b)^3$'], answer: 2, explanation: '$a^3+b^3=(a+b)(a^2-ab+b^2)$.' },
+        { stem: 'Diện tích hình thoi có hai đường chéo $6$ và $8$?', options: ['$48$', '$14$', '$12$', '$24$'], answer: 3, explanation: '$S=\\dfrac{1}{2}d_1d_2=\\dfrac{1}{2}\\cdot6\\cdot8=24$.' },
+        { stem: 'Rút gọn $\\dfrac{3x+6}{x+2}$ (với $x\\ne-2$)?', options: ['$x+2$', '$3$', '$x$', '$3x$'], answer: 1, explanation: '$\\dfrac{3(x+2)}{x+2}=3$.' },
+        { stem: 'Mốt của dãy số $2, 3, 3, 5, 3, 7$?', options: ['$2$', '$7$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $3$ xuất hiện nhiều nhất ⇒ mốt $=3$.' },
+      ],
+    },
   ],
 
   KHTN8: [
