@@ -3029,6 +3029,21 @@ const EXAMS = {
         { stem: 'Số mol có trong $7$ g CaO ($M=56$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$0{,}125$'], answer: 3, explanation: '$n=7/56=0{,}125$ mol.' },
       ],
     },
+    {
+      examId: 'khtn8-9', title: 'Kiểm tra 45′ #9 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}5$ mol CuO ($M=80$)?', options: ['$40$ g', '$20$ g', '$80$ g', '$10$ g'], answer: 0, explanation: '$m=0{,}5\\cdot80=40$ g.' },
+        { stem: 'Công để nâng vật trọng lượng $P=100$ N lên cao $h=2$ m?', options: ['$50$ J', '$102$ J', '$2$ J', '$200$ J'], answer: 3, explanation: '$A=P\\cdot h=100\\cdot2=200$ J.' },
+        { stem: 'Áp suất chất lỏng tại độ sâu $h=3$ m ($d=10000\\,N/m^3$)?', options: ['$3000$ Pa', '$13000$ Pa', '$30000$ Pa', '$300$ Pa'], answer: 2, explanation: '$p=d\\cdot h=10000\\cdot3=30000$ Pa.' },
+        { stem: 'Đốt $0{,}1$ mol $CH_4$ ($CH_4+2O_2\\to CO_2+2H_2O$) cần mol $O_2$?', options: ['$0{,}1$', '$0{,}4$', '$1$', '$0{,}2$'], answer: 3, explanation: '$0{,}1\\cdot2=0{,}2$ mol $O_2$.' },
+        { stem: 'Bộ phận điều khiển mọi hoạt động của cơ thể là?', options: ['tim', 'não bộ', 'gan', 'phổi'], answer: 1, explanation: 'Não bộ là trung khu điều khiển.' },
+        { stem: 'Hòa tan $0{,}6$ mol HCl thành $3$ L dung dịch. Nồng độ mol?', options: ['$0{,}1$', '$0{,}6$', '$0{,}2$', '$1$'], answer: 2, explanation: '$C_M=0{,}6/3=0{,}2$ M.' },
+        { stem: 'Áp suất của chất khí trong bình kín tác dụng theo hướng nào?', options: ['lên mọi phía', 'chỉ xuống dưới', 'chỉ lên trên', 'chỉ theo phương ngang'], answer: 0, explanation: 'Chất khí gây áp suất lên thành bình theo mọi phía.' },
+        { stem: 'Dung dịch acid mạnh thường có pH như thế nào?', options: ['cao (>7)', 'bằng 7', 'bằng 14', 'thấp (<7)'], answer: 3, explanation: 'Acid có pH < 7.' },
+        { stem: 'Người trưởng thành có bao nhiêu chiếc răng?', options: ['$20$', '$28$', '$32$', '$24$'], answer: 2, explanation: 'Bộ răng vĩnh viễn có 32 chiếc.' },
+        { stem: 'Số mol có trong $5{,}4$ g Al ($M=27$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}3$', '$0{,}4$'], answer: 1, explanation: '$n=5{,}4/27=0{,}2$ mol.' },
+      ],
+    },
   ],
 
   ANH8: [
