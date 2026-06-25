@@ -3386,6 +3386,21 @@ const EXAMS = {
         { stem: 'Trung vị của dãy số $2, 4, 6, 8, 10, 12, 14$?', options: ['$6$', '$10$', '$8$', '$56$'], answer: 2, explanation: 'Số ở giữa (vị trí thứ 4) là $8$.' },
       ],
     },
+    {
+      examId: 'toan8-42', title: 'Kiểm tra 45′ #42 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(10x-1)(10x+1)$?', options: ['$100x^2+1$', '$10x^2-1$', '$100x^2-1$', '$100x^2-20x-1$'], answer: 2, explanation: 'Hiệu hai bình phương: $100x^2-1$.' },
+        { stem: 'Phân tích $x^2-13x+42$ thành nhân tử?', options: ['$(x-6)(x-7)$', '$(x+6)(x+7)$', '$(x-3)(x-14)$', '$(x-6)(x+7)$'], answer: 0, explanation: '$x^2-13x+42=(x-6)(x-7)$.' },
+        { stem: 'Nghiệm của phương trình $15-4x=3$?', options: ['$x=4$', '$x=3$', '$x=12$', '$x=-3$'], answer: 1, explanation: '$-4x=-12 \\Leftrightarrow x=3$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+11x+30}{x+5}$ (với $x\\ne-5$)?', options: ['$x+5$', '$x$', '$x^2+6$', '$x+6$'], answer: 3, explanation: '$\\dfrac{(x+5)(x+6)}{x+5}=x+6$.' },
+        { stem: 'Đường thẳng $y=5x-15$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=15$', '$x=-3$', '$x=3$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 5x=15 \\Rightarrow x=3$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $13$, một cạnh góc vuông $12$. Cạnh góc vuông còn lại?', options: ['$17$', '$5$', '$\\sqrt{313}$', '$7$'], answer: 1, explanation: '$\\sqrt{13^2-12^2}=\\sqrt{25}=5$.' },
+        { stem: 'Khai triển $(2x+9)^2$?', options: ['$4x^2+36x+81$', '$4x^2+81$', '$4x^2+18x+81$', '$2x^2+36x+81$'], answer: 0, explanation: '$(2x+9)^2=4x^2+36x+81$.' },
+        { stem: 'Thể tích hình lập phương cạnh $10$?', options: ['$100$', '$30$', '$300$', '$1000$'], answer: 3, explanation: '$V=10^3=1000$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-11x+30}{x-5}$ (với $x\\ne5$)?', options: ['$x+6$', '$x-6$', '$x^2-6$', '$6$'], answer: 1, explanation: '$\\dfrac{(x-5)(x-6)}{x-5}=x-6$.' },
+        { stem: 'Số trung bình cộng của $3, 3, 3, 6, 9, 12$?', options: ['$3$', '$12$', '$6$', '$36$'], answer: 2, explanation: '$\\dfrac{3+3+3+6+9+12}{6}=\\dfrac{36}{6}=6$.' },
+      ],
+    },
   ],
 
   KHTN8: [
