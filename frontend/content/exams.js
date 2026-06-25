@@ -3389,6 +3389,21 @@ const EXAMS = {
         { stem: 'Vật nặng $30$ N nhúng chìm trong nước chịu lực đẩy $F_A=10$ N. Số chỉ lực kế?', options: ['$40$ N', '$30$ N', '$20$ N', '$10$ N'], answer: 2, explanation: 'Số chỉ $=P-F_A=30-10=20$ N.' },
       ],
     },
+    {
+      examId: 'khtn8-21', title: 'Kiểm tra 45′ #21 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $5{,}6$ g khí $N_2$ ($M=28$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}4$', '$1$'], answer: 1, explanation: '$n=5{,}6/28=0{,}2$ mol.' },
+        { stem: 'Áp suất tại độ sâu $3$ m trong nước ($d=10000$ N/m³)?', options: ['$10000$ Pa', '$3000$ Pa', '$30000$ Pa', '$13000$ Pa'], answer: 2, explanation: '$p=d\\cdot h=10000\\times 3=30000$ Pa.' },
+        { stem: 'Vì sao dầu ăn nổi trên mặt nước?', options: ['Khối lượng riêng của dầu nhỏ hơn nước', 'Dầu nhẹ vì không màu', 'Dầu nóng hơn nước', 'Nước đặc hơn dầu'], answer: 0, explanation: '$D_{dầu}<D_{nước}$ nên dầu nổi.' },
+        { stem: 'Đốt cháy hoàn toàn $4$ g $H_2$ với $32$ g $O_2$ ($2H_2+O_2\\to 2H_2O$). Khối lượng nước tạo thành?', options: ['$4$ g', '$32$ g', '$28$ g', '$36$ g'], answer: 3, explanation: 'Bảo toàn KL: $4+32=36$ g nước.' },
+        { stem: 'Lực đẩy Archimedes được đo bằng đơn vị nào?', options: ['Pascal', 'Niuton', 'Jun', 'Kilôgam'], answer: 1, explanation: 'Lực đẩy Archimedes là một lực ⇒ đo bằng Niuton (N).' },
+        { stem: 'Nồng độ mol của $0{,}6$ mol chất tan trong $0{,}2$ lít dung dịch?', options: ['$1$ M', '$2$ M', '$3$ M', '$0{,}5$ M'], answer: 2, explanation: '$C_M=0{,}6/0{,}2=3$ M.' },
+        { stem: 'Bạch cầu trong máu có vai trò chính là?', options: ['Bảo vệ cơ thể, chống vi khuẩn', 'Vận chuyển oxi', 'Làm đông máu', 'Vận chuyển $CO_2$'], answer: 0, explanation: 'Bạch cầu tham gia bảo vệ cơ thể.' },
+        { stem: 'Khí nào duy trì sự cháy và sự sống?', options: ['$CO_2$', '$N_2$', '$H_2$', '$O_2$'], answer: 3, explanation: 'Oxi ($O_2$) duy trì sự cháy và hô hấp.' },
+        { stem: 'Cơ quan nào bài tiết mồ hôi?', options: ['Gan', 'Da', 'Phổi', 'Tim'], answer: 1, explanation: 'Da có tuyến mồ hôi tham gia bài tiết.' },
+        { stem: 'Áp lực là gì?', options: ['Lực kéo', 'Trọng lực', 'Lực ép vuông góc lên mặt bị ép', 'Lực ma sát'], answer: 2, explanation: 'Áp lực là lực ép có phương vuông góc với mặt bị ép.' },
+      ],
+    },
   ],
 
   ANH8: [
