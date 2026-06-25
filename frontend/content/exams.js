@@ -5282,6 +5282,21 @@ const EXAMS = {
         { stem: '____ she finished cooking?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
       ],
     },
+    {
+      examId: 'anh8-56', title: 'Kiểm tra 45′ #56 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'She ____ to the market every Sunday.', options: ['go', 'goes', 'going', 'went'], answer: 1, explanation: 'every Sunday ⇒ hiện tại đơn, chủ ngữ số ít ⇒ goes.' },
+        { stem: 'A river is ____ than a canal.', options: ['longer', 'long', 'longest', 'more long'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: longer.' },
+        { stem: 'We ____ respect our teachers.', options: ['must', 'can', 'should', 'would'], answer: 2, explanation: 'should = lời khuyên nên làm.' },
+        { stem: 'If it is sunny, the children ____ outside.', options: ['play', 'played', 'would play', 'will play'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + V.' },
+        { stem: 'Rice ____ in this region.', options: ['grow', 'grows', 'is grown', 'are grown'], answer: 2, explanation: 'Bị động hiện tại, danh từ không đếm được ⇒ is grown.' },
+        { stem: 'The man ____ I saw at the party is famous.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who (whom) chỉ người làm tân ngữ.' },
+        { stem: 'She has been ill ____ two days.', options: ['since', 'for', 'at', 'in'], answer: 1, explanation: 'for + khoảng thời gian (two days).' },
+        { stem: "Choose the synonym of 'smart'.", options: ['foolish', 'silly', 'dull', 'wise'], answer: 3, explanation: 'smart ≈ wise (khôn ngoan).' },
+        { stem: "Choose the antonym of 'always'.", options: ['often', 'never', 'usually', 'sometimes'], answer: 1, explanation: 'always ↔ never (không bao giờ).' },
+        { stem: 'He has ____ finished the race, so he is resting.', options: ['ever', 'yet', 'just', 'since'], answer: 2, explanation: 'just = vừa mới (hiện tại hoàn thành).' },
+      ],
+    },
   ],
 };
 
