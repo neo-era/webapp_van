@@ -3266,6 +3266,21 @@ const EXAMS = {
         { stem: 'Mốt của dãy số $8, 8, 8, 8, 12$?', options: ['$12$', '$4$', '$8$', '$10$'], answer: 2, explanation: 'Giá trị $8$ xuất hiện nhiều nhất ⇒ mốt $=8$.' },
       ],
     },
+    {
+      examId: 'toan8-34', title: 'Kiểm tra 45′ #34 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x-11)(x+11)$?', options: ['$x^2+121$', '$x^2-22x+121$', '$x^2-121$', '$x^2-11x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-121$.' },
+        { stem: 'Phân tích $x^2-3x$ thành nhân tử?', options: ['$x(x-3)$', '$x(x+3)$', '$(x-3)^2$', '$3x$'], answer: 0, explanation: '$x^2-3x=x(x-3)$.' },
+        { stem: 'Nghiệm của phương trình $4x+3=2x+11$?', options: ['$x=2$', '$x=4$', '$x=8$', '$x=-4$'], answer: 1, explanation: '$2x=8 \\Leftrightarrow x=4$.' },
+        { stem: 'Rút gọn $\\dfrac{2x^2+4x}{2x}$ (với $x\\ne0$)?', options: ['$x$', '$2x$', '$x-2$', '$x+2$'], answer: 3, explanation: '$\\dfrac{2x(x+2)}{2x}=x+2$.' },
+        { stem: 'Đường thẳng $y=2x-8$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=8$', '$x=-4$', '$x=4$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 2x=8 \\Rightarrow x=4$.' },
+        { stem: 'Chu vi tam giác đều có cạnh bằng $5$?', options: ['$10$', '$15$', '$25$', '$8$'], answer: 1, explanation: 'Chu vi $=3\\times5=15$.' },
+        { stem: 'Khai triển $(x-8)^2$?', options: ['$x^2-16x+64$', '$x^2+16x+64$', '$x^2-64$', '$x^2-8x+64$'], answer: 0, explanation: '$(x-8)^2=x^2-16x+64$.' },
+        { stem: 'Diện tích hình bình hành có đáy $11$ và chiều cao $4$?', options: ['$15$', '$22$', '$30$', '$44$'], answer: 3, explanation: '$S=a\\cdot h=11\\cdot4=44$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-9}{x-3}$ (với $x\\ne3$)?', options: ['$x-3$', '$x+3$', '$x^2+3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x-3)(x+3)}{x-3}=x+3$.' },
+        { stem: 'Mốt của dãy số $1, 3, 3, 5, 5, 5, 7$?', options: ['$1$', '$3$', '$5$', '$7$'], answer: 2, explanation: 'Giá trị $5$ xuất hiện nhiều nhất ⇒ mốt $=5$.' },
+      ],
+    },
   ],
 
   KHTN8: [
