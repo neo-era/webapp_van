@@ -2969,6 +2969,21 @@ const EXAMS = {
         { stem: 'Số mol có trong $4{,}4$ g $CO_2$ ($M=44$)?', options: ['$0{,}1$', '$0{,}05$', '$0{,}2$', '$1$'], answer: 0, explanation: '$n=4{,}4/44=0{,}1$ mol.' },
       ],
     },
+    {
+      examId: 'khtn8-7', title: 'Kiểm tra 45′ #7 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Khối lượng của $0{,}3$ mol NaOH ($M=40$)?', options: ['$4$ g', '$40$ g', '$120$ g', '$12$ g'], answer: 3, explanation: '$m=0{,}3\\cdot40=12$ g.' },
+        { stem: 'Áp lực $F=120$ N ép vuông góc lên diện tích $S=3\\,m^2$. Áp suất?', options: ['$40$ Pa', '$360$ Pa', '$120$ Pa', '$4$ Pa'], answer: 0, explanation: '$p=F/S=120/3=40$ Pa.' },
+        { stem: 'Khối lượng riêng của vật $m=300$ g, $V=150\\,cm^3$?', options: ['$1\\,g/cm^3$', '$2\\,g/cm^3$', '$0{,}5\\,g/cm^3$', '$3\\,g/cm^3$'], answer: 1, explanation: '$D=m/V=300/150=2\\,g/cm^3$.' },
+        { stem: 'Nhiệt phân $0{,}1$ mol $CaCO_3$ ($CaCO_3\\to CaO+CO_2$) thu được mol $CO_2$?', options: ['$0{,}05$', '$0{,}2$', '$1$', '$0{,}1$'], answer: 3, explanation: 'Tỉ lệ 1:1 ⇒ $0{,}1$ mol $CO_2$.' },
+        { stem: 'Cơ quan nào tiết insulin điều hòa đường huyết?', options: ['gan', 'tuyến tụy', 'thận', 'dạ dày'], answer: 1, explanation: 'Tuyến tụy tiết insulin.' },
+        { stem: 'Hòa tan $6$ g muối trong dung dịch $120$ g. Nồng độ phần trăm?', options: ['$10\\%$', '$5\\%$', '$6\\%$', '$20\\%$'], answer: 1, explanation: '$C\\%=6/120\\cdot100\\%=5\\%$.' },
+        { stem: 'Lực đẩy Archimedes có phương và chiều thế nào?', options: ['từ trên xuống', 'nằm ngang', 'thẳng đứng, chiều từ dưới lên', 'không có chiều xác định'], answer: 2, explanation: 'Lực đẩy Archimedes hướng thẳng đứng từ dưới lên.' },
+        { stem: 'Dung dịch trung tính có pH bằng?', options: ['$3$', '$10$', '$14$', '$7$'], answer: 3, explanation: 'Trung tính: pH = 7.' },
+        { stem: 'Phổi của người gồm bao nhiêu lá?', options: ['$2$', '$1$', '$3$', '$4$'], answer: 0, explanation: 'Phổi gồm 2 lá (phải 3 thùy, trái 2 thùy).' },
+        { stem: 'Số mol có trong $16$ g $O_2$ ($M=32$)?', options: ['$0{,}25$', '$1$', '$0{,}5$', '$2$'], answer: 2, explanation: '$n=16/32=0{,}5$ mol.' },
+      ],
+    },
   ],
 
   ANH8: [
