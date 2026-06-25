@@ -4379,6 +4379,21 @@ const EXAMS = {
         { stem: 'Phích nước (bình giữ nhiệt) giữ nước nóng lâu nhờ?', options: ['Vỏ rất dày', 'Lớp chân không ngăn truyền nhiệt', 'Nước được đun sẵn', 'Màu bạc bên trong'], answer: 1, explanation: 'Lớp chân không giữa hai vỏ ngăn dẫn nhiệt và đối lưu.' },
       ],
     },
+    {
+      examId: 'khtn8-54', title: 'Kiểm tra 45′ #54 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $22$ g $CO_2$ ($M=44$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=22/44=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $3{,}5$ m trong nước ($d=10000$ N/m³)?', options: ['$35000$ Pa', '$3500$ Pa', '$350000$ Pa', '$13000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 3{,}5=35000$ Pa.' },
+        { stem: 'Một vật có khối lượng $216$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$108$ g/cm³', '$10{,}8$ g/cm³', '$1{,}08$ g/cm³', '$1080$ g/cm³'], answer: 1, explanation: '$D=m/V=216/20=10{,}8$ g/cm³.' },
+        { stem: 'Cho dung dịch NaOH vào dung dịch $CuSO_4$ tạo kết tủa màu gì?', options: ['Trắng', 'Đỏ', 'Vàng', 'Xanh lam'], answer: 3, explanation: '$Cu(OH)_2$ là kết tủa màu xanh lam.' },
+        { stem: 'Cơ thể giữ nhiệt độ ổn định chủ yếu nhờ cơ chế nào?', options: ['Điều hòa thân nhiệt qua da và mồ hôi', 'Tiêu hóa thức ăn', 'Tuần hoàn nhanh', 'Hô hấp sâu'], answer: 0, explanation: 'Da và tuyến mồ hôi điều hòa thân nhiệt.' },
+        { stem: 'Hòa tan $8$ g chất tan vào $192$ g nước. Nồng độ phần trăm dung dịch?', options: ['$8\\%$', '$192\\%$', '$4\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=8/200\\times 100\\%=4\\%$.' },
+        { stem: 'Một máy thực hiện công $2400$ J trong $60$ s. Công suất là?', options: ['$2400$ W', '$40$ W', '$4$ W', '$144000$ W'], answer: 1, explanation: '$P=A/t=2400/60=40$ W.' },
+        { stem: 'Khối lượng của $0{,}4$ mol CaO ($M=56$)?', options: ['$56$ g', '$28$ g', '$5{,}6$ g', '$22{,}4$ g'], answer: 3, explanation: '$m=0{,}4\\times 56=22{,}4$ g.' },
+        { stem: 'Sự trao đổi chất giữa máu và tế bào diễn ra qua loại mạch nào?', options: ['Động mạch', 'Tĩnh mạch', 'Mao mạch', 'Van tim'], answer: 2, explanation: 'Mao mạch có thành mỏng, là nơi trao đổi chất.' },
+        { stem: 'Vì sao mặt đường nhựa (màu đen) nóng hơn vỉa hè sáng màu khi trời nắng?', options: ['Vì nhựa nặng hơn', 'Vì màu đen hấp thụ nhiệt nhiều hơn', 'Vì nhựa mềm', 'Không có lý do'], answer: 1, explanation: 'Vật màu sẫm hấp thụ bức xạ nhiệt mạnh hơn.' },
+      ],
+    },
   ],
 
   ANH8: [
