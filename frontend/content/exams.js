@@ -4229,6 +4229,21 @@ const EXAMS = {
         { stem: 'Vì sao về mùa hè ta nên mặc áo màu sáng?', options: ['Để đẹp hơn', 'Áo sáng hấp thụ ít nhiệt hơn áo tối', 'Áo sáng nặng hơn', 'Không có lý do'], answer: 1, explanation: 'Màu sáng phản xạ bức xạ nhiệt tốt, hấp thụ ít nhiệt.' },
       ],
     },
+    {
+      examId: 'khtn8-49', title: 'Kiểm tra 45′ #49 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $6{,}2$ g $Na_2O$ ($M=62$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=6{,}2/62=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $20$ m trong nước ($d=10000$ N/m³)?', options: ['$200000$ Pa', '$20000$ Pa', '$2000000$ Pa', '$22000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 20=200000$ Pa.' },
+        { stem: 'Một vật có khối lượng $89$ g và thể tích $10$ cm³. Khối lượng riêng?', options: ['$89$ g/cm³', '$8{,}9$ g/cm³', '$0{,}89$ g/cm³', '$890$ g/cm³'], answer: 1, explanation: '$D=m/V=89/10=8{,}9$ g/cm³.' },
+        { stem: 'Cho $H_2SO_4$ tác dụng vừa đủ với NaOH tạo thành?', options: ['Chỉ NaCl', 'Chỉ $H_2$', 'NaOH dư', '$Na_2SO_4$ và $H_2O$'], answer: 3, explanation: '$H_2SO_4+2NaOH\\to Na_2SO_4+2H_2O$.' },
+        { stem: 'Khí nào cần thiết để duy trì sự sống và hô hấp của con người?', options: ['Oxi', 'Nitơ', '$CO_2$', 'Hiđro'], answer: 0, explanation: 'Cơ thể cần oxi để hô hấp.' },
+        { stem: 'Hòa tan $36$ g chất tan vào $164$ g nước. Nồng độ phần trăm dung dịch?', options: ['$36\\%$', '$164\\%$', '$18\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=200$ g ⇒ $C\\%=36/200\\times 100\\%=18\\%$.' },
+        { stem: 'Vì sao móng nhà thường được xây rộng bản?', options: ['Để trông đẹp', 'Để giảm áp suất lên nền đất', 'Để tăng áp suất', 'Để tiết kiệm vật liệu'], answer: 1, explanation: 'Tăng diện tích tiếp xúc ⇒ giảm áp suất, tránh lún.' },
+        { stem: 'Khối lượng của $0{,}1$ mol $CuSO_4$ ($M=160$)?', options: ['$160$ g', '$1{,}6$ g', '$32$ g', '$16$ g'], answer: 3, explanation: '$m=0{,}1\\times 160=16$ g.' },
+        { stem: 'Hệ thần kinh điều khiển hoạt động của các cơ quan thông qua cơ chế nào?', options: ['Tiêu hóa', 'Hô hấp', 'Phản xạ', 'Bài tiết'], answer: 2, explanation: 'Hệ thần kinh điều khiển cơ thể qua các phản xạ.' },
+        { stem: 'Một vật nóng đặt trong phòng sẽ tỏa nhiệt cho đến khi nào?', options: ['Vật lạnh đi mãi mãi', 'Nhiệt độ cân bằng với môi trường', 'Vật nóng thêm', 'Không thay đổi gì'], answer: 1, explanation: 'Truyền nhiệt dừng khi nhiệt độ cân bằng.' },
+      ],
+    },
   ],
 
   ANH8: [
