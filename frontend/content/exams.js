@@ -3662,6 +3662,21 @@ const EXAMS = {
         { stem: 'I ____ my keys. Can you help me find them?', options: ['lose', 'lost', 'have lost', 'losing'], answer: 2, explanation: 'Kết quả ở hiện tại ⇒ hiện tại hoàn thành: have lost.' },
       ],
     },
+    {
+      examId: 'anh8-20', title: 'Kiểm tra 45′ #20 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'She ____ TV every evening after dinner.', options: ['watch', 'watches', 'watching', 'watched'], answer: 1, explanation: 'every evening ⇒ hiện tại đơn, chủ ngữ số ít ⇒ watches.' },
+        { stem: 'This box is ____ than that one.', options: ['heavier', 'heavy', 'heaviest', 'more heavy'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: heavier.' },
+        { stem: "It's late. We ____ go home now.", options: ['must', 'can', 'should', 'would'], answer: 2, explanation: 'should = lời khuyên nên làm.' },
+        { stem: 'If they win the match, they ____ very happy.', options: ['are', 'were', 'would be', 'will be'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'Coffee ____ in Brazil.', options: ['grows', 'grew', 'is grown', 'are grown'], answer: 2, explanation: 'Bị động hiện tại đơn, danh từ không đếm được ⇒ is grown.' },
+        { stem: 'December is the month ____ Christmas is celebrated.', options: ['when', 'which', 'who', 'whose'], answer: 0, explanation: 'when chỉ thời gian.' },
+        { stem: "I haven't eaten anything ____ this morning.", options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (this morning).' },
+        { stem: "Choose the synonym of 'end'.", options: ['start', 'begin', 'open', 'finish'], answer: 3, explanation: 'end ≈ finish (kết thúc).' },
+        { stem: "Choose the antonym of 'rich'.", options: ['wealthy', 'poor', 'costly', 'fancy'], answer: 1, explanation: 'rich ↔ poor (nghèo).' },
+        { stem: 'We ____ to Paris twice.', options: ['has been', 'go', 'have been', 'went'], answer: 2, explanation: 'Trải nghiệm đến hiện tại ⇒ hiện tại hoàn thành: have been.' },
+      ],
+    },
   ],
 };
 
