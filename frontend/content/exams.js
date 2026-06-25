@@ -4292,6 +4292,21 @@ const EXAMS = {
         { stem: 'He ____ just left, so you can still catch him.', options: ['have', 'had', 'has', 'having'], answer: 2, explanation: 'Hiện tại hoàn thành với "he" ⇒ has.' },
       ],
     },
+    {
+      examId: 'anh8-34', title: 'Kiểm tra 45′ #34 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'She ____ a letter to her friend now.', options: ['writes', 'wrote', 'is writing', 'write'], answer: 2, explanation: '"now" ⇒ hiện tại tiếp diễn: is writing.' },
+        { stem: 'Summer days are ____ than winter days.', options: ['longer', 'long', 'longest', 'more long'], answer: 0, explanation: 'So sánh hơn tính từ ngắn: longer.' },
+        { stem: "You ____ touch the hot stove!", options: ['should', "mustn't", 'may', 'can'], answer: 1, explanation: "mustn't = cấm (cảnh báo nguy hiểm)." },
+        { stem: 'If we hurry, we ____ on time.', options: ['are', 'were', 'would be', 'will be'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'The work ____ by the team every week.', options: ['do', 'does', 'is done', 'are done'], answer: 2, explanation: 'Bị động hiện tại đơn, "work" không đếm được ⇒ is done.' },
+        { stem: 'She is the singer ____ won the award.', options: ['who', 'which', 'where', 'whose'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
+        { stem: 'I have lived in this city ____ 2015.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mốc thời gian (2015).' },
+        { stem: "Choose the synonym of 'tasty'.", options: ['bland', 'tasteless', 'plain', 'delicious'], answer: 3, explanation: 'tasty ≈ delicious (ngon).' },
+        { stem: "Choose the antonym of 'early'.", options: ['soon', 'late', 'prompt', 'quick'], answer: 1, explanation: 'early ↔ late (muộn).' },
+        { stem: '____ you finished your homework?', options: ['Has', 'Had', 'Have', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "you" ⇒ Have.' },
+      ],
+    },
   ],
 };
 
