@@ -2819,6 +2819,21 @@ const EXAMS = {
         { stem: 'Tim của người có mấy ngăn?', options: ['$2$', '$4$', '$3$', '$1$'], answer: 1, explanation: 'Tim người có 4 ngăn (2 tâm nhĩ, 2 tâm thất).' },
       ],
     },
+    {
+      examId: 'khtn8-2', title: 'Kiểm tra 45′ #2 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $9{,}8$ g $H_2SO_4$ ($M=98$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=9{,}8/98=0{,}1$ mol.' },
+        { stem: 'Công của lực $F=50$ N kéo vật đi $s=4$ m (cùng hướng)?', options: ['$200$ J', '$100$ J', '$12{,}5$ J', '$54$ J'], answer: 0, explanation: '$A=F\\cdot s=50\\cdot4=200$ J.' },
+        { stem: 'Áp suất chất lỏng tại độ sâu $h=2$ m ($d=10000\\,N/m^3$)?', options: ['$5000$ Pa', '$2000$ Pa', '$20000$ Pa', '$12000$ Pa'], answer: 2, explanation: '$p=d\\cdot h=10000\\cdot2=20000$ Pa.' },
+        { stem: 'Đốt cháy $0{,}2$ mol C tạo bao nhiêu mol $CO_2$? ($C+O_2\\to CO_2$)', options: ['$0{,}1$', '$0{,}4$', '$1$', '$0{,}2$'], answer: 3, explanation: 'Tỉ lệ 1:1 ⇒ $0{,}2$ mol $CO_2$.' },
+        { stem: 'Sự trao đổi khí ở phổi diễn ra tại đâu?', options: ['khí quản', 'phế quản', 'phế nang', 'thanh quản'], answer: 2, explanation: 'Phế nang là nơi trao đổi khí $O_2$/$CO_2$.' },
+        { stem: 'Hòa tan $10$ g muối vào $90$ g nước. Nồng độ phần trăm?', options: ['$10\\%$', '$5\\%$', '$11\\%$', '$20\\%$'], answer: 0, explanation: '$C\\%=10/100\\cdot100\\%=10\\%$.' },
+        { stem: 'Lực đẩy Archimedes phụ thuộc vào?', options: ['khối lượng vật', 'màu sắc của vật', 'trọng lượng riêng chất lỏng và thể tích phần vật chiếm chỗ', 'nhiệt độ phòng'], answer: 2, explanation: '$F_A=d\\cdot V$.' },
+        { stem: 'Khối lượng riêng của nước xấp xỉ?', options: ['$1000\\,kg/m^3$', '$100\\,kg/m^3$', '$10000\\,kg/m^3$', '$1\\,kg/m^3$'], answer: 0, explanation: 'Nước có $D\\approx1000\\,kg/m^3$.' },
+        { stem: 'Cơ quan bài tiết nước tiểu chính ở người?', options: ['gan', 'thận', 'phổi', 'dạ dày'], answer: 1, explanation: 'Thận lọc máu tạo nước tiểu.' },
+        { stem: 'Khí nào làm đục nước vôi trong?', options: ['$O_2$', '$CO_2$', '$H_2$', '$N_2$'], answer: 1, explanation: '$CO_2+Ca(OH)_2\\to CaCO_3\\downarrow+H_2O$.' },
+      ],
+    },
   ],
 
   ANH8: [
