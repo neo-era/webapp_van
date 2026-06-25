@@ -3617,6 +3617,21 @@ const EXAMS = {
         { stem: '____ she finished her work yet?', options: ['Have', 'Had', 'Has', 'Having'], answer: 2, explanation: 'Hiện tại hoàn thành với "she" ⇒ Has.' },
       ],
     },
+    {
+      examId: 'anh8-19', title: 'Kiểm tra 45′ #19 — Tiếng Anh 8', durationMin: 45,
+      questions: [
+        { stem: 'They ____ dinner at 7 pm every day.', options: ['have', 'has', 'having', 'had'], answer: 0, explanation: 'every day ⇒ hiện tại đơn, "they" ⇒ have.' },
+        { stem: 'My house is ____ than yours.', options: ['big', 'biggest', 'bigger', 'more big'], answer: 2, explanation: 'So sánh hơn (gấp đôi phụ âm): bigger.' },
+        { stem: 'Visitors ____ feed the animals in the zoo.', options: ['must', "mustn't", 'should', 'can'], answer: 1, explanation: "mustn't = cấm." },
+        { stem: 'Unless we leave now, we ____ late for school.', options: ['are', 'were', 'would be', 'will be'], answer: 3, explanation: 'Điều kiện loại 1: mệnh đề chính dùng will + be.' },
+        { stem: 'The bridge ____ in 1990.', options: ['built', 'builds', 'was built', 'is built'], answer: 2, explanation: 'Bị động quá khứ đơn: was built.' },
+        { stem: 'This is the place ____ we first met.', options: ['where', 'which', 'who', 'whose'], answer: 0, explanation: 'where chỉ nơi chốn.' },
+        { stem: 'He has lived in Hue ____ he was a child.', options: ['for', 'since', 'at', 'in'], answer: 1, explanation: 'since + mệnh đề mốc thời gian (he was a child).' },
+        { stem: "Choose the synonym of 'small'.", options: ['huge', 'large', 'tall', 'little'], answer: 3, explanation: 'small ≈ little (nhỏ).' },
+        { stem: "Choose the antonym of 'happy'.", options: ['glad', 'sad', 'cheerful', 'merry'], answer: 1, explanation: 'happy ↔ sad (buồn).' },
+        { stem: 'I ____ my keys. Can you help me find them?', options: ['lose', 'lost', 'have lost', 'losing'], answer: 2, explanation: 'Kết quả ở hiện tại ⇒ hiện tại hoàn thành: have lost.' },
+      ],
+    },
   ],
 };
 
