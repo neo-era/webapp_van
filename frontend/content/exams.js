@@ -3251,6 +3251,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $2, 4, 6, 8, 10, 12$?', options: ['$6$', '$8$', '$7$', '$42$'], answer: 2, explanation: '$\\dfrac{2+4+6+8+10+12}{6}=\\dfrac{42}{6}=7$.' },
       ],
     },
+    {
+      examId: 'toan8-33', title: 'Kiểm tra 45′ #33 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(3x+2)^2$?', options: ['$9x^2+4$', '$9x^2+6x+4$', '$9x^2+12x+4$', '$3x^2+12x+4$'], answer: 2, explanation: '$(3x+2)^2=9x^2+12x+4$.' },
+        { stem: 'Phân tích $x^2-9x+20$ thành nhân tử?', options: ['$(x-4)(x-5)$', '$(x+4)(x+5)$', '$(x-2)(x-10)$', '$(x-4)(x+5)$'], answer: 0, explanation: '$x^2-9x+20=(x-4)(x-5)$.' },
+        { stem: 'Nghiệm của phương trình $2x-5=x+1$?', options: ['$x=4$', '$x=6$', '$x=-6$', '$x=2$'], answer: 1, explanation: '$2x-x=1+5 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-1}{x^2+x}$ (với $x\\ne0, x\\ne-1$)?', options: ['$x-1$', '$\\dfrac{x+1}{x}$', '$\\dfrac{x}{x+1}$', '$\\dfrac{x-1}{x}$'], answer: 3, explanation: '$\\dfrac{(x-1)(x+1)}{x(x+1)}=\\dfrac{x-1}{x}$.' },
+        { stem: 'Hệ số góc của đường thẳng $y=-x+7$?', options: ['$1$', '$7$', '$-1$', '$-7$'], answer: 2, explanation: 'Hệ số của $x$ là $-1$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $10$, một cạnh góc vuông $6$. Cạnh góc vuông còn lại?', options: ['$4$', '$8$', '$\\sqrt{136}$', '$10$'], answer: 1, explanation: '$\\sqrt{10^2-6^2}=\\sqrt{64}=8$.' },
+        { stem: 'Khai triển $(5x-1)^2$?', options: ['$25x^2-10x+1$', '$25x^2+10x+1$', '$25x^2-1$', '$5x^2-10x+1$'], answer: 0, explanation: '$(5x-1)^2=25x^2-10x+1$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có đáy $4\\times5$ và chiều cao $3$?', options: ['$12$', '$20$', '$40$', '$60$'], answer: 3, explanation: '$V=4\\cdot5\\cdot3=60$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+x-6}{x-2}$ (với $x\\ne2$)?', options: ['$x-3$', '$x+3$', '$x^2+3$', '$3$'], answer: 1, explanation: '$\\dfrac{(x-2)(x+3)}{x-2}=x+3$.' },
+        { stem: 'Mốt của dãy số $8, 8, 8, 8, 12$?', options: ['$12$', '$4$', '$8$', '$10$'], answer: 2, explanation: 'Giá trị $8$ xuất hiện nhiều nhất ⇒ mốt $=8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
