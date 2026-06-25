@@ -2909,6 +2909,21 @@ const EXAMS = {
         { stem: 'Quỳ tím trong môi trường acid có màu?', options: ['xanh', 'vàng', 'tím', 'đỏ'], answer: 3, explanation: 'Acid làm quỳ tím hóa đỏ.' },
       ],
     },
+    {
+      examId: 'khtn8-5', title: 'Kiểm tra 45′ #5 — KHTN 8 (Lý–Hóa–Sinh)', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $11$ g $CO_2$ ($M=44$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}25$'], answer: 3, explanation: '$n=11/44=0{,}25$ mol.' },
+        { stem: 'Công của lực $F=20$ N kéo vật đi $s=10$ m (cùng hướng)?', options: ['$200$ J', '$2$ J', '$30$ J', '$0{,}5$ J'], answer: 0, explanation: '$A=F\\cdot s=20\\cdot10=200$ J.' },
+        { stem: 'Trong bình thông nhau chứa cùng một chất lỏng đứng yên, mực chất lỏng hai nhánh?', options: ['chênh lệch', 'bằng nhau', 'cao bên trái', 'cao bên phải'], answer: 1, explanation: 'Mực chất lỏng ở các nhánh luôn bằng nhau.' },
+        { stem: 'Phản ứng $2H_2+O_2\\to2H_2O$. Từ $0{,}2$ mol $H_2$ thu được mol $H_2O$?', options: ['$0{,}1$', '$0{,}4$', '$0{,}05$', '$0{,}2$'], answer: 3, explanation: 'Tỉ lệ $H_2:H_2O = 1:1$ ⇒ $0{,}2$ mol.' },
+        { stem: 'Tế bào máu nào tham gia quá trình đông máu?', options: ['hồng cầu', 'tiểu cầu', 'bạch cầu', 'huyết tương'], answer: 1, explanation: 'Tiểu cầu tham gia đông máu.' },
+        { stem: 'Áp suất khí quyển ở mực nước biển xấp xỉ?', options: ['$101325$ Pa', '$1000$ Pa', '$10$ Pa', '$100$ Pa'], answer: 0, explanation: '$\\approx101325$ Pa $\\approx1$ atm.' },
+        { stem: 'Phản ứng trung hòa giữa acid và base tạo ra?', options: ['khí + nước', 'muối + nước', 'oxide', 'kim loại'], answer: 1, explanation: 'Acid + base → muối + nước.' },
+        { stem: 'Dây dẫn nóng lên khi có dòng điện chạy qua thể hiện tác dụng nào?', options: ['tác dụng từ', 'tác dụng hóa học', 'tác dụng phát sáng', 'tác dụng nhiệt'], answer: 3, explanation: 'Dòng điện làm dây dẫn nóng lên ⇒ tác dụng nhiệt.' },
+        { stem: 'Bạch cầu trong máu có vai trò chính là?', options: ['bảo vệ cơ thể', 'vận chuyển $O_2$', 'đông máu', 'vận chuyển dinh dưỡng'], answer: 0, explanation: 'Bạch cầu tiêu diệt vi khuẩn, bảo vệ cơ thể.' },
+        { stem: 'Khối lượng mol của NaCl (Na=23, Cl=35,5)?', options: ['$40$', '$36{,}5$', '$58{,}5$', '$23$'], answer: 2, explanation: '$23+35{,}5=58{,}5$ g/mol.' },
+      ],
+    },
   ],
 
   ANH8: [
