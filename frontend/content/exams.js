@@ -3146,6 +3146,21 @@ const EXAMS = {
         { stem: 'Hộp có $3$ bi đỏ và $2$ bi xanh. Xác suất lấy ngẫu nhiên được bi đỏ?', options: ['$\\dfrac{2}{5}$', '$\\dfrac{1}{5}$', '$\\dfrac{3}{5}$', '$\\dfrac{1}{3}$'], answer: 2, explanation: '$\\dfrac{3}{3+2}=\\dfrac{3}{5}$.' },
       ],
     },
+    {
+      examId: 'toan8-26', title: 'Kiểm tra 45′ #26 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(2x+1)(2x-1)$?', options: ['$4x^2+1$', '$2x^2-1$', '$4x^2-1$', '$4x^2-2x-1$'], answer: 2, explanation: 'Hiệu hai bình phương: $4x^2-1$.' },
+        { stem: 'Phân tích $x^2-6x+9$ thành nhân tử?', options: ['$(x-3)^2$', '$(x+3)^2$', '$(x-3)(x+3)$', '$(x-9)(x-1)$'], answer: 0, explanation: '$x^2-6x+9=(x-3)^2$.' },
+        { stem: 'Nghiệm của phương trình $8-3x=2$?', options: ['$x=3$', '$x=2$', '$x=6$', '$x=-2$'], answer: 1, explanation: '$-3x=-6 \\Leftrightarrow x=2$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+4x+4}{x+2}$ (với $x\\ne-2$)?', options: ['$x$', '$x-2$', '$x^2+2$', '$x+2$'], answer: 3, explanation: '$\\dfrac{(x+2)^2}{x+2}=x+2$.' },
+        { stem: 'Đường thẳng $y=3x-6$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=6$', '$x=-2$', '$x=2$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 3x=6 \\Rightarrow x=2$.' },
+        { stem: 'Hai tam giác đồng dạng tỉ số $5$, cạnh nhỏ là $3$. Cạnh tương ứng của tam giác lớn?', options: ['$9$', '$15$', '$8$', '$18$'], answer: 1, explanation: 'Cạnh lớn $=3\\times5=15$.' },
+        { stem: 'Khai triển $(x+5)^2$?', options: ['$x^2+10x+25$', '$x^2+25$', '$x^2+5x+25$', '$x^2+10x+5$'], answer: 0, explanation: '$(x+5)^2=x^2+10x+25$.' },
+        { stem: 'Diện tích hình tròn bán kính $3$ (lấy $\\pi\\approx3{,}14$)?', options: ['$9{,}42$', '$18{,}84$', '$6$', '$28{,}26$'], answer: 3, explanation: '$S=\\pi r^2=3{,}14\\cdot9=28{,}26$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2-4}{x+2}$ (với $x\\ne-2$)?', options: ['$x+2$', '$x-2$', '$x^2-2$', '$2$'], answer: 1, explanation: '$\\dfrac{(x-2)(x+2)}{x+2}=x-2$.' },
+        { stem: 'Tần số xuất hiện của giá trị $6$ trong dãy $6, 2, 6, 9, 6$?', options: ['$1$', '$2$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $6$ xuất hiện $3$ lần.' },
+      ],
+    },
   ],
 
   KHTN8: [
