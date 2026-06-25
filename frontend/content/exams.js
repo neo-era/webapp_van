@@ -3296,6 +3296,21 @@ const EXAMS = {
         { stem: 'Gieo một con xúc xắc cân đối, xác suất ra mặt có số chấm lớn hơn $4$?', options: ['$\\dfrac{1}{6}$', '$\\dfrac{1}{2}$', '$\\dfrac{1}{3}$', '$\\dfrac{2}{3}$'], answer: 2, explanation: 'Hai mặt $\\{5,6\\}$ ⇒ $2/6=\\dfrac{1}{3}$.' },
       ],
     },
+    {
+      examId: 'toan8-36', title: 'Kiểm tra 45′ #36 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(x+12)(x-12)$?', options: ['$x^2+144$', '$x^2-24x+144$', '$x^2-144$', '$x^2-12x$'], answer: 2, explanation: 'Hiệu hai bình phương: $x^2-144$.' },
+        { stem: 'Phân tích $x^2-10x+25$ thành nhân tử?', options: ['$(x-5)^2$', '$(x+5)^2$', '$(x-5)(x+5)$', '$(x-25)(x-1)$'], answer: 0, explanation: '$x^2-10x+25=(x-5)^2$.' },
+        { stem: 'Nghiệm của phương trình $3x-7=x+5$?', options: ['$x=2$', '$x=6$', '$x=12$', '$x=-6$'], answer: 1, explanation: '$2x=12 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+7x+12}{x+3}$ (với $x\\ne-3$)?', options: ['$x+3$', '$x$', '$x^2+4$', '$x+4$'], answer: 3, explanation: '$\\dfrac{(x+3)(x+4)}{x+3}=x+4$.' },
+        { stem: 'Đường thẳng $y=5x-10$ cắt trục hoành tại điểm có hoành độ?', options: ['$x=10$', '$x=-2$', '$x=2$', '$x=0$'], answer: 2, explanation: 'Cho $y=0 \\Rightarrow 5x=10 \\Rightarrow x=2$.' },
+        { stem: 'Tam giác vuông có cạnh huyền $25$, một cạnh góc vuông $7$. Cạnh góc vuông còn lại?', options: ['$18$', '$24$', '$\\sqrt{674}$', '$26$'], answer: 1, explanation: '$\\sqrt{25^2-7^2}=\\sqrt{576}=24$.' },
+        { stem: 'Khai triển $(2x-5)^2$?', options: ['$4x^2-20x+25$', '$4x^2+20x+25$', '$4x^2-25$', '$2x^2-20x+25$'], answer: 0, explanation: '$(2x-5)^2=4x^2-20x+25$.' },
+        { stem: 'Thể tích hình lập phương cạnh $2$?', options: ['$6$', '$4$', '$12$', '$8$'], answer: 3, explanation: '$V=2^3=8$.' },
+        { stem: 'Rút gọn $\\dfrac{4x^2-16}{x+2}$ (với $x\\ne-2$)?', options: ['$4x+8$', '$4x-8$', '$x-2$', '$4$'], answer: 1, explanation: '$\\dfrac{4(x-2)(x+2)}{x+2}=4(x-2)=4x-8$.' },
+        { stem: 'Số trung bình cộng của $6, 6, 6, 9, 12, 15$?', options: ['$6$', '$12$', '$9$', '$54$'], answer: 2, explanation: '$\\dfrac{6+6+6+9+12+15}{6}=\\dfrac{54}{6}=9$.' },
+      ],
+    },
   ],
 
   KHTN8: [
