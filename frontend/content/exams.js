@@ -4319,6 +4319,21 @@ const EXAMS = {
         { stem: 'Vì sao nồi, chảo nấu ăn thường được làm bằng kim loại?', options: ['Vì rẻ tiền', 'Vì kim loại dẫn nhiệt tốt', 'Vì nhẹ', 'Vì đẹp'], answer: 1, explanation: 'Kim loại dẫn nhiệt tốt nên truyền nhiệt nhanh cho thức ăn.' },
       ],
     },
+    {
+      examId: 'khtn8-52', title: 'Kiểm tra 45′ #52 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $3{,}65$ g HCl ($M=36{,}5$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=3{,}65/36{,}5=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $2{,}8$ m trong nước ($d=10000$ N/m³)?', options: ['$28000$ Pa', '$2800$ Pa', '$280000$ Pa', '$18000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 2{,}8=28000$ Pa.' },
+        { stem: 'Một vật có khối lượng $200$ g và thể tích $25$ cm³. Khối lượng riêng?', options: ['$80$ g/cm³', '$8$ g/cm³', '$0{,}8$ g/cm³', '$800$ g/cm³'], answer: 1, explanation: '$D=m/V=200/25=8$ g/cm³.' },
+        { stem: 'Phản ứng trung hòa giữa acid và base luôn tạo thành?', options: ['Khí $H_2$', 'Oxide', 'Base mới', 'Muối và nước'], answer: 3, explanation: 'Acid + base → muối + nước.' },
+        { stem: 'Khi hoạt động, cơ thể sinh ra nhiệt nhờ quá trình nào?', options: ['Hô hấp tế bào (oxi hóa chất dinh dưỡng)', 'Tiêu hóa cơ học', 'Bài tiết', 'Tuần hoàn'], answer: 0, explanation: 'Hô hấp tế bào giải phóng năng lượng dưới dạng nhiệt.' },
+        { stem: 'Hòa tan $6$ g chất tan vào $94$ g nước. Nồng độ phần trăm dung dịch?', options: ['$60\\%$', '$94\\%$', '$6\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=6/100\\times 100\\%=6\\%$.' },
+        { stem: 'Một máy cơ đơn giản cho ta lợi về lực thì sẽ?', options: ['Lợi cả lực và đường đi', 'Thiệt về đường đi', 'Không thay đổi gì', 'Thiệt về lực'], answer: 1, explanation: 'Định luật về công: lợi bao nhiêu lần về lực thì thiệt bấy nhiêu lần về đường đi.' },
+        { stem: 'Khối lượng của $0{,}1$ mol $H_2SO_4$ ($M=98$)?', options: ['$98$ g', '$49$ g', '$19{,}6$ g', '$9{,}8$ g'], answer: 3, explanation: '$m=0{,}1\\times 98=9{,}8$ g.' },
+        { stem: 'Bộ phận nào dẫn nước tiểu từ thận xuống bóng đái?', options: ['Niệu đạo', 'Bóng đái', 'Ống dẫn nước tiểu (niệu quản)', 'Cầu thận'], answer: 2, explanation: 'Niệu quản nối thận với bóng đái.' },
+        { stem: 'Vì sao về mùa đông chim thường xù lông?', options: ['Để trông đẹp', 'Để giữ lớp không khí cách nhiệt, giảm mất nhiệt', 'Để bay tốt hơn', 'Không có lý do'], answer: 1, explanation: 'Lớp không khí giữa lông dẫn nhiệt kém, giúp giữ ấm.' },
+      ],
+    },
   ],
 
   ANH8: [
