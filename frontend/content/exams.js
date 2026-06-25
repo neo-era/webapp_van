@@ -4139,6 +4139,21 @@ const EXAMS = {
         { stem: 'Hai vật có cùng khối lượng, vật có thể tích lớn hơn thì khối lượng riêng?', options: ['Lớn hơn', 'Nhỏ hơn', 'Bằng nhau', 'Bằng $0$'], answer: 1, explanation: '$D=m/V$: cùng $m$, $V$ lớn hơn ⇒ $D$ nhỏ hơn.' },
       ],
     },
+    {
+      examId: 'khtn8-46', title: 'Kiểm tra 45′ #46 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $13$ g Zn ($M=65$)?', options: ['$0{,}1$', '$0{,}5$', '$0{,}2$', '$1$'], answer: 2, explanation: '$n=13/65=0{,}2$ mol.' },
+        { stem: 'Áp suất tại độ sâu $12$ m trong nước ($d=10000$ N/m³)?', options: ['$120000$ Pa', '$12000$ Pa', '$1200000$ Pa', '$22000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=10000\\times 12=120000$ Pa.' },
+        { stem: 'Một vật có khối lượng $135$ g và thể tích $50$ cm³. Khối lượng riêng?', options: ['$27$ g/cm³', '$2{,}7$ g/cm³', '$0{,}27$ g/cm³', '$270$ g/cm³'], answer: 1, explanation: '$D=m/V=135/50=2{,}7$ g/cm³.' },
+        { stem: 'Cho Zn tác dụng với dung dịch $H_2SO_4$ loãng, khí thoát ra là?', options: ['$O_2$', '$SO_2$', '$CO_2$', '$H_2$'], answer: 3, explanation: '$Zn+H_2SO_4\\to ZnSO_4+H_2$.' },
+        { stem: 'Bộ phận nào nghiền nhỏ và trộn thức ăn với dịch vị?', options: ['Dạ dày', 'Ruột non', 'Gan', 'Thực quản'], answer: 0, explanation: 'Dạ dày co bóp nghiền và trộn thức ăn với dịch vị.' },
+        { stem: 'Hòa tan $12$ g chất tan vào $108$ g nước. Nồng độ phần trăm dung dịch?', options: ['$12\\%$', '$108\\%$', '$10\\%$', '$20\\%$'], answer: 2, explanation: '$m_{dd}=120$ g ⇒ $C\\%=12/120\\times 100\\%=10\\%$.' },
+        { stem: 'Hai bạn kéo dây về hai phía với lực bằng nhau, dây không dịch chuyển. Hợp lực tác dụng lên dây?', options: ['Rất lớn', 'Bằng $0$', 'Bằng tổng hai lực', 'Không xác định'], answer: 1, explanation: 'Hai lực cân bằng ⇒ hợp lực bằng $0$.' },
+        { stem: 'Khối lượng của $0{,}2$ mol $Al_2O_3$ ($M=102$)?', options: ['$102$ g', '$51$ g', '$10{,}2$ g', '$20{,}4$ g'], answer: 3, explanation: '$m=0{,}2\\times 102=20{,}4$ g.' },
+        { stem: 'Khi cơ thể bị thiếu nước, cơ chế nào giúp duy trì cân bằng nước?', options: ['Tăng tiết mồ hôi', 'Thở nhanh hơn', 'Thận tăng tái hấp thu nước', 'Ăn nhiều hơn'], answer: 2, explanation: 'Thận giảm bài tiết, tăng tái hấp thu nước để giữ nước.' },
+        { stem: 'Vì sao cốc thủy tinh dày dễ vỡ hơn cốc mỏng khi rót nước nóng vào?', options: ['Thủy tinh quá nặng', 'Thủy tinh nở vì nhiệt không đều', 'Nước quá nóng', 'Cốc quá cũ'], answer: 1, explanation: 'Lớp trong nóng nở trước, lớp ngoài chưa nở ⇒ nứt vỡ.' },
+      ],
+    },
   ],
 
   ANH8: [
