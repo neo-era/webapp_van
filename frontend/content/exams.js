@@ -3191,6 +3191,21 @@ const EXAMS = {
         { stem: 'Số trung bình cộng của $10, 20, 30, 40, 50$?', options: ['$25$', '$50$', '$30$', '$150$'], answer: 2, explanation: '$\\dfrac{10+20+30+40+50}{5}=\\dfrac{150}{5}=30$.' },
       ],
     },
+    {
+      examId: 'toan8-29', title: 'Kiểm tra 45′ #29 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(4x+1)^2$?', options: ['$16x^2+1$', '$16x^2+4x+1$', '$16x^2+8x+1$', '$4x^2+8x+1$'], answer: 2, explanation: '$(4x+1)^2=16x^2+8x+1$.' },
+        { stem: 'Phân tích $x^2-x-2$ thành nhân tử?', options: ['$(x-2)(x+1)$', '$(x+2)(x-1)$', '$(x-2)(x-1)$', '$(x+2)(x+1)$'], answer: 0, explanation: '$x^2-x-2=(x-2)(x+1)$.' },
+        { stem: 'Nghiệm của phương trình $3x+12=0$?', options: ['$x=4$', '$x=-4$', '$x=12$', '$x=-12$'], answer: 1, explanation: '$3x=-12 \\Leftrightarrow x=-4$.' },
+        { stem: 'Rút gọn $\\dfrac{x^2+6x+9}{x^2-9}$ (với $x\\ne\\pm3$)?', options: ['$x+3$', '$\\dfrac{x-3}{x+3}$', '$x-3$', '$\\dfrac{x+3}{x-3}$'], answer: 3, explanation: '$\\dfrac{(x+3)^2}{(x-3)(x+3)}=\\dfrac{x+3}{x-3}$.' },
+        { stem: 'Giá trị của hàm số $y=3x-2$ tại $x=1$?', options: ['$3$', '$5$', '$1$', '$-2$'], answer: 2, explanation: '$y=3\\cdot1-2=1$.' },
+        { stem: 'Hai tam giác đồng dạng tỉ số $4$ thì tỉ số diện tích bằng?', options: ['$4$', '$16$', '$8$', '$64$'], answer: 1, explanation: 'Tỉ số diện tích $=k^2=4^2=16$.' },
+        { stem: 'Khai triển $(3-x)(3+x)$?', options: ['$9-x^2$', '$9+x^2$', '$x^2-9$', '$9-6x+x^2$'], answer: 0, explanation: 'Hiệu hai bình phương: $9-x^2$.' },
+        { stem: 'Diện tích hình bình hành có đáy $9$ và chiều cao $5$?', options: ['$14$', '$90$', '$18$', '$45$'], answer: 3, explanation: '$S=a\\cdot h=9\\cdot5=45$.' },
+        { stem: 'Rút gọn $\\dfrac{2x^2-2}{x+1}$ (với $x\\ne-1$)?', options: ['$2x+2$', '$2x-2$', '$x-1$', '$2$'], answer: 1, explanation: '$\\dfrac{2(x-1)(x+1)}{x+1}=2(x-1)=2x-2$.' },
+        { stem: 'Số trung bình cộng của $5, 5, 5, 10, 15$?', options: ['$5$', '$10$', '$8$', '$40$'], answer: 2, explanation: '$\\dfrac{5+5+5+10+15}{5}=\\dfrac{40}{5}=8$.' },
+      ],
+    },
   ],
 
   KHTN8: [
