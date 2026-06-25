@@ -4259,6 +4259,21 @@ const EXAMS = {
         { stem: 'Một vật nóng đặt trong phòng sẽ tỏa nhiệt cho đến khi nào?', options: ['Vật lạnh đi mãi mãi', 'Nhiệt độ cân bằng với môi trường', 'Vật nóng thêm', 'Không thay đổi gì'], answer: 1, explanation: 'Truyền nhiệt dừng khi nhiệt độ cân bằng.' },
       ],
     },
+    {
+      examId: 'khtn8-50', title: 'Kiểm tra 45′ #50 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $8$ g $SO_3$ ($M=80$)?', options: ['$0{,}05$', '$0{,}2$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=8/80=0{,}1$ mol.' },
+        { stem: 'Áp suất tại độ sâu $8$ m trong dầu ($d=8000$ N/m³)?', options: ['$64000$ Pa', '$6400$ Pa', '$640000$ Pa', '$16000$ Pa'], answer: 0, explanation: '$p=d\\cdot h=8000\\times 8=64000$ Pa.' },
+        { stem: 'Một vật có khối lượng $222$ g và thể tích $20$ cm³. Khối lượng riêng?', options: ['$111$ g/cm³', '$11{,}1$ g/cm³', '$1{,}11$ g/cm³', '$1110$ g/cm³'], answer: 1, explanation: '$D=m/V=222/20=11{,}1$ g/cm³.' },
+        { stem: 'Đốt cháy magie trong oxi thu được sản phẩm nào?', options: ['$Mg_2O$', '$MgO_2$', 'Mg', '$MgO$'], answer: 3, explanation: '$2Mg+O_2\\to 2MgO$.' },
+        { stem: 'Cơ quan nào được ví như "nhà máy lọc máu" của cơ thể?', options: ['Thận', 'Gan', 'Phổi', 'Tim'], answer: 0, explanation: 'Thận lọc máu và tạo nước tiểu.' },
+        { stem: 'Hòa tan $7{,}5$ g chất tan vào $92{,}5$ g nước. Nồng độ phần trăm dung dịch?', options: ['$15\\%$', '$92{,}5\\%$', '$7{,}5\\%$', '$10\\%$'], answer: 2, explanation: '$m_{dd}=100$ g ⇒ $C\\%=7{,}5/100\\times 100\\%=7{,}5\\%$.' },
+        { stem: 'Đơn vị đo công cơ học trong hệ SI là?', options: ['Watt (W)', 'Jun (J)', 'Niuton (N)', 'Pascal (Pa)'], answer: 1, explanation: 'Công đo bằng Jun (J).' },
+        { stem: 'Khối lượng của $0{,}5$ mol $Na_2O$ ($M=62$)?', options: ['$62$ g', '$124$ g', '$15{,}5$ g', '$31$ g'], answer: 3, explanation: '$m=0{,}5\\times 62=31$ g.' },
+        { stem: 'Quá trình tiêu hóa lí học ở khoang miệng chủ yếu là?', options: ['Biến tinh bột thành đường', 'Hấp thụ chất dinh dưỡng', 'Nghiền nhỏ thức ăn (nhai)', 'Bài tiết enzyme'], answer: 2, explanation: 'Răng nghiền nhỏ, lưỡi đảo trộn thức ăn.' },
+        { stem: 'Khi bơm xe đạp, ta nén khí làm thể tích giảm thì áp suất khí?', options: ['Giảm', 'Tăng', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: 'Thể tích giảm ⇒ áp suất tăng.' },
+      ],
+    },
   ],
 
   ANH8: [
