@@ -3659,6 +3659,21 @@ const EXAMS = {
         { stem: 'Khi tăng diện tích bị ép và giữ nguyên áp lực, áp suất sẽ?', options: ['Tăng', 'Giảm', 'Không đổi', 'Bằng $0$'], answer: 1, explanation: '$p=F/S$: $S$ tăng, $F$ không đổi ⇒ $p$ giảm.' },
       ],
     },
+    {
+      examId: 'khtn8-30', title: 'Kiểm tra 45′ #30 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $20$ g NaOH ($M=40$)?', options: ['$0{,}1$', '$0{,}25$', '$0{,}5$', '$1$'], answer: 2, explanation: '$n=20/40=0{,}5$ mol.' },
+        { stem: 'Áp suất tại độ sâu $2$ m trong dầu ($d=9000$ N/m³)?', options: ['$18000$ Pa', '$1800$ Pa', '$11000$ Pa', '$4500$ Pa'], answer: 0, explanation: '$p=d\\cdot h=9000\\times 2=18000$ Pa.' },
+        { stem: 'Một vật có khối lượng $270$ g và thể tích $300$ cm³. Khối lượng riêng?', options: ['$9$ g/cm³', '$0{,}9$ g/cm³', '$90$ g/cm³', '$0{,}09$ g/cm³'], answer: 1, explanation: '$D=m/V=270/300=0{,}9$ g/cm³.' },
+        { stem: 'Phản ứng $2Na+Cl_2\\to 2NaCl$ thuộc loại?', options: ['Phân hủy', 'Thế', 'Trao đổi', 'Hóa hợp'], answer: 3, explanation: 'Hai chất tạo thành một chất ⇒ phản ứng hóa hợp.' },
+        { stem: 'Hồng cầu của người trưởng thành không có thành phần nào?', options: ['Nhân', 'Màng tế bào', 'Tế bào chất', 'Hemoglobin'], answer: 0, explanation: 'Hồng cầu người không có nhân, chứa nhiều hemoglobin.' },
+        { stem: 'Hòa tan $16$ g chất tan vào $64$ g nước. Nồng độ phần trăm dung dịch?', options: ['$10\\%$', '$25\\%$', '$20\\%$', '$16\\%$'], answer: 2, explanation: '$m_{dd}=80$ g ⇒ $C\\%=16/80\\times 100\\%=20\\%$.' },
+        { stem: 'Khi đi xe đạp, lực ma sát giữa bánh xe lăn trên mặt đường là loại?', options: ['Ma sát trượt', 'Ma sát lăn', 'Ma sát nghỉ', 'Không có ma sát'], answer: 1, explanation: 'Bánh xe lăn ⇒ ma sát lăn.' },
+        { stem: 'Khối lượng của $0{,}25$ mol $CaCO_3$ ($M=100$)?', options: ['$100$ g', '$50$ g', '$12{,}5$ g', '$25$ g'], answer: 3, explanation: '$m=0{,}25\\times 100=25$ g.' },
+        { stem: 'Hệ cơ quan nào thực hiện trao đổi khí giữa cơ thể và môi trường?', options: ['Hệ tiêu hóa', 'Hệ tuần hoàn', 'Hệ hô hấp', 'Hệ bài tiết'], answer: 2, explanation: 'Hệ hô hấp lấy $O_2$ và thải $CO_2$.' },
+        { stem: 'Áp suất chất khí trong bình kín tác dụng lên thành bình theo hướng nào?', options: ['Chỉ tác dụng xuống đáy bình', 'Theo mọi phương', 'Chỉ sang hai bên', 'Chỉ hướng lên trên'], answer: 1, explanation: 'Chất khí gây áp suất lên thành bình theo mọi phương.' },
+      ],
+    },
   ],
 
   ANH8: [
