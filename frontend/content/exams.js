@@ -3119,6 +3119,21 @@ const EXAMS = {
         { stem: 'Số mol có trong $11{,}2$ g Fe ($M=56$)?', options: ['$0{,}2$', '$0{,}1$', '$0{,}4$', '$1$'], answer: 0, explanation: '$n=11{,}2/56=0{,}2$ mol.' },
       ],
     },
+    {
+      examId: 'khtn8-12', title: 'Kiểm tra 45′ #12 — KHTN 8', durationMin: 45,
+      questions: [
+        { stem: 'Số mol có trong $8$ g CuO ($M=80$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}5$', '$1$'], answer: 0, explanation: '$n=8/80=0{,}1$ mol.' },
+        { stem: 'Vật khối lượng $270$ g, thể tích $100$ cm³. Khối lượng riêng là?', options: ['$2{,}7$ g/cm³', '$27$ g/cm³', '$0{,}27$ g/cm³', '$270$ g/cm³'], answer: 0, explanation: '$D=m/V=270/100=2{,}7$ g/cm³.' },
+        { stem: 'Lực $50$ N kéo vật đi quãng đường $4$ m. Công thực hiện là?', options: ['$12{,}5$ J', '$54$ J', '$200$ J', '$100$ J'], answer: 2, explanation: '$A=F\\cdot s=50\\times 4=200$ J.' },
+        { stem: 'Nung $100$ g $CaCO_3$ ($M=100$): $CaCO_3\\to CaO+CO_2$. Số mol $CO_2$ thu được?', options: ['$0{,}5$', '$2$', '$0{,}1$', '$1$'], answer: 3, explanation: '$n_{CaCO_3}=1$ mol ⇒ $n_{CO_2}=1$ mol.' },
+        { stem: 'Cơ quan nào lọc máu để tạo thành nước tiểu?', options: ['Gan', 'Thận', 'Phổi', 'Dạ dày'], answer: 1, explanation: 'Thận lọc máu, tạo nước tiểu.' },
+        { stem: 'Hòa tan $20$ g muối vào $80$ g nước. Nồng độ phần trăm dung dịch là?', options: ['$25\\%$', '$16\\%$', '$80\\%$', '$20\\%$'], answer: 3, explanation: '$m_{dd}=100$ g ⇒ $C\\%=20/100\\times 100\\%=20\\%$.' },
+        { stem: 'Áp suất tại điểm cách mặt thoáng $2$ m trong chất lỏng $d=10000$ N/m³?', options: ['$5000$ Pa', '$12000$ Pa', '$20000$ Pa', '$2000$ Pa'], answer: 2, explanation: '$p=d\\cdot h=10000\\times 2=20000$ Pa.' },
+        { stem: 'Quá trình trao đổi khí $O_2$ và $CO_2$ giữa máu và không khí diễn ra ở đâu?', options: ['Tim', 'Gan', 'Thận', 'Phổi'], answer: 3, explanation: 'Trao đổi khí ở phế nang trong phổi.' },
+        { stem: 'Dung dịch có $pH=3$ mang tính gì?', options: ['Base', 'Trung tính', 'Acid', 'Muối'], answer: 2, explanation: '$pH<7$ ⇒ tính acid.' },
+        { stem: 'Trọng lượng của vật khối lượng $5$ kg (lấy $g=10$ N/kg)?', options: ['$5$ N', '$50$ N', '$500$ N', '$0{,}5$ N'], answer: 1, explanation: '$P=10\\cdot m=10\\times 5=50$ N.' },
+      ],
+    },
   ],
 
   ANH8: [
