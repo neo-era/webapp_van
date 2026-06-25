@@ -3161,6 +3161,21 @@ const EXAMS = {
         { stem: 'Tần số xuất hiện của giá trị $6$ trong dãy $6, 2, 6, 9, 6$?', options: ['$1$', '$2$', '$3$', '$5$'], answer: 2, explanation: 'Giá trị $6$ xuất hiện $3$ lần.' },
       ],
     },
+    {
+      examId: 'toan8-27', title: 'Kiểm tra 45′ #27 — Toán 8', durationMin: 45,
+      questions: [
+        { stem: 'Khai triển $(3x-1)^2$?', options: ['$9x^2+6x+1$', '$9x^2-1$', '$9x^2-6x+1$', '$9x^2-3x+1$'], answer: 2, explanation: '$(3x-1)^2=9x^2-6x+1$.' },
+        { stem: 'Phân tích $4x^2-9$ thành nhân tử?', options: ['$(2x-3)(2x+3)$', '$(2x-3)^2$', '$(4x-9)(x+1)$', '$(2x+3)^2$'], answer: 0, explanation: 'Hiệu hai bình phương: $(2x-3)(2x+3)$.' },
+        { stem: 'Nghiệm của phương trình $\\dfrac{2x}{3}=4$?', options: ['$x=2$', '$x=6$', '$x=12$', '$x=4$'], answer: 1, explanation: '$2x=12 \\Leftrightarrow x=6$.' },
+        { stem: 'Rút gọn $\\dfrac{5x+10}{x+2}$ (với $x\\ne-2$)?', options: ['$x+2$', '$5x$', '$x$', '$5$'], answer: 3, explanation: '$\\dfrac{5(x+2)}{x+2}=5$.' },
+        { stem: 'Đồ thị hàm số $y=-2x$ đi qua điểm nào?', options: ['$(2;1)$', '$(-2;1)$', '$(1;-2)$', '$(1;2)$'], answer: 2, explanation: 'Thay $x=1 \\Rightarrow y=-2$.' },
+        { stem: 'Tam giác vuông có hai cạnh góc vuông $7$ và $24$. Cạnh huyền?', options: ['$31$', '$25$', '$\\sqrt{527}$', '$23$'], answer: 1, explanation: '$\\sqrt{7^2+24^2}=\\sqrt{625}=25$.' },
+        { stem: 'Khai triển $(2x-y)^2$?', options: ['$4x^2-4xy+y^2$', '$4x^2+4xy+y^2$', '$4x^2-y^2$', '$2x^2-4xy+y^2$'], answer: 0, explanation: '$(2x-y)^2=4x^2-4xy+y^2$.' },
+        { stem: 'Thể tích hình hộp chữ nhật có đáy $3\\times4$ và chiều cao $2$?', options: ['$9$', '$14$', '$12$', '$24$'], answer: 3, explanation: '$V=3\\cdot4\\cdot2=24$.' },
+        { stem: 'Rút gọn $\\dfrac{x^3}{x}$ (với $x\\ne0$)?', options: ['$x$', '$x^2$', '$x^3$', '$1$'], answer: 1, explanation: '$\\dfrac{x^3}{x}=x^2$.' },
+        { stem: 'Mốt của dãy số $1, 2, 2, 3, 3, 3$?', options: ['$1$', '$2$', '$3$', '$6$'], answer: 2, explanation: 'Giá trị $3$ xuất hiện nhiều nhất ⇒ mốt $=3$.' },
+      ],
+    },
   ],
 
   KHTN8: [
