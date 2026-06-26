@@ -22,7 +22,7 @@ const CURRICULUM = {
           id: 't-toan-c1', title: 'Chương 1 · Ứng dụng đạo hàm để khảo sát và vẽ đồ thị',
           lessons: [
             {
-              id: 'l-toan-dondieu', title: 'Tính đơn điệu của hàm số', level: 'CO_BAN',
+              id: 'l-toan-dondieu', title: 'Tính đơn điệu của hàm số', title_en: 'Monotonicity of functions', level: 'CO_BAN',
               html: `
                 <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
@@ -83,6 +83,68 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$y'=4x^3-4x=4x(x-1)(x+1)$. Đồng biến trên $(-1;0)$ và $(1;+\\infty)$; nghịch biến trên $(-\\infty;-1)$ và $(0;1)$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm $m$ để $y=\\dfrac{mx+1}{x+2}$ đồng biến trên từng khoảng xác định.</p>
                   <details><summary>Đáp án</summary><p>$y'=\\dfrac{2m-1}{(x+2)^2}>0 \\Leftrightarrow 2m-1>0 \\Leftrightarrow m>\\dfrac{1}{2}$.</p></details>
+                </div>
+              `,
+              html_en: `
+                <div class="lesson-sim-cta">🔬 <strong>Tool:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Plot a function ▸</button></div>
+                <h2>Core idea</h2>
+                <p>Let $y=f(x)$ be differentiable on an interval $K$:</p>
+                <ul>
+                  <li>If $f'(x) > 0$ for all $x \\in K$, then the function is <strong>increasing</strong> on $K$.</li>
+                  <li>If $f'(x) < 0$ for all $x \\in K$, then the function is <strong>decreasing</strong> on $K$.</li>
+                </ul>
+                <div class="luuy">
+                  <strong>Note (made precise):</strong> A more general sufficient condition: if $f'(x)\\ge 0\\ \\forall x\\in K$ and $f'(x)=0$ only at <em>finitely many points</em>, the function is still increasing on $K$.
+                  <em>Example:</em> $y=x^3$ has $y'=3x^2\\ge 0$ (zero only at $x=0$), so it is increasing on $\\mathbb{R}$.
+                </div>
+                <h3>Steps to study monotonicity</h3>
+                <ol>
+                  <li>Find the domain.</li>
+                  <li>Compute $f'(x)$; solve $f'(x)=0$ and find where $f'(x)$ is undefined.</li>
+                  <li>Build the variation table and conclude.</li>
+                </ol>
+                <h2>Advanced</h2>
+                <p>Parameter problems: finding $m$ so the function is increasing on $\\mathbb{R}$ usually reduces to
+                $f'(x) \\ge 0\\ \\forall x$ — analyze the sign of a quadratic ($a>0$ and $\\Delta \\le 0$).</p>
+                <p>Parameter example: $y=x^3-3mx+1$ has $y'=3x^2-3m \\ge 0\\ \\forall x \\Leftrightarrow m \\le 0$.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Study the monotonicity of $y=x^3-3x$.</p>
+                  <p><strong>Solution:</strong> Domain: $\\mathbb{R}$. $y'=3x^2-3=3(x-1)(x+1)$; $y'=0 \\Leftrightarrow x=\\pm 1$.</p>
+                  <table class="bbt">
+                    <tr><td class="lbl">$x$</td><td>$-\\infty$</td><td>$-1$</td><td>$1$</td><td>$+\\infty$</td></tr>
+                    <tr><td class="lbl">$y'$</td><td>$+$</td><td>$0\\ -\\ 0$</td><td></td><td>$+$</td></tr>
+                    <tr><td class="lbl">$y$</td><td>↗</td><td>$2$ (max) ↘ $-2$ (min)</td><td></td><td>↗</td></tr>
+                  </table>
+                  <p>So the function is increasing on $(-\\infty;-1)$ and $(1;+\\infty)$; decreasing on $(-1;1)$.</p>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Find the monotonic intervals of $y=-x^3+3x^2-1$.</p>
+                  <details><summary>Show answer</summary>
+                    <p>$y'=-3x^2+6x=-3x(x-2)$; $y'=0 \\Leftrightarrow x=0$ or $x=2$. The function is <strong>increasing</strong> on $(0;2)$, <strong>decreasing</strong> on $(-\\infty;0)$ and $(2;+\\infty)$.</p>
+                  </details>
+                </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (rational function)</div>
+                  <p>Study the monotonicity of $y=\\dfrac{x-2}{x+1}$.</p>
+                  <p><strong>Solution:</strong> Domain $\\mathbb{R}\\setminus\\{-1\\}$. $y'=\\dfrac{(x+1)-(x-2)}{(x+1)^2}=\\dfrac{3}{(x+1)^2}>0$.</p>
+                  <p>So the function is <strong>increasing</strong> on each interval $(-\\infty;-1)$ and $(-1;+\\infty)$ (it is not increasing on the union, since it is discontinuous at $x=-1$).</p>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 3 (parameter problem)</div>
+                  <p>Find $m$ so that $y=x^3+3x^2+mx-1$ is increasing on $\\mathbb{R}$.</p>
+                  <p><strong>Solution:</strong> $y'=3x^2+6x+m\\ge 0\\ \\forall x \\Leftrightarrow \\Delta'=9-3m\\le 0 \\Leftrightarrow m\\ge 3$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Study the monotonicity of $y=x^4-2x^2$.</p>
+                  <details><summary>Answer</summary><p>$y'=4x^3-4x=4x(x-1)(x+1)$. Increasing on $(-1;0)$ and $(1;+\\infty)$; decreasing on $(-\\infty;-1)$ and $(0;1)$.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> Find $m$ so that $y=\\dfrac{mx+1}{x+2}$ is increasing on each interval of its domain.</p>
+                  <details><summary>Answer</summary><p>$y'=\\dfrac{2m-1}{(x+2)^2}>0 \\Leftrightarrow 2m-1>0 \\Leftrightarrow m>\\dfrac{1}{2}$.</p></details>
                 </div>
               `,
             },
