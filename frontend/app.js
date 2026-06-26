@@ -1280,17 +1280,80 @@ function renderMarkdown(md, el) {
   }
 }
 
+const FORMULA_SHEETS = {
+  TOAN: {
+    name: 'Toán 12', html: `
+    <h3>Đạo hàm</h3><ul>
+      <li>$(x^n)' = n x^{n-1}$ &nbsp; $(e^x)'=e^x$ &nbsp; $(\\ln x)'=\\dfrac1x$</li>
+      <li>$(\\sin x)'=\\cos x$ &nbsp; $(\\cos x)'=-\\sin x$</li>
+      <li>$(uv)'=u'v+uv'$ &nbsp; $\\left(\\dfrac uv\\right)'=\\dfrac{u'v-uv'}{v^2}$</li></ul>
+    <h3>Nguyên hàm – Tích phân</h3><ul>
+      <li>$\\displaystyle\\int x^n dx=\\dfrac{x^{n+1}}{n+1}+C\\,(n\\ne-1)$ &nbsp; $\\displaystyle\\int\\dfrac{dx}{x}=\\ln|x|+C$</li>
+      <li>$\\displaystyle\\int e^x dx=e^x+C$ &nbsp; $\\displaystyle\\int\\cos x\\,dx=\\sin x+C$</li>
+      <li>$\\displaystyle\\int_a^b f=F(b)-F(a)$ &nbsp; Diện tích $S=\\displaystyle\\int_a^b|f-g|dx$ &nbsp; Thể tích $V=\\pi\\displaystyle\\int_a^b f^2dx$</li></ul>
+    <h3>Mũ – Logarit</h3><ul>
+      <li>$a^x a^y=a^{x+y}$ &nbsp; $(a^x)^y=a^{xy}$ &nbsp; $\\log_a(xy)=\\log_a x+\\log_a y$</li>
+      <li>$\\log_a x=\\dfrac{\\ln x}{\\ln a}$ &nbsp; $a^{\\log_a x}=x$</li></ul>
+    <h3>Hình Oxyz</h3><ul>
+      <li>$|\\vec u|=\\sqrt{x^2+y^2+z^2}$ &nbsp; $\\vec u\\cdot\\vec v=x_1x_2+y_1y_2+z_1z_2$</li>
+      <li>$d(M,(P))=\\dfrac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}$</li>
+      <li>Mặt cầu: $(x-a)^2+(y-b)^2+(z-c)^2=R^2$</li></ul>` },
+  LY: {
+    name: 'Vật lí 12', html: `
+    <h3>Nhiệt học</h3><ul>
+      <li>Nhiệt lượng $Q=mc\\Delta t$ &nbsp; Nóng chảy $Q=\\lambda m$ &nbsp; Hóa hơi $Q=Lm$</li>
+      <li>Nguyên lí I: $\\Delta U=A+Q$</li></ul>
+    <h3>Khí lí tưởng</h3><ul>
+      <li>$\\dfrac{pV}{T}=$ const &nbsp; $pV=nRT$</li>
+      <li>Đẳng nhiệt $pV=$const &nbsp; Đẳng tích $\\dfrac pT=$const &nbsp; Đẳng áp $\\dfrac VT=$const</li></ul>
+    <h3>Từ trường</h3><ul>
+      <li>Lực từ $F=BIl\\sin\\alpha$ &nbsp; Lực Lorentz $f=|q|vB\\sin\\alpha$</li>
+      <li>Dòng thẳng $B=2\\cdot10^{-7}\\dfrac Ir$</li></ul>
+    <h3>Hạt nhân</h3><ul>
+      <li>$E=\\Delta m\\,c^2$ &nbsp; $(1\\,u\\approx931{,}5$ MeV/$c^2)$</li>
+      <li>Phóng xạ $N=N_0\\,2^{-t/T}$ &nbsp; Bảo toàn số khối $A$ và điện tích $Z$</li></ul>` },
+  HOA: {
+    name: 'Hóa 12', html: `
+    <h3>Tính toán cơ bản</h3><ul>
+      <li>$n=\\dfrac mM$ &nbsp; $V_{khí(đktc)}=22{,}4\\,n$</li>
+      <li>$C\\%=\\dfrac{m_{ct}}{m_{dd}}\\cdot100\\%$ &nbsp; $C_M=\\dfrac nV$</li>
+      <li>Bảo toàn khối lượng: $\\sum m_{trước}=\\sum m_{sau}$</li></ul>
+    <h3>Phản ứng quan trọng</h3><ul>
+      <li>Xà phòng hóa: $RCOOR'+NaOH\\to RCOONa+R'OH$</li>
+      <li>Kim loại + acid (trước H): $Fe+2HCl\\to FeCl_2+H_2$</li>
+      <li>Kim loại đẩy KL khỏi muối: $Fe+CuSO_4\\to FeSO_4+Cu$</li></ul>
+    <h3>Hiệu suất & Polymer</h3><ul>
+      <li>Hiệu suất $H=\\dfrac{\\text{thực tế}}{\\text{lí thuyết}}\\cdot100\\%$</li>
+      <li>Số mắt xích $n=\\dfrac{M_{polymer}}{M_{monomer}}$</li></ul>` },
+};
+function learnOpenFormulas() { App.state.learn = { view: 'formulas', formulaSubject: 'TOAN' }; renderLearn(); }
+function formulaSetSubject(code) { App.state.learn.formulaSubject = code; renderLearn(); }
+
 async function renderLearn() {
   const v = App.state.learn || (App.state.learn = { view: 'subjects' });
   const el = $('#screen-learn');
   if (v.view !== 'examTake') clearExamTimer();
+
+  if (v.view === 'formulas') {
+    const cur = v.formulaSubject || 'TOAN';
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
+        <h2>📐 Bảng công thức</h2><p>Tra cứu nhanh trước khi thi</p></div>
+      <div class="sim-tabs">${Object.keys(FORMULA_SHEETS).map((k) => `<button class="sim-tab ${k === cur ? 'active' : ''}" onclick="formulaSetSubject('${k}')">${FORMULA_SHEETS[k].name}</button>`).join('')}</div>
+      <div class="card lesson-content" id="formula-content"></div>`;
+    renderHtmlContent(FORMULA_SHEETS[cur].html, $('#formula-content'));
+    return;
+  }
 
   if (v.view === 'subjects') {
     const g = (App.state.user && App.state.user.grade) || 12;
     // Lọc theo khối lớp: môn có grade trùng lớp HS; môn không gắn grade (IELTS/TOEIC) hiện cho mọi lớp.
     const subs = Content.subjects().filter((s) => !s.grade || s.grade === g);
     el.innerHTML = `<div class="page-head"><h2>Học</h2><p>Chọn môn để xem bài giảng · Lớp ${g}</p></div>
-      <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="switchTab('sim')">🔬 Phòng mô phỏng Lý – Hóa</button>
+      <div style="display:flex;gap:8px;margin-bottom:12px">
+        <button class="btn btn-ghost" style="flex:1" onclick="switchTab('sim')">🔬 Mô phỏng</button>
+        <button class="btn btn-ghost" style="flex:1" onclick="learnOpenFormulas()">📐 Công thức</button>
+      </div>
       ${subs.map((s) => `
         <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.code}','${s.name.replace(/'/g, '')}')">
           <div style="display:flex;justify-content:space-between;align-items:center">
