@@ -575,39 +575,47 @@ async function savePassword() {
 /* ============================================================
    MÔ PHỎNG — Phòng thí nghiệm ảo Lý – Hóa
    ============================================================ */
+// g: khối lớp áp dụng (8 / 12 / 0 = mọi khối)
 const SIM_LIST = [
-  { key: 'graph', label: '📈 Vẽ đồ thị hàm số', tag: 'Toán' },
-  { key: 'geo', label: '📐 Hình học động (tam giác)', tag: 'Toán' },
-  { key: 'lever', label: '⚖️ Đòn bẩy', tag: 'Lý 8' },
-  { key: 'arch', label: '🌊 Lực đẩy Archimedes', tag: 'Lý 8' },
-  { key: 'ohm', label: '⚡ Định luật Ohm', tag: 'Lý' },
-  { key: 'boyle', label: '🎈 Định luật Boyle (khí)', tag: 'Lý 12' },
-  { key: 'conc', label: '💧 Nồng độ dung dịch', tag: 'Hóa 8' },
-  { key: 'ph', label: '🧪 Thang pH', tag: 'Hóa 8' },
-  { key: 'reaction', label: '⚗️ Mô phỏng phản ứng', tag: 'Hóa 12' },
-  { key: 'molecule', label: '🧬 Phân tử (xoay 3D)', tag: 'Hóa 12' },
-  { key: 'electro', label: '🔌 Điện phân', tag: 'Hóa 12' },
-  { key: 'polymer', label: '🔗 Trùng hợp polymer', tag: 'Hóa 12' },
-  { key: 'metalsalt', label: '🔋 Kim loại + muối', tag: 'Hóa 12' },
-  { key: 'heart', label: '❤️ Hệ tuần hoàn', tag: 'Sinh 8' },
-  { key: 'digest', label: '🍽️ Hệ tiêu hóa', tag: 'Sinh 8' },
-  { key: 'lungs', label: '🫁 Hệ hô hấp', tag: 'Sinh 8' },
-  { key: 'pendulum', label: '🕰️ Con lắc đơn', tag: 'Lý' },
-  { key: 'wave', label: '〰️ Sóng ngang', tag: 'Lý' },
-  { key: 'standing', label: '🌊 Sóng dừng (phản xạ)', tag: 'Lý' },
-  { key: 'spring', label: '🪀 Con lắc lò xo', tag: 'Lý' },
+  { key: 'graph', label: '📈 Vẽ đồ thị hàm số', tag: 'Toán', g: 0 },
+  { key: 'geo', label: '📐 Hình học động (tam giác)', tag: 'Toán', g: 0 },
+  { key: 'lever', label: '⚖️ Đòn bẩy', tag: 'Lý 8', g: 8 },
+  { key: 'arch', label: '🌊 Lực đẩy Archimedes', tag: 'Lý 8', g: 8 },
+  { key: 'ohm', label: '⚡ Định luật Ohm', tag: 'Lý 8', g: 8 },
+  { key: 'conc', label: '💧 Nồng độ dung dịch', tag: 'Hóa 8', g: 8 },
+  { key: 'ph', label: '🧪 Thang pH', tag: 'Hóa 8', g: 8 },
+  { key: 'heart', label: '❤️ Hệ tuần hoàn', tag: 'Sinh 8', g: 8 },
+  { key: 'digest', label: '🍽️ Hệ tiêu hóa', tag: 'Sinh 8', g: 8 },
+  { key: 'lungs', label: '🫁 Hệ hô hấp', tag: 'Sinh 8', g: 8 },
+  { key: 'boyle', label: '🎈 Định luật Boyle (khí)', tag: 'Lý 12', g: 12 },
+  { key: 'pendulum', label: '🕰️ Con lắc đơn', tag: 'Lý 12', g: 12 },
+  { key: 'wave', label: '〰️ Sóng ngang', tag: 'Lý 12', g: 12 },
+  { key: 'standing', label: '🌊 Sóng dừng (phản xạ)', tag: 'Lý 12', g: 12 },
+  { key: 'spring', label: '🪀 Con lắc lò xo', tag: 'Lý 12', g: 12 },
+  { key: 'reaction', label: '⚗️ Mô phỏng phản ứng', tag: 'Hóa 12', g: 12 },
+  { key: 'molecule', label: '🧬 Phân tử (xoay 3D)', tag: 'Hóa 12', g: 12 },
+  { key: 'electro', label: '🔌 Điện phân', tag: 'Hóa 12', g: 12 },
+  { key: 'polymer', label: '🔗 Trùng hợp polymer', tag: 'Hóa 12', g: 12 },
+  { key: 'metalsalt', label: '🔋 Kim loại + muối', tag: 'Hóa 12', g: 12 },
 ];
+function simListForGrade() {
+  const g = (App.state.user && App.state.user.grade) || 12;
+  return SIM_LIST.filter((s) => !s.g || s.g === g);
+}
 function launchSim(key) { App.state.sim = key; switchTab('sim'); }
 
 function renderSim() {
-  const cur = App.state.sim || (App.state.sim = 'lever');
+  const list = simListForGrade();
+  let cur = App.state.sim;
+  if (!list.some((s) => s.key === cur)) { cur = list.length ? list[0].key : 'graph'; }
+  App.state.sim = cur;
   $('#screen-sim').innerHTML = `
     <div class="page-head">
       <p class="link" onclick="switchTab('learn')">‹ Quay lại Học</p>
       <h2>🔬 Phòng mô phỏng</h2><p>Kéo thanh trượt để xem hiện tượng thay đổi theo thời gian thực</p>
     </div>
     <div class="sim-tabs">
-      ${SIM_LIST.map((s) => `<button class="sim-tab ${s.key === cur ? 'active' : ''}" onclick="openSim('${s.key}')">${s.label}<small>${s.tag}</small></button>`).join('')}
+      ${list.map((s) => `<button class="sim-tab ${s.key === cur ? 'active' : ''}" onclick="openSim('${s.key}')">${s.label}<small>${s.tag}</small></button>`).join('')}
     </div>
     <div class="card" id="sim-stage"></div>`;
   openSim(cur);
@@ -1282,7 +1290,7 @@ function renderMarkdown(md, el) {
 
 const FORMULA_SHEETS = {
   TOAN: {
-    name: 'Toán 12', html: `
+    g: 12, name: 'Toán 12', html: `
     <h3>Đạo hàm</h3><ul>
       <li>$(x^n)' = n x^{n-1}$ &nbsp; $(e^x)'=e^x$ &nbsp; $(\\ln x)'=\\dfrac1x$</li>
       <li>$(\\sin x)'=\\cos x$ &nbsp; $(\\cos x)'=-\\sin x$</li>
@@ -1299,7 +1307,7 @@ const FORMULA_SHEETS = {
       <li>$d(M,(P))=\\dfrac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}$</li>
       <li>Mặt cầu: $(x-a)^2+(y-b)^2+(z-c)^2=R^2$</li></ul>` },
   LY: {
-    name: 'Vật lí 12', html: `
+    g: 12, name: 'Vật lí 12', html: `
     <h3>Nhiệt học</h3><ul>
       <li>Nhiệt lượng $Q=mc\\Delta t$ &nbsp; Nóng chảy $Q=\\lambda m$ &nbsp; Hóa hơi $Q=Lm$</li>
       <li>Nguyên lí I: $\\Delta U=A+Q$</li></ul>
@@ -1313,7 +1321,7 @@ const FORMULA_SHEETS = {
       <li>$E=\\Delta m\\,c^2$ &nbsp; $(1\\,u\\approx931{,}5$ MeV/$c^2)$</li>
       <li>Phóng xạ $N=N_0\\,2^{-t/T}$ &nbsp; Bảo toàn số khối $A$ và điện tích $Z$</li></ul>` },
   HOA: {
-    name: 'Hóa 12', html: `
+    g: 12, name: 'Hóa 12', html: `
     <h3>Tính toán cơ bản</h3><ul>
       <li>$n=\\dfrac mM$ &nbsp; $V_{khí(đktc)}=22{,}4\\,n$</li>
       <li>$C\\%=\\dfrac{m_{ct}}{m_{dd}}\\cdot100\\%$ &nbsp; $C_M=\\dfrac nV$</li>
@@ -1325,8 +1333,39 @@ const FORMULA_SHEETS = {
     <h3>Hiệu suất & Polymer</h3><ul>
       <li>Hiệu suất $H=\\dfrac{\\text{thực tế}}{\\text{lí thuyết}}\\cdot100\\%$</li>
       <li>Số mắt xích $n=\\dfrac{M_{polymer}}{M_{monomer}}$</li></ul>` },
+  TOAN8: {
+    g: 8, name: 'Toán 8', html: `
+    <h3>Hằng đẳng thức</h3><ul>
+      <li>$(a\\pm b)^2=a^2\\pm2ab+b^2$ &nbsp; $a^2-b^2=(a-b)(a+b)$</li>
+      <li>$(a\\pm b)^3=a^3\\pm3a^2b+3ab^2\\pm b^3$</li>
+      <li>$a^3\\pm b^3=(a\\pm b)(a^2\\mp ab+b^2)$</li></ul>
+    <h3>Phương trình & Hàm số</h3><ul>
+      <li>PT bậc nhất $ax+b=0\\Rightarrow x=-\\dfrac ba\\,(a\\ne0)$</li>
+      <li>Hàm bậc nhất $y=ax+b$: hệ số góc $a$; $a>0$ đồng biến, $a<0$ nghịch biến</li></ul>
+    <h3>Hình học</h3><ul>
+      <li>Pythagore: $a^2+b^2=c^2$ (c là cạnh huyền)</li>
+      <li>Thalès: $DE\\parallel BC\\Rightarrow\\dfrac{AD}{AB}=\\dfrac{AE}{AC}=\\dfrac{DE}{BC}$</li>
+      <li>Diện tích: tam giác $\\dfrac12ah$; hình thang $\\dfrac{(a+b)h}{2}$; hình thoi $\\dfrac{d_1d_2}{2}$</li></ul>` },
+  KHTN8: {
+    g: 8, name: 'KHTN 8', html: `
+    <h3>Hóa học</h3><ul>
+      <li>$n=\\dfrac mM$ &nbsp; $V_{khí(đktc)}=22{,}4\\,n$</li>
+      <li>$C\\%=\\dfrac{m_{ct}}{m_{dd}}\\cdot100\\%$ &nbsp; $C_M=\\dfrac nV$</li>
+      <li>Bảo toàn khối lượng: $\\sum m_{trước}=\\sum m_{sau}$</li></ul>
+    <h3>Vật lí</h3><ul>
+      <li>Khối lượng riêng $D=\\dfrac mV$ &nbsp; Áp suất $p=\\dfrac FS$ &nbsp; Áp suất chất lỏng $p=d\\cdot h$</li>
+      <li>Lực đẩy Archimedes $F_A=d\\cdot V$ &nbsp; Đòn bẩy cân bằng $F_1d_1=F_2d_2$</li>
+      <li>Nhiệt lượng $Q=mc\\Delta t$ &nbsp; Công $A=F\\cdot s$ &nbsp; Công suất $P=\\dfrac At$</li></ul>` },
 };
-function learnOpenFormulas() { App.state.learn = { view: 'formulas', formulaSubject: 'TOAN' }; renderLearn(); }
+function formulaSheetsForGrade() {
+  const g = (App.state.user && App.state.user.grade) || 12;
+  return Object.keys(FORMULA_SHEETS).filter((k) => !FORMULA_SHEETS[k].g || FORMULA_SHEETS[k].g === g);
+}
+function learnOpenFormulas() {
+  const keys = formulaSheetsForGrade();
+  App.state.learn = { view: 'formulas', formulaSubject: keys[0] || 'TOAN' };
+  renderLearn();
+}
 function formulaSetSubject(code) { App.state.learn.formulaSubject = code; renderLearn(); }
 
 async function renderLearn() {
@@ -1335,11 +1374,14 @@ async function renderLearn() {
   if (v.view !== 'examTake') clearExamTimer();
 
   if (v.view === 'formulas') {
-    const cur = v.formulaSubject || 'TOAN';
+    const keys = formulaSheetsForGrade();
+    let cur = v.formulaSubject;
+    if (!keys.includes(cur)) cur = keys[0];
+    v.formulaSubject = cur;
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
-        <h2>📐 Bảng công thức</h2><p>Tra cứu nhanh trước khi thi</p></div>
-      <div class="sim-tabs">${Object.keys(FORMULA_SHEETS).map((k) => `<button class="sim-tab ${k === cur ? 'active' : ''}" onclick="formulaSetSubject('${k}')">${FORMULA_SHEETS[k].name}</button>`).join('')}</div>
+        <h2>📐 Bảng công thức</h2><p>Tra cứu nhanh trước khi thi · Lớp ${(App.state.user && App.state.user.grade) || 12}</p></div>
+      <div class="sim-tabs">${keys.map((k) => `<button class="sim-tab ${k === cur ? 'active' : ''}" onclick="formulaSetSubject('${k}')">${FORMULA_SHEETS[k].name}</button>`).join('')}</div>
       <div class="card lesson-content" id="formula-content"></div>`;
     renderHtmlContent(FORMULA_SHEETS[cur].html, $('#formula-content'));
     return;
