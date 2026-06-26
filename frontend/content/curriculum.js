@@ -359,7 +359,7 @@ const CURRICULUM = {
               `,
             },
             {
-              id: 'l-toan-tiemcan', title: 'Tiệm cận của đồ thị hàm số', level: 'NANG_CAO',
+              id: 'l-toan-tiemcan', title: 'Tiệm cận của đồ thị hàm số', title_en: 'Asymptotes of a graph', level: 'NANG_CAO',
               html: `
                 <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
@@ -411,6 +411,59 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>Tiệm cận đứng $x=-1$; tiệm cận ngang $y=3$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Đồ thị $y=\\dfrac{2x-1}{x^2-1}$ có tất cả bao nhiêu đường tiệm cận?</p>
                   <details><summary>Đáp án</summary><p>Mẫu $x^2-1=(x-1)(x+1)$ ⇒ 2 tiệm cận đứng $x=\\pm1$; bậc tử $<$ bậc mẫu ⇒ tiệm cận ngang $y=0$. Tổng cộng <strong>3 tiệm cận</strong>.</p></details>
+                </div>
+              `,
+              html_en: `
+                <div class="lesson-sim-cta">🔬 <strong>Tool:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Plot a function ▸</button></div>
+                <h2>Core idea</h2>
+                <ul>
+                  <li><strong>Horizontal asymptote</strong> $y=y_0$ if $\\lim\\limits_{x\\to\\pm\\infty} f(x)=y_0$.</li>
+                  <li><strong>Vertical asymptote</strong> $x=x_0$ if $\\lim\\limits_{x\\to x_0^{\\pm}} f(x)=\\pm\\infty$.</li>
+                  <li><strong>Oblique asymptote</strong> $y=ax+b$ with $a=\\lim\\dfrac{f(x)}{x}$, $b=\\lim\\,[f(x)-ax]$.</li>
+                </ul>
+                <h2>Advanced</h2>
+                <p>For $y=\\dfrac{ax+b}{cx+d}\\ (c\\ne 0)$: vertical asymptote $x=-\\dfrac{d}{c}$, horizontal asymptote $y=\\dfrac{a}{c}$.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Find the asymptotes of $y=\\dfrac{2x+1}{x-1}$.</p>
+                  <p><strong>Solution:</strong> $\\lim\\limits_{x\\to 1^{\\pm}} y = \\pm\\infty$ ⇒ vertical asymptote $x=1$.</p>
+                  <p>$\\lim\\limits_{x\\to\\pm\\infty} y = 2$ ⇒ horizontal asymptote $y=2$.</p>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Find the vertical and horizontal asymptotes of $y=\\dfrac{x+3}{2x-4}$.</p>
+                  <details><summary>Show answer</summary>
+                    <p>Vertical asymptote $x=2$ (denominator $=0$); horizontal asymptote $y=\\dfrac{1}{2}$.</p>
+                  </details>
+                </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (graph & asymptotes of a rational function)</div>
+                  <p>The graph $y=\\dfrac{2x+1}{x-1}$ has vertical asymptote $x=1$ and horizontal asymptote $y=2$ (dashed lines):</p>
+                  <svg class="graph" viewBox="0 0 220 180" width="220" height="180" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="95" x2="215" y2="95" stroke="#94a3b8"/>
+                    <line x1="60" y1="12" x2="60" y2="175" stroke="#94a3b8"/>
+                    <line x1="120" y1="12" x2="120" y2="175" stroke="#dc2626" stroke-width="1" stroke-dasharray="4 3"/>
+                    <line x1="10" y1="95" x2="215" y2="95" stroke="#16a34a" stroke-width="1" stroke-dasharray="4 3"/>
+                    <polyline points="20,104 70,114 95,133 108,170" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <polyline points="132,20 145,58 170,76 220,86" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <text x="124" y="24" fill="#dc2626">x=1</text>
+                    <text x="14" y="90" fill="#16a34a">y=2</text>
+                  </svg>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 3 (oblique asymptote)</div>
+                  <p>Find the asymptotes of $y=\\dfrac{x^2+1}{x}=x+\\dfrac{1}{x}$.</p>
+                  <p><strong>Solution:</strong> Vertical asymptote $x=0$. Oblique asymptote: $a=\\lim\\dfrac{y}{x}=1$, $b=\\lim(y-x)=\\lim\\dfrac{1}{x}=0$ ⇒ $y=x$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Find the vertical and horizontal asymptotes of $y=\\dfrac{3x-2}{x+1}$.</p>
+                  <details><summary>Answer</summary><p>Vertical asymptote $x=-1$; horizontal asymptote $y=3$.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> How many asymptotes does $y=\\dfrac{2x-1}{x^2-1}$ have in total?</p>
+                  <details><summary>Answer</summary><p>Denominator $x^2-1=(x-1)(x+1)$ ⇒ 2 vertical asymptotes $x=\\pm1$; numerator degree $<$ denominator degree ⇒ horizontal asymptote $y=0$. In total <strong>3 asymptotes</strong>.</p></details>
                 </div>
               `,
             },
