@@ -830,6 +830,117 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-toan-hsg', title: '🏆 Chuyên đề · Bồi dưỡng HSG & Luyện thi THPT QG',
+          lessons: [
+            {
+              id: 'l-toan-hsg-thamso', title: 'Hàm số chứa tham số: cực trị, tương giao, GTLN–GTNN', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi — kĩ thuật thi</h2>
+                <ul>
+                  <li><strong>Điều kiện có cực trị:</strong> hàm bậc ba $y=ax^3+bx^2+cx+d$ có 2 cực trị $\\Leftrightarrow y'=0$ có hai nghiệm phân biệt $\\Leftrightarrow \\Delta_{y'}>0$.</li>
+                  <li><strong>Tương giao – số nghiệm:</strong> số nghiệm của $f(x)=m$ bằng số giao điểm của $y=f(x)$ và đường thẳng $y=m$. Với hàm bậc ba: 3 nghiệm phân biệt $\\Leftrightarrow y_{CĐ}\\cdot y_{CT}<0$.</li>
+                  <li><strong>GTLN–GTNN trên đoạn $[a;b]$:</strong> so sánh $f$ tại các nghiệm của $f'=0$ thuộc $[a;b]$ và tại hai đầu mút.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Tìm $m$ để $y=x^3-3x^2+m$ cắt trục hoành tại 3 điểm phân biệt.</p>
+                  <p><strong>Giải:</strong> $y_{CĐ}=y(0)=m$, $y_{CT}=y(2)=m-4$. Điều kiện: $m(m-4)<0 \\Leftrightarrow 0<m<4$.</p>
+                  <p>2) GTLN–GTNN của $f(x)=x^3-3x+2$ trên $[0;2]$.</p>
+                  <p><strong>Giải:</strong> $f'=3x^2-3=0\\Rightarrow x=1\\in[0;2]$. $f(0)=2, f(1)=0, f(2)=4$ ⇒ $\\max=4$ tại $x=2$, $\\min=0$ tại $x=1$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm $m$ để $y=x^3-3mx+1$ có hai điểm cực trị.</p>
+                  <details><summary>Đáp án</summary><p>$y'=3x^2-3m=0$ có 2 nghiệm phân biệt $\\Leftrightarrow m>0$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm $m$ để phương trình $x^3-3x=m$ có 3 nghiệm phân biệt.</p>
+                  <details><summary>Đáp án</summary><p>$g=x^3-3x$ có $g_{CĐ}=g(-1)=2$, $g_{CT}=g(1)=-2$ ⇒ $-2<m<2$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> GTNN của $f(x)=x^3-3x^2+1$ trên $[-1;1]$.</p>
+                  <details><summary>Đáp án</summary><p>$f'=3x^2-6x=0\\Rightarrow x=0\\in[-1;1]$. $f(-1)=-3, f(0)=1, f(1)=-1$ ⇒ $\\min=-3$ tại $x=-1$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan-hsg-tichphan', title: 'Nguyên hàm – Tích phân nâng cao & ứng dụng', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Đổi biến số</strong> và <strong>tích phân từng phần:</strong> $\\displaystyle\\int u\\,dv = uv - \\int v\\,du$.</li>
+                  <li><strong>Diện tích hình phẳng:</strong> $S=\\displaystyle\\int_a^b |f(x)-g(x)|\\,dx$.</li>
+                  <li><strong>Thể tích khối tròn xoay</strong> (quanh $Ox$): $V=\\pi\\displaystyle\\int_a^b f(x)^2\\,dx$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Tính $\\displaystyle\\int_0^1 x e^x\\,dx$.</p>
+                  <p><strong>Giải:</strong> Từng phần: $=\\big[x e^x - e^x\\big]_0^1 = (e-e)-(0-1)=1$.</p>
+                  <p>2) Diện tích hình phẳng giới hạn bởi $y=x^2$ và $y=x$.</p>
+                  <p><strong>Giải:</strong> $S=\\displaystyle\\int_0^1 (x-x^2)\\,dx = \\Big[\\tfrac{x^2}{2}-\\tfrac{x^3}{3}\\Big]_0^1 = \\tfrac12-\\tfrac13=\\tfrac16$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tính $\\displaystyle\\int_0^1 (2x+1)\\,dx$.</p>
+                  <details><summary>Đáp án</summary><p>$\\big[x^2+x\\big]_0^1 = 2$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm nguyên hàm $\\displaystyle\\int x\\cos x\\,dx$.</p>
+                  <details><summary>Đáp án</summary><p>$x\\sin x + \\cos x + C$ (từng phần).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Thể tích khối tròn xoay khi quay $y=\\sqrt{x}$ quanh $Ox$ trên $[0;4]$.</p>
+                  <details><summary>Đáp án</summary><p>$V=\\pi\\displaystyle\\int_0^4 x\\,dx = \\pi\\big[\\tfrac{x^2}{2}\\big]_0^4 = 8\\pi$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan-hsg-oxyz', title: 'Hình giải tích Oxyz: mặt phẳng, đường thẳng, mặt cầu', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Mặt phẳng:</strong> $ax+by+cz+d=0$ có vectơ pháp tuyến $\\vec{n}=(a;b;c)$.</li>
+                  <li><strong>Khoảng cách</strong> từ $M(x_0;y_0;z_0)$ đến mặt phẳng: $d=\\dfrac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}$.</li>
+                  <li><strong>Mặt cầu</strong> tâm $I(a;b;c)$ bán kính $R$: $(x-a)^2+(y-b)^2+(z-c)^2=R^2$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Khoảng cách từ $M(1;2;3)$ đến $(P): 2x-y+2z-1=0$.</p>
+                  <p><strong>Giải:</strong> $d=\\dfrac{|2-2+6-1|}{\\sqrt{4+1+4}}=\\dfrac{5}{3}$.</p>
+                  <p>2) Tìm tâm và bán kính mặt cầu $x^2+y^2+z^2-2x-4z+1=0$.</p>
+                  <p><strong>Giải:</strong> $(x-1)^2+y^2+(z-2)^2 = 1+4-1=4 \\Rightarrow I(1;0;2), R=2$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Viết vectơ pháp tuyến của mặt phẳng $3x-2y+z-5=0$.</p>
+                  <details><summary>Đáp án</summary><p>$\\vec{n}=(3;-2;1)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Khoảng cách từ gốc $O$ đến mặt phẳng $x+2y+2z-9=0$.</p>
+                  <details><summary>Đáp án</summary><p>$d=\\dfrac{|-9|}{\\sqrt{1+4+4}}=\\dfrac{9}{3}=3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Bán kính mặt cầu $x^2+y^2+z^2-6x+8=0$.</p>
+                  <details><summary>Đáp án</summary><p>$(x-3)^2+y^2+z^2=9-8=1 \\Rightarrow R=1$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan-hsg-xacsuat', title: 'Tổ hợp & Xác suất có điều kiện (Bayes)', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Tổ hợp:</strong> $C_n^k=\\dfrac{n!}{k!(n-k)!}$ — số cách chọn $k$ phần tử (không xét thứ tự).</li>
+                  <li><strong>Xác suất có điều kiện:</strong> $P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}$.</li>
+                  <li><strong>Công thức Bayes:</strong> $P(A\\mid B)=\\dfrac{P(B\\mid A)\\,P(A)}{P(B)}$, với $P(B)$ tính theo công thức xác suất toàn phần.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Gieo hai con xúc xắc. Biết tổng số chấm bằng $8$, tính xác suất có ít nhất một mặt $5$.</p>
+                  <p><strong>Giải:</strong> Tổng $8$: $\\{(2,6),(3,5),(4,4),(5,3),(6,2)\\}$ — 5 cách; có mặt 5: $\\{(3,5),(5,3)\\}$ — 2 cách ⇒ $P=\\dfrac{2}{5}$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tính $C_5^2$ — số cách chọn 2 trong 5 học sinh.</p>
+                  <details><summary>Đáp án</summary><p>$C_5^2=\\dfrac{5!}{2!\\,3!}=10$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hộp có 3 bi đỏ, 2 bi xanh. Lấy ngẫu nhiên 2 bi. Xác suất được 2 bi đỏ.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{C_3^2}{C_5^2}=\\dfrac{3}{10}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Hộp I (2 đỏ, 1 xanh), hộp II (1 đỏ, 2 xanh). Chọn ngẫu nhiên một hộp rồi lấy 1 bi. Xác suất lấy được bi đỏ.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac12\\cdot\\dfrac23+\\dfrac12\\cdot\\dfrac13=\\dfrac12$.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
@@ -1005,6 +1116,93 @@ const CURRICULUM = {
                 <div class="bt"><div class="bt-title">✏️ Bài tập</div>
                   <p>Sau $3T$, còn lại bao nhiêu phần trăm khối lượng ban đầu?</p>
                   <details><summary>Đáp án</summary><p>$m=m_0\\,2^{-3}=\\dfrac{m_0}{8}=12{,}5\\%$.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-ly-hsg', title: '🏆 Chuyên đề · Bồi dưỡng HSG & Luyện thi THPT QG',
+          lessons: [
+            {
+              id: 'l-ly-hsg-nhiet', title: 'Nhiệt động lực học & khí lí tưởng nâng cao', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Phương trình trạng thái khí lí tưởng:</strong> $\\dfrac{pV}{T}=\\text{const}$ (hay $pV=nRT$).</li>
+                  <li><strong>Các đẳng quá trình:</strong> đẳng nhiệt $pV=\\text{const}$; đẳng tích $\\dfrac{p}{T}=\\text{const}$; đẳng áp $\\dfrac{V}{T}=\\text{const}$.</li>
+                  <li><strong>Nguyên lí I nhiệt động lực học:</strong> $\\Delta U = A + Q$ (độ biến thiên nội năng = công nhận + nhiệt nhận).</li>
+                  <li><strong>Nhiệt lượng:</strong> $Q=mc\\Delta t$; nhiệt nóng chảy $Q=\\lambda m$; nhiệt hóa hơi $Q=Lm$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Nén đẳng nhiệt khí từ $p_1=2$ atm, $V_1=3$ L về $V_2=1$ L. Tính $p_2$.</p>
+                  <p><strong>Giải:</strong> $p_1V_1=p_2V_2 \\Rightarrow p_2=\\dfrac{2\\cdot3}{1}=6$ atm.</p>
+                  <p>2) Nung nóng đẳng tích từ $T_1=300$ K, $p_1=1$ atm đến $T_2=600$ K. Tính $p_2$.</p>
+                  <p><strong>Giải:</strong> $\\dfrac{p_1}{T_1}=\\dfrac{p_2}{T_2}\\Rightarrow p_2=1\\cdot\\dfrac{600}{300}=2$ atm.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Đẳng áp: $V_1=2$ L ở $T_1=300$ K. Tính $V_2$ ở $T_2=450$ K.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{V_1}{T_1}=\\dfrac{V_2}{T_2}\\Rightarrow V_2=2\\cdot\\dfrac{450}{300}=3$ L.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Nhiệt lượng để làm nóng chảy hoàn toàn $0{,}5$ kg nước đá ở $0^\\circ C$ ($\\lambda=3{,}4\\cdot10^5$ J/kg).</p>
+                  <details><summary>Đáp án</summary><p>$Q=\\lambda m=3{,}4\\cdot10^5\\cdot0{,}5=1{,}7\\cdot10^5$ J.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Khí nhận nhiệt $Q=100$ J và sinh công $A'=40$ J. Độ biến thiên nội năng?</p>
+                  <details><summary>Đáp án</summary><p>$\\Delta U=Q-A'=100-40=60$ J.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-ly-hsg-tutruong', title: 'Từ trường, lực từ & lực Lorentz', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Lực từ</strong> tác dụng lên dây dẫn: $F=BIl\\sin\\theta$ ($\\theta$ là góc giữa dây và $\\vec{B}$).</li>
+                  <li><strong>Lực Lorentz</strong> lên hạt điện chuyển động: $f=|q|vB\\sin\\theta$.</li>
+                  <li><strong>Cảm ứng từ của dòng điện thẳng dài:</strong> $B=2\\cdot10^{-7}\\dfrac{I}{r}$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Dây dài $l=0{,}1$ m mang $I=2$ A đặt vuông góc trong $B=0{,}5$ T. Lực từ?</p>
+                  <p><strong>Giải:</strong> $F=BIl=0{,}5\\cdot2\\cdot0{,}1=0{,}1$ N.</p>
+                  <p>2) Electron ($q=1{,}6\\cdot10^{-19}$ C) bay với $v=10^6$ m/s vuông góc $B=0{,}2$ T. Lực Lorentz?</p>
+                  <p><strong>Giải:</strong> $f=qvB=1{,}6\\cdot10^{-19}\\cdot10^6\\cdot0{,}2=3{,}2\\cdot10^{-14}$ N.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cảm ứng từ tại điểm cách dòng điện thẳng $I=5$ A một khoảng $r=0{,}1$ m.</p>
+                  <details><summary>Đáp án</summary><p>$B=2\\cdot10^{-7}\\cdot\\dfrac{5}{0{,}1}=10^{-5}$ T.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Lực từ lên dây $l=0{,}5$ m, $I=3$ A đặt vuông góc trong $B=0{,}4$ T.</p>
+                  <details><summary>Đáp án</summary><p>$F=0{,}4\\cdot3\\cdot0{,}5=0{,}6$ N.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Khi hạt chuyển động song song với $\\vec{B}$ ($\\theta=0$), lực Lorentz bằng bao nhiêu?</p>
+                  <details><summary>Đáp án</summary><p>$f=qvB\\sin0=0$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-ly-hsg-hatnhan', title: 'Vật lí hạt nhân: năng lượng liên kết & phản ứng', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Độ hụt khối & năng lượng liên kết:</strong> $\\Delta m = Zm_p+(A-Z)m_n - m_{hn}$; $E_{lk}=\\Delta m\\,c^2$. Quy đổi $1\\,u\\approx931{,}5$ MeV/$c^2$.</li>
+                  <li><strong>Định luật phóng xạ:</strong> $N=N_0\\,2^{-t/T}$ (T là chu kì bán rã).</li>
+                  <li><strong>Bảo toàn trong phản ứng hạt nhân:</strong> bảo toàn số khối $A$ và điện tích $Z$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Một hạt nhân có độ hụt khối $\\Delta m=0{,}1\\,u$. Tính năng lượng liên kết (MeV).</p>
+                  <p><strong>Giải:</strong> $E_{lk}=0{,}1\\cdot931{,}5\\approx93{,}15$ MeV.</p>
+                  <p>2) Sau thời gian $2T$, số hạt nhân phóng xạ còn lại chiếm bao nhiêu phần trăm?</p>
+                  <p><strong>Giải:</strong> $N=N_0\\,2^{-2}=\\dfrac{N_0}{4}=25\\%$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Chu kì bán rã $T=8$ ngày. Sau $16$ ngày còn lại bao nhiêu phần trăm?</p>
+                  <details><summary>Đáp án</summary><p>$16=2T \\Rightarrow N=N_0\\,2^{-2}=25\\%$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Trong phản ứng $^{14}_{7}N + ^{4}_{2}He \\to ^{17}_{8}O + X$, hạt $X$ là gì?</p>
+                  <details><summary>Đáp án</summary><p>Bảo toàn: $A=14+4-17=1$, $Z=7+2-8=1$ ⇒ $X=^{1}_{1}H$ (proton).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Độ hụt khối $\\Delta m=0{,}2\\,u$. Năng lượng liên kết xấp xỉ?</p>
+                  <details><summary>Đáp án</summary><p>$E=0{,}2\\cdot931{,}5\\approx186{,}3$ MeV.</p></details>
                 </div>
               `,
             },
@@ -1189,6 +1387,86 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-hoa-hsg', title: '🏆 Chuyên đề · Bồi dưỡng HSG & Luyện thi THPT QG',
+          lessons: [
+            {
+              id: 'l-hoa-hsg-ester', title: 'Ester – Lipid: bài toán thủy phân & xà phòng hóa', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Thủy phân ester trong môi trường kiềm (xà phòng hóa):</strong> $RCOOR' + NaOH \\to RCOONa + R'OH$ (tỉ lệ 1 : 1 với ester đơn chức).</li>
+                  <li><strong>Phản ứng ester hóa:</strong> $RCOOH + R'OH \\rightleftharpoons RCOOR' + H_2O$ (thuận nghịch, xúc tác $H_2SO_4$ đặc).</li>
+                  <li><strong>Chất béo (lipid)</strong> là trieste của glycerol với acid béo; xà phòng hóa tạo glycerol và muối (xà phòng).</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Xà phòng hóa hoàn toàn $8{,}8$ g etyl axetat $CH_3COOC_2H_5$ ($M=88$) bằng NaOH. Tính khối lượng muối $CH_3COONa$ ($M=82$).</p>
+                  <p><strong>Giải:</strong> $n_{ester}=\\dfrac{8{,}8}{88}=0{,}1$ mol $\\Rightarrow n_{muối}=0{,}1 \\Rightarrow m=0{,}1\\cdot82=8{,}2$ g.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Xà phòng hóa hoàn toàn ester đơn chức cần $0{,}2$ mol NaOH. Số mol ester đã phản ứng?</p>
+                  <details><summary>Đáp án</summary><p>$0{,}2$ mol (tỉ lệ 1 : 1).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Đốt cháy hoàn toàn ester no, đơn chức, mạch hở thì $n_{CO_2}$ và $n_{H_2O}$ quan hệ thế nào?</p>
+                  <details><summary>Đáp án</summary><p>$n_{CO_2}=n_{H_2O}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Sản phẩm xà phòng hóa chất béo gồm những chất nào?</p>
+                  <details><summary>Đáp án</summary><p>Glycerol và muối của acid béo (xà phòng).</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-hoa-hsg-kimloai', title: 'Đại cương kim loại: dãy điện hóa, phản ứng & điện phân', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Kim loại + acid</strong> (HCl, $H_2SO_4$ loãng): chỉ kim loại đứng trước H phản ứng, giải phóng $H_2$. VD $Fe+2HCl\\to FeCl_2+H_2$.</li>
+                  <li><strong>Kim loại mạnh đẩy kim loại yếu khỏi muối:</strong> $Fe+CuSO_4\\to FeSO_4+Cu$.</li>
+                  <li><strong>Điện phân:</strong> ở catot xảy ra sự khử (kim loại bám vào), ở anot xảy ra sự oxi hóa.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Cho $5{,}6$ g Fe ($M=56$) vào dung dịch $CuSO_4$ dư. Tính khối lượng Cu sinh ra và độ tăng khối lượng thanh kim loại.</p>
+                  <p><strong>Giải:</strong> $n_{Fe}=0{,}1 \\Rightarrow n_{Cu}=0{,}1 \\Rightarrow m_{Cu}=0{,}1\\cdot64=6{,}4$ g. Khối lượng tăng $=6{,}4-5{,}6=0{,}8$ g.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Kim loại nào trong $Cu, Zn, Ag$ <em>không</em> tác dụng với dung dịch HCl?</p>
+                  <details><summary>Đáp án</summary><p>$Cu$ và $Ag$ (đứng sau H trong dãy điện hóa).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Cho $0{,}2$ mol Zn vào $CuSO_4$ dư. Khối lượng Cu thu được?</p>
+                  <details><summary>Đáp án</summary><p>$n_{Cu}=0{,}2 \\Rightarrow m=0{,}2\\cdot64=12{,}8$ g.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Cho $0{,}1$ mol Fe tác dụng HCl dư. Thể tích $H_2$ (đktc)?</p>
+                  <details><summary>Đáp án</summary><p>$n_{H_2}=0{,}1 \\Rightarrow V=2{,}24$ lít.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-hoa-hsg-nito-polymer', title: 'Hợp chất chứa nitơ & Polymer: đếm – biện luận', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Amino acid</strong> có cả nhóm $-NH_2$ (base) và $-COOH$ (acid) ⇒ tính lưỡng tính, tác dụng được với cả acid và base.</li>
+                  <li><strong>Amine</strong> có tính base; bậc amine xác định theo số gốc hidrocarbon gắn vào N.</li>
+                  <li><strong>Polymer:</strong> hệ số polime hóa $n=\\dfrac{M_{polymer}}{M_{monomer}}$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Polietilen (PE) $(-CH_2-CH_2-)_n$ điều chế từ etilen $C_2H_4$ ($M=28$). Nếu $M_{PE}=28000$, tính $n$.</p>
+                  <p><strong>Giải:</strong> $n=\\dfrac{28000}{28}=1000$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Vì sao glyxin $H_2N\\text{-}CH_2\\text{-}COOH$ tác dụng được với cả HCl và NaOH?</p>
+                  <details><summary>Đáp án</summary><p>Vì có nhóm $-NH_2$ (base) phản ứng với HCl và nhóm $-COOH$ (acid) phản ứng với NaOH ⇒ tính lưỡng tính.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tính số mắt xích của PVC có $M=62500$, biết monome vinyl clorua $C_2H_3Cl$ ($M=62{,}5$).</p>
+                  <details><summary>Đáp án</summary><p>$n=\\dfrac{62500}{62{,}5}=1000$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Số đồng phân amine bậc một ứng với công thức $C_3H_9N$?</p>
+                  <details><summary>Đáp án</summary><p>2 đồng phân: $CH_3CH_2CH_2NH_2$ và $(CH_3)_2CHNH_2$.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
@@ -1278,6 +1556,85 @@ const CURRICULUM = {
                 <div class="bt"><div class="bt-title">✏️ Bài tập</div>
                   <p>Điền đại từ quan hệ: "The book ____ I bought yesterday is interesting."</p>
                   <details><summary>Đáp án</summary><p><strong>which</strong> hoặc <strong>that</strong> (bổ nghĩa cho vật, làm tân ngữ).</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
+        {
+          id: 't-anh-hsg', title: '🏆 Chuyên đề · Bồi dưỡng HSG & Luyện thi THPT QG',
+          lessons: [
+            {
+              id: 'l-anh-hsg-grammar', title: 'Advanced grammar: inversion, subjunctive, reduced clauses', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Inversion (đảo ngữ):</strong> mở đầu bằng từ phủ định/giới hạn thì đảo trợ động từ lên trước chủ ngữ. <em>Not only did he study, but he also worked. / Never have I seen such a thing. / Hardly had I arrived when it rained.</em></li>
+                  <li><strong>Subjunctive (giả định):</strong> sau suggest, recommend, insist, demand, essential, important + that + S + <strong>V (nguyên thể)</strong>. <em>I suggest that he go now. / It is essential that she be present.</em></li>
+                  <li><strong>Reduced relative clauses (rút gọn mệnh đề quan hệ):</strong> chủ động → V-ing; bị động → V3. <em>The man who is standing = The man standing; The book which was written = The book written.</em></li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Đảo ngữ: "I had never seen such a beautiful sunset." → <strong>Never had I seen</strong> such a beautiful sunset.</p>
+                  <p>Rút gọn: "The students who were chosen will join the contest." → The students <strong>chosen</strong> will join the contest.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Viết lại dùng đảo ngữ: "He had no sooner left than the phone rang."</p>
+                  <details><summary>Đáp án</summary><p>No sooner had he left than the phone rang.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Chia đúng: "The teacher insists that every student ____ (be) on time."</p>
+                  <details><summary>Đáp án</summary><p>be (subjunctive).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Rút gọn: "The woman who lives next door is a doctor."</p>
+                  <details><summary>Đáp án</summary><p>The woman living next door is a doctor.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-anh-hsg-vocab', title: 'Word formation, collocations & phrasal verbs (THPT QG)', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Word formation:</strong> nhận diện vị trí cần danh từ / tính từ / trạng từ / động từ rồi chọn hậu tố phù hợp. <em>economy → economic → economical → economically.</em></li>
+                  <li><strong>Collocations</strong> hay gặp: <em>make progress, take responsibility, pay attention, do research, meet a deadline.</em></li>
+                  <li><strong>Phrasal verbs:</strong> <em>carry out, put off, look forward to, come up with, give up, take after.</em></li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Điền dạng đúng: "His speech was very ____ (persuade)." → <strong>persuasive</strong> (tính từ sau "very").</p>
+                  <p>Phrasal verb: "We need to ____ a solution." → <strong>come up with</strong>.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cho dạng đúng: "She handled the situation ____ (profession)."</p>
+                  <details><summary>Đáp án</summary><p>professionally (trạng từ).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Điền collocation: "Students should ____ attention in class."</p>
+                  <details><summary>Đáp án</summary><p>pay attention.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Điền phrasal verb: "The meeting was ____ until next week." (hoãn)</p>
+                  <details><summary>Đáp án</summary><p>put off.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-anh-hsg-transform', title: 'Sentence transformation & reading skills', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi — dạng bài thi</h2>
+                <ul>
+                  <li><strong>Although / Despite:</strong> Despite + N/V-ing = Although + S + V. <em>Despite being tired = Although he was tired.</em></li>
+                  <li><strong>So sánh nhất ↔ phủ định so sánh hơn:</strong> "the most beautiful I've ever seen" = "I've never seen a more beautiful one".</li>
+                  <li><strong>Reading:</strong> skim lấy ý chính, scan tìm từ khóa; chú ý từ nối và đại từ thay thế để suy luận.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Viết lại: "Although it was raining, they went out." → <strong>Despite the rain</strong>, they went out.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Viết lại với "Despite": "Although he was ill, he came to school."</p>
+                  <details><summary>Đáp án</summary><p>Despite his illness / Despite being ill, he came to school.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Viết lại: "This is the best film I have ever seen." (dùng "never")</p>
+                  <details><summary>Đáp án</summary><p>I have never seen a better film (than this).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tìm và sửa lỗi: "She is interested on learning English."</p>
+                  <details><summary>Đáp án</summary><p>on → in ("interested in").</p></details>
                 </div>
               `,
             },
