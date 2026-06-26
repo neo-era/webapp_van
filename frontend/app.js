@@ -373,40 +373,104 @@ function renderGoals() {
    ============================================================ */
 function renderExam() {
   const e = App.data.exam;
+  const head = `<div class="page-head"><h2>Ôn thi THPTQG</h2><p>Lộ trình · luyện tập · công cụ</p></div>`;
+  let top;
   if (!e || !e.examDate) {
-    $('#screen-exam').innerHTML = `
-      <div class="page-head"><h2>Ôn thi THPTQG</h2><p>Thiết lập kỳ thi của bạn</p></div>
-      <div class="card"><div class="empty">Chưa thiết lập kỳ thi.</div></div>
-      <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="openExamSetup()">Thiết lập kỳ thi</button>`;
-    return;
-  }
-  const dleft = daysLeft(e.examDate);
-  const subj = e.subjects.length ? e.subjects.map(subjectBadge).join(' ') : '<span class="muted">Chưa chọn môn</span>';
-  const checklist = (e.checklist || []).length ? e.checklist.map((c, i) => `
-    <div class="task">
-      <button class="task-check ${c.done ? 'done' : ''}" onclick="toggleCheck(${i})">${c.done ? '✓' : ''}</button>
-      <div class="task-body">
-        <div class="task-title ${c.done ? 'muted' : ''}">${c.text}</div>
-        <div class="task-meta">${subjectBadge(c.subject)}</div>
+    top = `<div class="card"><div class="empty">Chưa thiết lập kỳ thi.</div></div>
+      <button class="btn btn-primary btn-block" style="margin:10px 0 18px" onclick="openExamSetup()">⚙️ Thiết lập kỳ thi (đếm ngược)</button>`;
+  } else {
+    const dleft = daysLeft(e.examDate);
+    const subj = e.subjects.length ? e.subjects.map(subjectBadge).join(' ') : '<span class="muted">Chưa chọn môn</span>';
+    const checklist = (e.checklist || []).length ? e.checklist.map((c, i) => `
+      <div class="task">
+        <button class="task-check ${c.done ? 'done' : ''}" onclick="toggleCheck(${i})">${c.done ? '✓' : ''}</button>
+        <div class="task-body">
+          <div class="task-title ${c.done ? 'muted' : ''}">${c.text}</div>
+          <div class="task-meta">${subjectBadge(c.subject)}</div>
+        </div>
+        <button class="icon-btn" onclick="removeCheck(${i})" title="Xóa">🗑</button>
+      </div>`).join('') : `<div class="empty">Chưa có nội dung ôn nào</div>`;
+    top = `
+      <div class="countdown section-block">
+        <div class="days">${dleft}</div>
+        <div class="label">ngày nữa đến kỳ thi · ${dayjs(e.examDate).format('DD/MM/YYYY')}</div>
+        <div class="cheer">Bạn làm được! Giữ vững nhịp ôn tập nhé 🌟</div>
       </div>
-      <button class="icon-btn" onclick="removeCheck(${i})" title="Xóa">🗑</button>
-    </div>`).join('') : `<div class="empty">Chưa có nội dung ôn nào</div>`;
+      <div class="section-block">
+        <div class="section-title">Tổ hợp môn thi <span class="link" onclick="openExamSetup()">Sửa</span></div>
+        <div class="card">${subj}</div>
+      </div>
+      <div class="section-block">
+        <div class="section-title">Checklist nội dung ôn <span class="link" onclick="openCheckModal()">+ Thêm</span></div>
+        <div class="card">${checklist}</div>
+      </div>`;
+  }
+  $('#screen-exam').innerHTML = head + top + examStatsHtml() + admissionCalcHtml();
+  admissionRender();
+}
 
-  $('#screen-exam').innerHTML = `
-    <div class="page-head"><h2>Ôn thi THPTQG</h2><p>Lộ trình & nội dung ôn tập</p></div>
-    <div class="countdown section-block">
-      <div class="days">${dleft}</div>
-      <div class="label">ngày nữa đến kỳ thi · ${dayjs(e.examDate).format('DD/MM/YYYY')}</div>
-      <div class="cheer">Bạn làm được! Giữ vững nhịp ôn tập nhé 🌟</div>
-    </div>
-    <div class="section-block">
-      <div class="section-title">Tổ hợp môn thi <span class="link" onclick="openExamSetup()">Sửa</span></div>
-      <div class="card">${subj}</div>
-    </div>
-    <div class="section-block">
-      <div class="section-title">Checklist nội dung ôn <span class="link" onclick="openCheckModal()">+ Thêm</span></div>
-      <div class="card">${checklist}</div>
-    </div>`;
+/* 📊 Thống kê luyện tập (từ lịch sử làm bài) */
+function examStatsHtml() {
+  const at = getAttempts();
+  if (!at.length) return `<div class="section-block"><div class="section-title">📊 Thống kê luyện tập</div>
+    <div class="card"><div class="empty">Chưa có dữ liệu — hãy làm vài đề để xem thống kê & điểm yếu.</div></div></div>`;
+  const n = at.length, avg = (at.reduce((s, a) => s + a.score10, 0) / n).toFixed(1);
+  const bySub = {};
+  at.forEach((a) => { const k = a.subject || '?'; (bySub[k] = bySub[k] || []).push(a.score10); });
+  const rows = Object.keys(bySub).map((k) => ({ k: k, avg: bySub[k].reduce((s, x) => s + x, 0) / bySub[k].length, c: bySub[k].length })).sort((a, b) => a.avg - b.avg);
+  const weak = rows[0];
+  return `<div class="section-block"><div class="section-title">📊 Thống kê luyện tập</div>
+    <div class="card">
+      <div class="stat-row"><b>${n}</b> lượt làm đề · điểm TB <b>${avg}/10</b>${weak ? ` · cần cải thiện: <b>${subjectLabel(weak.k) || weak.k || 'Khác'}</b>` : ''}</div>
+      ${rows.map((r) => `<div class="stat-bar"><span>${subjectLabel(r.k) || r.k || 'Khác'}</span><div class="stat-track"><div class="stat-fill" style="width:${Math.max(3, r.avg * 10)}%"></div></div><b>${r.avg.toFixed(1)}</b></div>`).join('')}
+    </div></div>`;
+}
+
+/* 🎓 Máy tính điểm xét tuyển đại học */
+const ADMISSION_COMBOS = {
+  A00: ['Toán', 'Vật lí', 'Hóa học'],
+  A01: ['Toán', 'Vật lí', 'Tiếng Anh'],
+  B00: ['Toán', 'Hóa học', 'Sinh học'],
+  C00: ['Ngữ văn', 'Lịch sử', 'Địa lí'],
+  D01: ['Toán', 'Ngữ văn', 'Tiếng Anh'],
+  D07: ['Toán', 'Hóa học', 'Tiếng Anh'],
+};
+function admissionCalcHtml() {
+  const opts = Object.keys(ADMISSION_COMBOS).map((k) => `<option value="${k}">${k} (${ADMISSION_COMBOS[k].join(' – ')})</option>`).join('');
+  return `<div class="section-block"><div class="section-title">🎓 Máy tính điểm xét tuyển</div>
+    <div class="card">
+      <label class="field" style="margin-bottom:8px"><span>Tổ hợp môn</span>
+        <select id="adm-combo" onchange="admissionRender()">${opts}</select></label>
+      <div id="admission-box"></div>
+    </div></div>`;
+}
+function admissionRender() {
+  const box = document.getElementById('admission-box');
+  if (!box) return;
+  const sel = document.getElementById('adm-combo');
+  const combo = (sel && sel.value) || App.state.combo || 'A00';
+  App.state.combo = combo;
+  if (sel) sel.value = combo;
+  const subs = ADMISSION_COMBOS[combo];
+  box.innerHTML = subs.map((s, i) => `
+    <label class="adm-row"><span>${s}</span>
+      <input id="adm-s${i}" type="number" min="0" max="10" step="0.25" value="0" oninput="admissionCalc()"></label>`).join('') +
+    `<div id="adm-result" class="adm-result"></div>
+     <p class="muted" style="font-size:0.78rem;margin-top:6px">Điểm xét = tổng 3 môn (thang 30). Cộng điểm ưu tiên/khuyến khích nếu có.</p>`;
+  admissionCalc();
+}
+function admissionCalc() {
+  const subs = ADMISSION_COMBOS[App.state.combo || 'A00'];
+  let total = 0, ok = true;
+  for (let i = 0; i < subs.length; i++) {
+    const inp = document.getElementById('adm-s' + i);
+    let val = inp ? parseFloat(inp.value) : 0;
+    if (isNaN(val)) val = 0;
+    val = Math.max(0, Math.min(10, val));
+    total += val;
+  }
+  const res = document.getElementById('adm-result');
+  if (res) res.innerHTML = `Tổng điểm xét tuyển: <b>${total.toFixed(2)}</b> / 30`;
 }
 
 async function saveExam() {
