@@ -264,7 +264,7 @@ const CURRICULUM = {
               `,
             },
             {
-              id: 'l-toan-gtln-gtnn', title: 'GTLN – GTNN của hàm số', level: 'CO_BAN',
+              id: 'l-toan-gtln-gtnn', title: 'GTLN – GTNN của hàm số', title_en: 'Maximum & minimum of a function', level: 'CO_BAN',
               html: `
                 <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
@@ -309,6 +309,52 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$y'=6x^2-6x-12=6(x-2)(x+1)$; nghiệm $-1,2$. $y(-2)=-3,\\ y(-1)=8,\\ y(2)=-19,\\ y(3)=-8$. Vậy $\\max=8$ tại $x=-1$; $\\min=-19$ tại $x=2$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm GTNN của $y=x+\\dfrac{9}{x}$ trên $(0;+\\infty)$.</p>
                   <details><summary>Đáp án</summary><p>$y'=1-\\dfrac{9}{x^2}=0\\Leftrightarrow x=3$; $\\min y=y(3)=6$ (Cô-si).</p></details>
+                </div>
+              `,
+              html_en: `
+                <div class="lesson-sim-cta">🔬 <strong>Tool:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Plot a function ▸</button></div>
+                <h2>Core idea</h2>
+                <p>To find the maximum (max) and minimum (min) of $f(x)$ on a closed interval $[a;b]$:</p>
+                <ol>
+                  <li>Compute $f'(x)$ and find the roots $x_i \\in [a;b]$ of $f'(x)=0$.</li>
+                  <li>Evaluate $f(a),\\ f(b),\\ f(x_i)$.</li>
+                  <li>The max is the largest value and the min is the smallest value among them.</li>
+                </ol>
+                <h2>Advanced</h2>
+                <p>On an open interval (not a closed segment): use the variation table to conclude. Real-world optimization (minimizing cost, maximizing area) usually reduces to finding the max/min of a function.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Find the max and min of $y=x^3-3x+2$ on $[0;2]$.</p>
+                  <p><strong>Solution:</strong> $y'=3x^2-3=0 \\Leftrightarrow x=1$ (keep $x=1\\in[0;2]$).</p>
+                  <p>$y(0)=2,\\quad y(1)=0,\\quad y(2)=4$. So $\\max y = 4$ at $x=2$; $\\min y = 0$ at $x=1$.</p>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Find the minimum of $y=x+\\dfrac{4}{x}$ on $(0;+\\infty)$.</p>
+                  <details><summary>Show answer</summary>
+                    <p>$y'=1-\\dfrac{4}{x^2}=0 \\Leftrightarrow x=2$. From the variation table ⇒ $\\min y = y(2)=4$ (by AM–GM: $x+\\dfrac{4}{x}\\ge 2\\sqrt{4}=4$).</p>
+                  </details>
+                </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (closed interval, biquadratic)</div>
+                  <p>Find the max and min of $y=x^4-2x^2+3$ on $[-1;2]$.</p>
+                  <p><strong>Solution:</strong> $y'=4x^3-4x=4x(x-1)(x+1)$; roots in the interval: $x=-1,0,1$.</p>
+                  <p>$y(-1)=2,\\ y(0)=3,\\ y(1)=2,\\ y(2)=11$. So $\\max y=11$ at $x=2$; $\\min y=2$ at $x=\\pm1$.</p>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 3 (real-world problem)</div>
+                  <p>A rectangular garden has perimeter $20$ m. Find the dimensions giving the largest area.</p>
+                  <p><strong>Solution:</strong> Let one side be $x$, then the other is $10-x$. $S=x(10-x)=-x^2+10x$, $S'=-2x+10=0\\Leftrightarrow x=5$. So a $5$ m square, $S_{\\max}=25\\ \\text{m}^2$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Find the max and min of $y=2x^3-3x^2-12x+1$ on $[-2;3]$.</p>
+                  <details><summary>Answer</summary><p>$y'=6x^2-6x-12=6(x-2)(x+1)$; roots $-1,2$. $y(-2)=-3,\\ y(-1)=8,\\ y(2)=-19,\\ y(3)=-8$. So $\\max=8$ at $x=-1$; $\\min=-19$ at $x=2$.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> Find the minimum of $y=x+\\dfrac{9}{x}$ on $(0;+\\infty)$.</p>
+                  <details><summary>Answer</summary><p>$y'=1-\\dfrac{9}{x^2}=0\\Leftrightarrow x=3$; $\\min y=y(3)=6$ (AM–GM).</p></details>
                 </div>
               `,
             },
