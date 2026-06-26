@@ -1859,8 +1859,14 @@ const CURRICULUM = {
                   <p>Tính số mol trong $8$ g NaOH ($M=40$).</p>
                   <p><strong>Giải:</strong> $n = 8/40 = 0{,}2$ mol.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Khối lượng của $0{,}5$ mol $H_2O$ ($M=18$)?
-                  <details><summary>Đáp án</summary>$m = 0{,}5\\cdot18 = 9$ g.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Khối lượng của $0{,}5$ mol $H_2O$ ($M=18$)?</p>
+                  <details><summary>Đáp án</summary><p>$m = 0{,}5\\cdot18 = 9$ g.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Số mol trong $11{,}2$ g sắt Fe ($M=56$)?</p>
+                  <details><summary>Đáp án</summary><p>$n = 11{,}2/56 = 0{,}2$ mol.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Thể tích (đktc) của $0{,}25$ mol khí $O_2$?</p>
+                  <details><summary>Đáp án</summary><p>$V = 22{,}4\\cdot0{,}25 = 5{,}6$ lít.</p></details>
                 </div>
               `,
             },
@@ -1876,8 +1882,14 @@ const CURRICULUM = {
                 </ul>
                 <div class="luuy"><strong>Thang pH:</strong> pH < 7 môi trường acid, pH = 7 trung tính, pH > 7 môi trường base.</div>
                 <div class="vd"><div class="vd-title">📝 Ví dụ</div><p>Dung dịch có pH = 3 ⇒ môi trường acid; pH = 10 ⇒ môi trường base.</p></div>
-                <div class="bt"><strong>Bài tập:</strong> Chất nào làm quỳ tím hóa xanh: HCl hay NaOH?
-                  <details><summary>Đáp án</summary>NaOH (base).</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Chất nào làm quỳ tím hóa xanh: HCl hay NaOH?</p>
+                  <details><summary>Đáp án</summary><p>NaOH (base).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Dung dịch có $pH = 2$ thuộc môi trường nào?</p>
+                  <details><summary>Đáp án</summary><p>$pH < 7$ ⇒ môi trường acid.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> $CO_2$ và $Na_2O$ — chất nào là oxide acid, chất nào là oxide base?</p>
+                  <details><summary>Đáp án</summary><p>$CO_2$ là oxide acid; $Na_2O$ là oxide base.</p></details>
                 </div>
               `,
             },
@@ -1902,8 +1914,27 @@ const CURRICULUM = {
                   <p>Lực $F=200$ N ép lên diện tích $S=0{,}5\\,m^2$. Áp suất?</p>
                   <p><strong>Giải:</strong> $p = 200/0{,}5 = 400$ Pa.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Vật thể tích $0{,}001\\,m^3$ chìm trong nước ($d=10000\\,N/m^3$). Lực đẩy Archimedes?
-                  <details><summary>Đáp án</summary>$F_A = 10000\\cdot0{,}001 = 10$ N.</details>
+                <div class="vd">
+                  <div class="vd-title">🌊 Lực đẩy Archimedes — vật trong nước</div>
+                  <svg class="graph" viewBox="0 0 180 140" width="180" height="140" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="20" y="40" width="140" height="85" fill="#dbeafe" stroke="#94a3b8"/>
+                    <rect x="65" y="62" width="50" height="38" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+                    <line x1="90" y1="62" x2="90" y2="28" stroke="#16a34a" stroke-width="2"/>
+                    <polygon points="90,24 86,34 94,34" fill="#16a34a"/>
+                    <text x="96" y="36" fill="#16a34a">F_A</text>
+                    <line x1="90" y1="100" x2="90" y2="132" stroke="#dc2626" stroke-width="2"/>
+                    <polygon points="90,136 86,126 94,126" fill="#dc2626"/>
+                    <text x="96" y="124" fill="#dc2626">P</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Vật thể tích $0{,}001\\,m^3$ chìm trong nước ($d=10000\\,N/m^3$). Lực đẩy Archimedes?</p>
+                  <details><summary>Đáp án</summary><p>$F_A = 10000\\cdot0{,}001 = 10$ N.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Khối lượng riêng của vật có $m = 234$ g, $V = 30\\,cm^3$?</p>
+                  <details><summary>Đáp án</summary><p>$D = 234/30 = 7{,}8$ g/cm³.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Áp suất nước ở độ sâu $5$ m ($d = 10000\\,N/m^3$)?</p>
+                  <details><summary>Đáp án</summary><p>$p = d\\cdot h = 10000\\cdot5 = 50000$ Pa.</p></details>
                 </div>
               `,
             },
@@ -1922,8 +1953,14 @@ const CURRICULUM = {
                   <li><strong>Hô hấp:</strong> trao đổi khí ở phổi — lấy $O_2$, thải $CO_2$; đơn vị là phế nang.</li>
                 </ul>
                 <div class="luuy"><strong>Liên hệ:</strong> ba hệ phối hợp cung cấp $O_2$ và dinh dưỡng cho mọi tế bào, đào thải chất cặn bã.</div>
-                <div class="bt"><strong>Bài tập:</strong> Cơ quan nào hấp thụ chất dinh dưỡng chủ yếu?
-                  <details><summary>Đáp án</summary>Ruột non.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cơ quan nào hấp thụ chất dinh dưỡng chủ yếu?</p>
+                  <details><summary>Đáp án</summary><p>Ruột non.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tim người có mấy ngăn?</p>
+                  <details><summary>Đáp án</summary><p>4 ngăn (2 tâm nhĩ, 2 tâm thất).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Quá trình trao đổi khí ở phổi diễn ra tại đâu?</p>
+                  <details><summary>Đáp án</summary><p>Tại các phế nang.</p></details>
                 </div>
               `,
             },
@@ -1950,8 +1987,14 @@ const CURRICULUM = {
                   <p><strong>Giải:</strong> $2H_2 + O_2 \\rightarrow 2H_2O$ (4 H và 2 O ở mỗi vế).</p>
                   <p>$Fe + O_2 \\rightarrow Fe_2O_3$ ⇒ $4Fe + 3O_2 \\rightarrow 2Fe_2O_3$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Cân bằng $Na + O_2 \\rightarrow Na_2O$.
-                  <details><summary>Đáp án</summary>$4Na + O_2 \\rightarrow 2Na_2O$.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cân bằng $Na + O_2 \\rightarrow Na_2O$.</p>
+                  <details><summary>Đáp án</summary><p>$4Na + O_2 \\rightarrow 2Na_2O$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Cân bằng $Al + O_2 \\rightarrow Al_2O_3$.</p>
+                  <details><summary>Đáp án</summary><p>$4Al + 3O_2 \\rightarrow 2Al_2O_3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Đốt $4$ g khí $H_2$ với $32$ g $O_2$ tạo nước. Khối lượng nước thu được (bảo toàn khối lượng)?</p>
+                  <details><summary>Đáp án</summary><p>$m_{H_2O} = 4 + 32 = 36$ g.</p></details>
                 </div>
               `,
             },
@@ -1971,8 +2014,14 @@ const CURRICULUM = {
                   <p>Hòa tan $20$ g đường vào $80$ g nước. Tính $C\\%$.</p>
                   <p><strong>Giải:</strong> $m_{dd} = 100$ g ⇒ $C\\% = \\dfrac{20}{100}\\cdot100\\% = 20\\%$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Hòa tan $0{,}5$ mol NaCl vào nước được $250$ mL dung dịch. Tính $C_M$.
-                  <details><summary>Đáp án</summary>$C_M = \\dfrac{0{,}5}{0{,}25} = 2$ mol/L.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Hòa tan $0{,}5$ mol NaCl vào nước được $250$ mL dung dịch. Tính $C_M$.</p>
+                  <details><summary>Đáp án</summary><p>$C_M = \\dfrac{0{,}5}{0{,}25} = 2$ mol/L.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hòa tan $15$ g muối vào $85$ g nước. Tính $C\\%$.</p>
+                  <details><summary>Đáp án</summary><p>$m_{dd} = 100$ g ⇒ $C\\% = \\dfrac{15}{100}\\cdot100\\% = 15\\%$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Cần bao nhiêu gam đường để pha $200$ g dung dịch đường $10\\%$?</p>
+                  <details><summary>Đáp án</summary><p>$m_{ct} = \\dfrac{10\\cdot200}{100} = 20$ g.</p></details>
                 </div>
               `,
             },
@@ -1996,8 +2045,29 @@ const CURRICULUM = {
                   <p>Đòn bẩy cân bằng: vật $100$ N đặt cách trục $0{,}2$ m. Cần đặt lực bao nhiêu ở cách trục $0{,}5$ m?</p>
                   <p><strong>Giải:</strong> $F_1 d_1 = F_2 d_2 \\Rightarrow 100\\cdot0{,}2 = F_2\\cdot0{,}5 \\Rightarrow F_2 = 40$ N.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Lực $30$ N có cánh tay đòn $0{,}4$ m. Moment lực?
-                  <details><summary>Đáp án</summary>$M = 30\\cdot0{,}4 = 12$ N·m.</details>
+                <div class="vd">
+                  <div class="vd-title">⚖️ Đòn bẩy cân bằng — $F_1 d_1 = F_2 d_2$</div>
+                  <svg class="graph" viewBox="0 0 220 120" width="220" height="120" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="20" y1="70" x2="200" y2="70" stroke="#4f46e5" stroke-width="3"/>
+                    <polygon points="110,70 100,98 120,98" fill="#475569"/>
+                    <line x1="60" y1="70" x2="60" y2="38" stroke="#dc2626" stroke-width="2"/>
+                    <polygon points="60,34 56,44 64,44" fill="#dc2626"/>
+                    <text x="46" y="30" fill="#dc2626">F₁</text>
+                    <line x1="170" y1="70" x2="170" y2="44" stroke="#16a34a" stroke-width="2"/>
+                    <polygon points="170,40 166,50 174,50" fill="#16a34a"/>
+                    <text x="160" y="36" fill="#16a34a">F₂</text>
+                    <text x="80" y="88" fill="#475569">d₁</text>
+                    <text x="135" y="88" fill="#475569">d₂</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Lực $30$ N có cánh tay đòn $0{,}4$ m. Moment lực?</p>
+                  <details><summary>Đáp án</summary><p>$M = 30\\cdot0{,}4 = 12$ N·m.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Đòn bẩy cân bằng: vật $80$ N ở cách trục $0{,}3$ m. Lực cần đặt ở cách trục $0{,}6$ m?</p>
+                  <details><summary>Đáp án</summary><p>$F_2 = \\dfrac{80\\cdot0{,}3}{0{,}6} = 40$ N.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Muốn lợi về lực, nên đặt vật ở phía cánh tay đòn dài hay ngắn?</p>
+                  <details><summary>Đáp án</summary><p>Phía cánh tay đòn ngắn (tác dụng lực ở phía cánh tay đòn dài).</p></details>
                 </div>
               `,
             },
@@ -2022,8 +2092,28 @@ const CURRICULUM = {
                   <p>Hai bóng đèn mắc nối tiếp, dòng qua đèn 1 là $0{,}3$ A. Dòng qua đèn 2?</p>
                   <p><strong>Giải:</strong> Mạch nối tiếp ⇒ $I$ như nhau ⇒ $0{,}3$ A.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Mạch song song hai nhánh có dòng $0{,}2$ A và $0{,}5$ A. Dòng điện mạch chính?
-                  <details><summary>Đáp án</summary>$I = 0{,}2 + 0{,}5 = 0{,}7$ A.</details>
+                <div class="vd">
+                  <div class="vd-title">🔌 Mạch điện kín đơn giản</div>
+                  <svg class="graph" viewBox="0 0 200 120" width="200" height="120" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="35" y="28" width="130" height="62" fill="none" stroke="#475569" stroke-width="2"/>
+                    <circle cx="100" cy="28" r="11" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+                    <line x1="92" y1="20" x2="108" y2="36" stroke="#f59e0b"/>
+                    <line x1="108" y1="20" x2="92" y2="36" stroke="#f59e0b"/>
+                    <text x="116" y="24" fill="#475569">Đèn</text>
+                    <line x1="88" y1="90" x2="88" y2="78" stroke="#dc2626" stroke-width="4"/>
+                    <line x1="100" y1="94" x2="100" y2="74" stroke="#dc2626" stroke-width="2"/>
+                    <text x="106" y="108" fill="#dc2626">Nguồn (pin)</text>
+                    <text x="38" y="108" fill="#475569">mạch kín</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Mạch song song hai nhánh có dòng $0{,}2$ A và $0{,}5$ A. Dòng điện mạch chính?</p>
+                  <details><summary>Đáp án</summary><p>$I = 0{,}2 + 0{,}5 = 0{,}7$ A.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Dụng cụ đo cường độ dòng điện tên là gì và mắc như thế nào?</p>
+                  <details><summary>Đáp án</summary><p>Ampe kế, mắc nối tiếp với vật cần đo.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Trong mạch nối tiếp, hiệu điện thế hai đèn lần lượt là $3$ V và $6$ V. Hiệu điện thế toàn mạch?</p>
+                  <details><summary>Đáp án</summary><p>$U = 3 + 6 = 9$ V.</p></details>
                 </div>
               `,
             },
@@ -2046,8 +2136,14 @@ const CURRICULUM = {
                   <div class="vd-title">📝 Ví dụ</div>
                   <p>Cầm thìa kim loại nhúng trong nước nóng thấy nóng tay — đó là hiện tượng <strong>dẫn nhiệt</strong>. Nước trong ấm sôi nóng đều nhờ <strong>đối lưu</strong>. Đứng gần lửa thấy nóng là do <strong>bức xạ nhiệt</strong>.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Hình thức truyền nhiệt nào xảy ra được trong chân không?
-                  <details><summary>Đáp án</summary>Bức xạ nhiệt.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Hình thức truyền nhiệt nào xảy ra được trong chân không?</p>
+                  <details><summary>Đáp án</summary><p>Bức xạ nhiệt.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hình thức truyền nhiệt chủ yếu trong chất lỏng và chất khí là gì?</p>
+                  <details><summary>Đáp án</summary><p>Đối lưu.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Chất nào nở vì nhiệt nhiều nhất: rắn, lỏng hay khí?</p>
+                  <details><summary>Đáp án</summary><p>Chất khí.</p></details>
                 </div>
               `,
             },
@@ -2066,8 +2162,14 @@ const CURRICULUM = {
                   <li><strong>Cơ</strong> bám vào xương; khi co làm xương cử động, tạo nên vận động.</li>
                 </ul>
                 <div class="luuy"><strong>Bảo vệ:</strong> ngồi học đúng tư thế, mang vác cân đối để tránh cong vẹo cột sống; bổ sung canxi và vitamin D cho xương chắc khỏe.</div>
-                <div class="bt"><strong>Bài tập:</strong> Khớp ở hộp sọ thuộc loại khớp nào?
-                  <details><summary>Đáp án</summary>Khớp bất động.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Khớp ở hộp sọ thuộc loại khớp nào?</p>
+                  <details><summary>Đáp án</summary><p>Khớp bất động.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Khớp ở khuỷu tay, đầu gối thuộc loại khớp nào?</p>
+                  <details><summary>Đáp án</summary><p>Khớp động.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Thành phần nào làm cho xương cứng chắc?</p>
+                  <details><summary>Đáp án</summary><p>Chất khoáng (chủ yếu là canxi).</p></details>
                 </div>
               `,
             },
@@ -2081,8 +2183,14 @@ const CURRICULUM = {
                   <li>Đường dẫn: thận → ống dẫn nước tiểu → bóng đái → ống đái.</li>
                 </ul>
                 <div class="luuy"><strong>Giữ gìn:</strong> uống đủ nước, không nhịn tiểu, ăn uống hợp vệ sinh để bảo vệ thận và đường tiết niệu.</div>
-                <div class="bt"><strong>Bài tập:</strong> Đơn vị chức năng lọc máu của thận tên là gì?
-                  <details><summary>Đáp án</summary>Đơn vị thận (nephron).</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Đơn vị chức năng lọc máu của thận tên là gì?</p>
+                  <details><summary>Đáp án</summary><p>Đơn vị thận (nephron).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Ngoài thận, cơ quan nào cũng tham gia bài tiết (qua mồ hôi, qua khí $CO_2$)?</p>
+                  <details><summary>Đáp án</summary><p>Da (mồ hôi) và phổi ($CO_2$).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Nêu đúng thứ tự đường dẫn nước tiểu.</p>
+                  <details><summary>Đáp án</summary><p>Thận → ống dẫn nước tiểu → bóng đái → ống đái.</p></details>
                 </div>
               `,
             },
@@ -2096,8 +2204,14 @@ const CURRICULUM = {
                   <li><strong>Giác quan:</strong> mắt (thị giác), tai (thính giác và giữ thăng bằng), mũi (khứu giác), lưỡi (vị giác), da (xúc giác).</li>
                 </ul>
                 <div class="luuy"><strong>Bảo vệ:</strong> ngủ đủ giấc, học tập – nghỉ ngơi hợp lí; giữ vệ sinh mắt, đeo kính đúng độ; tránh tiếng ồn lớn để bảo vệ tai.</div>
-                <div class="bt"><strong>Bài tập:</strong> Hệ thần kinh trung ương gồm những bộ phận nào?
-                  <details><summary>Đáp án</summary>Não bộ và tủy sống.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Hệ thần kinh trung ương gồm những bộ phận nào?</p>
+                  <details><summary>Đáp án</summary><p>Não bộ và tủy sống.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Đơn vị cấu tạo của hệ thần kinh tên là gì?</p>
+                  <details><summary>Đáp án</summary><p>Nơron (tế bào thần kinh).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Cơ quan nào đảm nhận thị giác? Cơ quan nào vừa giúp nghe vừa giữ thăng bằng?</p>
+                  <details><summary>Đáp án</summary><p>Mắt (thị giác); tai (thính giác và thăng bằng).</p></details>
                 </div>
               `,
             },
@@ -2111,8 +2225,14 @@ const CURRICULUM = {
                   <li><strong>Da & điều hòa thân nhiệt:</strong> khi nóng, mạch máu dưới da giãn và tuyến mồ hôi tiết mồ hôi để tỏa nhiệt; khi lạnh, mạch co lại và cơ run để sinh nhiệt, giữ thân nhiệt ổn định khoảng $37^\\circ C$.</li>
                 </ul>
                 <div class="luuy"><strong>Phân biệt:</strong> tuyến nội tiết đổ chất tiết vào máu (không có ống dẫn); tuyến ngoại tiết (mồ hôi, nước bọt) có ống dẫn ra ngoài.</div>
-                <div class="bt"><strong>Bài tập:</strong> Hormone nào điều hòa lượng đường trong máu, do tuyến tụy tiết ra?
-                  <details><summary>Đáp án</summary>Insulin.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Hormone nào điều hòa lượng đường trong máu, do tuyến tụy tiết ra?</p>
+                  <details><summary>Đáp án</summary><p>Insulin.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Khi trời nóng, cơ thể tỏa nhiệt bằng cách nào?</p>
+                  <details><summary>Đáp án</summary><p>Mạch máu dưới da giãn ra và tuyến mồ hôi tiết mồ hôi để tỏa nhiệt.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Phân biệt tuyến nội tiết và tuyến ngoại tiết.</p>
+                  <details><summary>Đáp án</summary><p>Tuyến nội tiết đổ hormone thẳng vào máu (không ống dẫn); tuyến ngoại tiết có ống dẫn chất tiết ra ngoài (mồ hôi, nước bọt).</p></details>
                 </div>
               `,
             },
