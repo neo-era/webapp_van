@@ -18,6 +18,52 @@ const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 
 function subjectColor(code) { return (SUBJECTS[code] || {}).color || 'var(--text-muted)'; }
 function subjectLabel(code) { return (SUBJECTS[code] || {}).label || code; }
+
+/* ============================================================
+   Song ngữ (i18n) — Tiếng Việt ⇄ English
+   ============================================================ */
+const I18N = {
+  vi: {
+    nav_learn: 'Học', nav_calendar: 'Lịch', nav_goals: 'Mục tiêu', nav_exam: 'Ôn thi', nav_notes: 'Ghi chú', nav_profile: 'Cá nhân', nav_teacher: 'Lớp học',
+    role_student: 'Học sinh', role_teacher: 'Giáo viên',
+    learn_title: 'Học', learn_sub: 'Chọn môn để xem bài giảng', btn_sim: '🔬 Mô phỏng', btn_formula: '📐 Công thức',
+    grade_word: 'Lớp', back_subjects: '‹ Môn học',
+    profile_title: 'Cá nhân', p_email: 'Email', p_grade: 'Khối', p_lang: 'Ngôn ngữ', btn_changepw: 'Đổi mật khẩu', btn_logout: 'Đăng xuất',
+    exam_title: 'Ôn thi THPTQG', exam_sub: 'Lộ trình · luyện tập · công cụ', exam_setup: '⚙️ Thiết lập kỳ thi (đếm ngược)',
+    exam_combo: 'Tổ hợp môn thi', exam_checklist: 'Checklist nội dung ôn', exam_stats: '📊 Thống kê luyện tập', exam_admission: '🎓 Máy tính điểm xét tuyển', edit: 'Sửa', add: '+ Thêm',
+    cal_title: 'Lịch học', goals_title: 'Mục tiêu', notes_title: 'Ghi chú',
+    formulas_title: '📐 Bảng công thức', formulas_sub: 'Tra cứu nhanh trước khi thi',
+  },
+  en: {
+    nav_learn: 'Learn', nav_calendar: 'Calendar', nav_goals: 'Goals', nav_exam: 'Exam Prep', nav_notes: 'Notes', nav_profile: 'Profile', nav_teacher: 'Class',
+    role_student: 'Student', role_teacher: 'Teacher',
+    learn_title: 'Learn', learn_sub: 'Pick a subject to study', btn_sim: '🔬 Simulations', btn_formula: '📐 Formulas',
+    grade_word: 'Grade', back_subjects: '‹ Subjects',
+    profile_title: 'Profile', p_email: 'Email', p_grade: 'Grade', p_lang: 'Language', btn_changepw: 'Change password', btn_logout: 'Log out',
+    exam_title: 'Exam Preparation', exam_sub: 'Roadmap · practice · tools', exam_setup: '⚙️ Set up exam (countdown)',
+    exam_combo: 'Subject combination', exam_checklist: 'Revision checklist', exam_stats: '📊 Practice statistics', exam_admission: '🎓 Admission score calculator', edit: 'Edit', add: '+ Add',
+    cal_title: 'Study calendar', goals_title: 'Goals', notes_title: 'Notes',
+    formulas_title: '📐 Formula sheet', formulas_sub: 'Quick reference before exams',
+  },
+};
+function getLang() { try { return localStorage.getItem('thpt_lang') || 'vi'; } catch (e) { return 'vi'; } }
+function t(k) {
+  const L = App.state.lang || 'vi';
+  if (I18N[L] && I18N[L][k] != null) return I18N[L][k];
+  return I18N.vi[k] != null ? I18N.vi[k] : k;
+}
+App.state.lang = getLang();
+const NAV_KEYS = { learn: 'nav_learn', calendar: 'nav_calendar', goals: 'nav_goals', exam: 'nav_exam', notes: 'nav_notes', profile: 'nav_profile', teacher: 'nav_teacher' };
+function applyNavLabels() {
+  $$('.nav-item').forEach((b) => { const k = NAV_KEYS[b.dataset.tab]; const lab = b.querySelector('.nav-label'); if (k && lab) lab.textContent = t(k); });
+}
+function setLang(l) {
+  App.state.lang = l;
+  try { localStorage.setItem('thpt_lang', l); } catch (e) {}
+  applyNavLabels();
+  rerender();
+  showToast(l === 'en' ? 'Language: English' : 'Ngôn ngữ: Tiếng Việt', 'success');
+}
 function subjectBadge(code) {
   return `<span class="subject-badge" style="background:${subjectColor(code)}">${subjectLabel(code)}</span>`;
 }
@@ -215,8 +261,8 @@ function enterApp() {
   const u = App.state.user;
   $('#header-avatar').textContent = initials(u.name);
   $('#header-name').textContent = u.name;
-  $('#header-role').textContent = u.role === 'TEACHER' ? 'Giáo viên'
-    : (u.classId ? 'Học sinh' : 'Học sinh');
+  $('#header-role').textContent = u.role === 'TEACHER' ? t('role_teacher') : t('role_student');
+  applyNavLabels();
 
   if (u.role === 'TEACHER') {
     $('#bottom-nav').classList.add('hidden');
@@ -255,6 +301,7 @@ function switchTab(tab) {
   $$('.screen-tab').forEach((s) => s.classList.add('hidden'));
   $('#screen-' + tab).classList.remove('hidden');
   $$('.nav-item').forEach((n) => n.classList.toggle('active', n.dataset.tab === tab));
+  applyNavLabels();
   window.scrollTo(0, 0);
   rerender();
 }
@@ -373,11 +420,11 @@ function renderGoals() {
    ============================================================ */
 function renderExam() {
   const e = App.data.exam;
-  const head = `<div class="page-head"><h2>Ôn thi THPTQG</h2><p>Lộ trình · luyện tập · công cụ</p></div>`;
+  const head = `<div class="page-head"><h2>${t('exam_title')}</h2><p>${t('exam_sub')}</p></div>`;
   let top;
   if (!e || !e.examDate) {
-    top = `<div class="card"><div class="empty">Chưa thiết lập kỳ thi.</div></div>
-      <button class="btn btn-primary btn-block" style="margin:10px 0 18px" onclick="openExamSetup()">⚙️ Thiết lập kỳ thi (đếm ngược)</button>`;
+    top = `<div class="card"><div class="empty">—</div></div>
+      <button class="btn btn-primary btn-block" style="margin:10px 0 18px" onclick="openExamSetup()">${t('exam_setup')}</button>`;
   } else {
     const dleft = daysLeft(e.examDate);
     const subj = e.subjects.length ? e.subjects.map(subjectBadge).join(' ') : '<span class="muted">Chưa chọn môn</span>';
@@ -397,11 +444,11 @@ function renderExam() {
         <div class="cheer">Bạn làm được! Giữ vững nhịp ôn tập nhé 🌟</div>
       </div>
       <div class="section-block">
-        <div class="section-title">Tổ hợp môn thi <span class="link" onclick="openExamSetup()">Sửa</span></div>
+        <div class="section-title">${t('exam_combo')} <span class="link" onclick="openExamSetup()">${t('edit')}</span></div>
         <div class="card">${subj}</div>
       </div>
       <div class="section-block">
-        <div class="section-title">Checklist nội dung ôn <span class="link" onclick="openCheckModal()">+ Thêm</span></div>
+        <div class="section-title">${t('exam_checklist')} <span class="link" onclick="openCheckModal()">${t('add')}</span></div>
         <div class="card">${checklist}</div>
       </div>`;
   }
@@ -412,16 +459,16 @@ function renderExam() {
 /* 📊 Thống kê luyện tập (từ lịch sử làm bài) */
 function examStatsHtml() {
   const at = getAttempts();
-  if (!at.length) return `<div class="section-block"><div class="section-title">📊 Thống kê luyện tập</div>
-    <div class="card"><div class="empty">Chưa có dữ liệu — hãy làm vài đề để xem thống kê & điểm yếu.</div></div></div>`;
+  if (!at.length) return `<div class="section-block"><div class="section-title">${t('exam_stats')}</div>
+    <div class="card"><div class="empty">—</div></div></div>`;
   const n = at.length, avg = (at.reduce((s, a) => s + a.score10, 0) / n).toFixed(1);
   const bySub = {};
   at.forEach((a) => { const k = a.subject || '?'; (bySub[k] = bySub[k] || []).push(a.score10); });
   const rows = Object.keys(bySub).map((k) => ({ k: k, avg: bySub[k].reduce((s, x) => s + x, 0) / bySub[k].length, c: bySub[k].length })).sort((a, b) => a.avg - b.avg);
   const weak = rows[0];
-  return `<div class="section-block"><div class="section-title">📊 Thống kê luyện tập</div>
+  return `<div class="section-block"><div class="section-title">${t('exam_stats')}</div>
     <div class="card">
-      <div class="stat-row"><b>${n}</b> lượt làm đề · điểm TB <b>${avg}/10</b>${weak ? ` · cần cải thiện: <b>${subjectLabel(weak.k) || weak.k || 'Khác'}</b>` : ''}</div>
+      <div class="stat-row"><b>${n}</b> ${App.state.lang === 'en' ? 'attempts · avg' : 'lượt làm đề · điểm TB'} <b>${avg}/10</b>${weak ? ` · ${App.state.lang === 'en' ? 'improve' : 'cần cải thiện'}: <b>${subjectLabel(weak.k) || weak.k || '—'}</b>` : ''}</div>
       ${rows.map((r) => `<div class="stat-bar"><span>${subjectLabel(r.k) || r.k || 'Khác'}</span><div class="stat-track"><div class="stat-fill" style="width:${Math.max(3, r.avg * 10)}%"></div></div><b>${r.avg.toFixed(1)}</b></div>`).join('')}
     </div></div>`;
 }
@@ -437,9 +484,9 @@ const ADMISSION_COMBOS = {
 };
 function admissionCalcHtml() {
   const opts = Object.keys(ADMISSION_COMBOS).map((k) => `<option value="${k}">${k} (${ADMISSION_COMBOS[k].join(' – ')})</option>`).join('');
-  return `<div class="section-block"><div class="section-title">🎓 Máy tính điểm xét tuyển</div>
+  return `<div class="section-block"><div class="section-title">${t('exam_admission')}</div>
     <div class="card">
-      <label class="field" style="margin-bottom:8px"><span>Tổ hợp môn</span>
+      <label class="field" style="margin-bottom:8px"><span>${t('exam_combo')}</span>
         <select id="adm-combo" onchange="admissionRender()">${opts}</select></label>
       <div id="admission-box"></div>
     </div></div>`;
@@ -526,22 +573,29 @@ function filterNotes(q) {
    ============================================================ */
 function renderProfile() {
   const u = App.state.user;
+  const lang = App.state.lang || 'vi';
   $('#screen-profile').innerHTML = `
-    <div class="page-head"><h2>Cá nhân</h2></div>
+    <div class="page-head"><h2>${t('profile_title')}</h2></div>
     <div class="card" style="text-align:center">
       <div class="profile-big-avatar">${initials(u.name)}</div>
       <h3>${u.name}</h3>
-      <p class="muted">${u.role === 'TEACHER' ? 'Giáo viên' : 'Học sinh'}</p>
+      <p class="muted">${u.role === 'TEACHER' ? t('role_teacher') : t('role_student')}</p>
     </div>
     <div class="card" style="margin-top:14px">
-      <div class="profile-row"><span class="k">Email</span><span>${u.email}</span></div>
-      ${u.role === 'STUDENT' ? `<div class="profile-row"><span class="k">Khối</span>
+      <div class="profile-row"><span class="k">${t('p_email')}</span><span>${u.email}</span></div>
+      ${u.role === 'STUDENT' ? `<div class="profile-row"><span class="k">${t('p_grade')}</span>
         <select id="profile-grade" onchange="changeGrade(this.value)" style="padding:6px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg-surface);color:var(--text-primary);font-size:16px">
-          ${[8, 10, 11, 12].map((g) => `<option value="${g}"${(+u.grade || 12) === g ? ' selected' : ''}>Lớp ${g}</option>`).join('')}
+          ${[8, 10, 11, 12].map((g) => `<option value="${g}"${(+u.grade || 12) === g ? ' selected' : ''}>${t('grade_word')} ${g}</option>`).join('')}
         </select></div>` : ''}
+      <div class="profile-row"><span class="k">${t('p_lang')}</span>
+        <div class="lang-toggle">
+          <button class="${lang === 'vi' ? 'on' : ''}" onclick="setLang('vi')">🇻🇳 Tiếng Việt</button>
+          <button class="${lang === 'en' ? 'on' : ''}" onclick="setLang('en')">🇬🇧 English</button>
+        </div>
+      </div>
     </div>
-    <button class="btn btn-ghost btn-block" style="margin-top:16px" onclick="openPasswordModal()">Đổi mật khẩu</button>
-    <button class="btn btn-danger btn-block" style="margin-top:8px" onclick="logout()">Đăng xuất</button>`;
+    <button class="btn btn-ghost btn-block" style="margin-top:16px" onclick="openPasswordModal()">${t('btn_changepw')}</button>
+    <button class="btn btn-danger btn-block" style="margin-top:8px" onclick="logout()">${t('btn_logout')}</button>`;
 }
 
 async function changeGrade(g) {
@@ -1379,8 +1433,8 @@ async function renderLearn() {
     if (!keys.includes(cur)) cur = keys[0];
     v.formulaSubject = cur;
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
-        <h2>📐 Bảng công thức</h2><p>Tra cứu nhanh trước khi thi · Lớp ${(App.state.user && App.state.user.grade) || 12}</p></div>
+        <p class="link" onclick="learnBack('subjects')">${t('back_subjects')}</p>
+        <h2>${t('formulas_title')}</h2><p>${t('formulas_sub')} · ${t('grade_word')} ${(App.state.user && App.state.user.grade) || 12}</p></div>
       <div class="sim-tabs">${keys.map((k) => `<button class="sim-tab ${k === cur ? 'active' : ''}" onclick="formulaSetSubject('${k}')">${FORMULA_SHEETS[k].name}</button>`).join('')}</div>
       <div class="card lesson-content" id="formula-content"></div>`;
     renderHtmlContent(FORMULA_SHEETS[cur].html, $('#formula-content'));
@@ -1391,10 +1445,10 @@ async function renderLearn() {
     const g = (App.state.user && App.state.user.grade) || 12;
     // Lọc theo khối lớp: môn có grade trùng lớp HS; môn không gắn grade (IELTS/TOEIC) hiện cho mọi lớp.
     const subs = Content.subjects().filter((s) => !s.grade || s.grade === g);
-    el.innerHTML = `<div class="page-head"><h2>Học</h2><p>Chọn môn để xem bài giảng · Lớp ${g}</p></div>
+    el.innerHTML = `<div class="page-head"><h2>${t('learn_title')}</h2><p>${t('learn_sub')} · ${t('grade_word')} ${g}</p></div>
       <div style="display:flex;gap:8px;margin-bottom:12px">
-        <button class="btn btn-ghost" style="flex:1" onclick="switchTab('sim')">🔬 Mô phỏng</button>
-        <button class="btn btn-ghost" style="flex:1" onclick="learnOpenFormulas()">📐 Công thức</button>
+        <button class="btn btn-ghost" style="flex:1" onclick="switchTab('sim')">${t('btn_sim')}</button>
+        <button class="btn btn-ghost" style="flex:1" onclick="learnOpenFormulas()">${t('btn_formula')}</button>
       </div>
       ${subs.map((s) => `
         <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.code}','${s.name.replace(/'/g, '')}')">
