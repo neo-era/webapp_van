@@ -577,7 +577,11 @@ const SIM_LIST = [
   { key: 'ph', label: '🧪 Thang pH', tag: 'Hóa 8' },
   { key: 'reaction', label: '⚗️ Mô phỏng phản ứng', tag: 'Hóa 12' },
   { key: 'molecule', label: '🧬 Phân tử (xoay 3D)', tag: 'Hóa 12' },
+  { key: 'electro', label: '🔌 Điện phân', tag: 'Hóa 12' },
+  { key: 'polymer', label: '🔗 Trùng hợp polymer', tag: 'Hóa 12' },
+  { key: 'metalsalt', label: '🔋 Kim loại + muối', tag: 'Hóa 12' },
 ];
+function launchSim(key) { App.state.sim = key; switchTab('sim'); }
 
 function renderSim() {
   const cur = App.state.sim || (App.state.sim = 'lever');
@@ -598,7 +602,8 @@ function openSim(key) {
   App.state.sim = key;
   $$('.sim-tab').forEach((b) => b.classList.toggle('active', b.getAttribute('onclick').includes(`'${key}'`)));
   ({ graph: simGraph, geo: simGeo, lever: simLever, arch: simArch, ohm: simOhm, boyle: simBoyle,
-    conc: simConc, ph: simPH, reaction: simReaction, molecule: simMolecule }[key])();
+    conc: simConc, ph: simPH, reaction: simReaction, molecule: simMolecule,
+    electro: simElectro, polymer: simPolymer, metalsalt: simMetalSalt }[key])();
 }
 
 function simSlider(id, label, min, max, val, step, unit, fn) {
@@ -954,6 +959,74 @@ function simMoleculeLoop() {
   });
   document.getElementById('sim-out').innerHTML = `Phân tử <b>${m.name}</b> — ${data.desc}. (Đỏ = O, xám = H, đen = C, xanh = N)`;
   App.state.simRAF = requestAnimationFrame(simMoleculeLoop);
+}
+
+/* 🔌 Điện phân — ion di chuyển về điện cực */
+function simElectro() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('el-i', 'Cường độ dòng điện', 1, 10, 5, 1, 'A', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="210" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  const ions = [];
+  for (let i = 0; i < 14; i++) ions.push({ x: 90 + (i * 41 % 140), y: 55 + (i * 67 % 110), ch: i % 2 ? 1 : -1 });
+  App.state.electro = ions;
+  simElectroLoop();
+}
+function simElectroLoop() {
+  const I = numv('el-i'); setv('el-i', I); const sp = 0.3 + I / 6;
+  const ctx = simCtx();
+  ctx.strokeStyle = '#475569'; ctx.lineWidth = 2; ctx.strokeRect(40, 40, 240, 140);
+  ctx.fillStyle = '#dbeafe'; ctx.fillRect(42, 42, 236, 136);
+  ctx.fillStyle = '#cbd5e1'; ctx.fillRect(60, 30, 12, 158); ctx.fillRect(248, 30, 12, 158);
+  ctx.fillStyle = '#dc2626'; ctx.font = '12px sans-serif'; ctx.fillText('(–) catot', 44, 200);
+  ctx.fillStyle = '#2563eb'; ctx.fillText('anot (+)', 214, 200);
+  App.state.electro.forEach((io) => {
+    io.x += (io.ch > 0 ? -sp : sp);
+    if (io.x < 76 || io.x > 244) io.x = 150 + (io.y % 40) - 20;
+    ctx.fillStyle = io.ch > 0 ? '#dc2626' : '#2563eb';
+    ctx.beginPath(); ctx.arc(io.x, io.y, 7, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#fff'; ctx.font = 'bold 10px sans-serif'; ctx.fillText(io.ch > 0 ? '+' : '–', io.x - 3, io.y + 3);
+  });
+  document.getElementById('sim-out').innerHTML =
+    `Ion dương (cation, đỏ) chạy về <b>catot (–)</b> và bị <b>khử</b> (nhận e); ion âm (anion, xanh) chạy về <b>anot (+)</b> và bị <b>oxi hóa</b> (nhường e). Dòng điện càng lớn ⇒ ion di chuyển càng nhanh.`;
+  App.state.simRAF = requestAnimationFrame(simElectroLoop);
+}
+
+/* 🔗 Phản ứng trùng hợp polymer */
+function simPolymer() {
+  simStage(simSlider('poly-n', 'Số mắt xích n', 1, 12, 4, 1, '', 'simPolymerUpdate'));
+  simPolymerUpdate();
+}
+function simPolymerUpdate() {
+  const n = numv('poly-n'); setv('poly-n', n);
+  const ctx = simCtx();
+  const y = 105, w = 18, gap = 8, totalW = n * (w + gap) - gap, x0 = Math.max(8, (320 - totalW) / 2);
+  for (let i = 0; i < n; i++) {
+    const x = x0 + i * (w + gap);
+    if (i > 0) { ctx.strokeStyle = '#475569'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(x - gap, y); ctx.lineTo(x, y); ctx.stroke(); }
+    ctx.fillStyle = '#4f46e5'; ctx.fillRect(x, y - 13, w, 26);
+    ctx.strokeStyle = '#312e81'; ctx.lineWidth = 1; ctx.strokeRect(x, y - 13, w, 26);
+  }
+  document.getElementById('sim-out').innerHTML =
+    `Trùng hợp: <b>${n}</b> phân tử monome (vd CH₂=CH₂) liên kết với nhau tạo mạch polime (–CH₂–CH₂–)<sub>${n}</sub>. Hệ số polime hóa n = số mắt xích.`;
+}
+
+/* 🔋 Kim loại đẩy kim loại khỏi muối: Fe + CuSO₄ */
+function simMetalSalt() {
+  simStage(simSlider('ms-p', 'Mức độ phản ứng', 0, 100, 0, 1, '%', 'simMetalSaltUpdate'));
+  simMetalSaltUpdate();
+}
+function simMetalSaltUpdate() {
+  const p = numv('ms-p'); setv('ms-p', p); const f = p / 100;
+  const ctx = simCtx();
+  const r = Math.round(37 + (150 - 37) * f), g = Math.round(99 + (175 - 99) * f), b = Math.round(235 - (235 - 130) * f);
+  ctx.fillStyle = `rgb(${r},${g},${b})`; ctx.fillRect(60, 50, 200, 140);
+  ctx.strokeStyle = '#475569'; ctx.lineWidth = 2; ctx.strokeRect(60, 50, 200, 140);
+  ctx.fillStyle = '#9ca3af'; ctx.fillRect(150, 40, 20, 130);
+  const cu = Math.round(9 * f); ctx.fillStyle = '#ea580c';
+  if (cu > 0) { ctx.fillRect(150 - cu, 40, cu, 130); ctx.fillRect(170, 40, cu, 130); }
+  document.getElementById('sim-out').innerHTML =
+    `Fe + CuSO₄ → FeSO₄ + Cu. Nhúng thanh sắt vào dung dịch CuSO₄ (xanh lam): đồng (Cu, màu cam) bám lên thanh sắt, dung dịch nhạt màu dần do tạo FeSO₄. Mức phản ứng: <b>${p}%</b>.`;
 }
 
 /* ============================================================

@@ -1275,6 +1275,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-este', title: 'Ester: khái niệm, danh pháp, tính chất', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('molecule')">Xem mô hình phân tử ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> <em>Ester</em> là sản phẩm thay nhóm $-OH$ trong nhóm $-COOH$ của acid carboxylic bằng nhóm $-OR'$. Ester no, đơn chức, mạch hở có công thức $C_nH_{2n}O_2\\ (n\\ge2)$.</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1297,6 +1298,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-lipid', title: 'Lipid – Chất béo', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('reaction')">Mô phỏng phản ứng (xà phòng hóa) ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> <em>Chất béo</em> là trieste của glycerol với các acid béo (triglyceride).</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1322,6 +1324,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-glucose', title: 'Carbohydrate & Glucose', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('molecule')">Xem mô hình phân tử ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> <em>Carbohydrate</em> (gluxit) là hợp chất hữu cơ tạp chức, công thức chung $C_n(H_2O)_m$. Phân loại: monosaccharide (glucose, fructose), disaccharide (saccharose), polysaccharide (tinh bột, cellulose).</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1349,6 +1352,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-amine', title: 'Amine', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('molecule')">Xem phân tử NH₃ ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> <em>Amine</em> sinh ra khi thay một hay nhiều nguyên tử H trong $NH_3$ bằng gốc hydrocarbon. Bậc của amine = số gốc gắn trực tiếp vào N (bậc 1, 2, 3).</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1371,6 +1375,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-aminoacid', title: 'Amino acid & Protein', level: 'NANG_CAO',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('molecule')">Xem mô hình phân tử ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> <em>Amino acid</em> là hợp chất tạp chức, phân tử chứa đồng thời nhóm amino $-NH_2$ và nhóm carboxyl $-COOH$. Đơn giản nhất: glycine $H_2N{-}CH_2{-}COOH$.</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1396,6 +1401,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-polymer', title: 'Polymer: trùng hợp & trùng ngưng', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('polymer')">Mô phỏng trùng hợp ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> <em>Polymer</em> là hợp chất có phân tử khối rất lớn, do nhiều đơn vị nhỏ (<em>mắt xích</em>, từ <em>monomer</em>) lặp lại liên kết với nhau.</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1421,6 +1427,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-kimloai', title: 'Tính chất & dãy điện hóa kim loại', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('metalsalt')">Fe + CuSO₄ ▸</button> <button class="lesson-sim-btn" onclick="launchSim('electro')">Điện phân ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> Kim loại có tính chất hóa học đặc trưng là <em>tính khử</em>: nguyên tử kim loại nhường electron $M \\to M^{n+}+ne$.</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1448,6 +1455,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-hsg-ester', title: 'Ester – Lipid: bài toán thủy phân & xà phòng hóa', level: 'CHUYEN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('reaction')">Mô phỏng phản ứng ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Thủy phân ester trong môi trường kiềm (xà phòng hóa):</strong> $RCOOR' + NaOH \\to RCOONa + R'OH$ (tỉ lệ 1 : 1 với ester đơn chức).</li>
@@ -1481,6 +1489,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-hsg-kimloai', title: 'Đại cương kim loại: dãy điện hóa, phản ứng & điện phân', level: 'CHUYEN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('electro')">Điện phân ▸</button> <button class="lesson-sim-btn" onclick="launchSim('metalsalt')">Fe + CuSO₄ ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Kim loại + acid</strong> (HCl, $H_2SO_4$ loãng): chỉ kim loại đứng trước H phản ứng, giải phóng $H_2$. VD $Fe+2HCl\\to FeCl_2+H_2$.</li>
@@ -1513,6 +1522,7 @@ const CURRICULUM = {
             {
               id: 'l-hoa-hsg-nito-polymer', title: 'Hợp chất chứa nitơ & Polymer: đếm – biện luận', level: 'CHUYEN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('polymer')">Mô phỏng trùng hợp ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Amino acid</strong> có cả nhóm $-NH_2$ (base) và $-COOH$ (acid) ⇒ tính lưỡng tính, tác dụng được với cả acid và base.</li>
