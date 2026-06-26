@@ -394,6 +394,11 @@ table.data th { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; 
 .lesson-sim-btn { padding: 8px 14px; border: none; border-radius: 8px; background: var(--accent); color: #fff;
   font-size: 0.88rem; font-weight: 600; cursor: pointer; min-height: 40px; }
 .lesson-sim-btn:hover { filter: brightness(1.08); }
+.exam-timer { position: sticky; top: 6px; z-index: 5; text-align: center; font-weight: 700; font-size: 1.05rem;
+  padding: 9px 12px; margin-bottom: 12px; border-radius: 10px; background: var(--accent-soft); color: var(--accent);
+  border: 1px solid var(--accent); }
+.exam-timer.warn { background: #fffbeb; color: var(--warning); border-color: var(--warning); }
+.exam-timer.danger { background: #fef2f2; color: var(--danger); border-color: var(--danger); }
 
 /* ---------- Profile ---------- */
 .profile-big-avatar {

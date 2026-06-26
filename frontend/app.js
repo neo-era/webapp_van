@@ -1219,6 +1219,7 @@ function renderMarkdown(md, el) {
 async function renderLearn() {
   const v = App.state.learn || (App.state.learn = { view: 'subjects' });
   const el = $('#screen-learn');
+  if (v.view !== 'examTake') clearExamTimer();
 
   if (v.view === 'subjects') {
     const g = (App.state.user && App.state.user.grade) || 12;
@@ -1274,15 +1275,20 @@ async function renderLearn() {
 
   if (v.view === 'exams') {
     const exams = Exams.list(v.subjectCode);
+    const wrongN = getWrong().length;
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
-        <h2>Bài kiểm tra</h2><p>Chọn đề để làm</p></div>
+        <h2>Bài kiểm tra</h2><p>Chọn đề để làm · bấm vào đề để bắt đầu (có tính giờ)</p></div>
+      <button class="btn btn-ghost btn-block" style="margin-bottom:10px" onclick="learnOpenWrong()">📕 Sổ tay câu sai${wrongN ? ' (' + wrongN + ')' : ''}</button>
       ${exams.length
-        ? exams.map((e) => `
+        ? exams.map((e) => {
+          const bs = bestScore(e.examId);
+          return `
           <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnStartExam('${e.examId}','${e.title.replace(/'/g, '')}')">
             <strong>${e.title}</strong>
-            <div class="task-meta"><span class="muted">${e.questions.length} câu${e.durationMin ? ' · ' + e.durationMin + ' phút' : ''}</span></div>
-          </div>`).join('')
+            <div class="task-meta"><span class="muted">${e.questions.length} câu${e.durationMin ? ' · ' + e.durationMin + ' phút' : ''}</span>${bs != null ? ` <span class="pill pill-ok">Điểm cao nhất: ${bs}</span>` : ''}</div>
+          </div>`;
+        }).join('')
         : `<div class="empty">Chưa có đề kiểm tra nào</div>`}`;
     return;
   }
@@ -1294,6 +1300,7 @@ async function renderLearn() {
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('exams')">‹ Bài kiểm tra</p>
         <h2>${v.examTitle}</h2></div>
+      ${exam.durationMin ? '<div id="exam-timer" class="exam-timer"></div>' : ''}
       <div id="exam-body">` +
       exam.questions.map((q, i) => `
         <div class="card" style="margin-bottom:12px">
@@ -1303,6 +1310,24 @@ async function renderLearn() {
       `<button class="btn btn-primary btn-block" style="margin-top:8px" onclick="learnSubmitExam()">Nộp bài</button></div>`;
     $$('#exam-body .q-stem').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     $$('#exam-body .opt-label').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
+    startExamTimer(exam.durationMin);
+    return;
+  }
+
+  if (v.view === 'wrong') {
+    const list = getWrong();
+    el.innerHTML = `<div class="page-head">
+        <p class="link" onclick="learnBack('exams')">‹ Bài kiểm tra</p>
+        <h2>📕 Sổ tay câu sai</h2><p>Ôn lại tất cả câu đã làm sai (mọi môn)</p></div>
+      ${list.length ? `<button class="btn btn-ghost btn-sm" style="margin-bottom:10px" onclick="clearAllWrong()">🗑 Xóa hết</button>` : ''}
+      ${list.length ? list.map((w, i) => `
+        <div class="card" style="margin-bottom:10px;border-left:4px solid var(--danger)">
+          <div data-md class="q-stem">${i + 1}. ${w.stem}</div>
+          <div style="margin-top:6px">${(w.options || []).map((o, idx) => `<div class="opt-label" data-md style="padding:3px 0;${idx === w.answer ? 'color:var(--success);font-weight:600' : ''}">${idx === w.answer ? '✓ ' : ''}${o}</div>`).join('')}</div>
+          ${w.explanation ? `<div class="muted" data-md style="margin-top:6px;font-size:0.88rem">💡 ${w.explanation}</div>` : ''}
+          <button class="icon-btn" style="margin-top:6px" onclick="removeWrong(${i})" title="Đã thuộc, xóa">✓ Đã thuộc</button>
+        </div>`).join('') : `<div class="empty">Chưa có câu sai nào được lưu 🎉</div>`}`;
+    $$('#screen-learn [data-md]').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     return;
   }
 
@@ -1313,6 +1338,7 @@ async function renderLearn() {
         <h2>Kết quả: ${v.examTitle}</h2></div>
       <div class="countdown section-block"><div class="days">${r.score10}</div>
         <div class="label">điểm · đúng ${r.correct}/${r.gradable} câu</div></div>
+      ${r.savedWrong ? `<button class="btn btn-ghost btn-block" style="margin-bottom:10px" onclick="learnOpenWrong()">📕 Đã lưu ${r.savedWrong} câu sai vào Sổ tay — ôn ngay ▸</button>` : ''}
       ${r.results.map((it, i) => `
         <div class="card" style="margin-bottom:10px;border-left:4px solid ${it.correct === true ? 'var(--success)' : (it.correct === false ? 'var(--danger)' : 'var(--warning)')}">
           <div data-md class="q-stem">${i + 1}. ${it.stem}</div>
@@ -1493,6 +1519,10 @@ function learnStartExam(examId, title) {
   Object.assign(App.state.learn, { view: 'examTake', examId: examId, examTitle: title });
   renderLearn();
 }
+function learnOpenWrong() {
+  App.state.learn.view = 'wrong';
+  renderLearn();
+}
 function renderQuestionInput(q, i) {
   const name = 'q-' + q.questionId;
   if (q.type === 'TRUEFALSE') {
@@ -1540,6 +1570,13 @@ function learnSubmitExam() {
   });
   const score10 = gradable ? Math.round((correct / gradable) * 100) / 10 : 0;
   v.result = { score10: score10, correct: correct, gradable: gradable, total: v.exam.questions.length, results: results };
+  clearExamTimer();
+  const wrongItems = v.exam.questions
+    .filter((q) => (q.options) && String(answers[q.questionId]) !== String(q.answer))
+    .map((q) => ({ stem: q.stem, options: q.options, answer: q.answer, explanation: q.explanation, subject: v.subjectCode || '', examTitle: v.examTitle || '' }));
+  if (wrongItems.length) addWrong(wrongItems);
+  v.result.savedWrong = wrongItems.length;
+  saveAttempt({ examId: v.examId, title: v.examTitle || '', subject: v.subjectCode || '', score10: score10, correct: correct, gradable: gradable, total: v.exam.questions.length, date: new Date().toISOString() });
   v.view = 'examResult';
   renderLearn();
   showToast('Đã nộp bài · ' + score10 + ' điểm', 'success');
@@ -1561,6 +1598,57 @@ function learnToggleLearned() {
   setLearned(id, !isDone);
   updateLearnBtn(!isDone);
   showToast(!isDone ? 'Đã đánh dấu học xong' : 'Đã bỏ đánh dấu', 'success');
+}
+
+/* ===== Đồng hồ làm bài thi ===== */
+function clearExamTimer() {
+  if (App.state.examTimer) { clearInterval(App.state.examTimer); App.state.examTimer = null; }
+}
+function startExamTimer(min) {
+  clearExamTimer();
+  if (!min) return;
+  App.state.examEndsAt = Date.now() + min * 60000;
+  const tick = () => {
+    const el = document.getElementById('exam-timer');
+    if (!el) { clearExamTimer(); return; }
+    let s = Math.round((App.state.examEndsAt - Date.now()) / 1000);
+    if (s <= 0) {
+      el.textContent = '⏰ Hết giờ — đang nộp bài…'; el.className = 'exam-timer danger';
+      clearExamTimer(); learnSubmitExam(); return;
+    }
+    const m = Math.floor(s / 60), ss = String(s % 60).padStart(2, '0');
+    el.textContent = '⏱ ' + m + ':' + ss + ' còn lại';
+    el.className = 'exam-timer' + (s <= 60 ? ' warn' : '');
+  };
+  tick();
+  App.state.examTimer = setInterval(tick, 1000);
+}
+
+/* ===== Lịch sử làm bài & Sổ tay câu sai (localStorage) ===== */
+function getAttempts() { try { return JSON.parse(localStorage.getItem('thpt_attempts') || '[]'); } catch (e) { return []; } }
+function saveAttempt(a) {
+  const arr = getAttempts(); arr.push(a);
+  if (arr.length > 300) arr.splice(0, arr.length - 300);
+  try { localStorage.setItem('thpt_attempts', JSON.stringify(arr)); } catch (e) {}
+}
+function bestScore(examId) {
+  const s = getAttempts().filter((a) => a.examId === examId).map((a) => a.score10);
+  return s.length ? Math.max.apply(null, s) : null;
+}
+function getWrong() { try { return JSON.parse(localStorage.getItem('thpt_wrong') || '[]'); } catch (e) { return []; } }
+function saveWrongList(arr) { try { localStorage.setItem('thpt_wrong', JSON.stringify(arr.slice(-500))); } catch (e) {} }
+function addWrong(items) {
+  const cur = getWrong(), seen = new Set(cur.map((w) => w.stem));
+  items.forEach((it) => { if (!seen.has(it.stem)) { cur.push(it); seen.add(it.stem); } });
+  saveWrongList(cur);
+}
+function removeWrong(idx) {
+  const arr = getWrong(); arr.splice(idx, 1); saveWrongList(arr);
+  App.state.learn.view = 'wrong'; renderLearn();
+}
+function clearAllWrong() {
+  if (!confirm('Xóa toàn bộ câu sai đã lưu?')) return;
+  saveWrongList([]); App.state.learn.view = 'wrong'; renderLearn();
 }
 
 /* ============================================================
