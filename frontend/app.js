@@ -1279,7 +1279,10 @@ async function renderLearn() {
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
         <h2>Bài kiểm tra</h2><p>Chọn đề để làm · bấm vào đề để bắt đầu (có tính giờ)</p></div>
-      <button class="btn btn-ghost btn-block" style="margin-bottom:10px" onclick="learnOpenWrong()">📕 Sổ tay câu sai${wrongN ? ' (' + wrongN + ')' : ''}</button>
+      <div style="display:flex;gap:8px;margin-bottom:10px">
+        <button class="btn btn-primary" style="flex:1" onclick="learnQuickPractice()">⚡ Luyện nhanh 15 câu</button>
+        <button class="btn btn-ghost" style="flex:1" onclick="learnOpenWrong()">📕 Câu sai${wrongN ? ' (' + wrongN + ')' : ''}</button>
+      </div>
       ${exams.length
         ? exams.map((e) => {
           const bs = bestScore(e.examId);
@@ -1294,7 +1297,7 @@ async function renderLearn() {
   }
 
   if (v.view === 'examTake') {
-    const exam = Exams.get(v.examId);
+    const exam = v.customExam || Exams.get(v.examId);
     if (!exam) { el.innerHTML = `<div class="empty">Không tìm thấy đề</div>`; return; }
     v.exam = exam;
     el.innerHTML = `<div class="page-head">
@@ -1347,7 +1350,7 @@ async function renderLearn() {
           </div>
           ${it.explanation ? `<div class="muted" data-md style="margin-top:6px;font-size:0.88rem">💡 ${it.explanation}</div>` : ''}
         </div>`).join('')}
-      <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="learnStartExam('${v.examId}','${(v.examTitle || '').replace(/'/g, '')}')">Làm lại</button>`;
+      <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="${String(v.examId).indexOf('quick-') === 0 ? 'learnQuickPractice()' : `learnStartExam('${v.examId}','${(v.examTitle || '').replace(/'/g, '')}')`}">Làm lại</button>`;
     $$('#screen-learn [data-md]').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     return;
   }
@@ -1516,11 +1519,23 @@ function learnOpenExams() {
   renderLearn();
 }
 function learnStartExam(examId, title) {
-  Object.assign(App.state.learn, { view: 'examTake', examId: examId, examTitle: title });
+  Object.assign(App.state.learn, { view: 'examTake', examId: examId, examTitle: title, customExam: null });
   renderLearn();
 }
 function learnOpenWrong() {
   App.state.learn.view = 'wrong';
+  renderLearn();
+}
+function learnQuickPractice() {
+  const v = App.state.learn;
+  const all = [];
+  Exams.list(v.subjectCode).forEach((e) => (e.questions || []).forEach((q) => { if (q.options) all.push(q); }));
+  if (all.length < 5) { showToast('Môn này chưa đủ câu để luyện nhanh', 'error'); return; }
+  for (let i = all.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = all[i]; all[i] = all[j]; all[j] = t; }
+  const n = Math.min(15, all.length);
+  const picked = all.slice(0, n).map((q, i) => Object.assign({ questionId: 'quick-' + i, type: 'MCQ' }, q));
+  const exam = { examId: 'quick-' + v.subjectCode, title: '⚡ Luyện nhanh — ' + v.subjectName, durationMin: Math.max(10, Math.round(n * 1.2)), questions: picked };
+  Object.assign(v, { view: 'examTake', examId: exam.examId, examTitle: exam.title, customExam: exam });
   renderLearn();
 }
 function renderQuestionInput(q, i) {
