@@ -1356,8 +1356,14 @@ const CURRICULUM = {
                   <p><strong>Giải:</strong> $51^2 = (50+1)^2 = 50^2 + 2\\cdot50\\cdot1 + 1^2 = 2500 + 100 + 1 = 2601$.</p>
                   <p>Phân tích $x^2 - 9 = x^2 - 3^2 = (x-3)(x+3)$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Phân tích $x^3 - 8$ thành nhân tử.
-                  <details><summary>Đáp án</summary>$x^3 - 8 = x^3 - 2^3 = (x-2)(x^2 + 2x + 4)$.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Phân tích $x^3 - 8$ thành nhân tử.</p>
+                  <details><summary>Đáp án</summary><p>$x^3 - 2^3 = (x-2)(x^2 + 2x + 4)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tính nhanh $99^2$.</p>
+                  <details><summary>Đáp án</summary><p>$(100-1)^2 = 10000 - 200 + 1 = 9801$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Viết $4x^2 + 12x + 9$ dưới dạng bình phương của một tổng.</p>
+                  <details><summary>Đáp án</summary><p>$(2x+3)^2$.</p></details>
                 </div>
               `,
             },
@@ -1378,8 +1384,14 @@ const CURRICULUM = {
                   <p><strong>Giải:</strong> $2x = 6 \\Leftrightarrow x = 3$.</p>
                   <p>Giải $3(x-1) = 2x + 4$: $3x - 3 = 2x + 4 \\Leftrightarrow x = 7$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Giải $5x + 2 = 3x - 4$.
-                  <details><summary>Đáp án</summary>$2x = -6 \\Leftrightarrow x = -3$.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Giải $5x + 2 = 3x - 4$.</p>
+                  <details><summary>Đáp án</summary><p>$2x = -6 \\Leftrightarrow x = -3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Giải $4x - 3 = 2x + 7$.</p>
+                  <details><summary>Đáp án</summary><p>$2x = 10 \\Leftrightarrow x = 5$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Giải $2(x - 3) = x + 1$.</p>
+                  <details><summary>Đáp án</summary><p>$2x - 6 = x + 1 \\Leftrightarrow x = 7$.</p></details>
                 </div>
               `,
             },
@@ -1400,8 +1412,24 @@ const CURRICULUM = {
                   <p>Tam giác vuông có hai cạnh góc vuông $3$ và $4$. Cạnh huyền?</p>
                   <p><strong>Giải:</strong> $c = \\sqrt{3^2+4^2} = \\sqrt{25} = 5$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Cạnh huyền $13$, một cạnh góc vuông $5$. Cạnh còn lại?
-                  <details><summary>Đáp án</summary>$\\sqrt{13^2-5^2}=\\sqrt{144}=12$.</details>
+                <div class="vd">
+                  <div class="vd-title">📐 Hình minh họa — tam giác vuông 3–4–5</div>
+                  <svg class="graph" viewBox="0 0 200 150" width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="35,120 155,120 35,40" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+                    <rect x="35" y="108" width="12" height="12" fill="none" stroke="#4f46e5"/>
+                    <text x="86" y="137" fill="#475569">a = 4</text>
+                    <text x="8" y="86" fill="#475569">b = 3</text>
+                    <text x="98" y="74" fill="#dc2626">c = 5</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cạnh huyền $13$, một cạnh góc vuông $5$. Cạnh còn lại?</p>
+                  <details><summary>Đáp án</summary><p>$\\sqrt{13^2-5^2}=\\sqrt{144}=12$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hai cạnh góc vuông $6$ và $8$. Tính cạnh huyền.</p>
+                  <details><summary>Đáp án</summary><p>$\\sqrt{6^2+8^2}=\\sqrt{100}=10$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tam giác có ba cạnh $9, 12, 15$ có phải tam giác vuông không?</p>
+                  <details><summary>Đáp án</summary><p>$9^2+12^2=81+144=225=15^2$ ⇒ vuông (định lí Pythagore đảo).</p></details>
                 </div>
               `,
             },
@@ -1428,8 +1456,14 @@ const CURRICULUM = {
                   <p>$(x+2)(x-3) = x^2 - 3x + 2x - 6 = x^2 - x - 6$.</p>
                   <p>Chia: $(6x^3 - 9x^2) : (3x) = 2x^2 - 3x$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Rút gọn $(2x+1)(x-4)$.
-                  <details><summary>Đáp án</summary>$2x^2 - 8x + x - 4 = 2x^2 - 7x - 4$.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Rút gọn $(2x+1)(x-4)$.</p>
+                  <details><summary>Đáp án</summary><p>$2x^2 - 8x + x - 4 = 2x^2 - 7x - 4$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Nhân $3x^2(2x - 5)$.</p>
+                  <details><summary>Đáp án</summary><p>$6x^3 - 15x^2$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Chia $(8x^4 - 12x^2) : (4x^2)$.</p>
+                  <details><summary>Đáp án</summary><p>$2x^2 - 3$.</p></details>
                 </div>
               `,
             },
@@ -1450,8 +1484,14 @@ const CURRICULUM = {
                   <p>Nhóm: $x^2 + xy + 3x + 3y = x(x+y) + 3(x+y) = (x+y)(x+3)$.</p>
                   <p>Tách hạng tử: $x^2 + 5x + 6 = x^2 + 2x + 3x + 6 = (x+2)(x+3)$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Phân tích $x^2 - 5x + 6$.
-                  <details><summary>Đáp án</summary>$x^2 - 2x - 3x + 6 = (x-2)(x-3)$.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Phân tích $x^2 - 5x + 6$.</p>
+                  <details><summary>Đáp án</summary><p>$x^2 - 2x - 3x + 6 = (x-2)(x-3)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Phân tích $3x^2 - 6x$.</p>
+                  <details><summary>Đáp án</summary><p>$3x(x - 2)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Phân tích $x^2 - 7x + 10$.</p>
+                  <details><summary>Đáp án</summary><p>$(x-2)(x-5)$.</p></details>
                 </div>
               `,
             },
@@ -1477,8 +1517,14 @@ const CURRICULUM = {
                   <p>Rút gọn $\\dfrac{x^2-4}{x^2+4x+4}$ (ĐKXĐ $x\\ne-2$): $\\dfrac{(x-2)(x+2)}{(x+2)^2} = \\dfrac{x-2}{x+2}$.</p>
                   <p>Cộng: $\\dfrac{1}{x} + \\dfrac{1}{x+1} = \\dfrac{(x+1)+x}{x(x+1)} = \\dfrac{2x+1}{x(x+1)}$ (ĐKXĐ $x\\ne0, x\\ne-1$).</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Rút gọn $\\dfrac{3x+6}{x^2-4}$ và nêu ĐKXĐ.
-                  <details><summary>Đáp án</summary>ĐKXĐ $x\\ne\\pm2$. $\\dfrac{3(x+2)}{(x-2)(x+2)} = \\dfrac{3}{x-2}$.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Rút gọn $\\dfrac{3x+6}{x^2-4}$ và nêu ĐKXĐ.</p>
+                  <details><summary>Đáp án</summary><p>ĐKXĐ $x\\ne\\pm2$. $\\dfrac{3(x+2)}{(x-2)(x+2)} = \\dfrac{3}{x-2}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Rút gọn $\\dfrac{x^2-9}{x+3}$ (ĐKXĐ $x\\ne-3$).</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{(x-3)(x+3)}{x+3} = x-3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tính $\\dfrac{2}{x} + \\dfrac{3}{x}$.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{5}{x}$ (ĐKXĐ $x\\ne0$).</p></details>
                 </div>
               `,
             },
@@ -1502,8 +1548,28 @@ const CURRICULUM = {
                   <div class="vd-title">📝 Ví dụ giải mẫu</div>
                   <p>Hàm $y = 2x - 3$: hệ số góc $a=2>0$ ⇒ đồng biến; cắt $Oy$ tại $(0;-3)$, cắt $Ox$ tại $\\left(\\tfrac{3}{2};0\\right)$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Đường thẳng $y = -x + 5$ cắt trục tung tại điểm nào và đồng biến hay nghịch biến?
-                  <details><summary>Đáp án</summary>Cắt $Oy$ tại $(0;5)$; $a=-1<0$ ⇒ nghịch biến.</details>
+                <div class="vd">
+                  <div class="vd-title">📈 Đồ thị $y = 2x - 3$</div>
+                  <svg class="graph" viewBox="0 0 200 180" width="200" height="180" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="90" x2="190" y2="90" stroke="#94a3b8"/>
+                    <line x1="100" y1="15" x2="100" y2="170" stroke="#94a3b8"/>
+                    <polyline points="85,165 152,30" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <circle cx="100" cy="135" r="3" fill="#dc2626"/>
+                    <circle cx="122" cy="90" r="3" fill="#16a34a"/>
+                    <text x="104" y="148" fill="#dc2626">(0; -3)</text>
+                    <text x="118" y="84" fill="#16a34a">(1,5; 0)</text>
+                    <text x="180" y="86">x</text>
+                    <text x="104" y="22">y</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Đường thẳng $y = -x + 5$ cắt trục tung tại điểm nào và đồng biến hay nghịch biến?</p>
+                  <details><summary>Đáp án</summary><p>Cắt $Oy$ tại $(0;5)$; $a=-1<0$ ⇒ nghịch biến.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm giao điểm của $y = 2x - 3$ với trục hoành.</p>
+                  <details><summary>Đáp án</summary><p>Cho $y=0 \\Rightarrow 2x-3=0 \\Rightarrow x=\\dfrac{3}{2}$, điểm $\\left(\\dfrac{3}{2};0\\right)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Hai đường thẳng $y = 3x + 1$ và $y = 3x - 2$ có vị trí tương đối nào?</p>
+                  <details><summary>Đáp án</summary><p>Cùng $a=3$, khác $b$ ⇒ song song.</p></details>
                 </div>
               `,
             },
@@ -1529,8 +1595,14 @@ const CURRICULUM = {
                   <p>Hai số có tổng $30$, số lớn hơn số bé $6$ đơn vị. Tìm hai số.</p>
                   <p><strong>Giải:</strong> Gọi số bé là $x$ ⇒ số lớn $x+6$. Ta có $x + (x+6) = 30 \\Leftrightarrow 2x = 24 \\Leftrightarrow x = 12$. Vậy hai số là $12$ và $18$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Một ô tô đi $150$ km trong $t$ giờ với vận tốc $50$ km/h. Tìm $t$.
-                  <details><summary>Đáp án</summary>$50t = 150 \\Leftrightarrow t = 3$ giờ.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Một ô tô đi $150$ km trong $t$ giờ với vận tốc $50$ km/h. Tìm $t$.</p>
+                  <details><summary>Đáp án</summary><p>$50t = 150 \\Leftrightarrow t = 3$ giờ.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hai số có tổng $40$, số này gấp $3$ lần số kia. Tìm hai số.</p>
+                  <details><summary>Đáp án</summary><p>Gọi số bé $x$: $x + 3x = 40 \\Rightarrow x = 10$. Hai số là $10$ và $30$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Một hình chữ nhật có chiều dài hơn chiều rộng $4$ m, chu vi $28$ m. Tìm chiều rộng.</p>
+                  <details><summary>Đáp án</summary><p>Gọi chiều rộng $x$: $2(x + x+4) = 28 \\Rightarrow 2x+4 = 14 \\Rightarrow x = 5$ m.</p></details>
                 </div>
               `,
             },
@@ -1554,8 +1626,24 @@ const CURRICULUM = {
                   <p>Hình thang có hai đáy $6$ cm và $10$ cm, chiều cao $4$ cm. Diện tích?</p>
                   <p><strong>Giải:</strong> $S = \\dfrac{(6+10)\\cdot4}{2} = 32$ cm².</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Một tứ giác có ba góc $80^\\circ, 100^\\circ, 90^\\circ$. Góc thứ tư?
-                  <details><summary>Đáp án</summary>$360^\\circ - (80+100+90)^\\circ = 90^\\circ$.</details>
+                <div class="vd">
+                  <div class="vd-title">📐 Hình thang (đáy $a$, $b$; chiều cao $h$)</div>
+                  <svg class="graph" viewBox="0 0 200 130" width="200" height="130" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="55,30 150,30 180,110 20,110" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+                    <line x1="55" y1="30" x2="55" y2="110" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4 3"/>
+                    <text x="92" y="24" fill="#475569">a</text>
+                    <text x="96" y="125" fill="#475569">b</text>
+                    <text x="40" y="74" fill="#16a34a">h</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Một tứ giác có ba góc $80^\\circ, 100^\\circ, 90^\\circ$. Góc thứ tư?</p>
+                  <details><summary>Đáp án</summary><p>$360^\\circ - (80+100+90)^\\circ = 90^\\circ$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hình thang có hai đáy $5$ cm và $9$ cm, chiều cao $6$ cm. Diện tích?</p>
+                  <details><summary>Đáp án</summary><p>$S = \\dfrac{(5+9)\\cdot6}{2} = 42$ cm².</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Hình bình hành có cạnh đáy $8$ cm, chiều cao tương ứng $5$ cm. Diện tích?</p>
+                  <details><summary>Đáp án</summary><p>$S = a\\cdot h = 8\\cdot5 = 40$ cm².</p></details>
                 </div>
               `,
             },
@@ -1574,8 +1662,25 @@ const CURRICULUM = {
                   <p>Hình thoi có hai đường chéo $6$ cm và $8$ cm. Diện tích và độ dài cạnh?</p>
                   <p><strong>Giải:</strong> $S = \\dfrac{6\\cdot8}{2} = 24$ cm². Cạnh $= \\sqrt{3^2+4^2} = 5$ cm (nửa hai đường chéo là cạnh góc vuông).</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Hình vuông cạnh $5$ cm có diện tích bao nhiêu?
-                  <details><summary>Đáp án</summary>$S = 5^2 = 25$ cm².</details>
+                <div class="vd">
+                  <div class="vd-title">📐 Hình thoi & hai đường chéo vuông góc</div>
+                  <svg class="graph" viewBox="0 0 180 140" width="180" height="140" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="90,15 165,70 90,125 15,70" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+                    <line x1="90" y1="15" x2="90" y2="125" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3"/>
+                    <line x1="15" y1="70" x2="165" y2="70" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4 3"/>
+                    <rect x="90" y="58" width="12" height="12" fill="none" stroke="#475569"/>
+                    <text x="96" y="52" fill="#dc2626">d₁</text>
+                    <text x="130" y="64" fill="#16a34a">d₂</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Hình vuông cạnh $5$ cm có diện tích bao nhiêu?</p>
+                  <details><summary>Đáp án</summary><p>$S = 5^2 = 25$ cm².</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hình thoi có hai đường chéo $10$ cm và $12$ cm. Diện tích?</p>
+                  <details><summary>Đáp án</summary><p>$S = \\dfrac{10\\cdot12}{2} = 60$ cm².</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Hình chữ nhật có hai kích thước $4$ cm và $9$ cm. Diện tích và độ dài đường chéo?</p>
+                  <details><summary>Đáp án</summary><p>$S = 36$ cm²; đường chéo $= \\sqrt{4^2+9^2} = \\sqrt{97} \\approx 9{,}85$ cm.</p></details>
                 </div>
               `,
             },
@@ -1596,8 +1701,26 @@ const CURRICULUM = {
                   <p>Tam giác $ABC$ có $DE\\parallel BC$, $AD=3, DB=6, AE=4$. Tính $EC$.</p>
                   <p><strong>Giải:</strong> $\\dfrac{AD}{DB}=\\dfrac{AE}{EC} \\Rightarrow \\dfrac{3}{6}=\\dfrac{4}{EC} \\Rightarrow EC = 8$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> $DE\\parallel BC$, $AD=2, AB=6, DE=4$. Tính $BC$.
-                  <details><summary>Đáp án</summary>$\\dfrac{AD}{AB}=\\dfrac{DE}{BC} \\Rightarrow \\dfrac{2}{6}=\\dfrac{4}{BC} \\Rightarrow BC=12$.</details>
+                <div class="vd">
+                  <div class="vd-title">📐 Định lí Thalès — $DE \\parallel BC$</div>
+                  <svg class="graph" viewBox="0 0 200 150" width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="90,20 20,120 160,120" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+                    <line x1="62" y1="60" x2="118" y2="60" stroke="#dc2626" stroke-width="2"/>
+                    <text x="84" y="16" fill="#475569">A</text>
+                    <text x="8" y="125" fill="#475569">B</text>
+                    <text x="165" y="125" fill="#475569">C</text>
+                    <text x="48" y="58" fill="#dc2626">D</text>
+                    <text x="122" y="58" fill="#dc2626">E</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> $DE\\parallel BC$, $AD=2, AB=6, DE=4$. Tính $BC$.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{AD}{AB}=\\dfrac{DE}{BC} \\Rightarrow \\dfrac{2}{6}=\\dfrac{4}{BC} \\Rightarrow BC=12$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> $DE\\parallel BC$, $AD=4, DB=6, AE=6$. Tính $EC$.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{AD}{DB}=\\dfrac{AE}{EC} \\Rightarrow \\dfrac{4}{6}=\\dfrac{6}{EC} \\Rightarrow EC=9$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Đường trung bình của tam giác có cạnh đáy $14$ cm dài bao nhiêu?</p>
+                  <details><summary>Đáp án</summary><p>Bằng nửa cạnh đáy: $14:2 = 7$ cm.</p></details>
                 </div>
               `,
             },
@@ -1617,8 +1740,23 @@ const CURRICULUM = {
                   <p>Hai tam giác đồng dạng tỉ số $k=\\dfrac{1}{2}$, tam giác lớn có diện tích $40$ cm². Diện tích tam giác nhỏ?</p>
                   <p><strong>Giải:</strong> Tỉ số diện tích $k^2 = \\dfrac{1}{4} \\Rightarrow S = 40\\cdot\\dfrac{1}{4} = 10$ cm².</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Tam giác $ABC \\sim DEF$ tỉ số $3$, chu vi $DEF$ là $12$ cm. Chu vi $ABC$?
-                  <details><summary>Đáp án</summary>Chu vi tỉ lệ theo $k=3$: $12\\cdot3 = 36$ cm.</details>
+                <div class="vd">
+                  <div class="vd-title">📐 Hai tam giác đồng dạng (tỉ số $k$)</div>
+                  <svg class="graph" viewBox="0 0 240 130" width="240" height="130" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="20,110 80,110 30,45" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+                    <polygon points="120,110 230,110 138,25" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
+                    <text x="38" y="125" fill="#4f46e5">△ABC</text>
+                    <text x="158" y="125" fill="#f59e0b">△DEF</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tam giác $ABC \\sim DEF$ tỉ số $3$, chu vi $DEF$ là $12$ cm. Chu vi $ABC$?</p>
+                  <details><summary>Đáp án</summary><p>Chu vi tỉ lệ theo $k=3$: $12\\cdot3 = 36$ cm.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Hai tam giác đồng dạng tỉ số $k=2$. Tỉ số diện tích của chúng?</p>
+                  <details><summary>Đáp án</summary><p>$k^2 = 4$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> $ABC \\sim MNP$ với $AB=6, MN=9$. Nếu $BC=8$ thì $NP$ bằng bao nhiêu?</p>
+                  <details><summary>Đáp án</summary><p>Tỉ số $\\dfrac{AB}{MN}=\\dfrac{6}{9}=\\dfrac{2}{3}=\\dfrac{BC}{NP} \\Rightarrow NP = 8\\cdot\\dfrac{3}{2} = 12$.</p></details>
                 </div>
               `,
             },
@@ -1642,8 +1780,29 @@ const CURRICULUM = {
                   <p>Điểm kiểm tra: $6, 7, 8, 9, 10$. Số trung bình cộng?</p>
                   <p><strong>Giải:</strong> $\\bar{x} = \\dfrac{6+7+8+9+10}{5} = \\dfrac{40}{5} = 8$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Trong biểu đồ quạt, một loại chiếm $25\\%$. Góc ở tâm tương ứng?
-                  <details><summary>Đáp án</summary>$25\\% \\times 360^\\circ = 90^\\circ$.</details>
+                <div class="vd">
+                  <div class="vd-title">📊 Biểu đồ cột (số HS theo loại)</div>
+                  <svg class="graph" viewBox="0 0 200 130" width="200" height="130" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="25" y1="110" x2="190" y2="110" stroke="#94a3b8"/>
+                    <line x1="25" y1="15" x2="25" y2="110" stroke="#94a3b8"/>
+                    <rect x="40" y="70" width="22" height="40" fill="#4f46e5"/>
+                    <rect x="75" y="50" width="22" height="60" fill="#4f46e5"/>
+                    <rect x="110" y="35" width="22" height="75" fill="#4f46e5"/>
+                    <rect x="145" y="80" width="22" height="30" fill="#4f46e5"/>
+                    <text x="46" y="124">A</text>
+                    <text x="81" y="124">B</text>
+                    <text x="116" y="124">C</text>
+                    <text x="151" y="124">D</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Trong biểu đồ quạt, một loại chiếm $25\\%$. Góc ở tâm tương ứng?</p>
+                  <details><summary>Đáp án</summary><p>$25\\% \\times 360^\\circ = 90^\\circ$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Số cây trồng của 4 tổ: $5, 8, 7, 4$. Trung bình mỗi tổ?</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{5+8+7+4}{4} = \\dfrac{24}{4} = 6$ cây.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Một loại trong biểu đồ quạt ứng với góc $72^\\circ$. Loại đó chiếm bao nhiêu phần trăm?</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{72^\\circ}{360^\\circ}\\times100\\% = 20\\%$.</p></details>
                 </div>
               `,
             },
@@ -1661,8 +1820,14 @@ const CURRICULUM = {
                   <p>Tung một con xúc xắc cân đối. Xác suất xuất hiện mặt $6$ chấm?</p>
                   <p><strong>Giải:</strong> $P = \\dfrac{1}{6}$. Xác suất ra số chẵn $= \\dfrac{3}{6} = \\dfrac{1}{2}$.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Một hộp có $3$ bi đỏ và $2$ bi xanh. Lấy ngẫu nhiên $1$ bi. Xác suất lấy được bi đỏ?
-                  <details><summary>Đáp án</summary>$P = \\dfrac{3}{5}$.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Một hộp có $3$ bi đỏ và $2$ bi xanh. Lấy ngẫu nhiên $1$ bi. Xác suất lấy được bi đỏ?</p>
+                  <details><summary>Đáp án</summary><p>$P = \\dfrac{3}{5}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tung một đồng xu cân đối. Xác suất xuất hiện mặt ngửa?</p>
+                  <details><summary>Đáp án</summary><p>$P = \\dfrac{1}{2}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tung xúc xắc. Xác suất ra số lớn hơn $4$ (tức $5$ hoặc $6$)?</p>
+                  <details><summary>Đáp án</summary><p>$P = \\dfrac{2}{6} = \\dfrac{1}{3}$.</p></details>
                 </div>
               `,
             },
