@@ -24,6 +24,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-dondieu', title: 'Tính đơn điệu của hàm số', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <p>Cho hàm số $y=f(x)$ có đạo hàm trên khoảng $K$:</p>
                 <ul>
@@ -88,6 +89,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-cuctri', title: 'Cực trị của hàm số', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <p>$x_0$ là điểm cực trị nếu $f'(x)$ <strong>đổi dấu</strong> khi qua $x_0$:</p>
                 <ul>
@@ -146,6 +148,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-gtln-gtnn', title: 'GTLN – GTNN của hàm số', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <p>Tìm giá trị lớn nhất (GTLN) – nhỏ nhất (GTNN) của $f(x)$ trên đoạn $[a;b]$:</p>
                 <ol>
@@ -194,6 +197,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-tiemcan', title: 'Tiệm cận của đồ thị hàm số', level: 'NANG_CAO',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Tiệm cận ngang</strong> $y=y_0$ nếu $\\lim\\limits_{x\\to\\pm\\infty} f(x)=y_0$.</li>
@@ -249,6 +253,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-khaosat', title: 'Khảo sát và vẽ đồ thị hàm số', level: 'NANG_CAO',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi — Sơ đồ khảo sát</h2>
                 <ol>
                   <li>Tập xác định.</li>
@@ -584,6 +589,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-ungdung-tp', title: 'Ứng dụng tích phân (diện tích, thể tích)', level: 'NANG_CAO',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li>Diện tích hình phẳng giới hạn bởi $y=f(x)$, trục $Ox$, $x=a$, $x=b$: $S=\\displaystyle\\int_a^b |f(x)|\\,dx$.</li>
@@ -836,6 +842,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-hsg-thamso', title: 'Hàm số chứa tham số: cực trị, tương giao, GTLN–GTNN', level: 'CHUYEN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị (có tham số a) ▸</button></div>
                 <h2>Cốt lõi — kĩ thuật thi</h2>
                 <ul>
                   <li><strong>Điều kiện có cực trị:</strong> hàm bậc ba $y=ax^3+bx^2+cx+d$ có 2 cực trị $\\Leftrightarrow y'=0$ có hai nghiệm phân biệt $\\Leftrightarrow \\Delta_{y'}>0$.</li>
@@ -871,6 +878,7 @@ const CURRICULUM = {
             {
               id: 'l-toan-hsg-tichphan', title: 'Nguyên hàm – Tích phân nâng cao & ứng dụng', level: 'CHUYEN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Đổi biến số</strong> và <strong>tích phân từng phần:</strong> $\\displaystyle\\int u\\,dv = uv - \\int v\\,du$.</li>
@@ -1031,6 +1039,7 @@ const CURRICULUM = {
             {
               id: 'l-ly-dinhluatkhi', title: 'Các định luật chất khí & phương trình trạng thái', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('boyle')">Định luật Boyle (nén khí) ▸</button></div>
                 <div class="luuy"><strong>Khái niệm:</strong> <em>Khí lí tưởng</em> là khí mà các phân tử được coi là chất điểm, chỉ tương tác khi va chạm. Nhiệt độ phải tính theo thang Kelvin: $T(K)=t(°C)+273$.</div>
                 <h2>Cốt lõi</h2>
                 <ul>
@@ -1159,6 +1168,7 @@ const CURRICULUM = {
             {
               id: 'l-ly-hsg-nhiet', title: 'Nhiệt động lực học & khí lí tưởng nâng cao', level: 'CHUYEN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('boyle')">Định luật Boyle (nén khí) ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Phương trình trạng thái khí lí tưởng:</strong> $\\dfrac{pV}{T}=\\text{const}$ (hay $pV=nRT$).</li>
@@ -1847,6 +1857,7 @@ const CURRICULUM = {
             {
               id: 'l-toan8-pythagore', title: 'Định lí Pythagore', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('geo')">Hình học động (tam giác) ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <p>Trong tam giác vuông, bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông:</p>
                 <p style="text-align:center">$a^2 + b^2 = c^2$ &nbsp; (với $c$ là cạnh huyền).</p>
@@ -1980,6 +1991,7 @@ const CURRICULUM = {
             {
               id: 'l-toan8-hamso', title: 'Hàm số bậc nhất $y = ax + b$ và đồ thị', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <p>Hàm số bậc nhất có dạng $y = ax + b$ với $a \\ne 0$.</p>
                 <ul>
@@ -2136,6 +2148,7 @@ const CURRICULUM = {
             {
               id: 'l-toan8-thales', title: 'Định lí Thalès trong tam giác', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('geo')">Hình học động (tam giác) ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <p><strong>Định lí Thalès:</strong> nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ.</p>
                 <p style="text-align:center">Tam giác $ABC$, $DE \\parallel BC$ ($D\\in AB, E\\in AC$): $\\dfrac{AD}{AB} = \\dfrac{AE}{AC} = \\dfrac{DE}{BC}$.</p>
@@ -2171,6 +2184,7 @@ const CURRICULUM = {
             {
               id: 'l-toan8-dongdang', title: 'Hai tam giác đồng dạng', level: 'NANG_CAO',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('geo')">Hình học động (tam giác) ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <p>Hai tam giác đồng dạng khi các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ. Ba trường hợp đồng dạng:</p>
                 <ul>
@@ -2425,6 +2439,7 @@ const CURRICULUM = {
             {
               id: 'l-toan8-hsg-hinhhoc', title: 'Hình học nâng cao: phân giác, Ceva – Menelaus', level: 'CHUYEN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('geo')">Hình học động (tam giác) ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Tính chất đường phân giác:</strong> phân giác trong góc $A$ của $\\triangle ABC$ cắt $BC$ tại $D$ thì $\\dfrac{BD}{DC}=\\dfrac{AB}{AC}$.</li>
@@ -2526,6 +2541,7 @@ const CURRICULUM = {
             {
               id: 'l-khtn8-apsuat', title: 'Áp suất – Khối lượng riêng – Lực đẩy Archimedes', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('arch')">Lực đẩy Archimedes (nổi/chìm) ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li>Khối lượng riêng: $D = \\dfrac{m}{V}$ (kg/m³).</li>
@@ -2658,6 +2674,7 @@ const CURRICULUM = {
             {
               id: 'l-khtn8-moment', title: 'Moment lực & đòn bẩy', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('lever')">Đòn bẩy cân bằng ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li>Lực tác dụng lên vật có trục quay làm vật <strong>quay</strong>. Tác dụng làm quay phụ thuộc độ lớn lực và khoảng cách từ trục quay đến giá của lực (cánh tay đòn).</li>
@@ -2704,6 +2721,7 @@ const CURRICULUM = {
             {
               id: 'l-khtn8-dien', title: 'Dòng điện, cường độ dòng điện, hiệu điện thế', level: 'CO_BAN',
               html: `
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('ohm')">Định luật Ohm (mạch điện) ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Dòng điện</strong> là dòng các hạt mang điện chuyển động có hướng. Nguồn điện (pin, ắc quy) duy trì dòng điện trong mạch kín.</li>
