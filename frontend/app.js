@@ -527,8 +527,11 @@ const SIM_LIST = [
   { key: 'metalsalt', label: '🔋 Kim loại + muối', tag: 'Hóa 12' },
   { key: 'heart', label: '❤️ Hệ tuần hoàn', tag: 'Sinh 8' },
   { key: 'digest', label: '🍽️ Hệ tiêu hóa', tag: 'Sinh 8' },
+  { key: 'lungs', label: '🫁 Hệ hô hấp', tag: 'Sinh 8' },
   { key: 'pendulum', label: '🕰️ Con lắc đơn', tag: 'Lý' },
   { key: 'wave', label: '〰️ Sóng ngang', tag: 'Lý' },
+  { key: 'standing', label: '🌊 Sóng dừng (phản xạ)', tag: 'Lý' },
+  { key: 'spring', label: '🪀 Con lắc lò xo', tag: 'Lý' },
 ];
 function launchSim(key) { App.state.sim = key; switchTab('sim'); }
 
@@ -553,7 +556,8 @@ function openSim(key) {
   ({ graph: simGraph, geo: simGeo, lever: simLever, arch: simArch, ohm: simOhm, boyle: simBoyle,
     conc: simConc, ph: simPH, reaction: simReaction, molecule: simMolecule,
     electro: simElectro, polymer: simPolymer, metalsalt: simMetalSalt,
-    heart: simHeart, digest: simDigest, pendulum: simPendulum, wave: simWave }[key])();
+    heart: simHeart, digest: simDigest, lungs: simLungs, pendulum: simPendulum, wave: simWave,
+    standing: simStanding, spring: simSpring }[key])();
 }
 
 function simSlider(id, label, min, max, val, step, unit, fn) {
@@ -1100,6 +1104,97 @@ function simWaveLoop() {
   document.getElementById('sim-out').innerHTML =
     `Sóng ngang: biên độ A = <b>${A}</b> px, bước sóng λ = <b>${lam}</b> px. Tốc độ truyền sóng v = λ·f (f là tần số). Tăng λ ⇒ bước sóng dài hơn; tăng A ⇒ sóng cao hơn.`;
   App.state.simRAF = requestAnimationFrame(simWaveLoop);
+}
+
+/* 🫁 Hệ hô hấp — phổi phồng/xẹp khi thở */
+function simLungs() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('lg-rate', 'Nhịp thở', 8, 30, 16, 1, 'lần/phút', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="235" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  App.state.lung = { ph: 0 };
+  simLungsLoop();
+}
+function simLungsLoop() {
+  const rate = numv('lg-rate'); setv('lg-rate', rate);
+  const st = App.state.lung; st.ph += rate / 60 * 0.105;
+  const breath = 0.5 + 0.5 * Math.sin(st.ph), inhaling = Math.cos(st.ph) > 0;
+  const sf = 0.78 + 0.22 * breath;
+  const ctx = simCtx();
+  ctx.fillStyle = '#94a3b8'; ctx.fillRect(155, 18, 10, 40);
+  ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 4;
+  ctx.beginPath(); ctx.moveTo(160, 56); ctx.lineTo(120, 78); ctx.moveTo(160, 56); ctx.lineTo(200, 78); ctx.stroke();
+  ctx.fillStyle = inhaling ? '#fca5a5' : '#fecdd3';
+  ctx.beginPath(); ctx.ellipse(118, 120, 30 * sf, 50 * sf, 0, 0, 6.3); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(202, 120, 30 * sf, 50 * sf, 0, 0, 6.3); ctx.fill();
+  const dia = 178 + 14 * breath;
+  ctx.strokeStyle = '#7c3aed'; ctx.lineWidth = 4; ctx.beginPath();
+  ctx.moveTo(70, dia); ctx.quadraticCurveTo(160, dia + (inhaling ? 18 : -2), 250, dia); ctx.stroke();
+  ctx.fillStyle = '#7c3aed'; ctx.font = '11px sans-serif'; ctx.fillText('Cơ hoành', 135, 222);
+  ctx.fillStyle = inhaling ? '#16a34a' : '#dc2626'; ctx.font = 'bold 12px sans-serif';
+  ctx.fillText(inhaling ? '↓ O₂ vào' : '↑ CO₂ ra', 132, 14);
+  document.getElementById('sim-out').innerHTML = inhaling
+    ? `<b style="color:#16a34a">HÍT VÀO:</b> cơ hoành hạ xuống, lồng ngực mở rộng, phổi nở ra để lấy khí O₂. Nhịp thở ${rate} lần/phút.`
+    : `<b style="color:#dc2626">THỞ RA:</b> cơ hoành nâng lên, lồng ngực thu nhỏ, phổi xẹp lại để đẩy khí CO₂ ra ngoài. Nhịp thở ${rate} lần/phút.`;
+  App.state.simRAF = requestAnimationFrame(simLungsLoop);
+}
+
+/* 🌊 Sóng dừng — giao thoa sóng tới & sóng phản xạ */
+function simStanding() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('st-n', 'Số bụng sóng', 1, 5, 3, 1, '', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="190" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  App.state.stand = { ph: 0 };
+  simStandingLoop();
+}
+function simStandingLoop() {
+  const n = numv('st-n'); setv('st-n', n);
+  const st = App.state.stand; st.ph += 0.11;
+  const ctx = simCtx(), x0 = 20, x1 = 300, L = x1 - x0, cy = 95, A = 50, env = Math.cos(st.ph);
+  ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0, cy); ctx.lineTo(x1, cy); ctx.stroke();
+  // bao hình hai biên (nét đứt)
+  ctx.strokeStyle = '#cbd5e1'; ctx.setLineDash([4, 3]);
+  for (const sgn of [1, -1]) { ctx.beginPath(); for (let x = x0; x <= x1; x++) { const y = cy - sgn * A * Math.sin(n * Math.PI * (x - x0) / L); x === x0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); } ctx.stroke(); }
+  ctx.setLineDash([]);
+  // dây tại thời điểm t
+  ctx.strokeStyle = '#4f46e5'; ctx.lineWidth = 2.5; ctx.beginPath();
+  for (let x = x0; x <= x1; x++) { const y = cy - A * Math.sin(n * Math.PI * (x - x0) / L) * env; x === x0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); }
+  ctx.stroke();
+  // nút (đứng yên)
+  ctx.fillStyle = '#dc2626';
+  for (let i = 0; i <= n; i++) { const x = x0 + i / n * L; ctx.beginPath(); ctx.arc(x, cy, 4, 0, 6.3); ctx.fill(); }
+  document.getElementById('sim-out').innerHTML =
+    `Sóng dừng hình thành do <b>sóng tới</b> và <b>sóng phản xạ</b> giao thoa. Có <b>${n}</b> bụng sóng (dao động cực đại) và <b>${n + 1}</b> nút (chấm đỏ — luôn đứng yên).`;
+  App.state.simRAF = requestAnimationFrame(simStandingLoop);
+}
+
+/* 🪀 Con lắc lò xo */
+function simSpring() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('sp-m', 'Khối lượng m', 0.1, 2, 0.5, 0.1, 'kg', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="235" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  App.state.spr = { ph: 0 };
+  simSpringLoop();
+}
+function simSpringLoop() {
+  const m = numv('sp-m'); setv('sp-m', m.toFixed(1));
+  const k = 20, T = 2 * Math.PI * Math.sqrt(m / k), st = App.state.spr;
+  st.ph += 2 * Math.PI / (T * 60);
+  const ctx = simCtx(), px = 160, top = 24, yc = 130, A = 34, y = yc + A * Math.cos(st.ph);
+  ctx.fillStyle = '#475569'; ctx.fillRect(px - 40, top - 8, 80, 8);
+  // lò xo zigzag
+  ctx.strokeStyle = '#0891b2'; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(px, top);
+  const coils = 9, seg = (y - 14 - top) / coils;
+  for (let i = 0; i < coils; i++) { const yy = top + seg * (i + 0.5); ctx.lineTo(px + (i % 2 ? 13 : -13), yy); }
+  ctx.lineTo(px, y - 14); ctx.stroke();
+  // vật nặng
+  ctx.fillStyle = '#4f46e5'; ctx.fillRect(px - 20, y - 14, 40, 30);
+  ctx.strokeStyle = '#312e81'; ctx.lineWidth = 1; ctx.strokeRect(px - 20, y - 14, 40, 30);
+  document.getElementById('sim-out').innerHTML =
+    `Con lắc lò xo (độ cứng k = 20 N/m, khối lượng m = ${m.toFixed(1)} kg). Chu kì T = 2π·√(m/k) = <b>${T.toFixed(2)} s</b>. T tăng khi m tăng hoặc k giảm; không phụ thuộc biên độ.`;
+  App.state.simRAF = requestAnimationFrame(simSpringLoop);
 }
 
 /* ============================================================

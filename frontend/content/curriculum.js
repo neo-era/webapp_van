@@ -2587,7 +2587,7 @@ const CURRICULUM = {
             {
               id: 'l-khtn8-tieuhoa', title: 'Hệ tiêu hóa, tuần hoàn, hô hấp ở người', level: 'CO_BAN',
               html: `
-                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('heart')">Hệ tuần hoàn ▸</button> <button class="lesson-sim-btn" onclick="launchSim('digest')">Hệ tiêu hóa ▸</button></div>
+                <div class="lesson-sim-cta">🔬 <strong>Mô phỏng minh hoạ:</strong> <button class="lesson-sim-btn" onclick="launchSim('heart')">Hệ tuần hoàn ▸</button> <button class="lesson-sim-btn" onclick="launchSim('digest')">Hệ tiêu hóa ▸</button> <button class="lesson-sim-btn" onclick="launchSim('lungs')">Hệ hô hấp ▸</button></div>
                 <h2>Cốt lõi</h2>
                 <ul>
                   <li><strong>Tiêu hóa:</strong> biến đổi thức ăn thành chất dinh dưỡng cơ thể hấp thụ. Ruột non là nơi hấp thụ chính.</li>
