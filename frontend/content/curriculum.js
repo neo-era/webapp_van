@@ -2703,6 +2703,90 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-anh8-hsg', title: '🏆 Chuyên đề · Bồi dưỡng HSG Tiếng Anh 8',
+          lessons: [
+            {
+              id: 'l-anh8-hsg-grammar', title: 'Advanced grammar: conditionals, inversion, cleft', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Conditional type 2</strong> (giả định không có thật ở hiện tại): If + past simple, S + would/could + V. <em>If I were you, I would study harder.</em></li>
+                  <li><strong>Conditional type 3</strong> (giả định trái với quá khứ): If + past perfect, S + would have + V3. <em>If I had known, I would have helped you.</em></li>
+                  <li><strong>Mixed conditional:</strong> If + past perfect, S + would + V (kết quả ở hiện tại). <em>If I had studied medicine, I would be a doctor now.</em></li>
+                  <li><strong>Đảo ngữ câu điều kiện:</strong> <em>Were I you…</em> (= If I were you), <em>Had I known…</em> (= If I had known).</li>
+                  <li><strong>Cleft sentences</strong> (câu chẻ nhấn mạnh): <em>It was Lan that/who broke the vase.</em> / <em>What I need is a rest.</em></li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Đổi sang đảo ngữ: "If she had come earlier, she would have met him." → <strong>Had she come earlier</strong>, she would have met him.</p>
+                  <p>Nhấn mạnh chủ ngữ: "Minh won the prize." → <strong>It was Minh who won the prize.</strong></p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Chia đúng: "If I ____ (be) rich, I would travel the world."</p>
+                  <details><summary>Đáp án</summary><p>were (điều kiện loại 2).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Chia đúng: "If they had left earlier, they ____ (not miss) the train."</p>
+                  <details><summary>Đáp án</summary><p>wouldn't have missed (điều kiện loại 3).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Viết lại dùng đảo ngữ: "If I were the manager, I would change the plan."</p>
+                  <details><summary>Đáp án</summary><p>Were I the manager, I would change the plan.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-anh8-hsg-wordform', title: 'Word formation, collocations & phrasal verbs', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Hậu tố tạo từ loại:</strong> danh từ <em>-tion, -ment, -ness, -ity</em>; tính từ <em>-ful, -less, -ous, -al</em>; trạng từ <em>-ly</em>; động từ <em>-ize, -en</em>.</li>
+                  <li><strong>Tiền tố phủ định/đổi nghĩa:</strong> <em>un-, in-/im-/ir-, dis-, mis-, re-</em>. <em>care → careful → carefully → careless</em>.</li>
+                  <li><strong>Collocations</strong> (cụm từ đi với nhau): <em>make a decision, do homework, heavy rain, take part in</em>.</li>
+                  <li><strong>Phrasal verbs</strong> chủ đề lớp 8: <em>hang out, look after, give up, turn off, find out, set up</em>.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Điền dạng đúng: "Air ____ (pollute) is a serious problem." → <strong>pollution</strong> (danh từ).</p>
+                  <p>Collocation: "We must ____ a decision soon." → <strong>make</strong> a decision.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cho dạng đúng: "She solved the problem ____ (success)."</p>
+                  <details><summary>Đáp án</summary><p>successfully (trạng từ).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Điền phrasal verb: "Please ____ the lights before going out." (tắt)</p>
+                  <details><summary>Đáp án</summary><p>turn off.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Chọn collocation đúng: "do / make homework"?</p>
+                  <details><summary>Đáp án</summary><p>do homework.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-anh8-hsg-transform', title: 'Sentence transformation & error identification', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi — dạng bài thi HSG</h2>
+                <ul>
+                  <li><strong>too … to / enough:</strong> "too short to reach" = "not tall enough to reach".</li>
+                  <li><strong>since / for + present perfect:</strong> "started 2 hours ago" = "has + V3 … for 2 hours".</li>
+                  <li><strong>so / such … that:</strong> "so + adj/adv + that"; "such + (a/an) + adj + noun + that".</li>
+                  <li><strong>Error identification:</strong> thường lỗi về sự hòa hợp chủ ngữ – động từ, thì, giới từ, dạng từ.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Viết lại: "He is too young to drive." → He <strong>isn't old enough to drive.</strong></p>
+                  <p>Tìm lỗi: "She <u>have</u> lived here since 2019." → sửa <strong>have → has</strong>.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Viết lại với "for": "I started learning English 5 years ago."</p>
+                  <details><summary>Đáp án</summary><p>I have learned/learnt English for 5 years.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Viết lại với "such … that": "The film was so boring that we left."</p>
+                  <details><summary>Đáp án</summary><p>It was such a boring film that we left.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tìm và sửa lỗi: "Each of the students have a book."</p>
+                  <details><summary>Đáp án</summary><p>have → has ("Each of …" + động từ số ít).</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
   ],
