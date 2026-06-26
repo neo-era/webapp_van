@@ -149,7 +149,7 @@ const CURRICULUM = {
               `,
             },
             {
-              id: 'l-toan-cuctri', title: 'Cực trị của hàm số', level: 'CO_BAN',
+              id: 'l-toan-cuctri', title: 'Cực trị của hàm số', title_en: 'Extrema of functions', level: 'CO_BAN',
               html: `
                 <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi</h2>
@@ -204,6 +204,62 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$y'=4x^3+4x=4x(x^2+1)=0\\Leftrightarrow x=0$. Chỉ <strong>1 cực trị</strong> (cực tiểu tại $x=0$).</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm $m$ để $y=x^4-2mx^2+1$ có 3 điểm cực trị.</p>
                   <details><summary>Đáp án</summary><p>$y'=4x^3-4mx=4x(x^2-m)$. Có 3 cực trị $\\Leftrightarrow x^2=m$ có 2 nghiệm khác 0 $\\Leftrightarrow m>0$.</p></details>
+                </div>
+              `,
+              html_en: `
+                <div class="lesson-sim-cta">🔬 <strong>Tool:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Plot a function ▸</button></div>
+                <h2>Core idea</h2>
+                <p>$x_0$ is an extremum point if $f'(x)$ <strong>changes sign</strong> as it passes through $x_0$:</p>
+                <ul>
+                  <li>$f'$ changes from $+$ to $-$: $x_0$ is a <strong>local maximum</strong>.</li>
+                  <li>$f'$ changes from $-$ to $+$: $x_0$ is a <strong>local minimum</strong>.</li>
+                </ul>
+                <div class="luuy">
+                  <strong>Note (common trap):</strong> $f'(x_0)=0$ is <em>necessary</em> but <em>not sufficient</em>. You must check that $f'$ <strong>changes sign</strong> across $x_0$.
+                  <em>Counterexample:</em> $y=x^3$ has $y'(0)=0$ but $x=0$ is <strong>not</strong> an extremum (since $y'\\ge 0$ does not change sign).
+                </div>
+                <h2>Advanced</h2>
+                <p>Second-derivative test: if $f'(x_0)=0$ and $f''(x_0)<0$ then $x_0$ is a local maximum; if $f''(x_0)>0$ then a local minimum. (If $f''(x_0)=0$, study the sign of $f'$.)</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Find the extrema of $y=x^3-3x^2+2$.</p>
+                  <p><strong>Solution:</strong> $y'=3x^2-6x=3x(x-2)$; $y'=0 \\Leftrightarrow x=0$ or $x=2$.</p>
+                  <ul>
+                    <li>$x=0$: $y'$ changes $+ \\to -$ ⇒ <strong>local max</strong>, $y_{max}=2$.</li>
+                    <li>$x=2$: $y'$ changes $- \\to +$ ⇒ <strong>local min</strong>, $y_{min}=-2$.</li>
+                  </ul>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Find $m$ so that $y=x^3-3mx+1$ has two extrema.</p>
+                  <details><summary>Show answer</summary>
+                    <p>$y'=3x^2-3m$. Two extrema $\\Leftrightarrow y'=0$ has two distinct roots $\\Leftrightarrow m>0$.</p>
+                  </details>
+                </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (biquadratic)</div>
+                  <p>Find the extrema of $y=x^4-2x^2$.</p>
+                  <p><strong>Solution:</strong> $y'=4x^3-4x=4x(x-1)(x+1)$; $y'=0\\Leftrightarrow x=0,\\pm1$.</p>
+                  <ul>
+                    <li>$x=\\pm1$: local minima, $y_{min}=-1$.</li>
+                    <li>$x=0$: local maximum, $y_{max}=0$.</li>
+                  </ul>
+                  <p>The graph is W-shaped — it has <strong>3 extrema</strong>.</p>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 3 (second-derivative test)</div>
+                  <p>Consider $y=x^3-3x$: $y'=3x^2-3=0\\Leftrightarrow x=\\pm1$; $y''=6x$.</p>
+                  <p>$y''(-1)=-6<0$ ⇒ $x=-1$ local max; $y''(1)=6>0$ ⇒ $x=1$ local min.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> How many extrema does $y=x^4+2x^2$ have?</p>
+                  <details><summary>Answer</summary><p>$y'=4x^3+4x=4x(x^2+1)=0\\Leftrightarrow x=0$. Only <strong>1 extremum</strong> (a local minimum at $x=0$).</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> Find $m$ so that $y=x^4-2mx^2+1$ has 3 extrema.</p>
+                  <details><summary>Answer</summary><p>$y'=4x^3-4mx=4x(x^2-m)$. Three extrema $\\Leftrightarrow x^2=m$ has two nonzero roots $\\Leftrightarrow m>0$.</p></details>
                 </div>
               `,
             },
