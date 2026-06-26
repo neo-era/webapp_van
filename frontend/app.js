@@ -525,6 +525,10 @@ const SIM_LIST = [
   { key: 'electro', label: '🔌 Điện phân', tag: 'Hóa 12' },
   { key: 'polymer', label: '🔗 Trùng hợp polymer', tag: 'Hóa 12' },
   { key: 'metalsalt', label: '🔋 Kim loại + muối', tag: 'Hóa 12' },
+  { key: 'heart', label: '❤️ Hệ tuần hoàn', tag: 'Sinh 8' },
+  { key: 'digest', label: '🍽️ Hệ tiêu hóa', tag: 'Sinh 8' },
+  { key: 'pendulum', label: '🕰️ Con lắc đơn', tag: 'Lý' },
+  { key: 'wave', label: '〰️ Sóng ngang', tag: 'Lý' },
 ];
 function launchSim(key) { App.state.sim = key; switchTab('sim'); }
 
@@ -548,7 +552,8 @@ function openSim(key) {
   $$('.sim-tab').forEach((b) => b.classList.toggle('active', b.getAttribute('onclick').includes(`'${key}'`)));
   ({ graph: simGraph, geo: simGeo, lever: simLever, arch: simArch, ohm: simOhm, boyle: simBoyle,
     conc: simConc, ph: simPH, reaction: simReaction, molecule: simMolecule,
-    electro: simElectro, polymer: simPolymer, metalsalt: simMetalSalt }[key])();
+    electro: simElectro, polymer: simPolymer, metalsalt: simMetalSalt,
+    heart: simHeart, digest: simDigest, pendulum: simPendulum, wave: simWave }[key])();
 }
 
 function simSlider(id, label, min, max, val, step, unit, fn) {
@@ -972,6 +977,129 @@ function simMetalSaltUpdate() {
   if (cu > 0) { ctx.fillRect(150 - cu, 40, cu, 130); ctx.fillRect(170, 40, cu, 130); }
   document.getElementById('sim-out').innerHTML =
     `Fe + CuSO₄ → FeSO₄ + Cu. Nhúng thanh sắt vào dung dịch CuSO₄ (xanh lam): đồng (Cu, màu cam) bám lên thanh sắt, dung dịch nhạt màu dần do tạo FeSO₄. Mức phản ứng: <b>${p}%</b>.`;
+}
+
+/* ❤️ Hệ tuần hoàn — tim đập, máu lưu thông */
+function drawHeartShape(ctx, cx, cy, r) {
+  ctx.beginPath(); ctx.moveTo(cx, cy + r * 0.8);
+  ctx.bezierCurveTo(cx + r * 1.3, cy - r * 0.4, cx + r * 0.45, cy - r * 1.1, cx, cy - r * 0.3);
+  ctx.bezierCurveTo(cx - r * 0.45, cy - r * 1.1, cx - r * 1.3, cy - r * 0.4, cx, cy + r * 0.8);
+  ctx.closePath(); ctx.fill();
+}
+function simHeart() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('hr-bpm', 'Nhịp tim', 40, 160, 75, 1, 'lần/phút', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="235" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  const dots = [];
+  for (let i = 0; i < 16; i++) dots.push({ th: i / 16 * Math.PI * 2 });
+  App.state.heart = { dots, beat: 0 };
+  simHeartLoop();
+}
+function simHeartLoop() {
+  const bpm = numv('hr-bpm'); setv('hr-bpm', bpm);
+  const st = App.state.heart, sp = bpm / 60 * 0.045, cx = 160, cy = 120, rx = 105, ry = 78;
+  st.beat += bpm / 60 * 0.13;
+  const ctx = simCtx();
+  ctx.lineWidth = 9;
+  ctx.strokeStyle = '#fca5a5'; ctx.beginPath(); ctx.ellipse(cx, cy, rx, ry, 0, -Math.PI / 2, Math.PI / 2); ctx.stroke();
+  ctx.strokeStyle = '#93c5fd'; ctx.beginPath(); ctx.ellipse(cx, cy, rx, ry, 0, Math.PI / 2, Math.PI * 1.5); ctx.stroke();
+  ctx.font = '11px sans-serif'; ctx.fillStyle = '#475569';
+  ctx.fillText('Phổi', cx - 13, cy - ry - 6); ctx.fillText('Cơ thể', cx - 18, cy + ry + 18);
+  ctx.fillStyle = '#dc2626'; ctx.fillText('Động mạch', cx + 30, cy - 6);
+  ctx.fillStyle = '#2563eb'; ctx.fillText('Tĩnh mạch', cx - 96, cy - 6);
+  const s = 1 + 0.13 * Math.max(0, Math.sin(st.beat));
+  ctx.fillStyle = '#ef4444'; drawHeartShape(ctx, cx, cy, 17 * s);
+  st.dots.forEach((d) => {
+    d.th = (d.th + sp) % (Math.PI * 2);
+    const x = cx + rx * Math.cos(d.th), y = cy + ry * Math.sin(d.th);
+    ctx.fillStyle = Math.cos(d.th) > 0 ? '#dc2626' : '#2563eb';
+    ctx.beginPath(); ctx.arc(x, y, 4, 0, Math.PI * 2); ctx.fill();
+  });
+  document.getElementById('sim-out').innerHTML =
+    `Tim co bóp <b>${bpm} lần/phút</b> đẩy máu đi khắp cơ thể. Máu <b style="color:#dc2626">đỏ tươi giàu O₂</b> theo động mạch tới cơ quan; máu <b style="color:#2563eb">đỏ thẫm giàu CO₂</b> theo tĩnh mạch về tim rồi lên phổi nhận O₂.`;
+  App.state.simRAF = requestAnimationFrame(simHeartLoop);
+}
+
+/* 🍽️ Hệ tiêu hóa — thức ăn đi qua các cơ quan */
+const DIGEST_PATH = [
+  { x: 160, y: 28, name: 'Miệng', note: 'nhai nhỏ, trộn nước bọt (enzyme amylase phân giải tinh bột)' },
+  { x: 160, y: 70, name: 'Thực quản', note: 'co bóp nhu động đẩy thức ăn xuống dạ dày' },
+  { x: 115, y: 110, name: 'Dạ dày', note: 'acid HCl và enzyme pepsin tiêu hóa protein' },
+  { x: 205, y: 150, name: 'Ruột non', note: 'tiêu hóa hoàn toàn và HẤP THỤ chất dinh dưỡng (chủ yếu)' },
+  { x: 110, y: 195, name: 'Ruột già', note: 'hấp thụ nước, tạo và thải phân' },
+];
+function simDigest() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('dg-sp', 'Tốc độ', 1, 10, 4, 1, '', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="235" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  App.state.digest = { t: 0 };
+  simDigestLoop();
+}
+function simDigestLoop() {
+  const sp = numv('dg-sp'); setv('dg-sp', sp);
+  const st = App.state.digest; st.t = (st.t + sp * 0.004) % (DIGEST_PATH.length - 1);
+  const i = Math.floor(st.t), f = st.t - i, A = DIGEST_PATH[i], B = DIGEST_PATH[Math.min(i + 1, DIGEST_PATH.length - 1)];
+  const bx = A.x + (B.x - A.x) * f, by = A.y + (B.y - A.y) * f;
+  const ctx = simCtx();
+  ctx.strokeStyle = '#fdba74'; ctx.lineWidth = 13; ctx.lineJoin = 'round'; ctx.beginPath();
+  ctx.moveTo(DIGEST_PATH[0].x, DIGEST_PATH[0].y); DIGEST_PATH.slice(1).forEach((p) => ctx.lineTo(p.x, p.y)); ctx.stroke();
+  ctx.font = '11px sans-serif';
+  DIGEST_PATH.forEach((p, idx) => {
+    ctx.fillStyle = idx === i ? '#ea580c' : '#cbd5e1'; ctx.beginPath(); ctx.arc(p.x, p.y, 6, 0, 6.3); ctx.fill();
+    ctx.fillStyle = '#334155'; ctx.fillText(p.name, p.x + 11, p.y + 4);
+  });
+  ctx.fillStyle = '#16a34a'; ctx.beginPath(); ctx.arc(bx, by, 7, 0, 6.3); ctx.fill();
+  document.getElementById('sim-out').innerHTML = `Thức ăn đang ở <b>${A.name}</b>: ${A.note}.`;
+  App.state.simRAF = requestAnimationFrame(simDigestLoop);
+}
+
+/* 🕰️ Con lắc đơn — dao động */
+function simPendulum() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('pd-l', 'Chiều dài dây L', 0.2, 2, 1, 0.1, 'm', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="235" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  App.state.pend = { ph: 0 };
+  simPendulumLoop();
+}
+function simPendulumLoop() {
+  const L = numv('pd-l'); setv('pd-l', L.toFixed(1));
+  const g = 9.8, T = 2 * Math.PI * Math.sqrt(L / g), st = App.state.pend;
+  st.ph += 2 * Math.PI / (T * 60);
+  const th = 0.5 * Math.cos(st.ph);
+  const ctx = simCtx(), px = 160, py = 26, len = 45 + L * 72;
+  const bx = px + len * Math.sin(th), by = py + len * Math.cos(th);
+  ctx.fillStyle = '#475569'; ctx.fillRect(px - 22, py - 6, 44, 6);
+  ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(bx, by); ctx.stroke();
+  ctx.fillStyle = '#4f46e5'; ctx.beginPath(); ctx.arc(bx, by, 14, 0, 6.3); ctx.fill();
+  document.getElementById('sim-out').innerHTML =
+    `Con lắc đơn dài L = ${L.toFixed(1)} m. Chu kì T = 2π·√(L/g) = <b>${T.toFixed(2)} s</b>. Với biên độ nhỏ, T <b>không phụ thuộc</b> khối lượng và biên độ — chỉ phụ thuộc L và g.`;
+  App.state.simRAF = requestAnimationFrame(simPendulumLoop);
+}
+
+/* 〰️ Sóng ngang */
+function simWave() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('wv-a', 'Biên độ A', 5, 50, 30, 1, 'px', 'simNoop')}
+    ${simSlider('wv-l', 'Bước sóng λ', 40, 200, 100, 5, 'px', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="190" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  App.state.wave = { ph: 0 };
+  simWaveLoop();
+}
+function simWaveLoop() {
+  const A = numv('wv-a'), lam = numv('wv-l'); setv('wv-a', A); setv('wv-l', lam);
+  const st = App.state.wave; st.ph += 0.09;
+  const ctx = simCtx(), cy = 95;
+  ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(0, cy); ctx.lineTo(320, cy); ctx.stroke();
+  ctx.strokeStyle = '#4f46e5'; ctx.lineWidth = 2.5; ctx.beginPath();
+  for (let x = 0; x <= 320; x++) { const y = cy - A * Math.sin(2 * Math.PI * (x / lam) - st.ph); if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); }
+  ctx.stroke();
+  document.getElementById('sim-out').innerHTML =
+    `Sóng ngang: biên độ A = <b>${A}</b> px, bước sóng λ = <b>${lam}</b> px. Tốc độ truyền sóng v = λ·f (f là tần số). Tăng λ ⇒ bước sóng dài hơn; tăng A ⇒ sóng cao hơn.`;
+  App.state.simRAF = requestAnimationFrame(simWaveLoop);
 }
 
 /* ============================================================
