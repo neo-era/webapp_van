@@ -515,7 +515,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-3', title: 'Kiểm tra 45′ #3 — Tổng hợp Vật lí 12', durationMin: 45,
+      examId: 'ly-kt45-3', title: 'Kiểm tra 45′ #3 — Tổng hợp Vật lí 12', title_en: '45-min test #3 — Physics 12 (review)', durationMin: 45,
       questions: [
         { stem: 'Khí nhận nhiệt $Q=200$ J và sinh công $50$ J. Tính $\\Delta U$.', options: ['$250$ J', '$150$ J', '$50$ J', '$-150$ J'], answer: 1, explanation: '$A=-50,\\ \\Delta U=A+Q=150$ J.' },
         { stem: 'Nhiệt lượng đun $0{,}5$ kg nước tăng $20$ °C ($c=4200$)?', options: ['$4200$ J', '$42000$ J', '$21000$ J', '$84000$ J'], answer: 1, explanation: '$Q=0{,}5\\cdot4200\\cdot20=42000$ J.' },
@@ -530,7 +530,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-4', title: 'Kiểm tra 45′ #4 — Tổng hợp Vật lí 12', durationMin: 45,
+      examId: 'ly-kt45-4', title: 'Kiểm tra 45′ #4 — Tổng hợp Vật lí 12', title_en: '45-min test #4 — Physics 12 (review)', durationMin: 45,
       questions: [
         { stem: 'Hệ nhận nhiệt $80$ J và nhận công $20$ J. Tính $\\Delta U$.', options: ['$120$ J', '$100$ J', '$60$ J', '$80$ J'], answer: 1, explanation: '$\\Delta U=A+Q=20+80=100$ J.' },
         { stem: 'Đơn vị của nhiệt lượng là?', options: ['Jun (J)', 'Tesla (T)', 'Oát (W)', 'Vêbe (Wb)'], answer: 0, explanation: 'Nhiệt lượng đo bằng jun.' },
@@ -545,7 +545,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-5', title: 'Kiểm tra 45′ #5 — Vật lí 12 (mở rộng)', durationMin: 45,
+      examId: 'ly-kt45-5', title: 'Kiểm tra 45′ #5 — Vật lí 12 (mở rộng)', title_en: '45-min test #5 — Physics 12 (extended)', durationMin: 45,
       questions: [
         { stem: 'Nội năng của khí lí tưởng phụ thuộc chủ yếu vào?', options: ['áp suất', 'nhiệt độ', 'thể tích', 'khối lượng riêng'], answer: 1, explanation: 'Nội năng khí lí tưởng chỉ phụ thuộc nhiệt độ.' },
         { stem: 'Nhiệt lượng đun $2$ kg nhôm ($c=880$) tăng $10$ °C là?', options: ['$8800$ J', '$1760$ J', '$17600$ J', '$880$ J'], answer: 2, explanation: '$Q=2\\cdot880\\cdot10=17600$ J.' },
@@ -560,7 +560,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-6', title: 'Kiểm tra 45′ #6 — Vật lí 12', durationMin: 45,
+      examId: 'ly-kt45-6', title: 'Kiểm tra 45′ #6 — Vật lí 12', title_en: '45-min test #6 — Physics 12', durationMin: 45,
       questions: [
         { stem: 'Khi nén nhanh (đoạn nhiệt) một khối khí, nhiệt độ của khí?', options: ['giảm', 'tăng', 'không đổi', 'bằng 0'], answer: 1, explanation: 'Nhận công ⇒ nội năng tăng ⇒ nhiệt độ tăng.' },
         { stem: 'Làm nguội $1$ kg nước từ $80$ °C xuống $20$ °C ($c=4200$) tỏa ra nhiệt lượng?', options: ['$4200$ J', '$60000$ J', '$252000$ J', '$25200$ J'], answer: 2, explanation: '$Q=1\\cdot4200\\cdot60=252000$ J.' },
@@ -575,7 +575,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-7', title: 'Kiểm tra 45′ #7 — Vật lí 12', durationMin: 45,
+      examId: 'ly-kt45-7', title: 'Kiểm tra 45′ #7 — Vật lí 12', title_en: '45-min test #7 — Physics 12', durationMin: 45,
       questions: [
         { stem: 'Nhiệt nóng chảy riêng của nước đá $\\lambda=3{,}4\\cdot10^5$ J/kg. Nhiệt cần để làm nóng chảy hoàn toàn $2$ kg nước đá ở $0$ °C?', options: ['$340$ kJ', '$680$ kJ', '$170$ kJ', '$1360$ kJ'], answer: 1, explanation: '$Q=\\lambda m=3{,}4\\cdot10^5\\cdot2=6{,}8\\cdot10^5$ J $=680$ kJ.' },
         { stem: 'Đun nóng đẳng tích một lượng khí từ $300$ K lên $600$ K, áp suất ban đầu $1$ atm. Áp suất sau?', options: ['$1$ atm', '$1{,}5$ atm', '$2$ atm', '$4$ atm'], answer: 2, explanation: 'Đẳng tích: $p_1/T_1=p_2/T_2 \\Rightarrow p_2=1\\cdot600/300=2$ atm.' },
@@ -590,7 +590,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-8', title: 'Kiểm tra 45′ #8 — Vật lí 12', durationMin: 45,
+      examId: 'ly-kt45-8', title: 'Kiểm tra 45′ #8 — Vật lí 12', title_en: '45-min test #8 — Physics 12', durationMin: 45,
       questions: [
         { stem: 'Nén đẳng nhiệt một lượng khí từ $V_1=3$ L (p=2 atm) xuống $V_2=1$ L. Áp suất sau?', options: ['$3$ atm', '$1{,}5$ atm', '$12$ atm', '$6$ atm'], answer: 3, explanation: 'Boyle: $p_2=p_1V_1/V_2=2\\cdot3/1=6$ atm.' },
         { stem: 'Đun $0{,}5$ kg nước ($c=4200$) tăng thêm $10$ °C cần nhiệt lượng?', options: ['$21000$ J', '$4200$ J', '$42000$ J', '$2100$ J'], answer: 0, explanation: '$Q=mc\\Delta t=0{,}5\\cdot4200\\cdot10=21000$ J.' },
@@ -605,7 +605,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-9', title: 'Kiểm tra 45′ #9 — Vật lí 12', durationMin: 45,
+      examId: 'ly-kt45-9', title: 'Kiểm tra 45′ #9 — Vật lí 12', title_en: '45-min test #9 — Physics 12', durationMin: 45,
       questions: [
         { stem: 'Nung đẳng áp một lượng khí từ $300$ K lên $600$ K, thể tích ban đầu $2$ L. Thể tích sau?', options: ['$4$ L', '$2$ L', '$3$ L', '$8$ L'], answer: 0, explanation: 'Đẳng áp: $V_1/T_1=V_2/T_2 \\Rightarrow V_2=2\\cdot600/300=4$ L.' },
         { stem: 'Đơn vị của nhiệt dung riêng là?', options: ['J/kg', 'J/K', 'W/kg', 'J/(kg·K)'], answer: 3, explanation: '$c=Q/(m\\Delta t)$ ⇒ đơn vị J/(kg·K).' },
@@ -620,7 +620,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-10', title: 'Kiểm tra 45′ #10 — Vật lí 12', durationMin: 45,
+      examId: 'ly-kt45-10', title: 'Kiểm tra 45′ #10 — Vật lí 12', title_en: '45-min test #10 — Physics 12', durationMin: 45,
       questions: [
         { stem: 'Nhiệt hóa hơi riêng của nước $L=2{,}3\\cdot10^6$ J/kg. Nhiệt tỏa ra khi $1$ kg hơi nước ở $100$ °C ngưng tụ thành nước ở $100$ °C?', options: ['$2{,}3\\cdot10^5$ J', '$4{,}6\\cdot10^6$ J', '$2{,}3\\cdot10^6$ J', '$1{,}15\\cdot10^6$ J'], answer: 2, explanation: '$Q=Lm=2{,}3\\cdot10^6\\cdot1=2{,}3\\cdot10^6$ J.' },
         { stem: 'Trong hệ SI, đơn vị của áp suất là?', options: ['Newton', 'Joule', 'Watt', 'Pascal'], answer: 3, explanation: 'Áp suất đo bằng Pascal (Pa $=N/m^2$).' },
@@ -635,7 +635,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-11', title: 'Kiểm tra 45′ #11 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-11', title: 'Kiểm tra 45′ #11 — Vật lí 12 (tính toán)', title_en: '45-min test #11 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Đổi $27$ °C sang thang Kelvin?', options: ['$27$ K', '$246$ K', '$300$ K', '$327$ K'], answer: 2, explanation: '$T(K)=t(^\\circ C)+273=300$ K.' },
         { stem: 'Đun $2$ kg nước ($c=4200$) tăng thêm $5$ °C cần nhiệt lượng?', options: ['$21000$ J', '$8400$ J', '$4200$ J', '$42000$ J'], answer: 3, explanation: '$Q=mc\\Delta t=2\\cdot4200\\cdot5=42000$ J.' },
@@ -650,7 +650,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-12', title: 'Kiểm tra 45′ #12 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-12', title: 'Kiểm tra 45′ #12 — Vật lí 12 (tính toán)', title_en: '45-min test #12 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Bình kín chứa khí ở $2$ atm, $300$ K. Đun đẳng tích đến $450$ K, áp suất?', options: ['$2{,}5$ atm', '$4$ atm', '$6$ atm', '$3$ atm'], answer: 3, explanation: 'Đẳng tích: $p_2=p_1T_2/T_1=2\\cdot450/300=3$ atm.' },
         { stem: 'Nhiệt làm nóng chảy $0{,}2$ kg nước đá ($\\lambda=3{,}4\\cdot10^5$ J/kg)?', options: ['$68$ kJ', '$34$ kJ', '$17$ kJ', '$6{,}8$ kJ'], answer: 0, explanation: '$Q=\\lambda m=3{,}4\\cdot10^5\\cdot0{,}2=68000$ J $=68$ kJ.' },
@@ -665,7 +665,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-13', title: 'Kiểm tra 45′ #13 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-13', title: 'Kiểm tra 45′ #13 — Vật lí 12 (tính toán)', title_en: '45-min test #13 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Động cơ nhiệt nhận $Q_1=1000$ J, sinh công $A=300$ J. Hiệu suất?', options: ['$70\\%$', '$3\\%$', '$30\\%$', '$100\\%$'], answer: 2, explanation: '$H=A/Q_1=300/1000=30\\%$.' },
         { stem: 'Khí đẳng tích $p_1=1$ atm ở $250$ K, đun đến $500$ K. Áp suất sau?', options: ['$1{,}5$ atm', '$4$ atm', '$0{,}5$ atm', '$2$ atm'], answer: 3, explanation: '$p_2=p_1T_2/T_1=1\\cdot500/250=2$ atm.' },
@@ -680,7 +680,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-14', title: 'Kiểm tra 45′ #14 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-14', title: 'Kiểm tra 45′ #14 — Vật lí 12 (tính toán)', title_en: '45-min test #14 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng áp có $V=300\\ cm^3$ ở $300$ K. Đun đến $400$ K, thể tích sau?', options: ['$350\\ cm^3$', '$450\\ cm^3$', '$600\\ cm^3$', '$400\\ cm^3$'], answer: 3, explanation: '$V_2=V_1T_2/T_1=300\\cdot400/300=400\\ cm^3$.' },
         { stem: 'Đun $500$ g nước ($c=4200$) từ $20$ °C lên $80$ °C cần nhiệt lượng?', options: ['$126$ kJ', '$63$ kJ', '$252$ kJ', '$12{,}6$ kJ'], answer: 0, explanation: '$Q=0{,}5\\cdot4200\\cdot60=126000$ J $=126$ kJ.' },
@@ -695,7 +695,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-15', title: 'Kiểm tra 45′ #15 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-15', title: 'Kiểm tra 45′ #15 — Vật lí 12 (tính toán)', title_en: '45-min test #15 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí từ trạng thái ($2$ atm, $4$ L, $300$ K) sang ($4$ atm, $2$ L). Nhiệt độ sau?', options: ['$300$ K', '$150$ K', '$600$ K', '$450$ K'], answer: 0, explanation: '$\\dfrac{p_1V_1}{T_1}=\\dfrac{p_2V_2}{T_2}$; $\\dfrac{8}{300}=\\dfrac{8}{T_2}\\Rightarrow T_2=300$ K.' },
         { stem: 'Nhiệt làm bay hơi $0{,}5$ kg nước ở $100$ °C ($L=2{,}3\\cdot10^6$ J/kg)?', options: ['$2{,}3\\cdot10^6$ J', '$4{,}6\\cdot10^6$ J', '$0{,}575\\cdot10^6$ J', '$1{,}15\\cdot10^6$ J'], answer: 3, explanation: '$Q=Lm=2{,}3\\cdot10^6\\cdot0{,}5=1{,}15\\cdot10^6$ J.' },
@@ -710,7 +710,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-16', title: 'Kiểm tra 45′ #16 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-16', title: 'Kiểm tra 45′ #16 — Vật lí 12 (tính toán)', title_en: '45-min test #16 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Ở điều kiện tiêu chuẩn, $2$ mol khí lí tưởng chiếm thể tích?', options: ['$22{,}4$ L', '$11{,}2$ L', '$89{,}6$ L', '$44{,}8$ L'], answer: 3, explanation: '$V=2\\cdot22{,}4=44{,}8$ L.' },
         { stem: 'Cung cấp $Q=8400$ J cho $200$ g nước ($c=4200$), nhiệt độ tăng thêm?', options: ['$10$ °C', '$5$ °C', '$20$ °C', '$42$ °C'], answer: 0, explanation: '$\\Delta t=Q/(mc)=8400/(0{,}2\\cdot4200)=10$ °C.' },
@@ -725,7 +725,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-17', title: 'Kiểm tra 45′ #17 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-17', title: 'Kiểm tra 45′ #17 — Vật lí 12 (tính toán)', title_en: '45-min test #17 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt: $p_1=4$ atm, $V_1=3$ L. Khi $p_2=6$ atm thì $V_2=?$', options: ['$1$ L', '$3$ L', '$4$ L', '$2$ L'], answer: 3, explanation: '$V_2=p_1V_1/p_2=4\\cdot3/6=2$ L.' },
         { stem: 'Nhiệt tỏa ra khi $1$ kg nước đông đặc thành đá ở $0$ °C ($\\lambda=3{,}4\\cdot10^5$ J/kg)?', options: ['$340$ kJ', '$170$ kJ', '$680$ kJ', '$34$ kJ'], answer: 0, explanation: '$Q=\\lambda m=3{,}4\\cdot10^5=340$ kJ.' },
@@ -740,7 +740,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-18', title: 'Kiểm tra 45′ #18 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-18', title: 'Kiểm tra 45′ #18 — Vật lí 12 (tính toán)', title_en: '45-min test #18 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng áp $V_1=5$ L ở $250$ K, làm lạnh đến $V_2=3$ L. Nhiệt độ sau?', options: ['$150$ K', '$100$ K', '$200$ K', '$300$ K'], answer: 0, explanation: '$T_2=T_1V_2/V_1=250\\cdot3/5=150$ K.' },
         { stem: 'Nung $0{,}4$ kg sắt ($c=460$) tăng thêm $50$ °C cần nhiệt lượng?', options: ['$4600$ J', '$18400$ J', '$2300$ J', '$9200$ J'], answer: 3, explanation: '$Q=mc\\Delta t=0{,}4\\cdot460\\cdot50=9200$ J.' },
@@ -755,7 +755,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-19', title: 'Kiểm tra 45′ #19 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-19', title: 'Kiểm tra 45′ #19 — Vật lí 12 (tính toán)', title_en: '45-min test #19 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=5$ atm, $V_1=2$ L. Khi $p_2=2$ atm thì $V_2=?$', options: ['$5$ L', '$4$ L', '$2{,}5$ L', '$10$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=5\\cdot2/2=5$ L.' },
         { stem: 'Nung $1$ kg nhôm ($c=880$) tăng thêm $20$ °C cần nhiệt lượng?', options: ['$8800$ J', '$880$ J', '$35200$ J', '$17600$ J'], answer: 3, explanation: '$Q=mc\\Delta t=1\\cdot880\\cdot20=17600$ J.' },
@@ -770,7 +770,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-20', title: 'Kiểm tra 45′ #20 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-20', title: 'Kiểm tra 45′ #20 — Vật lí 12 (tính toán)', title_en: '45-min test #20 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí từ ($1$ atm, $2$ L, $300$ K) sang ($2$ atm, $600$ K). Thể tích sau?', options: ['$2$ L', '$1$ L', '$4$ L', '$0{,}5$ L'], answer: 0, explanation: '$V_2=\\dfrac{p_1V_1T_2}{T_1p_2}=\\dfrac{1\\cdot2\\cdot600}{300\\cdot2}=2$ L.' },
         { stem: 'Đun $250$ g nước ($c=4200$) tăng thêm $40$ °C cần nhiệt lượng?', options: ['$21000$ J', '$84000$ J', '$4200$ J', '$42000$ J'], answer: 3, explanation: '$Q=0{,}25\\cdot4200\\cdot40=42000$ J.' },
@@ -785,7 +785,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-21', title: 'Kiểm tra 45′ #21 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-21', title: 'Kiểm tra 45′ #21 — Vật lí 12 (tính toán)', title_en: '45-min test #21 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=3$ atm, $V_1=4$ L. Khi $V_2=6$ L thì $p_2=?$', options: ['$2$ atm', '$1{,}5$ atm', '$3$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=3\\cdot4/6=2$ atm.' },
         { stem: 'Đun $2$ kg nước ($c=4200$) tăng thêm $25$ °C cần nhiệt lượng?', options: ['$105$ kJ', '$420$ kJ', '$84$ kJ', '$210$ kJ'], answer: 3, explanation: '$Q=2\\cdot4200\\cdot25=210000$ J $=210$ kJ.' },
@@ -800,7 +800,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-22', title: 'Kiểm tra 45′ #22 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-22', title: 'Kiểm tra 45′ #22 — Vật lí 12 (tính toán)', title_en: '45-min test #22 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=2$ atm, $V_1=6$ L. Khi $V_2=4$ L thì $p_2=?$', options: ['$3$ atm', '$2$ atm', '$4$ atm', '$1{,}5$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=2\\cdot6/4=3$ atm.' },
         { stem: 'Nung $0{,}5$ kg đồng ($c=380$) tăng thêm $100$ °C cần nhiệt lượng?', options: ['$9500$ J', '$38000$ J', '$3800$ J', '$19000$ J'], answer: 3, explanation: '$Q=0{,}5\\cdot380\\cdot100=19000$ J.' },
@@ -815,7 +815,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-23', title: 'Kiểm tra 45′ #23 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-23', title: 'Kiểm tra 45′ #23 — Vật lí 12 (tính toán)', title_en: '45-min test #23 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=8$ atm, $V_1=1$ L. Khi $p_2=2$ atm thì $V_2=?$', options: ['$2$ L', '$3$ L', '$4$ L', '$8$ L'], answer: 2, explanation: '$V_2=p_1V_1/p_2=8\\cdot1/2=4$ L.' },
         { stem: 'Đun $1{,}5$ kg nước ($c=4200$) tăng thêm $10$ °C cần nhiệt lượng?', options: ['$63$ kJ', '$42$ kJ', '$84$ kJ', '$21$ kJ'], answer: 0, explanation: '$Q=1{,}5\\cdot4200\\cdot10=63000$ J $=63$ kJ.' },
@@ -830,7 +830,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-24', title: 'Kiểm tra 45′ #24 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-24', title: 'Kiểm tra 45′ #24 — Vật lí 12 (tính toán)', title_en: '45-min test #24 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=1{,}5$ atm, $V_1=8$ L. Khi $V_2=6$ L thì $p_2=?$', options: ['$2$ atm', '$1$ atm', '$3$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=1{,}5\\cdot8/6=2$ atm.' },
         { stem: 'Đun $3$ kg nước ($c=4200$) tăng thêm $5$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$84$ kJ', '$126$ kJ', '$63$ kJ'], answer: 3, explanation: '$Q=3\\cdot4200\\cdot5=63000$ J $=63$ kJ.' },
@@ -845,7 +845,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-25', title: 'Kiểm tra 45′ #25 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-25', title: 'Kiểm tra 45′ #25 — Vật lí 12 (tính toán)', title_en: '45-min test #25 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=10$ atm, $V_1=2$ L. Khi $p_2=5$ atm thì $V_2=?$', options: ['$2$ L', '$3$ L', '$4$ L', '$5$ L'], answer: 2, explanation: '$V_2=p_1V_1/p_2=10\\cdot2/5=4$ L.' },
         { stem: 'Đun $0{,}2$ kg nước ($c=4200$) tăng thêm $50$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$21$ kJ', '$84$ kJ', '$10{,}5$ kJ'], answer: 0, explanation: '$Q=0{,}2\\cdot4200\\cdot50=42000$ J $=42$ kJ.' },
@@ -860,7 +860,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-26', title: 'Kiểm tra 45′ #26 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-26', title: 'Kiểm tra 45′ #26 — Vật lí 12 (tính toán)', title_en: '45-min test #26 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=6$ atm, $V_1=3$ L. Khi $V_2=9$ L thì $p_2=?$', options: ['$2$ atm', '$1$ atm', '$3$ atm', '$4$ atm'], answer: 0, explanation: '$p_2=p_1V_1/V_2=6\\cdot3/9=2$ atm.' },
         { stem: 'Nung $1$ kg đồng ($c=380$) tăng thêm $25$ °C cần nhiệt lượng?', options: ['$4750$ J', '$19000$ J', '$2375$ J', '$9500$ J'], answer: 3, explanation: '$Q=1\\cdot380\\cdot25=9500$ J.' },
@@ -875,7 +875,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-27', title: 'Kiểm tra 45′ #27 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-27', title: 'Kiểm tra 45′ #27 — Vật lí 12 (tính toán)', title_en: '45-min test #27 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=4$ atm, $V_1=5$ L. Khi $p_2=10$ atm thì $V_2=?$', options: ['$2$ L', '$1$ L', '$3$ L', '$4$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=4\\cdot5/10=2$ L.' },
         { stem: 'Nung $0{,}5$ kg sắt ($c=460$) tăng thêm $40$ °C cần nhiệt lượng?', options: ['$4600$ J', '$18400$ J', '$2300$ J', '$9200$ J'], answer: 3, explanation: '$Q=0{,}5\\cdot460\\cdot40=9200$ J.' },
@@ -890,7 +890,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-28', title: 'Kiểm tra 45′ #28 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-28', title: 'Kiểm tra 45′ #28 — Vật lí 12 (tính toán)', title_en: '45-min test #28 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=2{,}5$ atm, $V_1=8$ L. Khi $p_2=5$ atm thì $V_2=?$', options: ['$4$ L', '$2$ L', '$8$ L', '$1$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=2{,}5\\cdot8/5=4$ L.' },
         { stem: 'Nung $2$ kg đồng ($c=380$) tăng thêm $50$ °C cần nhiệt lượng?', options: ['$19000$ J', '$76000$ J', '$7600$ J', '$38000$ J'], answer: 3, explanation: '$Q=2\\cdot380\\cdot50=38000$ J.' },
@@ -905,7 +905,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-29', title: 'Kiểm tra 45′ #29 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-29', title: 'Kiểm tra 45′ #29 — Vật lí 12 (tính toán)', title_en: '45-min test #29 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=3$ atm, $V_1=10$ L. Khi $p_2=6$ atm thì $V_2=?$', options: ['$5$ L', '$4$ L', '$6$ L', '$3$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=3\\cdot10/6=5$ L.' },
         { stem: 'Đun $1{,}5$ kg nước ($c=4200$) tăng thêm $20$ °C cần nhiệt lượng?', options: ['$63$ kJ', '$252$ kJ', '$42$ kJ', '$126$ kJ'], answer: 3, explanation: '$Q=1{,}5\\cdot4200\\cdot20=126000$ J $=126$ kJ.' },
@@ -920,7 +920,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-30', title: 'Kiểm tra 45′ #30 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-30', title: 'Kiểm tra 45′ #30 — Vật lí 12 (tính toán)', title_en: '45-min test #30 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=12$ atm, $V_1=2$ L. Khi $p_2=4$ atm thì $V_2=?$', options: ['$3$ L', '$4$ L', '$6$ L', '$8$ L'], answer: 2, explanation: '$V_2=p_1V_1/p_2=12\\cdot2/4=6$ L.' },
         { stem: 'Đun $2{,}5$ kg nước ($c=4200$) tăng thêm $4$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$21$ kJ', '$84$ kJ', '$10{,}5$ kJ'], answer: 0, explanation: '$Q=2{,}5\\cdot4200\\cdot4=42000$ J $=42$ kJ.' },
@@ -935,7 +935,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-31', title: 'Kiểm tra 45′ #31 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-31', title: 'Kiểm tra 45′ #31 — Vật lí 12 (tính toán)', title_en: '45-min test #31 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=5$ atm, $V_1=12$ L. Khi $p_2=15$ atm thì $V_2=?$', options: ['$4$ L', '$3$ L', '$6$ L', '$8$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=5\\cdot12/15=4$ L.' },
         { stem: 'Đun $0{,}8$ kg nước ($c=4200$) tăng thêm $25$ °C cần nhiệt lượng?', options: ['$42$ kJ', '$168$ kJ', '$21$ kJ', '$84$ kJ'], answer: 3, explanation: '$Q=0{,}8\\cdot4200\\cdot25=84000$ J $=84$ kJ.' },
@@ -950,7 +950,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'ly-kt45-32', title: 'Kiểm tra 45′ #32 — Vật lí 12 (tính toán)', durationMin: 45,
+      examId: 'ly-kt45-32', title: 'Kiểm tra 45′ #32 — Vật lí 12 (tính toán)', title_en: '45-min test #32 — Physics 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khí đẳng nhiệt $p_1=8$ atm, $V_1=3$ L. Khi $p_2=6$ atm thì $V_2=?$', options: ['$4$ L', '$2$ L', '$6$ L', '$3$ L'], answer: 0, explanation: '$V_2=p_1V_1/p_2=8\\cdot3/6=4$ L.' },
         { stem: 'Đun $1$ kg nước ($c=4200$) tăng thêm $30$ °C cần nhiệt lượng?', options: ['$63$ kJ', '$252$ kJ', '$42$ kJ', '$126$ kJ'], answer: 3, explanation: '$Q=1\\cdot4200\\cdot30=126000$ J $=126$ kJ.' },
@@ -1000,7 +1000,7 @@ const EXAMS = {
 
   HOA: [
     {
-      examId: 'hoa-kt45-1', title: 'Kiểm tra 45′ #1 — Ester–Lipid & Carbohydrate', durationMin: 45,
+      examId: 'hoa-kt45-1', title: 'Kiểm tra 45′ #1 — Ester–Lipid & Carbohydrate', title_en: '45-min test #1 — Esters–Lipids & Carbohydrates', durationMin: 45,
       questions: [
         { stem: 'Công thức tổng quát ester no, đơn chức, mạch hở là?', options: ['$C_nH_{2n+2}O$', '$C_nH_{2n}O_2$', '$C_nH_{2n-2}O_2$', '$C_nH_{2n}O$'], answer: 1, explanation: 'Ester no đơn chức mạch hở: $C_nH_{2n}O_2\\ (n\\ge2)$.' },
         { stem: 'Công thức của ethyl acetate là?', options: ['$HCOOCH_3$', '$CH_3COOC_2H_5$', '$C_2H_5COOH$', '$CH_3OH$'], answer: 1, explanation: 'Acetate $CH_3COO-$ + ethyl $C_2H_5$.' },
@@ -1015,7 +1015,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-2', title: 'Kiểm tra 45′ #2 — Nitơ, Polymer & Kim loại', durationMin: 45,
+      examId: 'hoa-kt45-2', title: 'Kiểm tra 45′ #2 — Nitơ, Polymer & Kim loại', title_en: '45-min test #2 — Nitrogen, Polymers & Metals', durationMin: 45,
       questions: [
         { stem: 'Methylamine $CH_3NH_2$ làm quỳ tím?', options: ['hóa đỏ', 'hóa xanh', 'không đổi màu', 'mất màu'], answer: 1, explanation: 'Amine có tính base ⇒ quỳ hóa xanh.' },
         { stem: 'Công thức của glycine là?', options: ['$CH_3NH_2$', '$H_2N{-}CH_2{-}COOH$', '$C_6H_5NH_2$', '$CH_3COOH$'], answer: 1, explanation: 'Glycine: $H_2N{-}CH_2{-}COOH$.' },
@@ -1030,7 +1030,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-3', title: 'Kiểm tra 45′ #3 — Tổng hợp Hóa 12', durationMin: 45,
+      examId: 'hoa-kt45-3', title: 'Kiểm tra 45′ #3 — Tổng hợp Hóa 12', title_en: '45-min test #3 — Chemistry 12 (review)', durationMin: 45,
       questions: [
         { stem: 'Số nguyên tử carbon trong phân tử glucose là?', options: ['$5$', '$12$', '$6$', '$3$'], answer: 2, explanation: 'Glucose $C_6H_{12}O_6$.' },
         { stem: 'Xà phòng hóa chất béo thu được muối của acid béo và?', options: ['glycerol', 'ethanol', 'nước', 'aldehyde'], answer: 0, explanation: 'Chất béo + NaOH → muối + glycerol.' },
@@ -1045,7 +1045,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-4', title: 'Kiểm tra 45′ #4 — Hóa hữu cơ & Kim loại', durationMin: 45,
+      examId: 'hoa-kt45-4', title: 'Kiểm tra 45′ #4 — Hóa hữu cơ & Kim loại', title_en: '45-min test #4 — Organic chemistry & Metals', durationMin: 45,
       questions: [
         { stem: 'Ester thường có mùi đặc trưng gì?', options: ['khai', 'thơm (hoa quả)', 'hắc', 'không mùi'], answer: 1, explanation: 'Nhiều ester có mùi thơm.' },
         { stem: 'Công thức chung của carbohydrate là?', options: ['$C_nH_{2n}$', '$C_nH_{2n+2}$', '$C_n(H_2O)_m$', '$C_nH_{2n}O$'], answer: 2, explanation: 'Carbohydrate: $C_n(H_2O)_m$.' },
@@ -1060,7 +1060,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-5', title: 'Kiểm tra 45′ #5 — Hóa 12 (mở rộng)', durationMin: 45,
+      examId: 'hoa-kt45-5', title: 'Kiểm tra 45′ #5 — Hóa 12 (mở rộng)', title_en: '45-min test #5 — Chemistry 12 (extended)', durationMin: 45,
       questions: [
         { stem: 'Phản ứng ester hóa là phản ứng giữa?', options: ['acid + ancol', 'acid + kiềm', 'ancol + kim loại', 'ester + nước'], answer: 0, explanation: 'Acid carboxylic + ancol → ester + nước.' },
         { stem: 'Glucose thuộc loại carbohydrate nào?', options: ['polysaccharide', 'disaccharide', 'monosaccharide', 'không phải carbohydrate'], answer: 2, explanation: 'Glucose là monosaccharide.' },
@@ -1075,7 +1075,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-6', title: 'Kiểm tra 45′ #6 — Hóa 12', durationMin: 45,
+      examId: 'hoa-kt45-6', title: 'Kiểm tra 45′ #6 — Hóa 12', title_en: '45-min test #6 — Chemistry 12', durationMin: 45,
       questions: [
         { stem: 'Số đồng phân ester ứng với công thức $C_3H_6O_2$ là?', options: ['$1$', '$2$', '$3$', '$4$'], answer: 1, explanation: '$HCOOC_2H_5$ và $CH_3COOCH_3$.' },
         { stem: 'Loại đường nào ngọt nhất?', options: ['glucose', 'saccharose', 'fructose', 'tinh bột'], answer: 2, explanation: 'Fructose ngọt nhất.' },
@@ -1090,7 +1090,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-7', title: 'Kiểm tra 45′ #7 — Hóa 12', durationMin: 45,
+      examId: 'hoa-kt45-7', title: 'Kiểm tra 45′ #7 — Hóa 12', title_en: '45-min test #7 — Chemistry 12', durationMin: 45,
       questions: [
         { stem: 'Công thức phân tử của glucose là?', options: ['$C_{12}H_{22}O_{11}$', '$C_6H_{12}O_6$', '$C_6H_{10}O_5$', '$C_5H_{10}O_5$'], answer: 1, explanation: 'Glucose: $C_6H_{12}O_6$.' },
         { stem: 'Phân tử saccharose ($C_{12}H_{22}O_{11}$) có bao nhiêu nguyên tử cacbon?', options: ['$6$', '$11$', '$12$', '$22$'], answer: 2, explanation: 'Có $12$ nguyên tử C.' },
@@ -1105,7 +1105,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-8', title: 'Kiểm tra 45′ #8 — Hóa 12', durationMin: 45,
+      examId: 'hoa-kt45-8', title: 'Kiểm tra 45′ #8 — Hóa 12', title_en: '45-min test #8 — Chemistry 12', durationMin: 45,
       questions: [
         { stem: 'Số oxi hóa của lưu huỳnh (S) trong $H_2SO_4$ là?', options: ['$+2$', '$+4$', '$-2$', '$+6$'], answer: 3, explanation: '$H_2SO_4$: H là $+1$, O là $-2$ ⇒ S là $+6$.' },
         { stem: 'Trong phản ứng $Fe+2HCl\\rightarrow FeCl_2+H_2$, Fe đóng vai trò?', options: ['chất oxi hóa', 'chất khử', 'axit', 'môi trường'], answer: 1, explanation: 'Fe nhường electron ($Fe\\to Fe^{2+}$) ⇒ chất khử.' },
@@ -1120,7 +1120,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-9', title: 'Kiểm tra 45′ #9 — Hóa 12', durationMin: 45,
+      examId: 'hoa-kt45-9', title: 'Kiểm tra 45′ #9 — Hóa 12', title_en: '45-min test #9 — Chemistry 12', durationMin: 45,
       questions: [
         { stem: '$C_2H_6O$ có bao nhiêu đồng phân cấu tạo?', options: ['$1$', '$2$', '$3$', '$4$'], answer: 1, explanation: 'Ethanol $C_2H_5OH$ và dimethyl ether $CH_3OCH_3$ ⇒ 2 đồng phân.' },
         { stem: 'Tính chất hóa học đặc trưng của kim loại là?', options: ['tính oxi hóa', 'tính axit', 'tính bazơ', 'tính khử'], answer: 3, explanation: 'Kim loại dễ nhường electron ⇒ tính khử.' },
@@ -1135,7 +1135,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-10', title: 'Kiểm tra 45′ #10 — Hóa 12', durationMin: 45,
+      examId: 'hoa-kt45-10', title: 'Kiểm tra 45′ #10 — Hóa 12', title_en: '45-min test #10 — Chemistry 12', durationMin: 45,
       questions: [
         { stem: 'Số electron tối đa ở lớp M ($n=3$) là?', options: ['$8$', '$18$', '$32$', '$2$'], answer: 1, explanation: 'Số e tối đa lớp thứ $n$ là $2n^2=2\\cdot3^2=18$.' },
         { stem: 'Liên kết hóa học trong phân tử NaCl là?', options: ['cộng hóa trị', 'kim loại', 'hidro', 'ion'], answer: 3, explanation: 'Na nhường e cho Cl ⇒ liên kết ion.' },
@@ -1150,7 +1150,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-11', title: 'Kiểm tra 45′ #11 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-11', title: 'Kiểm tra 45′ #11 — Hóa 12 (tính toán)', title_en: '45-min test #11 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol của $11{,}2$ L khí $O_2$ ở điều kiện tiêu chuẩn?', options: ['$1$ mol', '$2$ mol', '$0{,}5$ mol', '$0{,}25$ mol'], answer: 2, explanation: '$n=V/22{,}4=11{,}2/22{,}4=0{,}5$ mol.' },
         { stem: 'Khối lượng của $0{,}5$ mol NaOH ($M=40$)?', options: ['$40$ g', '$80$ g', '$10$ g', '$20$ g'], answer: 3, explanation: '$m=n\\cdot M=0{,}5\\cdot40=20$ g.' },
@@ -1165,7 +1165,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-12', title: 'Kiểm tra 45′ #12 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-12', title: 'Kiểm tra 45′ #12 — Hóa 12 (tính toán)', title_en: '45-min test #12 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $4{,}4$ g $CO_2$ ($M=44$)?', options: ['$0{,}2$', '$0{,}5$', '$0{,}1$', '$1$'], answer: 2, explanation: '$n=4{,}4/44=0{,}1$ mol.' },
         { stem: 'Thể tích (đktc) của $0{,}25$ mol khí?', options: ['$2{,}24$ L', '$11{,}2$ L', '$22{,}4$ L', '$5{,}6$ L'], answer: 3, explanation: '$V=0{,}25\\cdot22{,}4=5{,}6$ L.' },
@@ -1180,7 +1180,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-13', title: 'Kiểm tra 45′ #13 — Hóa 12', durationMin: 45,
+      examId: 'hoa-kt45-13', title: 'Kiểm tra 45′ #13 — Hóa 12', title_en: '45-min test #13 — Chemistry 12', durationMin: 45,
       questions: [
         { stem: 'Chất nào sau đây là amino acid?', options: ['glucose', 'glyxin', 'etanol', 'acetic acid'], answer: 1, explanation: 'Glyxin $H_2N\\!-\\!CH_2\\!-\\!COOH$ là amino acid.' },
         { stem: 'Kim loại kiềm thường được bảo quản bằng cách ngâm trong?', options: ['nước', 'cồn', 'axit', 'dầu hỏa'], answer: 3, explanation: 'Ngâm trong dầu hỏa để tránh phản ứng với hơi nước và oxi.' },
@@ -1195,7 +1195,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-14', title: 'Kiểm tra 45′ #14 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-14', title: 'Kiểm tra 45′ #14 — Hóa 12 (tính toán)', title_en: '45-min test #14 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Đốt cháy hoàn toàn $0{,}1$ mol $CH_4$ thu được bao nhiêu mol $CO_2$?', options: ['$0{,}2$', '$0{,}05$', '$0{,}1$', '$1$'], answer: 2, explanation: '$CH_4+2O_2\\to CO_2+2H_2O$; $0{,}1$ mol $CH_4 \\Rightarrow 0{,}1$ mol $CO_2$.' },
         { stem: 'Số mol nguyên tử O trong $0{,}5$ mol $H_2SO_4$?', options: ['$1$', '$4$', '$0{,}5$', '$2$'], answer: 3, explanation: 'Mỗi phân tử có 4 O ⇒ $0{,}5\\cdot4=2$ mol O.' },
@@ -1210,7 +1210,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-15', title: 'Kiểm tra 45′ #15 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-15', title: 'Kiểm tra 45′ #15 — Hóa 12 (tính toán)', title_en: '45-min test #15 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Khối lượng của $0{,}2$ mol $CaCO_3$ ($M=100$)?', options: ['$10$ g', '$50$ g', '$100$ g', '$20$ g'], answer: 3, explanation: '$m=0{,}2\\cdot100=20$ g.' },
         { stem: 'Số mol nguyên tử Cl trong $0{,}5$ mol $AlCl_3$?', options: ['$0{,}5$', '$1$', '$1{,}5$', '$3$'], answer: 2, explanation: 'Mỗi phân tử có 3 Cl ⇒ $0{,}5\\cdot3=1{,}5$ mol.' },
@@ -1225,7 +1225,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-16', title: 'Kiểm tra 45′ #16 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-16', title: 'Kiểm tra 45′ #16 — Hóa 12 (tính toán)', title_en: '45-min test #16 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $8$ g NaOH ($M=40$)?', options: ['$0{,}1$', '$0{,}4$', '$2$', '$0{,}2$'], answer: 3, explanation: '$n=8/40=0{,}2$ mol.' },
         { stem: 'Đốt cháy $0{,}2$ mol $C_2H_4$ cần bao nhiêu mol $O_2$? ($C_2H_4+3O_2\\to2CO_2+2H_2O$)', options: ['$0{,}6$', '$0{,}4$', '$0{,}2$', '$1$'], answer: 0, explanation: '$0{,}2\\cdot3=0{,}6$ mol $O_2$.' },
@@ -1240,7 +1240,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-17', title: 'Kiểm tra 45′ #17 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-17', title: 'Kiểm tra 45′ #17 — Hóa 12 (tính toán)', title_en: '45-min test #17 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol của $5{,}6$ L khí $O_2$ ở điều kiện tiêu chuẩn?', options: ['$0{,}5$', '$1$', '$0{,}1$', '$0{,}25$'], answer: 3, explanation: '$n=5{,}6/22{,}4=0{,}25$ mol.' },
         { stem: 'Khối lượng của $0{,}3$ mol $H_2O$ ($M=18$)?', options: ['$5{,}4$ g', '$3{,}6$ g', '$1{,}8$ g', '$9$ g'], answer: 0, explanation: '$m=0{,}3\\cdot18=5{,}4$ g.' },
@@ -1255,7 +1255,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-18', title: 'Kiểm tra 45′ #18 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-18', title: 'Kiểm tra 45′ #18 — Hóa 12 (tính toán)', title_en: '45-min test #18 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $6{,}5$ g Zn ($M=65$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=6{,}5/65=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}25$ mol $CaCO_3$ ($M=100$)?', options: ['$25$ g', '$10$ g', '$50$ g', '$100$ g'], answer: 0, explanation: '$m=0{,}25\\cdot100=25$ g.' },
@@ -1270,7 +1270,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-19', title: 'Kiểm tra 45′ #19 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-19', title: 'Kiểm tra 45′ #19 — Hóa 12 (tính toán)', title_en: '45-min test #19 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $3{,}65$ g HCl ($M=36{,}5$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=3{,}65/36{,}5=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}5$ mol Fe ($M=56$)?', options: ['$28$ g', '$56$ g', '$14$ g', '$112$ g'], answer: 0, explanation: '$m=0{,}5\\cdot56=28$ g.' },
@@ -1285,7 +1285,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-20', title: 'Kiểm tra 45′ #20 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-20', title: 'Kiểm tra 45′ #20 — Hóa 12 (tính toán)', title_en: '45-min test #20 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $16$ g CuO ($M=80$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=16/80=0{,}2$ mol.' },
         { stem: 'Khối lượng của $0{,}1$ mol $Al_2O_3$ ($M=102$)?', options: ['$10{,}2$ g', '$5{,}1$ g', '$20{,}4$ g', '$51$ g'], answer: 0, explanation: '$m=0{,}1\\cdot102=10{,}2$ g.' },
@@ -1300,7 +1300,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-21', title: 'Kiểm tra 45′ #21 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-21', title: 'Kiểm tra 45′ #21 — Hóa 12 (tính toán)', title_en: '45-min test #21 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $4$ g NaOH ($M=40$)?', options: ['$0{,}2$', '$0{,}4$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=4/40=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}2$ mol $Fe_2O_3$ ($M=160$)?', options: ['$32$ g', '$16$ g', '$64$ g', '$80$ g'], answer: 0, explanation: '$m=0{,}2\\cdot160=32$ g.' },
@@ -1315,7 +1315,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-22', title: 'Kiểm tra 45′ #22 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-22', title: 'Kiểm tra 45′ #22 — Hóa 12 (tính toán)', title_en: '45-min test #22 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $7{,}1$ g $Cl_2$ ($M=71$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=7{,}1/71=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}3$ mol KOH ($M=56$)?', options: ['$16{,}8$ g', '$11{,}2$ g', '$22{,}4$ g', '$28$ g'], answer: 0, explanation: '$m=0{,}3\\cdot56=16{,}8$ g.' },
@@ -1330,7 +1330,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-23', title: 'Kiểm tra 45′ #23 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-23', title: 'Kiểm tra 45′ #23 — Hóa 12 (tính toán)', title_en: '45-min test #23 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $5{,}4$ g Al ($M=27$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=5{,}4/27=0{,}2$ mol.' },
         { stem: 'Khối lượng của $0{,}15$ mol $H_2SO_4$ ($M=98$)?', options: ['$14{,}7$ g', '$9{,}8$ g', '$19{,}6$ g', '$4{,}9$ g'], answer: 0, explanation: '$m=0{,}15\\cdot98=14{,}7$ g.' },
@@ -1345,7 +1345,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-24', title: 'Kiểm tra 45′ #24 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-24', title: 'Kiểm tra 45′ #24 — Hóa 12 (tính toán)', title_en: '45-min test #24 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $11{,}2$ g Fe ($M=56$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=11{,}2/56=0{,}2$ mol.' },
         { stem: 'Khối lượng của $0{,}25$ mol $Na_2SO_4$ ($M=142$)?', options: ['$35{,}5$ g', '$28{,}4$ g', '$71$ g', '$17{,}75$ g'], answer: 0, explanation: '$m=0{,}25\\cdot142=35{,}5$ g.' },
@@ -1360,7 +1360,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-25', title: 'Kiểm tra 45′ #25 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-25', title: 'Kiểm tra 45′ #25 — Hóa 12 (tính toán)', title_en: '45-min test #25 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $9{,}8$ g $H_2SO_4$ ($M=98$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=9{,}8/98=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}4$ mol NaCl ($M=58{,}5$)?', options: ['$23{,}4$ g', '$11{,}7$ g', '$46{,}8$ g', '$58{,}5$ g'], answer: 0, explanation: '$m=0{,}4\\cdot58{,}5=23{,}4$ g.' },
@@ -1375,7 +1375,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-26', title: 'Kiểm tra 45′ #26 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-26', title: 'Kiểm tra 45′ #26 — Hóa 12 (tính toán)', title_en: '45-min test #26 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $6{,}4$ g Cu ($M=64$)?', options: ['$0{,}1$', '$0{,}2$', '$0{,}5$', '$1$'], answer: 0, explanation: '$n=6{,}4/64=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}5$ mol $K_2SO_4$ ($M=174$)?', options: ['$87$ g', '$43{,}5$ g', '$174$ g', '$21{,}75$ g'], answer: 0, explanation: '$m=0{,}5\\cdot174=87$ g.' },
@@ -1390,7 +1390,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-27', title: 'Kiểm tra 45′ #27 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-27', title: 'Kiểm tra 45′ #27 — Hóa 12 (tính toán)', title_en: '45-min test #27 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $13$ g Zn ($M=65$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=13/65=0{,}2$ mol.' },
         { stem: 'Khối lượng của $0{,}3$ mol $CaCl_2$ ($M=111$)?', options: ['$33{,}3$ g', '$22{,}2$ g', '$44{,}4$ g', '$11{,}1$ g'], answer: 0, explanation: '$m=0{,}3\\cdot111=33{,}3$ g.' },
@@ -1405,7 +1405,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-28', title: 'Kiểm tra 45′ #28 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-28', title: 'Kiểm tra 45′ #28 — Hóa 12 (tính toán)', title_en: '45-min test #28 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $10$ g $CaCO_3$ ($M=100$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=10/100=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}2$ mol $K_2CO_3$ ($M=138$)?', options: ['$27{,}6$ g', '$13{,}8$ g', '$55{,}2$ g', '$6{,}9$ g'], answer: 0, explanation: '$m=0{,}2\\cdot138=27{,}6$ g.' },
@@ -1420,7 +1420,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-29', title: 'Kiểm tra 45′ #29 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-29', title: 'Kiểm tra 45′ #29 — Hóa 12 (tính toán)', title_en: '45-min test #29 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $8$ g CuO ($M=80$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=8/80=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}4$ mol MgO ($M=40$)?', options: ['$16$ g', '$8$ g', '$24$ g', '$32$ g'], answer: 0, explanation: '$m=0{,}4\\cdot40=16$ g.' },
@@ -1435,7 +1435,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-30', title: 'Kiểm tra 45′ #30 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-30', title: 'Kiểm tra 45′ #30 — Hóa 12 (tính toán)', title_en: '45-min test #30 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $4$ g NaOH ($M=40$)?', options: ['$0{,}2$', '$0{,}5$', '$1$', '$0{,}1$'], answer: 3, explanation: '$n=4/40=0{,}1$ mol.' },
         { stem: 'Khối lượng của $0{,}5$ mol $H_2O$ ($M=18$)?', options: ['$9$ g', '$4{,}5$ g', '$18$ g', '$36$ g'], answer: 0, explanation: '$m=0{,}5\\cdot18=9$ g.' },
@@ -1450,7 +1450,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-31', title: 'Kiểm tra 45′ #31 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-31', title: 'Kiểm tra 45′ #31 — Hóa 12 (tính toán)', title_en: '45-min test #31 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $12$ g C ($M=12$)?', options: ['$0{,}5$', '$2$', '$0{,}1$', '$1$'], answer: 3, explanation: '$n=12/12=1$ mol.' },
         { stem: 'Khối lượng của $0{,}2$ mol $CuSO_4$ ($M=160$)?', options: ['$32$ g', '$16$ g', '$64$ g', '$8$ g'], answer: 0, explanation: '$m=0{,}2\\cdot160=32$ g.' },
@@ -1465,7 +1465,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'hoa-kt45-32', title: 'Kiểm tra 45′ #32 — Hóa 12 (tính toán)', durationMin: 45,
+      examId: 'hoa-kt45-32', title: 'Kiểm tra 45′ #32 — Hóa 12 (tính toán)', title_en: '45-min test #32 — Chemistry 12 (calculation)', durationMin: 45,
       questions: [
         { stem: 'Số mol có trong $20$ g $CaCO_3$ ($M=100$)?', options: ['$0{,}1$', '$0{,}5$', '$1$', '$0{,}2$'], answer: 3, explanation: '$n=20/100=0{,}2$ mol.' },
         { stem: 'Khối lượng của $0{,}3$ mol NaCl ($M=58{,}5$)?', options: ['$17{,}55$ g', '$11{,}7$ g', '$23{,}4$ g', '$29{,}25$ g'], answer: 0, explanation: '$m=0{,}3\\cdot58{,}5=17{,}55$ g.' },
@@ -1515,7 +1515,7 @@ const EXAMS = {
 
   ANH: [
     {
-      examId: 'anh-kt45-1', title: 'Kiểm tra 45′ #1 — Grammar (Tiếng Anh 12)', durationMin: 45,
+      examId: 'anh-kt45-1', title: 'Kiểm tra 45′ #1 — Grammar (Tiếng Anh 12)', title_en: '45-min test #1 — Grammar (English 12)', durationMin: 45,
       questions: [
         { stem: 'She ____ here since 2010.', options: ['lives', 'has lived', 'lived', 'living'], answer: 1, explanation: 'since + mốc thời gian ⇒ present perfect.' },
         { stem: 'A letter ____ by Tom yesterday.', options: ['writes', 'wrote', 'was written', 'is writing'], answer: 2, explanation: 'Bị động quá khứ: was + V3.' },
@@ -1530,7 +1530,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-2', title: 'Kiểm tra 45′ #2 — Grammar (Tiếng Anh 12)', durationMin: 45,
+      examId: 'anh-kt45-2', title: 'Kiểm tra 45′ #2 — Grammar (Tiếng Anh 12)', title_en: '45-min test #2 — Grammar (English 12)', durationMin: 45,
       questions: [
         { stem: 'He suggested ____ a short break.', options: ['take', 'to take', 'took', 'taking'], answer: 3, explanation: 'suggest + V-ing.' },
         { stem: 'By the time we arrived, the film ____.', options: ['had started', 'has started', 'started', 'starts'], answer: 0, explanation: 'Quá khứ hoàn thành cho hành động xảy ra trước.' },
@@ -1545,7 +1545,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-3', title: 'Kiểm tra 45′ #3 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-3', title: 'Kiểm tra 45′ #3 — Grammar & Vocabulary', title_en: '45-min test #3 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She has worked here ____ five years.', options: ['since', 'in', 'for', 'ago'], answer: 2, explanation: 'for + khoảng thời gian.' },
         { stem: 'The book ____ is on the table is mine.', options: ['which', 'who', 'whose', 'where'], answer: 0, explanation: 'which/that thay cho vật.' },
@@ -1560,7 +1560,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-4', title: 'Kiểm tra 45′ #4 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-4', title: 'Kiểm tra 45′ #4 — Grammar & Vocabulary', title_en: '45-min test #4 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'If I ____ rich, I would help the poor.', options: ['am', 'was', 'were', 'be'], answer: 2, explanation: 'Điều kiện loại 2: were.' },
         { stem: 'The letter ____ yesterday.', options: ['sends', 'was sent', 'sent', 'is sending'], answer: 1, explanation: 'Bị động quá khứ.' },
@@ -1575,7 +1575,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-5', title: 'Kiểm tra 45′ #5 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-5', title: 'Kiểm tra 45′ #5 — Grammar & Vocabulary', title_en: '45-min test #5 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'I ____ my homework already.', options: ['do', 'did', 'have done', 'doing'], answer: 2, explanation: 'already + present perfect.' },
         { stem: 'He asked me if I ____ free.', options: ['was', 'am', 'is', 'be'], answer: 0, explanation: 'Câu tường thuật ⇒ lùi thì.' },
@@ -1590,7 +1590,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-6', title: 'Kiểm tra 45′ #6 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-6', title: 'Kiểm tra 45′ #6 — Grammar & Vocabulary', title_en: '45-min test #6 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She suggested that he ____ a doctor.', options: ['sees', 'saw', 'see', 'seeing'], answer: 2, explanation: 'suggest that + S + V nguyên thể (giả định).' },
         { stem: "It's high time we ____.", options: ['leave', 'leaving', 'to leave', 'left'], answer: 3, explanation: "It's high time + S + V quá khứ." },
@@ -1605,7 +1605,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-7', title: 'Kiểm tra 45′ #7 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-7', title: 'Kiểm tra 45′ #7 — Grammar & Vocabulary', title_en: '45-min test #7 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'By the time we arrived, the film ____.', options: ['started', 'has started', 'starts', 'had already started'], answer: 3, explanation: 'Hành động xảy ra trước trong quá khứ ⇒ past perfect.' },
         { stem: 'She suggested ____ a break.', options: ['taking', 'to take', 'take', 'taken'], answer: 0, explanation: 'suggest + V-ing.' },
@@ -1620,7 +1620,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-8', title: 'Kiểm tra 45′ #8 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-8', title: 'Kiểm tra 45′ #8 — Grammar & Vocabulary', title_en: '45-min test #8 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She has lived in this town ____ 2010.', options: ['for', 'since', 'during', 'by'], answer: 1, explanation: 'since + mốc thời gian (hiện tại hoàn thành).' },
         { stem: 'The book ____ I borrowed from the library was fascinating.', options: ['who', 'where', 'whose', 'which'], answer: 3, explanation: 'which thay cho vật, làm tân ngữ.' },
@@ -1635,7 +1635,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-9', title: 'Kiểm tra 45′ #9 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-9', title: 'Kiểm tra 45′ #9 — Grammar & Vocabulary', title_en: '45-min test #9 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'The house ____ in 1990 is still standing.', options: ['building', 'build', 'builds', 'built'], answer: 3, explanation: 'Mệnh đề quan hệ rút gọn bị động: built = which was built.' },
         { stem: 'I wish I ____ more time to finish the project.', options: ['have', 'had', 'will have', 'having'], answer: 1, explanation: 'wish + quá khứ đơn (ước hiện tại).' },
@@ -1650,7 +1650,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-10', title: 'Kiểm tra 45′ #10 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-10', title: 'Kiểm tra 45′ #10 — Grammar & Vocabulary', title_en: '45-min test #10 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She asked me ____ I had finished the report.', options: ['that', 'what', 'which', 'if'], answer: 3, explanation: 'Câu hỏi gián tiếp Yes/No dùng if/whether.' },
         { stem: 'The more he earns, the more he ____.', options: ['spend', 'spends', 'spending', 'spent'], answer: 1, explanation: 'Chủ ngữ "he" + hiện tại đơn ⇒ spends.' },
@@ -1665,7 +1665,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-11', title: 'Kiểm tra 45′ #11 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-11', title: 'Kiểm tra 45′ #11 — Grammar & Vocabulary', title_en: '45-min test #11 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'The report needs ____ before the deadline tomorrow.', options: ['to finish', 'finished', 'finish', 'finishing'], answer: 3, explanation: 'need + V-ing mang nghĩa bị động (= needs to be finished).' },
         { stem: 'No sooner had I arrived ____ the meeting started.', options: ['than', 'when', 'then', 'that'], answer: 0, explanation: 'No sooner … than … (vừa mới … thì …).' },
@@ -1680,7 +1680,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-12', title: 'Kiểm tra 45′ #12 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-12', title: 'Kiểm tra 45′ #12 — Grammar & Vocabulary', title_en: '45-min test #12 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She works as ____ engineer at a large company.', options: ['a', 'the', '(no article)', 'an'], answer: 3, explanation: 'engineer bắt đầu bằng nguyên âm ⇒ an.' },
         { stem: 'There ____ a lot of people at the concert last night.', options: ['were', 'was', 'is', 'has'], answer: 0, explanation: 'people số nhiều + quá khứ ⇒ were.' },
@@ -1695,7 +1695,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-13', title: 'Kiểm tra 45′ #13 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-13', title: 'Kiểm tra 45′ #13 — Grammar & Vocabulary', title_en: '45-min test #13 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'He ____ just arrived at the airport.', options: ['have', 'had', 'is', 'has'], answer: 3, explanation: 'Hiện tại hoàn thành với "just": has + V3.' },
         { stem: 'If you had told me earlier, I ____ you.', options: ['would have helped', 'will have helped', 'had helped', 'have helped'], answer: 0, explanation: 'Câu điều kiện loại 3: would have + V3.' },
@@ -1710,7 +1710,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-14', title: 'Kiểm tra 45′ #14 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-14', title: 'Kiểm tra 45′ #14 — Grammar & Vocabulary', title_en: '45-min test #14 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'I wish I ____ to the party last night.', options: ['went', 'go', 'have gone', 'had gone'], answer: 3, explanation: 'wish + quá khứ hoàn thành (tiếc về quá khứ).' },
         { stem: 'The teacher told us ____ talk during the test.', options: ['not to', 'to not', "don't", 'not'], answer: 0, explanation: 'tell sb not to + V (mệnh lệnh phủ định gián tiếp).' },
@@ -1725,7 +1725,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-15', title: 'Kiểm tra 45′ #15 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-15', title: 'Kiểm tra 45′ #15 — Grammar & Vocabulary', title_en: '45-min test #15 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'By the time she arrives, we ____ dinner.', options: ['finish', 'will finish', 'will have finished', 'finished'], answer: 2, explanation: 'Tương lai hoàn thành: will have + V3.' },
         { stem: "I'm not used to ____ up early in the morning.", options: ['get', 'got', 'gets', 'getting'], answer: 3, explanation: 'be used to + V-ing.' },
@@ -1740,7 +1740,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-16', title: 'Kiểm tra 45′ #16 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-16', title: 'Kiểm tra 45′ #16 — Grammar & Vocabulary', title_en: '45-min test #16 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'I have been waiting ____ two hours.', options: ['since', 'during', 'in', 'for'], answer: 3, explanation: 'for + khoảng thời gian.' },
         { stem: 'The children ____ playing outside when it started to rain.', options: ['were', 'was', 'are', 'is'], answer: 0, explanation: 'Quá khứ tiếp diễn, chủ ngữ số nhiều ⇒ were.' },
@@ -1755,7 +1755,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-17', title: 'Kiểm tra 45′ #17 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-17', title: 'Kiểm tra 45′ #17 — Grammar & Vocabulary', title_en: '45-min test #17 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: "She is the most talented singer ____ I've ever heard.", options: ['who', 'which', 'whom', 'that'], answer: 3, explanation: 'Sau so sánh nhất thường dùng that.' },
         { stem: 'We ____ to the beach if the weather is nice tomorrow.', options: ['will go', 'go', 'would go', 'went'], answer: 0, explanation: 'Câu điều kiện loại 1: will + V.' },
@@ -1770,7 +1770,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-18', title: 'Kiểm tra 45′ #18 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-18', title: 'Kiểm tra 45′ #18 — Grammar & Vocabulary', title_en: '45-min test #18 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'Look! The bus ____.', options: ['is coming', 'comes', 'came', 'come'], answer: 0, explanation: 'Hành động đang diễn ra (Look!) ⇒ hiện tại tiếp diễn.' },
         { stem: "I haven't seen him ____ last week.", options: ['for', 'ago', 'during', 'since'], answer: 3, explanation: 'since + mốc thời gian.' },
@@ -1785,7 +1785,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-19', title: 'Kiểm tra 45′ #19 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-19', title: 'Kiểm tra 45′ #19 — Grammar & Vocabulary', title_en: '45-min test #19 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She has been working here ____ ten years.', options: ['since', 'in', 'ago', 'for'], answer: 3, explanation: 'for + khoảng thời gian.' },
         { stem: 'If he ____ earlier, he would have caught the train.', options: ['leaves', 'left', 'had left', 'has left'], answer: 2, explanation: 'Câu điều kiện loại 3: had + V3.' },
@@ -1800,7 +1800,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-20', title: 'Kiểm tra 45′ #20 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-20', title: 'Kiểm tra 45′ #20 — Grammar & Vocabulary', title_en: '45-min test #20 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'By the time the police arrived, the thief ____.', options: ['escapes', 'escaped', 'has escaped', 'had escaped'], answer: 3, explanation: 'Hành động trước trong quá khứ ⇒ quá khứ hoàn thành.' },
         { stem: "I'm interested in ____ more about history.", options: ['learning', 'learn', 'to learn', 'learned'], answer: 0, explanation: 'be interested in + V-ing.' },
@@ -1815,7 +1815,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-21', title: 'Kiểm tra 45′ #21 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-21', title: 'Kiểm tra 45′ #21 — Grammar & Vocabulary', title_en: '45-min test #21 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: "I'll call you when I ____ home.", options: ['will get', 'got', 'getting', 'get'], answer: 3, explanation: 'Mệnh đề thời gian dùng hiện tại đơn (get).' },
         { stem: "She's the woman ____ I met at the conference yesterday.", options: ['whom', 'who', 'which', 'whose'], answer: 0, explanation: 'whom làm tân ngữ chỉ người.' },
@@ -1830,7 +1830,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-22', title: 'Kiểm tra 45′ #22 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-22', title: 'Kiểm tra 45′ #22 — Grammar & Vocabulary', title_en: '45-min test #22 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'They ____ married for 20 years.', options: ['have been', 'are', 'were', 'has been'], answer: 0, explanation: 'Hiện tại hoàn thành chỉ thời gian kéo dài đến nay: have been.' },
         { stem: "I'd like ____ a cup of coffee, please.", options: ['to have', 'have', 'having', 'had'], answer: 0, explanation: 'would like + to + V.' },
@@ -1845,7 +1845,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-23', title: 'Kiểm tra 45′ #23 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-23', title: 'Kiểm tra 45′ #23 — Grammar & Vocabulary', title_en: '45-min test #23 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She wishes she ____ a car to drive to work.', options: ['had', 'has', 'have', 'having'], answer: 0, explanation: 'wish + quá khứ đơn (ước hiện tại).' },
         { stem: "I'll wait here until you ____.", options: ['will arrive', 'arrived', 'arriving', 'arrive'], answer: 3, explanation: 'Mệnh đề thời gian dùng hiện tại đơn (arrive).' },
@@ -1860,7 +1860,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-24', title: 'Kiểm tra 45′ #24 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-24', title: 'Kiểm tra 45′ #24 — Grammar & Vocabulary', title_en: '45-min test #24 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: "I haven't decided ____ to go on holiday yet.", options: ['where', 'what', 'who', 'how'], answer: 0, explanation: 'where + to V (nơi để đi).' },
         { stem: "She's been studying English ____ she was ten.", options: ['for', 'during', 'when', 'since'], answer: 3, explanation: 'since + mốc thời gian (mệnh đề quá khứ).' },
@@ -1875,7 +1875,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-25', title: 'Kiểm tra 45′ #25 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-25', title: 'Kiểm tra 45′ #25 — Grammar & Vocabulary', title_en: '45-min test #25 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: "If I ____ you, I'd take the job offer.", options: ['were', 'am', 'was', 'be'], answer: 0, explanation: 'Câu điều kiện loại 2: If I were you …' },
         { stem: "He's lived in this house ____ 2010.", options: ['for', 'ago', 'by', 'since'], answer: 3, explanation: 'since + mốc thời gian.' },
@@ -1890,7 +1890,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-26', title: 'Kiểm tra 45′ #26 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-26', title: 'Kiểm tra 45′ #26 — Grammar & Vocabulary', title_en: '45-min test #26 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'She asked me what time ____.', options: ['it was', 'was it', 'is it', 'it is'], answer: 0, explanation: 'Câu hỏi gián tiếp: trật tự S + V (it was).' },
         { stem: 'He is ____ tired to continue working.', options: ['so', 'very', 'enough', 'too'], answer: 3, explanation: 'too + adj + to V (quá … để).' },
@@ -1905,7 +1905,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-27', title: 'Kiểm tra 45′ #27 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-27', title: 'Kiểm tra 45′ #27 — Grammar & Vocabulary', title_en: '45-min test #27 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'Do you mind if I ____ the window?', options: ['open', 'to open', 'opening', 'opened'], answer: 0, explanation: 'if I + hiện tại đơn (open).' },
         { stem: "I haven't seen her ____ ages.", options: ['since', 'ago', 'by', 'for'], answer: 3, explanation: 'for + khoảng thời gian (for ages).' },
@@ -1920,7 +1920,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-28', title: 'Kiểm tra 45′ #28 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-28', title: 'Kiểm tra 45′ #28 — Grammar & Vocabulary', title_en: '45-min test #28 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'Would you like ____ tea?', options: ['some', 'any', 'much', 'many'], answer: 0, explanation: 'Lời mời/đề nghị dùng "some".' },
         { stem: 'She really enjoys ____ books in her free time.', options: ['reading', 'read', 'to read', 'reads'], answer: 0, explanation: 'enjoy + V-ing.' },
@@ -1935,7 +1935,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-29', title: 'Kiểm tra 45′ #29 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-29', title: 'Kiểm tra 45′ #29 — Grammar & Vocabulary', title_en: '45-min test #29 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: 'How long ____ you known him?', options: ['have', 'do', 'did', 'has'], answer: 0, explanation: 'Hiện tại hoàn thành: have + S + V3.' },
         { stem: 'She ____ to London twice this year.', options: ['went', 'was', 'going', 'has been'], answer: 3, explanation: 'has been to = đã từng đến (kinh nghiệm).' },
@@ -1950,7 +1950,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-30', title: 'Kiểm tra 45′ #30 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-30', title: 'Kiểm tra 45′ #30 — Grammar & Vocabulary', title_en: '45-min test #30 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: "I've never met ____ a kind person before.", options: ['such', 'so', 'very', 'too'], answer: 0, explanation: 'such + (a) + adj + noun.' },
         { stem: "He works ____ hard that he's always tired.", options: ['such', 'very', 'too', 'so'], answer: 3, explanation: 'so + adj/adv + that.' },
@@ -1965,7 +1965,7 @@ const EXAMS = {
       ],
     },
     {
-      examId: 'anh-kt45-31', title: 'Kiểm tra 45′ #31 — Grammar & Vocabulary', durationMin: 45,
+      examId: 'anh-kt45-31', title: 'Kiểm tra 45′ #31 — Grammar & Vocabulary', title_en: '45-min test #31 — Grammar & Vocabulary', durationMin: 45,
       questions: [
         { stem: "She's the girl ____ won the first prize.", options: ['who', 'which', 'whose', 'whom'], answer: 0, explanation: 'who làm chủ ngữ chỉ người.' },
         { stem: 'We ____ dinner when they arrived.', options: ['had', 'were having', 'have', 'has'], answer: 1, explanation: 'Quá khứ tiếp diễn (đang ăn thì bị cắt ngang).' },
