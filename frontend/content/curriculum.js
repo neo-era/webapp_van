@@ -1182,6 +1182,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Khí nhận nhiệt $Q=100$ J và sinh công $A'=40$ J. Độ biến thiên nội năng?</p>
                   <details><summary>Đáp án</summary><p>$\\Delta U=Q-A'=100-40=60$ J.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 1 — quá trình đẳng áp):</strong>
+                  <ol>
+                    <li>Quá trình đẳng áp (áp suất không đổi) ⇒ áp dụng định luật Charles: $\\dfrac{V}{T}=$ const.</li>
+                    <li>Viết cho hai trạng thái: $\\dfrac{V_1}{T_1}=\\dfrac{V_2}{T_2}$.</li>
+                    <li>Thay số: $\\dfrac{2}{300}=\\dfrac{V_2}{450}$.</li>
+                    <li>Suy ra $V_2=\\dfrac{2\\cdot450}{300}=3$ L (lưu ý nhiệt độ luôn tính theo Kelvin).</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -1209,6 +1217,13 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Khi hạt chuyển động song song với $\\vec{B}$ ($\\theta=0$), lực Lorentz bằng bao nhiêu?</p>
                   <details><summary>Đáp án</summary><p>$f=qvB\\sin0=0$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 1 — cảm ứng từ của dòng điện thẳng):</strong>
+                  <ol>
+                    <li>Công thức cảm ứng từ của dòng điện thẳng dài: $B=2\\cdot10^{-7}\\cdot\\dfrac{I}{r}$.</li>
+                    <li>Thay $I=5$ A, $r=0{,}1$ m: $B=2\\cdot10^{-7}\\cdot\\dfrac{5}{0{,}1}$.</li>
+                    <li>Tính: $\\dfrac{5}{0{,}1}=50$ ⇒ $B=2\\cdot10^{-7}\\cdot50=10^{-5}$ T.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -1235,6 +1250,14 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>Bảo toàn: $A=14+4-17=1$, $Z=7+2-8=1$ ⇒ $X=^{1}_{1}H$ (proton).</p></details>
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Độ hụt khối $\\Delta m=0{,}2\\,u$. Năng lượng liên kết xấp xỉ?</p>
                   <details><summary>Đáp án</summary><p>$E=0{,}2\\cdot931{,}5\\approx186{,}3$ MeV.</p></details>
+                </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 2 — bảo toàn trong phản ứng hạt nhân):</strong>
+                  <ol>
+                    <li>Trong mọi phản ứng hạt nhân, bảo toàn tổng số khối $A$ và tổng điện tích $Z$ ở hai vế.</li>
+                    <li>Bảo toàn số khối: $A_X=(14+4)-17=1$.</li>
+                    <li>Bảo toàn điện tích: $Z_X=(7+2)-8=1$.</li>
+                    <li>Hạt có $A=1, Z=1$ chính là proton: $X={}^{1}_{1}H$.</li>
+                  </ol>
                 </div>
               `,
             },
@@ -1445,6 +1468,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Sản phẩm xà phòng hóa chất béo gồm những chất nào?</p>
                   <details><summary>Đáp án</summary><p>Glycerol và muối của acid béo (xà phòng).</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (ví dụ xà phòng hóa etyl axetat):</strong>
+                  <ol>
+                    <li>Tính số mol ester: $n=\\dfrac{m}{M}=\\dfrac{8{,}8}{88}=0{,}1$ mol.</li>
+                    <li>Phương trình: $CH_3COOC_2H_5 + NaOH \\to CH_3COONa + C_2H_5OH$ (tỉ lệ $1:1:1$).</li>
+                    <li>Theo tỉ lệ ⇒ $n_{muối}=n_{ester}=0{,}1$ mol.</li>
+                    <li>Khối lượng muối: $m=n\\cdot M=0{,}1\\cdot82=8{,}2$ g.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -1470,6 +1501,13 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Cho $0{,}1$ mol Fe tác dụng HCl dư. Thể tích $H_2$ (đktc)?</p>
                   <details><summary>Đáp án</summary><p>$n_{H_2}=0{,}1 \\Rightarrow V=2{,}24$ lít.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 2 — kim loại đẩy kim loại khỏi muối):</strong>
+                  <ol>
+                    <li>Zn mạnh hơn Cu ⇒ phản ứng: $Zn + CuSO_4 \\to ZnSO_4 + Cu$ (tỉ lệ $1:1$).</li>
+                    <li>Theo tỉ lệ: $n_{Cu}=n_{Zn}=0{,}2$ mol.</li>
+                    <li>Khối lượng Cu: $m=n\\cdot M=0{,}2\\cdot64=12{,}8$ g.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -1494,6 +1532,13 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$n=\\dfrac{62500}{62{,}5}=1000$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Số đồng phân amine bậc một ứng với công thức $C_3H_9N$?</p>
                   <details><summary>Đáp án</summary><p>2 đồng phân: $CH_3CH_2CH_2NH_2$ và $(CH_3)_2CHNH_2$.</p></details>
+                </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 2 — số mắt xích polymer):</strong>
+                  <ol>
+                    <li>Hệ số polime hóa (số mắt xích): $n=\\dfrac{M_{polymer}}{M_{monomer}}$.</li>
+                    <li>Monome là vinyl clorua $C_2H_3Cl$ có $M=24+3+35{,}5=62{,}5$.</li>
+                    <li>Thay số: $n=\\dfrac{62500}{62{,}5}=1000$ mắt xích.</li>
+                  </ol>
                 </div>
               `,
             },
@@ -2837,6 +2882,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Một phản ứng theo lí thuyết tạo $1$ mol sản phẩm nhưng thực tế chỉ thu $0{,}75$ mol. Tính hiệu suất.</p>
                   <details><summary>Đáp án</summary><p>$H=\\dfrac{0{,}75}{1}\\cdot100\\%=75\\%$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 1 — đốt cháy đồng):</strong>
+                  <ol>
+                    <li>Tính số mol Cu: $n_{Cu}=\\dfrac{6{,}4}{64}=0{,}1$ mol.</li>
+                    <li>Phương trình $2Cu+O_2\\to 2CuO$ cho tỉ lệ $Cu:CuO=1:1$ ⇒ $n_{CuO}=0{,}1$ mol.</li>
+                    <li>Khối lượng mol $CuO=64+16=80$.</li>
+                    <li>Khối lượng CuO: $m=0{,}1\\cdot80=8$ g.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -2865,6 +2918,13 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Một máy nâng cần công có ích $800$ J nhưng tiêu tốn $1000$ J. Tính hiệu suất.</p>
                   <details><summary>Đáp án</summary><p>$H=\\dfrac{800}{1000}\\cdot100\\%=80\\%$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 1 — nhiệt lượng thu vào):</strong>
+                  <ol>
+                    <li>Công thức nhiệt lượng: $Q=m\\cdot c\\cdot\\Delta t$.</li>
+                    <li>Thay $m=1{,}5$ kg, $c=4200$ J/kg·K, $\\Delta t=40^\\circ C$.</li>
+                    <li>$Q=1{,}5\\cdot4200\\cdot40=252000$ J $=252$ kJ.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -2890,6 +2950,13 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>Giảm lượng máu ⇒ giảm vận chuyển $O_2$ và dinh dưỡng tới tế bào, tụt huyết áp, có thể gây sốc và tử vong.</p></details>
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Tiêm vaccine giúp cơ thể tạo loại miễn dịch nào?</p>
                   <details><summary>Đáp án</summary><p>Miễn dịch chủ động (cơ thể tự sinh kháng thể nhờ kháng nguyên trong vaccine).</p></details>
+                </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 1 — lưu lượng tim):</strong>
+                  <ol>
+                    <li>Lưu lượng tim mỗi phút = (thể tích tâm thu) × (nhịp tim).</li>
+                    <li>Thay số: $60$ mL $\\times\\ 80$ lần/phút.</li>
+                    <li>$=4800$ mL $=4{,}8$ lít/phút.</li>
+                  </ol>
                 </div>
               `,
             },
