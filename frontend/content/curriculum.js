@@ -1833,6 +1833,147 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-toan8-hsg', title: '🏆 Chuyên đề · Bồi dưỡng HSG & Olympic Toán 8',
+          lessons: [
+            {
+              id: 'l-toan8-hsg-phantich', title: 'Phân tích đa thức & hằng đẳng thức nâng cao', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi — kĩ thuật thi HSG</h2>
+                <ul>
+                  <li><strong>Hằng đẳng thức mở rộng:</strong> $a^3+b^3+c^3-3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca)$. Hệ quả: nếu $a+b+c=0$ thì $a^3+b^3+c^3=3abc$.</li>
+                  <li><strong>Thêm – bớt hạng tử</strong> để tạo hằng đẳng thức (kĩ thuật Sophie Germain): $a^4+4b^4 = (a^2+2b^2)^2-(2ab)^2 = (a^2-2ab+2b^2)(a^2+2ab+2b^2)$.</li>
+                  <li><strong>Nhẩm nghiệm hữu tỉ:</strong> nghiệm nguyên của đa thức hệ số nguyên là ước của hạng tử tự do; tìm được nghiệm $x=r$ thì tách được nhân tử $(x-r)$.</li>
+                  <li><strong>Đặt ẩn phụ</strong> và <strong>hệ số bất định</strong> cho đa thức bậc cao.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Phân tích $x^4+4 = x^4+4x^2+4-4x^2 = (x^2+2)^2-(2x)^2 = (x^2-2x+2)(x^2+2x+2)$.</p>
+                  <p>2) Phân tích $x^3-7x+6$: nhẩm $x=1$ là nghiệm ⇒ $(x-1)(x^2+x-6) = (x-1)(x-2)(x+3)$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Phân tích $x^4+x^2+1$.</p>
+                  <details><summary>Đáp án</summary><p>$(x^2+1)^2-x^2 = (x^2-x+1)(x^2+x+1)$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Cho $a+b+c=0$. Tính $a^3+b^3+c^3$ theo $abc$.</p>
+                  <details><summary>Đáp án</summary><p>$a^3+b^3+c^3 = 3abc$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Phân tích $x^3-3x^2+4$.</p>
+                  <details><summary>Đáp án</summary><p>Nhẩm $x=-1$: $-1-3+4=0$ ⇒ $(x+1)(x^2-4x+4) = (x+1)(x-2)^2$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-hsg-bdt', title: 'Bất đẳng thức AM–GM (Cauchy) & ứng dụng', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>AM–GM hai số</strong> ($a,b\\ge0$): $a+b \\ge 2\\sqrt{ab}$, dấu "=" khi $a=b$.</li>
+                  <li><strong>AM–GM ba số</strong> ($a,b,c\\ge0$): $a+b+c \\ge 3\\sqrt[3]{abc}$.</li>
+                  <li><strong>Hệ quả thường dùng:</strong> với $x>0$ thì $x+\\dfrac{1}{x}\\ge2$; $\\dfrac{a}{b}+\\dfrac{b}{a}\\ge2$.</li>
+                  <li><strong>Cauchy–Schwarz dạng cộng mẫu (Engel):</strong> $\\dfrac{a^2}{x}+\\dfrac{b^2}{y} \\ge \\dfrac{(a+b)^2}{x+y}$ ($x,y>0$).</li>
+                </ul>
+                <div class="luuy"><strong>Chú ý:</strong> luôn kiểm tra điều kiện dương và chỉ ra điều kiện xảy ra dấu "=" mới được điểm tối đa.</div>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Cho $a,b>0$. Chứng minh $(a+b)\\left(\\dfrac{1}{a}+\\dfrac{1}{b}\\right)\\ge4$.</p>
+                  <p><strong>Giải:</strong> Khai triển $= 2 + \\dfrac{a}{b}+\\dfrac{b}{a} \\ge 2 + 2 = 4$ (AM–GM). Dấu "=" khi $a=b$.</p>
+                  <p>2) Tìm GTNN của $f(x)=x+\\dfrac{4}{x}$ với $x>0$.</p>
+                  <p><strong>Giải:</strong> $x+\\dfrac{4}{x}\\ge2\\sqrt{4}=4$, dấu "=" khi $x=2$. Vậy $\\min f = 4$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Cho $a,b,c>0$. Chứng minh $\\dfrac{a}{b}+\\dfrac{b}{c}+\\dfrac{c}{a}\\ge3$.</p>
+                  <details><summary>Đáp án</summary><p>AM–GM ba số: $\\ge3\\sqrt[3]{\\dfrac{a}{b}\\cdot\\dfrac{b}{c}\\cdot\\dfrac{c}{a}}=3\\sqrt[3]{1}=3$. Dấu "=" khi $a=b=c$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm GTNN của $g(x)=x+\\dfrac{9}{x}$ với $x>0$.</p>
+                  <details><summary>Đáp án</summary><p>$\\ge2\\sqrt9=6$, dấu "=" khi $x=3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Cho $x,y>0$ và $x+y=1$. Dùng Engel chứng minh $\\dfrac{1}{x}+\\dfrac{1}{y}\\ge4$.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{1^2}{x}+\\dfrac{1^2}{y}\\ge\\dfrac{(1+1)^2}{x+y}=\\dfrac{4}{1}=4$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-hsg-sohoc', title: 'Số học: chia hết, đồng dư, nguyên lí Dirichlet', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Đồng dư:</strong> $a\\equiv b\\ (\\text{mod } m)$ nếu $a-b$ chia hết cho $m$; có thể cộng, trừ, nhân hai vế theo cùng modulo.</li>
+                  <li><strong>Tích các số nguyên liên tiếp:</strong> tích $k$ số nguyên liên tiếp luôn chia hết cho $k!$ (vd tích 3 số liên tiếp chia hết cho $6$).</li>
+                  <li><strong>Nguyên lí Dirichlet (chuồng – thỏ):</strong> nhốt nhiều hơn $n$ vật vào $n$ ngăn thì có ngăn chứa từ $2$ vật trở lên.</li>
+                  <li><strong>Phương trình nghiệm nguyên:</strong> thường đưa về dạng tích $(\\,)\\cdot(\\,)=\\text{số}$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Chứng minh $n^3-n$ chia hết cho $6$ với mọi số nguyên $n$.</p>
+                  <p><strong>Giải:</strong> $n^3-n=(n-1)n(n+1)$ là tích 3 số nguyên liên tiếp ⇒ chia hết cho cả $2$ và $3$ ⇒ chia hết cho $6$.</p>
+                  <p>2) Tìm nghiệm nguyên dương của $xy=x+y$.</p>
+                  <p><strong>Giải:</strong> $xy-x-y+1=1 \\Rightarrow (x-1)(y-1)=1 \\Rightarrow x-1=y-1=1 \\Rightarrow x=y=2$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm số dư khi chia $2^{100}$ cho $3$.</p>
+                  <details><summary>Đáp án</summary><p>$2\\equiv-1\\ (\\text{mod }3)\\Rightarrow 2^{100}\\equiv(-1)^{100}=1$. Số dư là $1$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Chứng minh trong $3$ số nguyên bất kì luôn có hai số có hiệu chia hết cho $2$.</p>
+                  <details><summary>Đáp án</summary><p>Mỗi số chẵn/lẻ ⇒ chỉ có 2 "ngăn" (số dư 0 hoặc 1 khi chia 2). Có 3 số ⇒ theo Dirichlet, hai số cùng tính chẵn lẻ ⇒ hiệu chia hết cho $2$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tìm nghiệm nguyên dương của $(x-2)(y+1)=5$.</p>
+                  <details><summary>Đáp án</summary><p>$5=1\\cdot5=5\\cdot1$ ⇒ $(x-2;y+1)\\in\\{(1;5),(5;1)\\}\\Rightarrow(x;y)\\in\\{(3;4),(7;0)\\}$. Nghiệm nguyên dương: $(3;4)$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-hsg-cuctri', title: 'Cực trị đại số (GTLN – GTNN)', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Đưa về bình phương:</strong> $A=(\\text{biểu thức})^2 + k \\ge k$ ⇒ GTNN $=k$; $B=-(\\,)^2+k \\le k$ ⇒ GTLN $=k$.</li>
+                  <li><strong>Dùng AM–GM</strong> cho biểu thức có dạng tổng – tích các đại lượng dương.</li>
+                  <li>Luôn chỉ rõ giá trị của biến tại đó đạt cực trị.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Tìm GTNN của $A=x^2-4x+7$.</p>
+                  <p><strong>Giải:</strong> $A=(x-2)^2+3\\ge3$, dấu "=" khi $x=2$. Vậy $\\min A=3$.</p>
+                  <p>2) Tìm GTLN của $B=-x^2+6x-5$.</p>
+                  <p><strong>Giải:</strong> $B=-(x-3)^2+4\\le4$, dấu "=" khi $x=3$. Vậy $\\max B=4$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Tìm GTNN của $P=x^2+y^2-2x+4y+10$.</p>
+                  <details><summary>Đáp án</summary><p>$P=(x-1)^2+(y+2)^2+5\\ge5$, dấu "=" khi $x=1, y=-2$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm GTLN của $Q=x(10-x)$.</p>
+                  <details><summary>Đáp án</summary><p>$Q=-(x-5)^2+25\\le25$, dấu "=" khi $x=5$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tìm GTNN của $R=x^2+2x+5$.</p>
+                  <details><summary>Đáp án</summary><p>$R=(x+1)^2+4\\ge4$, dấu "=" khi $x=-1$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-toan8-hsg-hinhhoc', title: 'Hình học nâng cao: phân giác, Ceva – Menelaus', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Tính chất đường phân giác:</strong> phân giác trong góc $A$ của $\\triangle ABC$ cắt $BC$ tại $D$ thì $\\dfrac{BD}{DC}=\\dfrac{AB}{AC}$.</li>
+                  <li><strong>Định lí Ceva:</strong> ba đường $AD, BE, CF$ đồng quy $\\Leftrightarrow \\dfrac{BD}{DC}\\cdot\\dfrac{CE}{EA}\\cdot\\dfrac{AF}{FB}=1$.</li>
+                  <li><strong>Định lí Menelaus:</strong> ba điểm thẳng hàng trên ba cạnh (kéo dài) $\\Leftrightarrow \\dfrac{BD}{DC}\\cdot\\dfrac{CE}{EA}\\cdot\\dfrac{AF}{FB}=1$ (theo đoạn thẳng có hướng).</li>
+                  <li><strong>Bất đẳng thức tam giác:</strong> $|b-c|<a<b+c$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>$\\triangle ABC$ có $AB=6, AC=4, BC=5$, $AD$ là phân giác trong ($D\\in BC$). Tính $BD, DC$.</p>
+                  <p><strong>Giải:</strong> $\\dfrac{BD}{DC}=\\dfrac{AB}{AC}=\\dfrac{6}{4}=\\dfrac{3}{2}$ và $BD+DC=5 \\Rightarrow BD=3, DC=2$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> $\\triangle ABC$ có $AB=8, AC=6, BC=7$, $AD$ phân giác trong. Tính $BD, DC$.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{BD}{DC}=\\dfrac{8}{6}=\\dfrac{4}{3}$, $BD+DC=7\\Rightarrow BD=4, DC=3$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Một tam giác có hai cạnh $5$ và $9$. Cạnh thứ ba (số nguyên) nhận giá trị trong khoảng nào?</p>
+                  <details><summary>Đáp án</summary><p>$|9-5|<a<9+5 \\Rightarrow 4<a<14$, tức $a\\in\\{5,6,\\dots,13\\}$.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Phát biểu điều kiện Ceva để ba đường $AD, BE, CF$ đồng quy.</p>
+                  <details><summary>Đáp án</summary><p>$\\dfrac{BD}{DC}\\cdot\\dfrac{CE}{EA}\\cdot\\dfrac{AF}{FB}=1$.</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
