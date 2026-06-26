@@ -858,6 +858,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> GTNN của $f(x)=x^3-3x^2+1$ trên $[-1;1]$.</p>
                   <details><summary>Đáp án</summary><p>$f'=3x^2-6x=0\\Rightarrow x=0\\in[-1;1]$. $f(-1)=-3, f(0)=1, f(1)=-1$ ⇒ $\\min=-3$ tại $x=-1$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — GTLN/GTNN trên đoạn):</strong>
+                  <ol>
+                    <li>Tính đạo hàm: $f'(x)=3x^2-6x$.</li>
+                    <li>Giải $f'(x)=0 \\Leftrightarrow 3x(x-2)=0 \\Rightarrow x=0$ hoặc $x=2$; chỉ $x=0\\in[-1;1]$.</li>
+                    <li>Tính giá trị tại các điểm "nghi ngờ" và hai đầu mút: $f(-1)=-3,\\ f(0)=1,\\ f(1)=-1$.</li>
+                    <li>So sánh: $\\min_{[-1;1]} f = -3$ (tại $x=-1$), $\\max_{[-1;1]} f = 1$ (tại $x=0$).</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -884,6 +892,14 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$x\\sin x + \\cos x + C$ (từng phần).</p></details>
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Thể tích khối tròn xoay khi quay $y=\\sqrt{x}$ quanh $Ox$ trên $[0;4]$.</p>
                   <details><summary>Đáp án</summary><p>$V=\\pi\\displaystyle\\int_0^4 x\\,dx = \\pi\\big[\\tfrac{x^2}{2}\\big]_0^4 = 8\\pi$.</p></details>
+                </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — thể tích tròn xoay):</strong>
+                  <ol>
+                    <li>Công thức thể tích khi quay quanh $Ox$: $V=\\pi\\displaystyle\\int_a^b [f(x)]^2\\,dx$.</li>
+                    <li>Với $f(x)=\\sqrt{x}$ ⇒ $[f(x)]^2 = x$.</li>
+                    <li>Thay cận $a=0,\\ b=4$: $V=\\pi\\displaystyle\\int_0^4 x\\,dx$.</li>
+                    <li>Tính tích phân: $V=\\pi\\Big[\\dfrac{x^2}{2}\\Big]_0^4 = \\pi\\Big(\\dfrac{16}{2}-0\\Big)=8\\pi$.</li>
+                  </ol>
                 </div>
               `,
             },
@@ -912,6 +928,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Bán kính mặt cầu $x^2+y^2+z^2-6x+8=0$.</p>
                   <details><summary>Đáp án</summary><p>$(x-3)^2+y^2+z^2=9-8=1 \\Rightarrow R=1$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — tìm bán kính mặt cầu):</strong>
+                  <ol>
+                    <li>Nhóm các số hạng theo từng biến và hoàn chỉnh bình phương: $x^2-6x=(x-3)^2-9$.</li>
+                    <li>Thay vào phương trình: $(x-3)^2-9+y^2+z^2+8=0$.</li>
+                    <li>Chuyển vế: $(x-3)^2+y^2+z^2 = 1$.</li>
+                    <li>So với dạng chuẩn $(x-a)^2+(y-b)^2+(z-c)^2=R^2$ ⇒ tâm $I(3;0;0)$, bán kính $R=\\sqrt{1}=1$.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -936,6 +960,14 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$\\dfrac{C_3^2}{C_5^2}=\\dfrac{3}{10}$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Hộp I (2 đỏ, 1 xanh), hộp II (1 đỏ, 2 xanh). Chọn ngẫu nhiên một hộp rồi lấy 1 bi. Xác suất lấy được bi đỏ.</p>
                   <details><summary>Đáp án</summary><p>$\\dfrac12\\cdot\\dfrac23+\\dfrac12\\cdot\\dfrac13=\\dfrac12$.</p></details>
+                </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — công thức xác suất toàn phần):</strong>
+                  <ol>
+                    <li>Việc chọn hộp là ngẫu nhiên ⇒ $P(\\text{hộp I})=P(\\text{hộp II})=\\dfrac12$.</li>
+                    <li>Xác suất lấy bi đỏ trong từng hộp: $P(\\text{đỏ}\\mid I)=\\dfrac23$, $P(\\text{đỏ}\\mid II)=\\dfrac13$.</li>
+                    <li>Áp dụng công thức xác suất toàn phần: $P(\\text{đỏ})=P(I)P(\\text{đỏ}\\mid I)+P(II)P(\\text{đỏ}\\mid II)$.</li>
+                    <li>$=\\dfrac12\\cdot\\dfrac23+\\dfrac12\\cdot\\dfrac13=\\dfrac13+\\dfrac16=\\dfrac12$.</li>
+                  </ol>
                 </div>
               `,
             },
@@ -2217,6 +2249,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Phân tích $x^3-3x^2+4$.</p>
                   <details><summary>Đáp án</summary><p>Nhẩm $x=-1$: $-1-3+4=0$ ⇒ $(x+1)(x^2-4x+4) = (x+1)(x-2)^2$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — nhẩm nghiệm rồi tách nhân tử):</strong>
+                  <ol>
+                    <li>Thử các ước của hạng tử tự do $4$: với $x=-1$ ta có $(-1)^3-3(-1)^2+4=-1-3+4=0$ ⇒ $x=-1$ là nghiệm.</li>
+                    <li>Suy ra đa thức chia hết cho $(x+1)$. Thực hiện chia: $x^3-3x^2+4=(x+1)(x^2-4x+4)$.</li>
+                    <li>Nhận ra tam thức $x^2-4x+4=(x-2)^2$.</li>
+                    <li>Kết quả: $x^3-3x^2+4=(x+1)(x-2)^2$.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -2246,6 +2286,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Cho $x,y>0$ và $x+y=1$. Dùng Engel chứng minh $\\dfrac{1}{x}+\\dfrac{1}{y}\\ge4$.</p>
                   <details><summary>Đáp án</summary><p>$\\dfrac{1^2}{x}+\\dfrac{1^2}{y}\\ge\\dfrac{(1+1)^2}{x+y}=\\dfrac{4}{1}=4$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — dùng bất đẳng thức Engel):</strong>
+                  <ol>
+                    <li>Bất đẳng thức Cauchy–Schwarz dạng cộng mẫu (Engel): $\\dfrac{a^2}{x}+\\dfrac{b^2}{y}\\ge\\dfrac{(a+b)^2}{x+y}$.</li>
+                    <li>Viết lại $\\dfrac1x=\\dfrac{1^2}{x}$ và $\\dfrac1y=\\dfrac{1^2}{y}$ rồi áp dụng: $\\dfrac1x+\\dfrac1y\\ge\\dfrac{(1+1)^2}{x+y}=\\dfrac{4}{x+y}$.</li>
+                    <li>Thay điều kiện $x+y=1$: $\\dfrac1x+\\dfrac1y\\ge\\dfrac{4}{1}=4$.</li>
+                    <li>Dấu "=" xảy ra khi $\\dfrac{1}{x}=\\dfrac{1}{y}$, tức $x=y=\\dfrac12$.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -2274,6 +2322,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Tìm nghiệm nguyên dương của $(x-2)(y+1)=5$.</p>
                   <details><summary>Đáp án</summary><p>$5=1\\cdot5=5\\cdot1$ ⇒ $(x-2;y+1)\\in\\{(1;5),(5;1)\\}\\Rightarrow(x;y)\\in\\{(3;4),(7;0)\\}$. Nghiệm nguyên dương: $(3;4)$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — phương trình nghiệm nguyên dạng tích):</strong>
+                  <ol>
+                    <li>Vì $x,y$ nguyên nên $(x-2)$ và $(y+1)$ là các ước nguyên của $5$.</li>
+                    <li>Phân tích $5=1\\cdot5=5\\cdot1$ (chỉ xét ước dương vì cần $x,y$ nguyên dương).</li>
+                    <li>TH1: $x-2=1, y+1=5 \\Rightarrow x=3, y=4$ (thỏa). TH2: $x-2=5, y+1=1 \\Rightarrow x=7, y=0$ (loại vì $y>0$).</li>
+                    <li>Vậy nghiệm nguyên dương duy nhất là $(x;y)=(3;4)$.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -2301,6 +2357,14 @@ const CURRICULUM = {
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Tìm GTNN của $R=x^2+2x+5$.</p>
                   <details><summary>Đáp án</summary><p>$R=(x+1)^2+4\\ge4$, dấu "=" khi $x=-1$.</p></details>
                 </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 3 — đưa về bình phương):</strong>
+                  <ol>
+                    <li>Tách để tạo hằng đẳng thức: $R=x^2+2x+5=(x^2+2x+1)+4$.</li>
+                    <li>Viết gọn: $R=(x+1)^2+4$.</li>
+                    <li>Vì $(x+1)^2\\ge0$ với mọi $x$ nên $R\\ge4$.</li>
+                    <li>Dấu "=" xảy ra khi $(x+1)^2=0\\Leftrightarrow x=-1$. Vậy $\\min R=4$ tại $x=-1$.</li>
+                  </ol>
+                </div>
               `,
             },
             {
@@ -2326,6 +2390,14 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$|9-5|<a<9+5 \\Rightarrow 4<a<14$, tức $a\\in\\{5,6,\\dots,13\\}$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 3.</strong> Phát biểu điều kiện Ceva để ba đường $AD, BE, CF$ đồng quy.</p>
                   <details><summary>Đáp án</summary><p>$\\dfrac{BD}{DC}\\cdot\\dfrac{CE}{EA}\\cdot\\dfrac{AF}{FB}=1$.</p></details>
+                </div>
+                <div class="luuy"><strong>💡 Lời giải chi tiết (Bài 1 — tính chất đường phân giác):</strong>
+                  <ol>
+                    <li>Theo tính chất đường phân giác trong: $\\dfrac{BD}{DC}=\\dfrac{AB}{AC}=\\dfrac{8}{6}=\\dfrac{4}{3}$.</li>
+                    <li>Đặt $BD=4k,\\ DC=3k$ ⇒ $BD+DC=7k$.</li>
+                    <li>Mà $BD+DC=BC=7$ ⇒ $7k=7\\Rightarrow k=1$.</li>
+                    <li>Vậy $BD=4,\\ DC=3$.</li>
+                  </ol>
                 </div>
               `,
             },
