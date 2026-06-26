@@ -262,6 +262,7 @@ function rerender() {
   const render = {
     today: renderToday, learn: renderLearn, calendar: renderCalendar, goals: renderGoals,
     exam: renderExam, notes: renderNotes, profile: renderProfile, teacher: renderTeacher,
+    sim: renderSim,
   }[App.state.tab];
   if (render) render();
 }
@@ -563,6 +564,222 @@ async function savePassword() {
 }
 
 /* ============================================================
+   MÔ PHỎNG — Phòng thí nghiệm ảo Lý – Hóa
+   ============================================================ */
+const SIM_LIST = [
+  { key: 'lever', label: '⚖️ Đòn bẩy', tag: 'Lý 8' },
+  { key: 'arch', label: '🌊 Lực đẩy Archimedes', tag: 'Lý 8' },
+  { key: 'ohm', label: '⚡ Định luật Ohm', tag: 'Lý' },
+  { key: 'boyle', label: '🎈 Định luật Boyle (khí)', tag: 'Lý 12' },
+  { key: 'conc', label: '💧 Nồng độ dung dịch', tag: 'Hóa 8' },
+  { key: 'ph', label: '🧪 Thang pH', tag: 'Hóa 8' },
+];
+
+function renderSim() {
+  const cur = App.state.sim || (App.state.sim = 'lever');
+  $('#screen-sim').innerHTML = `
+    <div class="page-head">
+      <p class="link" onclick="switchTab('learn')">‹ Quay lại Học</p>
+      <h2>🔬 Phòng mô phỏng</h2><p>Kéo thanh trượt để xem hiện tượng thay đổi theo thời gian thực</p>
+    </div>
+    <div class="sim-tabs">
+      ${SIM_LIST.map((s) => `<button class="sim-tab ${s.key === cur ? 'active' : ''}" onclick="openSim('${s.key}')">${s.label}<small>${s.tag}</small></button>`).join('')}
+    </div>
+    <div class="card" id="sim-stage"></div>`;
+  openSim(cur);
+}
+
+function openSim(key) {
+  App.state.sim = key;
+  $$('.sim-tab').forEach((b) => b.classList.toggle('active', b.getAttribute('onclick').includes(`'${key}'`)));
+  ({ lever: simLever, arch: simArch, ohm: simOhm, boyle: simBoyle, conc: simConc, ph: simPH }[key])();
+}
+
+function simSlider(id, label, min, max, val, step, unit, fn) {
+  return `<label class="sim-row"><span>${label}</span>
+    <input id="${id}" type="range" min="${min}" max="${max}" value="${val}" step="${step || 1}" oninput="${fn}()">
+    <b id="${id}v">${val}</b>${unit ? ' ' + unit : ''}</label>`;
+}
+function simStage(controls) {
+  $('#sim-stage').innerHTML = `${controls}
+    <canvas id="sim-canvas" width="320" height="210" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+}
+function simCtx() {
+  const c = document.getElementById('sim-canvas');
+  const ctx = c.getContext('2d');
+  ctx.clearRect(0, 0, c.width, c.height);
+  return ctx;
+}
+function setv(id, v) { const e = document.getElementById(id + 'v'); if (e) e.textContent = v; }
+function numv(id) { return parseFloat(document.getElementById(id).value); }
+
+/* ⚖️ Đòn bẩy */
+function simLever() {
+  simStage(
+    simSlider('lev-f1', 'Lực F₁', 10, 100, 40, 1, 'N', 'simLeverUpdate') +
+    simSlider('lev-d1', 'Cánh tay đòn d₁', 10, 100, 50, 1, 'cm', 'simLeverUpdate') +
+    simSlider('lev-f2', 'Lực F₂', 10, 100, 50, 1, 'N', 'simLeverUpdate') +
+    simSlider('lev-d2', 'Cánh tay đòn d₂', 10, 100, 40, 1, 'cm', 'simLeverUpdate'));
+  simLeverUpdate();
+}
+function simLeverUpdate() {
+  const F1 = numv('lev-f1'), d1 = numv('lev-d1'), F2 = numv('lev-f2'), d2 = numv('lev-d2');
+  ['lev-f1', 'lev-d1', 'lev-f2', 'lev-d2'].forEach((id) => setv(id, numv(id)));
+  const t1 = F1 * d1, t2 = F2 * d2;
+  const ctx = simCtx();
+  const cx = 160, cy = 120;
+  let ang = Math.max(-0.32, Math.min(0.32, (t2 - t1) / 9000));
+  ctx.save(); ctx.translate(cx, cy); ctx.rotate(ang);
+  ctx.strokeStyle = '#4f46e5'; ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(-130, 0); ctx.lineTo(130, 0); ctx.stroke();
+  // tạ trái (F1) & phải (F2)
+  ctx.fillStyle = '#dc2626'; ctx.fillRect(-130, -6 - F1 * 0.4, 22, F1 * 0.4);
+  ctx.fillStyle = '#16a34a'; ctx.fillRect(108, -6 - F2 * 0.4, 22, F2 * 0.4);
+  ctx.restore();
+  // điểm tựa
+  ctx.fillStyle = '#475569'; ctx.beginPath(); ctx.moveTo(cx, cy + 2); ctx.lineTo(cx - 16, cy + 40); ctx.lineTo(cx + 16, cy + 40); ctx.closePath(); ctx.fill();
+  ctx.fillStyle = '#94a3b8'; ctx.font = '11px sans-serif';
+  ctx.fillText('F₁', cx - 126, cy + 56); ctx.fillText('F₂', cx + 112, cy + 56);
+  const bal = Math.abs(t1 - t2) < 50;
+  document.getElementById('sim-out').innerHTML =
+    `τ₁ = F₁·d₁ = <b>${t1}</b> &nbsp; | &nbsp; τ₂ = F₂·d₂ = <b>${t2}</b><br>` +
+    (bal ? '<span style="color:var(--success)">✅ Đòn bẩy CÂN BẰNG (τ₁ = τ₂)</span>'
+         : `<span style="color:var(--warning)">⚠️ Lệch về phía ${t1 > t2 ? 'F₁ (trái)' : 'F₂ (phải)'} — để cân bằng cần F₂ = ${(t1 / d2).toFixed(1)} N</span>`);
+}
+
+/* 🌊 Lực đẩy Archimedes */
+function simArch() {
+  simStage(simSlider('arch-d', 'Khối lượng riêng vật D', 200, 2500, 600, 10, 'kg/m³', 'simArchUpdate') +
+    `<p class="muted" style="font-size:.8rem">Khối lượng riêng của nước ≈ 1000 kg/m³</p>`);
+  simArchUpdate();
+}
+function simArchUpdate() {
+  const D = numv('arch-d'); setv('arch-d', D);
+  const ctx = simCtx();
+  // bể nước
+  ctx.fillStyle = '#dbeafe'; ctx.fillRect(40, 70, 240, 130);
+  ctx.strokeStyle = '#94a3b8'; ctx.strokeRect(40, 70, 240, 130);
+  ctx.strokeStyle = '#60a5fa'; ctx.beginPath(); ctx.moveTo(40, 80); ctx.lineTo(280, 80); ctx.stroke();
+  const water = 1000, bw = 60, bh = 46, bx = 130;
+  let state, by;
+  if (D < water) { const f = D / water; by = 80 - bh * (1 - f); state = 'NỔI'; }
+  else if (D === water) { by = 100; state = 'LƠ LỬNG'; }
+  else { by = 200 - bh - 4; state = 'CHÌM'; }
+  ctx.fillStyle = '#f59e0b'; ctx.fillRect(bx, by, bw, bh);
+  ctx.strokeStyle = '#b45309'; ctx.strokeRect(bx, by, bw, bh);
+  // mũi tên F_A (lên) và P (xuống)
+  ctx.strokeStyle = '#16a34a'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(bx + bw / 2, by); ctx.lineTo(bx + bw / 2, by - 24); ctx.stroke();
+  ctx.fillStyle = '#16a34a'; ctx.fillText('F_A', bx + bw / 2 + 4, by - 16);
+  ctx.strokeStyle = '#dc2626'; ctx.beginPath(); ctx.moveTo(bx + bw / 2, by + bh); ctx.lineTo(bx + bw / 2, by + bh + 24); ctx.stroke();
+  ctx.fillStyle = '#dc2626'; ctx.fillText('P', bx + bw / 2 + 4, by + bh + 18);
+  const cmp = D < water ? 'F_A > P' : (D > water ? 'F_A < P' : 'F_A = P');
+  document.getElementById('sim-out').innerHTML =
+    `Vật <b>${state}</b> &nbsp;(${cmp}) — D_vật ${D < water ? '<' : (D > water ? '>' : '=')} D_nước.`;
+}
+
+/* ⚡ Định luật Ohm */
+function simOhm() {
+  simStage(simSlider('ohm-u', 'Hiệu điện thế U', 0, 24, 12, 1, 'V', 'simOhmUpdate') +
+    simSlider('ohm-r', 'Điện trở R', 1, 100, 6, 1, 'Ω', 'simOhmUpdate'));
+  simOhmUpdate();
+}
+function simOhmUpdate() {
+  const U = numv('ohm-u'), R = numv('ohm-r'); setv('ohm-u', U); setv('ohm-r', R);
+  const I = U / R;
+  const ctx = simCtx();
+  ctx.strokeStyle = '#475569'; ctx.lineWidth = 2; ctx.strokeRect(60, 50, 200, 110);
+  // pin
+  ctx.strokeStyle = '#dc2626'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(150, 160); ctx.lineTo(150, 148); ctx.stroke();
+  ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(168, 160); ctx.lineTo(168, 144); ctx.stroke();
+  ctx.fillStyle = '#dc2626'; ctx.font = '11px sans-serif'; ctx.fillText('Nguồn U', 120, 178);
+  // bóng đèn — độ sáng theo I
+  const bright = Math.max(0, Math.min(1, I / 4));
+  ctx.fillStyle = `rgba(253,224,71,${0.2 + 0.8 * bright})`;
+  ctx.beginPath(); ctx.arc(160, 50, 16, 0, Math.PI * 2); ctx.fill();
+  ctx.strokeStyle = '#f59e0b'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(160, 50, 16, 0, Math.PI * 2); ctx.stroke();
+  ctx.fillStyle = '#475569'; ctx.fillText('Đèn (R)', 185, 50);
+  document.getElementById('sim-out').innerHTML =
+    `Cường độ dòng điện: I = U / R = ${U} / ${R} = <b>${I.toFixed(2)} A</b>. Đèn ${bright > 0.6 ? 'sáng mạnh' : (bright > 0.2 ? 'sáng vừa' : 'mờ')}.`;
+}
+
+/* 🎈 Định luật Boyle – Mariotte */
+const SIM_BOYLE_DOTS = Array.from({ length: 26 }, (_, i) => ({ x: (i * 53 % 100) / 100, y: ((i * 37 + 11) % 100) / 100 }));
+function simBoyle() {
+  simStage(simSlider('boyle-v', 'Thể tích V', 1, 10, 5, 1, 'L', 'simBoyleUpdate') +
+    `<p class="muted" style="font-size:.8rem">Đẳng nhiệt: p·V = 10 (không đổi)</p>`);
+  simBoyleUpdate();
+}
+function simBoyleUpdate() {
+  const V = numv('boyle-v'); setv('boyle-v', V);
+  const p = 10 / V;
+  const ctx = simCtx();
+  const x0 = 110, w = 100, bottom = 190, maxH = 150;
+  const h = maxH * V / 10;
+  const top = bottom - h;
+  // xi lanh
+  ctx.strokeStyle = '#475569'; ctx.lineWidth = 2; ctx.strokeRect(x0, bottom - maxH, w, maxH);
+  // khí
+  ctx.fillStyle = '#dbeafe'; ctx.fillRect(x0, top, w, h);
+  // pít tông
+  ctx.fillStyle = '#94a3b8'; ctx.fillRect(x0 - 4, top - 10, w + 8, 10);
+  // phân tử khí
+  ctx.fillStyle = '#4f46e5';
+  SIM_BOYLE_DOTS.forEach((d) => { ctx.beginPath(); ctx.arc(x0 + 8 + d.x * (w - 16), top + 6 + d.y * (h - 12), 3, 0, Math.PI * 2); ctx.fill(); });
+  document.getElementById('sim-out').innerHTML =
+    `V = ${V} L ⇒ áp suất p = 10 / V = <b>${p.toFixed(2)}</b> (đơn vị). Thể tích giảm ⇒ phân tử dày hơn ⇒ áp suất tăng (p·V = 10).`;
+}
+
+/* 💧 Nồng độ phần trăm dung dịch */
+function simConc() {
+  simStage(simSlider('conc-ct', 'Khối lượng chất tan', 0, 50, 20, 1, 'g', 'simConcUpdate') +
+    simSlider('conc-w', 'Khối lượng nước', 50, 200, 80, 1, 'g', 'simConcUpdate'));
+  simConcUpdate();
+}
+function simConcUpdate() {
+  const ct = numv('conc-ct'), w = numv('conc-w'); setv('conc-ct', ct); setv('conc-w', w);
+  const C = ct / (ct + w) * 100;
+  const ctx = simCtx();
+  // cốc
+  ctx.strokeStyle = '#475569'; ctx.lineWidth = 2; ctx.strokeRect(110, 50, 100, 150);
+  // dung dịch — màu đậm theo C%
+  const a = Math.min(1, C / 35);
+  ctx.fillStyle = `rgba(37,99,235,${0.12 + 0.8 * a})`;
+  ctx.fillRect(112, 70, 96, 128);
+  document.getElementById('sim-out').innerHTML =
+    `m_dd = ${ct} + ${w} = <b>${ct + w}</b> g ⇒ C% = ${ct}/${ct + w} × 100% = <b>${C.toFixed(1)}%</b>. Càng nhiều chất tan ⇒ dung dịch càng đậm màu.`;
+}
+
+/* 🧪 Thang pH */
+function simPH() {
+  simStage(simSlider('ph-v', 'Giá trị pH', 0, 14, 7, 1, '', 'simPHUpdate'));
+  simPHUpdate();
+}
+function simPHColor(pH) {
+  if (pH <= 3) return '#e11d48';
+  if (pH <= 6) return '#f59e0b';
+  if (pH === 7) return '#16a34a';
+  if (pH <= 10) return '#0891b2';
+  return '#6d28d9';
+}
+function simPHUpdate() {
+  const pH = numv('ph-v'); setv('ph-v', pH);
+  const ctx = simCtx();
+  // dải màu thang pH
+  for (let i = 0; i <= 14; i++) {
+    ctx.fillStyle = simPHColor(i); ctx.fillRect(20 + i * 20, 40, 20, 40);
+  }
+  // con trỏ
+  const x = 20 + pH * 20 + 10;
+  ctx.fillStyle = '#0f172a'; ctx.beginPath(); ctx.moveTo(x, 86); ctx.lineTo(x - 6, 98); ctx.lineTo(x + 6, 98); ctx.closePath(); ctx.fill();
+  // ống nghiệm đổi màu
+  ctx.fillStyle = simPHColor(pH); ctx.fillRect(140, 120, 40, 70);
+  ctx.strokeStyle = '#475569'; ctx.strokeRect(140, 120, 40, 70);
+  const loai = pH < 7 ? 'ACID' : (pH > 7 ? 'BASE (kiềm)' : 'TRUNG TÍNH');
+  document.getElementById('sim-out').innerHTML =
+    `pH = <b>${pH}</b> ⇒ môi trường <b>${loai}</b>. ${pH < 7 ? 'Quỳ tím hóa đỏ.' : (pH > 7 ? 'Quỳ tím hóa xanh.' : 'Quỳ tím không đổi màu.')}`;
+}
+
+/* ============================================================
    HỌC — Bài giảng (môn → chủ đề → bài)
    ============================================================ */
 function renderMarkdown(md, el) {
@@ -590,6 +807,7 @@ async function renderLearn() {
     // Lọc theo khối lớp: môn có grade trùng lớp HS; môn không gắn grade (IELTS/TOEIC) hiện cho mọi lớp.
     const subs = Content.subjects().filter((s) => !s.grade || s.grade === g);
     el.innerHTML = `<div class="page-head"><h2>Học</h2><p>Chọn môn để xem bài giảng · Lớp ${g}</p></div>
+      <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="switchTab('sim')">🔬 Phòng mô phỏng Lý – Hóa</button>
       ${subs.map((s) => `
         <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.code}','${s.name.replace(/'/g, '')}')">
           <div style="display:flex;justify-content:space-between;align-items:center">

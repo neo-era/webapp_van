@@ -363,6 +363,20 @@ table.data th { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; 
 .lesson-content .graph { display: block; margin: 12px auto; max-width: 100%; background: #fff; border: 1px solid var(--border); border-radius: 8px; }
 .lesson-content .graph text { font-size: 9px; fill: var(--text-muted); }
 
+/* ---------- Mô phỏng ---------- */
+.sim-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.sim-tab { flex: 1 1 auto; min-width: 120px; display: flex; flex-direction: column; align-items: flex-start;
+  padding: 9px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-surface);
+  color: var(--text-primary); font-size: 0.9rem; font-weight: 600; cursor: pointer; min-height: 44px; }
+.sim-tab small { font-weight: 500; color: var(--text-muted); font-size: 0.72rem; margin-top: 2px; }
+.sim-tab.active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.sim-row { display: flex; align-items: center; gap: 10px; margin: 10px 0; font-size: 0.92rem; }
+.sim-row span { flex: 0 0 130px; }
+.sim-row input[type=range] { flex: 1; min-width: 90px; height: 28px; }
+.sim-row b { flex: 0 0 auto; color: var(--accent); min-width: 34px; text-align: right; }
+.sim-out { margin-top: 10px; padding: 10px 12px; background: var(--bg-muted); border-radius: 10px;
+  font-size: 0.92rem; line-height: 1.6; }
+
 /* ---------- Profile ---------- */
 .profile-big-avatar {
   width: 76px; height: 76px; border-radius: 50%;
