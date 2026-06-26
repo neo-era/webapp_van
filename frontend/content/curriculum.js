@@ -2379,6 +2379,93 @@ const CURRICULUM = {
             },
           ],
         },
+        {
+          id: 't-khtn8-hsg', title: '🏆 Chuyên đề · Bồi dưỡng HSG KHTN 8',
+          lessons: [
+            {
+              id: 'l-khtn8-hsg-hoa', title: 'Hóa nâng cao: bài toán hỗn hợp, hiệu suất, biện luận', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi — phương pháp giải</h2>
+                <ul>
+                  <li><strong>Bảo toàn khối lượng & bảo toàn nguyên tố</strong> để lập phương trình nhanh.</li>
+                  <li><strong>Hỗn hợp nhiều chất:</strong> đặt số mol mỗi chất là ẩn, lập hệ phương trình từ khối lượng và thể tích khí.</li>
+                  <li><strong>Hiệu suất phản ứng:</strong> $H = \\dfrac{\\text{lượng thực tế}}{\\text{lượng lí thuyết}}\\cdot100\\%$.</li>
+                  <li><strong>Biện luận theo hóa trị/khối lượng mol</strong> để xác định kim loại chưa biết.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Cho $13$ g kẽm Zn tác dụng hết với HCl dư: $Zn + 2HCl \\to ZnCl_2 + H_2$. Tính thể tích $H_2$ (đktc).</p>
+                  <p><strong>Giải:</strong> $n_{Zn}=\\dfrac{13}{65}=0{,}2$ mol $\\Rightarrow n_{H_2}=0{,}2 \\Rightarrow V=0{,}2\\cdot22{,}4=4{,}48$ lít.</p>
+                  <p>2) Nung $100$ g $CaCO_3$ ($M=100$) với hiệu suất $80\\%$: $CaCO_3 \\to CaO + CO_2$. Tính khối lượng CaO.</p>
+                  <p><strong>Giải:</strong> $n=1$ mol ⇒ lí thuyết $1$ mol CaO $=56$ g; thực tế $56\\cdot0{,}8=44{,}8$ g.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Đốt cháy hoàn toàn $6{,}4$ g Cu trong $O_2$: $2Cu+O_2\\to2CuO$. Tính khối lượng CuO.</p>
+                  <details><summary>Đáp án</summary><p>$n_{Cu}=6{,}4/64=0{,}1 \\Rightarrow n_{CuO}=0{,}1 \\Rightarrow m=0{,}1\\cdot80=8$ g.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Kim loại M hóa trị II, $0{,}1$ mol nặng $5{,}6$ g. Xác định M.</p>
+                  <details><summary>Đáp án</summary><p>$M=\\dfrac{5{,}6}{0{,}1}=56 \\Rightarrow$ sắt (Fe).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Một phản ứng theo lí thuyết tạo $1$ mol sản phẩm nhưng thực tế chỉ thu $0{,}75$ mol. Tính hiệu suất.</p>
+                  <details><summary>Đáp án</summary><p>$H=\\dfrac{0{,}75}{1}\\cdot100\\%=75\\%$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-khtn8-hsg-ly', title: 'Lý nâng cao: máy thủy lực, nhiệt lượng & cân bằng nhiệt', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Nguyên lí Pascal – máy thủy lực:</strong> $\\dfrac{F_1}{S_1}=\\dfrac{F_2}{S_2} \\Rightarrow F_2=F_1\\cdot\\dfrac{S_2}{S_1}$ (lợi về lực theo tỉ số tiết diện).</li>
+                  <li><strong>Nhiệt lượng:</strong> $Q = m\\cdot c\\cdot\\Delta t$ ($c$ là nhiệt dung riêng, nước $c=4200$ J/kg·K).</li>
+                  <li><strong>Phương trình cân bằng nhiệt:</strong> $Q_{\\text{tỏa}} = Q_{\\text{thu}}$.</li>
+                  <li><strong>Công suất & hiệu suất:</strong> $P=\\dfrac{A}{t}$; $H=\\dfrac{A_{\\text{ích}}}{A_{\\text{toàn phần}}}\\cdot100\\%$.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>1) Máy thủy lực có $S_1=0{,}01\\,m^2$, $S_2=0{,}1\\,m^2$, lực tác dụng $F_1=100$ N. Tính $F_2$.</p>
+                  <p><strong>Giải:</strong> $F_2=F_1\\cdot\\dfrac{S_2}{S_1}=100\\cdot\\dfrac{0{,}1}{0{,}01}=1000$ N.</p>
+                  <p>2) Tính nhiệt lượng để đun $2$ kg nước từ $25^\\circ C$ lên $75^\\circ C$ ($c=4200$).</p>
+                  <p><strong>Giải:</strong> $Q=m c\\,\\Delta t = 2\\cdot4200\\cdot50 = 420000$ J $=420$ kJ.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Đun $1{,}5$ kg nước tăng thêm $40^\\circ C$ ($c=4200$). Tính nhiệt lượng.</p>
+                  <details><summary>Đáp án</summary><p>$Q=1{,}5\\cdot4200\\cdot40=252000$ J $=252$ kJ.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Máy thủy lực có tiết diện pittông lớn gấp $20$ lần pittông nhỏ. Tác dụng $F_1=50$ N thì nâng được lực bao nhiêu?</p>
+                  <details><summary>Đáp án</summary><p>$F_2=50\\cdot20=1000$ N.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Một máy nâng cần công có ích $800$ J nhưng tiêu tốn $1000$ J. Tính hiệu suất.</p>
+                  <details><summary>Đáp án</summary><p>$H=\\dfrac{800}{1000}\\cdot100\\%=80\\%$.</p></details>
+                </div>
+              `,
+            },
+            {
+              id: 'l-khtn8-hsg-sinh', title: 'Sinh nâng cao: vận dụng sinh lí người', level: 'CHUYEN',
+              html: `
+                <h2>Cốt lõi</h2>
+                <ul>
+                  <li><strong>Lưu lượng tim:</strong> (thể tích tâm thu) × (nhịp tim) = lượng máu tim bơm mỗi phút.</li>
+                  <li><strong>Cân bằng nội môi:</strong> cơ thể giữ ổn định nhiệt độ, đường huyết, pH máu nhờ phối hợp thần kinh – nội tiết.</li>
+                  <li><strong>Miễn dịch:</strong> bạch cầu bảo vệ cơ thể; vaccine tạo miễn dịch chủ động.</li>
+                  <li>Kĩ năng HSG: giải thích cơ chế và tính toán dựa trên số liệu sinh lí.</li>
+                </ul>
+                <div class="vd">
+                  <div class="vd-title">📝 Ví dụ giải mẫu</div>
+                  <p>Tim đập $75$ lần/phút, mỗi lần bơm $70$ mL máu. Tính lượng máu tim bơm trong $1$ phút.</p>
+                  <p><strong>Giải:</strong> $75\\times70 = 5250$ mL $\\approx 5{,}25$ lít/phút.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Nhịp tim $80$ lần/phút, thể tích tâm thu $60$ mL. Tính lưu lượng tim mỗi phút.</p>
+                  <details><summary>Đáp án</summary><p>$80\\times60=4800$ mL $=4{,}8$ lít/phút.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Vì sao người mất nhiều máu lại nguy hiểm đến tính mạng?</p>
+                  <details><summary>Đáp án</summary><p>Giảm lượng máu ⇒ giảm vận chuyển $O_2$ và dinh dưỡng tới tế bào, tụt huyết áp, có thể gây sốc và tử vong.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Tiêm vaccine giúp cơ thể tạo loại miễn dịch nào?</p>
+                  <details><summary>Đáp án</summary><p>Miễn dịch chủ động (cơ thể tự sinh kháng thể nhờ kháng nguyên trong vaccine).</p></details>
+                </div>
+              `,
+            },
+          ],
+        },
       ],
     },
 
