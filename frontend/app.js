@@ -567,12 +567,16 @@ async function savePassword() {
    MÔ PHỎNG — Phòng thí nghiệm ảo Lý – Hóa
    ============================================================ */
 const SIM_LIST = [
+  { key: 'graph', label: '📈 Vẽ đồ thị hàm số', tag: 'Toán' },
+  { key: 'geo', label: '📐 Hình học động (tam giác)', tag: 'Toán' },
   { key: 'lever', label: '⚖️ Đòn bẩy', tag: 'Lý 8' },
   { key: 'arch', label: '🌊 Lực đẩy Archimedes', tag: 'Lý 8' },
   { key: 'ohm', label: '⚡ Định luật Ohm', tag: 'Lý' },
   { key: 'boyle', label: '🎈 Định luật Boyle (khí)', tag: 'Lý 12' },
   { key: 'conc', label: '💧 Nồng độ dung dịch', tag: 'Hóa 8' },
   { key: 'ph', label: '🧪 Thang pH', tag: 'Hóa 8' },
+  { key: 'reaction', label: '⚗️ Mô phỏng phản ứng', tag: 'Hóa 12' },
+  { key: 'molecule', label: '🧬 Phân tử (xoay 3D)', tag: 'Hóa 12' },
 ];
 
 function renderSim() {
@@ -590,9 +594,11 @@ function renderSim() {
 }
 
 function openSim(key) {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
   App.state.sim = key;
   $$('.sim-tab').forEach((b) => b.classList.toggle('active', b.getAttribute('onclick').includes(`'${key}'`)));
-  ({ lever: simLever, arch: simArch, ohm: simOhm, boyle: simBoyle, conc: simConc, ph: simPH }[key])();
+  ({ graph: simGraph, geo: simGeo, lever: simLever, arch: simArch, ohm: simOhm, boyle: simBoyle,
+    conc: simConc, ph: simPH, reaction: simReaction, molecule: simMolecule }[key])();
 }
 
 function simSlider(id, label, min, max, val, step, unit, fn) {
@@ -777,6 +783,177 @@ function simPHUpdate() {
   const loai = pH < 7 ? 'ACID' : (pH > 7 ? 'BASE (kiềm)' : 'TRUNG TÍNH');
   document.getElementById('sim-out').innerHTML =
     `pH = <b>${pH}</b> ⇒ môi trường <b>${loai}</b>. ${pH < 7 ? 'Quỳ tím hóa đỏ.' : (pH > 7 ? 'Quỳ tím hóa xanh.' : 'Quỳ tím không đổi màu.')}`;
+}
+function simNoop() {}
+
+/* 📈 Công cụ vẽ đồ thị hàm số (có tham số a → đồ thị động) */
+function compileFn(raw) {
+  let s = (raw || '').toLowerCase().replace(/\s+/g, '');
+  if (!s) throw new Error('Nhập biểu thức');
+  s = s.replace(/\bpi\b/g, 'PI_').replace(/\bsqrt\b/g, 'SQRT_').replace(/\bsin\b/g, 'SIN_')
+    .replace(/\bcos\b/g, 'COS_').replace(/\btan\b/g, 'TAN_').replace(/\babs\b/g, 'ABS_')
+    .replace(/\bexp\b/g, 'EXP_').replace(/\bln\b/g, 'LN_').replace(/\blog\b/g, 'LOG_').replace(/\be\b/g, 'E_');
+  if (!/^[0-9xa.+\-*/^()A-Z_]*$/.test(s)) throw new Error('Ký tự không hợp lệ');
+  s = s.replace(/([0-9xa)])\s*([xa(A-Z])/g, '$1*$2');
+  s = s.replace(/\^/g, '**').replace(/PI_/g, 'Math.PI').replace(/E_/g, 'Math.E')
+    .replace(/SQRT_/g, 'Math.sqrt').replace(/SIN_/g, 'Math.sin').replace(/COS_/g, 'Math.cos')
+    .replace(/TAN_/g, 'Math.tan').replace(/ABS_/g, 'Math.abs').replace(/EXP_/g, 'Math.exp')
+    .replace(/LN_/g, 'Math.log').replace(/LOG_/g, 'Math.log10');
+  return new Function('x', 'a', 'return (' + s + ');');
+}
+function niceStep(range) {
+  const raw = range / 8, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw / p;
+  return (n < 1.5 ? 1 : (n < 3 ? 2 : (n < 7 ? 5 : 10))) * p;
+}
+function simGraph() {
+  const cur = App.state.graphFn || (App.state.graphFn = 'x^2');
+  $('#sim-stage').innerHTML = `
+    <div class="sim-fn">
+      <input id="g-fn" type="text" value="${cur}" placeholder="vd: x^2 - 3*x + 2 ; a*sin(x) ; 1/x" oninput="simGraphUpdate()">
+      <button class="btn btn-primary btn-sm" onclick="simGraphUpdate()">Vẽ</button>
+    </div>
+    <div class="sim-quick">${['x^2', 'x^3-3*x', 'a*x^2', 'sin(x)', '1/x', 'sqrt(x)', 'abs(x)'].map((e) => `<button class="sim-chip" onclick="simGraphSet('${e}')">${e}</button>`).join('')}</div>
+    ${simSlider('g-a', 'Tham số a', -5, 5, 1, 0.1, '', 'simGraphUpdate')}
+    <div class="sim-mini">
+      <label>x: <input id="g-xmin" type="number" value="-10" oninput="simGraphUpdate()"> … <input id="g-xmax" type="number" value="10" oninput="simGraphUpdate()"></label>
+      <label>y: <input id="g-ymin" type="number" value="-8" oninput="simGraphUpdate()"> … <input id="g-ymax" type="number" value="8" oninput="simGraphUpdate()"></label>
+    </div>
+    <canvas id="sim-canvas" width="320" height="260" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  simGraphUpdate();
+}
+function simGraphSet(e) { document.getElementById('g-fn').value = e; App.state.graphFn = e; simGraphUpdate(); }
+function simGraphAxes(xmin, xmax, ymin, ymax) {
+  const ctx = simCtx(), W = 320, H = 260;
+  const PX = (x) => (x - xmin) / (xmax - xmin) * W, PY = (y) => H - (y - ymin) / (ymax - ymin) * H;
+  const sx = niceStep(xmax - xmin), sy = niceStep(ymax - ymin);
+  ctx.strokeStyle = '#eef2f7'; ctx.lineWidth = 1;
+  for (let gx = Math.ceil(xmin / sx) * sx; gx <= xmax; gx += sx) { const X = PX(gx); ctx.beginPath(); ctx.moveTo(X, 0); ctx.lineTo(X, H); ctx.stroke(); }
+  for (let gy = Math.ceil(ymin / sy) * sy; gy <= ymax; gy += sy) { const Y = PY(gy); ctx.beginPath(); ctx.moveTo(0, Y); ctx.lineTo(W, Y); ctx.stroke(); }
+  ctx.strokeStyle = '#475569'; ctx.lineWidth = 1.5;
+  if (0 >= ymin && 0 <= ymax) { const Y = PY(0); ctx.beginPath(); ctx.moveTo(0, Y); ctx.lineTo(W, Y); ctx.stroke(); }
+  if (0 >= xmin && 0 <= xmax) { const X = PX(0); ctx.beginPath(); ctx.moveTo(X, 0); ctx.lineTo(X, H); ctx.stroke(); }
+  return ctx;
+}
+function simGraphUpdate() {
+  const raw = document.getElementById('g-fn').value; App.state.graphFn = raw;
+  const a = numv('g-a'); setv('g-a', a);
+  const xmin = numv('g-xmin'), xmax = numv('g-xmax'), ymin = numv('g-ymin'), ymax = numv('g-ymax');
+  const out = document.getElementById('sim-out');
+  if (!(xmax > xmin) || !(ymax > ymin)) { out.innerHTML = '<span style="color:var(--danger)">Khoảng x hoặc y chưa hợp lệ (giá trị đầu phải nhỏ hơn giá trị cuối).</span>'; return; }
+  let f;
+  try { f = compileFn(raw); const t = f(1, a); if (typeof t !== 'number') throw new Error('NaN'); } catch (err) {
+    simGraphAxes(xmin, xmax, ymin, ymax);
+    out.innerHTML = '<span style="color:var(--danger)">⚠️ Biểu thức chưa hợp lệ. Cho phép: x, a, + - * / ^, sin, cos, tan, sqrt, abs, ln, log, exp, pi.</span>'; return;
+  }
+  const ctx = simGraphAxes(xmin, xmax, ymin, ymax), W = 320, H = 260;
+  const PY = (y) => H - (y - ymin) / (ymax - ymin) * H, span = ymax - ymin;
+  ctx.strokeStyle = '#4f46e5'; ctx.lineWidth = 2; ctx.beginPath();
+  let pen = false;
+  for (let px = 0; px <= W; px++) {
+    const x = xmin + px / W * (xmax - xmin); let y;
+    try { y = f(x, a); } catch (e) { y = NaN; }
+    if (Number.isFinite(y) && y > ymin - span * 2 && y < ymax + span * 2) {
+      const py = PY(y); if (!pen) { ctx.moveTo(px, py); pen = true; } else ctx.lineTo(px, py);
+    } else pen = false;
+  }
+  ctx.stroke();
+  out.innerHTML = `Đồ thị <b>y = ${raw}</b>${raw.toLowerCase().includes('a') ? ` &nbsp;(a = ${a})` : ''}. Kéo "Tham số a" để xem đồ thị biến đổi động.`;
+}
+
+/* 📐 Hình học động — tổng ba góc tam giác = 180° */
+function simGeo() {
+  simStage(simSlider('geo-ax', 'Đỉnh A — ngang', 70, 250, 160, 1, '', 'simGeoUpdate') +
+    simSlider('geo-ay', 'Đỉnh A — cao', 25, 150, 45, 1, '', 'simGeoUpdate'));
+  simGeoUpdate();
+}
+function simGeoUpdate() {
+  const ax = numv('geo-ax'), ay = numv('geo-ay'); setv('geo-ax', ax); setv('geo-ay', ay);
+  const A = [ax, ay], B = [60, 185], C = [260, 185];
+  const ang = (p, q, r) => {
+    const u = [p[0] - q[0], p[1] - q[1]], v = [r[0] - q[0], r[1] - q[1]];
+    const d = (u[0] * v[0] + u[1] * v[1]) / (Math.hypot(u[0], u[1]) * Math.hypot(v[0], v[1]));
+    return Math.acos(Math.max(-1, Math.min(1, d))) * 180 / Math.PI;
+  };
+  const gA = ang(B, A, C), gB = ang(A, B, C), gC = ang(A, C, B);
+  const ctx = simCtx();
+  ctx.fillStyle = '#eef2ff'; ctx.strokeStyle = '#4f46e5'; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(A[0], A[1]); ctx.lineTo(B[0], B[1]); ctx.lineTo(C[0], C[1]); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = '#475569'; ctx.font = '13px sans-serif';
+  ctx.fillText('A', A[0] - 4, A[1] - 7); ctx.fillText('B', B[0] - 14, B[1] + 6); ctx.fillText('C', C[0] + 7, C[1] + 6);
+  document.getElementById('sim-out').innerHTML =
+    `Â = ${gA.toFixed(1)}° &nbsp;·&nbsp; B̂ = ${gB.toFixed(1)}° &nbsp;·&nbsp; Ĉ = ${gC.toFixed(1)}°<br><b>Tổng ba góc = ${(gA + gB + gC).toFixed(1)}° = 180°</b> — luôn đúng dù kéo đỉnh A đến đâu.`;
+}
+
+/* ⚗️ Mô phỏng phản ứng — va chạm phân tử theo nhiệt độ */
+function simReaction() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  $('#sim-stage').innerHTML = `${simSlider('rx-temp', 'Nhiệt độ', 10, 100, 50, 1, '°C', 'simNoop')}
+    <canvas id="sim-canvas" width="320" height="210" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#fff;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>
+    <button class="btn btn-ghost btn-sm" onclick="simReaction()" style="margin-top:6px">↺ Bắt đầu lại</button>`;
+  const dots = [];
+  for (let i = 0; i < 18; i++) {
+    const t = (i * 2.39996) % 6.283;
+    dots.push({ x: 40 + (i * 53 % 250), y: 55 + (i * 71 % 120), vx: Math.cos(t), vy: Math.sin(t), col: i % 3 === 0 ? '#dc2626' : '#2563eb' });
+  }
+  App.state.react = { prog: 0, dots };
+  simReactionLoop();
+}
+function simReactionLoop() {
+  const T = numv('rx-temp'); setv('rx-temp', T);
+  const sp = 0.3 + T / 35, st = App.state.react;
+  st.prog = Math.min(100, st.prog + T * 0.015);
+  const ctx = simCtx();
+  ctx.strokeStyle = '#cbd5e1'; ctx.lineWidth = 2; ctx.strokeRect(20, 40, 280, 150);
+  st.dots.forEach((d, i) => {
+    d.x += d.vx * sp; d.y += d.vy * sp;
+    if (d.x < 26 || d.x > 314) { d.vx *= -1; d.x = Math.max(26, Math.min(314, d.x)); }
+    if (d.y < 46 || d.y > 184) { d.vy *= -1; d.y = Math.max(46, Math.min(184, d.y)); }
+    const isW = (i / st.dots.length) < st.prog / 100;
+    ctx.fillStyle = isW ? '#06b6d4' : d.col;
+    ctx.beginPath(); ctx.arc(d.x, d.y, 5, 0, Math.PI * 2); ctx.fill();
+  });
+  document.getElementById('sim-out').innerHTML =
+    `Phản ứng 2H₂ + O₂ → 2H₂O. Nhiệt độ cao ⇒ phân tử chuyển động nhanh ⇒ va chạm nhiều ⇒ <b>tốc độ phản ứng tăng</b>.<br>Tiến độ: <b>${st.prog.toFixed(0)}%</b> (xanh lơ = phân tử nước đã tạo thành).`;
+  App.state.simRAF = requestAnimationFrame(simReactionLoop);
+}
+
+/* 🧬 Xem phân tử — xoay giả 3D */
+const MOL_DATA = {
+  H2O: { desc: 'Nước — góc liên kết ≈ 104,5°, phân tử phân cực', atoms: [{ p: [0, 0, 0], col: '#dc2626', r: 16 }, { p: [-0.9, 0.5, 0], col: '#e5e7eb', r: 10 }, { p: [0.9, 0.5, 0], col: '#e5e7eb', r: 10 }], bonds: [[0, 1], [0, 2]] },
+  CO2: { desc: 'Cacbon đioxit — phân tử thẳng, không phân cực', atoms: [{ p: [0, 0, 0], col: '#334155', r: 14 }, { p: [-1.2, 0, 0], col: '#dc2626', r: 14 }, { p: [1.2, 0, 0], col: '#dc2626', r: 14 }], bonds: [[0, 1], [0, 2]] },
+  CH4: { desc: 'Metan — hình tứ diện đều', atoms: [{ p: [0, 0, 0], col: '#334155', r: 15 }, { p: [0.8, 0.8, 0.8], col: '#e5e7eb', r: 9 }, { p: [-0.8, -0.8, 0.8], col: '#e5e7eb', r: 9 }, { p: [-0.8, 0.8, -0.8], col: '#e5e7eb', r: 9 }, { p: [0.8, -0.8, -0.8], col: '#e5e7eb', r: 9 }], bonds: [[0, 1], [0, 2], [0, 3], [0, 4]] },
+  NH3: { desc: 'Amoniac — hình chóp tam giác', atoms: [{ p: [0, -0.3, 0], col: '#2563eb', r: 15 }, { p: [0.9, 0.4, 0.5], col: '#e5e7eb', r: 9 }, { p: [-0.9, 0.4, 0.5], col: '#e5e7eb', r: 9 }, { p: [0, 0.4, -1], col: '#e5e7eb', r: 9 }], bonds: [[0, 1], [0, 2], [0, 3]] },
+};
+function simMolecule() {
+  if (App.state.simRAF) { cancelAnimationFrame(App.state.simRAF); App.state.simRAF = null; }
+  const cur = (App.state.mol && App.state.mol.name) || 'H2O';
+  $('#sim-stage').innerHTML = `
+    <div class="sim-quick">${Object.keys(MOL_DATA).map((m) => `<button class="sim-chip ${m === cur ? 'on' : ''}" onclick="simMoleculeSet('${m}')">${m}</button>`).join('')}</div>
+    <canvas id="sim-canvas" width="320" height="230" style="width:100%;max-width:340px;display:block;margin:10px auto;background:#0f172a;border:1px solid var(--border);border-radius:10px"></canvas>
+    <div id="sim-out" class="sim-out"></div>`;
+  App.state.mol = { name: cur, angle: (App.state.mol && App.state.mol.angle) || 0 };
+  simMoleculeLoop();
+}
+function simMoleculeSet(m) { App.state.mol = { name: m, angle: 0 }; simMolecule(); }
+function simMoleculeLoop() {
+  const m = App.state.mol; m.angle += 0.02;
+  const data = MOL_DATA[m.name], ctx = simCtx(), cx = 160, cy = 115, scale = 44, th = m.angle;
+  const proj = data.atoms.map((at) => {
+    const x = at.p[0] * Math.cos(th) + at.p[2] * Math.sin(th);
+    const z = -at.p[0] * Math.sin(th) + at.p[2] * Math.cos(th);
+    return { sx: cx + x * scale, sy: cy + at.p[1] * scale, z, col: at.col, r: at.r };
+  });
+  ctx.strokeStyle = '#64748b'; ctx.lineWidth = 5;
+  data.bonds.forEach((b) => { ctx.beginPath(); ctx.moveTo(proj[b[0]].sx, proj[b[0]].sy); ctx.lineTo(proj[b[1]].sx, proj[b[1]].sy); ctx.stroke(); });
+  proj.map((p, i) => ({ p, i })).sort((a, b) => a.p.z - b.p.z).forEach((o) => {
+    const p = o.p, rr = Math.max(6, p.r * (1 + 0.14 * p.z));
+    ctx.fillStyle = p.col; ctx.beginPath(); ctx.arc(p.sx, p.sy, rr, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = '#0f172a'; ctx.lineWidth = 1; ctx.stroke();
+  });
+  document.getElementById('sim-out').innerHTML = `Phân tử <b>${m.name}</b> — ${data.desc}. (Đỏ = O, xám = H, đen = C, xanh = N)`;
+  App.state.simRAF = requestAnimationFrame(simMoleculeLoop);
 }
 
 /* ============================================================
