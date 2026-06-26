@@ -2261,8 +2261,14 @@ const CURRICULUM = {
                 </ul>
                 <div class="luuy"><strong>Câu điều kiện loại 1:</strong> If + present simple, S + will + V. <em>If it rains, we will stay home.</em></div>
                 <div class="vd"><div class="vd-title">📝 Ví dụ</div><p>"Tall" → taller → the tallest. "Beautiful" → more beautiful → the most beautiful.</p></div>
-                <div class="bt"><strong>Bài tập:</strong> Đổi sang so sánh hơn: "This book is (interesting) than that one."
-                  <details><summary>Đáp án</summary>more interesting.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Đổi sang so sánh hơn: "This book is (interesting) than that one."</p>
+                  <details><summary>Đáp án</summary><p>more interesting.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Chia động từ: "She (watch) TV now."</p>
+                  <details><summary>Đáp án</summary><p>is watching (present continuous).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> So sánh nhất: "Everest is the (high) mountain in the world."</p>
+                  <details><summary>Đáp án</summary><p>the highest.</p></details>
                 </div>
               `,
             },
@@ -2282,8 +2288,14 @@ const CURRICULUM = {
                   <li><strong>Environment:</strong> pollution, recycle, reduce, reuse, deforestation.</li>
                   <li><strong>Science & technology:</strong> invention, device, robot, explore.</li>
                 </ul>
-                <div class="bt"><strong>Bài tập:</strong> Từ trái nghĩa của "pollute the environment" theo hướng tích cực?
-                  <details><summary>Đáp án</summary>protect / clean up the environment.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Từ trái nghĩa của "pollute the environment" theo hướng tích cực?</p>
+                  <details><summary>Đáp án</summary><p>protect / clean up the environment.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Điền 3R về môi trường (reduce, ____, ____).</p>
+                  <details><summary>Đáp án</summary><p>reuse, recycle.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Từ tiếng Anh chỉ "nạn phá rừng" là gì?</p>
+                  <details><summary>Đáp án</summary><p>deforestation.</p></details>
                 </div>
               `,
             },
@@ -2308,8 +2320,14 @@ const CURRICULUM = {
                   <div class="vd-title">📝 Ví dụ</div>
                   <p>It's raining. You <strong>should</strong> take an umbrella. — Students <strong>must</strong> be quiet in the library.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Điền modal chỉ lời khuyên: "You ____ see a doctor."
-                  <details><summary>Đáp án</summary>should (hoặc ought to).</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Điền modal chỉ lời khuyên: "You ____ see a doctor."</p>
+                  <details><summary>Đáp án</summary><p>should (hoặc ought to).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Điền modal chỉ điều cấm: "You ____ smoke in the hospital."</p>
+                  <details><summary>Đáp án</summary><p>mustn't.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Chọn đúng: "It's Sunday, so I ____ (don't have to / mustn't) go to school."</p>
+                  <details><summary>Đáp án</summary><p>don't have to (không bắt buộc).</p></details>
                 </div>
               `,
             },
@@ -2328,8 +2346,14 @@ const CURRICULUM = {
                   <div class="vd-title">📝 Ví dụ</div>
                   <p>Active: They clean the room every day. → Passive: The room <strong>is cleaned</strong> every day.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Chuyển sang bị động: "Shakespeare wrote this play."
-                  <details><summary>Đáp án</summary>This play was written by Shakespeare.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Chuyển sang bị động: "Shakespeare wrote this play."</p>
+                  <details><summary>Đáp án</summary><p>This play was written by Shakespeare.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Chuyển sang bị động: "They build houses every year."</p>
+                  <details><summary>Đáp án</summary><p>Houses are built every year.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Chuyển sang bị động: "Someone stole my bike."</p>
+                  <details><summary>Đáp án</summary><p>My bike was stolen.</p></details>
                 </div>
               `,
             },
@@ -2354,8 +2378,14 @@ const CURRICULUM = {
                   <div class="vd-title">📝 Ví dụ</div>
                   <p>This is the school <strong>where</strong> I study. — That's the boy <strong>whose</strong> bike was stolen.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Điền đại từ quan hệ: "The woman ____ is talking to him is my teacher."
-                  <details><summary>Đáp án</summary>who (hoặc that).</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Điền đại từ quan hệ: "The woman ____ is talking to him is my teacher."</p>
+                  <details><summary>Đáp án</summary><p>who (hoặc that).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Điền: "This is the house ____ I was born."</p>
+                  <details><summary>Đáp án</summary><p>where (chỉ nơi chốn).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Điền: "I know a boy ____ sister is a famous singer."</p>
+                  <details><summary>Đáp án</summary><p>whose (chỉ sở hữu).</p></details>
                 </div>
               `,
             },
@@ -2372,8 +2402,14 @@ const CURRICULUM = {
                   <div class="vd-title">📝 Ví dụ</div>
                   <p>"I will call you," he said. → He said he <strong>would</strong> call me.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Đổi sang tường thuật: "I am hungry," Tom said.
-                  <details><summary>Đáp án</summary>Tom said (that) he was hungry.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Đổi sang tường thuật: "I am hungry," Tom said.</p>
+                  <details><summary>Đáp án</summary><p>Tom said (that) he was hungry.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Chia quá khứ tiếp diễn: "While she ____ (read), the lights went out."</p>
+                  <details><summary>Đáp án</summary><p>was reading.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Đổi sang tường thuật: "I will help you," he said.</p>
+                  <details><summary>Đáp án</summary><p>He said (that) he would help me.</p></details>
                 </div>
               `,
             },
@@ -2390,8 +2426,14 @@ const CURRICULUM = {
                   <div class="vd-title">📝 Ví dụ</div>
                   <p>They <strong>decided to travel</strong> abroad. — He <strong>avoids eating</strong> fast food.</p>
                 </div>
-                <div class="bt"><strong>Bài tập:</strong> Chia đúng dạng: "I hope ____ (see) you soon."
-                  <details><summary>Đáp án</summary>to see.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Chia đúng dạng: "I hope ____ (see) you soon."</p>
+                  <details><summary>Đáp án</summary><p>to see.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Chia đúng dạng: "She enjoys ____ (read) books."</p>
+                  <details><summary>Đáp án</summary><p>reading (sau enjoy dùng V-ing).</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Chia đúng dạng: "They decided ____ (travel) to Da Nang."</p>
+                  <details><summary>Đáp án</summary><p>to travel (sau decide dùng to-V).</p></details>
                 </div>
               `,
             },
@@ -2420,8 +2462,14 @@ const CURRICULUM = {
                   <li><strong>12. Life on other planets:</strong> planet, alien, spacecraft, gravity.</li>
                 </ul>
                 <div class="luuy"><strong>Synonym/Antonym thường gặp:</strong> big = large; happy = glad; expensive ↔ cheap; many ↔ few; protect ↔ destroy.</div>
-                <div class="bt"><strong>Bài tập:</strong> Từ chỉ thiên tai "động đất" trong tiếng Anh là gì?
-                  <details><summary>Đáp án</summary>earthquake.</details>
+                <div class="bt">
+                  <div class="bt-title">✏️ Bài tập tự luyện</div>
+                  <p><strong>Bài 1.</strong> Từ chỉ thiên tai "động đất" trong tiếng Anh là gì?</p>
+                  <details><summary>Đáp án</summary><p>earthquake.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm synonym của "big" và antonym của "expensive".</p>
+                  <details><summary>Đáp án</summary><p>big = large; expensive ↔ cheap.</p></details>
+                  <p style="margin-top:8px"><strong>Bài 3.</strong> Chủ đề Unit nói về "ethnic groups" liên quan đến từ nào: costume hay discount?</p>
+                  <details><summary>Đáp án</summary><p>costume (trang phục) — thuộc chủ đề các dân tộc.</p></details>
                 </div>
               `,
             },
