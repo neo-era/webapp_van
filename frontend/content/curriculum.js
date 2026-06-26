@@ -16,7 +16,7 @@
 const CURRICULUM = {
   subjects: [
     {
-      code: 'TOAN', name: 'Toán', grade: 12,
+      code: 'TOAN', name: 'Toán', name_en: 'Mathematics', grade: 12,
       topics: [
         {
           id: 't-toan-c1', title: 'Chương 1 · Ứng dụng đạo hàm để khảo sát và vẽ đồ thị',
@@ -985,7 +985,7 @@ const CURRICULUM = {
     },
 
     {
-      code: 'LY', name: 'Vật lí', grade: 12,
+      code: 'LY', name: 'Vật lí', name_en: 'Physics', grade: 12,
       topics: [
         {
           id: 't-ly-c1', title: 'Chương 1 · Vật lí nhiệt',
@@ -1277,7 +1277,7 @@ const CURRICULUM = {
     },
 
     {
-      code: 'HOA', name: 'Hóa học', grade: 12,
+      code: 'HOA', name: 'Hóa học', name_en: 'Chemistry', grade: 12,
       topics: [
         {
           id: 't-hoa-c1', title: 'Chương 1 · Ester – Lipid',
@@ -1568,7 +1568,7 @@ const CURRICULUM = {
     },
 
     {
-      code: 'ANH', name: 'Tiếng Anh', grade: 12,
+      code: 'ANH', name: 'Tiếng Anh', name_en: 'English', grade: 12,
       topics: [
         {
           id: 't-anh-tenses', title: 'Tenses & Verb forms',
@@ -1784,7 +1784,7 @@ const CURRICULUM = {
 
     /* ===================== LỚP 8 (GDPT 2018) ===================== */
     {
-      code: 'TOAN8', name: 'Toán 8', grade: 8,
+      code: 'TOAN8', name: 'Toán 8', name_en: 'Mathematics 8', grade: 8,
       topics: [
         {
           id: 't-toan8-hdt', title: 'Đại số · Hằng đẳng thức đáng nhớ',
@@ -2477,7 +2477,7 @@ const CURRICULUM = {
     },
 
     {
-      code: 'KHTN8', name: 'KHTN 8 (Lý–Hóa–Sinh)', grade: 8,
+      code: 'KHTN8', name: 'KHTN 8 (Lý–Hóa–Sinh)', name_en: 'Science 8 (Phys–Chem–Bio)', grade: 8,
       topics: [
         {
           id: 't-khtn8-hoa', title: 'Hóa học · Mol, bảo toàn khối lượng, nồng độ',
@@ -2996,7 +2996,7 @@ const CURRICULUM = {
     },
 
     {
-      code: 'ANH8', name: 'Tiếng Anh 8', grade: 8,
+      code: 'ANH8', name: 'Tiếng Anh 8', name_en: 'English 8', grade: 8,
       topics: [
         {
           id: 't-anh8-grammar', title: 'Grammar · Thì, so sánh, câu điều kiện',

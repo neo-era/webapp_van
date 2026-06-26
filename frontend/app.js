@@ -33,6 +33,14 @@ const I18N = {
     exam_combo: 'Tổ hợp môn thi', exam_checklist: 'Checklist nội dung ôn', exam_stats: '📊 Thống kê luyện tập', exam_admission: '🎓 Máy tính điểm xét tuyển', edit: 'Sửa', add: '+ Thêm',
     cal_title: 'Lịch học', goals_title: 'Mục tiêu', notes_title: 'Ghi chú',
     formulas_title: '📐 Bảng công thức', formulas_sub: 'Tra cứu nhanh trước khi thi',
+    choose_topic: 'Chọn chủ đề', lesson_list: 'Danh sách bài giảng', topics_updating: 'Chủ đề đang được cập nhật', lessons_writing: 'Bài giảng đang được biên soạn',
+    goal_label: 'Mục tiêu', practice_daily: 'Luyện đều mỗi ngày để tiến bộ vững chắc!', btn_writing: '✍️ Luyện Writing (AI chấm)', btn_exams: '📝 Bài kiểm tra môn',
+    lvl_basic: 'Cơ bản', lvl_adv: 'Nâng cao', lvl_chuyen: 'Chuyên',
+    exams_title: 'Bài kiểm tra', exams_sub: 'Chọn đề để làm · bấm vào đề để bắt đầu (có tính giờ)', back_exams: '‹ Bài kiểm tra',
+    btn_quick: '⚡ Luyện nhanh 15 câu', btn_wrong: '📕 Câu sai', btn_submit: 'Nộp bài', btn_retry: 'Làm lại', result: 'Kết quả', points: 'điểm', correct_word: 'đúng',
+    no_exams: 'Chưa có đề kiểm tra nào', best: 'Điểm cao nhất', q_count: 'câu', minute: 'phút',
+    wrong_title: '📕 Sổ tay câu sai', wrong_sub: 'Ôn lại tất cả câu đã làm sai (mọi môn)', wrong_empty: 'Chưa có câu sai nào được lưu 🎉', wrong_learned: '✓ Đã thuộc', clear_all: '🗑 Xóa hết',
+    sim_title: '🔬 Phòng mô phỏng', sim_sub: 'Kéo thanh trượt để xem hiện tượng thay đổi theo thời gian thực', back_learn: '‹ Quay lại Học',
   },
   en: {
     nav_learn: 'Learn', nav_calendar: 'Calendar', nav_goals: 'Goals', nav_exam: 'Exam Prep', nav_notes: 'Notes', nav_profile: 'Profile', nav_teacher: 'Class',
@@ -44,6 +52,14 @@ const I18N = {
     exam_combo: 'Subject combination', exam_checklist: 'Revision checklist', exam_stats: '📊 Practice statistics', exam_admission: '🎓 Admission score calculator', edit: 'Edit', add: '+ Add',
     cal_title: 'Study calendar', goals_title: 'Goals', notes_title: 'Notes',
     formulas_title: '📐 Formula sheet', formulas_sub: 'Quick reference before exams',
+    choose_topic: 'Choose a topic', lesson_list: 'Lessons', topics_updating: 'Topics are being updated', lessons_writing: 'Lessons are being written',
+    goal_label: 'Goal', practice_daily: 'Practice daily for steady progress!', btn_writing: '✍️ Writing practice (AI-graded)', btn_exams: '📝 Tests —',
+    lvl_basic: 'Basic', lvl_adv: 'Advanced', lvl_chuyen: 'Specialized',
+    exams_title: 'Tests', exams_sub: 'Pick a test to start (timed)', back_exams: '‹ Tests',
+    btn_quick: '⚡ Quick 15 questions', btn_wrong: '📕 Mistakes', btn_submit: 'Submit', btn_retry: 'Retry', result: 'Result', points: 'points', correct_word: 'correct',
+    no_exams: 'No tests yet', best: 'Best score', q_count: 'questions', minute: 'min',
+    wrong_title: '📕 Mistake notebook', wrong_sub: 'Review all questions you got wrong (all subjects)', wrong_empty: 'No saved mistakes yet 🎉', wrong_learned: '✓ Got it', clear_all: '🗑 Clear all',
+    sim_title: '🔬 Simulation lab', sim_sub: 'Drag the sliders to watch the phenomena change in real time', back_learn: '‹ Back to Learn',
   },
 };
 function getLang() { try { return localStorage.getItem('thpt_lang') || 'vi'; } catch (e) { return 'vi'; } }
@@ -64,6 +80,15 @@ function setLang(l) {
   rerender();
   showToast(l === 'en' ? 'Language: English' : 'Ngôn ngữ: Tiếng Việt', 'success');
 }
+// Nội dung song ngữ: trả bản _en nếu đang EN và có, ngược lại bản tiếng Việt.
+function cEN(obj, base) {
+  if (!obj) return '';
+  if (App.state.lang === 'en' && obj[base + '_en'] != null) return obj[base + '_en'];
+  return obj[base] != null ? obj[base] : '';
+}
+function cENopts(q) { return (App.state.lang === 'en' && q.options_en) ? q.options_en : (q.options || []); }
+function subjName(code) { const s = (typeof Content !== 'undefined') ? Content.subject(code) : null; return s ? cEN(s, 'name') : code; }
+function topicTitleOf(code, id) { const tp = (typeof Content !== 'undefined') ? Content.topic(code, id) : null; return tp ? cEN(tp, 'title') : ''; }
 function subjectBadge(code) {
   return `<span class="subject-badge" style="background:${subjectColor(code)}">${subjectLabel(code)}</span>`;
 }
@@ -1344,7 +1369,7 @@ function renderMarkdown(md, el) {
 
 const FORMULA_SHEETS = {
   TOAN: {
-    g: 12, name: 'Toán 12', html: `
+    g: 12, name: 'Toán 12', name_en: 'Math 12', html: `
     <h3>Đạo hàm</h3><ul>
       <li>$(x^n)' = n x^{n-1}$ &nbsp; $(e^x)'=e^x$ &nbsp; $(\\ln x)'=\\dfrac1x$</li>
       <li>$(\\sin x)'=\\cos x$ &nbsp; $(\\cos x)'=-\\sin x$</li>
@@ -1361,7 +1386,7 @@ const FORMULA_SHEETS = {
       <li>$d(M,(P))=\\dfrac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}$</li>
       <li>Mặt cầu: $(x-a)^2+(y-b)^2+(z-c)^2=R^2$</li></ul>` },
   LY: {
-    g: 12, name: 'Vật lí 12', html: `
+    g: 12, name: 'Vật lí 12', name_en: 'Physics 12', html: `
     <h3>Nhiệt học</h3><ul>
       <li>Nhiệt lượng $Q=mc\\Delta t$ &nbsp; Nóng chảy $Q=\\lambda m$ &nbsp; Hóa hơi $Q=Lm$</li>
       <li>Nguyên lí I: $\\Delta U=A+Q$</li></ul>
@@ -1375,7 +1400,7 @@ const FORMULA_SHEETS = {
       <li>$E=\\Delta m\\,c^2$ &nbsp; $(1\\,u\\approx931{,}5$ MeV/$c^2)$</li>
       <li>Phóng xạ $N=N_0\\,2^{-t/T}$ &nbsp; Bảo toàn số khối $A$ và điện tích $Z$</li></ul>` },
   HOA: {
-    g: 12, name: 'Hóa 12', html: `
+    g: 12, name: 'Hóa 12', name_en: 'Chemistry 12', html: `
     <h3>Tính toán cơ bản</h3><ul>
       <li>$n=\\dfrac mM$ &nbsp; $V_{khí(đktc)}=22{,}4\\,n$</li>
       <li>$C\\%=\\dfrac{m_{ct}}{m_{dd}}\\cdot100\\%$ &nbsp; $C_M=\\dfrac nV$</li>
@@ -1388,7 +1413,7 @@ const FORMULA_SHEETS = {
       <li>Hiệu suất $H=\\dfrac{\\text{thực tế}}{\\text{lí thuyết}}\\cdot100\\%$</li>
       <li>Số mắt xích $n=\\dfrac{M_{polymer}}{M_{monomer}}$</li></ul>` },
   TOAN8: {
-    g: 8, name: 'Toán 8', html: `
+    g: 8, name: 'Toán 8', name_en: 'Math 8', html: `
     <h3>Hằng đẳng thức</h3><ul>
       <li>$(a\\pm b)^2=a^2\\pm2ab+b^2$ &nbsp; $a^2-b^2=(a-b)(a+b)$</li>
       <li>$(a\\pm b)^3=a^3\\pm3a^2b+3ab^2\\pm b^3$</li>
@@ -1401,7 +1426,7 @@ const FORMULA_SHEETS = {
       <li>Thalès: $DE\\parallel BC\\Rightarrow\\dfrac{AD}{AB}=\\dfrac{AE}{AC}=\\dfrac{DE}{BC}$</li>
       <li>Diện tích: tam giác $\\dfrac12ah$; hình thang $\\dfrac{(a+b)h}{2}$; hình thoi $\\dfrac{d_1d_2}{2}$</li></ul>` },
   KHTN8: {
-    g: 8, name: 'KHTN 8', html: `
+    g: 8, name: 'KHTN 8', name_en: 'Science 8', html: `
     <h3>Hóa học</h3><ul>
       <li>$n=\\dfrac mM$ &nbsp; $V_{khí(đktc)}=22{,}4\\,n$</li>
       <li>$C\\%=\\dfrac{m_{ct}}{m_{dd}}\\cdot100\\%$ &nbsp; $C_M=\\dfrac nV$</li>
@@ -1435,9 +1460,9 @@ async function renderLearn() {
     el.innerHTML = `<div class="page-head">
         <p class="link" onclick="learnBack('subjects')">${t('back_subjects')}</p>
         <h2>${t('formulas_title')}</h2><p>${t('formulas_sub')} · ${t('grade_word')} ${(App.state.user && App.state.user.grade) || 12}</p></div>
-      <div class="sim-tabs">${keys.map((k) => `<button class="sim-tab ${k === cur ? 'active' : ''}" onclick="formulaSetSubject('${k}')">${FORMULA_SHEETS[k].name}</button>`).join('')}</div>
+      <div class="sim-tabs">${keys.map((k) => `<button class="sim-tab ${k === cur ? 'active' : ''}" onclick="formulaSetSubject('${k}')">${cEN(FORMULA_SHEETS[k], 'name')}</button>`).join('')}</div>
       <div class="card lesson-content" id="formula-content"></div>`;
-    renderHtmlContent(FORMULA_SHEETS[cur].html, $('#formula-content'));
+    renderHtmlContent(cEN(FORMULA_SHEETS[cur], 'html'), $('#formula-content'));
     return;
   }
 
@@ -1453,7 +1478,7 @@ async function renderLearn() {
       ${subs.map((s) => `
         <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenSubject('${s.code}','${s.name.replace(/'/g, '')}')">
           <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>${s.name}</strong><span class="muted">›</span></div>
+            <strong>${cEN(s, 'name')}</strong><span class="muted">›</span></div>
         </div>`).join('')}`;
     return;
   }
@@ -1462,20 +1487,20 @@ async function renderLearn() {
     const eng = Content.target(v.subjectCode);
     const topics = Content.topics(v.subjectCode);
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('subjects')">‹ Môn học</p>
-        <h2>${v.subjectName}</h2><p>Chọn chủ đề</p></div>
+        <p class="link" onclick="learnBack('subjects')">${t('back_subjects')}</p>
+        <h2>${subjName(v.subjectCode)}</h2><p>${t('choose_topic')}</p></div>
       ${eng ? `<div class="countdown section-block" style="padding:14px">
-          <div style="font-size:1.05rem;font-weight:700">🎯 Mục tiêu: ${eng}</div>
-          <div class="cheer" style="margin-top:4px">Luyện đều mỗi ngày để tiến bộ vững chắc!</div></div>
-        <button class="btn btn-ghost btn-block" style="margin-bottom:8px" onclick="learnOpenWriting()">✍️ Luyện Writing (AI chấm)</button>` : ''}
-      <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="learnOpenExams()">📝 Bài kiểm tra môn ${v.subjectName}</button>
+          <div style="font-size:1.05rem;font-weight:700">🎯 ${t('goal_label')}: ${eng}</div>
+          <div class="cheer" style="margin-top:4px">${t('practice_daily')}</div></div>
+        <button class="btn btn-ghost btn-block" style="margin-bottom:8px" onclick="learnOpenWriting()">${t('btn_writing')}</button>` : ''}
+      <button class="btn btn-ghost btn-block" style="margin-bottom:12px" onclick="learnOpenExams()">${t('btn_exams')} ${subjName(v.subjectCode)}</button>
       ${topics.length
-        ? topics.map((t) => `
-          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenTopic('${t.id}','${t.title.replace(/'/g, '')}')">
+        ? topics.map((tp) => `
+          <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenTopic('${tp.id}','${tp.title.replace(/'/g, '')}')">
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <span>${t.title}</span><span class="muted">›</span></div>
+              <span>${cEN(tp, 'title')}</span><span class="muted">›</span></div>
           </div>`).join('')
-        : `<div class="empty">Chủ đề đang được cập nhật</div>`}`;
+        : `<div class="empty">${t('topics_updating')}</div>`}`;
     return;
   }
 
@@ -1483,16 +1508,16 @@ async function renderLearn() {
     const lessons = Content.lessons(v.subjectCode, v.topicId);
     const learned = getLearnedSet();
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
-        <h2>${v.topicTitle}</h2><p>Danh sách bài giảng</p></div>
+        <p class="link" onclick="learnBack('topics')">‹ ${subjName(v.subjectCode)}</p>
+        <h2>${topicTitleOf(v.subjectCode, v.topicId)}</h2><p>${t('lesson_list')}</p></div>
       ${lessons.length
         ? lessons.map((l) => `
           <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnOpenLesson('${l.id}','${l.title.replace(/'/g, '')}')">
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <span>${learned.has(l.id) ? '✅ ' : ''}${l.title}</span>
-              <span class="badge-assigned">${l.level === 'NANG_CAO' ? 'Nâng cao' : (l.level === 'CHUYEN' ? 'Chuyên' : 'Cơ bản')}</span></div>
+              <span>${learned.has(l.id) ? '✅ ' : ''}${cEN(l, 'title')}</span>
+              <span class="badge-assigned">${l.level === 'NANG_CAO' ? t('lvl_adv') : (l.level === 'CHUYEN' ? t('lvl_chuyen') : t('lvl_basic'))}</span></div>
           </div>`).join('')
-        : `<div class="empty">Bài giảng đang được biên soạn</div>`}`;
+        : `<div class="empty">${t('lessons_writing')}</div>`}`;
     return;
   }
 
@@ -1500,40 +1525,40 @@ async function renderLearn() {
     const exams = Exams.list(v.subjectCode);
     const wrongN = getWrong().length;
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('topics')">‹ ${v.subjectName}</p>
-        <h2>Bài kiểm tra</h2><p>Chọn đề để làm · bấm vào đề để bắt đầu (có tính giờ)</p></div>
+        <p class="link" onclick="learnBack('topics')">‹ ${subjName(v.subjectCode)}</p>
+        <h2>${t('exams_title')}</h2><p>${t('exams_sub')}</p></div>
       <div style="display:flex;gap:8px;margin-bottom:10px">
-        <button class="btn btn-primary" style="flex:1" onclick="learnQuickPractice()">⚡ Luyện nhanh 15 câu</button>
-        <button class="btn btn-ghost" style="flex:1" onclick="learnOpenWrong()">📕 Câu sai${wrongN ? ' (' + wrongN + ')' : ''}</button>
+        <button class="btn btn-primary" style="flex:1" onclick="learnQuickPractice()">${t('btn_quick')}</button>
+        <button class="btn btn-ghost" style="flex:1" onclick="learnOpenWrong()">${t('btn_wrong')}${wrongN ? ' (' + wrongN + ')' : ''}</button>
       </div>
       ${exams.length
         ? exams.map((e) => {
           const bs = bestScore(e.examId);
           return `
           <div class="card" style="margin-bottom:10px;cursor:pointer" onclick="learnStartExam('${e.examId}','${e.title.replace(/'/g, '')}')">
-            <strong>${e.title}</strong>
-            <div class="task-meta"><span class="muted">${e.questions.length} câu${e.durationMin ? ' · ' + e.durationMin + ' phút' : ''}</span>${bs != null ? ` <span class="pill pill-ok">Điểm cao nhất: ${bs}</span>` : ''}</div>
+            <strong>${cEN(e, 'title')}</strong>
+            <div class="task-meta"><span class="muted">${e.questions.length} ${t('q_count')}${e.durationMin ? ' · ' + e.durationMin + ' ' + t('minute') : ''}</span>${bs != null ? ` <span class="pill pill-ok">${t('best')}: ${bs}</span>` : ''}</div>
           </div>`;
         }).join('')
-        : `<div class="empty">Chưa có đề kiểm tra nào</div>`}`;
+        : `<div class="empty">${t('no_exams')}</div>`}`;
     return;
   }
 
   if (v.view === 'examTake') {
     const exam = v.customExam || Exams.get(v.examId);
-    if (!exam) { el.innerHTML = `<div class="empty">Không tìm thấy đề</div>`; return; }
+    if (!exam) { el.innerHTML = `<div class="empty">${t('no_exams')}</div>`; return; }
     v.exam = exam;
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('exams')">‹ Bài kiểm tra</p>
-        <h2>${v.examTitle}</h2></div>
+        <p class="link" onclick="learnBack('exams')">${t('back_exams')}</p>
+        <h2>${cEN(exam, 'title')}</h2></div>
       ${exam.durationMin ? '<div id="exam-timer" class="exam-timer"></div>' : ''}
       <div id="exam-body">` +
       exam.questions.map((q, i) => `
         <div class="card" style="margin-bottom:12px">
-          <div class="q-stem" data-md>${i + 1}. ${q.stem}</div>
+          <div class="q-stem" data-md>${i + 1}. ${cEN(q, 'stem')}</div>
           <div style="margin-top:8px">${renderQuestionInput(q, i)}</div>
         </div>`).join('') +
-      `<button class="btn btn-primary btn-block" style="margin-top:8px" onclick="learnSubmitExam()">Nộp bài</button></div>`;
+      `<button class="btn btn-primary btn-block" style="margin-top:8px" onclick="learnSubmitExam()">${t('btn_submit')}</button></div>`;
     $$('#exam-body .q-stem').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     $$('#exam-body .opt-label').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     startExamTimer(exam.durationMin);
@@ -1543,16 +1568,16 @@ async function renderLearn() {
   if (v.view === 'wrong') {
     const list = getWrong();
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('exams')">‹ Bài kiểm tra</p>
-        <h2>📕 Sổ tay câu sai</h2><p>Ôn lại tất cả câu đã làm sai (mọi môn)</p></div>
-      ${list.length ? `<button class="btn btn-ghost btn-sm" style="margin-bottom:10px" onclick="clearAllWrong()">🗑 Xóa hết</button>` : ''}
+        <p class="link" onclick="learnBack('exams')">${t('back_exams')}</p>
+        <h2>${t('wrong_title')}</h2><p>${t('wrong_sub')}</p></div>
+      ${list.length ? `<button class="btn btn-ghost btn-sm" style="margin-bottom:10px" onclick="clearAllWrong()">${t('clear_all')}</button>` : ''}
       ${list.length ? list.map((w, i) => `
         <div class="card" style="margin-bottom:10px;border-left:4px solid var(--danger)">
-          <div data-md class="q-stem">${i + 1}. ${w.stem}</div>
-          <div style="margin-top:6px">${(w.options || []).map((o, idx) => `<div class="opt-label" data-md style="padding:3px 0;${idx === w.answer ? 'color:var(--success);font-weight:600' : ''}">${idx === w.answer ? '✓ ' : ''}${o}</div>`).join('')}</div>
-          ${w.explanation ? `<div class="muted" data-md style="margin-top:6px;font-size:0.88rem">💡 ${w.explanation}</div>` : ''}
-          <button class="icon-btn" style="margin-top:6px" onclick="removeWrong(${i})" title="Đã thuộc, xóa">✓ Đã thuộc</button>
-        </div>`).join('') : `<div class="empty">Chưa có câu sai nào được lưu 🎉</div>`}`;
+          <div data-md class="q-stem">${i + 1}. ${cEN(w, 'stem')}</div>
+          <div style="margin-top:6px">${cENopts(w).map((o, idx) => `<div class="opt-label" data-md style="padding:3px 0;${idx === w.answer ? 'color:var(--success);font-weight:600' : ''}">${idx === w.answer ? '✓ ' : ''}${o}</div>`).join('')}</div>
+          ${cEN(w, 'explanation') ? `<div class="muted" data-md style="margin-top:6px;font-size:0.88rem">💡 ${cEN(w, 'explanation')}</div>` : ''}
+          <button class="icon-btn" style="margin-top:6px" onclick="removeWrong(${i})">${t('wrong_learned')}</button>
+        </div>`).join('') : `<div class="empty">${t('wrong_empty')}</div>`}`;
     $$('#screen-learn [data-md]').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     return;
   }
@@ -1560,20 +1585,20 @@ async function renderLearn() {
   if (v.view === 'examResult') {
     const r = v.result;
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('exams')">‹ Bài kiểm tra</p>
-        <h2>Kết quả: ${v.examTitle}</h2></div>
+        <p class="link" onclick="learnBack('exams')">${t('back_exams')}</p>
+        <h2>${t('result')}: ${v.exam ? cEN(v.exam, 'title') : (v.examTitle || '')}</h2></div>
       <div class="countdown section-block"><div class="days">${r.score10}</div>
-        <div class="label">điểm · đúng ${r.correct}/${r.gradable} câu</div></div>
-      ${r.savedWrong ? `<button class="btn btn-ghost btn-block" style="margin-bottom:10px" onclick="learnOpenWrong()">📕 Đã lưu ${r.savedWrong} câu sai vào Sổ tay — ôn ngay ▸</button>` : ''}
+        <div class="label">${t('points')} · ${t('correct_word')} ${r.correct}/${r.gradable} ${t('q_count')}</div></div>
+      ${r.savedWrong ? `<button class="btn btn-ghost btn-block" style="margin-bottom:10px" onclick="learnOpenWrong()">${t('btn_wrong')} +${r.savedWrong} ▸</button>` : ''}
       ${r.results.map((it, i) => `
         <div class="card" style="margin-bottom:10px;border-left:4px solid ${it.correct === true ? 'var(--success)' : (it.correct === false ? 'var(--danger)' : 'var(--warning)')}">
-          <div data-md class="q-stem">${i + 1}. ${it.stem}</div>
+          <div data-md class="q-stem">${i + 1}. ${cEN(it, 'stem')}</div>
           <div class="task-meta" style="margin-top:6px">
-            ${it.correct === true ? '<span class="pill pill-ok">Đúng</span>' : (it.correct === false ? '<span class="pill pill-late">Sai</span>' : '<span class="pill pill-warn">Tự luận</span>')}
+            ${it.correct === true ? `<span class="pill pill-ok">${App.state.lang === 'en' ? 'Correct' : 'Đúng'}</span>` : (it.correct === false ? `<span class="pill pill-late">${App.state.lang === 'en' ? 'Wrong' : 'Sai'}</span>` : `<span class="pill pill-warn">${App.state.lang === 'en' ? 'Essay' : 'Tự luận'}</span>`)}
           </div>
-          ${it.explanation ? `<div class="muted" data-md style="margin-top:6px;font-size:0.88rem">💡 ${it.explanation}</div>` : ''}
+          ${cEN(it, 'explanation') ? `<div class="muted" data-md style="margin-top:6px;font-size:0.88rem">💡 ${cEN(it, 'explanation')}</div>` : ''}
         </div>`).join('')}
-      <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="${String(v.examId).indexOf('quick-') === 0 ? 'learnQuickPractice()' : `learnStartExam('${v.examId}','${(v.examTitle || '').replace(/'/g, '')}')`}">Làm lại</button>`;
+      <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="${String(v.examId).indexOf('quick-') === 0 ? 'learnQuickPractice()' : `learnStartExam('${v.examId}','${(v.examTitle || '').replace(/'/g, '')}')`}">${t('btn_retry')}</button>`;
     $$('#screen-learn [data-md]').forEach((el2) => renderMarkdown(el2.innerHTML, el2));
     return;
   }
@@ -1596,26 +1621,27 @@ async function renderLearn() {
 
   if (v.view === 'lesson') {
     const lesson = Content.lesson(v.subjectCode, v.topicId, v.lessonId);
-    if (!lesson) { el.innerHTML = `<div class="empty">Không tìm thấy bài học</div>`; return; }
+    if (!lesson) { el.innerHTML = `<div class="empty">—</div>`; return; }
+    const en = App.state.lang === 'en';
     el.innerHTML = `<div class="page-head">
-        <p class="link" onclick="learnBack('lessons')">‹ ${v.topicTitle}</p>
-        <h2>${lesson.title}</h2></div>
+        <p class="link" onclick="learnBack('lessons')">‹ ${topicTitleOf(v.subjectCode, v.topicId)}</p>
+        <h2>${cEN(lesson, 'title')}</h2></div>
       <div class="card"><div id="lesson-content" class="lesson-content"></div></div>
       <button id="lesson-learn-btn" class="btn btn-block" style="margin-top:14px" onclick="learnToggleLearned()">…</button>
 
       <div class="section-block" style="margin-top:22px">
-        <div class="section-title">💬 Hỏi giáo viên AI</div>
+        <div class="section-title">${en ? '💬 Ask the AI teacher' : '💬 Hỏi giáo viên AI'}</div>
         <div class="card">
           <div id="ai-answer" class="lesson-content" style="min-height:8px"></div>
           <div style="display:flex;gap:8px;margin-top:10px">
-            <input id="ai-input" class="field" style="flex:1" placeholder="Hỏi về bài học này…"
+            <input id="ai-input" class="field" style="flex:1" placeholder="${en ? 'Ask about this lesson…' : 'Hỏi về bài học này…'}"
               onkeydown="if(event.key==='Enter')aiAsk()" />
-            <button class="btn btn-primary btn-sm" onclick="aiAsk()">Gửi</button>
+            <button class="btn btn-primary btn-sm" onclick="aiAsk()">${en ? 'Send' : 'Gửi'}</button>
           </div>
-          <p class="muted" style="font-size:0.78rem;margin-top:6px">AI chỉ gợi ý học tập, không làm hộ bài kiểm tra.</p>
+          <p class="muted" style="font-size:0.78rem;margin-top:6px">${en ? 'AI gives study hints only — it will not do tests for you.' : 'AI chỉ gợi ý học tập, không làm hộ bài kiểm tra.'}</p>
         </div>
       </div>`;
-    renderHtmlContent(lesson.html, $('#lesson-content'));
+    renderHtmlContent(cEN(lesson, 'html'), $('#lesson-content'));
     updateLearnBtn(getLearnedSet().has(lesson.id));
     return;
   }
@@ -1775,7 +1801,7 @@ function renderQuestionInput(q, i) {
     return `<textarea class="field" name="${name}" rows="4" placeholder="Trả lời…"></textarea>`;
   }
   // MCQ
-  return (q.options || []).map((opt, idx) => `
+  return cENopts(q).map((opt, idx) => `
     <label style="display:flex;gap:8px;align-items:flex-start;margin:6px 0">
       <input type="radio" name="${name}" value="${idx}" style="margin-top:4px" />
       <span class="opt-label">${opt}</span></label>`).join('');
@@ -1802,8 +1828,8 @@ function learnSubmitExam() {
     let ok = null;
     if (q.type === 'MCQ' || q.options) { gradable++; ok = String(your) === String(q.answer); if (ok) correct++; }
     return {
-      stem: q.stem, your: your == null ? '' : your, answer: q.answer,
-      explanation: q.explanation, correct: ok,
+      stem: q.stem, stem_en: q.stem_en, your: your == null ? '' : your, answer: q.answer,
+      explanation: q.explanation, explanation_en: q.explanation_en, correct: ok,
     };
   });
   const score10 = gradable ? Math.round((correct / gradable) * 100) / 10 : 0;
@@ -1811,7 +1837,7 @@ function learnSubmitExam() {
   clearExamTimer();
   const wrongItems = v.exam.questions
     .filter((q) => (q.options) && String(answers[q.questionId]) !== String(q.answer))
-    .map((q) => ({ stem: q.stem, options: q.options, answer: q.answer, explanation: q.explanation, subject: v.subjectCode || '', examTitle: v.examTitle || '' }));
+    .map((q) => ({ stem: q.stem, stem_en: q.stem_en, options: q.options, options_en: q.options_en, answer: q.answer, explanation: q.explanation, explanation_en: q.explanation_en, subject: v.subjectCode || '', examTitle: v.examTitle || '' }));
   if (wrongItems.length) addWrong(wrongItems);
   v.result.savedWrong = wrongItems.length;
   saveAttempt({ examId: v.examId, title: v.examTitle || '', subject: v.subjectCode || '', score10: score10, correct: correct, gradable: gradable, total: v.exam.questions.length, date: new Date().toISOString() });
