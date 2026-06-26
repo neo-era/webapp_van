@@ -4,7 +4,7 @@
    ============================================================ */
 
 const App = {
-  state: { user: null, role: null, token: null, calDayOffset: 0, tab: 'today' },
+  state: { user: null, role: null, token: null, calDayOffset: 0, tab: 'learn' },
   data: { plans: [], goals: [], exam: null, notes: [], classes: [] },
 };
 
@@ -225,7 +225,7 @@ function enterApp() {
   } else {
     $('#bottom-nav').classList.remove('hidden');
     $('#bottom-nav-teacher').classList.add('hidden');
-    switchTab('today');
+    switchTab('learn');
   }
 }
 
@@ -250,6 +250,7 @@ function logout() {
    ROUTER TAB
    ============================================================ */
 function switchTab(tab) {
+  if (!$('#screen-' + tab)) tab = 'learn';
   App.state.tab = tab;
   $$('.screen-tab').forEach((s) => s.classList.add('hidden'));
   $('#screen-' + tab).classList.remove('hidden');
@@ -260,67 +261,11 @@ function switchTab(tab) {
 
 function rerender() {
   const render = {
-    today: renderToday, learn: renderLearn, calendar: renderCalendar, goals: renderGoals,
+    learn: renderLearn, calendar: renderCalendar, goals: renderGoals,
     exam: renderExam, notes: renderNotes, profile: renderProfile, teacher: renderTeacher,
     sim: renderSim,
   }[App.state.tab];
   if (render) render();
-}
-
-/* ============================================================
-   HÔM NAY
-   ============================================================ */
-function renderToday() {
-  if (App.state.loadingData && !App.data.plans.length && !App.data.goals.length && !App.data.exam) {
-    $('#screen-today').innerHTML = `<div class="page-head"><h2>Xin chào 👋</h2><p>Đang tải dữ liệu…</p></div>
-      <div class="card"><div class="empty">Đang tải…</div></div>`;
-    return;
-  }
-  const todayStr = dayjs().format('YYYY-MM-DD');
-  const todayTasks = App.data.plans.filter((p) => p.dueDate === todayStr);
-  const doneCount = todayTasks.filter((p) => p.status === 'DONE').length;
-
-  const taskHtml = todayTasks.length
-    ? todayTasks.map(taskRow).join('')
-    : `<div class="empty">Hôm nay không có nhiệm vụ nào 🎉</div>`;
-
-  const goals = App.data.goals.slice(0, 4);
-  const goalHtml = goals.length ? goals.map((g) => `
-    <div class="progress-item">
-      <div class="ring" style="--val:${g.progress};--col:${subjectColor(g.subject)}"><span>${g.progress}%</span></div>
-      <div class="progress-item-info">
-        <div class="name">${subjectLabel(g.subject)}</div>
-        <div class="sub">${g.title}</div>
-      </div>
-    </div>`).join('') : `<div class="empty">Chưa có mục tiêu nào</div>`;
-
-  let countdownHtml = '';
-  if (App.data.exam && App.data.exam.examDate) {
-    const dleft = daysLeft(App.data.exam.examDate);
-    countdownHtml = `
-      <div class="countdown section-block">
-        <div class="days">${dleft}</div>
-        <div class="label">ngày nữa đến kỳ thi THPTQG</div>
-        <div class="cheer">Mỗi ngày một chút, bạn đang tiến gần mục tiêu! 💪</div>
-      </div>`;
-  }
-
-  $('#screen-today').innerHTML = `
-    <div class="page-head">
-      <h2>Xin chào, ${String(App.state.user.name).split(' ').slice(-1)[0]} 👋</h2>
-      <p>${fmtDay(dayjs())} · Đã xong ${doneCount}/${todayTasks.length} việc</p>
-    </div>
-    ${countdownHtml}
-    <div class="section-block">
-      <div class="section-title">Việc cần làm hôm nay
-        <span class="link" onclick="switchTab('calendar')">Xem lịch →</span></div>
-      <div class="card">${taskHtml}</div>
-    </div>
-    <div class="section-block">
-      <div class="section-title">Tiến độ mục tiêu
-        <span class="link" onclick="switchTab('goals')">Tất cả →</span></div>
-      <div class="card"><div class="progress-grid">${goalHtml}</div></div>
-    </div>`;
 }
 
 function taskRow(p) {
