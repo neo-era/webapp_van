@@ -1685,19 +1685,21 @@ async function renderLearn() {
       <button id="lesson-learn-btn" class="btn btn-block" style="margin-top:14px" onclick="learnToggleLearned()">…</button>
 
       <div class="section-block" style="margin-top:22px">
-        <div class="section-title">${en ? '💬 Ask the AI teacher' : '💬 Hỏi giáo viên AI'}</div>
+        <div class="section-title">${en ? '💬 AI tutor' : '💬 Gia sư AI'}</div>
         <div class="card">
-          <div id="ai-answer" class="lesson-content" style="min-height:8px"></div>
+          <div id="ai-chat" class="ai-chat"></div>
           <div style="display:flex;gap:8px;margin-top:10px">
             <input id="ai-input" class="field" style="flex:1" placeholder="${en ? 'Ask about this lesson…' : 'Hỏi về bài học này…'}"
               onkeydown="if(event.key==='Enter')aiAsk()" />
             <button class="btn btn-primary btn-sm" onclick="aiAsk()">${en ? 'Send' : 'Gửi'}</button>
           </div>
+          <div class="ai-quick">${aiQuickChips(en)}</div>
           <p class="muted" style="font-size:0.78rem;margin-top:6px">${en ? 'AI gives study hints only — it will not do tests for you.' : 'AI chỉ gợi ý học tập, không làm hộ bài kiểm tra.'}</p>
         </div>
       </div>`;
     renderHtmlContent(cEN(lesson, 'html'), $('#lesson-content'));
     updateLearnBtn(getLearnedSet().has(lesson.id));
+    renderAiChat();
     return;
   }
 }
@@ -1715,17 +1717,84 @@ function renderHtmlContent(html, el) {
   }
 }
 
+/* ===== Gia sư AI — hội thoại nhiều lượt + fallback tại chỗ ===== */
+function aiQuickChips(en) {
+  const chips = en
+    ? ['Summarize this lesson', 'Give me a worked example', 'Common mistakes?', 'Quiz me 1 question']
+    : ['Tóm tắt bài này', 'Cho 1 ví dụ giải mẫu', 'Lỗi thường gặp?', 'Hỏi mình 1 câu'];
+  return chips.map((c) => `<button class="ai-chip" onclick="aiAskQuick(this)">${c}</button>`).join('');
+}
+function aiAskQuick(btn) { const inp = $('#ai-input'); if (inp) { inp.value = btn.textContent; aiAsk(); } }
+function renderAiChat() {
+  const el = document.getElementById('ai-chat');
+  if (!el) return;
+  const en = App.state.lang === 'en';
+  const msgs = App.state.aiChat || [];
+  if (!msgs.length) {
+    el.innerHTML = `<div class="ai-hint">${en ? "Ask anything about this lesson — I'll give hints, not test answers." : 'Hỏi bất cứ điều gì về bài học — mình gợi ý, không cho đáp án bài kiểm tra.'}</div>`;
+    return;
+  }
+  el.innerHTML = msgs.map((m) => `<div class="ai-msg ${m.role}"><div class="ai-bubble" data-aimd></div></div>`).join('');
+  const bubbles = el.querySelectorAll('[data-aimd]');
+  msgs.forEach((m, i) => { if (bubbles[i]) renderMarkdown(m.text, bubbles[i]); });
+  el.scrollTop = el.scrollHeight;
+}
 async function aiAsk() {
   const input = $('#ai-input');
-  const q = input.value.trim();
+  const q = (input && input.value || '').trim();
   if (!q) return;
-  const ans = $('#ai-answer');
-  ans.innerHTML = '<div class="muted">Giáo viên AI đang trả lời…</div>';
-  input.value = '';
+  const en = App.state.lang === 'en';
+  App.state.aiChat = App.state.aiChat || [];
+  App.state.aiChat.push({ role: 'user', text: q });
+  App.state.aiChat.push({ role: 'typing', text: en ? '_AI is typing…_' : '_AI đang trả lời…_' });
+  if (input) input.value = '';
+  renderAiChat();
+  const lessonTitle = App.state.learn.lessonTitle || '';
+  let reply;
   try {
-    const r = await Api.call('aiChat', { message: q + ' (Bài học: ' + (App.state.learn.lessonTitle || '') + ')' });
-    renderMarkdown('**Hỏi:** ' + q + '\n\n' + r.reply, ans);
-  } catch (e) { ans.innerHTML = `<div class="empty">${e.message}</div>`; }
+    const ctx = App.state.aiChat.filter((m) => m.role !== 'typing').slice(-6)
+      .map((m) => (m.role === 'user' ? 'HS: ' : 'AI: ') + m.text).join('\n');
+    const r = await Api.call('aiChat', { message: q, lesson: lessonTitle, context: ctx, lang: App.state.lang });
+    reply = r && r.reply ? r.reply : null;
+    if (!reply || /bản demo|\(demo/i.test(reply)) reply = localAIReply(q, lessonTitle, en);
+  } catch (e) { reply = localAIReply(q, lessonTitle, en); }
+  App.state.aiChat = App.state.aiChat.filter((m) => m.role !== 'typing');
+  App.state.aiChat.push({ role: 'ai', text: reply });
+  renderAiChat();
+}
+// Trả lời gợi ý tại chỗ (khi backend chưa cấu hình Claude API) — luôn hữu ích, bám việc học.
+function localAIReply(q, lessonTitle, en) {
+  const lt = lessonTitle ? (en ? ` on “${lessonTitle}”` : ` về “${lessonTitle}”`) : '';
+  const ql = q.toLowerCase();
+  const wantsExample = /ví dụ|example|mẫu/.test(ql);
+  const wantsSummary = /tóm tắt|summar|ý chính|key idea/.test(ql);
+  const wantsMistake = /lỗi|mistake|sai|bẫy|trap/.test(ql);
+  const wantsQuiz = /quiz|hỏi mình|hỏi em|kiểm tra|đố/.test(ql);
+  let body;
+  if (wantsSummary) {
+    body = en
+      ? `Quick summary${lt}:\n\n- Read the **Core idea** first and restate the main rule/formula in your own words.\n- Note the **conditions** (when the rule applies) — that is where most marks are lost.\n- Keep one **worked example** in mind as a template.`
+      : `Tóm tắt nhanh${lt}:\n\n- Đọc phần **Cốt lõi** trước và tự phát biểu lại quy tắc/công thức chính bằng lời.\n- Ghi nhớ **điều kiện áp dụng** — đây là chỗ hay mất điểm nhất.\n- Giữ trong đầu một **ví dụ giải mẫu** làm khuôn.`;
+  } else if (wantsExample) {
+    body = en
+      ? `Try this approach for a worked example${lt}:\n\n1. Write down what is **given** and what to **find**.\n2. Pick the matching **formula/rule** from the lesson.\n3. Substitute carefully and simplify **step by step**.\n4. Check the result against the lesson's sample answer.`
+      : `Cách làm một ví dụ${lt}:\n\n1. Ghi rõ dữ kiện **đã cho** và **cần tìm**.\n2. Chọn đúng **công thức/quy tắc** trong bài.\n3. Thế số cẩn thận, biến đổi **từng bước**.\n4. Đối chiếu kết quả với đáp án mẫu của bài.`;
+  } else if (wantsMistake) {
+    body = en
+      ? `Common mistakes${lt}:\n\n- Forgetting the **conditions** of a rule (e.g. domain, sign).\n- Sign and bracket slips during algebra.\n- Confusing *necessary* vs *sufficient* conditions.\n- Skipping the **check** step at the end.`
+      : `Lỗi thường gặp${lt}:\n\n- Quên **điều kiện** của quy tắc (vd tập xác định, dấu).\n- Sai dấu, sai ngoặc khi biến đổi.\n- Nhầm điều kiện **cần** với **đủ**.\n- Bỏ bước **kiểm tra** ở cuối.`;
+  } else if (wantsQuiz) {
+    body = en
+      ? `Here's a self-check question${lt}:\n\n> State the main rule of this lesson, then apply it to one simple case and verify the answer.\n\nWrite your answer and I'll point you to the right part of the lesson to confirm it.`
+      : `Một câu tự kiểm tra${lt}:\n\n> Hãy phát biểu quy tắc chính của bài, rồi áp dụng cho một trường hợp đơn giản và kiểm tra lại kết quả.\n\nViết câu trả lời, mình sẽ chỉ chỗ trong bài để em tự đối chiếu.`;
+  } else {
+    body = en
+      ? `Good question${lt}. Some hints:\n\n- Re-read the **Core idea** and the **worked example** slowly.\n- Identify exactly which step you get stuck on, then review that rule.\n- Then try a **practice exercise** and check with the answer.`
+      : `Câu hỏi hay${lt}. Vài gợi ý:\n\n- Đọc kỹ lại phần **Cốt lõi** và **ví dụ giải mẫu**.\n- Xác định đúng bước em bị kẹt, rồi ôn lại quy tắc đó.\n- Sau đó làm một **bài tập tự luyện** và đối chiếu đáp án.`;
+  }
+  const note = en ? '\n\n*(Connect a Claude API key in the backend for fully personalized answers.)*'
+    : '\n\n*(Cấu hình Claude API ở backend để có câu trả lời cá nhân hóa hoàn toàn.)*';
+  return body + note;
 }
 
 function openGenerateLesson() {
@@ -1787,6 +1856,7 @@ function learnOpenTopic(topicId, title) {
 }
 function learnOpenLesson(lessonId, title) {
   Object.assign(App.state.learn, { view: 'lesson', lessonId: lessonId, lessonTitle: title });
+  App.state.aiChat = [];
   renderLearn();
 }
 function learnBack(view) {
@@ -1806,15 +1876,33 @@ function learnOpenWriting() {
 }
 async function learnSubmitWriting() {
   const v = App.state.learn;
+  const en = App.state.lang === 'en';
   const essay = $('#writing-essay').value.trim();
-  if (!essay) { showToast('Hãy viết bài trước', 'error'); return; }
+  if (!essay) { showToast(en ? 'Please write your essay first' : 'Hãy viết bài trước', 'error'); return; }
   const fb = $('#writing-feedback');
   fb.classList.remove('hidden');
-  fb.innerHTML = '<div class="muted">Giáo viên AI đang chấm bài…</div>';
+  fb.innerHTML = `<div class="muted">${en ? 'The AI teacher is grading…' : 'Giáo viên AI đang chấm bài…'}</div>`;
+  let feedback;
   try {
-    const r = await Api.call('gradeWriting', { exam: v.subjectCode, prompt: $('#writing-prompt').textContent, essay: essay });
-    renderMarkdown(r.feedback, fb);
-  } catch (e) { fb.innerHTML = `<div class="empty">${e.message}</div>`; }
+    const r = await Api.call('gradeWriting', { exam: v.subjectCode, prompt: ($('#writing-prompt') || {}).textContent || '', essay: essay, lang: App.state.lang });
+    feedback = r && r.feedback ? r.feedback : null;
+    if (!feedback || /bản demo|\(demo/i.test(feedback)) feedback = localWritingFeedback(essay, en);
+  } catch (e) { feedback = localWritingFeedback(essay, en); }
+  renderMarkdown(feedback, fb);
+}
+// Nhận xét Writing tại chỗ (khi backend chưa cấu hình Claude API) — ước lượng theo độ dài & cấu trúc.
+function localWritingFeedback(essay, en) {
+  const words = (essay.trim().match(/\S+/g) || []).length;
+  const sentences = (essay.match(/[.!?]+/g) || []).length || 1;
+  const avg = Math.round(words / sentences);
+  let band = 4.5;
+  if (words >= 60) band = 5.0;
+  if (words >= 120) band = 5.5;
+  if (words >= 180) band = 6.0;
+  if (words >= 250 && avg >= 12) band = 6.5;
+  return en
+    ? `**Estimated band: ${band.toFixed(1)}** _(rough, length & structure based)_\n\n- **Length:** ${words} words, ${sentences} sentences (avg ${avg} words/sentence).\n- **Strengths:** clear attempt and on-topic ideas.\n- **To improve:** vary vocabulary, use linking words (however, therefore, moreover), and add a complex sentence or two.\n- **Upgrade sample:** *Technology has undeniably reshaped the way we live and work.*\n\n*(Connect a Claude API key in the backend for a full, accurate assessment.)*`
+    : `**Band ước lượng: ${band.toFixed(1)}** _(tương đối, dựa trên độ dài & cấu trúc)_\n\n- **Độ dài:** ${words} từ, ${sentences} câu (trung bình ${avg} từ/câu).\n- **Điểm mạnh:** có triển khai ý, bám đúng đề.\n- **Cần cải thiện:** đa dạng từ vựng, dùng từ nối (however, therefore, moreover), thêm 1–2 câu phức.\n- **Câu mẫu nâng cấp:** *Technology has undeniably reshaped the way we live and work.*\n\n*(Cấu hình Claude API ở backend để có nhận xét đầy đủ, chính xác.)*`;
 }
 
 /* ---- Bài kiểm tra ---- */
