@@ -906,7 +906,7 @@ const CURRICULUM = {
           id: 't-toan-c4', title: 'Chương 4 · Nguyên hàm và Tích phân',
           lessons: [
             {
-              id: 'l-toan-nguyenham', title: 'Khái niệm nguyên hàm', level: 'CO_BAN',
+              id: 'l-toan-nguyenham', title: 'Khái niệm nguyên hàm', title_en: 'The concept of antiderivatives', level: 'CO_BAN',
               html: `
                 <h2>Cốt lõi</h2>
                 <p>$F(x)$ là nguyên hàm của $f(x)$ nếu $F'(x)=f(x)$. Họ nguyên hàm: $\\int f(x)\\,dx = F(x)+C$.</p>
@@ -934,6 +934,35 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$x^4-2x+C$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm $\\displaystyle\\int e^{2x}\\,dx$.</p>
                   <details><summary>Đáp án</summary><p>$\\dfrac{1}{2}e^{2x}+C$.</p></details>
+                </div>
+              `,
+              html_en: `
+                <h2>Core idea</h2>
+                <p>$F(x)$ is an antiderivative of $f(x)$ if $F'(x)=f(x)$. The antiderivative family: $\\int f(x)\\,dx = F(x)+C$.</p>
+                <p>Basic formulas: $\\int x^n dx = \\dfrac{x^{n+1}}{n+1}+C\\,(n\\ne -1)$, $\\int \\dfrac{1}{x}dx=\\ln|x|+C$, $\\int e^x dx=e^x+C$.</p>
+                <h2>Advanced</h2>
+                <p>$\\int \\sin x\\,dx=-\\cos x+C$, $\\int \\cos x\\,dx=\\sin x+C$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Find $\\displaystyle\\int (3x^2+2x)\\,dx$.</p>
+                  <p><strong>Solution:</strong> $\\displaystyle\\int (3x^2+2x)\\,dx = x^3 + x^2 + C$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Find $\\displaystyle\\int \\left(e^x+\\dfrac{1}{x}\\right)dx$.</p>
+                  <details><summary>Show answer</summary><p>$e^x+\\ln|x|+C$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (simple substitution)</div>
+                  <p>Find $\\displaystyle\\int \\cos(2x)\\,dx$.</p>
+                  <p><strong>Solution:</strong> $\\displaystyle\\int \\cos(2x)\\,dx=\\dfrac{1}{2}\\sin(2x)+C$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Find $\\displaystyle\\int (4x^3-2)\\,dx$.</p>
+                  <details><summary>Answer</summary><p>$x^4-2x+C$.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> Find $\\displaystyle\\int e^{2x}\\,dx$.</p>
+                  <details><summary>Answer</summary><p>$\\dfrac{1}{2}e^{2x}+C$.</p></details>
                 </div>
               `,
             },
