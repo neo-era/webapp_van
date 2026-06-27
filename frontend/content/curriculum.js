@@ -754,7 +754,7 @@ const CURRICULUM = {
               `,
             },
             {
-              id: 'l-toan-tichvohuong', title: 'Tích vô hướng & ứng dụng', level: 'NANG_CAO',
+              id: 'l-toan-tichvohuong', title: 'Tích vô hướng & ứng dụng', title_en: 'Dot product & applications', level: 'NANG_CAO',
               html: `
                 <h2>Cốt lõi</h2>
                 <p>Với $\\vec{u}=(a_1;b_1;c_1)$, $\\vec{v}=(a_2;b_2;c_2)$:</p>
@@ -783,6 +783,36 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$2-3-2=-3$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm góc giữa $\\vec{a}=(1;0;0)$ và $\\vec{b}=(1;1;0)$.</p>
                   <details><summary>Đáp án</summary><p>$\\cos=\\dfrac{1}{\\sqrt{2}}$ ⇒ góc $=45^\\circ$.</p></details>
+                </div>
+              `,
+              html_en: `
+                <h2>Core idea</h2>
+                <p>With $\\vec{u}=(a_1;b_1;c_1)$, $\\vec{v}=(a_2;b_2;c_2)$:</p>
+                <p>$\\vec{u}\\cdot\\vec{v}=a_1a_2+b_1b_2+c_1c_2$, and $\\cos(\\vec{u},\\vec{v})=\\dfrac{\\vec{u}\\cdot\\vec{v}}{|\\vec{u}|\\,|\\vec{v}|}$.</p>
+                <p>Two vectors are perpendicular $\\Leftrightarrow \\vec{u}\\cdot\\vec{v}=0$.</p>
+                <h2>Advanced</h2>
+                <p>The cross product $\\vec{u}\\wedge\\vec{v}$ gives a vector perpendicular to both — used to compute areas and volumes.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Given $\\vec{u}=(1;2;2)$, $\\vec{v}=(2;-2;1)$. Compute $\\vec{u}\\cdot\\vec{v}$ and the angle between them.</p>
+                  <p><strong>Solution:</strong> $\\vec{u}\\cdot\\vec{v}=2-4+2=0$ ⇒ $\\vec{u}\\perp\\vec{v}$, the angle is $90^\\circ$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Find $m$ so that $\\vec{a}=(1;m;-1)$ is perpendicular to $\\vec{b}=(2;1;3)$.</p>
+                  <details><summary>Show answer</summary><p>$\\vec{a}\\cdot\\vec{b}=2+m-3=m-1=0 \\Leftrightarrow m=1$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (angle between two vectors)</div>
+                  <p>Find the angle between $\\vec{u}=(1;1;0)$ and $\\vec{v}=(1;0;1)$.</p>
+                  <p><strong>Solution:</strong> $\\cos(\\vec{u},\\vec{v})=\\dfrac{1+0+0}{\\sqrt{2}\\cdot\\sqrt{2}}=\\dfrac{1}{2}$ ⇒ angle $=60^\\circ$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Compute $\\vec{u}\\cdot\\vec{v}$ with $\\vec{u}=(2;3;-1)$, $\\vec{v}=(1;-1;2)$.</p>
+                  <details><summary>Answer</summary><p>$2-3-2=-3$.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> Find the angle between $\\vec{a}=(1;0;0)$ and $\\vec{b}=(1;1;0)$.</p>
+                  <details><summary>Answer</summary><p>$\\cos=\\dfrac{1}{\\sqrt{2}}$ ⇒ angle $=45^\\circ$.</p></details>
                 </div>
               `,
             },
