@@ -468,7 +468,7 @@ const CURRICULUM = {
               `,
             },
             {
-              id: 'l-toan-khaosat', title: 'Khảo sát và vẽ đồ thị hàm số', level: 'NANG_CAO',
+              id: 'l-toan-khaosat', title: 'Khảo sát và vẽ đồ thị hàm số', title_en: 'Studying and sketching a graph', level: 'NANG_CAO',
               html: `
                 <div class="lesson-sim-cta">🔬 <strong>Công cụ:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Vẽ đồ thị hàm số ▸</button></div>
                 <h2>Cốt lõi — Sơ đồ khảo sát</h2>
@@ -541,6 +541,80 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$y'=-4x^3+4x=-4x(x-1)(x+1)$; CĐ tại $x=\\pm1$ ($y=1$), CT tại $x=0$ ($y=0$). Đồ thị dạng chữ M (úp ngược).</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Đồ thị hàm $y=\\dfrac{ax+b}{cx+d}$ có dạng gì?</p>
                   <details><summary>Đáp án</summary><p>Dạng <strong>hyperbol</strong> gồm hai nhánh, nhận tiệm cận đứng $x=-\\dfrac{d}{c}$ và tiệm cận ngang $y=\\dfrac{a}{c}$ làm tâm đối xứng.</p></details>
+                </div>
+              `,
+              html_en: `
+                <div class="lesson-sim-cta">🔬 <strong>Tool:</strong> <button class="lesson-sim-btn" onclick="launchSim('graph')">Plot a function ▸</button></div>
+                <h2>Core — Study outline</h2>
+                <ol>
+                  <li>Domain.</li>
+                  <li>Derivative, monotonicity, extrema.</li>
+                  <li>Limits, asymptotes (if any).</li>
+                  <li>Variation table.</li>
+                  <li>Sketch the graph: special points (axis intercepts), symmetry.</li>
+                </ol>
+                <h2>Advanced</h2>
+                <p>Common graph types: cubic $y=ax^3+bx^2+cx+d$, biquadratic $y=ax^4+bx^2+c$, rational $y=\\dfrac{ax+b}{cx+d}$.</p>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example — Study $y=x^3-3x$</div>
+                  <p>Domain $\\mathbb{R}$; $y'=3x^2-3$, $y'=0 \\Leftrightarrow x=\\pm1$. $\\lim\\limits_{x\\to\\pm\\infty}y=\\pm\\infty$.</p>
+                  <table class="bbt">
+                    <tr><td class="lbl">$x$</td><td>$-\\infty$</td><td>$-1$</td><td>$1$</td><td>$+\\infty$</td></tr>
+                    <tr><td class="lbl">$y'$</td><td>$+$</td><td>$0\\ -\\ 0$</td><td></td><td>$+$</td></tr>
+                    <tr><td class="lbl">$y$</td><td>↗</td><td>$2$ ↘ $-2$</td><td></td><td>↗</td></tr>
+                  </table>
+                  <p>Graph (inflection $O(0;0)$, local max $(-1;2)$, local min $(1;-2)$):</p>
+                  <svg class="graph" viewBox="0 0 240 200" width="240" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="100" x2="232" y2="100" stroke="#94a3b8" stroke-width="1"/>
+                    <line x1="120" y1="15" x2="120" y2="190" stroke="#94a3b8" stroke-width="1"/>
+                    <polygon points="232,100 226,97 226,103" fill="#94a3b8"/>
+                    <polygon points="120,15 117,21 123,21" fill="#94a3b8"/>
+                    <polyline points="20,160 45,66 70,40 95,59 120,100 145,141 170,160 195,134 220,40" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <circle cx="70" cy="40" r="3" fill="#16a34a"/>
+                    <circle cx="170" cy="160" r="3" fill="#dc2626"/>
+                    <text x="124" y="13">y</text>
+                    <text x="228" y="113">x</text>
+                    <text x="124" y="113">O</text>
+                    <text x="48" y="36">max(-1;2)</text>
+                    <text x="150" y="175">min(1;-2)</text>
+                  </svg>
+                </div>
+
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Build the variation table of $y=-x^3+3x^2$ and state its extrema.</p>
+                  <details><summary>Show answer</summary>
+                    <p>$y'=-3x^2+6x=-3x(x-2)$; $x=0$ (min, $y=0$), $x=2$ (max, $y=4$). Increasing on $(0;2)$, decreasing outside it.</p>
+                  </details>
+                </div>
+
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 — Study $y=x^4-2x^2$ (biquadratic)</div>
+                  <p>Domain $\\mathbb{R}$; $y'=4x^3-4x=4x(x-1)(x+1)$, roots $x=0,\\pm1$. $\\lim\\limits_{x\\to\\pm\\infty}y=+\\infty$.</p>
+                  <table class="bbt">
+                    <tr><td class="lbl">$x$</td><td>$-\\infty$</td><td>$-1$</td><td>$0$</td><td>$1$</td><td>$+\\infty$</td></tr>
+                    <tr><td class="lbl">$y'$</td><td>$-$</td><td>$0\\,+$</td><td>$0\\,-$</td><td>$0\\,+$</td><td></td></tr>
+                    <tr><td class="lbl">$y$</td><td>↘</td><td>$-1$ ↗ $0$</td><td>↘ $-1$</td><td>↗</td><td></td></tr>
+                  </table>
+                  <p>The graph is symmetric about $Oy$ (even function), W-shaped; max $(0;0)$, two minima $(\\pm1;-1)$:</p>
+                  <svg class="graph" viewBox="0 0 220 150" width="220" height="150" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="76" x2="215" y2="76" stroke="#94a3b8"/>
+                    <line x1="110" y1="20" x2="110" y2="140" stroke="#94a3b8"/>
+                    <polyline points="20,51 50,121 80,96 110,76 140,96 170,121 200,51" fill="none" stroke="#4f46e5" stroke-width="2"/>
+                    <circle cx="110" cy="76" r="3" fill="#16a34a"/>
+                    <circle cx="50" cy="121" r="3" fill="#dc2626"/>
+                    <circle cx="170" cy="121" r="3" fill="#dc2626"/>
+                    <text x="113" y="18">y</text>
+                    <text x="205" y="73">x</text>
+                  </svg>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Build the variation table of $y=-x^4+2x^2$ and state its extrema.</p>
+                  <details><summary>Answer</summary><p>$y'=-4x^3+4x=-4x(x-1)(x+1)$; maxima at $x=\\pm1$ ($y=1$), min at $x=0$ ($y=0$). The graph is an inverted-M shape.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> What shape is the graph of $y=\\dfrac{ax+b}{cx+d}$?</p>
+                  <details><summary>Answer</summary><p>A <strong>hyperbola</strong> with two branches, having vertical asymptote $x=-\\dfrac{d}{c}$ and horizontal asymptote $y=\\dfrac{a}{c}$ as its center of symmetry.</p></details>
                 </div>
               `,
             },
