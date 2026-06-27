@@ -55,17 +55,34 @@ function aiChat(req) {
     return jsonError('Bạn đã đạt giới hạn ' + AI_DAILY_LIMIT + ' lượt hỏi hôm nay. Hãy quay lại ngày mai nhé!');
   }
 
-  // Ngữ cảnh bài giảng (nếu có)
+  const en = String(req.lang || 'vi') === 'en';
+
+  // Ngữ cảnh bài giảng (nếu có): ưu tiên nội dung trong sheet, nếu không thì dùng tiêu đề bài
   let context = '';
   if (req.lessonId) {
     const l = getRows('Lessons').find(function (x) { return String(x.lessonId) === String(req.lessonId) && x.status === 'PUBLISHED'; });
-    if (l) context = '\n\nNội dung bài giảng học sinh đang xem (bám sát khi trả lời):\n' + l.contentMd;
+    if (l) context = (en ? '\n\nLesson the student is currently viewing (stay close to it):\n' : '\n\nNội dung bài giảng học sinh đang xem (bám sát khi trả lời):\n') + l.contentMd;
+  }
+  if (!context && req.lesson) {
+    context = (en ? '\n\nThe student is studying the lesson titled: "' : '\n\nHọc sinh đang học bài có tiêu đề: "') + String(req.lesson) + '".';
   }
 
-  const system = 'Bạn là giáo viên AI thân thiện cho học sinh THPT Việt Nam, theo Chương trình GDPT 2018. ' +
-    'Trả lời bằng tiếng Việt, ngắn gọn, dễ hiểu, có ví dụ. Dùng cú pháp LaTeX ($...$) cho công thức. ' +
-    'TUYỆT ĐỐI KHÔNG làm hộ hay tiết lộ đáp án bài kiểm tra/bài thi đang diễn ra — chỉ gợi ý hướng tư duy. ' +
-    'Chỉ trả lời trong phạm vi học tập.' + context;
+  // Lịch sử hội thoại gần đây (để trả lời mạch nối nhiều lượt)
+  let history = '';
+  if (req.context) {
+    history = (en ? '\n\nRecent conversation so far (for continuity):\n' : '\n\nHội thoại gần đây (để tiếp nối mạch):\n') + String(req.context);
+  }
+
+  const base = en
+    ? 'You are a friendly AI tutor for Vietnamese high-school students following the GDPT 2018 curriculum. ' +
+      'Reply in English, concise and clear, with examples. Use LaTeX ($...$) for formulas. ' +
+      'NEVER do the work for the student or reveal answers to an ongoing test/exam — only give thinking hints. ' +
+      'Stay strictly within study topics.'
+    : 'Bạn là giáo viên AI thân thiện cho học sinh THPT Việt Nam, theo Chương trình GDPT 2018. ' +
+      'Trả lời bằng tiếng Việt, ngắn gọn, dễ hiểu, có ví dụ. Dùng cú pháp LaTeX ($...$) cho công thức. ' +
+      'TUYỆT ĐỐI KHÔNG làm hộ hay tiết lộ đáp án bài kiểm tra/bài thi đang diễn ra — chỉ gợi ý hướng tư duy. ' +
+      'Chỉ trả lời trong phạm vi học tập.';
+  const system = base + context + history;
 
   const result = callClaude_({ model: AI_MODELS.fast, system: system, messages: [{ role: 'user', content: message }], maxTokens: 1024 });
 
@@ -150,13 +167,24 @@ function gradeWriting(req) {
   if (essay.length < 30) return jsonError('Bài viết quá ngắn để chấm');
   if (aiCountToday_(user.userId) >= AI_DAILY_LIMIT) return jsonError('Đã đạt giới hạn lượt AI hôm nay');
 
+  const en = String(req.lang || 'vi') === 'en';
   const exam = req.exam === 'TOEIC' ? 'TOEIC' : 'IELTS';
-  const criteria = exam === 'IELTS'
-    ? 'Chấm theo 4 tiêu chí IELTS Writing (Task Response, Coherence & Cohesion, Lexical Resource, Grammatical Range & Accuracy), mỗi tiêu chí cho band 0-9 (bước 0.5) và band tổng.'
-    : 'Đánh giá theo thang TOEIC Writing, ước lượng mức điểm và nhận xét.';
-  const system = 'Bạn là giám khảo chấm thi ' + exam + ' Writing giàu kinh nghiệm. Trả lời bằng tiếng Việt, ngắn gọn, theo bố cục Markdown. ' +
-    criteria + ' Sau đó liệt kê: **3 điểm mạnh**, **3 điểm cần cải thiện**, và **1 câu viết lại mẫu** tốt hơn.';
-  const prompt = 'Đề bài: ' + (req.prompt || '(không nêu)') + '\n\nBài làm của học sinh:\n"""\n' + essay + '\n"""';
+  let system;
+  if (en) {
+    const criteria = exam === 'IELTS'
+      ? 'Grade against the 4 IELTS Writing criteria (Task Response, Coherence & Cohesion, Lexical Resource, Grammatical Range & Accuracy), each band 0-9 (0.5 steps), plus an overall band.'
+      : 'Assess on the TOEIC Writing scale, estimate the score level and give comments.';
+    system = 'You are an experienced ' + exam + ' Writing examiner. Reply in English, concise, in Markdown. ' +
+      criteria + ' Then list: **3 strengths**, **3 areas to improve**, and **1 improved sample rewrite**.';
+  } else {
+    const criteria = exam === 'IELTS'
+      ? 'Chấm theo 4 tiêu chí IELTS Writing (Task Response, Coherence & Cohesion, Lexical Resource, Grammatical Range & Accuracy), mỗi tiêu chí cho band 0-9 (bước 0.5) và band tổng.'
+      : 'Đánh giá theo thang TOEIC Writing, ước lượng mức điểm và nhận xét.';
+    system = 'Bạn là giám khảo chấm thi ' + exam + ' Writing giàu kinh nghiệm. Trả lời bằng tiếng Việt, ngắn gọn, theo bố cục Markdown. ' +
+      criteria + ' Sau đó liệt kê: **3 điểm mạnh**, **3 điểm cần cải thiện**, và **1 câu viết lại mẫu** tốt hơn.';
+  }
+  const prompt = (en ? 'Prompt: ' : 'Đề bài: ') + (req.prompt || (en ? '(none)' : '(không nêu)')) +
+    (en ? '\n\nStudent essay:\n"""\n' : '\n\nBài làm của học sinh:\n"""\n') + essay + '\n"""';
 
   const result = callClaude_({ model: AI_MODELS.smart, system: system, messages: [{ role: 'user', content: prompt }], maxTokens: 1400 });
   appendRow('AIChats', { msgId: genId('m'), studentId: user.userId, context: 'writing', role: 'USER', content: essay.slice(0, 800), model: result.model, tokens: 0, createdAt: now() });
