@@ -624,7 +624,7 @@ const CURRICULUM = {
           id: 't-toan-c2', title: 'Chương 2 · Vectơ và hệ trục tọa độ trong không gian',
           lessons: [
             {
-              id: 'l-toan-vecto-kg', title: 'Vectơ trong không gian', level: 'CO_BAN',
+              id: 'l-toan-vecto-kg', title: 'Vectơ trong không gian', title_en: 'Vectors in space', level: 'CO_BAN',
               html: `
                 <h2>Cốt lõi</h2>
                 <p>Các phép toán vectơ (cộng, trừ, nhân với số) trong không gian tương tự trong mặt phẳng, tuân theo quy tắc hình bình hành và quy tắc ba điểm.</p>
@@ -652,6 +652,35 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$|\\vec{a}|=\\sqrt{1+4+1}=\\sqrt{6}$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Ba vectơ $\\vec{a}=(1;1;0)$, $\\vec{b}=(0;1;1)$, $\\vec{c}=(2;3;1)$ có đồng phẳng không?</p>
                   <details><summary>Đáp án</summary><p>$2\\vec{a}+\\vec{b}=(2;3;1)=\\vec{c}$ ⇒ <strong>đồng phẳng</strong>.</p></details>
+                </div>
+              `,
+              html_en: `
+                <h2>Core idea</h2>
+                <p>Vector operations (addition, subtraction, scalar multiplication) in space work just like in the plane, following the parallelogram rule and the three-point rule.</p>
+                <p>Parallelepiped (box) rule: $\\vec{AC'} = \\vec{AB}+\\vec{AD}+\\vec{AA'}$.</p>
+                <h2>Advanced</h2>
+                <p>Three vectors are <strong>coplanar</strong> when there exist $m,n$ such that $\\vec{c}=m\\vec{a}+n\\vec{b}$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Given $\\vec{a}=(1;0;1)$, $\\vec{b}=(0;1;1)$, $\\vec{c}=(1;1;2)$. Prove the three vectors are coplanar.</p>
+                  <p><strong>Solution:</strong> We see $\\vec{a}+\\vec{b}=(1;1;2)=\\vec{c}$, i.e. $\\vec{c}=1\\cdot\\vec{a}+1\\cdot\\vec{b}$. Hence the three vectors are coplanar.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Given $\\vec{u}=(2;-1;0)$, $\\vec{v}=(1;3;1)$. Compute $\\vec{u}+2\\vec{v}$.</p>
+                  <details><summary>Show answer</summary><p>$\\vec{u}+2\\vec{v}=(2+2;\\,-1+6;\\,0+2)=(4;5;2)$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (box rule)</div>
+                  <p>In the parallelepiped $ABCD.A'B'C'D'$, prove $\\vec{AB}+\\vec{AD}+\\vec{AA'}=\\vec{AC'}$.</p>
+                  <p><strong>Solution:</strong> $\\vec{AB}+\\vec{AD}=\\vec{AC}$ (parallelogram rule on the base); adding $\\vec{AA'}$ ⇒ $\\vec{AC}+\\vec{AA'}=\\vec{AC'}$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Find the length of $\\vec{a}=(1;2;-1)$.</p>
+                  <details><summary>Answer</summary><p>$|\\vec{a}|=\\sqrt{1+4+1}=\\sqrt{6}$.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> Are the three vectors $\\vec{a}=(1;1;0)$, $\\vec{b}=(0;1;1)$, $\\vec{c}=(2;3;1)$ coplanar?</p>
+                  <details><summary>Answer</summary><p>$2\\vec{a}+\\vec{b}=(2;3;1)=\\vec{c}$ ⇒ <strong>coplanar</strong>.</p></details>
                 </div>
               `,
             },
