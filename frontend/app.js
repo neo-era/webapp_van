@@ -1763,6 +1763,54 @@ async function aiAsk() {
   renderAiChat();
 }
 // Trả lời gợi ý tại chỗ (khi backend chưa cấu hình Claude API) — luôn hữu ích, bám việc học.
+// Từ điển khái niệm cốt lõi — để fallback trả lời định nghĩa THẬT khi hỏi "… là gì".
+const AI_CONCEPTS = [
+  { k: ['cực trị', 'cực đại', 'cực tiểu', 'extrem', 'maximum', 'minimum'],
+    vi: '**Cực trị** của hàm số là điểm mà tại đó hàm đạt **cực đại** hoặc **cực tiểu** (giá trị lớn/nhỏ nhất *cục bộ*). Điều kiện: $f\'(x)$ **đổi dấu** khi qua điểm đó — đổi từ $+$ sang $-$ ⇒ **cực đại**; từ $-$ sang $+$ ⇒ **cực tiểu**. Lưu ý $f\'(x_0)=0$ là *cần* nhưng chưa *đủ*.',
+    en: '**An extremum** of a function is a point where it reaches a **local maximum** or **local minimum**. Condition: $f\'(x)$ **changes sign** there — $+\\to-$ ⇒ **max**; $-\\to+$ ⇒ **min**. Note: $f\'(x_0)=0$ is *necessary* but not *sufficient*.' },
+  { k: ['đơn điệu', 'đồng biến', 'nghịch biến', 'monoton', 'increasing', 'decreasing'],
+    vi: '**Tính đơn điệu**: trên một khoảng, hàm **đồng biến** (tăng) nếu $f\'(x)>0$, **nghịch biến** (giảm) nếu $f\'(x)<0$.',
+    en: '**Monotonicity**: on an interval, a function is **increasing** if $f\'(x)>0$ and **decreasing** if $f\'(x)<0$.' },
+  { k: ['tiệm cận', 'asymptote'],
+    vi: '**Tiệm cận** là đường thẳng mà đồ thị tiến sát khi ra vô hạn. Tiệm cận ngang $y=y_0$ khi $\\lim_{x\\to\\pm\\infty}f=y_0$; tiệm cận đứng $x=x_0$ khi $\\lim_{x\\to x_0}f=\\pm\\infty$.',
+    en: '**An asymptote** is a line the graph approaches at infinity. Horizontal $y=y_0$ if $\\lim_{x\\to\\pm\\infty}f=y_0$; vertical $x=x_0$ if $\\lim_{x\\to x_0}f=\\pm\\infty$.' },
+  { k: ['đạo hàm', 'derivative'],
+    vi: '**Đạo hàm** $f\'(x)$ là tốc độ biến thiên tức thời của hàm, bằng hệ số góc tiếp tuyến. VD $(x^n)\'=nx^{n-1}$, $(e^x)\'=e^x$.',
+    en: '**The derivative** $f\'(x)$ is the instantaneous rate of change; it equals the tangent slope. E.g. $(x^n)\'=nx^{n-1}$, $(e^x)\'=e^x$.' },
+  { k: ['nguyên hàm', 'antiderivative'],
+    vi: '**Nguyên hàm** của $f$ là hàm $F$ thỏa $F\'(x)=f(x)$; họ nguyên hàm $\\int f\\,dx=F(x)+C$.',
+    en: '**An antiderivative** of $f$ is a function $F$ with $F\'(x)=f(x)$; the family is $\\int f\\,dx=F(x)+C$.' },
+  { k: ['tích phân', 'integral'],
+    vi: '**Tích phân** xác định $\\int_a^b f\\,dx=F(b)-F(a)$ — dùng tính diện tích hình phẳng, thể tích khối tròn xoay.',
+    en: '**The definite integral** $\\int_a^b f\\,dx=F(b)-F(a)$ — used to find areas and volumes of revolution.' },
+  { k: ['giới hạn', 'limit'],
+    vi: '**Giới hạn** mô tả giá trị mà hàm tiến tới khi biến tiến tới một điểm hoặc ra vô cực.',
+    en: '**A limit** describes the value a function approaches as the variable tends to a point or to infinity.' },
+  { k: ['tích vô hướng', 'dot product'],
+    vi: '**Tích vô hướng** $\\vec u\\cdot\\vec v=a_1a_2+b_1b_2+c_1c_2$; bằng $0$ ⇔ hai vectơ vuông góc.',
+    en: '**The dot product** $\\vec u\\cdot\\vec v=a_1a_2+b_1b_2+c_1c_2$; it is $0$ ⇔ the vectors are perpendicular.' },
+  { k: ['vectơ', 'vector', 'véc tơ'],
+    vi: '**Vectơ** là đại lượng có hướng và độ lớn. Trong Oxyz $\\vec u=(a;b;c)$, độ dài $|\\vec u|=\\sqrt{a^2+b^2+c^2}$.',
+    en: '**A vector** has direction and magnitude. In Oxyz $\\vec u=(a;b;c)$, length $|\\vec u|=\\sqrt{a^2+b^2+c^2}$.' },
+  { k: ['mặt cầu', 'sphere'],
+    vi: '**Mặt cầu** tâm $I(a;b;c)$ bán kính $R$ có phương trình $(x-a)^2+(y-b)^2+(z-c)^2=R^2$.',
+    en: '**A sphere** with centre $I(a;b;c)$ and radius $R$: $(x-a)^2+(y-b)^2+(z-c)^2=R^2$.' },
+  { k: ['mặt phẳng', 'plane'],
+    vi: '**Mặt phẳng** $ax+by+cz+d=0$ có vectơ pháp tuyến $\\vec n=(a;b;c)$.',
+    en: '**A plane** $ax+by+cz+d=0$ has normal vector $\\vec n=(a;b;c)$.' },
+  { k: ['xác suất', 'probability'],
+    vi: '**Xác suất** của biến cố $=\\dfrac{\\text{số kết quả thuận lợi}}{\\text{số kết quả}}$. Xác suất có điều kiện $P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}$.',
+    en: '**Probability** of an event $=\\dfrac{\\text{favorable}}{\\text{total}}$. Conditional $P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}$.' },
+  { k: ['logarit', 'lôgarit', 'logarithm'],
+    vi: '**Logarit** $\\log_a x$ là số mũ cần nâng $a$ để được $x$: $a^{\\log_a x}=x$. VD $\\log_2 8=3$.',
+    en: '**A logarithm** $\\log_a x$ is the exponent to raise $a$ to in order to get $x$: $a^{\\log_a x}=x$. E.g. $\\log_2 8=3$.' },
+  { k: ['hằng đẳng thức', 'identity'],
+    vi: '**Hằng đẳng thức** là đẳng thức đúng với mọi giá trị của biến, vd $(a\\pm b)^2=a^2\\pm2ab+b^2$ và $a^2-b^2=(a-b)(a+b)$.',
+    en: '**An algebraic identity** holds for all values of the variables, e.g. $(a\\pm b)^2=a^2\\pm2ab+b^2$ and $a^2-b^2=(a-b)(a+b)$.' },
+  { k: ['mol', 'số mol'],
+    vi: '**Mol** là lượng chất chứa $N_A\\approx6{,}022\\cdot10^{23}$ hạt; số mol $n=\\dfrac{m}{M}$.',
+    en: '**A mole** is the amount of substance containing $N_A\\approx6.022\\cdot10^{23}$ particles; $n=\\dfrac{m}{M}$.' },
+];
 function localAIReply(q, lessonTitle, en) {
   const lt = lessonTitle ? (en ? ` on “${lessonTitle}”` : ` về “${lessonTitle}”`) : '';
   const ql = q.toLowerCase();
@@ -1770,6 +1818,13 @@ function localAIReply(q, lessonTitle, en) {
   const wantsSummary = /tóm tắt|summar|ý chính|key idea/.test(ql);
   const wantsMistake = /lỗi|mistake|sai|bẫy|trap/.test(ql);
   const wantsQuiz = /quiz|hỏi mình|hỏi em|kiểm tra|đố/.test(ql);
+  const note = en ? '\n\n*(Connect a Claude API key in the backend for fully personalized answers.)*'
+    : '\n\n*(Cấu hình Claude API ở backend để có câu trả lời cá nhân hóa hoàn toàn.)*';
+  // Hỏi định nghĩa khái niệm → trả lời thẳng
+  const concept = AI_CONCEPTS.find((c) => c.k.some((w) => ql.includes(w)));
+  if (concept && !wantsExample && !wantsMistake && !wantsQuiz) {
+    return (en ? concept.en : concept.vi) + note;
+  }
   let body;
   if (wantsSummary) {
     body = en
@@ -1792,8 +1847,6 @@ function localAIReply(q, lessonTitle, en) {
       ? `Good question${lt}. Some hints:\n\n- Re-read the **Core idea** and the **worked example** slowly.\n- Identify exactly which step you get stuck on, then review that rule.\n- Then try a **practice exercise** and check with the answer.`
       : `Câu hỏi hay${lt}. Vài gợi ý:\n\n- Đọc kỹ lại phần **Cốt lõi** và **ví dụ giải mẫu**.\n- Xác định đúng bước em bị kẹt, rồi ôn lại quy tắc đó.\n- Sau đó làm một **bài tập tự luyện** và đối chiếu đáp án.`;
   }
-  const note = en ? '\n\n*(Connect a Claude API key in the backend for fully personalized answers.)*'
-    : '\n\n*(Cấu hình Claude API ở backend để có câu trả lời cá nhân hóa hoàn toàn.)*';
   return body + note;
 }
 
