@@ -41,6 +41,7 @@ const I18N = {
     no_exams: 'Chưa có đề kiểm tra nào', best: 'Điểm cao nhất', q_count: 'câu', minute: 'phút',
     wrong_title: '📕 Sổ tay câu sai', wrong_sub: 'Ôn lại tất cả câu đã làm sai (mọi môn)', wrong_empty: 'Chưa có câu sai nào được lưu 🎉', wrong_learned: '✓ Đã thuộc', clear_all: '🗑 Xóa hết',
     sim_title: '🔬 Phòng mô phỏng', sim_sub: 'Kéo thanh trượt để xem hiện tượng thay đổi theo thời gian thực', back_learn: '‹ Quay lại Học',
+    roadmap_title: '🗺️ Lộ trình ôn thi', roadmap_now: 'GIAI ĐOẠN HIỆN TẠI', roadmap_setexam: 'Hãy thiết lập ngày thi để biết bạn đang ở giai đoạn nào.',
   },
   en: {
     nav_learn: 'Learn', nav_calendar: 'Calendar', nav_goals: 'Goals', nav_exam: 'Exam Prep', nav_notes: 'Notes', nav_profile: 'Profile', nav_teacher: 'Class',
@@ -60,6 +61,7 @@ const I18N = {
     no_exams: 'No tests yet', best: 'Best score', q_count: 'questions', minute: 'min',
     wrong_title: '📕 Mistake notebook', wrong_sub: 'Review all questions you got wrong (all subjects)', wrong_empty: 'No saved mistakes yet 🎉', wrong_learned: '✓ Got it', clear_all: '🗑 Clear all',
     sim_title: '🔬 Simulation lab', sim_sub: 'Drag the sliders to watch the phenomena change in real time', back_learn: '‹ Back to Learn',
+    roadmap_title: '🗺️ Revision roadmap', roadmap_now: 'CURRENT PHASE', roadmap_setexam: 'Set your exam date to see which phase you are in.',
   },
 };
 function getLang() { try { return localStorage.getItem('thpt_lang') || 'vi'; } catch (e) { return 'vi'; } }
@@ -477,7 +479,7 @@ function renderExam() {
         <div class="card">${checklist}</div>
       </div>`;
   }
-  $('#screen-exam').innerHTML = head + top + examStatsHtml() + admissionCalcHtml();
+  $('#screen-exam').innerHTML = head + top + roadmapHtml() + examStatsHtml() + admissionCalcHtml();
   admissionRender();
 }
 
@@ -496,6 +498,59 @@ function examStatsHtml() {
       <div class="stat-row"><b>${n}</b> ${App.state.lang === 'en' ? 'attempts · avg' : 'lượt làm đề · điểm TB'} <b>${avg}/10</b>${weak ? ` · ${App.state.lang === 'en' ? 'improve' : 'cần cải thiện'}: <b>${subjectLabel(weak.k) || weak.k || '—'}</b>` : ''}</div>
       ${rows.map((r) => `<div class="stat-bar"><span>${subjectLabel(r.k) || r.k || 'Khác'}</span><div class="stat-track"><div class="stat-fill" style="width:${Math.max(3, r.avg * 10)}%"></div></div><b>${r.avg.toFixed(1)}</b></div>`).join('')}
     </div></div>`;
+}
+
+/* 🗺️ Lộ trình ôn thi — 4 giai đoạn theo số ngày còn lại */
+function currentPhaseIndex() {
+  const e = App.data.exam;
+  if (!e || !e.examDate) return -1;
+  const d = daysLeft(e.examDate);
+  if (d > 60) return 0;
+  if (d > 30) return 1;
+  if (d > 10) return 2;
+  return 3;
+}
+const ROADMAP_PHASES = [
+  { ic: '📚', name: { vi: 'Nền tảng', en: 'Foundation' }, when: { vi: 'Còn > 60 ngày', en: '> 60 days left' },
+    tasks: [
+      { vi: 'Học kỹ lý thuyết & bài giảng từng chương', en: 'Study theory & lessons chapter by chapter' },
+      { vi: 'Thuộc bảng công thức trọng tâm', en: 'Memorize the key formula sheet' },
+      { vi: 'Làm bài tập cơ bản, nắm chắc dạng nền', en: 'Do basic exercises, master core question types' }],
+    cta: { label: { vi: '📚 Vào Học', en: '📚 Go to Learn' }, on: "switchTab('learn')" } },
+  { ic: '🎯', name: { vi: 'Luyện chuyên đề', en: 'Topic practice' }, when: { vi: '30–60 ngày', en: '30–60 days' },
+    tasks: [
+      { vi: 'Luyện nhanh 15 câu mỗi môn mỗi ngày', en: 'Quick 15-question drills per subject daily' },
+      { vi: 'Ghi & ôn lại Sổ tay câu sai', en: 'Log and review the Mistake notebook' },
+      { vi: 'Xem mô phỏng các hiện tượng khó', en: 'Watch simulations of tricky phenomena' }],
+    cta: { label: { vi: '📕 Sổ tay câu sai', en: '📕 Mistake notebook' }, on: "switchTab('learn');learnOpenWrong()" } },
+  { ic: '📝', name: { vi: 'Luyện đề', en: 'Full exams' }, when: { vi: '10–30 ngày', en: '10–30 days' },
+    tasks: [
+      { vi: 'Làm đề thi thử THPT QG có bấm giờ', en: 'Take timed national mock exams' },
+      { vi: 'Phân tích kết quả, tìm môn còn yếu', en: 'Analyze results, find weak subjects' },
+      { vi: 'Tính thử điểm xét tuyển đại học', en: 'Estimate your university admission score' }],
+    cta: { label: { vi: '📝 Vào làm đề', en: '📝 Take exams' }, on: "switchTab('learn')" } },
+  { ic: '🚀', name: { vi: 'Nước rút', en: 'Final sprint' }, when: { vi: '≤ 10 ngày', en: '≤ 10 days' },
+    tasks: [
+      { vi: 'Rà soát toàn bộ câu sai đã lưu', en: 'Review all saved mistakes' },
+      { vi: 'Ôn nhanh công thức trọng tâm', en: 'Quickly revise the key formulas' },
+      { vi: 'Ngủ đủ giấc, giữ sức khỏe & tâm lý vững', en: 'Sleep well, stay healthy and calm' }],
+    cta: { label: { vi: '📐 Công thức', en: '📐 Formulas' }, on: "switchTab('learn');learnOpenFormulas()" } },
+];
+function roadmapHtml() {
+  const en = App.state.lang === 'en';
+  const cur = currentPhaseIndex();
+  const pick = (o) => (en ? o.en : o.vi);
+  return `<div class="section-block"><div class="section-title">${t('roadmap_title')}</div>
+    ${cur < 0 ? `<div class="card"><div class="muted" style="font-size:.88rem">${t('roadmap_setexam')}</div></div>` : ''}
+    ${ROADMAP_PHASES.map((p, i) => `
+      <div class="card roadmap-phase ${i === cur ? 'active' : ''}" style="margin-bottom:10px">
+        <div class="rm-head"><span class="rm-ic">${p.ic}</span><b>${pick(p.name)}</b>
+          <span class="rm-when">${pick(p.when)}</span>
+          ${i === cur ? `<span class="pill pill-ok">${t('roadmap_now')}</span>` : ''}</div>
+        <ul class="rm-tasks">${p.tasks.map((tk) => `<li>${pick(tk)}</li>`).join('')}</ul>
+        <button class="btn btn-ghost btn-sm" onclick="${p.cta.on}">${pick(p.cta.label)}</button>
+      </div>`).join('')}
+    </div>`;
 }
 
 /* 🎓 Máy tính điểm xét tuyển đại học */
