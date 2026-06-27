@@ -685,7 +685,7 @@ const CURRICULUM = {
               `,
             },
             {
-              id: 'l-toan-oxyz', title: 'Hệ tọa độ Oxyz – tọa độ điểm & vectơ', level: 'CO_BAN',
+              id: 'l-toan-oxyz', title: 'Hệ tọa độ Oxyz – tọa độ điểm & vectơ', title_en: 'Oxyz coordinate system — points & vectors', level: 'CO_BAN',
               html: `
                 <h2>Cốt lõi</h2>
                 <p>Điểm $M(x;y;z)$, vectơ $\\vec{u}=(a;b;c)$. Với $A(x_1;y_1;z_1)$, $B(x_2;y_2;z_2)$:</p>
@@ -717,6 +717,39 @@ const CURRICULUM = {
                   <details><summary>Đáp án</summary><p>$A'=(-1;-2;-3)$.</p></details>
                   <p style="margin-top:8px"><strong>Bài 2.</strong> Tìm trọng tâm tam giác $A(1;0;0)$, $B(0;2;0)$, $C(0;0;3)$.</p>
                   <details><summary>Đáp án</summary><p>$G=\\left(\\dfrac{1}{3};\\dfrac{2}{3};1\\right)$.</p></details>
+                </div>
+              `,
+              html_en: `
+                <h2>Core idea</h2>
+                <p>A point $M(x;y;z)$, a vector $\\vec{u}=(a;b;c)$. With $A(x_1;y_1;z_1)$, $B(x_2;y_2;z_2)$:</p>
+                <ul>
+                  <li>$\\vec{AB}=(x_2-x_1;\\,y_2-y_1;\\,z_2-z_1)$.</li>
+                  <li>$AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$.</li>
+                  <li>Midpoint $I=\\left(\\dfrac{x_1+x_2}{2};\\dfrac{y_1+y_2}{2};\\dfrac{z_1+z_2}{2}\\right)$.</li>
+                </ul>
+                <h2>Advanced</h2>
+                <p>Centroid of triangle $ABC$: $G=\\left(\\dfrac{x_A+x_B+x_C}{3};\\dots\\right)$.</p>
+                <div class="vd">
+                  <div class="vd-title">📝 Worked example</div>
+                  <p>Given $A(1;2;-1)$, $B(3;0;5)$. Compute $\\vec{AB}$, $AB$ and the midpoint $I$.</p>
+                  <p><strong>Solution:</strong> $\\vec{AB}=(2;-2;6)$; $AB=\\sqrt{4+4+36}=\\sqrt{44}=2\\sqrt{11}$; $I=(2;1;2)$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Exercise</div>
+                  <p>Given $A(0;1;2)$, $B(2;3;4)$, $C(4;5;0)$. Find the centroid $G$ of $\\triangle ABC$.</p>
+                  <details><summary>Show answer</summary><p>$G=\\left(\\dfrac{0+2+4}{3};\\dfrac{1+3+5}{3};\\dfrac{2+4+0}{3}\\right)=(2;3;2)$.</p></details>
+                </div>
+                <div class="vd">
+                  <div class="vd-title">📝 Example 2 (finding a point)</div>
+                  <p>Given $A(2;-1;3)$, $B(0;1;1)$. Find $M$ such that $B$ is the midpoint of $AM$.</p>
+                  <p><strong>Solution:</strong> $M=2B-A=(2\\cdot0-2;\\ 2\\cdot1-(-1);\\ 2\\cdot1-3)=(-2;3;-1)$.</p>
+                </div>
+                <div class="bt">
+                  <div class="bt-title">✏️ Practice exercises</div>
+                  <p><strong>Problem 1.</strong> Find the point symmetric to $A(1;2;3)$ through the origin $O$.</p>
+                  <details><summary>Answer</summary><p>$A'=(-1;-2;-3)$.</p></details>
+                  <p style="margin-top:8px"><strong>Problem 2.</strong> Find the centroid of the triangle $A(1;0;0)$, $B(0;2;0)$, $C(0;0;3)$.</p>
+                  <details><summary>Answer</summary><p>$G=\\left(\\dfrac{1}{3};\\dfrac{2}{3};1\\right)$.</p></details>
                 </div>
               `,
             },
